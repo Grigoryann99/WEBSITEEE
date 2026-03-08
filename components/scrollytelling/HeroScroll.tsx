@@ -236,10 +236,7 @@ export default function HeroScroll() {
                                 <em className="not-italic text-brand-accent/90 focus:outline-none">– in one click</em>
                             </h2>
 
-                            <button className="group relative inline-flex items-center gap-4 px-10 py-5 bg-white/5 backdrop-blur-md border border-white/20 rounded-full font-inter tracking-[0.2em] uppercase text-sm text-white hover:bg-white hover:text-black transition-all duration-500 shadow-[0_0_20px_rgba(255,255,255,0.05)] hover:shadow-[0_0_30px_rgba(255,255,255,0.2)] hover:-translate-y-1">
-                                <span>Start Your Journey</span>
-                                <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
-                            </button>
+
                         </div>
                     </motion.div>
 
