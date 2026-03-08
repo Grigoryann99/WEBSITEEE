@@ -108,7 +108,7 @@ async function fetchOgImage(url: string): Promise<string | null> {
             /<meta[^>]+name=["']twitter:image["'][^>]+content=["']([^"']+)["']/i.exec(html);
 
         return match ? match[1] : null;
-    } catch {
+    } catch (error: unknown) {
         return null; // Ignore fetch errors, we'll use fallback
     }
 }
@@ -146,8 +146,8 @@ async function fetchFeed({ url, source }: { url: string; source: string }) {
             feed.items.slice(0, 10).map(item => processItem(item as unknown as RssItem, source)) // Limit to 10 per feed to ensure enough items for 60 total
         );
         return processedItems.filter((item): item is ProcessedArticle => item !== null);
-    } catch (err) {
-        console.error(`[RSS] "${source}" failed: ${(err as Error).message}`);
+    } catch (err: unknown) {
+        console.error(`[RSS] "${source}" failed: ${err instanceof Error ? err.message : String(err)}`);
         return [];
     }
 }
@@ -176,7 +176,7 @@ export async function GET() {
                 'Cache-Control': 'public, s-maxage=1800, stale-while-revalidate=60'
             }
         });
-    } catch (err) {
+    } catch (err: unknown) {
         console.error('[NewsAPI] Unexpected error:', err);
         return NextResponse.json([], { status: 500 });
     }
