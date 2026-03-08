@@ -29,7 +29,7 @@ function getFallbackImage(title: string): string {
     return LUXURY_FALLBACKS[index];
 }
 
-const parser = new Parser({
+const parser = new Parser<CustomFeed, CustomItem>({
     timeout: 12000,
     headers: { 'User-Agent': 'Mozilla/5.0 (compatible; TravelNewsBot/1.0)' },
     customFields: {
@@ -66,6 +66,14 @@ interface RssItem {
     mediaContent?: { $: { url: string } };
     mediaThumbnail?: { $: { url: string } };
     enclosure?: { url: string };
+}
+
+interface CustomFeed {
+    [key: string]: unknown;
+}
+
+interface CustomItem extends RssItem {
+    [key: string]: unknown;
 }
 
 interface ProcessedArticle {
@@ -143,7 +151,7 @@ async function fetchFeed({ url, source }: { url: string; source: string }) {
     try {
         const feed = await parser.parseURL(url);
         const processedItems = await Promise.all(
-            feed.items.slice(0, 10).map(item => processItem(item as unknown as RssItem, source)) // Limit to 10 per feed to ensure enough items for 60 total
+            feed.items.slice(0, 10).map(item => processItem(item, source)) // Limit to 10 per feed to ensure enough items for 60 total
         );
         return processedItems.filter((item): item is ProcessedArticle => item !== null);
     } catch (err: unknown) {
