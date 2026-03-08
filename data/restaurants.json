@@ -1,0 +1,32 @@
+{
+    "restaurants": [
+        {
+            "name": "Le Meurice",
+            "city": "Paris",
+            "cuisine": "French Fine Dining",
+            "rating": 4.9,
+            "priceLevel": "$$$$"
+        },
+        {
+            "name": "Septime",
+            "city": "Paris",
+            "cuisine": "Modern European",
+            "rating": 4.8,
+            "priceLevel": "$$$"
+        },
+        {
+            "name": "Sukiyabashi Jiro",
+            "city": "Tokyo",
+            "cuisine": "Sushi",
+            "rating": 4.9,
+            "priceLevel": "$$$$"
+        },
+        {
+            "name": "Osteria Francescana",
+            "city": "Rome",
+            "cuisine": "Italian",
+            "rating": 4.9,
+            "priceLevel": "$$$$"
+        }
+    ]
+}

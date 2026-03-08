@@ -1,0 +1,36 @@
+{
+    "places": [
+        {
+            "name": "Eiffel Tower",
+            "city": "Paris",
+            "category": "Landmark",
+            "rating": 4.8,
+            "description": "Iconic iron lattice tower on the Champ de Mars.",
+            "image": "/images/eiffel-tower.jpg"
+        },
+        {
+            "name": "Louvre Museum",
+            "city": "Paris",
+            "category": "Museum",
+            "rating": 4.9,
+            "description": "World's largest art museum and historic monument in Paris.",
+            "image": "/images/louvre.jpg"
+        },
+        {
+            "name": "Colosseum",
+            "city": "Rome",
+            "category": "Landmark",
+            "rating": 4.9,
+            "description": "An oval amphitheatre in the centre of the city of Rome.",
+            "image": "/images/colosseum.jpg"
+        },
+        {
+            "name": "Mount Fuji",
+            "city": "Tokyo",
+            "category": "Nature",
+            "rating": 4.8,
+            "description": "An active volcano and Japan's tallest peak.",
+            "image": "/images/mount-fuji.jpg"
+        }
+    ]
+}

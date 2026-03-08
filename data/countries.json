@@ -1,0 +1,24 @@
+{
+    "countries": [
+        {
+            "name": "France",
+            "code": "FR",
+            "continent": "Europe"
+        },
+        {
+            "name": "Italy",
+            "code": "IT",
+            "continent": "Europe"
+        },
+        {
+            "name": "Japan",
+            "code": "JP",
+            "continent": "Asia"
+        },
+        {
+            "name": "United States",
+            "code": "US",
+            "continent": "North America"
+        }
+    ]
+}

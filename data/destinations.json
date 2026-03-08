@@ -1,0 +1,177 @@
+{
+    "destinations": [
+        {
+            "city": "Paris",
+            "country": "France",
+            "averageCost": "$150/day",
+            "image": "/images/paris.jpg",
+            "popularPlaces": [
+                "Eiffel Tower",
+                "Louvre Museum"
+            ],
+            "restaurants": [
+                "Le Meurice",
+                "Septime"
+            ],
+            "thingsToDo": [
+                "Museum tours",
+                "River cruise",
+                "Wine tasting"
+            ]
+        },
+        {
+            "city": "Rome",
+            "country": "Italy",
+            "averageCost": "$120/day",
+            "image": "/images/rome.jpg",
+            "popularPlaces": [
+                "Colosseum",
+                "Pantheon"
+            ],
+            "restaurants": [
+                "Osteria Francescana"
+            ],
+            "thingsToDo": [
+                "Historical tours",
+                "Pasta making class"
+            ]
+        },
+        {
+            "city": "Tokyo",
+            "country": "Japan",
+            "averageCost": "$180/day",
+            "image": "/images/tokyo.jpg",
+            "popularPlaces": [
+                "Mount Fuji",
+                "Senso-ji Temple"
+            ],
+            "restaurants": [
+                "Sukiyabashi Jiro"
+            ],
+            "thingsToDo": [
+                "Shopping",
+                "Tea ceremony",
+                "Temple visits"
+            ]
+        },
+        {
+            "city": "New York",
+            "country": "USA",
+            "averageCost": "$200/day",
+            "image": "/images/usa.jpg",
+            "popularPlaces": [
+                "Statue of Liberty",
+                "Central Park"
+            ],
+            "restaurants": [
+                "Le Bernardin"
+            ],
+            "thingsToDo": [
+                "Broadway shows",
+                "Museums"
+            ]
+        },
+        {
+            "city": "Barcelona",
+            "country": "Spain",
+            "averageCost": "$100/day",
+            "image": "/images/spain.jpg",
+            "popularPlaces": [
+                "Sagrada Familia",
+                "Park Güell"
+            ],
+            "restaurants": [
+                "Disfrutar"
+            ],
+            "thingsToDo": [
+                "Beach",
+                "Architecture tours"
+            ]
+        },
+        {
+            "city": "Athens",
+            "country": "Greece",
+            "averageCost": "$90/day",
+            "image": "/images/greece.jpg",
+            "popularPlaces": [
+                "Acropolis of Athens",
+                "Parthenon"
+            ],
+            "restaurants": [
+                "Spondi"
+            ],
+            "thingsToDo": [
+                "Historical tours",
+                "Island hopping"
+            ]
+        },
+        {
+            "city": "Dubai",
+            "country": "UAE",
+            "averageCost": "$250/day",
+            "image": "/images/uae.jpg",
+            "popularPlaces": [
+                "Burj Khalifa",
+                "Palm Jumeirah"
+            ],
+            "restaurants": [
+                "Zuma"
+            ],
+            "thingsToDo": [
+                "Desert safari",
+                "Luxury shopping"
+            ]
+        },
+        {
+            "city": "Rio de Janeiro",
+            "country": "Brazil",
+            "averageCost": "$80/day",
+            "image": "/images/brazil.jpg",
+            "popularPlaces": [
+                "Christ the Redeemer",
+                "Copacabana Beach"
+            ],
+            "restaurants": [
+                "Oteque"
+            ],
+            "thingsToDo": [
+                "Beaches",
+                "Carnival"
+            ]
+        },
+        {
+            "city": "Bangkok",
+            "country": "Thailand",
+            "averageCost": "$60/day",
+            "image": "/images/thailand.jpg",
+            "popularPlaces": [
+                "Grand Palace",
+                "Wat Arun"
+            ],
+            "restaurants": [
+                "Gaggan Anand"
+            ],
+            "thingsToDo": [
+                "Street food",
+                "Temple tours"
+            ]
+        },
+        {
+            "city": "London",
+            "country": "United Kingdom",
+            "averageCost": "$180/day",
+            "image": "/images/uk.jpg",
+            "popularPlaces": [
+                "Big Ben",
+                "Tower of London"
+            ],
+            "restaurants": [
+                "Core by Clare Smyth"
+            ],
+            "thingsToDo": [
+                "Museums",
+                "Sightseeing"
+            ]
+        }
+    ]
+}

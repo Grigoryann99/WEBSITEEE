@@ -1,0 +1,127 @@
+@import "./core-preflight.css";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --background: #1a1a1a;
+  --foreground: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1a1a1a;
+    --foreground: #ffffff;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .custom-line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+  }
+
+  .custom-line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+  }
+}
+
+/* Logo shimmer animation */
+@keyframes logo-shimmer {
+  0% {
+    transform: translateX(-120%) skewX(-20deg);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: translateX(220%) skewX(-20deg);
+    opacity: 0;
+  }
+}
+
+.logo-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 30%, rgba(255, 255, 255, 0.55) 50%, transparent 70%);
+  pointer-events: none;
+  opacity: 0;
+}
+
+.logo-shimmer-active::after {
+  animation: logo-shimmer 0.65s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Dynamic Luxury Gradient for Villas */
+@keyframes mesh-pulse {
+  0% {
+    transform: scale(1) translate(0%, 0%);
+  }
+
+  33% {
+    transform: scale(1.1) translate(2%, 1%);
+  }
+
+  66% {
+    transform: scale(0.9) translate(-1%, 2%);
+  }
+
+  100% {
+    transform: scale(1) translate(0%, 0%);
+  }
+}
+
+.bg-mesh-luxury {
+  background-color: #0c0c0c;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-mesh-luxury::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(31, 180, 180, 0.03) 0%, transparent 50%);
+  animation: mesh-pulse 15s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.bg-mesh-luxury::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 30% 70%, rgba(31, 180, 180, 0.02) 0%, transparent 40%);
+  animation: mesh-pulse 20s ease-in-out infinite reverse;
+  pointer-events: none;
+}

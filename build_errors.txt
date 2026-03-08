@@ -1,0 +1,50 @@
+﻿
+> lux-travel@0.1.0 build
+> next build
+
+  тЦ▓ Next.js 14.2.35
+
+   Creating an optimized production build ...
+ тЬУ Compiled successfully
+   Linting and checking validity of types ...
+node.exe : 
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo       
+       : NotSpecified:   
+  (:String) [], Remote   
+ Exception
+    + FullyQualifiedErro 
+   rId : NativeCommandE  
+  rror
+ 
+Failed to compile.
+
+./components/forms/Bookin
+gForm.tsx
+7:8  Error: 'Image' is 
+defined but never used.  
+@typescript-eslint/no-unu
+sed-vars
+
+./components/layout/Navig
+ation.tsx
+39:8  Warning: React 
+Hook useEffect has a 
+missing dependency: 
+'activeId'. Either 
+include it or remove the 
+dependency array.  react-
+hooks/exhaustive-deps
+
+info  - Need to disable 
+some ESLint rules? Learn 
+more here: https://nextjs
+.org/docs/basic-features/
+eslint#disabling-rules
