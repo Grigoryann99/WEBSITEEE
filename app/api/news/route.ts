@@ -54,8 +54,30 @@ const FEEDS = [
     { url: 'https://www.cntraveler.com/stories/2011-12-02/rss', source: 'Condé Nast Traveler' },
 ];
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function extractImage(item: any): string | null {
+interface RssItem {
+    title?: string;
+    link?: string;
+    pubDate?: string;
+    isoDate?: string;
+    content?: string;
+    contentSnippet?: string;
+    summary?: string;
+    'content:encoded'?: string;
+    mediaContent?: { $: { url: string } };
+    mediaThumbnail?: { $: { url: string } };
+    enclosure?: { url: string };
+}
+
+interface ProcessedArticle {
+    title: string;
+    description: string;
+    link: string;
+    date: string;
+    image: string;
+    source: string;
+}
+
+function extractImage(item: RssItem): string | null {
     if (item?.mediaContent?.$?.url) return item.mediaContent.$.url;
     if (item?.mediaThumbnail?.$?.url) return item.mediaThumbnail.$.url;
     if (item?.enclosure?.url) return item.enclosure.url;
@@ -91,7 +113,7 @@ async function fetchOgImage(url: string): Promise<string | null> {
     }
 }
 
-async function processItem(item: any, source: string) {
+async function processItem(item: RssItem, source: string): Promise<ProcessedArticle | null> {
     const title = (item.title || '').trim();
     if (!title || !item.link) return null;
 
@@ -121,9 +143,9 @@ async function fetchFeed({ url, source }: { url: string; source: string }) {
     try {
         const feed = await parser.parseURL(url);
         const processedItems = await Promise.all(
-            feed.items.slice(0, 10).map(item => processItem(item, source)) // Limit to 10 per feed to ensure enough items for 60 total
+            feed.items.slice(0, 10).map(item => processItem(item as unknown as RssItem, source)) // Limit to 10 per feed to ensure enough items for 60 total
         );
-        return processedItems.filter(Boolean);
+        return processedItems.filter((item): item is ProcessedArticle => item !== null);
     } catch (err) {
         console.error(`[RSS] "${source}" failed: ${(err as Error).message}`);
         return [];
@@ -143,8 +165,7 @@ function deduplicate<T extends { link: string; title: string }>(articles: T[]): 
 export async function GET() {
     try {
         const results = await Promise.allSettled(FEEDS.map(fetchFeed));
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        let articles = results.flatMap(r => r.status === 'fulfilled' ? r.value : []) as any[];
+        let articles = results.flatMap(r => r.status === 'fulfilled' ? r.value : []);
 
         articles = deduplicate(articles);
         articles.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
