@@ -9,7 +9,7 @@ export default function ContactHero() {
             {/* Background Image Setup */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/NAPRAVLEN.png"
+                    src="/contact-bg.jpg"
                     alt="Luxury Travel Destination"
                     fill
                     priority
