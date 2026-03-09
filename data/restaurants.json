@@ -5,28 +5,32 @@
             "city": "Paris",
             "cuisine": "French Fine Dining",
             "rating": 4.9,
-            "priceLevel": "$$$$"
+            "priceLevel": "€350+",
+            "priceSuffix": "per person"
         },
         {
             "name": "Septime",
             "city": "Paris",
             "cuisine": "Modern European",
             "rating": 4.8,
-            "priceLevel": "$$$"
+            "priceLevel": "€85 – €135",
+            "priceSuffix": "per person"
         },
         {
             "name": "Sukiyabashi Jiro",
             "city": "Tokyo",
             "cuisine": "Sushi",
             "rating": 4.9,
-            "priceLevel": "$$$$"
+            "priceLevel": "¥55,000",
+            "priceSuffix": "per person"
         },
         {
             "name": "Osteria Francescana",
-            "city": "Rome",
+            "city": "Modena",
             "cuisine": "Italian",
             "rating": 4.9,
-            "priceLevel": "$$$$"
+            "priceLevel": "€320+",
+            "priceSuffix": "per person"
         }
     ]
 }

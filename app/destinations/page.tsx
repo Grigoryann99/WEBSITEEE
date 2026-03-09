@@ -41,7 +41,8 @@ async function getDestinationsPageData(): Promise<DestinationsPageData> {
             name: r?.name || '',
             cuisine: r?.cuisine || '',
             rating: r?.rating || 0,
-            priceLevel: r?.priceLevel || ''
+            priceLevel: r?.priceLevel || '',
+            priceSuffix: r?.priceSuffix || 'per person'
         }));
 
         const travelCosts: CostUI[] = dests.map(d => ({

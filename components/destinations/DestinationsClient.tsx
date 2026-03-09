@@ -30,6 +30,7 @@ export interface RestaurantUI {
     cuisine: string;
     rating: number;
     priceLevel: string;
+    priceSuffix?: string;
 }
 
 export interface CostUI {
