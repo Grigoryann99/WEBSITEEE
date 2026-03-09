@@ -20,7 +20,7 @@ export default function Navigation() {
         { name: 'Home', href: '/', id: 'home' },
         { name: 'Global News', href: '/news', id: 'news' },
         { name: 'Destinations', href: '/destinations', id: 'destinations' },
-        { name: 'Contact Us', href: '#footer', id: 'contact' },
+        { name: 'Contact Us', href: '/contact', id: 'contact' },
     ];
 
     // Initialize active state based on route
@@ -29,6 +29,8 @@ export default function Navigation() {
             setActiveId('news');
         } else if (pathname === '/destinations') {
             setActiveId('destinations');
+        } else if (pathname === '/contact') {
+            setActiveId('contact');
         } else if (pathname === '/') {
             // Default to home on homepage if no specific section is tracked yet
             if (!activeId || !['contact', 'villas'].includes(activeId)) {
@@ -137,9 +139,14 @@ export default function Navigation() {
 
                     <div className="hidden md:flex space-x-10 items-center text-[10px] sm:text-xs font-sans tracking-[0.2em] uppercase text-brand-light/70">
                         {navLinks.map((link) => {
-                            const isActive = link.id === 'destinations'
-                                ? pathname?.startsWith('/destinations')
-                                : activeId === link.id;
+                            let isActive = false;
+                            if (link.id === 'destinations') {
+                                isActive = pathname?.startsWith('/destinations') || false;
+                            } else if (link.id === 'contact') {
+                                isActive = pathname === '/contact' || (pathname === '/' && activeId === 'contact');
+                            } else {
+                                isActive = activeId === link.id;
+                            }
                             const activeClass = 'text-brand-light';
 
                             return (
