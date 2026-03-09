@@ -65,7 +65,7 @@ export default function Navigation() {
     useEffect(() => {
         if (pathname !== '/') return;
 
-        const sections = ['destinations', 'villas', 'footer'];
+        const sections = ['home', 'villas', 'footer'];
         const observerOptions = {
             root: null,
             rootMargin: '-20% 0px -70% 0px',
@@ -95,7 +95,7 @@ export default function Navigation() {
         e.preventDefault();
         if (pathname === '/') {
             window.scrollTo({ top: 0, behavior: 'smooth' });
-            setActiveId('destinations');
+            setActiveId('home');
         } else {
             router.push('/');
         }

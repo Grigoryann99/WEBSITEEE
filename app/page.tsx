@@ -6,7 +6,9 @@ import DestinationGlobe from "@/components/media/DestinationGlobe";
 export default function Home() {
   return (
     <>
-      <HeroScroll />
+      <div id="home">
+        <HeroScroll />
+      </div>
       <div id="villas">
         <VillaTransition />
         <VillaGallery />
