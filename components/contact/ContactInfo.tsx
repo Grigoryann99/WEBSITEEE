@@ -5,8 +5,8 @@ const contactInfo = [
         icon: Mail,
         title: "Email Support",
         description: "Our team will respond to your inquiry within 24 hours.",
-        detail: "reservations@veloratravel.com",
-        action: "mailto:reservations@veloratravel.com"
+        detail: "reservations@veloratravel.org",
+        action: "mailto:reservations@veloratravel.org"
     },
     {
         icon: MessageSquare,
