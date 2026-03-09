@@ -155,13 +155,7 @@ export default function Navigation() {
                             );
                         })}
 
-                        {/* LOGIN button */}
-                        <a
-                            href="/login"
-                            className="ml-2 px-5 py-2 rounded-full bg-brand-light/10 border border-brand-light/20 text-brand-light text-[10px] sm:text-xs font-sans tracking-[0.2em] uppercase transition-all duration-300 hover:bg-brand-light hover:text-brand-dark hover:shadow-md"
-                        >
-                            Login
-                        </a>
+
                     </div>
 
                     <button
@@ -189,15 +183,7 @@ export default function Navigation() {
                         {link.name}
                     </a>
                 ))}
-                {/* LOGIN — mobile */}
-                <a
-                    href="/login"
-                    onClick={() => setIsMenuOpen(false)}
-                    className={`font-sans text-2xl tracking-widest uppercase border border-brand-light/40 text-brand-light px-10 py-3 rounded-full hover:bg-brand-light hover:text-brand-dark transition-all duration-500 ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
-                    style={{ transitionDelay: `${navLinks.length * 100}ms` }}
-                >
-                    Login
-                </a>
+
             </div>
         </>
     );
