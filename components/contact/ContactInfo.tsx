@@ -1,4 +1,4 @@
-import { Mail, MessageSquare, Globe, Clock } from 'lucide-react';
+import { Mail, MessageSquare } from 'lucide-react';
 
 const contactInfo = [
     {
@@ -14,20 +14,6 @@ const contactInfo = [
         description: "Live chat with our dedicated travel specialists.",
         detail: "Available 24/7",
         action: "#" // Link to a hypothetical live chat
-    },
-    {
-        icon: Globe,
-        title: "Global Travel Service",
-        description: "Reach our international concierge desk anytime.",
-        detail: "+1 (800) 123-4567",
-        action: "tel:+18001234567"
-    },
-    {
-        icon: Clock,
-        title: "Response Time",
-        description: "Expected response time for premium inquiries.",
-        detail: "Under 2 hours",
-        action: undefined
     }
 ];
 

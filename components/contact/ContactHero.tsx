@@ -9,7 +9,7 @@ export default function ContactHero() {
             {/* Background Image Setup */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/sequence-1/ezgif-frame-011.jpg" // Reusing a known high-quality asset from the homepage sequence
+                    src="/NAPRAVLEN.png"
                     alt="Luxury Travel Destination"
                     fill
                     priority
