@@ -13,7 +13,7 @@ interface CountryPageProps {
 export async function generateMetadata(
     { params }: CountryPageProps
 ): Promise<Metadata> {
-    const countryKey = params.country.toLowerCase();
+    const countryKey = params.country.toLowerCase().replace(/-/g, '_');
     const data = countries[countryKey];
 
     if (!data) {
@@ -29,7 +29,7 @@ export async function generateMetadata(
 }
 
 export default function CountryPage({ params }: CountryPageProps) {
-    const countryKey = params.country.toLowerCase();
+    const countryKey = params.country.toLowerCase().replace(/-/g, '_');
     const data = countries[countryKey];
 
     if (!data) {

@@ -12,11 +12,13 @@ interface CountryDestinationCardProps {
 }
 
 export default function CountryDestinationCard({ name, city, country, image, description }: CountryDestinationCardProps) {
-    // Ordered array of image sources to attempt exactly as requested
+    // Unique seeded fallback so every card shows a different image on failure
+    const seedSlug = encodeURIComponent(name.toLowerCase().replace(/\s+/g, '-'));
     const fallbackSources = [
-        image,  // 1. Initial image prop
-        'https://images.unsplash.com/photo-1500835556837-99ac94a94552?q=80&w=800&auto=format&fit=crop', // 4. Generic/Wikimedia/Pexels proxy
-        '/images/placeholder.jpg' // 5. Local Fallback
+        image,                                                                           // 1. Primary: specific destination photo
+        `https://picsum.photos/seed/${seedSlug}/800/600`,                               // 2. Unique seeded fallback
+        `https://picsum.photos/seed/${encodeURIComponent(city.toLowerCase())}/800/600`, // 3. City-seeded fallback
+        '/images/placeholder.jpg'                                                        // 4. Local last resort
     ];
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
