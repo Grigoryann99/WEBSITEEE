@@ -31,7 +31,7 @@ export default function Navigation() {
             setActiveId('destinations');
         } else if (pathname === '/') {
             // Default to home on homepage if no specific section is tracked yet
-            if (!activeId || !['destinations', 'contact', 'villas'].includes(activeId)) {
+            if (!activeId || !['contact', 'villas'].includes(activeId)) {
                 setActiveId('home');
             }
         }
@@ -137,7 +137,9 @@ export default function Navigation() {
 
                     <div className="hidden md:flex space-x-10 items-center text-[10px] sm:text-xs font-sans tracking-[0.2em] uppercase text-brand-light/70">
                         {navLinks.map((link) => {
-                            const isActive = activeId === link.id && !(pathname === '/' && link.id === 'destinations');
+                            const isActive = link.id === 'destinations'
+                                ? pathname?.startsWith('/destinations')
+                                : activeId === link.id;
                             const activeClass = 'text-brand-light';
 
                             return (
