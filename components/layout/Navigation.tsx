@@ -137,7 +137,7 @@ export default function Navigation() {
 
                     <div className="hidden md:flex space-x-10 items-center text-[10px] sm:text-xs font-sans tracking-[0.2em] uppercase text-brand-light/70">
                         {navLinks.map((link) => {
-                            const isActive = activeId === link.id;
+                            const isActive = activeId === link.id && !(pathname === '/' && link.id === 'destinations');
                             const activeClass = 'text-brand-light';
 
                             return (
