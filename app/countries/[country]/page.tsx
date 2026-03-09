@@ -1,8 +1,8 @@
 import { notFound } from 'next/navigation';
 import { countries } from '@/lib/countryData';
 import CountryDestinationCard from '@/components/destinations/CountryDestinationCard';
+import CountryHeroImage from '@/components/countries/CountryHeroImage';
 import { Metadata } from 'next';
-import Image from 'next/image';
 
 interface CountryPageProps {
     params: {
@@ -41,13 +41,7 @@ export default function CountryPage({ params }: CountryPageProps) {
             {/* 1. Hero Section */}
             <section className="relative h-[60vh] md:h-[70vh] flex flex-col items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
-                    <Image
-                        src={data.heroImage}
-                        alt={`Explore ${data.name}`}
-                        fill
-                        className="object-cover opacity-60"
-                        priority
-                    />
+                    <CountryHeroImage src={data.heroImage} countryName={data.name} />
                     <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/60 via-[#0a0a0a]/20 to-[#0a0a0a]" />
                 </div>
 
