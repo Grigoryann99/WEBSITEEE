@@ -431,28 +431,28 @@ export const countries: Record<string, CountryData> = {
                 city: "Wiltshire",
                 country: "United Kingdom",
                 description: "A prehistoric monument consisting of a ring of standing stones.",
-                image: "https://images.unsplash.com/photo-1533433602148-3a9d2adfd19e?auto=format&fit=crop&q=80&w=800"
+                image: "https://images.unsplash.com/photo-1599833975787-5c143f373c30?auto=format&fit=crop&q=80&w=800"
             },
             {
                 name: "Edinburgh Castle",
                 city: "Edinburgh",
                 country: "United Kingdom",
                 description: "A historic castle which dominates the skyline of the city of Edinburgh from its position on the Castle Rock.",
-                image: "https://images.unsplash.com/photo-1501651582234-ab094db6e690?auto=format&fit=crop&q=80&w=800"
+                image: "https://images.unsplash.com/photo-1558551649-e44c8f992010?auto=format&fit=crop&q=80&w=800"
             },
             {
                 name: "Tower of London",
                 city: "London",
                 country: "United Kingdom",
                 description: "A historic castle on the north bank of the River Thames in central London.",
-                image: "https://images.unsplash.com/photo-1522075591963-fdf4e1526978?auto=format&fit=crop&q=80&w=800"
+                image: "https://images.unsplash.com/photo-1526132596055-eee49e7099c5?auto=format&fit=crop&q=80&w=800"
             },
             {
                 name: "Roman Baths",
                 city: "Bath",
                 country: "United Kingdom",
                 description: "Well-preserved thermae in the city of Bath, Somerset.",
-                image: "https://images.unsplash.com/photo-1588144675549-ee4ea256793f?auto=format&fit=crop&q=80&w=800"
+                image: "https://images.unsplash.com/photo-1702823196219-b1cbf5f14fde?auto=format&fit=crop&q=80&w=800"
             }
         ]
     }
