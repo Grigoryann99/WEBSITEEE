@@ -49,7 +49,7 @@ export default function DestinationsPage() {
                     <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/80 via-[#0a0a0a]/50 to-[#0a0a0a]" />
                 </div>
 
-                <div className="relative z-10 w-full max-w-5xl mx-auto px-6 text-center">
+                <div className="relative z-10 w-full max-w-5xl mx-auto px-6 text-center pb-24 md:pb-32">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -84,10 +84,10 @@ export default function DestinationsPage() {
                 {/* Scroll indicator */}
                 <motion.div
                     initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1, duration: 1 }}
-                    className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-brand-light/40"
+                    className="absolute bottom-24 md:bottom-32 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-brand-light/40"
                 >
-                    <span className="text-[10px] uppercase tracking-widest">Scroll</span>
-                    <div className="w-[1px] h-12 bg-gradient-to-b from-brand-accent/50 to-transparent" />
+                    <span className="text-[10px] uppercase tracking-widest hidden md:block">Scroll</span>
+                    <div className="w-[1px] h-8 md:h-12 bg-gradient-to-b from-brand-accent/50 to-transparent hidden md:block" />
                 </motion.div>
             </section>
 
