@@ -35,41 +35,39 @@ export default function SupportHero() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
+                        className="mb-3"
                     >
-                        <p className="font-inter text-brand-accent tracking-[0.3em] text-xs md:text-sm uppercase mb-6 flex items-center justify-center gap-4">
-                            <span className="w-8 h-[1px] bg-brand-accent block"></span>
-                            Customer Assistance
-                            <span className="w-8 h-[1px] bg-brand-accent block"></span>
+                        <p className="font-inter text-white opacity-80 tracking-[0.25em] text-[16px] uppercase">
+                            VELORA TRAVEL
                         </p>
                     </motion.div>
 
                     <motion.h1
-                        className="font-serif text-[48px] md:text-[72px] lg:text-[88px] leading-[1] tracking-wide text-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)]"
+                        className="font-serif text-[72px] font-medium leading-[1.1] text-white mb-6 drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)]"
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.9, delay: 0.4 }}
                     >
-                        VeloraTravel <br /> Support Center
+                        Support Center
                     </motion.h1>
 
                     <motion.p
-                        className="mt-8 font-inter text-base md:text-xl text-white/90 font-light tracking-wide max-w-3xl mx-auto leading-relaxed"
+                        className="font-inter text-[18px] leading-[1.6] text-white opacity-85 font-light tracking-wide max-w-[620px] mx-auto mb-8"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: 0.7 }}
                     >
-                        Need help exploring destinations or using our website? <br className="hidden md:block" /> Our support team is here to assist you with every step of your journey.
+                        Need help exploring destinations or using our website? Our support team is here to assist you with every step of your journey.
                     </motion.p>
 
                     <motion.div
-                        className="mt-12"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.9 }}
                     >
                         <button 
                             onClick={() => document.getElementById('support-search')?.scrollIntoView({ behavior: 'smooth' })}
-                            className="bg-brand-light text-brand-dark px-12 py-5 rounded-full font-inter font-medium tracking-wider text-sm hover:scale-105 active:scale-95 transition-all duration-300 shadow-xl"
+                            className="bg-brand-light text-brand-dark px-[36px] py-[14px] rounded-[40px] font-inter font-medium tracking-wider text-sm hover:scale-105 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] active:scale-95 transition-all duration-300"
                         >
                             Get Support
                         </button>
