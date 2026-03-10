@@ -163,8 +163,8 @@ export default function DestinationsPage() {
                                         onError={(e) => {
                                             const target = e.currentTarget as HTMLImageElement;
                                             target.srcset = "";
-                                            if (!target.src.includes('fallback-destination.jpg')) {
-                                                target.src = "/images/fallback-destination.jpg";
+                                            if (!target.src.includes('picsum.photos')) {
+                                                target.src = `https://picsum.photos/seed/${dest.name.replace(/\s+/g, '')}/800/1000`;
                                             }
                                         }}
                                     />
@@ -216,8 +216,8 @@ export default function DestinationsPage() {
                                 onError={(e) => {
                                     const target = e.currentTarget as HTMLImageElement;
                                     target.srcset = "";
-                                    if (!target.src.includes('fallback-destination.jpg')) {
-                                        target.src = "/images/fallback-destination.jpg";
+                                    if (!target.src.includes('picsum.photos')) {
+                                        target.src = `https://picsum.photos/seed/kyotojapan/1024/1024`;
                                     }
                                 }}
                             />
@@ -285,8 +285,8 @@ export default function DestinationsPage() {
                                 onError={(e) => {
                                     const target = e.currentTarget as HTMLImageElement;
                                     target.srcset = "";
-                                    if (!target.src.includes('fallback-destination.jpg')) {
-                                        target.src = "/images/fallback-destination.jpg";
+                                    if (!target.src.includes('picsum.photos')) {
+                                        target.src = `https://picsum.photos/seed/${card.id}/800/800`;
                                     }
                                 }}
                             />
