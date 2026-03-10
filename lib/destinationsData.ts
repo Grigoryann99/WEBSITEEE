@@ -42,7 +42,7 @@ export const destinationCategories: CategoryItem[] = [
 
 export const globalDestinations: DestinationItem[] = [
     // Europe
-    { id: 'it', name: 'Italy', description: 'From the ruins of Rome to the sun-drenched Amalfi Coast, a masterpiece of culture and cuisine.', image: 'https://images.unsplash.com/photo-lPOjkff2nsc?auto=format&fit=crop&q=80&w=800' },
+    { id: 'it', name: 'Italy', description: 'From the ruins of Rome to the sun-drenched Amalfi Coast, a masterpiece of culture and cuisine.', image: 'https://plus.unsplash.com/premium_photo-1661963989923-17181d237cef?auto=format&fit=crop&q=80&w=800' },
     { id: 'es', name: 'Spain', description: 'Vibrant cities, stunning beaches, and a passion for life wrapped in striking architecture.', image: 'https://images.unsplash.com/photo-1543783207-ec64e4d95325?auto=format&fit=crop&q=80&w=800' },
     { id: 'fr', name: 'France', description: 'The epitome of romance, offering world-class art in Paris and luxurious retreats in the Riviera.', image: 'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&q=80&w=800' },
     { id: 'gr', name: 'Greece', description: 'Ancient history meeting the deepest blue seas among thousands of idyllic islands.', image: 'https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&q=80&w=800' },
@@ -66,8 +66,8 @@ export const globalDestinations: DestinationItem[] = [
     // Middle East & Asia
     { id: 'tr', name: 'Turkey', description: 'Where East meets West—breathtaking mosques, vibrant bazaars, and the balloons of Cappadocia.', image: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&q=80&w=800' },
     { id: 'ae', name: 'United Arab Emirates', description: 'Unprecedented modern luxury, towering skyscrapers, and opulent desert retreats.', image: 'https://images.unsplash.com/photo-1512453979436-5a50c6e18f8e?auto=format&fit=crop&q=80&w=800' },
-    { id: 'qa', name: 'Qatar', description: 'Futuristic skylines blending flawlessly with deep-rooted Arabian heritage and art.', image: 'https://images.unsplash.com/photo-p_qrO1Ygnzo?auto=format&fit=crop&q=80&w=800' },
-    { id: 'jo', name: 'Jordan', description: 'The incredible rose-red city of Petra and the stark, beautiful landscapes of Wadi Rum.', image: 'https://images.unsplash.com/photo-gPbYqnkKcug?auto=format&fit=crop&q=80&w=800' },
+    { id: 'qa', name: 'Qatar', description: 'Futuristic skylines blending flawlessly with deep-rooted Arabian heritage and art.', image: 'https://plus.unsplash.com/premium_photo-1697730103920-525936ee11ee?auto=format&fit=crop&q=80&w=800' },
+    { id: 'jo', name: 'Jordan', description: 'The incredible rose-red city of Petra and the stark, beautiful landscapes of Wadi Rum.', image: 'https://plus.unsplash.com/premium_photo-1675090708435-0c99a6985da5?auto=format&fit=crop&q=80&w=800' },
     { id: 'th', name: 'Thailand', description: 'Gilded temples, bustling street food markets, and idyllic tropical islands.', image: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&q=80&w=800' },
     { id: 'jp', name: 'Japan', description: 'A seamless blend of ancient traditions, serene zen gardens, and hyper-modern cities.', image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=800' },
     { id: 'kr', name: 'South Korea', description: 'Dynamic Seoul pop culture contrasting with tranquil mountains and historic palaces.', image: 'https://images.unsplash.com/photo-1601621915196-2621bfb0cd6e?auto=format&fit=crop&q=80&w=800' },
@@ -85,19 +85,19 @@ export const globalDestinations: DestinationItem[] = [
     { id: 'nz', name: 'New Zealand', description: 'Unmatched adventure landscapes, soaring fjords, and welcoming native Maori culture.', image: 'https://images.unsplash.com/photo-1469521669194-babbdf9aa981?auto=format&fit=crop&q=80&w=800' },
     { id: 'us', name: 'United States', description: 'Vast national parks, iconic cities like New York, and diverse landscapes coast to coast.', image: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&q=80&w=800' },
     { id: 'ca', name: 'Canada', description: 'Breathtaking Rocky Mountains, cosmopolitan cities, and vast untouched wilderness.', image: 'https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&q=80&w=800' },
-    { id: 'mx', name: 'Mexico', description: 'Ancient Mayan ruins, vibrant culinary scenes, and stunning resorts in the Riviera Maya.', image: 'https://images.unsplash.com/photo-pW3_fLtztMM?auto=format&fit=crop&q=80&w=800' },
+    { id: 'mx', name: 'Mexico', description: 'Ancient Mayan ruins, vibrant culinary scenes, and stunning resorts in the Riviera Maya.', image: 'https://plus.unsplash.com/premium_photo-1694475614507-c494d0de282c?auto=format&fit=crop&q=80&w=800' },
 
     // South America & Africa
     { id: 'br', name: 'Brazil', description: 'The vibrant energy of Rio de Janeiro, the Amazon rainforest, and spectacular beaches.', image: 'https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&q=80&w=800' },
     { id: 'ar', name: 'Argentina', description: 'The tango culture of Buenos Aires, premium wine regions, and the dramatic peaks of Patagonia.', image: 'https://images.unsplash.com/photo-1589714856037-1834ced6ab57?auto=format&fit=crop&q=80&w=800' },
-    { id: 'cl', name: 'Chile', description: 'From the stark beauty of the Atacama Desert to the frozen fjords of the south.', image: 'https://images.unsplash.com/photo-nJuYk0DvMUY?auto=format&fit=crop&q=80&w=800' },
+    { id: 'cl', name: 'Chile', description: 'From the stark beauty of the Atacama Desert to the frozen fjords of the south.', image: 'https://plus.unsplash.com/premium_photo-1675348351326-4241ecc6fb2f?auto=format&fit=crop&q=80&w=800' },
     { id: 'pe', name: 'Peru', description: 'The mystical ruins of Machu Picchu, the Sacred Valley, and world-renowned gastronomy.', image: 'https://images.unsplash.com/photo-1526392060635-9d60198e3112?auto=format&fit=crop&q=80&w=800' },
     { id: 'co', name: 'Colombia', description: 'Colorful colonial cities like Cartagena, rich coffee regions, and revitalized urban centers.', image: 'https://images.unsplash.com/photo-1501472040950-0bcf40a07b4b?auto=format&fit=crop&q=80&w=800' },
     { id: 'cr', name: 'Costa Rica', description: 'The ultimate eco-tourism destination with lush rainforests, volcanoes, and incredible wildlife.', image: 'https://images.unsplash.com/photo-1568402102990-bc541580b59f?auto=format&fit=crop&q=80&w=800' },
-    { id: 'pa', name: 'Panama', description: 'A thriving modern capital, the famous canal, and pristine, undeveloped tropical islands.', image: 'https://images.unsplash.com/photo-Y9dHp405CwM?auto=format&fit=crop&q=80&w=800' },
-    { id: 'za', name: 'South Africa', description: 'Unforgettable Big Five safaris, spectacular coastal drives, and the beauty of Cape Town.', image: 'https://images.unsplash.com/photo-byUDvQhsh4U?auto=format&fit=crop&q=80&w=800' },
-    { id: 'ma', name: 'Morocco', description: 'A sensory journey through colorful souks, the Sahara desert, and intricate riad architecture.', image: 'https://images.unsplash.com/photo-8E_wPA41Q9k?auto=format&fit=crop&q=80&w=800' },
-    { id: 'eg', name: 'Egypt', description: 'The cradle of civilization, featuring the Pyramids of Giza and luxurious Nile river cruises.', image: 'https://images.unsplash.com/photo-1HbOVyVg0AE?auto=format&fit=crop&q=80&w=800' },
+    { id: 'pa', name: 'Panama', description: 'A thriving modern capital, the famous canal, and pristine, undeveloped tropical islands.', image: 'https://plus.unsplash.com/premium_photo-1673638836583-7c16d2e34dae?auto=format&fit=crop&q=80&w=800' },
+    { id: 'za', name: 'South Africa', description: 'Unforgettable Big Five safaris, spectacular coastal drives, and the beauty of Cape Town.', image: 'https://plus.unsplash.com/premium_photo-1697730061063-ad499e343f26?auto=format&fit=crop&q=80&w=800' },
+    { id: 'ma', name: 'Morocco', description: 'A sensory journey through colorful souks, the Sahara desert, and intricate riad architecture.', image: 'https://plus.unsplash.com/premium_photo-1666867183131-c47e362fb206?auto=format&fit=crop&q=80&w=800' },
+    { id: 'eg', name: 'Egypt', description: 'The cradle of civilization, featuring the Pyramids of Giza and luxurious Nile river cruises.', image: 'https://plus.unsplash.com/premium_photo-1694475067252-eb9cd7688d2b?auto=format&fit=crop&q=80&w=800' },
 ];
 
 export const featuredDestination = {
