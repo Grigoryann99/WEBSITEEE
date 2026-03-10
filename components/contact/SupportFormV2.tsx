@@ -128,18 +128,10 @@ export default function SupportForm() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        className="fixed inset-0 z-[100] flex items-center justify-center p-4 backdrop-blur-xl bg-black/40"
+                        className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4"
                     >
-                        <motion.div 
-                            initial={{ scale: 0.9, opacity: 0, y: 20 }}
-                            animate={{ scale: 1, opacity: 1, y: 0 }}
-                            exit={{ scale: 0.9, opacity: 0, y: 20 }}
-                            className="bg-[#121212] border border-white/10 p-8 md:p-12 rounded-[2.5rem] max-w-md w-full shadow-[0_30px_60px_rgba(0,0,0,0.5)] text-center relative overflow-hidden"
-                        >
-                            {/* Decorative Background Blob */}
-                            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-48 bg-brand-accent/20 blur-[100px] -z-10" />
-
-                            <div className="flex justify-center mb-8">
+                        <div className="bg-neutral-900 border border-white/5 rounded-2xl shadow-[0_25px_50px_-12px_rgba(0,0,0,0.5)] p-8 md:p-12 max-w-md w-full text-center animate-popup relative overflow-hidden">
+                            <div className="flex justify-center mb-6">
                                 <div className="w-20 h-20 rounded-full bg-green-500/10 flex items-center justify-center border border-green-500/20">
                                     <Check className="text-green-400" size={40} />
                                 </div>
@@ -147,16 +139,16 @@ export default function SupportForm() {
 
                             <h3 className="font-serif text-3xl text-white mb-4">Message Sent Successfully</h3>
                             <p className="font-inter text-white/50 text-base leading-relaxed mb-10">
-                                Your message has been sent successfully. Our support team will respond to you shortly via the email address provided.
+                                Your message has been sent successfully. Our support team will respond to you shortly.
                             </p>
 
                             <button 
                                 onClick={() => setShowModal(false)}
-                                className="w-full bg-white text-black py-4 rounded-2xl font-inter font-semibold tracking-wide hover:bg-white/90 transition-all duration-300 active:scale-95 shadow-lg"
+                                className="w-full bg-white text-black py-4 rounded-xl font-inter font-semibold tracking-wide hover:bg-neutral-200 transition-all duration-300 active:scale-95 shadow-lg"
                             >
                                 Close
                             </button>
-                        </motion.div>
+                        </div>
                     </motion.div>
                 )}
             </AnimatePresence>
