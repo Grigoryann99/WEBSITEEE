@@ -5,7 +5,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useRef, useEffect } from 'react';
-import { Loader2, CheckCircle2, Send, AlertTriangle } from 'lucide-react';
+import { Loader2, CheckCircle2, Send, AlertTriangle, XCircle, Check } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import SupportToast from './SupportToast';
 
@@ -23,6 +23,7 @@ type FormValues = z.infer<typeof formSchema>;
 
 export default function SupportForm() {
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [showModal, setShowModal] = useState(false);
     const [toast, setToast] = useState<{ message: string; type: 'success' | 'error'; visible: boolean }>({
         message: '',
         type: 'success',
@@ -69,9 +70,10 @@ export default function SupportForm() {
         // Spam protection: Rate limiting
         const now = Date.now();
         if (now - lastSubmitTime < 30000) {
-            setCooldown(Math.ceil((30000 - (now - lastSubmitTime)) / 1000));
+            const remaining = Math.ceil((30000 - (now - lastSubmitTime)) / 1000);
+            setCooldown(remaining);
             setToast({
-                message: `Please wait ${cooldown}s before sending another request.`,
+                message: `Please wait ${remaining}s before sending another request.`,
                 type: 'error',
                 visible: true
             });
@@ -94,12 +96,7 @@ export default function SupportForm() {
                 EMAILJS_CONFIG.PUBLIC_KEY
             );
 
-            setToast({
-                message: "✅ Message sent successfully. Our team will contact you soon.",
-                type: 'success',
-                visible: true
-            });
-            
+            setShowModal(true);
             reset();
             setLastSubmitTime(Date.now());
             setCooldown(30);
@@ -116,13 +113,53 @@ export default function SupportForm() {
     };
 
     return (
-        <section id="support-form" className="py-24 px-4 bg-brand-dark">
+        <section id="support-form" className="py-24 px-4 bg-brand-dark overflow-hidden relative">
             <SupportToast 
                 isVisible={toast.visible} 
                 message={toast.message} 
                 type={toast.type} 
                 onClose={() => setToast(prev => ({ ...prev, visible: false }))} 
             />
+
+            {/* Success Modal */}
+            <AnimatePresence>
+                {showModal && (
+                    <motion.div 
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="fixed inset-0 z-[100] flex items-center justify-center p-4 backdrop-blur-xl bg-black/40"
+                    >
+                        <motion.div 
+                            initial={{ scale: 0.9, opacity: 0, y: 20 }}
+                            animate={{ scale: 1, opacity: 1, y: 0 }}
+                            exit={{ scale: 0.9, opacity: 0, y: 20 }}
+                            className="bg-[#121212] border border-white/10 p-8 md:p-12 rounded-[2.5rem] max-w-md w-full shadow-[0_30px_60px_rgba(0,0,0,0.5)] text-center relative overflow-hidden"
+                        >
+                            {/* Decorative Background Blob */}
+                            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-48 bg-brand-accent/20 blur-[100px] -z-10" />
+
+                            <div className="flex justify-center mb-8">
+                                <div className="w-20 h-20 rounded-full bg-green-500/10 flex items-center justify-center border border-green-500/20">
+                                    <Check className="text-green-400" size={40} />
+                                </div>
+                            </div>
+
+                            <h3 className="font-serif text-3xl text-white mb-4">Message Sent Successfully</h3>
+                            <p className="font-inter text-white/50 text-base leading-relaxed mb-10">
+                                Your message has been sent successfully. Our support team will respond to you shortly via the email address provided.
+                            </p>
+
+                            <button 
+                                onClick={() => setShowModal(false)}
+                                className="w-full bg-white text-black py-4 rounded-2xl font-inter font-semibold tracking-wide hover:bg-white/90 transition-all duration-300 active:scale-95 shadow-lg"
+                            >
+                                Close
+                            </button>
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
 
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16">
                 <div className="lg:w-1/3 flex flex-col justify-center">
