@@ -89,9 +89,9 @@ export const globalDestinations: DestinationItem[] = [
 
     // South America & Africa
     { id: 'br', name: 'Brazil', description: 'The vibrant energy of Rio de Janeiro, the Amazon rainforest, and spectacular beaches.', image: 'https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&q=80&w=800' },
-    { id: 'ar', name: 'Argentina', description: 'The tango culture of Buenos Aires, premium wine regions, and the dramatic peaks of Patagonia.', image: 'https://images.unsplash.com/photo-1589714856037-1834ced6ab57?auto=format&fit=crop&q=80&w=800' },
-    { id: 'cl', name: 'Chile', description: 'From the stark beauty of the Atacama Desert to the frozen fjords of the south.', image: 'https://images.unsplash.com/photo-1473042904451-00171c6d319a?auto=format&fit=crop&q=80&w=800' },
-    { id: 'pe', name: 'Peru', description: 'The mystical ruins of Machu Picchu, the Sacred Valley, and world-renowned gastronomy.', image: 'https://images.unsplash.com/photo-1526392060635-9d60198e3112?auto=format&fit=crop&q=80&w=800' },
+    { id: 'ar', name: 'Argentina', description: 'The tango culture of Buenos Aires, premium wine regions, and the dramatic peaks of Patagonia.', image: 'https://images.unsplash.com/photo-1549646401-49666c5d1796?auto=format&fit=crop&q=80&w=800' },
+    { id: 'cl', name: 'Chile', description: 'From the stark beauty of the Atacama Desert to the frozen fjords of the south.', image: 'https://images.unsplash.com/photo-1520645609462-fc8e7e170068?auto=format&fit=crop&q=80&w=800' },
+    { id: 'pe', name: 'Peru', description: 'The mystical ruins of Machu Picchu, the Sacred Valley, and world-renowned gastronomy.', image: 'https://images.unsplash.com/photo-1587595431973-160d0d94add1?auto=format&fit=crop&q=80&w=800' },
     { id: 'co', name: 'Colombia', description: 'Colorful colonial cities like Cartagena, rich coffee regions, and revitalized urban centers.', image: 'https://images.unsplash.com/photo-1501472040950-0bcf40a07b4b?auto=format&fit=crop&q=80&w=800' },
     { id: 'cr', name: 'Costa Rica', description: 'The ultimate eco-tourism destination with lush rainforests, volcanoes, and incredible wildlife.', image: 'https://images.unsplash.com/photo-1568402102990-bc541580b59f?auto=format&fit=crop&q=80&w=800' },
     { id: 'pa', name: 'Panama', description: 'A thriving modern capital, the famous canal, and pristine, undeveloped tropical islands.', image: 'https://images.unsplash.com/photo-1549144511-f099e773c147?auto=format&fit=crop&q=80&w=800' },
