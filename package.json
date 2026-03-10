@@ -11,6 +11,7 @@
     "news-server": "node server.js"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@hookform/resolvers": "^5.2.2",
     "@studio-freight/lenis": "^1.0.42",
     "axios": "^1.13.6",

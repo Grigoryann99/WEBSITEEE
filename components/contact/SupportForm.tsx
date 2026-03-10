@@ -4,21 +4,40 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useState } from 'react';
-import { Loader2, CheckCircle2, Send } from 'lucide-react';
+import { useState, useRef, useEffect } from 'react';
+import { Loader2, CheckCircle2, Send, AlertTriangle } from 'lucide-react';
+import emailjs from '@emailjs/browser';
+import SupportToast from './SupportToast';
 
 const formSchema = z.object({
     fullName: z.string().min(2, { message: "Name must be at least 2 characters." }),
     email: z.string().email({ message: "Please enter a valid email address." }),
     subject: z.string().min(1, { message: "Please select a topic." }),
-    message: z.string().min(10, { message: "Please write at least 10 characters." }),
+    message: z.string()
+        .min(10, { message: "Please write at least 10 characters." })
+        .max(1000, { message: "Message is too long (max 1000 characters)." }),
+    honeypot: z.string().max(0).optional(), // Hidden field to catch bots
 });
 
 type FormValues = z.infer<typeof formSchema>;
 
 export default function SupportForm() {
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const [isSuccess, setIsSuccess] = useState(false);
+    const [toast, setToast] = useState<{ message: string; type: 'success' | 'error'; visible: boolean }>({
+        message: '',
+        type: 'success',
+        visible: false
+    });
+    const [lastSubmitTime, setLastSubmitTime] = useState<number>(0);
+    const [cooldown, setCooldown] = useState(0);
+    
+    const formRef = useRef<HTMLFormElement>(null);
+
+    const EMAILJS_CONFIG = {
+        SERVICE_ID: 'service_zx6950j',
+        TEMPLATE_ID: 'template_17dlobp',
+        PUBLIC_KEY: 'QASK8vrBzKA4SVLCN'
+    };
 
     const {
         register,
@@ -29,18 +48,82 @@ export default function SupportForm() {
         resolver: zodResolver(formSchema),
     });
 
+    // Cooldown timer logic
+    useEffect(() => {
+        let interval: NodeJS.Timeout;
+        if (cooldown > 0) {
+            interval = setInterval(() => {
+                setCooldown(prev => Math.max(0, prev - 1));
+            }, 1000);
+        }
+        return () => clearInterval(interval);
+    }, [cooldown]);
+
     const onSubmit = async (data: FormValues) => {
+        // Spam protection: Honeypot check
+        if (data.honeypot) {
+            console.warn("Bot detected via honeypot.");
+            return;
+        }
+
+        // Spam protection: Rate limiting
+        const now = Date.now();
+        if (now - lastSubmitTime < 30000) {
+            setCooldown(Math.ceil((30000 - (now - lastSubmitTime)) / 1000));
+            setToast({
+                message: `Please wait ${cooldown}s before sending another request.`,
+                type: 'error',
+                visible: true
+            });
+            return;
+        }
+
         setIsSubmitting(true);
-        await new Promise((resolve) => setTimeout(resolve, 2000));
-        console.log("Support Request submitted:", data);
-        setIsSubmitting(false);
-        setIsSuccess(true);
-        reset();
-        setTimeout(() => setIsSuccess(false), 5000);
+        
+        try {
+            await emailjs.send(
+                EMAILJS_CONFIG.SERVICE_ID,
+                EMAILJS_CONFIG.TEMPLATE_ID,
+                {
+                    from_name: data.fullName,
+                    from_email: data.email,
+                    subject: data.subject,
+                    message: data.message,
+                    reply_to: data.email,
+                },
+                EMAILJS_CONFIG.PUBLIC_KEY
+            );
+
+            setToast({
+                message: "✅ Message sent successfully. Our team will contact you soon.",
+                type: 'success',
+                visible: true
+            });
+            
+            reset();
+            setLastSubmitTime(Date.now());
+            setCooldown(30);
+        } catch (error) {
+            console.error("EmailJS Error:", error);
+            setToast({
+                message: "❌ Failed to send message. Please try again.",
+                type: 'error',
+                visible: true
+            });
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
         <section id="support-form" className="py-24 px-4 bg-brand-dark">
+            <SupportToast 
+                isVisible={toast.visible} 
+                message={toast.message} 
+                type={toast.type} 
+                onClose={() => setToast(prev => ({ ...prev, visible: false }))} 
+            />
+
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16">
                 <div className="lg:w-1/3 flex flex-col justify-center">
                     <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">Send a Request</h2>
@@ -55,34 +138,23 @@ export default function SupportForm() {
                             </div>
                             <div>
                                 <p className="text-xs uppercase tracking-widest text-white/30 font-inter">Direct Email</p>
-                                <p className="text-sm font-medium">support@veloratravel.org</p>
+                                <p className="text-sm font-medium">veloratravel.support@gmail.com</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div className="lg:w-2/3 relative">
-                    <AnimatePresence>
-                        {isSuccess && (
-                            <motion.div
-                                initial={{ opacity: 0, scale: 0.9 }}
-                                animate={{ opacity: 1, scale: 1 }}
-                                exit={{ opacity: 0, scale: 0.9 }}
-                                className="absolute inset-0 flex items-center justify-center z-20"
-                            >
-                                <div className="backdrop-blur-xl bg-green-500/10 border border-green-500/20 text-green-400 p-12 rounded-[2.5rem] flex flex-col items-center gap-4 text-center">
-                                    <CheckCircle2 size={48} className="mb-2" />
-                                    <h3 className="text-2xl font-serif text-white">Request Received</h3>
-                                    <p className="font-inter text-sm max-w-xs text-white/70">Thank you for contacting us. Our specialists will review your request and reach out via email.</p>
-                                </div>
-                            </motion.div>
-                        )}
-                    </AnimatePresence>
-
                     <form 
+                        ref={formRef}
                         onSubmit={handleSubmit(onSubmit)} 
-                        className={`space-y-8 backdrop-blur-md bg-white/[0.02] p-8 md:p-12 rounded-[2.5rem] border border-white/5 shadow-2xl transition-all duration-500 ${isSuccess ? 'opacity-20 blur-sm pointer-events-none' : ''}`}
+                        className="space-y-8 backdrop-blur-md bg-white/[0.02] p-8 md:p-12 rounded-[2.5rem] border border-white/5 shadow-2xl transition-all duration-500 overflow-hidden"
                     >
+                        {/* Honeypot Field (Hidden from users) */}
+                        <div className="hidden" aria-hidden="true">
+                            <input {...register("honeypot")} tabIndex={-1} autoComplete="off" />
+                        </div>
+
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div className="space-y-3">
                                 <label className="block font-inter text-xs tracking-widest uppercase text-white/40 pl-2">Full Name</label>
@@ -90,6 +162,7 @@ export default function SupportForm() {
                                     {...register("fullName")}
                                     className="bg-transparent border-b border-white/10 px-2 py-4 w-full text-white font-inter focus:outline-none focus:border-brand-accent transition-all"
                                     placeholder="Enter your name"
+                                    disabled={isSubmitting}
                                 />
                                 {errors.fullName && <p className="text-red-400 text-[10px] mt-1 pl-2 font-inter">{errors.fullName.message}</p>}
                             </div>
@@ -100,6 +173,7 @@ export default function SupportForm() {
                                     {...register("email")}
                                     className="bg-transparent border-b border-white/10 px-2 py-4 w-full text-white font-inter focus:outline-none focus:border-brand-accent transition-all"
                                     placeholder="your@email.com"
+                                    disabled={isSubmitting}
                                 />
                                 {errors.email && <p className="text-red-400 text-[10px] mt-1 pl-2 font-inter">{errors.email.message}</p>}
                             </div>
@@ -110,6 +184,7 @@ export default function SupportForm() {
                             <select
                                 {...register("subject")}
                                 className="bg-transparent border-b border-white/10 px-2 py-4 w-full text-white font-inter focus:outline-none focus:border-brand-accent transition-all appearance-none cursor-pointer"
+                                disabled={isSubmitting}
                             >
                                 <option value="" className="bg-[#0f0f0f]">Select a topic</option>
                                 <option value="navigation" className="bg-[#0f0f0f]">Website Navigation</option>
@@ -123,31 +198,53 @@ export default function SupportForm() {
                         </div>
 
                         <div className="space-y-3">
-                            <label className="block font-inter text-xs tracking-widest uppercase text-white/40 pl-2">Message</label>
+                            <div className="flex justify-between items-center">
+                                <label className="block font-inter text-xs tracking-widest uppercase text-white/40 pl-2">Message</label>
+                                <span className={`text-[10px] font-inter uppercase tracking-widest ${errors.message ? 'text-red-400' : 'text-white/20'}`}>
+                                    Max 1000 characters
+                                </span>
+                            </div>
                             <textarea
                                 {...register("message")}
                                 rows={4}
                                 className="bg-transparent border-b border-white/10 px-2 py-4 w-full text-white font-inter focus:outline-none focus:border-brand-accent transition-all resize-none"
                                 placeholder="How can we help you today?"
+                                disabled={isSubmitting}
                             />
                             {errors.message && <p className="text-red-400 text-[10px] mt-1 pl-2 font-inter">{errors.message.message}</p>}
                         </div>
 
-                        <div className="pt-4">
+                        <div className="pt-4 flex flex-col gap-4">
                             <button
                                 type="submit"
-                                disabled={isSubmitting}
-                                className="w-full bg-brand-light text-brand-dark py-5 rounded-xl font-inter font-semibold tracking-wider text-sm hover:scale-[1.02] active:scale-95 transition-all duration-300 flex items-center justify-center gap-3 disabled:opacity-50"
+                                disabled={isSubmitting || cooldown > 0}
+                                className="relative w-full bg-brand-light text-brand-dark py-5 rounded-xl font-inter font-semibold tracking-wider text-sm hover:scale-[1.02] active:scale-95 transition-all duration-300 flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed group overflow-hidden"
                             >
+                                <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 pointer-events-none" />
+                                
                                 {isSubmitting ? (
-                                    <Loader2 className="animate-spin" size={20} />
+                                    <>
+                                        <Loader2 className="animate-spin" size={20} />
+                                        <span>Sending...</span>
+                                    </>
                                 ) : (
                                     <>
-                                        <span>Send Support Request</span>
+                                        <span>{cooldown > 0 ? `Please wait ${cooldown}s` : 'Send Support Request'}</span>
                                         <Send size={18} />
                                     </>
                                 )}
                             </button>
+
+                            {cooldown > 0 && (
+                                <motion.p 
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    className="text-amber-400/60 text-[10px] font-inter text-center uppercase tracking-widest flex items-center justify-center gap-2"
+                                >
+                                    <AlertTriangle size={12} />
+                                    Rate limit active to prevent spam
+                                </motion.p>
+                            )}
                         </div>
                     </form>
                 </div>

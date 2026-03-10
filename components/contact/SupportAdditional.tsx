@@ -8,7 +8,7 @@ const options = [
         icon: Mail,
         title: 'Email Support',
         desc: 'Direct help via email',
-        value: 'support@veloratravel.org'
+        value: 'veloratravel.support@gmail.com'
     },
     {
         icon: FileText,
