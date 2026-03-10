@@ -152,22 +152,24 @@ export default function DestinationsPage() {
                                     href={`/countries/${dest.name.toLowerCase().replace(/ /g, '_')}`}
                                     className="group block relative aspect-[4/5] rounded-3xl overflow-hidden bg-[#141414] border border-white/5"
                                 >
-                                    <Image
-                                        src={dest.image}
-                                        alt={dest.name}
-                                        fill
-                                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                                        priority={i < 4}
-                                        loading={i < 4 ? undefined : "lazy"}
-                                        className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
-                                        onError={(e) => {
-                                            const target = e.currentTarget as HTMLImageElement;
-                                            target.srcset = "";
-                                            if (!target.src.includes('picsum.photos')) {
-                                                target.src = `https://picsum.photos/seed/${dest.name.replace(/\s+/g, '')}/800/1000`;
-                                            }
-                                        }}
-                                    />
+                                    <div className="relative w-full h-full overflow-hidden">
+                                        <Image
+                                            src={dest.image}
+                                            alt={dest.name}
+                                            fill
+                                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                                            priority={i < 4}
+                                            loading={i < 4 ? undefined : "lazy"}
+                                            className="object-cover transition-transform duration-500 group-hover:scale-[1.05]"
+                                            onError={(e) => {
+                                                const target = e.currentTarget as HTMLImageElement;
+                                                target.srcset = "";
+                                                if (!target.src.includes('picsum.photos')) {
+                                                    target.src = `https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&q=80&w=800`; // Global travel fallback
+                                                }
+                                            }}
+                                        />
+                                    </div>
                                     <div className="absolute inset-0 bg-gradient-to-t from-[rgba(0,0,0,0.4)] via-black/10 to-transparent transition-opacity group-hover:opacity-80" />
 
                                     <div className="absolute inset-0 p-8 flex flex-col justify-end">
