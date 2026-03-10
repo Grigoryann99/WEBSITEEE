@@ -22,7 +22,7 @@ export default function Navigation() {
         { name: 'Destinations', href: '/destinations', id: 'destinations' },
         { name: 'Blog', href: '/blog', id: 'blog' },
         { name: 'About', href: '/about', id: 'about' },
-        { name: 'Contact Us', href: '/contact', id: 'contact' },
+        { name: 'Support', href: '/contact', id: 'contact' },
     ];
 
     // Initialize active state based on route
