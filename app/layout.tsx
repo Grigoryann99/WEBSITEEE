@@ -4,6 +4,7 @@ import "./globals.css";
 import SmoothScroll from "@/components/layout/SmoothScroll";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
+import CookieBanner from "@/components/layout/CookieBanner";
 
 const cormorant = Cormorant({
   subsets: ["latin"],
@@ -52,6 +53,7 @@ export default function RootLayout({
           </main>
           <Footer />
         </SmoothScroll>
+        <CookieBanner />
       </body>
     </html>
   );

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Footer() {
@@ -27,28 +28,57 @@ export default function Footer() {
                     <div>
                         <h4 className="font-sans uppercase tracking-widest text-xs text-brand-light mb-6">Explore</h4>
                         <ul className="space-y-4 font-sans font-light text-brand-light/60 text-sm">
-                            <li><span className="opacity-80 cursor-default">Our Story</span></li>
-                            <li><span className="opacity-80 cursor-default">Destinations</span></li>
-                            <li><span className="opacity-80 cursor-default">Journal</span></li>
-                            <li><span className="opacity-80 cursor-default">Contact</span></li>
+                            <li>
+                                <Link href="/about" className="hover:text-brand-accent transition-colors duration-300">
+                                    Our Story
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/destinations" className="hover:text-brand-accent transition-colors duration-300">
+                                    Destinations
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/blog" className="hover:text-brand-accent transition-colors duration-300">
+                                    Travel Journal
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/contact" className="hover:text-brand-accent transition-colors duration-300">
+                                    Contact
+                                </Link>
+                            </li>
                         </ul>
                     </div>
 
                     <div>
-                        <h4 className="font-sans uppercase tracking-widest text-xs text-brand-light mb-6">Connect</h4>
+                        <h4 className="font-sans uppercase tracking-widest text-xs text-brand-light mb-6">Legal</h4>
                         <ul className="space-y-4 font-sans font-light text-brand-light/60 text-sm">
-                            <li><span className="opacity-80 cursor-default">Instagram</span></li>
-                            <li><span className="opacity-80 cursor-default">Pinterest</span></li>
-                            <li><span className="opacity-80 cursor-default">LinkedIn</span></li>
+                            <li>
+                                <Link href="/privacy-policy" className="hover:text-brand-accent transition-colors duration-300">
+                                    Privacy Policy
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/terms" className="hover:text-brand-accent transition-colors duration-300">
+                                    Terms of Service
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/cookies" className="hover:text-brand-accent transition-colors duration-300">
+                                    Cookie Policy
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                 </div>
 
-                <div className="pt-8 flex flex-col md:flex-row justify-between items-center text-xs font-sans text-brand-light/40 tracking-wider">
+                <div className="pt-8 flex flex-col md:flex-row justify-between items-center text-xs font-sans text-brand-light/40 tracking-wider border-t border-white/5">
                     <p>&copy; {new Date().getFullYear()} VeloraTravel. All rights reserved.</p>
                     <div className="flex space-x-6 mt-4 md:mt-0">
-                        <span className="opacity-60 cursor-default">Privacy Policy</span>
-                        <span className="opacity-60 cursor-default">Terms of Service</span>
+                        <Link href="/privacy-policy" className="hover:text-brand-accent transition-colors duration-300">Privacy Policy</Link>
+                        <Link href="/terms" className="hover:text-brand-accent transition-colors duration-300">Terms of Service</Link>
+                        <Link href="/cookies" className="hover:text-brand-accent transition-colors duration-300">Cookies</Link>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Priority pages for indexing
+Sitemap: https://veloratravel.org/sitemap.xml

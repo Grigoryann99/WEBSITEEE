@@ -20,6 +20,8 @@ export default function Navigation() {
         { name: 'Home', href: '/', id: 'home' },
         { name: 'Global News', href: '/news', id: 'news' },
         { name: 'Destinations', href: '/destinations', id: 'destinations' },
+        { name: 'Blog', href: '/blog', id: 'blog' },
+        { name: 'About', href: '/about', id: 'about' },
         { name: 'Contact Us', href: '/contact', id: 'contact' },
     ];
 
