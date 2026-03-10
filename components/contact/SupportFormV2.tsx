@@ -60,6 +60,20 @@ export default function SupportForm() {
         return () => clearInterval(interval);
     }, [cooldown]);
 
+    // Scroll Lock Logic
+    useEffect(() => {
+        if (showModal) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Cleanup function for unmount
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [showModal]);
+
     const onSubmit = async (data: FormValues) => {
         // Spam protection: Honeypot check
         if (data.honeypot) {
@@ -128,9 +142,9 @@ export default function SupportForm() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4"
+                        className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 pointer-events-auto"
                     >
-                        <div className="bg-neutral-900 border border-white/5 rounded-2xl shadow-[0_25px_50px_-12px_rgba(0,0,0,0.5)] p-8 md:p-12 max-w-md w-full text-center animate-popup relative overflow-hidden">
+                        <div className="bg-neutral-900 border border-white/5 rounded-2xl shadow-2xl p-8 md:p-12 max-w-md w-full text-center animate-popup relative overflow-hidden">
                             <div className="flex justify-center mb-6">
                                 <div className="w-20 h-20 rounded-full bg-green-500/10 flex items-center justify-center border border-green-500/20">
                                     <Check className="text-green-400" size={40} />
