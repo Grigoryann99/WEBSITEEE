@@ -37,8 +37,8 @@ export default function DestinationsPage() {
         <main className="min-h-screen bg-[#0a0a0a] text-brand-light font-sans selection:bg-brand-accent/30 overflow-hidden">
 
             {/* 1. HERO SECTION */}
-            <section className="relative h-screen min-h-[600px] flex items-center justify-center pt-20 overflow-hidden">
-                <div className="absolute inset-0 z-0">
+            <section className="relative h-screen min-h-[600px] flex items-center justify-center pt-20">
+                <div className="absolute inset-0 z-0 overflow-hidden">
                     <Image
                         src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2000&auto=format&fit=crop"
                         alt="Global Travel Destinations"
@@ -92,26 +92,24 @@ export default function DestinationsPage() {
             </section>
 
             {/* 3. DESTINATION CATEGORIES */}
-            <div className="relative z-20 bg-[#0a0a0a] overflow-hidden">
-                <section className="relative -mt-16 max-w-7xl mx-auto px-6 pb-16 pt-8">
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-                        {destinationCategories.map((cat, i) => (
-                            <motion.div
-                                key={cat.id}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: i * 0.1, duration: 0.6 }}
-                                className="relative z-10 bg-[#141414] backdrop-blur-xl border border-white/5 rounded-2xl p-6 text-center hover:border-brand-accent/30 hover:-translate-y-1 transition-all group cursor-pointer shadow-xl shadow-black/40"
-                            >
-                                <div className="text-3xl mb-4 group-hover:scale-110 transition-transform">{cat.icon}</div>
-                                <h3 className="font-serif text-lg text-brand-light mb-2">{cat.title}</h3>
-                                <p className="text-[10px] text-brand-light/40 uppercase tracking-wider group-hover:text-brand-accent transition-colors">Explore →</p>
-                            </motion.div>
-                        ))}
-                    </div>
-                </section>
-            </div>
+            <section className="relative z-20 -mt-24 max-w-7xl mx-auto px-6 mb-32">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                    {destinationCategories.map((cat, i) => (
+                        <motion.div
+                            key={cat.id}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: i * 0.1, duration: 0.6 }}
+                            className="relative z-10 bg-[#141414]/95 backdrop-blur-xl border border-white/5 rounded-2xl p-6 text-center hover:border-brand-accent/30 hover:-translate-y-1 transition-all group cursor-pointer shadow-xl shadow-black/40"
+                        >
+                            <div className="text-3xl mb-4 group-hover:scale-110 transition-transform">{cat.icon}</div>
+                            <h3 className="font-serif text-lg text-brand-light mb-2">{cat.title}</h3>
+                            <p className="text-[10px] text-brand-light/40 uppercase tracking-wider group-hover:text-brand-accent transition-colors">Explore →</p>
+                        </motion.div>
+                    ))}
+                </div>
+            </section>
 
             {/* 2. GLOBAL DESTINATIONS GRID (50 Items) */}
             <section className="max-w-[1600px] mx-auto px-6 mb-32">
