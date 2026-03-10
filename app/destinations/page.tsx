@@ -156,9 +156,19 @@ export default function DestinationsPage() {
                                         src={dest.image}
                                         alt={dest.name}
                                         fill
-                                        className="object-cover transition-transform duration-1000 group-hover:scale-110"
+                                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                                        priority={i < 4}
+                                        loading={i < 4 ? undefined : "lazy"}
+                                        className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                                        onError={(e) => {
+                                            const target = e.currentTarget as HTMLImageElement;
+                                            target.srcset = "";
+                                            if (!target.src.includes('fallback-destination.jpg')) {
+                                                target.src = "/images/fallback-destination.jpg";
+                                            }
+                                        }}
                                     />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent transition-opacity group-hover:opacity-80" />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-[rgba(0,0,0,0.4)] via-black/10 to-transparent transition-opacity group-hover:opacity-80" />
 
                                     <div className="absolute inset-0 p-8 flex flex-col justify-end">
                                         <div className="translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-out">
@@ -200,7 +210,16 @@ export default function DestinationsPage() {
                                 src={featuredDestination.image}
                                 alt={featuredDestination.name}
                                 fill
-                                className="object-cover"
+                                sizes="(max-width: 1024px) 100vw, 50vw"
+                                loading="lazy"
+                                className="object-cover transition-transform duration-300 hover:scale-[1.03]"
+                                onError={(e) => {
+                                    const target = e.currentTarget as HTMLImageElement;
+                                    target.srcset = "";
+                                    if (!target.src.includes('fallback-destination.jpg')) {
+                                        target.src = "/images/fallback-destination.jpg";
+                                    }
+                                }}
                             />
                             <div className="absolute inset-0 border border-white/10 rounded-3xl z-10 pointer-events-none" />
                         </motion.div>
@@ -256,8 +275,22 @@ export default function DestinationsPage() {
                             transition={{ delay: i * 0.1 }}
                             className="group relative aspect-video sm:aspect-square rounded-2xl overflow-hidden cursor-pointer"
                         >
-                            <Image src={card.image} alt={card.title} fill className="object-cover group-hover:scale-110 transition-transform duration-700" />
-                            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500" />
+                            <Image
+                                src={card.image}
+                                alt={card.title}
+                                fill
+                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                loading="lazy"
+                                className="object-cover group-hover:scale-[1.03] transition-transform duration-300"
+                                onError={(e) => {
+                                    const target = e.currentTarget as HTMLImageElement;
+                                    target.srcset = "";
+                                    if (!target.src.includes('fallback-destination.jpg')) {
+                                        target.src = "/images/fallback-destination.jpg";
+                                    }
+                                }}
+                            />
+                            <div className="absolute inset-0 bg-[rgba(0,0,0,0.35)] group-hover:bg-black/20 transition-colors duration-300" />
                             <div className="absolute inset-0 p-6 flex items-end">
                                 <div>
                                     <h3 className="font-serif text-2xl text-white drop-shadow-lg leading-snug">{card.title}</h3>
