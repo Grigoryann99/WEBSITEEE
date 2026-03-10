@@ -164,8 +164,9 @@ export default function DestinationsPage() {
                                             onError={(e) => {
                                                 const target = e.currentTarget as HTMLImageElement;
                                                 target.srcset = "";
+                                                // Use a unique picsum seed per destination so every card has a different fallback
                                                 if (!target.src.includes('picsum.photos')) {
-                                                    target.src = `https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&q=80&w=800`; // Global travel fallback
+                                                    target.src = `https://picsum.photos/seed/${dest.id}/800/1000`;
                                                 }
                                             }}
                                         />
