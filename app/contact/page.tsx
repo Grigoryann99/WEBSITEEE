@@ -1,10 +1,10 @@
 import { Metadata } from 'next';
-import SupportHero from '@/components/contact/SupportHero';
-import SupportSearch from '@/components/contact/SupportSearch';
-import SupportCategories from '@/components/contact/SupportCategories';
-import FAQSection from '@/components/contact/FAQSection';
-import SupportForm from '@/components/contact/SupportForm';
-import SupportAdditional from '@/components/contact/SupportAdditional';
+import SupportHero from '@/components/contact/SupportHeroV2';
+import SupportSearch from '@/components/contact/SupportSearchV2';
+import SupportCategories from '@/components/contact/SupportCategoriesV2';
+import FAQSection from '@/components/contact/FAQSectionV2';
+import SupportForm from '@/components/contact/SupportFormV2';
+import SupportAdditional from '@/components/contact/SupportAdditionalV2';
 
 export const metadata: Metadata = {
     title: 'Support Center | VeloraTravel',

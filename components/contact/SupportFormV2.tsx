@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useRef, useEffect } from 'react';
 import { Loader2, CheckCircle2, Send, AlertTriangle, XCircle, Check } from 'lucide-react';
 import emailjs from '@emailjs/browser';
-import SupportToast from './SupportToast';
+import SupportToast from './SupportToastV2';
 
 const formSchema = z.object({
     fullName: z.string().min(2, { message: "Name must be at least 2 characters." }),
