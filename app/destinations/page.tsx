@@ -16,18 +16,41 @@ import {
 
 export default function DestinationsPage() {
     const [searchQuery, setSearchQuery] = useState('');
+    const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
     const [activeFaq, setActiveFaq] = useState<string | null>(null);
 
-    // Filter destinations based on search
+    // Filter destinations based on search and category
     const filteredDestinations = useMemo(() => {
-        if (!searchQuery) return globalDestinations;
-        const q = searchQuery.toLowerCase();
-        return globalDestinations.filter(d =>
-            d.name.toLowerCase().includes(q) ||
-            (d.country && d.country.toLowerCase().includes(q)) ||
-            d.description.toLowerCase().includes(q)
-        );
-    }, [searchQuery]);
+        let results = globalDestinations;
+        
+        if (selectedCategory) {
+            results = results.filter(d => d.category === selectedCategory);
+        }
+        
+        if (searchQuery) {
+            const q = searchQuery.toLowerCase();
+            results = results.filter(d =>
+                d.name.toLowerCase().includes(q) ||
+                (d.country && d.country.toLowerCase().includes(q)) ||
+                d.description.toLowerCase().includes(q)
+            );
+        }
+        
+        return results;
+    }, [searchQuery, selectedCategory]);
+
+    const toggleCategory = (id: string) => {
+        if (selectedCategory === id) {
+            setSelectedCategory(null);
+        } else {
+            setSelectedCategory(id);
+            // Optional: Scroll to results on mobile
+            if (window.innerWidth < 768) {
+                const grid = document.getElementById('directory-grid');
+                if (grid) grid.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    };
 
     const toggleFaq = (id: string) => {
         setActiveFaq(activeFaq === id ? null : id);
@@ -101,18 +124,35 @@ export default function DestinationsPage() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: i * 0.1, duration: 0.6 }}
-                            className="relative z-10 bg-[#141414]/95 backdrop-blur-xl border border-white/5 rounded-2xl p-6 text-center hover:border-brand-accent/30 hover:-translate-y-1 transition-all group cursor-pointer shadow-xl shadow-black/40"
+                            onClick={() => toggleCategory(cat.id)}
+                            className={`relative z-10 bg-[#141414]/95 backdrop-blur-xl border rounded-2xl p-6 text-center hover:-translate-y-1 transition-all group cursor-pointer shadow-xl shadow-black/40 ${
+                                selectedCategory === cat.id 
+                                ? 'border-brand-accent bg-[#1a1a1a] shadow-brand-accent/10' 
+                                : 'border-white/5 hover:border-brand-accent/30'
+                            }`}
                         >
-                            <div className="text-3xl mb-4 group-hover:scale-110 transition-transform">{cat.icon}</div>
-                            <h3 className="font-serif text-lg text-brand-light mb-2">{cat.title}</h3>
-                            <p className="text-[10px] text-brand-light/40 uppercase tracking-wider group-hover:text-brand-accent transition-colors">Explore →</p>
+                            <div className={`text-3xl mb-4 transition-transform duration-300 ${
+                                selectedCategory === cat.id ? 'scale-110' : 'group-hover:scale-110'
+                            }`}>
+                                {cat.icon}
+                            </div>
+                            <h3 className={`font-serif text-lg mb-2 transition-colors ${
+                                selectedCategory === cat.id ? 'text-brand-accent' : 'text-brand-light'
+                            }`}>
+                                {cat.title}
+                            </h3>
+                            <p className={`text-[10px] uppercase tracking-wider transition-colors ${
+                                selectedCategory === cat.id ? 'text-brand-accent' : 'text-brand-light/40 group-hover:text-brand-accent'
+                            }`}>
+                                {selectedCategory === cat.id ? 'Active Filter' : 'Explore →'}
+                            </p>
                         </motion.div>
                     ))}
                 </div>
             </section>
 
             {/* 2. GLOBAL DESTINATIONS GRID (50 Items) */}
-            <section className="max-w-[1600px] mx-auto px-6 mb-32">
+            <section id="directory-grid" className="max-w-[1600px] mx-auto px-6 mb-32">
                 <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
                     <div>
                         <h2 className="font-serif text-4xl md:text-5xl text-brand-light mb-4">
