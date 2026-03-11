@@ -26,8 +26,12 @@ export default function Navigation() {
 
     // Initialize active state based on route
     useEffect(() => {
-        if (pathname === '/destinations') {
+        if (pathname?.startsWith('/destinations')) {
             setActiveId('destinations');
+        } else if (pathname?.startsWith('/blog')) {
+            setActiveId('blog');
+        } else if (pathname === '/about') {
+            setActiveId('about');
         } else if (pathname === '/support') {
             setActiveId('contact');
         } else if (pathname === '/') {
