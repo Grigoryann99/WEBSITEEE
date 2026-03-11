@@ -43,6 +43,29 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "VeloraTravel",
+              "url": "https://veloratravel.org",
+              "logo": "https://veloratravel.org/logo.png",
+              "sameAs": [
+                "https://www.instagram.com/veloratravel",
+                "https://www.facebook.com/veloratravel"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer service",
+                "email": "support@veloratravel.org"
+              }
+            })
+          }}
+        />
+      </head>
       <body
         className={`${cormorant.variable} ${inter.variable} ${montserrat.variable} ${roboto.variable} antialiased bg-brand-dark text-brand-light font-sans`}
       >

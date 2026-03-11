@@ -119,6 +119,37 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
     return (
         <main className="min-h-screen bg-[#0a0a0a] text-brand-light">
+            {/* Schema.org Article JSON-LD */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Article",
+                        "headline": post.title,
+                        "description": post.description,
+                        "image": post.image,
+                        "datePublished": post.date,
+                        "author": {
+                            "@type": "Organization",
+                            "name": "VeloraTravel Editorial Team"
+                        },
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "VeloraTravel",
+                            "logo": {
+                                "@type": "ImageObject",
+                                "url": "https://veloratravel.org/logo.png"
+                            }
+                        },
+                        "mainEntityOfPage": {
+                            "@type": "WebPage",
+                            "@id": `https://veloratravel.org/blog/${post.slug}`
+                        }
+                    })
+                }}
+            />
+
             {/* Hero image */}
             <div className="relative h-[55vh] md:h-[65vh] overflow-hidden">
                 <Image
