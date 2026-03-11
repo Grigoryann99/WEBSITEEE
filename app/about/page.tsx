@@ -92,7 +92,7 @@ export default function AboutPage() {
                                 VeloraTravel offers a curated library of destination guides, travel tips, and editorial articles across the world's most sought-after locations. Our <strong className="text-brand-light font-normal">Destinations</strong> section provides deep-dive guides for major travel regions, while our <strong className="text-brand-light font-normal">Country Pages</strong> offer structured information about visa requirements, best seasons, and must-see attractions for each destination.
                             </p>
                             <p>
-                                Our <strong className="text-brand-light font-normal">Global News</strong> section keeps you informed about international events and travel-relevant developments around the world. Our <strong className="text-brand-light font-normal">Blog</strong> publishes original articles written by our editorial team — practical guides, top lists, and destination-specific deep dives designed to genuinely help you plan better trips.
+                                Our <strong className="text-brand-light font-normal">Blog</strong> publishes original articles written by our editorial team — practical guides, top lists, and destination-specific deep dives designed to genuinely help you plan better trips.
                             </p>
                             <p>
                                 We are continuously expanding our coverage. If there is a destination you would like us to feature, or if you have feedback about our existing content, we would love to hear from you via our <a href="/support" className="text-brand-accent hover:text-brand-light transition-colors underline underline-offset-4">Support page</a>.

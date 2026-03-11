@@ -45,7 +45,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link href="/support" className="hover:text-brand-accent transition-colors duration-300">
-                                    Contact
+                                    Support
                                 </Link>
                             </li>
                         </ul>

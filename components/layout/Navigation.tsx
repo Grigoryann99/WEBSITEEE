@@ -18,7 +18,6 @@ export default function Navigation() {
     // Map pathname/sections to internal IDs
     const navLinks = [
         { name: 'Home', href: '/', id: 'home' },
-        { name: 'Global News', href: '/news', id: 'news' },
         { name: 'Destinations', href: '/destinations', id: 'destinations' },
         { name: 'Blog', href: '/blog', id: 'blog' },
         { name: 'About', href: '/about', id: 'about' },
@@ -27,9 +26,7 @@ export default function Navigation() {
 
     // Initialize active state based on route
     useEffect(() => {
-        if (pathname === '/news') {
-            setActiveId('news');
-        } else if (pathname === '/destinations') {
+        if (pathname === '/destinations') {
             setActiveId('destinations');
         } else if (pathname === '/support') {
             setActiveId('contact');

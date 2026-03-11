@@ -100,7 +100,7 @@ To exercise any of these rights, please contact us at the address below. We will
                             content: `We may update this Privacy Policy from time to time. The date at the top of this page reflects the most recent revision. Continued use of the Site after changes are posted constitutes your acceptance of the updated policy.`
                         },
                         {
-                            title: '10. Contact Us',
+                            title: '10. Support',
                             content: `If you have questions about this Privacy Policy or wish to exercise your data rights, please contact us through our Support page at /support.
 
 We will respond to all privacy-related inquiries within 30 days.`

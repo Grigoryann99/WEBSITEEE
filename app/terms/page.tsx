@@ -23,7 +23,7 @@ export default function TermsPage() {
                     {[
                         {
                             title: '1. Use of the Site',
-                            content: `VeloraTravel provides travel information, editorial content, destination guides, and news aggregation for informational purposes only. The Site is intended for personal, non-commercial use.
+                            content: `VeloraTravel provides travel information, editorial content, destination guides for informational purposes only. The Site is intended for personal, non-commercial use.
 
 You agree not to:
 • Use the Site for any unlawful purpose
@@ -50,9 +50,7 @@ Nothing on this Site constitutes professional travel, legal, medical, or financi
                         },
                         {
                             title: '4. External Links',
-                            content: `The Site may contain links to third-party websites. These links are provided for your convenience and do not constitute an endorsement of those sites. VeloraTravel is not responsible for the content, privacy practices, or availability of external sites.
-
-The Global News section aggregates content from third-party RSS feeds. VeloraTravel is not responsible for the accuracy or content of third-party articles.`
+                            content: `The Site may contain links to third-party websites. These links are provided for your convenience and do not constitute an endorsement of those sites. VeloraTravel is not responsible for the content, privacy practices, or availability of external sites.`
                         },
                         {
                             title: '5. Advertising',
@@ -85,7 +83,7 @@ This includes, without limitation, damages arising from reliance on travel infor
                             content: `These Terms are governed by and construed in accordance with applicable law. Any disputes arising from these Terms or your use of the Site shall be subject to the exclusive jurisdiction of the relevant courts.`
                         },
                         {
-                            title: '11. Contact',
+                            title: '11. Support',
                             content: `If you have questions about these Terms, please contact us via our Support page at /support.`
                         }
                     ].map((section) => (
