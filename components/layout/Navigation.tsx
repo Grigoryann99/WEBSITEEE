@@ -22,7 +22,7 @@ export default function Navigation() {
         { name: 'Destinations', href: '/destinations', id: 'destinations' },
         { name: 'Blog', href: '/blog', id: 'blog' },
         { name: 'About', href: '/about', id: 'about' },
-        { name: 'Support', href: '/contact', id: 'contact' },
+        { name: 'Support', href: '/support', id: 'contact' },
     ];
 
     // Initialize active state based on route
@@ -31,7 +31,7 @@ export default function Navigation() {
             setActiveId('news');
         } else if (pathname === '/destinations') {
             setActiveId('destinations');
-        } else if (pathname === '/contact') {
+        } else if (pathname === '/support') {
             setActiveId('contact');
         } else if (pathname === '/') {
             // Default to home on homepage if no specific section is tracked yet
@@ -145,7 +145,7 @@ export default function Navigation() {
                             if (link.id === 'destinations') {
                                 isActive = pathname?.startsWith('/destinations') || false;
                             } else if (link.id === 'contact') {
-                                isActive = pathname === '/contact' || (pathname === '/' && activeId === 'contact');
+                                isActive = pathname === '/support' || (pathname === '/' && activeId === 'contact');
                             } else {
                                 isActive = activeId === link.id;
                             }

@@ -82,7 +82,7 @@ Ad Personalization: Manage your Google ad preferences at: https://www.google.com
                         },
                         {
                             title: '7. Contact Us',
-                            content: `If you have questions about our use of cookies, please contact us through our Contact page at /contact.`,
+                            content: `If you have questions about our use of cookies, please contact us through our Support page at /support.`,
                         },
                     ].map((section) => (
                         <div key={section.title}>

@@ -392,7 +392,7 @@ export default function DestinationsPage() {
                         Get in touch with our curatorial team to begin crafting your next extraordinary escape.
                     </p>
                     <Link
-                        href="/contact"
+                        href="/support"
                         className="inline-flex items-center justify-center gap-3 bg-brand-accent text-[#0a0a0a] px-10 py-5 rounded-full text-sm tracking-widest uppercase font-semibold hover:bg-white hover:scale-105 transition-all shadow-xl shadow-brand-accent/20"
                     >
                         Explore the World <ArrowRight className="w-4 h-4" />

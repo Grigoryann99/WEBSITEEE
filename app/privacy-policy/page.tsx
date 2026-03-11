@@ -101,7 +101,7 @@ To exercise any of these rights, please contact us at the address below. We will
                         },
                         {
                             title: '10. Contact Us',
-                            content: `If you have questions about this Privacy Policy or wish to exercise your data rights, please contact us through our Contact page at /contact.
+                            content: `If you have questions about this Privacy Policy or wish to exercise your data rights, please contact us through our Support page at /support.
 
 We will respond to all privacy-related inquiries within 30 days.`
                         }

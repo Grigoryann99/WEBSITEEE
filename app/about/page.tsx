@@ -95,7 +95,7 @@ export default function AboutPage() {
                                 Our <strong className="text-brand-light font-normal">Global News</strong> section keeps you informed about international events and travel-relevant developments around the world. Our <strong className="text-brand-light font-normal">Blog</strong> publishes original articles written by our editorial team — practical guides, top lists, and destination-specific deep dives designed to genuinely help you plan better trips.
                             </p>
                             <p>
-                                We are continuously expanding our coverage. If there is a destination you would like us to feature, or if you have feedback about our existing content, we would love to hear from you via our <a href="/contact" className="text-brand-accent hover:text-brand-light transition-colors underline underline-offset-4">Contact page</a>.
+                                We are continuously expanding our coverage. If there is a destination you would like us to feature, or if you have feedback about our existing content, we would love to hear from you via our <a href="/support" className="text-brand-accent hover:text-brand-light transition-colors underline underline-offset-4">Support page</a>.
                             </p>
                         </div>
                     </div>
@@ -107,7 +107,7 @@ export default function AboutPage() {
                             Our team is happy to answer your travel questions and help you plan your next journey.
                         </p>
                         <a
-                            href="/contact"
+                            href="/support"
                             className="inline-block font-sans text-xs tracking-widest uppercase border border-brand-accent text-brand-accent px-8 py-4 rounded-full hover:bg-brand-accent hover:text-brand-dark transition-all duration-300"
                         >
                             Get in Touch

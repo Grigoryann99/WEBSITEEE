@@ -86,7 +86,7 @@ This includes, without limitation, damages arising from reliance on travel infor
                         },
                         {
                             title: '11. Contact',
-                            content: `If you have questions about these Terms, please contact us via our Contact page at /contact.`
+                            content: `If you have questions about these Terms, please contact us via our Support page at /support.`
                         }
                     ].map((section) => (
                         <div key={section.title}>

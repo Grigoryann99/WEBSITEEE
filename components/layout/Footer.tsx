@@ -44,7 +44,7 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/contact" className="hover:text-brand-accent transition-colors duration-300">
+                                <Link href="/support" className="hover:text-brand-accent transition-colors duration-300">
                                     Contact
                                 </Link>
                             </li>
