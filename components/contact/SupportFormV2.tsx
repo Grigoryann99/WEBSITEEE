@@ -135,37 +135,6 @@ export default function SupportForm() {
                 onClose={() => setToast(prev => ({ ...prev, visible: false }))} 
             />
 
-            {/* Success Modal */}
-            <AnimatePresence>
-                {showModal && (
-                    <motion.div 
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4 pointer-events-auto"
-                    >
-                        <div className="bg-neutral-900 rounded-2xl shadow-2xl p-8 max-w-md w-full text-center animate-popup relative overflow-hidden">
-                            <div className="flex justify-center mb-6">
-                                <div className="w-20 h-20 rounded-full bg-green-500/10 flex items-center justify-center border border-green-500/20">
-                                    <Check className="text-green-400" size={40} />
-                                </div>
-                            </div>
-
-                            <h3 className="font-serif text-3xl text-white mb-4">Message Sent Successfully</h3>
-                            <p className="font-inter text-white/50 text-base leading-relaxed mb-10">
-                                Your message has been sent successfully. Our support team will respond to you shortly.
-                            </p>
-
-                            <button 
-                                onClick={() => setShowModal(false)}
-                                className="w-full bg-white text-black py-4 rounded-xl font-inter font-semibold tracking-wide hover:bg-neutral-200 transition-all duration-300 active:scale-95 shadow-lg"
-                            >
-                                Close
-                            </button>
-                        </div>
-                    </motion.div>
-                )}
-            </AnimatePresence>
 
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16">
                 <div className="lg:w-1/3 flex flex-col justify-center">
@@ -290,6 +259,45 @@ export default function SupportForm() {
                             )}
                         </div>
                     </form>
+
+                    {/* Invisible full-screen blocker to lock background interaction */}
+                    {showModal && (
+                        <div className="fixed inset-0 z-40 bg-transparent pointer-events-auto" aria-hidden="true" />
+                    )}
+
+                    {/* Inline Success Modal */}
+                    <AnimatePresence>
+                        {showModal && (
+                            <motion.div 
+                                initial={{ opacity: 0, scale: 0.95 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                exit={{ opacity: 0, scale: 0.95 }}
+                                transition={{ duration: 0.25, ease: "easeOut" }}
+                                className="absolute inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm rounded-[2.5rem] pointer-events-auto"
+                            >
+                                <div className="w-full h-full flex flex-col items-center justify-center text-center p-10">
+                                    <div className="flex justify-center mb-6">
+                                        <div className="w-20 h-20 rounded-full bg-green-500/10 flex items-center justify-center border border-green-500/20">
+                                            <Check className="text-green-400" size={40} />
+                                        </div>
+                                    </div>
+
+                                    <h3 className="font-serif text-3xl text-white mb-4">Message Sent Successfully</h3>
+                                    <p className="font-inter text-white/50 text-base leading-relaxed mb-10 max-w-sm">
+                                        Your message has been sent successfully. Our support team will respond to you shortly.
+                                    </p>
+
+                                    <button 
+                                        type="button"
+                                        onClick={() => setShowModal(false)}
+                                        className="w-full max-w-sm bg-white text-black py-4 rounded-xl font-inter font-semibold tracking-wide hover:bg-neutral-200 transition-all duration-300 active:scale-95 shadow-lg"
+                                    >
+                                        Close
+                                    </button>
+                                </div>
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
                 </div>
             </div>
         </section>
