@@ -57,7 +57,7 @@ export default function SupportHero() {
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: 0.7 }}
                     >
-                        Need help exploring destinations or using our website? Our support team is here to assist you with every step of your journey. [v2.0]
+                        Need help exploring destinations or using our website? Our support team is here to assist you with every step of your journey.
                     </motion.p>
 
                     <motion.div
