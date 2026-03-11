@@ -151,7 +151,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
             />
 
             {/* Hero image */}
-            <div className="relative h-[55vh] md:h-[65vh] overflow-hidden">
+            <div className="relative h-[55vh] md:h-[65vh] overflow-hidden bg-[#1a1a1a]">
                 <Image
                     src={post.image}
                     alt={post.title}
@@ -206,7 +206,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             {related.map((rp) => (
                                 <Link key={rp.slug} href={`/blog/${rp.slug}`} className="group flex flex-col bg-[#141414] border border-white/5 hover:border-brand-accent/30 rounded-3xl overflow-hidden transition-all duration-500 hover:-translate-y-1">
-                                    <div className="relative aspect-[16/9] overflow-hidden">
+                                    <div className="relative aspect-[16/9] overflow-hidden bg-[#1a1a1a]">
                                         <Image src={rp.image} alt={rp.title} fill className="object-cover group-hover:scale-110 transition-transform duration-700" />
                                     </div>
                                     <div className="p-6">

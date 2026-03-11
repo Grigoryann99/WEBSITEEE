@@ -28,7 +28,7 @@ export default function BlogPage() {
                 {/* Featured post */}
                 <Link href={`/blog/${featured.slug}`} className="group block">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden bg-[#141414] border border-white/5 hover:border-brand-accent/30 transition-all duration-500">
-                        <div className="relative aspect-[16/10] lg:aspect-auto lg:min-h-[400px] overflow-hidden">
+                        <div className="relative aspect-[16/10] lg:aspect-auto lg:min-h-[400px] overflow-hidden bg-[#1a1a1a]">
                             <Image
                                 src={featured.image}
                                 alt={featured.title}
@@ -63,7 +63,7 @@ export default function BlogPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {rest.map((post) => (
                         <Link key={post.slug} href={`/blog/${post.slug}`} className="group flex flex-col bg-[#141414] border border-white/5 hover:border-brand-accent/30 rounded-3xl overflow-hidden transition-all duration-500 hover:-translate-y-2">
-                            <div className="relative aspect-[16/10] overflow-hidden">
+                            <div className="relative aspect-[16/10] overflow-hidden bg-[#1a1a1a]">
                                 <Image
                                     src={post.image}
                                     alt={post.title}

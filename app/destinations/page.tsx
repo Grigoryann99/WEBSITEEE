@@ -61,7 +61,7 @@ export default function DestinationsPage() {
 
             {/* 1. HERO SECTION */}
             <section className="relative h-screen min-h-[600px] flex items-center justify-center pt-20">
-                <div className="absolute inset-0 z-0 overflow-hidden">
+                <div className="absolute inset-0 z-0 overflow-hidden bg-[#1a1a1a]">
                     <Image
                         src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2000&auto=format&fit=crop"
                         alt="Global Travel Destinations"
@@ -192,7 +192,7 @@ export default function DestinationsPage() {
                                     href={`/countries/${dest.name.toLowerCase().replace(/ /g, '_')}`}
                                     className="group block relative aspect-[4/5] rounded-3xl overflow-hidden bg-[#141414] border border-white/5"
                                 >
-                                    <div className="relative w-full h-full overflow-hidden">
+                                    <div className="relative w-full h-full overflow-hidden bg-[#1a1a1a]">
                                         <Image
                                             src={dest.image}
                                             alt={dest.name}
@@ -247,7 +247,7 @@ export default function DestinationsPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <motion.div
                             initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}
-                            className="relative aspect-square md:aspect-[4/5] rounded-3xl overflow-hidden"
+                            className="relative aspect-square md:aspect-[4/5] rounded-3xl overflow-hidden bg-[#1a1a1a]"
                         >
                             <Image
                                 src={featuredDestination.image}
@@ -316,7 +316,7 @@ export default function DestinationsPage() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: i * 0.1 }}
-                            className="group relative aspect-video sm:aspect-square rounded-2xl overflow-hidden cursor-pointer"
+                            className="group relative aspect-video sm:aspect-square rounded-2xl overflow-hidden cursor-pointer bg-[#1a1a1a]"
                         >
                             <Image
                                 src={card.image}
