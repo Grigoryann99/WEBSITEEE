@@ -431,7 +431,7 @@ export const countries: Record<string, CountryData> = {
                 city: "Wiltshire",
                 country: "United Kingdom",
                 description: "A prehistoric monument consisting of a ring of standing stones.",
-                image: "https://images.unsplash.com/photo-1485689532776-7d0e tried3bd7?auto=format&fit=crop&q=80&w=800"
+                image: "https://images.unsplash.com/photo-1447078806655-40579c2520d6?auto=format&fit=crop&q=80&w=800"
             },
             {
                 name: "Edinburgh Castle",

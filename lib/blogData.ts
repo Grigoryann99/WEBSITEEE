@@ -475,7 +475,7 @@ Italy is learned slowly. Each visit reveals new layers — a perfectly preserved
         category: 'City Guides',
         date: '2025-01-15',
         readTime: '7 min read',
-        image: 'https://images.unsplash.com/photo-1533929736478-a2c1100350d6?q=80&w=1200&auto=format&fit=crop',
+        image: 'https://images.unsplash.com/photo-1505761671935-60b3a7427bad?q=80&w=1200&auto=format&fit=crop',
         content: `
 London is too large and too complex for any single guidebook to capture — but a focused 48 hours can reveal a city of extraordinary depth, energy, and character. This itinerary balances the iconic with the local, the historic with the contemporary.
 
