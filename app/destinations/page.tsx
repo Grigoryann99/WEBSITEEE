@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Search, Compass, ArrowRight, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import TravelStyleQuiz from '@/components/destinations/TravelStyleQuiz';
 import {
     globalDestinations,
     destinationCategories,
@@ -123,6 +124,9 @@ export default function DestinationsPage() {
                     <div className="w-[1px] h-8 md:h-12 bg-gradient-to-b from-[#1D9E75]/50 to-transparent hidden md:block" />
                 </motion.div>
             </section>
+
+            {/* TRAVEL STYLE QUIZ */}
+            <TravelStyleQuiz />
 
             {/* IMPROVEMENT 2 — Category Filters with "All" button */}
             <section className="relative z-20 -mt-24 max-w-7xl mx-auto px-6 mb-12">
