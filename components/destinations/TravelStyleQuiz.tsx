@@ -158,14 +158,14 @@ export default function TravelStyleQuiz() {
     const results = step === 3 ? getResults(answers[0], answers[1]) : [];
 
     return (
-        <section className="max-w-5xl mx-auto px-6 mb-12">
+        <section className="max-w-5xl mx-auto px-6">
             {/* Teaser Card */}
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="bg-[#141414] border border-white/5 rounded-3xl p-8 md:p-12 text-center"
+                className="bg-[#141414] border border-white/10 rounded-3xl py-16 md:py-24 px-8 md:px-12 text-center shadow-2xl shadow-black/50"
             >
                 <h3 className="font-serif text-3xl md:text-4xl text-brand-light mb-4">
                     Not sure where to go?

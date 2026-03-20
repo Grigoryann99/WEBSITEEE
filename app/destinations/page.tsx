@@ -126,80 +126,84 @@ export default function DestinationsPage() {
             </section>
 
             {/* TRAVEL STYLE QUIZ */}
-            <TravelStyleQuiz />
+            <section className="mb-[60px]">
+                <TravelStyleQuiz />
+            </section>
 
-            {/* IMPROVEMENT 2 — Category Filters with "All" button */}
-            <section className="relative z-20 -mt-24 max-w-7xl mx-auto px-6 mb-12">
-                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+            {/* CATEGORY FILTERS */}
+            <section className="relative z-20 max-w-7xl mx-auto px-6 mb-[48px]">
+                <div className="flex flex-col items-center mb-10">
+                    <div className="w-px h-12 bg-gradient-to-b from-brand-accent/30 to-transparent mb-6" />
+                    <p className="font-sans text-brand-accent tracking-[0.3em] text-[10px] uppercase mb-4 font-semibold">
+                        Browse by Category
+                    </p>
+                    <div className="w-24 h-[1px] bg-white/10" />
+                </div>
+
+                <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3">
                     {/* "All" button */}
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.6 }}
+                        transition={{ duration: 0.4 }}
                         onClick={() => setSelectedCategory(null)}
-                        className={`relative z-10 bg-[#141414]/95 backdrop-blur-xl border rounded-2xl p-6 text-center hover:-translate-y-1 transition-all group cursor-pointer shadow-xl shadow-black/40 ${
+                        className={`relative z-10 bg-[#141414]/80 backdrop-blur-md border rounded-xl py-4 px-2 text-center hover:bg-[#1a1a1a] transition-all group cursor-pointer ${
                             selectedCategory === null
-                            ? 'border-[#1D9E75] bg-[#1a1a1a] shadow-[#1D9E75]/10'
-                            : 'border-white/5 hover:border-[#1D9E75]/30'
+                            ? 'border-brand-accent bg-brand-accent/5 ring-1 ring-brand-accent/20'
+                            : 'border-white/5 hover:border-brand-accent/30'
                         }`}
                     >
-                        <div className={`text-3xl mb-4 transition-transform duration-300 ${
+                        <div className={`text-xl mb-2 transition-transform duration-300 ${
                             selectedCategory === null ? 'scale-110' : 'group-hover:scale-110'
                         }`}>
                             🌍
                         </div>
-                        <h3 className={`font-serif text-lg mb-2 transition-colors ${
-                            selectedCategory === null ? 'text-[#1D9E75]' : 'text-brand-light'
+                        <h3 className={`font-sans text-xs uppercase tracking-widest transition-colors ${
+                            selectedCategory === null ? 'text-brand-accent font-semibold' : 'text-brand-light/60 font-medium'
                         }`}>
                             All
                         </h3>
-                        <p className={`text-[10px] uppercase tracking-wider transition-colors ${
-                            selectedCategory === null ? 'text-[#1D9E75]' : 'text-brand-light/40 group-hover:text-[#1D9E75]'
-                        }`}>
-                            {selectedCategory === null ? 'Showing All' : 'Reset →'}
-                        </p>
                     </motion.div>
 
                     {destinationCategories.map((cat, i) => (
                         <motion.div
                             key={cat.id}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
-                            transition={{ delay: (i + 1) * 0.1, duration: 0.6 }}
+                            transition={{ delay: i * 0.05, duration: 0.4 }}
                             onClick={() => toggleCategory(cat.id)}
-                            className={`relative z-10 bg-[#141414]/95 backdrop-blur-xl border rounded-2xl p-6 text-center hover:-translate-y-1 transition-all group cursor-pointer shadow-xl shadow-black/40 ${
+                            className={`relative z-10 bg-[#141414]/80 backdrop-blur-md border rounded-xl py-4 px-2 text-center hover:bg-[#1a1a1a] transition-all group cursor-pointer ${
                                 selectedCategory === cat.id 
-                                ? 'border-[#1D9E75] bg-[#1a1a1a] shadow-[#1D9E75]/10' 
-                                : 'border-white/5 hover:border-[#1D9E75]/30'
+                                ? 'border-brand-accent bg-brand-accent/5 ring-1 ring-brand-accent/20' 
+                                : 'border-white/5 hover:border-brand-accent/30'
                             }`}
                         >
-                            <div className={`text-3xl mb-4 transition-transform duration-300 ${
+                            <div className={`text-xl mb-2 transition-transform duration-300 ${
                                 selectedCategory === cat.id ? 'scale-110' : 'group-hover:scale-110'
                             }`}>
                                 {cat.icon}
                             </div>
-                            <h3 className={`font-serif text-lg mb-2 transition-colors ${
-                                selectedCategory === cat.id ? 'text-[#1D9E75]' : 'text-brand-light'
+                            <h3 className={`font-sans text-xs uppercase tracking-widest transition-colors ${
+                                selectedCategory === cat.id ? 'text-brand-accent font-semibold' : 'text-brand-light/60 font-medium'
                             }`}>
                                 {cat.title}
                             </h3>
-                            <p className={`text-[10px] uppercase tracking-wider transition-colors ${
-                                selectedCategory === cat.id ? 'text-[#1D9E75]' : 'text-brand-light/40 group-hover:text-[#1D9E75]'
-                            }`}>
-                                {selectedCategory === cat.id ? 'Active Filter' : 'Explore →'}
-                            </p>
                         </motion.div>
                     ))}
                 </div>
             </section>
 
             {/* IMPROVEMENT 4 — Results counter */}
-            <section className="max-w-7xl mx-auto px-6 mb-8">
-                <p className="font-sans text-brand-light/50 text-sm tracking-wide">
-                    Showing <span className="text-[#1D9E75] font-medium">{filteredDestinations.length}</span> of <span className="text-brand-light/70 font-medium">{globalDestinations.length}</span> destinations
-                </p>
+            <section className="max-w-7xl mx-auto px-6 mb-8 mt-[32px]">
+                <div className="flex items-center gap-4">
+                    <div className="flex-grow h-px bg-white/5" />
+                    <p className="font-sans text-brand-light/40 text-[11px] tracking-[0.2em] uppercase whitespace-nowrap">
+                        Showing <span className="text-brand-accent font-semibold">{filteredDestinations.length}</span> Results
+                    </p>
+                    <div className="flex-grow h-px bg-white/5" />
+                </div>
             </section>
 
             {/* IMPROVEMENTS 1 + 2 + 3 — Destination Grid with simplified cards */}
