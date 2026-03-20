@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 interface CountryDestinationCardProps {
@@ -21,14 +21,55 @@ export default function CountryDestinationCard({
     name, city, country, image, description,
     category, whyVisit, bestTime, insiderTip, howToGetThere, cost
 }: CountryDestinationCardProps) {
-    // Unique seeded fallback so every card shows a different image on failure
+    const [fetchedImage, setFetchedImage] = useState<string | null>(null);
+    const [photographer, setPhotographer] = useState<string | null>(null);
+    const [isFetching, setIsFetching] = useState(!image);
+
+    useEffect(() => {
+        if (image) return;
+
+        const cacheKey = `unsplash_${name}_${city}_${country}`;
+        const cachedUrl = sessionStorage.getItem(cacheKey + '_url');
+        const cachedPhotographer = sessionStorage.getItem(cacheKey + '_photographer');
+
+        if (cachedUrl) {
+            setFetchedImage(cachedUrl);
+            setPhotographer(cachedPhotographer);
+            setIsFetching(false);
+            return;
+        }
+
+        const fetchImage = async () => {
+            const query = encodeURIComponent(`${name} ${city} ${country}`);
+            try {
+                const res = await fetch(`/api/attraction-photo?q=${query}`);
+                const data = await res.json();
+                if (data.url) {
+                    setFetchedImage(data.url + '&w=800&q=80'); // ensure formatting
+                    setPhotographer(data.photographer);
+                    sessionStorage.setItem(cacheKey + '_url', data.url + '&w=800&q=80');
+                    if (data.photographer) {
+                        sessionStorage.setItem(cacheKey + '_photographer', data.photographer);
+                    }
+                }
+            } catch (err) {
+                console.error(err);
+            } finally {
+                setIsFetching(false);
+            }
+        };
+
+        fetchImage();
+    }, [image, name, city, country]);
+
     const seedSlug = encodeURIComponent(name.toLowerCase().replace(/\s+/g, '-'));
     const fallbackSources = [
-        image,                                                                           // 1. Primary: specific destination photo
-        `https://picsum.photos/seed/${seedSlug}/800/600`,                               // 2. Unique seeded fallback
-        `https://picsum.photos/seed/${encodeURIComponent(city.toLowerCase())}/800/600`, // 3. City-seeded fallback
-        '/images/placeholder.jpg'                                                        // 4. Local last resort
-    ];
+        image,
+        fetchedImage,
+        `https://picsum.photos/seed/${seedSlug}/800/600`,
+        `https://picsum.photos/seed/${encodeURIComponent(city.toLowerCase())}/800/600`,
+        '/images/placeholder.jpg'
+    ].filter(Boolean) as string[];
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [isLoaded, setIsLoaded] = useState(false);
@@ -43,11 +84,10 @@ export default function CountryDestinationCard({
 
     return (
         <div className="group flex flex-col bg-[#141414] rounded-3xl overflow-hidden border border-white/5 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
-            <div className="relative aspect-video overflow-hidden bg-[#222]">
-                {/* Skeleton Loading Placeholder */}
-                <div className={`absolute inset-0 bg-[#222] animate-pulse ${isLoaded ? 'hidden' : 'block'}`} />
+            <div className="relative aspect-video flex-shrink-0 bg-[#222]">
+                <div className={`absolute inset-0 bg-[#222] animate-pulse ${isLoaded && !isFetching ? 'hidden' : 'block'}`} />
 
-                {currentSrc && (
+                {currentSrc && !isFetching && (
                     <Image
                         src={currentSrc}
                         alt={`${name}, ${city}`}
@@ -58,6 +98,14 @@ export default function CountryDestinationCard({
                         onLoad={() => setIsLoaded(true)}
                         onError={handleError}
                     />
+                )}
+                
+                {photographer && !isFetching && (
+                    <div className="absolute bottom-2 right-2 z-10">
+                        <p className="text-[10px] text-white/50 bg-black/40 px-2 py-1 rounded backdrop-blur-sm">
+                            Photo by {photographer} on Unsplash
+                        </p>
+                    </div>
                 )}
             </div>
 
