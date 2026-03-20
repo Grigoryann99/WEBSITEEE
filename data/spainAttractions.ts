@@ -1,0 +1,217 @@
+export const spainAttractions = [
+  {
+    name: "Sagrada Familia",
+    location: "Barcelona",
+    category: "Religious",
+    description: "A large unfinished Roman Catholic minor basilica architected by Antoni Gaudí.",
+    unsplashQuery: "Sagrada Familia Gaudi Barcelona facade"
+  },
+  {
+    name: "Alhambra",
+    location: "Granada",
+    category: "Historical",
+    description: "A palace and fortress complex that showcases breathtaking Moorish architecture.",
+    unsplashQuery: "Alhambra palace Granada arches Spain"
+  },
+  {
+    name: "Park Güell",
+    location: "Barcelona",
+    category: "Architectural",
+    description: "A public park system composed of gardens and architectonic elements located on Carmel Hill.",
+    unsplashQuery: "Park Guell mosaic terrace Gaudi Barcelona"
+  },
+  {
+    name: "Prado Museum",
+    location: "Madrid",
+    category: "Cultural",
+    description: "The main Spanish national art museum, widely considered to have one of the world's finest collections.",
+    unsplashQuery: "Prado Museum Madrid exterior Spain"
+  },
+  {
+    name: "Ibiza",
+    location: "Balearic Islands",
+    category: "Coastal",
+    description: "An island in the Mediterranean Sea well known for its lively nightlife and stunning coves.",
+    unsplashQuery: "Ibiza beach turquoise water Mediterranean"
+  },
+  {
+    name: "Toledo Old City",
+    location: "Toledo, Castile-La Mancha",
+    category: "Historical",
+    description: "A UNESCO World Heritage hilltop city 70 kilometres from Madrid where Christian, Muslim, and Jewish cultures coexisted for centuries.",
+    whyVisit: "Toledo's extraordinary density of historical monuments within a walkable medieval city is unmatched in Spain. The Gothic Cathedral took 267 years to complete and contains El Greco's masterpiece The Disrobing of Christ.",
+    bestTime: "March–May or September–November.",
+    insiderTip: "Stay overnight — the city empties after 6pm when day visitors leave.",
+    howToGetThere: "High-speed train from Madrid Atocha takes 33 minutes.",
+    cost: "Cathedral entry €10",
+    unsplashQuery: "Toledo Spain medieval city panorama hilltop"
+  },
+  {
+    name: "Seville Cathedral & Giralda",
+    location: "Seville, Andalusia",
+    category: "Religious",
+    description: "The largest Gothic cathedral in the world, built 1401–1528, incorporating the original 12th-century Almohad minaret as its bell tower.",
+    whyVisit: "The five-aisled nave stretches 135 metres. Christopher Columbus is buried here. The Giralda tower climb gives views across Seville's rooftops.",
+    bestTime: "October–April. Seville regularly exceeds 40°C in July.",
+    insiderTip: "Book tickets online to avoid 2-hour queues.",
+    howToGetThere: "High-speed AVE from Madrid takes 2.5 hours.",
+    cost: "Paid — €12 including Giralda tower",
+    unsplashQuery: "Seville Cathedral Giralda tower Spain Andalusia"
+  },
+  {
+    name: "San Sebastián",
+    location: "Basque Country",
+    category: "Food",
+    description: "A coastal Basque city with more Michelin stars per capita than almost anywhere on earth and a world-famous pintxos bar culture.",
+    whyVisit: "More than 30 pintxos bars within a few pedestrian streets. Three restaurants hold three Michelin stars: Arzak, Mugaritz, and Akelarre.",
+    bestTime: "Year-round for food. June–September for beach.",
+    insiderTip: "Order freshly made hot pintxos. Bar Zeruko and La Cuchara de San Telmo are consistently exceptional.",
+    howToGetThere: "Train from Madrid 5.5 hours. Bus from Bilbao 1 hour.",
+    cost: "Pintxos €2–€4 each",
+    unsplashQuery: "San Sebastian old town beach Basque Country Spain"
+  },
+  {
+    name: "Ronda",
+    location: "Málaga, Andalusia",
+    category: "City",
+    description: "A dramatic hilltop city divided by the 120-metre El Tajo gorge, crossed by the 18th-century Puente Nuevo bridge.",
+    whyVisit: "Ronda's gorge and bridge are among the most dramatic urban landscapes in Spain. Ernest Hemingway and Orson Welles both spent time here.",
+    bestTime: "March–May or September–November.",
+    insiderTip: "Walk down to the bottom of the gorge via Camino de los Molinos for an upward view of the bridge.",
+    howToGetThere: "Train from Málaga 2 hours.",
+    cost: "Free to explore — bullring museum €8",
+    unsplashQuery: "Ronda bridge gorge Puente Nuevo Andalusia Spain"
+  },
+  {
+    name: "Córdoba Mezquita",
+    location: "Córdoba, Andalusia",
+    category: "Religious",
+    description: "A 10th-century Umayyad mosque with 856 striped columns into which a Gothic cathedral was inserted in the 16th century.",
+    whyVisit: "One of the most spatially disorienting architectural experiences in Spain. The contrast between mosque and cathedral tells the entire story of Spanish religious history.",
+    bestTime: "October–April. Córdoba regularly exceeds 42°C in July.",
+    insiderTip: "Enter free weekday mornings 8:30–9:30am when building is nearly empty.",
+    howToGetThere: "AVE from Madrid 1h45m. From Seville 45 minutes.",
+    cost: "€13, free weekday mornings 8:30–9:30am",
+    unsplashQuery: "Cordoba Mezquita mosque cathedral columns arches Spain"
+  },
+  {
+    name: "Camino de Santiago",
+    location: "Galicia",
+    category: "Adventure",
+    description: "Medieval pilgrimage routes converging on Santiago de Compostela Cathedral. The final 100km from Sarria qualifies for the Compostela certificate.",
+    whyVisit: "350,000 pilgrims complete it annually. The arrival into Santiago's Plaza del Obradoiro is one of the most moving travel experiences in Europe.",
+    bestTime: "April–June or September–October.",
+    insiderTip: "Book albergues in advance for the last 100km. Collect stamps daily in your Pilgrim Passport.",
+    howToGetThere: "Fly to Santiago de Compostela or Pamplona.",
+    cost: "Albergues €8–€15/night",
+    unsplashQuery: "Camino de Santiago pilgrims walking path Galicia Spain"
+  },
+  {
+    name: "Ibiza Old Town Dalt Vila",
+    location: "Ibiza, Balearic Islands",
+    category: "Cultural",
+    description: "The UNESCO-listed walled old city of Ibiza on a fortified hilltop, containing a 16th-century cathedral and medieval streets.",
+    whyVisit: "The 16th-century Renaissance walls and views from the cathedral terrace across the port and Formentera represent a completely different side of Ibiza.",
+    bestTime: "May–June or September–October.",
+    insiderTip: "Stay in Dalt Vila rather than the port area for a unique experience.",
+    howToGetThere: "Fly direct to Ibiza Airport. Ferry from Barcelona 8 hours.",
+    cost: "Dalt Vila free — Archaeological Museum €4",
+    unsplashQuery: "Ibiza Dalt Vila old town walls Mediterranean Spain"
+  },
+  {
+    name: "Montserrat Mountain",
+    location: "Barcelona Province, Catalonia",
+    category: "Nature",
+    description: "A multi-peaked mountain of serrated conglomerate rock rising 1,236 metres, 50 kilometres from Barcelona, home to a Benedictine monastery.",
+    whyVisit: "The jagged pink rock formations are unique in Europe. The monastery contains the Black Madonna. The Escolania boys' choir founded in the 14th century performs daily at 1pm.",
+    bestTime: "April–June or September–November. Weekdays much quieter.",
+    insiderTip: "Take the Sant Joan funicular and walk the ridge path to Sant Joan hermitage for 360-degree views.",
+    howToGetThere: "FGC train from Barcelona Plaça Espanya then rack railway. Total 1.5 hours.",
+    cost: "Combined train and rack railway €32 return",
+    unsplashQuery: "Montserrat mountain monastery Catalonia Spain rocks"
+  },
+  {
+    name: "Valencia City of Arts & Sciences",
+    location: "Valencia",
+    category: "Cultural",
+    description: "A futuristic cultural complex by Santiago Calatrava opened 1998–2005, containing an opera house, science museum, and Europe's largest aquarium.",
+    whyVisit: "One of the most significant works of contemporary architecture in Europe. The Oceanogràfic houses 45,000 marine animals. Valencia also invented paella.",
+    bestTime: "Year-round. March for Las Fallas festival.",
+    insiderTip: "Walk through the exterior at dusk — most dramatic when white structures reflect in the pools.",
+    howToGetThere: "AVE from Madrid 1h35m. 30-minute tram from Valencia Nord.",
+    cost: "Exterior free — Oceanogràfic €32",
+    unsplashQuery: "Valencia City Arts Sciences Calatrava architecture Spain"
+  },
+  {
+    name: "Bilbao Guggenheim Museum",
+    location: "Bilbao, Basque Country",
+    category: "Cultural",
+    description: "Frank Gehry's titanium-clad Guggenheim Museum opened in 1997, credited with transforming Bilbao — the Bilbao Effect.",
+    whyVisit: "The titanium panels shift from silver to gold depending on light. Jeff Koons's giant Puppy sculpture outside is one of Spain's most photographed artworks.",
+    bestTime: "Year-round. August is Aste Nagusia festival.",
+    insiderTip: "Cross the Zubizuri pedestrian bridge to approach from the river for the best overall view.",
+    howToGetThere: "Fly to Bilbao Airport. Train from Madrid 4.5 hours.",
+    cost: "Paid — €16",
+    unsplashQuery: "Guggenheim Museum Bilbao titanium Gehry architecture Spain"
+  },
+  {
+    name: "Costa Brava",
+    location: "Girona, Catalonia",
+    category: "Coastal",
+    description: "A rugged 200-kilometre coastline north of Barcelona featuring medieval fishing villages, crystal-clear coves, and the Salvador Dalí museum triangle.",
+    whyVisit: "The best coves — Cap de Creus, Aiguablava — have water so clear the sea floor is visible at 10 metres. The Dalí Theatre-Museum in Figueres is essential for any art traveler.",
+    bestTime: "June or September for beaches. Spring for Dalí museums.",
+    insiderTip: "Kayak from Calella de Palafrugell to Cap de Creus coves — inaccessible by road.",
+    howToGetThere: "Car essential. Train from Barcelona to Figueres 1 hour.",
+    cost: "Beaches free — Dalí Theatre-Museum €15",
+    unsplashQuery: "Costa Brava rocky coast cove Catalonia Spain turquoise"
+  },
+  {
+    name: "Mallorca",
+    location: "Balearic Islands",
+    category: "Coastal",
+    description: "The largest Balearic Island combining the UNESCO-listed Serra de Tramuntana mountains, medieval villages, and the clearest beaches in western Mediterranean.",
+    whyVisit: "The Serra de Tramuntana drive passes through terraced olive groves unchanged since the 19th century. Palma's Gothic cathedral La Seu overhangs the sea dramatically.",
+    bestTime: "May–June or September–October.",
+    insiderTip: "Take the historic 1912 wooden train from Palma to Sóller — one of the most scenic short rail journeys in Spain.",
+    howToGetThere: "Fly direct to Palma. Ferry from Barcelona 8 hours overnight.",
+    cost: "Train Palma–Sóller €13 return",
+    unsplashQuery: "Mallorca beach turquoise water Balearic Islands Spain"
+  },
+  {
+    name: "Doñana National Park",
+    location: "Huelva, Andalusia",
+    category: "Nature",
+    description: "Europe's most important wetland reserve covering 543 square kilometres, protecting the Iberian lynx and hosting 300+ bird species.",
+    whyVisit: "The most significant wildlife reserve in Western Europe. Spanish imperial eagles, greater flamingos, and wild boar seen on guided 4x4 excursions.",
+    bestTime: "October–April for birds and lynx activity.",
+    insiderTip: "Book the official 4x4 tour months in advance — demand exceeds capacity year-round.",
+    howToGetThere: "Car essential — 1.5 hours from Seville.",
+    cost: "Guided 4x4 tour €34",
+    unsplashQuery: "Donana national park flamingo wetlands Andalusia Spain"
+  },
+  {
+    name: "Sierra Nevada",
+    location: "Granada, Andalusia",
+    category: "Adventure",
+    description: "The southernmost ski resort in Europe at 2,100–3,300 metres with skiing in the morning and Mediterranean swimming in the afternoon possible.",
+    whyVisit: "Skiing where runs look toward the Mediterranean and Africa. In summer Mulhacén at 3,479m is mainland Spain's highest peak with views of Morocco's Atlas Mountains.",
+    bestTime: "December–April skiing. June–September hiking.",
+    insiderTip: "Drive to Mirador de Hoya de la Mora at 2,500m on a clear winter day for extraordinary views at no cost.",
+    howToGetThere: "Bus from Granada 45 minutes.",
+    cost: "Ski day pass €42 — hiking free",
+    unsplashQuery: "Sierra Nevada ski resort snow Granada Spain mountain"
+  },
+  {
+    name: "Teide National Park",
+    location: "Tenerife, Canary Islands",
+    category: "Nature",
+    description: "Mount Teide at 3,715 metres is Spain's highest peak and the world's third largest volcano, rising from a UNESCO World Heritage national park.",
+    whyVisit: "Cable car to 3,555 metres gives views across all seven Canary Islands. The ancient lava flows and volcanic landscape are unlike anywhere in Europe. Year-round mild climate makes it Spain's best winter sun destination.",
+    bestTime: "Year-round — Canary Islands average 22°C in winter.",
+    insiderTip: "Book the free Teide summit permit months in advance to access the crater rim above the cable car terminus.",
+    howToGetThere: "Fly to Tenerife. Car essential for the national park.",
+    cost: "Cable car €27 return — park free",
+    unsplashQuery: "Teide volcano Tenerife Canary Islands Spain summit"
+  }
+];

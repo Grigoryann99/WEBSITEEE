@@ -1,11 +1,12 @@
 import { italyAttractions } from '../data/italyAttractions';
+import { spainAttractions } from '../data/spainAttractions';
 
 export interface Destination {
     name: string;
     city: string;
     country: string;
     description: string;
-    image: string;
+    image?: string;
     category?: string;
     whyVisit?: string;
     bestTime?: string;
@@ -182,43 +183,20 @@ export const countries: Record<string, CountryData> = {
         description: "Vibrant culture, beautiful beaches, and profound architectural wonders.",
         heroImage: "https://images.unsplash.com/photo-1543783207-ec64e4d95325?q=80&w=2000&auto=format&fit=crop",
         tips: ["Embrace the siesta time", "Tapas are mostly eaten standing up", "Dinner starts very late"],
-        destinations: [
-            {
-                name: "Sagrada Familia",
-                city: "Barcelona",
-                country: "Spain",
-                description: "A large unfinished Roman Catholic minor basilica architected by Antoni Gaudí.",
-                image: "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Alhambra",
-                city: "Granada",
-                country: "Spain",
-                description: "A palace and fortress complex that showcases breathtaking Moorish architecture.",
-                image: "https://images.unsplash.com/photo-1591206369811-4eeb2f03bc95?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Park Güell",
-                city: "Barcelona",
-                country: "Spain",
-                description: "A public park system composed of gardens and architectonic elements located on Carmel Hill.",
-                image: "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Prado Museum",
-                city: "Madrid",
-                country: "Spain",
-                description: "The main Spanish national art museum, widely considered to have one of the world's finest collections.",
-                image: "https://images.unsplash.com/photo-1549487779-79a61e38d7c4?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Ibiza",
-                city: "Balearic Islands",
-                country: "Spain",
-                description: "An island in the Mediterranean Sea well known for its lively nightlife and stunning coves.",
-                image: "https://images.unsplash.com/photo-1534005111307-e836171881a5?auto=format&fit=crop&q=80&w=800"
-            }
-        ]
+        destinations: spainAttractions.map(attr => ({
+            name: attr.name,
+            city: attr.location,
+            country: 'Spain',
+            description: attr.description,
+            image: '',
+            category: attr.category,
+            whyVisit: attr.whyVisit,
+            bestTime: attr.bestTime,
+            insiderTip: attr.insiderTip,
+            howToGetThere: attr.howToGetThere,
+            cost: attr.cost,
+            unsplashQuery: attr.unsplashQuery
+        }))
     },
     greece: {
         name: "Greece",

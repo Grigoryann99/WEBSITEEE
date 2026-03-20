@@ -8,18 +8,19 @@ interface CountryDestinationCardProps {
     city: string;
     country: string;
     description: string;
-    image: string;
+    image?: string;
     category?: string;
     whyVisit?: string;
     bestTime?: string;
     insiderTip?: string;
     howToGetThere?: string;
     cost?: string;
+    unsplashQuery?: string;
 }
 
 export default function CountryDestinationCard({ 
     name, city, country, image, description,
-    category, whyVisit, bestTime, insiderTip, howToGetThere, cost
+    category, whyVisit, bestTime, insiderTip, howToGetThere, cost, unsplashQuery
 }: CountryDestinationCardProps) {
     const [fetchedImage, setFetchedImage] = useState<string | null>(null);
     const [photographer, setPhotographer] = useState<string | null>(null);
@@ -40,7 +41,8 @@ export default function CountryDestinationCard({
         }
 
         const fetchImage = async () => {
-            const query = encodeURIComponent(`${name} ${city} ${country}`);
+            const queryToUse = unsplashQuery || `${name} ${city} ${country}`;
+            const query = encodeURIComponent(queryToUse);
             try {
                 const res = await fetch(`/api/attraction-photo?q=${query}`);
                 const data = await res.json();
@@ -60,7 +62,7 @@ export default function CountryDestinationCard({
         };
 
         fetchImage();
-    }, [image, name, city, country]);
+    }, [image, name, city, country, unsplashQuery]);
 
     const seedSlug = encodeURIComponent(name.toLowerCase().replace(/\s+/g, '-'));
     const fallbackSources = [
