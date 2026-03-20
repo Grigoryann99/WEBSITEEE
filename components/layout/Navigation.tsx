@@ -15,7 +15,6 @@ export default function Navigation() {
     const pathname = usePathname();
     const router = useRouter();
 
-    // Map pathname/sections to internal IDs
     const navLinks = [
         { name: 'Home', href: '/', id: 'home' },
         { name: 'Destinations', href: '/destinations', id: 'destinations' },
@@ -35,7 +34,6 @@ export default function Navigation() {
         } else if (pathname === '/support') {
             setActiveId('contact');
         } else if (pathname === '/') {
-            // Default to home on homepage if no specific section is tracked yet
             if (!activeId || !['contact', 'villas'].includes(activeId)) {
                 setActiveId('home');
             }
@@ -46,7 +44,7 @@ export default function Navigation() {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
 
-            // Visibility logic: hide on scroll down, show on scroll up
+            // Visibility logic
             if (currentScrollY > 100) {
                 if (currentScrollY > lastScrollY && !isMenuOpen) {
                     setIsVisible(false);
@@ -57,8 +55,8 @@ export default function Navigation() {
                 setIsVisible(true);
             }
 
-            // Style logic: dynamic transparency and shadow
-            setIsScrolled(currentScrollY > 50);
+            // Glassmorphism activation
+            setIsScrolled(currentScrollY > 20);
             setLastScrollY(currentScrollY);
         };
 
@@ -66,7 +64,7 @@ export default function Navigation() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, [lastScrollY, isMenuOpen]);
 
-    // Intersection Observer for Active Section Highlighting (Homepage only)
+    // Active Section Highlighting
     useEffect(() => {
         if (pathname !== '/') return;
 
@@ -114,17 +112,21 @@ export default function Navigation() {
     return (
         <>
             <nav
-                className={`fixed top-0 w-full z-50 transition-all duration-700 ease-luxury px-6 ${isVisible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
-                    } ${isScrolled || isMenuOpen
-                        ? 'bg-[#0f0f0f] py-4 shadow-md'
-                        : 'bg-transparent py-8'
+                className={`fixed top-0 w-full z-50 transition-all duration-700 ease-luxury
+                    ${isVisible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'} 
+                    ${isScrolled || isMenuOpen
+                        ? 'bg-[#0a0a0a]/80 backdrop-blur-xl border-b border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.5)] py-3 sm:py-4'
+                        : 'bg-gradient-to-b from-black/80 via-black/40 to-transparent py-6 sm:py-8'
                     }`}
             >
-                <div className="max-w-7xl mx-auto flex items-center justify-between">
+                <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+                    
+                    {/* LOGO */}
                     <a
                         href="#"
                         onClick={handleLogoClick}
-                        className="flex items-center space-x-1.5 group transition-all duration-300"
+                        className="flex items-center gap-2 group transition-all duration-300 outline-none focus-visible:ring-2 focus-visible:ring-brand-accent rounded-lg"
+                        aria-label="Go to homepage"
                     >
                         <div className="relative">
                             <Image
@@ -135,12 +137,13 @@ export default function Navigation() {
                                 className="w-auto h-auto transition-all duration-500 relative z-10"
                             />
                         </div>
-                        <div className={`font-montserrat tracking-widest flex items-center transition-all duration-300 ${isScrolled ? 'text-xl' : 'text-2xl'} text-brand-light`}>
+                        <div className={`font-montserrat tracking-[0.25em] font-semibold flex items-center transition-all duration-300 ${isScrolled ? 'text-lg md:text-xl' : 'text-xl md:text-2xl'} text-brand-light`}>
                             VELORA<span className="text-brand-accent">.</span>
                         </div>
                     </a>
 
-                    <div className="hidden md:flex space-x-10 items-center text-[10px] sm:text-xs font-sans tracking-[0.2em] uppercase text-brand-light/70">
+                    {/* DESKTOP LINKS */}
+                    <div className="hidden lg:flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-2 py-1.5 shadow-inner backdrop-blur-md">
                         {navLinks.map((link) => {
                             let isActive = false;
                             if (link.id === 'destinations') {
@@ -150,50 +153,96 @@ export default function Navigation() {
                             } else {
                                 isActive = activeId === link.id;
                             }
-                            const activeClass = 'text-brand-light';
 
                             return (
                                 <Link
                                     key={link.id}
                                     href={link.href}
                                     onClick={() => handleNavLinkClick(link.id)}
-                                    className={`relative py-2 transition-all duration-300 hover:${activeClass} group ${isActive ? `text-brand-accent !${activeClass}` : ''}`}
+                                    // Pill style active state
+                                    className={`relative px-5 py-2 rounded-full font-sans text-xs tracking-[0.15em] uppercase font-medium transition-all duration-300 outline-none focus-visible:ring-2 focus-visible:ring-brand-accent flex items-center justify-center
+                                        ${isActive 
+                                            ? 'bg-brand-accent/20 text-brand-accent shadow-[0_0_15px_rgba(29,158,117,0.3)]' 
+                                            : 'text-brand-light/70 hover:text-brand-light hover:-translate-y-0.5 hover:bg-white/5'
+                                        }`}
                                 >
                                     {link.name}
-                                    <span className={`absolute bottom-0 left-0 w-full h-[1px] bg-brand-accent transform transition-transform duration-300 origin-left ${isActive ? 'scale-x-100' : 'scale-x-0'}`}></span>
                                 </Link>
                             );
                         })}
-
-
                     </div>
 
-                    <button
-                        className="md:hidden p-2 rounded-full transition-colors text-brand-light hover:bg-brand-light/5"
-                        onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    >
-                        {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-                    </button>
+                    {/* CTA BUTTON & MOBILE MENU TOGGLE */}
+                    <div className="flex items-center gap-4">
+                        <Link 
+                            href="/destinations"
+                            className="hidden md:inline-flex items-center justify-center px-6 py-2.5 bg-brand-accent text-[#0a0a0a] font-sans text-xs uppercase tracking-[0.15em] font-semibold rounded-full hover:bg-white hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_4px_15px_rgba(29,158,117,0.4)] hover:shadow-[0_6px_20px_rgba(255,255,255,0.3)] outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a]"
+                            aria-label="Start your journey"
+                        >
+                            Start Journey
+                        </Link>
+
+                        <button
+                            className="lg:hidden p-2 rounded-xl border border-white/10 bg-white/5 text-brand-light transition-all active:scale-95 hover:bg-white/10 outline-none focus-visible:ring-2 focus-visible:ring-brand-accent"
+                            onClick={() => setIsMenuOpen(!isMenuOpen)}
+                            aria-label="Toggle mobile menu"
+                            aria-expanded={isMenuOpen}
+                        >
+                            {isMenuOpen ? <X size={22} className="text-brand-accent" /> : <Menu size={22} />}
+                        </button>
+                    </div>
                 </div>
             </nav>
 
-            {/* Mobile Menu Overlay */}
+            {/* MOBILE MENU DROPDOWN */}
             <div
-                className={`fixed inset-0 bg-black z-40 transition-all duration-500 ease-custom md:hidden flex flex-col justify-center items-center space-y-12 ${isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-                    }`}
+                className={`fixed inset-0 z-40 lg:hidden flex flex-col justify-start pt-28 px-6 bg-[#0a0a0a]/95 backdrop-blur-2xl transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] overflow-hidden ${
+                    isMenuOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-8 pointer-events-none'
+                }`}
             >
-                {navLinks.map((link, index) => (
-                    <a
-                        key={link.id}
-                        href={link.href}
-                        onClick={() => setIsMenuOpen(false)}
-                        className={`font-serif text-5xl text-brand-light hover:text-brand-accent transition-all duration-500 transform ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
-                        style={{ transitionDelay: `${index * 100}ms` }}
-                    >
-                        {link.name}
-                    </a>
-                ))}
+                <div className="flex flex-col gap-4 mb-10 w-full">
+                    {navLinks.map((link, index) => {
+                        let isActive = false;
+                        if (link.id === 'destinations') {
+                            isActive = pathname?.startsWith('/destinations') || false;
+                        } else if (link.id === 'contact') {
+                            isActive = pathname === '/support' || (pathname === '/' && activeId === 'contact');
+                        } else {
+                            isActive = activeId === link.id;
+                        }
 
+                        return (
+                            <Link
+                                key={link.id}
+                                href={link.href}
+                                onClick={() => setIsMenuOpen(false)}
+                                className={`w-full flex items-center justify-between p-4 rounded-2xl border transition-all duration-500 transform
+                                    ${isMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}
+                                    ${isActive 
+                                        ? 'bg-brand-accent/10 border-brand-accent/40 text-brand-accent' 
+                                        : 'bg-white/5 border-white/5 text-brand-light/80 hover:bg-white/10'
+                                    }`}
+                                style={{ transitionDelay: `${index * 50}ms` }}
+                            >
+                                <span className="font-serif text-2xl">{link.name}</span>
+                                {isActive && <div className="w-2 h-2 rounded-full bg-brand-accent shadow-[0_0_10px_rgba(29,158,117,0.8)]" />}
+                            </Link>
+                        );
+                    })}
+                </div>
+
+                <div 
+                    className={`w-full mt-auto mb-12 transition-all duration-500 transform ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
+                    style={{ transitionDelay: '300ms' }}
+                >
+                    <Link
+                        href="/destinations"
+                        onClick={() => setIsMenuOpen(false)}
+                        className="flex items-center justify-center w-full py-4 bg-brand-accent text-[#0a0a0a] rounded-full font-sans tracking-[0.2em] uppercase font-semibold text-sm shadow-[0_4px_20px_rgba(29,158,117,0.4)]"
+                    >
+                        Start Journey
+                    </Link>
+                </div>
             </div>
         </>
     );
