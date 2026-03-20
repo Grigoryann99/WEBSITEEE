@@ -9,9 +9,18 @@ interface CountryDestinationCardProps {
     country: string;
     description: string;
     image: string;
+    category?: string;
+    whyVisit?: string;
+    bestTime?: string;
+    insiderTip?: string;
+    howToGetThere?: string;
+    cost?: string;
 }
 
-export default function CountryDestinationCard({ name, city, country, image, description }: CountryDestinationCardProps) {
+export default function CountryDestinationCard({ 
+    name, city, country, image, description,
+    category, whyVisit, bestTime, insiderTip, howToGetThere, cost
+}: CountryDestinationCardProps) {
     // Unique seeded fallback so every card shows a different image on failure
     const seedSlug = encodeURIComponent(name.toLowerCase().replace(/\s+/g, '-'));
     const fallbackSources = [
@@ -54,14 +63,26 @@ export default function CountryDestinationCard({ name, city, country, image, des
 
             <div className="flex flex-col flex-grow p-6">
                 <div className="mb-3">
-                    <p className="text-brand-accent text-xs tracking-widest uppercase font-sans mb-1">{city}, {country}</p>
+                    <p className="text-brand-accent text-xs tracking-widest uppercase font-sans mb-1">
+                        {category ? `${category} | ` : ''}{city}, {country}
+                    </p>
                     <h4 className="font-serif text-2xl text-brand-light">{name}</h4>
                 </div>
-                <p className="font-sans text-sm text-brand-light/60 font-light leading-relaxed mb-6 flex-grow">
+                <p className="font-sans text-sm text-brand-light/60 font-light leading-relaxed mb-4 flex-grow">
                     {description}
                 </p>
 
-                <button className="text-left font-sans text-xs tracking-widest uppercase text-brand-accent hover:text-brand-light transition-colors duration-300 w-fit">
+                {(whyVisit || bestTime || insiderTip) && (
+                    <div className="space-y-3 mb-6 font-sans text-xs text-brand-light/70 bg-[#1a1a1a] p-4 rounded-xl border border-white/5 shadow-inner leading-relaxed">
+                        {whyVisit && <p><strong className="text-brand-light font-medium">Why Visit:</strong> {whyVisit}</p>}
+                        {bestTime && <p><strong className="text-brand-light font-medium">Best Time:</strong> {bestTime}</p>}
+                        {howToGetThere && <p><strong className="text-brand-light font-medium">Transport:</strong> {howToGetThere}</p>}
+                        {cost && <p><strong className="text-brand-light font-medium">Cost:</strong> {cost}</p>}
+                        {insiderTip && <p className="pt-1"><strong className="text-brand-accent font-medium">💡 Insider Tip:</strong> {insiderTip}</p>}
+                    </div>
+                )}
+
+                <button className="text-left font-sans text-xs tracking-widest uppercase text-brand-accent hover:text-brand-light transition-colors duration-300 w-fit mt-auto">
                     Explore Details
                 </button>
             </div>

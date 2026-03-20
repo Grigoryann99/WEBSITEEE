@@ -1,9 +1,17 @@
+import { italyAttractions } from '../data/italyAttractions';
+
 export interface Destination {
     name: string;
     city: string;
     country: string;
     description: string;
     image: string;
+    category?: string;
+    whyVisit?: string;
+    bestTime?: string;
+    insiderTip?: string;
+    howToGetThere?: string;
+    cost?: string;
 }
 
 export interface CountryData {
@@ -66,43 +74,19 @@ export const countries: Record<string, CountryData> = {
         description: "Discover ancient ruins, masterpiece art, and world-renowned gastronomy.",
         heroImage: "https://images.unsplash.com/photo-1498503182468-3b51cbb6cb24?q=80&w=2000&auto=format&fit=crop",
         tips: ["Carry cash for small cafes", "Validate your train tickets", "Dinner is usually late"],
-        destinations: [
-            {
-                name: "Colosseum",
-                city: "Rome",
-                country: "Italy",
-                description: "An oval amphitheater in the center of Rome, the largest ancient amphitheater ever built.",
-                image: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Grand Canal",
-                city: "Venice",
-                country: "Italy",
-                description: "The main waterway of Venice, lined with Renaissance and Gothic palaces.",
-                image: "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Duomo di Firenze",
-                city: "Florence",
-                country: "Italy",
-                description: "Florence's cathedral, known for its red-tiled dome engineered by Brunelleschi.",
-                image: "https://images.unsplash.com/photo-1541370976299-4d24ebbc9077?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Cinque Terre",
-                city: "Liguria",
-                country: "Italy",
-                description: "A string of centuries-old seaside villages on the rugged Italian Riviera coastline.",
-                image: "https://images.unsplash.com/photo-1498307833015-e7b400441eb8?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Amalfi Coast",
-                city: "Campania",
-                country: "Italy",
-                description: "A 50-kilometer stretch of coastline featuring sheer cliffs and pastel-colored villages.",
-                image: "https://images.unsplash.com/photo-1533676802871-eca1ae998cd5?auto=format&fit=crop&q=80&w=800"
-            }
-        ]
+        destinations: italyAttractions.map(attr => ({
+            name: attr.name,
+            city: attr.location,
+            country: 'Italy',
+            description: attr.description,
+            image: attr.image,
+            category: attr.category,
+            whyVisit: attr.whyVisit,
+            bestTime: attr.bestTime,
+            insiderTip: attr.insiderTip,
+            howToGetThere: attr.howToGetThere,
+            cost: attr.cost
+        }))
     },
     japan: {
         name: "Japan",

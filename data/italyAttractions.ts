@@ -8,7 +8,8 @@ export const italyAttractions = [
     bestTime: "November to March. The intense Roman summer heat radiating from the travertine stone is gone, and the entry queues drop significantly, allowing for unhurried exploration of the upper tiers.",
     insiderTip: "Book the 'Underground and Belvedere' tour directly through the official CoopCulture website exactly 30 days in advance at 9:00 AM Rome time to secure access to the restricted hypogeum and third ring without third-party markups.",
     howToGetThere: "Take Metro Line B to the Colosseo station; the exit opens directly facing the monument. A single BIT ticket costs €1.50.",
-    cost: "Paid. The standard entry ticket, which includes the Roman Forum and Palatine Hill, is €18.00."
+    cost: "Paid. The standard entry ticket, which includes the Roman Forum and Palatine Hill, is €18.00.",
+    image: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "Grand Canal",
@@ -19,7 +20,8 @@ export const italyAttractions = [
     bestTime: "Late October. The heavy summer vaporetto traffic subsides, and the autumn mist rolling across the lagoon at dawn transforms the canal's atmosphere into something distinctly cinematic.",
     insiderTip: "Avoid the expensive private water taxis; instead, take Vaporetto Line 1 starting from Piazzale Roma at sunset and secure a seat in the open air at the very front or rear of the boat for an uninterrupted 45-minute architectural tour.",
     howToGetThere: "Arrive at Venezia Santa Lucia railway station; the Vaporetto docks (Ferrovia) are immediately outside the main exit. A single journey ticket is €9.50.",
-    cost: "Paid. €9.50 for a standard 75-minute Vaporetto ticket."
+    cost: "Paid. €9.50 for a standard 75-minute Vaporetto ticket.",
+    image: "https://images.unsplash.com/photo-1514890547357-a9ee288728e0?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "Duomo di Firenze",
@@ -30,7 +32,8 @@ export const italyAttractions = [
     bestTime: "January and February. The claustrophobic, narrow staircases leading up the dome are pleasantly cool and mostly empty, allowing you to examine the masonry details at your own pace.",
     insiderTip: "Do not waste time lining up for the free cathedral floor entry. Purchase the Brunelleschi Pass, which guarantees an exact time slot for the dome climb and grants priority access to the subterranean crypt of Santa Reparata.",
     howToGetThere: "Walk 10 minutes from Firenze Santa Maria Novella (SMN) train station down Via de' Panzani and Via de' Cerretani.",
-    cost: "Paid. The Brunelleschi Pass, covering all monuments in the complex, costs €30.00."
+    cost: "Paid. The Brunelleschi Pass, covering all monuments in the complex, costs €30.00.",
+    image: "https://images.unsplash.com/photo-1543429257-3eb0b65d9c58?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "Cinque Terre",
@@ -41,7 +44,8 @@ export const italyAttractions = [
     bestTime: "Late September through October. The Mediterranean retains its summer warmth for swimming, but the intense heat required to hike the steep coastal paths dissipates, making the terrain manageable.",
     insiderTip: "Skip the crowded Sentiero Azzurro (Blue Trail) between Vernazza and Monterosso. Instead, take the steep, demanding hike up to the Sanctuary of Madonna di Soviore for complete silence and a panoramic view encompassing all five villages.",
     howToGetThere: "Take the regional train from La Spezia Centrale. The Cinque Terre Express connects all villages in under 25 minutes. A single journey is €5.00, or a daily pass costs €19.50.",
-    cost: "Paid. The Cinque Terre Trekking Card accessing the main coastal paths is €7.50, but upper trails are free."
+    cost: "Paid. The Cinque Terre Trekking Card accessing the main coastal paths is €7.50, but upper trails are free.",
+    image: "https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "Amalfi Coast",
@@ -52,7 +56,8 @@ export const italyAttractions = [
     bestTime: "May. The intense summer traffic jams on the single coastal road haven't materialized, the lemon terraces are actively being harvested, and the water is clean and clear.",
     insiderTip: "Instead of dealing with the stress of driving or the crowded SITA buses, utilize the Travelmar ferry network connecting Salerno, Amalfi, and Positano. It offers better views and predictable transit times.",
     howToGetThere: "Take a fast train (Frecciarossa or Italo) to Salerno station, then walk 10 minutes to the Concordia dock to board a coastal ferry (approx. €9.00).",
-    cost: "Free to visit the towns; transport and specific historical sites incur costs."
+    cost: "Free to visit the towns; transport and specific historical sites incur costs.",
+    image: "https://images.unsplash.com/photo-1557800636-894a64c1696f?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "Vatican Museums & Sistine Chapel",
@@ -63,7 +68,8 @@ export const italyAttractions = [
     bestTime: "Late November or late January on a Wednesday morning. While the Pope holds his general audience in St. Peter's Square, the museum halls empty out, making it one of the few times you can stop to analyze the art.",
     insiderTip: "Do not follow the mass of tourists directly to the Sistine Chapel. Divert to the Pinacoteca (Picture Gallery) located near the entrance in an isolated wing to examine Leonardo da Vinci’s unfinished 'St. Jerome in the Wilderness' entirely alone.",
     howToGetThere: "Take Metro Line A to the Ottaviano or Cipro stations in Rome, followed by a 10-minute walk to the sweeping Viale Vaticano entrance walls.",
-    cost: "Paid. A standard full-price admission ticket booked directly via the Vatican website is €20.00 plus a €5.00 reservation fee."
+    cost: "Paid. A standard full-price admission ticket booked directly via the Vatican website is €20.00 plus a €5.00 reservation fee.",
+    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "Pompeii",
@@ -74,7 +80,8 @@ export const italyAttractions = [
     bestTime: "April. The wildflowers are blooming amid the ruins, the Vesuvius backdrop is usually free of haze, and the temperatures permit walking 5-8 kilometers through an open site with absolutely no shade.",
     insiderTip: "Enter through the less crowded Piazza Anfiteatro gate rather than the main Porta Marina. This allows you to immediately access the spectacular Villa of the Mysteries and the Amphitheater before the tour groups arrive around 11 AM.",
     howToGetThere: "Take the Campania Express or the local Circumvesuviana commuter train from Napoli Centrale (Garibaldi station). Get off at the Pompei Scavi-Villa dei Misteri stop. The journey takes 35 minutes and costs €3.30.",
-    cost: "Paid. A single entry ticket purchased at the gate or officially online is €19.00."
+    cost: "Paid. A single entry ticket purchased at the gate or officially online is €19.00.",
+    image: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "Lake Como",
@@ -85,7 +92,8 @@ export const italyAttractions = [
     bestTime: "September. The intense heat waves dissipate, the primary gardens are still lush, and the notoriously slow mid-lake ferry routes become significantly less congested with day-trippers.",
     insiderTip: "Forego the crowded towns of Bellagio and Varenna for a day and take the funicular from Argegno up to Pigra (880 meters elevation). The view commands the entire southern arm of the lake, entirely separated from the tourist circuit.",
     howToGetThere: "Take a Trenord train from Milano Centrale to Varenna-Esino (1 hour, €7.10) for mid-lake access, or to Como San Giovanni (40 minutes, €5.20) for the southern tip.",
-    cost: "Free to visit the towns; fast hydrofoil ferries cost approximately €12.00-15.00 depending on the route, and villa entries average €12.00."
+    cost: "Free to visit the towns; fast hydrofoil ferries cost approximately €12.00-15.00 depending on the route, and villa entries average €12.00.",
+    image: "https://images.unsplash.com/photo-1599492263577-a9e50f4a1cf3?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "Tuscany Wine Country",
@@ -96,7 +104,8 @@ export const italyAttractions = [
     bestTime: "October. The vendemmia (grape harvest) is in full swing. You can smell the fermenting must in the air across the region, and the leaves on the vines transition to brilliant reds and yellows.",
     insiderTip: "Do not limit yourself to the major castle estates. Drive to the high-altitude village of Radda in Chianti to focus on smaller producers operating out of steep, narrow vineyards, offering a more austere, terroir-driven expression of Sangiovese.",
     howToGetThere: "A rental car is strictly required to access the vineyards effectively. Drive south from Florence on the SR222. Alternatively, SITA buses serve main towns, but limit access to specific estates.",
-    cost: "Free to traverse the region. Standard wine tastings run between €20.00 and €45.00 per person."
+    cost: "Free to traverse the region. Standard wine tastings run between €20.00 and €45.00 per person.",
+    image: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "Positano",
@@ -107,7 +116,8 @@ export const italyAttractions = [
     bestTime: "Late April. The hotels and restaurants have just reopened for the season, the wisteria vines draping over the pergolas are in full, fragrant bloom, and you can walk the stairs without heat exhaustion.",
     insiderTip: "Instead of fighting for space on the main Spiaggia Grande, hire a small wooden gozzo boat at the harbor for €15 to drop you at Laurito beach. Eat lunch at Da Adolfo for exceptional grilled mozzarella on lemon leaves, completely removed from the boutique crowds.",
     howToGetThere: "Take a Sita SUD bus from Sorrento railway station (45 minutes, €2.40) or arrive by ferry from Amalfi or Salerno (approx. €14.00), which provides the critical sea-level approach view.",
-    cost: "Free to visit. Expect high costs for dining; sunbed rentals on the main beach average €30.00."
+    cost: "Free to visit. Expect high costs for dining; sunbed rentals on the main beach average €30.00.",
+    image: "https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "Dolomites",
@@ -118,7 +128,8 @@ export const italyAttractions = [
     bestTime: "Late June to early July. The high-altitude snowpack has largely melted off the trails above 2,500 meters, ensuring the via ferrata routes and remote rifugios (mountain huts) are fully accessible.",
     insiderTip: "Purchase the Tabacco-brand 1:25,000 scale topographical maps locally. They are vastly superior to any digital trail app for navigating the extensive network of secondary paths and identifying reliable rifugios for mid-day strudel and espresso.",
     howToGetThere: "Take a Trenitalia train to Bolzano/Bozen (3 hours from Milan). From there, the SAD regional bus network connects efficiently to key valleys like Val Gardena and Alta Badia for €5.00-€10.00.",
-    cost: "Free for hiking. Mountain pass cable cars (funivie) vary widely, generally costing €20.00 to €35.00 for a round trip."
+    cost: "Free for hiking. Mountain pass cable cars (funivie) vary widely, generally costing €20.00 to €35.00 for a round trip.",
+    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "Sicilian Coast",
@@ -129,7 +140,8 @@ export const italyAttractions = [
     bestTime: "May or October. Summer temperatures regularly exceed 35°C (95°F), making exploration of the exposed archaeological sites punishing. Autumn offers warm seas and manageable hiking conditions on Etna.",
     insiderTip: "Skip the heavily commercialized boat tours originating in Taormina. Drive down to the small fishing harbor of Aci Trezza and pay a local fisherman to take you directly out to the Lachea Island marine reserve, formed by submarine volcanic activity.",
     howToGetThere: "Fly into Catania Fontanarossa Airport (CTA). The Interbus regional coach network operates frequent legs up to Taormina (1 hour, €5.50) and south to Syracuse (1 hour 15 mins, €6.50).",
-    cost: "Free for general coastal access. Entry to the Taormina Greek Theatre is €13.50; Neapolis Archaeological Park in Syracuse is €13.00."
+    cost: "Free for general coastal access. Entry to the Taormina Greek Theatre is €13.50; Neapolis Archaeological Park in Syracuse is €13.00.",
+    image: "https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "Borghese Gallery",
@@ -140,7 +152,8 @@ export const italyAttractions = [
     bestTime: "February. While the gallery numbers are strictly controlled year-round, winter months offer the highest probability of securing tickets just a few days in advance rather than managing a reservation months ahead.",
     insiderTip: "Book a slot starting at 5:00 PM. During the last rotation of the day, tourist fatigue sets in, and large tour operators are generally absent, leaving the six Caravaggio paintings in Room VIII remarkably quiet.",
     howToGetThere: "Take Metro Line A to Spagna, walk up the Spanish Steps, and proceed through the Villa Borghese gardens (approx. 20-minute walk). Multiple bus lines (e.g., 910) stop at Pinciana/Museo Borghese.",
-    cost: "Paid. Mandatory pre-booked tickets cost €13.00, plus a €2.00 reservation fee."
+    cost: "Paid. Mandatory pre-booked tickets cost €13.00, plus a €2.00 reservation fee.",
+    image: "https://images.unsplash.com/photo-1604580864964-0462f5d5b1a8?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "Piazza San Marco",
@@ -151,7 +164,8 @@ export const italyAttractions = [
     bestTime: "November. The threat of high water adds tension to the environment, and the removal of the massive summer cafe seating areas restores the vast, open, sweeping scale of the pavement originally intended by its designers.",
     insiderTip: "Set an alarm for 6:00 AM and stand in the center of the piazza before the street sweepers finish. The total absence of human noise allows the resonant acoustics of the enclosed Renaissance architecture to manifest, entirely shifting its perceived vastness.",
     howToGetThere: "Walk 30-40 minutes eastward from Piazzale Roma following the yellow 'S. Marco' signs, or take Vaporetto Line 1 or 2 down the Grand Canal to the San Marco Vallaresso or San Zaccaria stops for €9.50.",
-    cost: "Free to occupy the square. Entry to St. Mark's Basilica is €3.00; climbing the Campanile is €10.00."
+    cost: "Free to occupy the square. Entry to St. Mark's Basilica is €3.00; climbing the Campanile is €10.00.",
+    image: "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "Matera Cave City",
@@ -162,7 +176,8 @@ export const italyAttractions = [
     bestTime: "Late October. The blinding, reflective heat of the white limestone is tolerable, and the harsh shadows cast by the low autumn sun emphasize the erratic, stacked topography of the ravine dwellings.",
     insiderTip: "Cross the suspension bridge over the Gravina river at sunset and hike up to the Belvedere di Murgia Timone. Viewing the Sassi from the opposite side of the ravine as the streetlights illuminate the caves clarifies how the city was hidden geographically.",
     howToGetThere: "Fly into Bari Airport (BRI). Take the narrow-gauge Ferrovie Appulo Lucane (FAL) train from Bari Centrale directly to Matera Centrale. The trip takes 1.5 hours and costs €5.10.",
-    cost: "Free to wander the ancient districts. Museum cave houses charge €3.00-€5.00 for entry."
+    cost: "Free to wander the ancient districts. Museum cave houses charge €3.00-€5.00 for entry.",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "Ortigia Island",
@@ -173,7 +188,8 @@ export const italyAttractions = [
     bestTime: "April. The oppressive Sirocco winds from Africa are rare, the outdoor markets surrounding the Temple of Apollo are vibrant with spring produce, and the narrow limestone alleys remain cool.",
     insiderTip: "At the daily Mercato di Ortigia, bypass the flashy spice vendors and locate the Caseificio Borderi. Endure the chaotic queue at the back of the shop for one of their massive, improvised panini built with freshly stretched mozzarella and cured meats.",
     howToGetThere: "Take a fast Intercity train from Catania to Siracusa station (1 hour, €7.50). Exit the station and walk east for 15 minutes across the Ponte Umbertino directly onto the island.",
-    cost: "Free to explore. Entry into the Duomo is €2.00; the subterranean hypogeum is €5.00."
+    cost: "Free to explore. Entry into the Duomo is €2.00; the subterranean hypogeum is €5.00.",
+    image: "https://images.unsplash.com/photo-1589395937658-0557e7d89fad?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "Valle d'Aosta",
@@ -184,7 +200,8 @@ export const italyAttractions = [
     bestTime: "September. The high-altitude hiking paths and via ferratas remain free of new snowpack, the sky clarity is superior to the hazy summer months, and you can harvest fresh fontina cheese arriving from the high pastures.",
     insiderTip: "Take the Skyway Monte Bianco cable car from Courmayeur, but do not stop at the first pavilion. Proceed immediately to the Punta Helbronner station (3,466 m) early in the morning for unimpeded, 360-degree views of the Mont Blanc massif before the afternoon cloud cover obscures the peaks.",
     howToGetThere: "Take an Trenitalia train from Turin (Torino Porta Nuova) transferring at Chivasso or Ivrea to Aosta. Journey time is roughly 2 hours, costing €10.50.",
-    cost: "Free for hiking. Fénis Castle entry is €7.00. The Skyway Monte Bianco round trip is expensive at €55.00."
+    cost: "Free for hiking. Fénis Castle entry is €7.00. The Skyway Monte Bianco round trip is expensive at €55.00.",
+    image: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "Lecce Baroque Old Town",
@@ -195,7 +212,8 @@ export const italyAttractions = [
     bestTime: "May or September. The intense summer heat, which turns the city's ubiquitous white stone into a blinding, oppressive oven, is entirely avoidable, making prolonged observation of the facades comfortable.",
     insiderTip: "Locate the subterranean Museo Faggiano near the Roman amphitheater. This private residence underwent plumbing repairs in 2001, accidentally uncovering layered archaeological strata encompassing Messapian tombs, a Roman granary, and a Templar chapel beneath the modern floor.",
     howToGetThere: "Take a direct Frecciargento high-speed train from Rome (5.5 hours) or a regional train from Bari (1.5 hours, €11.20) to Lecce station, which is a 10-minute walk from the historic center.",
-    cost: "Free for urban exploration. The LeccEcclesiae ticket, granting access to the Duomo, Santa Croce, and three other major baroque churches, costs €9.00."
+    cost: "Free for urban exploration. The LeccEcclesiae ticket, granting access to the Duomo, Santa Croce, and three other major baroque churches, costs €9.00.",
+    image: "https://images.unsplash.com/photo-1602839623089-66acd9e58d23?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "Assisi & Umbrian Countryside",
@@ -206,7 +224,8 @@ export const italyAttractions = [
     bestTime: "Early November. The massive pilgrimage crowds have receded, the morning fog severely isolates the hill towns visually, and the local olive oil harvest—a staple of Umbrian agriculture—is active.",
     insiderTip: "Do not view the frescoes in the Upper Basilica primarily as religious icons; analyze them as a revolutionary communication strategy. Stand back and observe how Giotto utilized heavy, three-dimensional modeling of the figures specifically to make complex theological concepts accessible to an illiterate rural peasantry.",
     howToGetThere: "Take a slow regionale train from Florence or Rome to Assisi station (approx. 2-2.5 hours, €12.00). The station is 3 kilometers down in the valley; you must catch the frequent local bus 'Line C' up the hill to the historical center.",
-    cost: "Free to visit the basilicas and hermitages. Audio guides present at the major churches usually cost €5.00."
+    cost: "Free to visit the basilicas and hermitages. Audio guides present at the major churches usually cost €5.00.",
+    image: "https://images.unsplash.com/photo-1534260164206-2a3a4a72891d?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "Costa Smeralda",
@@ -217,6 +236,7 @@ export const italyAttractions = [
     bestTime: "Late September. The billionaire yachts begin to pull out, the outrageous inflated summer prices at local establishments drop slightly, and the seawater remains incredibly warm for swimming.",
     insiderTip: "Avoid the famous, overcrowded Spiaggia del Principe. Instead, navigate the unpaved dirt road toward Capo Ferro to access the small, hidden coves near the lighthouse, where the jagged granite offers deep-water snorkeling without the beach club fees.",
     howToGetThere: "Fly into Olbia Costa Smeralda Airport (OLB). A rental car is absolutely mandatory to navigate the disconnected coves and inland archaeological sites, as public transport along this specific coastline is virtually nonexistent.",
-    cost: "Free for beach access and driving. Expect exorbitant costs for dining and parking in Porto Cervo; entry to La Prisgiona archaeological site is €6.00."
+    cost: "Free for beach access and driving. Expect exorbitant costs for dining and parking in Porto Cervo; entry to La Prisgiona archaeological site is €6.00.",
+    image: "https://images.unsplash.com/photo-1586500036706-41963de24d8b?auto=format&fit=crop&w=800&q=80"
   }
 ];
