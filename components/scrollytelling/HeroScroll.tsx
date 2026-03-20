@@ -3,6 +3,7 @@
 import { useRef, useEffect, useState } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import { useImagePreloader } from '@/lib/hooks/useImagePreloader';
+import Link from 'next/link';
 
 // ─── Scroll Progress Zones (0 to 1) ──────────────────────────────────────────
 //
@@ -196,10 +197,10 @@ export default function HeroScroll() {
                     >
                         <div className="backdrop-blur-md bg-black/10 p-12 rounded-3xl border border-white/5 shadow-2xl flex flex-col items-center">
                             <h2 className="font-serif text-[72px] md:text-[84px] lg:text-[96px] leading-[1.1] tracking-wide text-white text-center drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)]">
-                                Paradise is Closer<br />Than it Seems
+                                Your Next Chapter<br />Starts Here
                             </h2>
                             <p className="mt-8 font-inter text-lg md:text-xl text-brand-accent font-medium tracking-widest uppercase max-w-[600px] text-center drop-shadow-md">
-                                Villa Collection
+                                PRIVATE SANCTUARIES
                             </p>
                         </div>
                     </motion.div>
@@ -211,10 +212,10 @@ export default function HeroScroll() {
                     >
                         <div className="backdrop-blur-md bg-black/10 p-12 rounded-3xl border border-white/5 shadow-2xl flex flex-col items-center">
                             <h2 className="font-serif text-[72px] md:text-[84px] lg:text-[96px] leading-[1.1] tracking-wide text-white text-center drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)]">
-                                Worry-Free<br />Vacation
+                                Where Luxury Meets<br />the Horizon
                             </h2>
                             <p className="mt-8 font-inter text-lg md:text-xl text-brand-accent font-medium tracking-widest uppercase max-w-[600px] text-center drop-shadow-md">
-                                Life Inside
+                                CURATED ESCAPES
                             </p>
                         </div>
                     </motion.div>
@@ -227,16 +228,32 @@ export default function HeroScroll() {
                         <div className="backdrop-blur-xl bg-black/20 p-12 md:p-16 rounded-[2.5rem] border border-white/10 shadow-2xl flex flex-col items-center mx-6">
                             <p className="font-inter text-brand-accent tracking-[0.3em] text-sm uppercase mb-6 flex items-center gap-4">
                                 <span className="w-8 h-[1px] bg-brand-accent block"></span>
-                                Your Journey
+                                YOUR JOURNEY BEGINS
                                 <span className="w-8 h-[1px] bg-brand-accent block"></span>
                             </p>
 
-                            <h2 className="font-serif text-[64px] md:text-[76px] lg:text-[84px] leading-[1.1] tracking-wide text-white text-center drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)] max-w-[800px] mb-12">
-                                How about a perfect trip<br />
-                                <em className="not-italic text-brand-accent/90 focus:outline-none">– in one click</em>
+                            <h2 className="font-serif text-[64px] md:text-[76px] lg:text-[84px] leading-[1.1] tracking-wide text-white text-center drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)] max-w-[800px] mb-8">
+                                From Dream to Destination
                             </h2>
 
+                            <p className="font-sans font-light text-white/80 max-w-2xl text-center text-lg md:text-xl leading-relaxed mb-10 drop-shadow-md">
+                                Browse 50+ destinations, discover private villas, and read expert travel guides — everything you need to plan your next extraordinary journey, all in one place.
+                            </p>
 
+                            <div className="flex flex-col sm:flex-row items-center gap-6">
+                                <Link 
+                                    href="/destinations" 
+                                    className="bg-brand-accent text-[#0a0a0a] px-8 py-4 rounded-full text-xs font-sans tracking-widest uppercase font-semibold hover:bg-white transition-all transform hover:scale-105"
+                                >
+                                    Explore Destinations
+                                </Link>
+                                <a 
+                                    href="#villas" 
+                                    className="border border-brand-accent text-brand-accent px-8 py-4 rounded-full text-xs font-sans tracking-widest uppercase font-semibold hover:bg-brand-accent hover:text-[#0a0a0a] transition-all transform hover:scale-105"
+                                >
+                                    Browse Villas
+                                </a>
+                            </div>
                         </div>
                     </motion.div>
 

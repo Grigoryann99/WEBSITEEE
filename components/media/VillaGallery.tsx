@@ -9,9 +9,10 @@ const villas = [
         id: 1,
         name: 'The Ocean Villas',
         price: 'From $1,200 / Night',
-        description: 'Overwater sanctuaries with private infinity pools and direct lagoon access.',
+        description: 'Perched above a turquoise lagoon with private infinity pools and direct reef access below. Each villa includes a dedicated butler, sunset deck, and water sports facility.',
         image: '/villas/1villa.png',
         bedrooms: 2,
+
         guests: 4,
         amenity: 'Private Pool',
         location: 'Maldives'
@@ -20,7 +21,7 @@ const villas = [
         id: 2,
         name: 'The Beach Residence',
         price: 'From $2,500 / Night',
-        description: 'Sprawling beachfront estates surrounded by lush tropical gardens.',
+        description: 'Three acres of tropical garden on a private beachfront accommodating up to eight guests in ocean-facing suites. Includes private chef, tennis court, and direct beach access.',
         image: '/villas/2villa.png',
         bedrooms: 4,
         guests: 8,
@@ -31,7 +32,7 @@ const villas = [
         id: 3,
         name: 'The Royal Estate',
         price: 'Inquire for Pricing',
-        description: 'The crown jewel of the island. 5 bedrooms, private chef, and yacht access.',
+        description: 'Five bedrooms, private chef, dedicated yacht, and a 25-meter infinity pool overlooking the lagoon. Available for weekly bookings only — inquire for pricing.',
         image: '/villas/3villa.png',
         bedrooms: 5,
         guests: 10,
@@ -42,7 +43,7 @@ const villas = [
         id: 4,
         name: 'Golden Horizon',
         price: 'From $1,500 / Night',
-        description: 'Breathtaking sunset views from a private cliffside infinity pool.',
+        description: 'Carved into the volcanic caldera cliff with uninterrupted sunset views from a private infinity pool. Sleeps six, includes dedicated concierge and daily breakfast.',
         image: '/villas/4villa.png',
         bedrooms: 3,
         guests: 6,
@@ -53,7 +54,7 @@ const villas = [
         id: 5,
         name: 'Ivory Oasis',
         price: 'From $1,800 / Night',
-        description: 'Minimalist luxury surrounded by pristine white sand beaches.',
+        description: '180 meters of private white sand beach with three bedroom suites, a private cinema, and a full spa. Calm shallow waters ideal for families and couples.',
         image: '/villas/5villa.png',
         bedrooms: 3,
         guests: 6,
@@ -64,7 +65,7 @@ const villas = [
         id: 6,
         name: 'Crimson Peak',
         price: 'From $2,200 / Night',
-        description: 'High-altitude luxury retreat with panoramic mountain vistas.',
+        description: 'At 1,850 meters with panoramic Alpine views and direct ski-in/ski-out access. Private wellness spa and heated outdoor pool available year-round.',
         image: '/villas/6villa.png',
         bedrooms: 4,
         guests: 8,
@@ -75,7 +76,7 @@ const villas = [
         id: 7,
         name: 'Midnight Cove',
         price: 'From $1,400 / Night',
-        description: 'Secluded bay access with a private dock and bioluminescent waters.',
+        description: 'Private dock and kayaks on a bay famous for its natural bioluminescent waters. Swim at night in waters that glow — one of our most unique properties.',
         image: '/villas/7villa.png',
         bedrooms: 2,
         guests: 4,
@@ -86,7 +87,7 @@ const villas = [
         id: 8,
         name: 'Pearl Waters',
         price: 'From $1,100 / Night',
-        description: 'Intimate overwater bungalow perfect for couples and honeymooners.',
+        description: 'Glass floor panels reveal the coral reef below this intimate overwater bungalow for couples. Private plunge pool and romantic dining deck above the water included.',
         image: '/villas/8villa.png',
         bedrooms: 1,
         guests: 2,
@@ -97,7 +98,7 @@ const villas = [
         id: 9,
         name: 'Obsidian Ridge',
         price: 'From $3,000 / Night',
-        description: 'Modern architectural masterpiece carved into volcanic rock.',
+        description: 'Carved into volcanic rock with a geothermal spa and private aurora viewing deck. Unobstructed Northern Lights views — available year-round.',
         image: '/villas/9villa.png',
         bedrooms: 5,
         guests: 10,
@@ -233,6 +234,9 @@ const VillaGallery = () => {
                     transition={{ duration: 0.8, delay: 0.4 }}
                     className="mt-20 text-center"
                 >
+                    <p className="font-sans text-brand-light/60 mb-6 tracking-wide font-light">
+                        Explore our complete collection of 9 private residences worldwide.
+                    </p>
                     <button className="group relative inline-flex items-center gap-4 px-8 py-4 bg-transparent border border-white/20 rounded-full font-sans tracking-widest uppercase text-sm hover:border-brand-accent hover:text-brand-accent transition-colors duration-500">
                         <span>View All Residences</span>
                         <span className="relative flex h-2 w-2">

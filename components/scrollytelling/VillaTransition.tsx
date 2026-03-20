@@ -2,6 +2,7 @@
 
 import { useRef, useState, useEffect } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
+import { Star, Book, Globe } from 'lucide-react';
 
 export default function VillaTransition() {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -130,9 +131,34 @@ export default function VillaTransition() {
                 >
                     <div className="w-[1px] h-24 bg-gradient-to-b from-brand-accent/50 to-transparent mx-auto mt-16 mb-12" />
 
-                    <p className="font-sans font-light text-brand-light/60 max-w-lg mx-auto text-lg leading-relaxed tracking-wide">
+                    <p className="font-sans font-light text-brand-light/60 max-w-lg mx-auto text-lg leading-relaxed tracking-wide mb-24">
                         Curated escapes tailored to the extraordinary. From overwater sanctuaries to alpine serenity, experience the pinnacle of luxury travel.
                     </p>
+
+                    {/* ADDITION 7 - 3 Benefit Cards */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto w-full text-left">
+                        <div className="bg-[#111]/80 backdrop-blur-md border border-white/10 rounded-2xl p-8 hover:border-brand-accent/40 transition-colors">
+                            <Star className="w-8 h-8 text-brand-accent mb-6" />
+                            <h3 className="font-serif text-2xl text-white mb-4">Expert Curation</h3>
+                            <p className="font-sans text-brand-light/60 leading-relaxed font-light">
+                                Every destination and villa on VeloraTravel is handpicked by our editorial team. We feature only places we would genuinely recommend to a close friend — no paid placements, ever.
+                            </p>
+                        </div>
+                        <div className="bg-[#111]/80 backdrop-blur-md border border-white/10 rounded-2xl p-8 hover:border-brand-accent/40 transition-colors">
+                            <Book className="w-8 h-8 text-brand-accent mb-6" />
+                            <h3 className="font-serif text-2xl text-white mb-4">Honest Guides</h3>
+                            <p className="font-sans text-brand-light/60 leading-relaxed font-light">
+                                Real practical advice — seasonal insights, visa requirements, budget breakdowns, and local tips you will not find in a generic travel blog.
+                            </p>
+                        </div>
+                        <div className="bg-[#111]/80 backdrop-blur-md border border-white/10 rounded-2xl p-8 hover:border-brand-accent/40 transition-colors">
+                            <Globe className="w-8 h-8 text-brand-accent mb-6" />
+                            <h3 className="font-serif text-2xl text-white mb-4">50+ Destinations</h3>
+                            <p className="font-sans text-brand-light/60 leading-relaxed font-light">
+                                From the temples of Kyoto to the beaches of the Maldives — 50 extraordinary destinations with deep, researched editorial content.
+                            </p>
+                        </div>
+                    </div>
                 </motion.div>
             </motion.div>
         </section>

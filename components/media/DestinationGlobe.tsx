@@ -8,27 +8,27 @@ import { MapPin, MountainSnow, Compass, Binoculars, Flower2 } from 'lucide-react
 const destinations = [
     {
         title: "The Maldivian Sanctum",
-        desc: "Overwater villa, private chef",
+        desc: "Seven nights in a private overwater villa with a dedicated chef, daily spa treatments, and a sunset dhoni cruise included. Full board, seaplane transfers, and a private snorkeling guide are all arranged.",
         icon: Compass,
     },
     {
         title: "Alpine Serenity",
-        desc: "Swiss Alps chalets, heliskiing",
+        desc: "Five nights in an exclusive Swiss Alps chalet with daily heliskiing, a private mountain guide, and Michelin-starred in-chalet dining every evening. Designed for those who demand the finest mountain experience on earth.",
         icon: MountainSnow,
     },
     {
         title: "Aegean Odyssey",
-        desc: "Santorini cliffside retreat",
+        desc: "Eight days from a private cliffside villa in Santorini with day trips to Thirassia and Oia included. A private catamaran sunset cruise and dedicated concierge complete the experience.",
         icon: MapPin,
     },
     {
         title: "Safari Elegance",
-        desc: "Serengeti luxury camps",
+        desc: "Six nights across two luxury camps in the Serengeti timed to coincide with the Great Migration. Private game drives, bush dinners, and a sunrise hot air balloon safari are all included.",
         icon: Binoculars,
     },
     {
         title: "Kyoto Harmony",
-        desc: "Private ryokan & temple tours",
+        desc: "Five nights in a private ryokan in Higashiyama with exclusive temple access before opening hours. A private tea ceremony master and guided night walk through Gion are included.",
         icon: Flower2,
     }
 ];
