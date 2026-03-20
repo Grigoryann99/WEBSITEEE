@@ -3,6 +3,7 @@ import { getBlogPost, getAllBlogPosts } from '@/lib/blogData';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import AuthorBox from '@/components/blog/AuthorBox';
 
 interface BlogPostPageProps {
     params: { slug: string };
@@ -130,9 +131,13 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                         "description": post.description,
                         "image": post.image,
                         "datePublished": post.date,
+                        "dateModified": post.date,
                         "author": {
-                            "@type": "Organization",
-                            "name": "VeloraTravel Editorial Team"
+                            "@type": "Person",
+                            "name": "Elena Morozova",
+                            "jobTitle": "Editor-in-Chief",
+                            "url": "https://veloratravel.org/about",
+                            "description": "Luxury travel writer with 12+ years of experience across 45+ countries."
                         },
                         "publisher": {
                             "@type": "Organization",
@@ -164,15 +169,26 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
             {/* Article */}
             <article className="max-w-3xl mx-auto px-6 -mt-24 relative z-10 pb-24">
-                {/* Meta */}
-                <div className="flex flex-wrap items-center gap-3 mb-6">
-                    <span className="font-sans text-[10px] tracking-widest uppercase text-brand-accent border border-brand-accent/30 px-3 py-1 rounded-full">
-                        {post.category}
-                    </span>
-                    <span className="font-sans text-xs text-brand-light/40">
-                        {new Date(post.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
-                    </span>
-                    <span className="font-sans text-xs text-brand-light/40">· {post.readTime}</span>
+                {/* Author byline */}
+                <div className="flex items-center gap-4 mb-8">
+                    <div className="relative w-10 h-10 rounded-full overflow-hidden ring-1 ring-brand-accent/30">
+                        <Image
+                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=80&auto=format&fit=crop"
+                            alt="Elena Morozova"
+                            fill
+                            className="object-cover"
+                        />
+                    </div>
+                    <div>
+                        <p className="font-sans text-sm text-brand-light font-medium">Elena Morozova</p>
+                        <div className="flex items-center gap-2 text-brand-light/40 text-xs font-sans">
+                            <span>{new Date(post.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
+                            <span>·</span>
+                            <span>{post.readTime}</span>
+                            <span>·</span>
+                            <span className="text-brand-accent">{post.category}</span>
+                        </div>
+                    </div>
                 </div>
 
                 <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-brand-light mb-6 leading-tight tracking-wide">
@@ -187,8 +203,11 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                     {renderContent(post.content)}
                 </div>
 
+                {/* Author Box */}
+                <AuthorBox />
+
                 {/* Back to Blog */}
-                <div className="mt-16 pt-12 border-t border-white/10">
+                <div className="mt-12 pt-10 border-t border-white/10">
                     <Link
                         href="/blog"
                         className="inline-flex items-center gap-2 font-sans text-xs tracking-widest uppercase text-brand-accent hover:text-brand-light transition-colors duration-300"

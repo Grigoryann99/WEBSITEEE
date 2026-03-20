@@ -25,6 +25,10 @@ export async function generateMetadata(
     return {
         title: `Explore ${data.name} | Velora Travel`,
         description: data.description,
+        robots: {
+            index: false,
+            follow: true,
+        },
     };
 }
 
