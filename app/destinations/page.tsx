@@ -338,45 +338,71 @@ export default function DestinationsPage() {
             {/* 5. TRAVEL INSPIRATION */}
             <section className="py-32 max-w-7xl mx-auto px-6">
                 <div className="text-center mb-16">
-                    <p className="font-sans text-brand-accent tracking-[0.2em] text-xs uppercase mb-4">Curated Collections</p>
+                    <p className="font-sans text-[#1D9E75] tracking-[0.2em] text-xs uppercase mb-4">Curated Collections</p>
                     <h2 className="font-serif text-4xl md:text-5xl text-brand-light">Travel Inspiration</h2>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {/* IMPROVEMENT 5 — Mobile horizontal scroll, desktop 3-col grid */}
+                <div className="
+                    flex gap-6 overflow-x-auto pb-4
+                    sm:grid sm:grid-cols-2 sm:overflow-visible sm:pb-0
+                    lg:grid-cols-3
+                    [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]
+                ">
                     {inspirationCards.map((card, i) => (
                         <motion.div
                             key={card.id}
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: i * 0.1 }}
-                            className="group relative aspect-video sm:aspect-square rounded-2xl overflow-hidden cursor-pointer bg-[#1a1a1a]"
+                            transition={{ delay: Math.min(i, 5) * 0.08, duration: 0.5 }}
+                            /* IMPROVEMENT 5 — each card min-width 280px on mobile so 1.2 cards visible */
+                            className="group relative flex-shrink-0 w-[280px] sm:w-auto aspect-square rounded-2xl overflow-hidden cursor-pointer bg-[#1a1a1a]"
                         >
-                            <Image
-                                src={card.image}
-                                alt={card.title}
-                                fill
-                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                                loading="lazy"
-                                className="object-cover group-hover:scale-[1.03] transition-transform duration-300"
-                                onError={(e) => {
-                                    const target = e.currentTarget as HTMLImageElement;
-                                    target.srcset = "";
-                                    if (!target.src.includes('picsum.photos')) {
-                                        target.src = `https://picsum.photos/seed/${card.id}/800/800`;
-                                    }
-                                }}
-                            />
-                            <div className="absolute inset-0 bg-[rgba(0,0,0,0.35)] group-hover:bg-black/20 transition-colors duration-300" />
-                            <div className="absolute inset-0 p-6 flex items-end">
-                                <div>
-                                    <h3 className="font-serif text-2xl text-white drop-shadow-lg leading-snug">{card.title}</h3>
+                            {/* IMPROVEMENT 4 — wrap with Link */}
+                            <Link href={card.href} className="block w-full h-full">
+                                {/* Photo */}
+                                <Image
+                                    src={card.image}
+                                    alt={card.title}
+                                    fill
+                                    sizes="(max-width: 640px) 280px, (max-width: 1024px) 50vw, 33vw"
+                                    loading="lazy"
+                                    /* IMPROVEMENT 1 — scale on hover */
+                                    className="object-cover transition-transform duration-300 ease-out group-hover:scale-[1.05]"
+                                    onError={(e) => {
+                                        const target = e.currentTarget as HTMLImageElement;
+                                        target.srcset = "";
+                                        if (!target.src.includes('picsum.photos')) {
+                                            target.src = `https://picsum.photos/seed/${card.id}/800/800`;
+                                        }
+                                    }}
+                                />
+
+                                {/* IMPROVEMENT 2 — Tag badge top-left */}
+                                <span className="absolute top-4 left-4 z-20 text-[10px] uppercase tracking-widest font-sans font-medium text-white bg-black/50 backdrop-blur-md border border-white/10 rounded-full px-3 py-1">
+                                    {card.tag}
+                                </span>
+
+                                {/* IMPROVEMENT 1 — permanent subtle gradient + stronger on hover */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300" />
+
+                                {/* Card info */}
+                                <div className="absolute inset-0 p-6 flex flex-col justify-end">
+                                    <h3 className="font-serif text-2xl text-white drop-shadow-lg leading-snug mb-4 transition-transform duration-300 ease-out group-hover:-translate-y-1">
+                                        {card.title}
+                                    </h3>
+                                    {/* IMPROVEMENT 1 — "Explore Article →" button revealed on hover */}
+                                    <span className="inline-flex items-center gap-2 text-xs tracking-widest uppercase font-sans font-medium text-[#1D9E75] opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out">
+                                        Explore Article <ArrowRight className="w-3 h-3" />
+                                    </span>
                                 </div>
-                            </div>
+                            </Link>
                         </motion.div>
                     ))}
                 </div>
             </section>
+
 
             {/* 6. TRAVEL TIPS */}
             <section className="py-32 bg-[#141414] border-y border-white/5">
