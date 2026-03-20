@@ -3,11 +3,12 @@
 import { useState, useMemo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Search, MapPin, Compass, ArrowRight, ChevronDown } from 'lucide-react';
+import { Search, Compass, ArrowRight, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
     globalDestinations,
     destinationCategories,
+    categoryTags,
     featuredDestination,
     inspirationCards,
     travelTips,
@@ -19,33 +20,42 @@ export default function DestinationsPage() {
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
     const [activeFaq, setActiveFaq] = useState<string | null>(null);
 
-    // Filter destinations based on search and category
+    // Filter destinations based on search and category (IMPROVEMENT 2 + 3)
     const filteredDestinations = useMemo(() => {
         let results = globalDestinations;
         
         if (selectedCategory) {
-            results = results.filter(d => d.category === selectedCategory);
+            results = results.filter(d => {
+                const tags = categoryTags[d.id];
+                if (tags) {
+                    return tags.includes(selectedCategory);
+                }
+                // Fallback to single category field
+                return d.category === selectedCategory;
+            });
         }
         
         if (searchQuery) {
             const q = searchQuery.toLowerCase();
             results = results.filter(d =>
-                d.name.toLowerCase().includes(q) ||
-                (d.country && d.country.toLowerCase().includes(q)) ||
-                d.description.toLowerCase().includes(q)
+                d.name.toLowerCase().includes(q)
             );
         }
         
         return results;
     }, [searchQuery, selectedCategory]);
 
+    const clearAllFilters = () => {
+        setSearchQuery('');
+        setSelectedCategory(null);
+    };
+
     const toggleCategory = (id: string) => {
         if (selectedCategory === id) {
             setSelectedCategory(null);
         } else {
             setSelectedCategory(id);
-            // Optional: Scroll to results on mobile
-            if (window.innerWidth < 768) {
+            if (typeof window !== 'undefined' && window.innerWidth < 768) {
                 const grid = document.getElementById('directory-grid');
                 if (grid) grid.scrollIntoView({ behavior: 'smooth' });
             }
@@ -90,16 +100,16 @@ export default function DestinationsPage() {
                             Curated intelligence on 50 of the world&apos;s most captivating locations. Find your next extraordinary journey.
                         </p>
 
-                        {/* Search Bar */}
+                        {/* IMPROVEMENT 3 — Live Search */}
                         <div className="relative max-w-xl mx-auto">
                             <input
                                 type="text"
-                                placeholder="Search by country, city, or experience..."
+                                placeholder="Search by country name..."
                                 value={searchQuery}
                                 onChange={(e) => setSearchQuery(e.target.value)}
-                                className="w-full bg-white/5 border border-white/10 rounded-full py-5 pl-14 pr-6 text-brand-light placeholder:text-brand-light/30 focus:outline-none focus:border-brand-accent/50 focus:bg-white/10 transition-all backdrop-blur-md"
+                                className="w-full bg-white/5 border border-white/10 rounded-full py-5 pl-14 pr-6 text-brand-light placeholder:text-brand-light/30 focus:outline-none focus:border-[#1D9E75]/50 focus:bg-white/10 transition-all backdrop-blur-md"
                             />
-                            <Search className="absolute left-5 top-1/2 -translate-y-1/2 w-5 h-5 text-brand-accent" />
+                            <Search className="absolute left-5 top-1/2 -translate-y-1/2 w-5 h-5 text-[#1D9E75]" />
                         </div>
                     </motion.div>
                 </div>
@@ -110,25 +120,55 @@ export default function DestinationsPage() {
                     className="absolute bottom-24 md:bottom-32 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-brand-light/40"
                 >
                     <span className="text-[10px] uppercase tracking-widest hidden md:block">Scroll</span>
-                    <div className="w-[1px] h-8 md:h-12 bg-gradient-to-b from-brand-accent/50 to-transparent hidden md:block" />
+                    <div className="w-[1px] h-8 md:h-12 bg-gradient-to-b from-[#1D9E75]/50 to-transparent hidden md:block" />
                 </motion.div>
             </section>
 
-            {/* 3. DESTINATION CATEGORIES */}
-            <section className="relative z-20 -mt-24 max-w-7xl mx-auto px-6 mb-32">
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {/* IMPROVEMENT 2 — Category Filters with "All" button */}
+            <section className="relative z-20 -mt-24 max-w-7xl mx-auto px-6 mb-12">
+                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+                    {/* "All" button */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                        onClick={() => setSelectedCategory(null)}
+                        className={`relative z-10 bg-[#141414]/95 backdrop-blur-xl border rounded-2xl p-6 text-center hover:-translate-y-1 transition-all group cursor-pointer shadow-xl shadow-black/40 ${
+                            selectedCategory === null
+                            ? 'border-[#1D9E75] bg-[#1a1a1a] shadow-[#1D9E75]/10'
+                            : 'border-white/5 hover:border-[#1D9E75]/30'
+                        }`}
+                    >
+                        <div className={`text-3xl mb-4 transition-transform duration-300 ${
+                            selectedCategory === null ? 'scale-110' : 'group-hover:scale-110'
+                        }`}>
+                            🌍
+                        </div>
+                        <h3 className={`font-serif text-lg mb-2 transition-colors ${
+                            selectedCategory === null ? 'text-[#1D9E75]' : 'text-brand-light'
+                        }`}>
+                            All
+                        </h3>
+                        <p className={`text-[10px] uppercase tracking-wider transition-colors ${
+                            selectedCategory === null ? 'text-[#1D9E75]' : 'text-brand-light/40 group-hover:text-[#1D9E75]'
+                        }`}>
+                            {selectedCategory === null ? 'Showing All' : 'Reset →'}
+                        </p>
+                    </motion.div>
+
                     {destinationCategories.map((cat, i) => (
                         <motion.div
                             key={cat.id}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: i * 0.1, duration: 0.6 }}
+                            transition={{ delay: (i + 1) * 0.1, duration: 0.6 }}
                             onClick={() => toggleCategory(cat.id)}
                             className={`relative z-10 bg-[#141414]/95 backdrop-blur-xl border rounded-2xl p-6 text-center hover:-translate-y-1 transition-all group cursor-pointer shadow-xl shadow-black/40 ${
                                 selectedCategory === cat.id 
-                                ? 'border-brand-accent bg-[#1a1a1a] shadow-brand-accent/10' 
-                                : 'border-white/5 hover:border-brand-accent/30'
+                                ? 'border-[#1D9E75] bg-[#1a1a1a] shadow-[#1D9E75]/10' 
+                                : 'border-white/5 hover:border-[#1D9E75]/30'
                             }`}
                         >
                             <div className={`text-3xl mb-4 transition-transform duration-300 ${
@@ -137,12 +177,12 @@ export default function DestinationsPage() {
                                 {cat.icon}
                             </div>
                             <h3 className={`font-serif text-lg mb-2 transition-colors ${
-                                selectedCategory === cat.id ? 'text-brand-accent' : 'text-brand-light'
+                                selectedCategory === cat.id ? 'text-[#1D9E75]' : 'text-brand-light'
                             }`}>
                                 {cat.title}
                             </h3>
                             <p className={`text-[10px] uppercase tracking-wider transition-colors ${
-                                selectedCategory === cat.id ? 'text-brand-accent' : 'text-brand-light/40 group-hover:text-brand-accent'
+                                selectedCategory === cat.id ? 'text-[#1D9E75]' : 'text-brand-light/40 group-hover:text-[#1D9E75]'
                             }`}>
                                 {selectedCategory === cat.id ? 'Active Filter' : 'Explore →'}
                             </p>
@@ -151,93 +191,87 @@ export default function DestinationsPage() {
                 </div>
             </section>
 
-            {/* 2. GLOBAL DESTINATIONS GRID (50 Items) */}
-            <section id="directory-grid" className="max-w-[1600px] mx-auto px-6 mb-32">
-                <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-                    <div>
-                        <h2 className="font-serif text-4xl md:text-5xl text-brand-light mb-4">
-                            Global Directory
-                        </h2>
-                        <p className="font-sans text-brand-light/50 font-light max-w-xl">
-                            {searchQuery
-                                ? `Found ${filteredDestinations.length} destinations matching "${searchQuery}"`
-                                : 'A comprehensive collection of 50 iconic global destinations.'}
-                        </p>
-                    </div>
-                </div>
+            {/* IMPROVEMENT 4 — Results counter */}
+            <section className="max-w-7xl mx-auto px-6 mb-8">
+                <p className="font-sans text-brand-light/50 text-sm tracking-wide">
+                    Showing <span className="text-[#1D9E75] font-medium">{filteredDestinations.length}</span> of <span className="text-brand-light/70 font-medium">{globalDestinations.length}</span> destinations
+                </p>
+            </section>
 
+            {/* IMPROVEMENTS 1 + 2 + 3 — Destination Grid with simplified cards */}
+            <section id="directory-grid" className="max-w-[1600px] mx-auto px-6 mb-32">
                 {filteredDestinations.length === 0 ? (
                     <div className="text-center py-32 border border-white/5 rounded-3xl bg-[#141414]">
                         <Compass className="w-12 h-12 text-brand-light/20 mx-auto mb-4" />
                         <h3 className="font-serif text-2xl text-brand-light mb-2">No Destinations Found</h3>
-                        <p className="text-brand-light/50">Try adjusting your search terms.</p>
+                        <p className="text-brand-light/50 mb-6">Try adjusting your search or filter.</p>
                         <button
-                            onClick={() => setSearchQuery('')}
-                            className="mt-6 text-xs uppercase tracking-widest text-brand-accent hover:text-brand-light underline underline-offset-4"
+                            onClick={clearAllFilters}
+                            className="text-xs uppercase tracking-widest text-[#1D9E75] hover:text-brand-light underline underline-offset-4 transition-colors"
                         >
-                            Clear Search
+                            Clear All Filters
                         </button>
                     </div>
                 ) : (
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                        {filteredDestinations.map((dest, i) => (
-                            <motion.div
-                                key={dest.id}
-                                initial={{ opacity: 0, scale: 0.95 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
-                                viewport={{ once: true, margin: "-50px" }}
-                                transition={{ duration: 0.5, delay: (Math.min(i, 8) * 0.05) }}
-                            >
-                                <Link
-                                    href={`/countries/${dest.name.toLowerCase().replace(/ /g, '_')}`}
-                                    className="group block relative aspect-[4/5] rounded-3xl overflow-hidden bg-[#141414] border border-white/5"
+                    <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                        <AnimatePresence mode="popLayout">
+                            {filteredDestinations.map((dest, i) => (
+                                <motion.div
+                                    key={dest.id}
+                                    layout
+                                    initial={{ opacity: 0, scale: 0.9 }}
+                                    animate={{ opacity: 1, scale: 1 }}
+                                    exit={{ opacity: 0, scale: 0.9 }}
+                                    transition={{ duration: 0.35, delay: Math.min(i, 8) * 0.03 }}
                                 >
-                                    <div className="relative w-full h-full overflow-hidden bg-[#1a1a1a]">
-                                        <Image
-                                            src={dest.image}
-                                            alt={dest.name}
-                                            fill
-                                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                                            priority={i < 4}
-                                            loading={i < 4 ? undefined : "lazy"}
-                                            className="object-cover transition-transform duration-500 group-hover:scale-[1.05]"
-                                            onError={(e) => {
-                                                const target = e.currentTarget as HTMLImageElement;
-                                                target.srcset = "";
-                                                // Use a unique picsum seed per destination so every card has a different fallback
-                                                if (!target.src.includes('picsum.photos')) {
-                                                    target.src = `https://picsum.photos/seed/${dest.id}/800/1000`;
-                                                }
-                                            }}
-                                        />
-                                    </div>
-                                    <div className="absolute inset-0 bg-gradient-to-t from-[rgba(0,0,0,0.4)] via-black/10 to-transparent transition-opacity group-hover:opacity-80" />
+                                    {/* IMPROVEMENT 1 — Simplified card: name + badge + photo + hover explore */}
+                                    <Link
+                                        href={`/countries/${dest.name.toLowerCase().replace(/ /g, '_')}`}
+                                        className="group block relative aspect-[4/5] rounded-3xl overflow-hidden bg-[#141414] border border-white/5 hover:border-[#1D9E75]/30 transition-colors"
+                                    >
+                                        <div className="relative w-full h-full overflow-hidden bg-[#1a1a1a]">
+                                            <Image
+                                                src={dest.image}
+                                                alt={dest.name}
+                                                fill
+                                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                                                priority={i < 4}
+                                                loading={i < 4 ? undefined : "lazy"}
+                                                className="object-cover transition-transform duration-500 group-hover:scale-[1.05]"
+                                                onError={(e) => {
+                                                    const target = e.currentTarget as HTMLImageElement;
+                                                    target.srcset = "";
+                                                    if (!target.src.includes('picsum.photos')) {
+                                                        target.src = `https://picsum.photos/seed/${dest.id}/800/1000`;
+                                                    }
+                                                }}
+                                            />
+                                        </div>
 
-                                    <div className="absolute inset-0 p-8 flex flex-col justify-end">
-                                        <div className="translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-out">
-                                            <div className="flex items-center gap-2 mb-3">
-                                                <MapPin className="w-4 h-4 text-brand-accent" />
-                                                <p className="text-[10px] uppercase font-sans tracking-widest text-brand-accent">
-                                                    {dest.country || 'Destination'}
-                                                </p>
-                                            </div>
-                                            <h3 className="font-serif text-3xl text-brand-light mb-3">
+                                        {/* Base gradient overlay */}
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+
+                                        {/* Hover overlay */}
+                                        <div className="absolute inset-0 bg-[#0a0a0a]/50 opacity-0 group-hover:opacity-100 transition-opacity duration-400 flex items-center justify-center">
+                                            <span className="inline-flex items-center gap-2 text-sm tracking-widest uppercase text-brand-light font-medium translate-y-3 group-hover:translate-y-0 transition-transform duration-400">
+                                                Explore <ArrowRight className="w-4 h-4 text-[#1D9E75]" />
+                                            </span>
+                                        </div>
+
+                                        {/* Card info — name + badge only */}
+                                        <div className="absolute bottom-0 left-0 right-0 p-6">
+                                            <span className="inline-block text-[9px] uppercase font-sans tracking-[0.2em] text-[#1D9E75] bg-[#1D9E75]/10 border border-[#1D9E75]/20 rounded-full px-3 py-1 mb-3 backdrop-blur-sm">
+                                                Destination
+                                            </span>
+                                            <h3 className="font-serif text-2xl md:text-3xl text-brand-light leading-tight">
                                                 {dest.name}
                                             </h3>
-                                            <div className="h-0 opacity-0 group-hover:h-auto group-hover:opacity-100 transition-all duration-500 overflow-hidden">
-                                                <p className="text-sm font-sans text-brand-light/70 font-light leading-relaxed mb-6 line-clamp-2">
-                                                    {dest.description}
-                                                </p>
-                                                <span className="inline-flex items-center gap-2 text-xs tracking-widest uppercase text-brand-light border-b border-brand-accent pb-1">
-                                                    Explore <ArrowRight className="w-3 h-3" />
-                                                </span>
-                                            </div>
                                         </div>
-                                    </div>
-                                </Link>
-                            </motion.div>
-                        ))}
-                    </div>
+                                    </Link>
+                                </motion.div>
+                            ))}
+                        </AnimatePresence>
+                    </motion.div>
                 )}
             </section>
 

@@ -101,6 +101,47 @@ export const globalDestinations: DestinationItem[] = [
     { id: 'eg', name: 'Egypt', category: 'cultural', description: 'The cradle of civilization, featuring the Pyramids of Giza and luxurious Nile river cruises.', image: 'https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&q=80&w=800' },
 ];
 
+// Multi-category tags: a country can belong to several filter categories
+export const categoryTags: Record<string, string[]> = {
+    // Beach Destinations
+    mv: ['beach', 'luxury', 'island'],
+    th: ['beach'],
+    id: ['beach', 'island'],
+    ph: ['beach', 'island'],
+    lk: ['beach', 'island'],
+    br: ['beach'],
+    mx: ['beach'],
+    au: ['beach', 'adventure'],
+    // Luxury Travel
+    ae: ['luxury'],
+    qa: ['luxury'],
+    ch: ['luxury', 'nature'],
+    fr: ['luxury', 'cultural'],
+    jp: ['luxury', 'cultural'],
+    sg: ['luxury'],
+    it: ['luxury', 'cultural'],
+    // Island Escapes (extra from above)
+    gr: ['cultural', 'island'],
+    // Fiji is not in globalDestinations so omitted
+    nz: ['adventure', 'island', 'nature'],
+    // Cultural Cities
+    tr: ['cultural'],
+    in: ['cultural'],
+    pe: ['cultural', 'adventure'],
+    ma: ['cultural'],
+    eg: ['cultural'],
+    // Nature & Mountains
+    is: ['adventure', 'nature'],
+    no: ['adventure', 'nature'],
+    at: ['nature'],
+    cl: ['nature'],
+    cr: ['nature', 'adventure'],
+    ca: ['nature'],
+    // Adventure Destinations
+    za: ['adventure'],
+    jo: ['adventure'],
+};
+
 export const featuredDestination = {
     name: 'Kyoto, Japan',
     headline: 'The Timeless Heart of Japan',
