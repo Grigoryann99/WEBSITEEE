@@ -84,6 +84,7 @@ export default function RootLayout({
             })
           }}
         />
+        <link rel="icon" href="/VERJAPESS.png" type="image/png" />
       </head>
       <body
         className={`${cormorant.variable} ${inter.variable} ${montserrat.variable} ${roboto.variable} antialiased bg-brand-dark text-brand-light font-sans`}
