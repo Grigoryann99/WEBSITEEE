@@ -37,7 +37,7 @@ export const spainAttractions = [
     category: "Coastal",
     description: "An island in the Mediterranean Sea well known for its lively nightlife and stunning coves.",
     unsplashQuery: "Ibiza beach turquoise sea Balearic Islands",
-    image: "https://images.unsplash.com/photo-1564221710304-0b37c8b6d234?auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1661887561486-1f771e7b2cab?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Toledo Old City",
@@ -50,7 +50,7 @@ export const spainAttractions = [
     howToGetThere: "High-speed train from Madrid Atocha takes 33 minutes.",
     cost: "Cathedral entry €10",
     unsplashQuery: "Toledo Spain medieval city hilltop panorama",
-    image: "https://images.unsplash.com/photo-1558642891-54be180ea339?auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1669372561088-a4bb6c396b9e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Seville Cathedral & Giralda",
@@ -63,7 +63,7 @@ export const spainAttractions = [
     howToGetThere: "High-speed AVE from Madrid takes 2.5 hours.",
     cost: "Paid — €12 including Giralda tower",
     unsplashQuery: "Seville Cathedral Giralda tower Andalusia",
-    image: "https://images.unsplash.com/photo-1601643157091-ce5c665179ab?auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1509840841025-9088ba78a826?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "San Sebastián",
@@ -76,7 +76,7 @@ export const spainAttractions = [
     howToGetThere: "Train from Madrid 5.5 hours. Bus from Bilbao 1 hour.",
     cost: "Pintxos €2–€4 each",
     unsplashQuery: "San Sebastian beach La Concha bay Basque",
-    image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1647526232039-6099babcca81?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Ronda",
@@ -115,7 +115,7 @@ export const spainAttractions = [
     howToGetThere: "Fly to Santiago de Compostela or Pamplona.",
     cost: "Albergues €8–€15/night",
     unsplashQuery: "Camino Santiago pilgrims walking Galicia path",
-    image: "https://images.unsplash.com/photo-1567271491458-7168a5b8edb1?auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1638704645810-708030b50ce5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Ibiza Old Town Dalt Vila",
@@ -128,7 +128,7 @@ export const spainAttractions = [
     howToGetThere: "Fly direct to Ibiza Airport. Ferry from Barcelona 8 hours.",
     cost: "Dalt Vila free — Archaeological Museum €4",
     unsplashQuery: "Ibiza Dalt Vila old town walls harbour",
-    image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1591962282848-7548229ddf3d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Montserrat Mountain",
@@ -167,7 +167,7 @@ export const spainAttractions = [
     howToGetThere: "Fly to Bilbao Airport. Train from Madrid 4.5 hours.",
     cost: "Paid — €16",
     unsplashQuery: "Guggenheim Museum Bilbao titanium building",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1748790485676-b36207bd1cb7?q=80&w=1183&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Costa Brava",
