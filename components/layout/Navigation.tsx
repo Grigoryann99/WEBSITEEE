@@ -121,8 +121,8 @@ export default function Navigation() {
                 transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
                 className={`fixed top-0 w-full z-50 transition-[background,border,shadow,padding] duration-500
                     ${isScrolled || isMenuOpen
-                        ? 'bg-[#0a0a0a]/85 backdrop-blur-2xl shadow-[0_4px_32px_rgba(0,0,0,0.6)] py-4'
-                        : 'bg-gradient-to-b from-black/70 via-black/30 to-transparent py-6'
+                        ? 'bg-[#0a0a0a]/85 backdrop-blur-2xl shadow-[0_4px_32px_rgba(0,0,0,0.6)] py-5'
+                        : 'bg-gradient-to-b from-black/70 via-black/30 to-transparent py-8'
                     }`}
             >
                 <div className="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between gap-6">
@@ -132,18 +132,18 @@ export default function Navigation() {
                         href="#"
                         onClick={handleLogoClick}
                         aria-label="Go to homepage"
-                        className="flex items-center gap-4 shrink-0 outline-none focus-visible:ring-2 focus-visible:ring-brand-accent rounded-lg p-1"
+                        className="flex items-center gap-5 shrink-0 outline-none focus-visible:ring-2 focus-visible:ring-brand-accent rounded-lg p-1"
                     >
                         <Image
                             src="/logo_final.png"
                             alt="Velora"
-                            width={isScrolled ? 52 : 64}
-                            height={isScrolled ? 52 : 64}
+                            width={isScrolled ? 60 : 84}
+                            height={isScrolled ? 60 : 84}
                             className="w-auto h-auto transition-all duration-500 object-contain"
                             priority
                         />
                         <span className={`font-montserrat tracking-[0.22em] font-semibold transition-all duration-300 select-none
-                            ${isScrolled ? 'text-lg md:text-xl' : 'text-xl md:text-2xl'} text-white`}
+                            ${isScrolled ? 'text-2xl md:text-3xl' : 'text-3xl md:text-5xl'} text-white uppercase`}
                         >
                             VELORA<span className="text-brand-accent">.</span>
                         </span>
