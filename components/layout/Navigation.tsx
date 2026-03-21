@@ -1,249 +1,310 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { Menu, X } from 'lucide-react';
 import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 import Link from 'next/link';
+import { motion, AnimatePresence, type Variants } from 'framer-motion';
+
+const navLinks = [
+    { name: 'Home',         href: '/',            id: 'home'         },
+    { name: 'Destinations', href: '/destinations', id: 'destinations' },
+    { name: 'Blog',         href: '/blog',         id: 'blog'         },
+    { name: 'About',        href: '/about',        id: 'about'        },
+    { name: 'Support',      href: '/support',      id: 'contact'      },
+];
+
+function getActiveId(pathname: string, sectionId: string): string {
+    if (pathname.startsWith('/destinations')) return 'destinations';
+    if (pathname.startsWith('/blog'))         return 'blog';
+    if (pathname === '/about')               return 'about';
+    if (pathname === '/support')             return 'contact';
+    return sectionId || 'home';
+}
 
 export default function Navigation() {
-    const [isScrolled, setIsScrolled] = useState(false);
-    const [isVisible, setIsVisible] = useState(true);
+    const [isScrolled,  setIsScrolled]  = useState(false);
+    const [isVisible,   setIsVisible]   = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [activeId, setActiveId] = useState('');
+    const [isMenuOpen,  setIsMenuOpen]  = useState(false);
+    const [sectionId,   setSectionId]   = useState('home');
+    const [hoveredId,   setHoveredId]   = useState<string | null>(null);
+
     const pathname = usePathname();
-    const router = useRouter();
+    const router   = useRouter();
 
-    const navLinks = [
-        { name: 'Home', href: '/', id: 'home' },
-        { name: 'Destinations', href: '/destinations', id: 'destinations' },
-        { name: 'Blog', href: '/blog', id: 'blog' },
-        { name: 'About', href: '/about', id: 'about' },
-        { name: 'Support', href: '/support', id: 'contact' },
-    ];
+    // Derived active id (single source of truth)
+    const activeId = getActiveId(pathname, sectionId);
 
-    // Initialize active state based on route
+    // ─── Scroll handler ───────────────────────────────────────────────────────
     useEffect(() => {
-        if (pathname?.startsWith('/destinations')) {
-            setActiveId('destinations');
-        } else if (pathname?.startsWith('/blog')) {
-            setActiveId('blog');
-        } else if (pathname === '/about') {
-            setActiveId('about');
-        } else if (pathname === '/support') {
-            setActiveId('contact');
-        } else if (pathname === '/') {
-            if (!activeId || !['contact', 'villas'].includes(activeId)) {
-                setActiveId('home');
-            }
-        }
-    }, [pathname, activeId]);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const currentScrollY = window.scrollY;
-
-            // Visibility logic
-            if (currentScrollY > 100) {
-                if (currentScrollY > lastScrollY && !isMenuOpen) {
-                    setIsVisible(false);
-                } else {
-                    setIsVisible(true);
-                }
-            } else {
-                setIsVisible(true);
-            }
-
-            // Glassmorphism activation
-            setIsScrolled(currentScrollY > 20);
-            setLastScrollY(currentScrollY);
+        const onScroll = () => {
+            const y = window.scrollY;
+            if (y > 100) setIsVisible(y < lastScrollY || isMenuOpen);
+            else         setIsVisible(true);
+            setIsScrolled(y > 20);
+            setLastScrollY(y);
         };
-
-        window.addEventListener('scroll', handleScroll, { passive: true });
-        return () => window.removeEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', onScroll, { passive: true });
+        return () => window.removeEventListener('scroll', onScroll);
     }, [lastScrollY, isMenuOpen]);
 
-    // Active Section Highlighting
+    // ─── Intersection observer (homepage sections only) ───────────────────────
     useEffect(() => {
         if (pathname !== '/') return;
-
-        const sections = ['home', 'villas', 'footer'];
-        const observerOptions = {
-            root: null,
-            rootMargin: '-20% 0px -70% 0px',
-            threshold: 0
-        };
-
-        const observerCallback = (entries: IntersectionObserverEntry[]) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const id = entry.target.id === 'footer' ? 'contact' : entry.target.id;
-                    setActiveId(id);
-                }
-            });
-        };
-
-        const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-        sections.forEach(id => {
-            const element = document.getElementById(id);
-            if (element) observer.observe(element);
-        });
-
-        return () => observer.disconnect();
+        const ids = ['home', 'villas', 'footer'];
+        const obs = new IntersectionObserver(
+            entries => entries.forEach(e => {
+                if (e.isIntersecting)
+                    setSectionId(e.target.id === 'footer' ? 'contact' : e.target.id);
+            }),
+            { rootMargin: '-20% 0px -70% 0px', threshold: 0 }
+        );
+        ids.forEach(id => { const el = document.getElementById(id); if (el) obs.observe(el); });
+        return () => obs.disconnect();
     }, [pathname]);
 
+    // ─── Logo click ───────────────────────────────────────────────────────────
     const handleLogoClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
         e.preventDefault();
-        if (pathname === '/') {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-            setActiveId('home');
-        } else {
-            router.push('/');
-        }
+        if (pathname === '/') { window.scrollTo({ top: 0, behavior: 'smooth' }); setSectionId('home'); }
+        else router.push('/');
     }, [pathname, router]);
 
+    // ─── Nav link click ───────────────────────────────────────────────────────
     const handleNavLinkClick = (id: string) => {
-        setActiveId(id);
-        if (isMenuOpen) setIsMenuOpen(false);
+        setSectionId(id);
+        setIsMenuOpen(false);
     };
+
+    // ─── Animated indicator helpers ───────────────────────────────────────────
+    // We track the position of each link button so the underline can slide.
+    const linkRefs = useRef<Record<string, HTMLAnchorElement | null>>({});
+    const [indicatorStyle, setIndicatorStyle] = useState({ left: 0, width: 0, opacity: 0 });
+
+    useEffect(() => {
+        const targetId = hoveredId ?? activeId;
+        const el = linkRefs.current[targetId];
+        if (!el) return;
+        const parent = el.parentElement;
+        if (!parent) return;
+        const pRect = parent.getBoundingClientRect();
+        const eRect = el.getBoundingClientRect();
+        setIndicatorStyle({
+            left:    eRect.left - pRect.left,
+            width:   eRect.width,
+            opacity: 1,
+        });
+    }, [hoveredId, activeId]);
+
+    // ─── Variants ─────────────────────────────────────────────────────────────
+    const mobileMenuVariants: Variants = {
+        hidden: { opacity: 0, y: -16 },
+        show:   { opacity: 1, y: 0 },
+        exit:   { opacity: 0, y: -12 },
+    };
+
+    const itemVariants: Variants = {
+        hidden: { opacity: 0, x: -12 },
+        show:   { opacity: 1, x: 0 },
+    };
+
+    const getItemDelay = (i: number) => ({ delay: i * 0.055, duration: 0.4, ease: 'easeOut' } as const);
 
     return (
         <>
-            <nav
-                className={`fixed top-0 w-full z-50 transition-all duration-700 ease-luxury
-                    ${isVisible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'} 
+            {/* ── NAVBAR ──────────────────────────────────────────────────────── */}
+            <motion.nav
+                initial={false}
+                animate={{ y: isVisible ? 0 : '-100%', opacity: isVisible ? 1 : 0 }}
+                transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                className={`fixed top-0 w-full z-50 transition-[background,border,shadow,padding] duration-500
                     ${isScrolled || isMenuOpen
-                        ? 'bg-[#0a0a0a]/80 backdrop-blur-xl border-b border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.5)] py-3 sm:py-4'
-                        : 'bg-gradient-to-b from-black/80 via-black/40 to-transparent py-6 sm:py-8'
+                        ? 'bg-[#0a0a0a]/85 backdrop-blur-2xl border-b border-white/10 shadow-[0_4px_32px_rgba(0,0,0,0.6)] py-3'
+                        : 'bg-gradient-to-b from-black/70 via-black/30 to-transparent py-5'
                     }`}
             >
-                <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-                    
+                <div className="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between gap-6">
+
                     {/* LOGO */}
                     <a
                         href="#"
                         onClick={handleLogoClick}
-                        className="flex items-center gap-2 group transition-all duration-300 outline-none focus-visible:ring-2 focus-visible:ring-brand-accent rounded-lg"
                         aria-label="Go to homepage"
+                        className="flex items-center gap-2.5 shrink-0 outline-none focus-visible:ring-2 focus-visible:ring-brand-accent rounded-lg"
                     >
-                        <div className="relative">
-                            <Image
-                                src="/logo_final.png"
-                                alt="Velora Logo"
-                                width={isScrolled ? 48 : 56}
-                                height={isScrolled ? 48 : 56}
-                                className="w-auto h-auto transition-all duration-500 relative z-10"
-                            />
-                        </div>
-                        <div className={`font-montserrat tracking-[0.25em] font-semibold flex items-center transition-all duration-300 ${isScrolled ? 'text-lg md:text-xl' : 'text-xl md:text-2xl'} text-brand-light`}>
+                        <Image
+                            src="/logo_final.png"
+                            alt="Velora"
+                            width={isScrolled ? 40 : 48}
+                            height={isScrolled ? 40 : 48}
+                            className="w-auto h-auto transition-all duration-500"
+                            priority
+                        />
+                        <span className={`font-montserrat tracking-[0.22em] font-semibold transition-all duration-300 select-none
+                            ${isScrolled ? 'text-base md:text-lg' : 'text-lg md:text-xl'} text-white`}
+                        >
                             VELORA<span className="text-brand-accent">.</span>
-                        </div>
+                        </span>
                     </a>
 
-                    {/* DESKTOP LINKS */}
-                    <div className="hidden lg:flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-2 py-1.5 shadow-inner backdrop-blur-md">
-                        {navLinks.map((link) => {
-                            let isActive = false;
-                            if (link.id === 'destinations') {
-                                isActive = pathname?.startsWith('/destinations') || false;
-                            } else if (link.id === 'contact') {
-                                isActive = pathname === '/support' || (pathname === '/' && activeId === 'contact');
-                            } else {
-                                isActive = activeId === link.id;
-                            }
+                    {/* DESKTOP NAV */}
+                    <div
+                        className="hidden lg:flex items-center relative"
+                        onMouseLeave={() => setHoveredId(null)}
+                    >
+                        {/* Sliding background indicator */}
+                        <motion.div
+                            animate={indicatorStyle}
+                            transition={{ type: 'spring', stiffness: 380, damping: 32 }}
+                            className="absolute h-[calc(100%-8px)] top-1 rounded-full bg-white/8 pointer-events-none"
+                        />
 
-                            return (
-                                <Link
-                                    key={link.id}
-                                    href={link.href}
-                                    onClick={() => handleNavLinkClick(link.id)}
-                                    // Pill style active state
-                                    className={`relative px-5 py-2 rounded-full font-sans text-xs tracking-[0.15em] uppercase font-medium transition-all duration-300 outline-none focus-visible:ring-2 focus-visible:ring-brand-accent flex items-center justify-center
-                                        ${isActive 
-                                            ? 'bg-brand-accent/20 text-brand-accent shadow-[0_0_15px_rgba(29,158,117,0.3)]' 
-                                            : 'text-brand-light/70 hover:text-brand-light hover:-translate-y-0.5 hover:bg-white/5'
-                                        }`}
-                                >
-                                    {link.name}
-                                </Link>
-                            );
-                        })}
+                        {/* Sliding bottom underline (active only) */}
+                        {/* Rendered via same spring on indicatorStyle so they move together */}
+
+                        <div className="flex items-center gap-1 bg-white/[0.04] border border-white/10 rounded-full px-2 py-2 backdrop-blur-sm">
+                            {navLinks.map((link) => {
+                                const isActive = link.id === activeId ||
+                                    (link.id === 'destinations' && pathname.startsWith('/destinations'));
+
+                                return (
+                                    <Link
+                                        key={link.id}
+                                        href={link.href}
+                                        ref={(el) => { linkRefs.current[link.id] = el; }}
+                                        onClick={() => handleNavLinkClick(link.id)}
+                                        onMouseEnter={() => setHoveredId(link.id)}
+                                        aria-current={isActive ? 'page' : undefined}
+                                        className={`relative px-4 py-1.5 rounded-full font-sans text-[11px] tracking-[0.14em] uppercase font-medium
+                                            transition-colors duration-300 outline-none focus-visible:ring-2 focus-visible:ring-brand-accent
+                                            ${isActive
+                                                ? 'text-brand-accent'
+                                                : 'text-white/60 hover:text-white'
+                                            }`}
+                                    >
+                                        {link.name}
+
+                                        {/* Active animated underline */}
+                                        <motion.span
+                                            animate={{ scaleX: isActive ? 1 : 0, opacity: isActive ? 1 : 0 }}
+                                            transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+                                            style={{ originX: 0.5 }}
+                                            className="absolute bottom-0.5 left-3 right-3 h-[2px] rounded-full bg-brand-accent"
+                                        />
+                                    </Link>
+                                );
+                            })}
+                        </div>
                     </div>
 
-                    {/* CTA BUTTON & MOBILE MENU TOGGLE */}
-                    <div className="flex items-center gap-4">
-                        <Link 
+                    {/* RIGHT SIDE: CTA + Hamburger */}
+                    <div className="flex items-center gap-3 shrink-0">
+                        <Link
                             href="/destinations"
-                            className="hidden md:inline-flex items-center justify-center px-6 py-2.5 bg-brand-accent text-[#0a0a0a] font-sans text-xs uppercase tracking-[0.15em] font-semibold rounded-full hover:bg-white hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_4px_15px_rgba(29,158,117,0.4)] hover:shadow-[0_6px_20px_rgba(255,255,255,0.3)] outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a]"
+                            className="hidden md:inline-flex items-center gap-2 px-5 py-2.5
+                                bg-brand-accent text-[#080808] font-sans text-[11px] uppercase tracking-[0.16em] font-bold
+                                rounded-full shadow-[0_4px_16px_rgba(29,158,117,0.45)]
+                                hover:bg-white hover:shadow-[0_4px_20px_rgba(255,255,255,0.25)]
+                                hover:scale-105 active:scale-[0.97]
+                                transition-all duration-300 ease-out
+                                outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a]"
                             aria-label="Start your journey"
                         >
                             Start Journey
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden>
+                                <path d="M2 6h8M7 3l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
                         </Link>
 
                         <button
-                            className="lg:hidden p-2 rounded-xl border border-white/10 bg-white/5 text-brand-light transition-all active:scale-95 hover:bg-white/10 outline-none focus-visible:ring-2 focus-visible:ring-brand-accent"
-                            onClick={() => setIsMenuOpen(!isMenuOpen)}
-                            aria-label="Toggle mobile menu"
+                            className={`lg:hidden w-9 h-9 flex items-center justify-center rounded-xl border
+                                border-white/[0.12] text-white/80 transition-all duration-200 active:scale-95
+                                hover:bg-white/[0.08] outline-none focus-visible:ring-2 focus-visible:ring-brand-accent
+                                ${isMenuOpen ? 'bg-white/10' : 'bg-white/[0.04]'}`}
+                            onClick={() => setIsMenuOpen(v => !v)}
+                            aria-label="Toggle navigation menu"
                             aria-expanded={isMenuOpen}
+                            aria-controls="mobile-nav"
                         >
-                            {isMenuOpen ? <X size={22} className="text-brand-accent" /> : <Menu size={22} />}
+                            <AnimatePresence mode="wait" initial={false}>
+                                {isMenuOpen
+                                    ? <motion.span key="x" initial={{ rotate: -90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: 90, opacity: 0 }} transition={{ duration: 0.2 }}>
+                                        <X size={18} className="text-brand-accent" />
+                                      </motion.span>
+                                    : <motion.span key="m" initial={{ rotate: 90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: -90, opacity: 0 }} transition={{ duration: 0.2 }}>
+                                        <Menu size={18} />
+                                      </motion.span>
+                                }
+                            </AnimatePresence>
                         </button>
                     </div>
                 </div>
-            </nav>
+            </motion.nav>
 
-            {/* MOBILE MENU DROPDOWN */}
-            <div
-                className={`fixed inset-0 z-40 lg:hidden flex flex-col justify-start pt-28 px-6 bg-[#0a0a0a]/95 backdrop-blur-2xl transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] overflow-hidden ${
-                    isMenuOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-8 pointer-events-none'
-                }`}
-            >
-                <div className="flex flex-col gap-4 mb-10 w-full">
-                    {navLinks.map((link, index) => {
-                        let isActive = false;
-                        if (link.id === 'destinations') {
-                            isActive = pathname?.startsWith('/destinations') || false;
-                        } else if (link.id === 'contact') {
-                            isActive = pathname === '/support' || (pathname === '/' && activeId === 'contact');
-                        } else {
-                            isActive = activeId === link.id;
-                        }
-
-                        return (
-                            <Link
-                                key={link.id}
-                                href={link.href}
-                                onClick={() => setIsMenuOpen(false)}
-                                className={`w-full flex items-center justify-between p-4 rounded-2xl border transition-all duration-500 transform
-                                    ${isMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}
-                                    ${isActive 
-                                        ? 'bg-brand-accent/10 border-brand-accent/40 text-brand-accent' 
-                                        : 'bg-white/5 border-white/5 text-brand-light/80 hover:bg-white/10'
-                                    }`}
-                                style={{ transitionDelay: `${index * 50}ms` }}
-                            >
-                                <span className="font-serif text-2xl">{link.name}</span>
-                                {isActive && <div className="w-2 h-2 rounded-full bg-brand-accent shadow-[0_0_10px_rgba(29,158,117,0.8)]" />}
-                            </Link>
-                        );
-                    })}
-                </div>
-
-                <div 
-                    className={`w-full mt-auto mb-12 transition-all duration-500 transform ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
-                    style={{ transitionDelay: '300ms' }}
-                >
-                    <Link
-                        href="/destinations"
-                        onClick={() => setIsMenuOpen(false)}
-                        className="flex items-center justify-center w-full py-4 bg-brand-accent text-[#0a0a0a] rounded-full font-sans tracking-[0.2em] uppercase font-semibold text-sm shadow-[0_4px_20px_rgba(29,158,117,0.4)]"
+            {/* ── MOBILE MENU ─────────────────────────────────────────────────── */}
+            <AnimatePresence>
+                {isMenuOpen && (
+                    <motion.div
+                        id="mobile-nav"
+                        key="mobile-menu"
+                        variants={mobileMenuVariants}
+                        initial="hidden"
+                        animate="show"
+                        exit="exit"
+                        className="fixed inset-0 z-40 lg:hidden flex flex-col pt-[72px] bg-[#070707]/96 backdrop-blur-2xl overflow-y-auto"
                     >
-                        Start Journey
-                    </Link>
-                </div>
-            </div>
+                        <div className="flex flex-col gap-2 px-5 pt-6 pb-4">
+                            {navLinks.map((link, i) => {
+                                const isActive = link.id === activeId ||
+                                    (link.id === 'destinations' && pathname.startsWith('/destinations'));
+
+                                return (
+                                    <motion.div key={link.id} custom={i} variants={itemVariants} initial="hidden" animate="show">
+                                        <Link
+                                            href={link.href}
+                                            onClick={() => { handleNavLinkClick(link.id); }}
+                                            aria-current={isActive ? 'page' : undefined}
+                                            className={`flex items-center justify-between w-full px-5 py-4 rounded-2xl border
+                                                transition-colors duration-200 outline-none focus-visible:ring-2 focus-visible:ring-brand-accent
+                                                ${isActive
+                                                    ? 'bg-brand-accent/10 border-brand-accent/35 text-brand-accent'
+                                                    : 'bg-white/[0.04] border-white/[0.07] text-white/75 active:bg-white/10'
+                                                }`}
+                                        >
+                                            <span className="font-serif text-xl">{link.name}</span>
+                                            {isActive && (
+                                                <span className="w-1.5 h-1.5 rounded-full bg-brand-accent shadow-[0_0_8px_rgba(29,158,117,0.9)]" />
+                                            )}
+                                        </Link>
+                                    </motion.div>
+                                );
+                            })}
+                        </div>
+
+                        {/* Mobile CTA */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 16 }}
+                            animate={{ opacity: 1, y: 0, transition: { delay: navLinks.length * 0.055 + 0.1, duration: 0.4, ease: [0.16, 1, 0.3, 1] } }}
+                            className="px-5 pb-10 mt-auto"
+                        >
+                            <Link
+                                href="/destinations"
+                                onClick={() => setIsMenuOpen(false)}
+                                className="flex items-center justify-center gap-2 w-full py-4 bg-brand-accent text-[#080808]
+                                    rounded-full font-sans tracking-[0.18em] uppercase font-bold text-sm
+                                    shadow-[0_4px_24px_rgba(29,158,117,0.45)] active:scale-[0.97] transition-transform duration-200"
+                            >
+                                Start Journey
+                                <svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden>
+                                    <path d="M2 6h8M7 3l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                            </Link>
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </>
     );
 }
