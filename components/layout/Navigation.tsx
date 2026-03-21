@@ -132,14 +132,14 @@ export default function Navigation() {
                         href="#"
                         onClick={handleLogoClick}
                         aria-label="Go to homepage"
-                        className="flex items-center gap-2.5 shrink-0 outline-none focus-visible:ring-2 focus-visible:ring-brand-accent rounded-lg"
+                        className="flex items-center gap-3.5 shrink-0 outline-none focus-visible:ring-2 focus-visible:ring-brand-accent rounded-lg p-0.5"
                     >
                         <Image
                             src="/logo_final.png"
                             alt="Velora"
-                            width={isScrolled ? 40 : 48}
-                            height={isScrolled ? 40 : 48}
-                            className="w-auto h-auto transition-all duration-500"
+                            width={isScrolled ? 50 : 64}
+                            height={isScrolled ? 50 : 64}
+                            className="w-auto h-auto transition-all duration-500 object-contain"
                             priority
                         />
                         <span className={`font-montserrat tracking-[0.22em] font-semibold transition-all duration-300 select-none
