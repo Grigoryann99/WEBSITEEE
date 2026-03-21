@@ -121,7 +121,7 @@ export default function Navigation() {
                 transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
                 className={`fixed top-0 w-full z-50 transition-[background,border,shadow,padding] duration-500
                     ${isScrolled || isMenuOpen
-                        ? 'bg-[#0a0a0a]/85 backdrop-blur-2xl border-b border-white/10 shadow-[0_4px_32px_rgba(0,0,0,0.6)] py-3'
+                        ? 'bg-[#0a0a0a]/85 backdrop-blur-2xl shadow-[0_4px_32px_rgba(0,0,0,0.6)] py-3'
                         : 'bg-gradient-to-b from-black/70 via-black/30 to-transparent py-5'
                     }`}
             >
