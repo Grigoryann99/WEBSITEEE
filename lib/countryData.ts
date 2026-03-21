@@ -188,7 +188,7 @@ export const countries: Record<string, CountryData> = {
             city: attr.location,
             country: 'Spain',
             description: attr.description,
-            image: '',
+            image: attr.image || '',
             category: attr.category,
             whyVisit: attr.whyVisit,
             bestTime: attr.bestTime,
