@@ -13,7 +13,6 @@ export interface CountryDestinationCardProps {
     whyVisit: string;
     bestTime: string;
     insiderTip: string;
-    costLevel: string;
     imageUrl: string;
     featured?: boolean;
 }
@@ -52,7 +51,6 @@ export default function CountryDestinationCard({
     description,
     bestTime,
     insiderTip,
-    costLevel,
     imageUrl,
 }: CountryDestinationCardProps) {
     
@@ -111,22 +109,13 @@ export default function CountryDestinationCard({
                 {/* Info Pills & Action Button */}
                 <div className="mt-auto">
                     {/* Info Pills Row */}
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
                         {/* Best Time */}
                         <div className="flex items-start gap-3 p-3 rounded-lg bg-white/[0.02] border border-white/5">
                             <Clock className="w-4 h-4 text-[#1D9E75] shrink-0 mt-0.5" />
                             <div>
                                 <p className="text-[9px] uppercase tracking-widest font-sans text-white/30 mb-0.5">Best Time</p>
                                 <p className="text-xs font-sans text-white/80">{bestTime}</p>
-                            </div>
-                        </div>
-                        
-                        {/* Cost */}
-                        <div className="flex items-start gap-3 p-3 rounded-lg bg-white/[0.02] border border-white/5">
-                            <Wallet className="w-4 h-4 text-[#1D9E75] shrink-0 mt-0.5" />
-                            <div>
-                                <p className="text-[9px] uppercase tracking-widest font-sans text-white/30 mb-0.5">Cost</p>
-                                <p className="text-xs font-sans text-white/80">{costLevel}</p>
                             </div>
                         </div>
 

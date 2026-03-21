@@ -377,12 +377,6 @@ export default function DestinationsPage() {
                                                 </div>
                                                 
                                                 <div className="text-right flex flex-col items-end gap-3">
-                                                    {dest.budget && (
-                                                        <span className="inline-block text-white/50 font-sans text-xs tracking-widest font-medium">
-                                                            {dest.budget}
-                                                        </span>
-                                                    )}
-                                                    
                                                     {/* Hover 'Explore' indicator */}
                                                     <div className="overflow-hidden">
                                                         <span className="flex items-center gap-2 text-[10px] tracking-widest uppercase font-sans font-semibold text-[#1D9E75] translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-out">
