@@ -201,23 +201,6 @@ export default function Navigation() {
 
                     {/* RIGHT SIDE: CTA + Hamburger */}
                     <div className="flex items-center gap-3 shrink-0">
-                        <Link
-                            href="/destinations"
-                            className="hidden md:inline-flex items-center gap-2 px-5 py-2.5
-                                bg-brand-accent text-[#080808] font-sans text-[11px] uppercase tracking-[0.16em] font-bold
-                                rounded-full shadow-[0_4px_16px_rgba(29,158,117,0.45)]
-                                hover:bg-white hover:shadow-[0_4px_20px_rgba(255,255,255,0.25)]
-                                hover:scale-105 active:scale-[0.97]
-                                transition-all duration-300 ease-out
-                                outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a]"
-                            aria-label="Start your journey"
-                        >
-                            Start Journey
-                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden>
-                                <path d="M2 6h8M7 3l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                            </svg>
-                        </Link>
-
                         <button
                             className={`lg:hidden w-9 h-9 flex items-center justify-center rounded-xl border
                                 border-white/[0.12] text-white/80 transition-all duration-200 active:scale-95
@@ -282,26 +265,6 @@ export default function Navigation() {
                                 );
                             })}
                         </div>
-
-                        {/* Mobile CTA */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 16 }}
-                            animate={{ opacity: 1, y: 0, transition: { delay: navLinks.length * 0.055 + 0.1, duration: 0.4, ease: [0.16, 1, 0.3, 1] } }}
-                            className="px-5 pb-10 mt-auto"
-                        >
-                            <Link
-                                href="/destinations"
-                                onClick={() => setIsMenuOpen(false)}
-                                className="flex items-center justify-center gap-2 w-full py-4 bg-brand-accent text-[#080808]
-                                    rounded-full font-sans tracking-[0.18em] uppercase font-bold text-sm
-                                    shadow-[0_4px_24px_rgba(29,158,117,0.45)] active:scale-[0.97] transition-transform duration-200"
-                            >
-                                Start Journey
-                                <svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden>
-                                    <path d="M2 6h8M7 3l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                                </svg>
-                            </Link>
-                        </motion.div>
                     </motion.div>
                 )}
             </AnimatePresence>
