@@ -5,6 +5,8 @@ export interface DestinationItem {
     description: string;
     image: string;
     category: string;
+    region?: string;
+    budget?: string; // '$', '$$', or '$$$'
 }
 
 export interface CategoryItem {
@@ -12,6 +14,15 @@ export interface CategoryItem {
     title: string;
     description: string;
     icon: string; // Emoji or specific string identifier
+}
+
+export interface FeaturedBannerItem {
+    id: string;
+    name: string;
+    headline: string;
+    description: string;
+    image: string;
+    href: string;
 }
 
 export interface InspirationItem {
@@ -45,62 +56,62 @@ export const destinationCategories: CategoryItem[] = [
 
 export const globalDestinations: DestinationItem[] = [
     // Europe
-    { id: 'it', name: 'Italy', category: 'cultural', description: 'From the ruins of Rome to the sun-drenched Amalfi Coast, a masterpiece of culture and cuisine.', image: 'https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&q=80&w=800' },
-    { id: 'es', name: 'Spain', category: 'cultural', description: 'Vibrant cities, stunning beaches, and a passion for life wrapped in striking architecture.', image: 'https://images.unsplash.com/photo-1543783207-ec64e4d95325?auto=format&fit=crop&q=80&w=800' },
-    { id: 'fr', name: 'France', category: 'luxury', description: 'The epitome of romance, offering world-class art in Paris and luxurious retreats in the Riviera.', image: 'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&q=80&w=800' },
-    { id: 'gr', name: 'Greece', category: 'island', description: 'Ancient history meeting the deepest blue seas among thousands of idyllic islands.', image: 'https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&q=80&w=800' },
-    { id: 'pt', name: 'Portugal', category: 'cultural', description: 'Dramatic coastlines, historic Lisbon streets, and the golden vineyards of the Douro Valley.', image: 'https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&q=80&w=800' },
-    { id: 'ch', name: 'Switzerland', category: 'nature', description: 'Pristine alpine lakes, dramatic peaks, and unparalleled luxury mountain resorts.', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&q=80&w=800' },
-    { id: 'at', name: 'Austria', category: 'nature', description: 'Imperial palaces, classical music heritage, and stunning Tyrolean landscapes.', image: 'https://images.unsplash.com/photo-1516550893923-42d28e5677af?auto=format&fit=crop&q=80&w=800' },
-    { id: 'de', name: 'Germany', category: 'cultural', description: 'Fairytale castles in Bavaria to the cutting-edge creative energy of modern Berlin.', image: 'https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&q=80&w=800' },
-    { id: 'nl', name: 'Netherlands', category: 'cultural', description: 'Iconic canals, fields of tulips, and a progressive, bicycle-driven culture in Amsterdam.', image: 'https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?auto=format&fit=crop&q=80&w=800' },
-    { id: 'be', name: 'Belgium', category: 'cultural', description: 'Medieval towns, extraordinary chocolate, and the historic charm of Bruges and Brussels.', image: 'https://images.unsplash.com/photo-1491557345352-5929e343eb89?auto=format&fit=crop&q=80&w=800' },
-    { id: 'gb', name: 'United Kingdom', category: 'cultural', description: 'Royal heritage, historic London landmarks, and the rugged beauty of the Scottish Highlands.', image: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&q=80&w=800' },
-    { id: 'ie', name: 'Ireland', category: 'nature', description: 'Rolling green hills, dramatic cliffs, and a uniquely welcoming Celtic culture.', image: 'https://images.unsplash.com/photo-1564959130747-897fb406b9af?auto=format&fit=crop&q=80&w=800' },
-    { id: 'is', name: 'Iceland', category: 'adventure', description: 'A land of fire and ice featuring geysers, glaciers, and the elusive Northern Lights.', image: 'https://images.unsplash.com/photo-1476610182048-b716b8518aae?auto=format&fit=crop&q=80&w=800' },
-    { id: 'no', name: 'Norway', category: 'nature', description: 'Majestic fjords, jagged mountains, and an unparalleled connection to raw nature.', image: 'https://images.unsplash.com/photo-1505312917212-9db5bde78aff?auto=format&fit=crop&q=80&w=800' },
-    { id: 'se', name: 'Sweden', category: 'nature', description: 'Archipelagos of thousands of islands and the sophisticated design culture of Stockholm.', image: 'https://images.unsplash.com/photo-1752003119242-4ab0b493afed?auto=format&fit=crop&q=80&w=800' },
-    { id: 'fi', name: 'Finland', category: 'nature', description: 'Lakeside saunas, pristine forests, and magical winter experiences in Lapland.', image: 'https://images.unsplash.com/photo-1712407886114-adddf9568a5a?auto=format&fit=crop&q=80&w=800' },
-    { id: 'dk', name: 'Denmark', category: 'cultural', description: 'Fairy-tale charm, modern gastronomy, and the quintessential concept of hygge.', image: 'https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?auto=format&fit=crop&q=80&w=800' },
-    { id: 'pl', name: 'Poland', category: 'cultural', description: 'Rich medieval history, resilient cities like Krakow, and deep cultural traditions.', image: 'https://images.unsplash.com/photo-1636903364559-0dfc358abd94?auto=format&fit=crop&q=80&w=800' },
-    { id: 'cz', name: 'Czech Republic', category: 'cultural', description: 'The gothic splendor of Prague, featuring spectacular bridges and astronomical clocks.', image: 'https://images.unsplash.com/photo-1735241586057-dcd5d000df97?auto=format&fit=crop&q=80&w=800' },
-    { id: 'hu', name: 'Hungary', category: 'cultural', description: 'Thermal baths, grand architecture along the Danube, and vibrant ruin bars in Budapest.', image: 'https://images.unsplash.com/photo-1638131984912-96ae3d289f16?auto=format&fit=crop&q=80&w=800' },
+    { id: 'it', name: 'Italy', category: 'cultural', region: 'Europe', budget: '$$$', description: 'From the ruins of Rome to the sun-drenched Amalfi Coast, a masterpiece of culture and cuisine.', image: 'https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&q=80&w=800' },
+    { id: 'es', name: 'Spain', category: 'cultural', region: 'Europe', budget: '$$', description: 'Vibrant cities, stunning beaches, and a passion for life wrapped in striking architecture.', image: 'https://images.unsplash.com/photo-1543783207-ec64e4d95325?auto=format&fit=crop&q=80&w=800' },
+    { id: 'fr', name: 'France', category: 'luxury', region: 'Europe', budget: '$$$', description: 'The epitome of romance, offering world-class art in Paris and luxurious retreats in the Riviera.', image: 'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&q=80&w=800' },
+    { id: 'gr', name: 'Greece', category: 'island', region: 'Europe', budget: '$$', description: 'Ancient history meeting the deepest blue seas among thousands of idyllic islands.', image: 'https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&q=80&w=800' },
+    { id: 'pt', name: 'Portugal', category: 'cultural', region: 'Europe', budget: '$$', description: 'Dramatic coastlines, historic Lisbon streets, and the golden vineyards of the Douro Valley.', image: 'https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&q=80&w=800' },
+    { id: 'ch', name: 'Switzerland', category: 'nature', region: 'Europe', budget: '$$$', description: 'Pristine alpine lakes, dramatic peaks, and unparalleled luxury mountain resorts.', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&q=80&w=800' },
+    { id: 'at', name: 'Austria', category: 'nature', region: 'Europe', budget: '$$', description: 'Imperial palaces, classical music heritage, and stunning Tyrolean landscapes.', image: 'https://images.unsplash.com/photo-1516550893923-42d28e5677af?auto=format&fit=crop&q=80&w=800' },
+    { id: 'de', name: 'Germany', category: 'cultural', region: 'Europe', budget: '$$', description: 'Fairytale castles in Bavaria to the cutting-edge creative energy of modern Berlin.', image: 'https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&q=80&w=800' },
+    { id: 'nl', name: 'Netherlands', category: 'cultural', region: 'Europe', budget: '$$$', description: 'Iconic canals, fields of tulips, and a progressive, bicycle-driven culture in Amsterdam.', image: 'https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?auto=format&fit=crop&q=80&w=800' },
+    { id: 'be', name: 'Belgium', category: 'cultural', region: 'Europe', budget: '$$', description: 'Medieval towns, extraordinary chocolate, and the historic charm of Bruges and Brussels.', image: 'https://images.unsplash.com/photo-1491557345352-5929e343eb89?auto=format&fit=crop&q=80&w=800' },
+    { id: 'gb', name: 'United Kingdom', category: 'cultural', region: 'Europe', budget: '$$$', description: 'Royal heritage, historic London landmarks, and the rugged beauty of the Scottish Highlands.', image: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&q=80&w=800' },
+    { id: 'ie', name: 'Ireland', category: 'nature', region: 'Europe', budget: '$$', description: 'Rolling green hills, dramatic cliffs, and a uniquely welcoming Celtic culture.', image: 'https://images.unsplash.com/photo-1564959130747-897fb406b9af?auto=format&fit=crop&q=80&w=800' },
+    { id: 'is', name: 'Iceland', category: 'adventure', region: 'Europe', budget: '$$$', description: 'A land of fire and ice featuring geysers, glaciers, and the elusive Northern Lights.', image: 'https://images.unsplash.com/photo-1476610182048-b716b8518aae?auto=format&fit=crop&q=80&w=800' },
+    { id: 'no', name: 'Norway', category: 'nature', region: 'Europe', budget: '$$$', description: 'Majestic fjords, jagged mountains, and an unparalleled connection to raw nature.', image: 'https://images.unsplash.com/photo-1505312917212-9db5bde78aff?auto=format&fit=crop&q=80&w=800' },
+    { id: 'se', name: 'Sweden', category: 'nature', region: 'Europe', budget: '$$$', description: 'Archipelagos of thousands of islands and the sophisticated design culture of Stockholm.', image: 'https://images.unsplash.com/photo-1752003119242-4ab0b493afed?auto=format&fit=crop&q=80&w=800' },
+    { id: 'fi', name: 'Finland', category: 'nature', region: 'Europe', budget: '$$$', description: 'Lakeside saunas, pristine forests, and magical winter experiences in Lapland.', image: 'https://images.unsplash.com/photo-1712407886114-adddf9568a5a?auto=format&fit=crop&q=80&w=800' },
+    { id: 'dk', name: 'Denmark', category: 'cultural', region: 'Europe', budget: '$$$', description: 'Fairy-tale charm, modern gastronomy, and the quintessential concept of hygge.', image: 'https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?auto=format&fit=crop&q=80&w=800' },
+    { id: 'pl', name: 'Poland', category: 'cultural', region: 'Europe', budget: '$', description: 'Rich medieval history, resilient cities like Krakow, and deep cultural traditions.', image: 'https://images.unsplash.com/photo-1636903364559-0dfc358abd94?auto=format&fit=crop&q=80&w=800' },
+    { id: 'cz', name: 'Czech Republic', category: 'cultural', region: 'Europe', budget: '$', description: 'The gothic splendor of Prague, featuring spectacular bridges and astronomical clocks.', image: 'https://images.unsplash.com/photo-1735241586057-dcd5d000df97?auto=format&fit=crop&q=80&w=800' },
+    { id: 'hu', name: 'Hungary', category: 'cultural', region: 'Europe', budget: '$', description: 'Thermal baths, grand architecture along the Danube, and vibrant ruin bars in Budapest.', image: 'https://images.unsplash.com/photo-1638131984912-96ae3d289f16?auto=format&fit=crop&q=80&w=800' },
 
     // Middle East & Asia
-    { id: 'tr', name: 'Turkey', category: 'cultural', description: 'Where East meets West—breathtaking mosques, vibrant bazaars, and the balloons of Cappadocia.', image: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&q=80&w=800' },
-    { id: 'ae', name: 'United Arab Emirates', category: 'luxury', description: 'Unprecedented modern luxury, towering skyscrapers, and opulent desert retreats.', image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=800' },
-    { id: 'qa', name: 'Qatar', category: 'luxury', description: 'Futuristic skylines blending flawlessly with deep-rooted Arabian heritage and art.', image: 'https://images.unsplash.com/photo-1647252262017-582a7dbb73d0?auto=format&fit=crop&q=80&w=800' },
-    { id: 'jo', name: 'Jordan', category: 'adventure', description: 'The incredible rose-red city of Petra and the stark, beautiful landscapes of Wadi Rum.', image: 'https://images.unsplash.com/photo-1712323028707-6e59c3d2271a?auto=format&fit=crop&q=80&w=800' },
-    { id: 'th', name: 'Thailand', category: 'beach', description: 'Gilded temples, bustling street food markets, and idyllic tropical islands.', image: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&q=80&w=800' },
-    { id: 'jp', name: 'Japan', category: 'cultural', description: 'A seamless blend of ancient traditions, serene zen gardens, and hyper-modern cities.', image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=800' },
-    { id: 'kr', name: 'South Korea', category: 'cultural', description: 'Dynamic Seoul pop culture contrasting with tranquil mountains and historic palaces.', image: 'https://images.unsplash.com/photo-1601621915196-2621bfb0cd6e?auto=format&fit=crop&q=80&w=800' },
-    { id: 'vn', name: 'Vietnam', category: 'cultural', description: 'Breathtaking karst landscapes, rich colonial history, and incredibly vibrant cuisine.', image: 'https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&q=80&w=800' },
-    { id: 'id', name: 'Indonesia', category: 'island', description: 'Over 17,000 islands featuring the spiritual luxury of Bali and the wilderness of Komodo.', image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&q=80&w=800' },
-    { id: 'sg', name: 'Singapore', category: 'luxury', description: 'A futuristic garden city boasting incredible food, pristine streets, and luxury shopping.', image: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&q=80&w=800' },
-    { id: 'my', name: 'Malaysia', category: 'cultural', description: 'A melting pot of cultures featuring the Petronas Towers and pristine Bornean rainforests.', image: 'https://images.unsplash.com/photo-1588931322123-9345cc9688bd?auto=format&fit=crop&q=80&w=800' },
-    { id: 'ph', name: 'Philippines', category: 'beach', description: 'Crystal-clear waters, hidden lagoons, and some of the friendliest locals in the world.', image: 'https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&q=80&w=800' },
-    { id: 'in', name: 'India', category: 'cultural', description: 'A sensory explosion of colors, spices, palaces, and the majestic Taj Mahal.', image: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800' },
-    { id: 'lk', name: 'Sri Lanka', category: 'nature', description: 'Lush tea plantations, ancient Buddhist ruins, and pristine Indian Ocean beaches.', image: 'https://images.unsplash.com/photo-1566296314736-6eaac1ca0cb9?auto=format&fit=crop&q=80&w=800' },
-    { id: 'mv', name: 'Maldives', category: 'luxury', description: 'The absolute pinnacle of overwater luxury resorts and exquisite turquoise lagoons.', image: 'https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&q=80&w=800' },
+    { id: 'tr', name: 'Turkey', category: 'cultural', region: 'Middle East', budget: '$$', description: 'Where East meets West—breathtaking mosques, vibrant bazaars, and the balloons of Cappadocia.', image: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&q=80&w=800' },
+    { id: 'ae', name: 'United Arab Emirates', category: 'luxury', region: 'Middle East', budget: '$$$', description: 'Unprecedented modern luxury, towering skyscrapers, and opulent desert retreats.', image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=800' },
+    { id: 'qa', name: 'Qatar', category: 'luxury', region: 'Middle East', budget: '$$$', description: 'Futuristic skylines blending flawlessly with deep-rooted Arabian heritage and art.', image: 'https://images.unsplash.com/photo-1647252262017-582a7dbb73d0?auto=format&fit=crop&q=80&w=800' },
+    { id: 'jo', name: 'Jordan', category: 'adventure', region: 'Middle East', budget: '$$', description: 'The incredible rose-red city of Petra and the stark, beautiful landscapes of Wadi Rum.', image: 'https://images.unsplash.com/photo-1712323028707-6e59c3d2271a?auto=format&fit=crop&q=80&w=800' },
+    { id: 'th', name: 'Thailand', category: 'beach', region: 'Asia', budget: '$', description: 'Gilded temples, bustling street food markets, and idyllic tropical islands.', image: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&q=80&w=800' },
+    { id: 'jp', name: 'Japan', category: 'cultural', region: 'Asia', budget: '$$$', description: 'A seamless blend of ancient traditions, serene zen gardens, and hyper-modern cities.', image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=800' },
+    { id: 'kr', name: 'South Korea', category: 'cultural', region: 'Asia', budget: '$$', description: 'Dynamic Seoul pop culture contrasting with tranquil mountains and historic palaces.', image: 'https://images.unsplash.com/photo-1601621915196-2621bfb0cd6e?auto=format&fit=crop&q=80&w=800' },
+    { id: 'vn', name: 'Vietnam', category: 'cultural', region: 'Asia', budget: '$', description: 'Breathtaking karst landscapes, rich colonial history, and incredibly vibrant cuisine.', image: 'https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&q=80&w=800' },
+    { id: 'id', name: 'Indonesia', category: 'island', region: 'Asia', budget: '$$', description: 'Over 17,000 islands featuring the spiritual luxury of Bali and the wilderness of Komodo.', image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&q=80&w=800' },
+    { id: 'sg', name: 'Singapore', category: 'luxury', region: 'Asia', budget: '$$$', description: 'A futuristic garden city boasting incredible food, pristine streets, and luxury shopping.', image: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&q=80&w=800' },
+    { id: 'my', name: 'Malaysia', category: 'cultural', region: 'Asia', budget: '$$', description: 'A melting pot of cultures featuring the Petronas Towers and pristine Bornean rainforests.', image: 'https://images.unsplash.com/photo-1588931322123-9345cc9688bd?auto=format&fit=crop&q=80&w=800' },
+    { id: 'ph', name: 'Philippines', category: 'beach', region: 'Asia', budget: '$', description: 'Crystal-clear waters, hidden lagoons, and some of the friendliest locals in the world.', image: 'https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&q=80&w=800' },
+    { id: 'in', name: 'India', category: 'cultural', region: 'Asia', budget: '$', description: 'A sensory explosion of colors, spices, palaces, and the majestic Taj Mahal.', image: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=800' },
+    { id: 'lk', name: 'Sri Lanka', category: 'nature', region: 'Asia', budget: '$', description: 'Lush tea plantations, ancient Buddhist ruins, and pristine Indian Ocean beaches.', image: 'https://images.unsplash.com/photo-1566296314736-6eaac1ca0cb9?auto=format&fit=crop&q=80&w=800' },
+    { id: 'mv', name: 'Maldives', category: 'luxury', region: 'Asia', budget: '$$$', description: 'The absolute pinnacle of overwater luxury resorts and exquisite turquoise lagoons.', image: 'https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&q=80&w=800' },
 
     // Oceania & North America
-    { id: 'au', name: 'Australia', category: 'adventure', description: 'The rugged Outback, the iconic Sydney Opera House, and the spectacular Great Barrier Reef.', image: 'https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&q=80&w=800' },
-    { id: 'nz', name: 'New Zealand', category: 'adventure', description: 'Unmatched adventure landscapes, soaring fjords, and welcoming native Maori culture.', image: 'https://images.unsplash.com/photo-1465056836041-7f43ac27dcb5?auto=format&fit=crop&q=80&w=800' },
-    { id: 'us', name: 'United States', category: 'cultural', description: 'Vast national parks, iconic cities like New York, and diverse landscapes coast to coast.', image: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&q=80&w=800' },
-    { id: 'ca', name: 'Canada', category: 'nature', description: 'Breathtaking Rocky Mountains, cosmopolitan cities, and vast untouched wilderness.', image: 'https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&q=80&w=800' },
-    { id: 'mx', name: 'Mexico', category: 'beach', description: 'Ancient Mayan ruins, vibrant culinary scenes, and stunning resorts in the Riviera Maya.', image: 'https://images.unsplash.com/photo-1589882868702-f0c72816f98b?auto=format&fit=crop&q=80&w=800' },
+    { id: 'au', name: 'Australia', category: 'adventure', region: 'Oceania', budget: '$$$', description: 'The rugged Outback, the iconic Sydney Opera House, and the spectacular Great Barrier Reef.', image: 'https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&q=80&w=800' },
+    { id: 'nz', name: 'New Zealand', category: 'adventure', region: 'Oceania', budget: '$$$', description: 'Unmatched adventure landscapes, soaring fjords, and welcoming native Maori culture.', image: 'https://images.unsplash.com/photo-1465056836041-7f43ac27dcb5?auto=format&fit=crop&q=80&w=800' },
+    { id: 'us', name: 'United States', category: 'cultural', region: 'Americas', budget: '$$$', description: 'Vast national parks, iconic cities like New York, and diverse landscapes coast to coast.', image: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&q=80&w=800' },
+    { id: 'ca', name: 'Canada', category: 'nature', region: 'Americas', budget: '$$$', description: 'Breathtaking Rocky Mountains, cosmopolitan cities, and vast untouched wilderness.', image: 'https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&q=80&w=800' },
+    { id: 'mx', name: 'Mexico', category: 'beach', region: 'Americas', budget: '$$', description: 'Ancient Mayan ruins, vibrant culinary scenes, and stunning resorts in the Riviera Maya.', image: 'https://images.unsplash.com/photo-1589882868702-f0c72816f98b?auto=format&fit=crop&q=80&w=800' },
 
     // South America & Africa
-    { id: 'br', name: 'Brazil', category: 'beach', description: 'The vibrant energy of Rio de Janeiro, the Amazon rainforest, and spectacular beaches.', image: 'https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&q=80&w=800' },
-    { id: 'ar', name: 'Argentina', category: 'cultural', description: 'The tango culture of Buenos Aires, premium wine regions, and the dramatic peaks of Patagonia.', image: 'https://images.unsplash.com/photo-1662217688785-b5c4424a320a?auto=format&fit=crop&q=80&w=800' },
-    { id: 'cl', name: 'Chile', category: 'nature', description: 'From the stark beauty of the Atacama Desert to the frozen fjords of the south.', image: 'https://images.unsplash.com/photo-1718587549592-a7b86daa418c?auto=format&fit=crop&q=80&w=800' },
-    { id: 'pe', name: 'Peru', category: 'cultural', description: 'The mystical ruins of Machu Picchu, the Sacred Valley, and world-renowned gastronomy.', image: 'https://images.unsplash.com/photo-1580619305218-8423a7ef79b4?auto=format&fit=crop&q=80&w=800' },
-    { id: 'co', name: 'Colombia', category: 'cultural', description: 'Colorful colonial cities like Cartagena, rich coffee regions, and revitalized urban centers.', image: 'https://images.unsplash.com/photo-1714686495394-73e2bb1bbd39?auto=format&fit=crop&q=80&w=800' },
-    { id: 'cr', name: 'Costa Rica', category: 'nature', description: 'The ultimate eco-tourism destination with lush rainforests, volcanoes, and incredible wildlife.', image: 'https://images.unsplash.com/photo-1568402102990-bc541580b59f?auto=format&fit=crop&q=80&w=800' },
-    { id: 'pa', name: 'Panama', category: 'island', description: 'A thriving modern capital, the famous canal, and pristine, undeveloped tropical islands.', image: 'https://images.unsplash.com/photo-1650900426337-0f7c0e0f86ea?auto=format&fit=crop&q=80&w=800' },
-    { id: 'za', name: 'South Africa', category: 'adventure', description: 'Unforgettable Big Five safaris, spectacular coastal drives, and the beauty of Cape Town.', image: 'https://images.unsplash.com/photo-1592910725283-4a7752699e67?auto=format&fit=crop&q=80&w=800' },
-    { id: 'ma', name: 'Morocco', category: 'cultural', description: 'A sensory journey through colorful souks, the Sahara desert, and intricate riad architecture.', image: 'https://images.unsplash.com/photo-1673709985879-ba098b960f27?auto=format&fit=crop&q=80&w=800' },
-    { id: 'eg', name: 'Egypt', category: 'cultural', description: 'The cradle of civilization, featuring the Pyramids of Giza and luxurious Nile river cruises.', image: 'https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&q=80&w=800' },
+    { id: 'br', name: 'Brazil', category: 'beach', region: 'Americas', budget: '$$', description: 'The vibrant energy of Rio de Janeiro, the Amazon rainforest, and spectacular beaches.', image: 'https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&q=80&w=800' },
+    { id: 'ar', name: 'Argentina', category: 'cultural', region: 'Americas', budget: '$$', description: 'The tango culture of Buenos Aires, premium wine regions, and the dramatic peaks of Patagonia.', image: 'https://images.unsplash.com/photo-1662217688785-b5c4424a320a?auto=format&fit=crop&q=80&w=800' },
+    { id: 'cl', name: 'Chile', category: 'nature', region: 'Americas', budget: '$$', description: 'From the stark beauty of the Atacama Desert to the frozen fjords of the south.', image: 'https://images.unsplash.com/photo-1718587549592-a7b86daa418c?auto=format&fit=crop&q=80&w=800' },
+    { id: 'pe', name: 'Peru', category: 'cultural', region: 'Americas', budget: '$', description: 'The mystical ruins of Machu Picchu, the Sacred Valley, and world-renowned gastronomy.', image: 'https://images.unsplash.com/photo-1580619305218-8423a7ef79b4?auto=format&fit=crop&q=80&w=800' },
+    { id: 'co', name: 'Colombia', category: 'cultural', region: 'Americas', budget: '$', description: 'Colorful colonial cities like Cartagena, rich coffee regions, and revitalized urban centers.', image: 'https://images.unsplash.com/photo-1714686495394-73e2bb1bbd39?auto=format&fit=crop&q=80&w=800' },
+    { id: 'cr', name: 'Costa Rica', category: 'nature', region: 'Americas', budget: '$$', description: 'The ultimate eco-tourism destination with lush rainforests, volcanoes, and incredible wildlife.', image: 'https://images.unsplash.com/photo-1568402102990-bc541580b59f?auto=format&fit=crop&q=80&w=800' },
+    { id: 'pa', name: 'Panama', category: 'island', region: 'Americas', budget: '$$', description: 'A thriving modern capital, the famous canal, and pristine, undeveloped tropical islands.', image: 'https://images.unsplash.com/photo-1650900426337-0f7c0e0f86ea?auto=format&fit=crop&q=80&w=800' },
+    { id: 'za', name: 'South Africa', category: 'adventure', region: 'Africa', budget: '$$$', description: 'Unforgettable Big Five safaris, spectacular coastal drives, and the beauty of Cape Town.', image: 'https://images.unsplash.com/photo-1592910725283-4a7752699e67?auto=format&fit=crop&q=80&w=800' },
+    { id: 'ma', name: 'Morocco', category: 'cultural', region: 'Africa', budget: '$$', description: 'A sensory journey through colorful souks, the Sahara desert, and intricate riad architecture.', image: 'https://images.unsplash.com/photo-1673709985879-ba098b960f27?auto=format&fit=crop&q=80&w=800' },
+    { id: 'eg', name: 'Egypt', category: 'cultural', region: 'Africa', budget: '$', description: 'The cradle of civilization, featuring the Pyramids of Giza and luxurious Nile river cruises.', image: 'https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&q=80&w=800' },
 ];
 
 // Multi-category tags: a country can belong to several filter categories
@@ -144,6 +155,34 @@ export const categoryTags: Record<string, string[]> = {
     jo: ['adventure'],
 };
 
+export const featuredBanners: FeaturedBannerItem[] = [
+    {
+        id: 'feat-jp',
+        name: 'Japan',
+        headline: 'The Timeless Heart of Japan',
+        description: 'Immerse yourself in a country where centuries-old temples and meticulously manicured zen gardens seamlessly coexist with modern luxury. From the breathtaking bamboo groves of Kyoto to the vibrant pulse of Tokyo, discover an unparalleled journey.',
+        image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=2000&auto=format&fit=crop',
+        href: '/countries/japan'
+    },
+    {
+        id: 'feat-gr',
+        name: 'Santorini, Greece',
+        headline: 'Sunsets over the Caldera',
+        description: 'Witness the iconic whitewashed architecture cascade down dramatic volcanic cliffs. Lose yourself in the deep blue waters of the Aegean, indulge in exquisite Mediterranean cuisine, and experience the most evocative sunsets in the world.',
+        image: 'https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?q=80&w=2000&auto=format&fit=crop',
+        href: '/countries/greece'
+    },
+    {
+        id: 'feat-mv',
+        name: 'The Maldives',
+        headline: 'Pinnacle of Overwater Luxury',
+        description: 'Escape to private atolls where pristine turquoise lagoons meet powder-soft white sands. Surrender to absolute serenity in your luxury overwater villa, surrounded by thriving coral reefs and unparalleled bespoke service.',
+        image: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?q=80&w=2000&auto=format&fit=crop',
+        href: '/countries/maldives'
+    }
+];
+
+// Kept for backward compatibility if needed, though we use featuredBanners now
 export const featuredDestination = {
     name: 'Kyoto, Japan',
     headline: 'The Timeless Heart of Japan',

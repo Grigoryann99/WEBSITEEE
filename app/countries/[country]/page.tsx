@@ -74,9 +74,20 @@ export default function CountryPage({ params }: CountryPageProps) {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 gap-8">
                         {data.destinations.map((dest, i) => (
-                            <CountryDestinationCard key={i} {...dest} />
+                            <CountryDestinationCard 
+                                key={i} 
+                                name={dest.name}
+                                location={`${dest.city}, ${dest.country}`}
+                                category={dest.category || 'Historical'}
+                                description={dest.description}
+                                whyVisit={dest.whyVisit || dest.description}
+                                bestTime={dest.bestTime || 'April - October'}
+                                insiderTip={dest.insiderTip || 'Book tickets in advance to avoid long lines.'}
+                                costLevel={dest.cost || '$$'}
+                                imageUrl={dest.image || 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=800&auto=format&fit=crop'}
+                            />
                         ))}
                     </div>
                 </section>
