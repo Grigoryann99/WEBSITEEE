@@ -134,14 +134,7 @@ export default function Navigation() {
                         aria-label="Go to homepage"
                         className="flex items-center gap-2.5 shrink-0 outline-none focus-visible:ring-2 focus-visible:ring-brand-accent rounded-lg"
                     >
-                        <Image
-                            src="/TAZEN.png"
-                            alt="Velora Logo"
-                            width={isScrolled ? 36 : 44}
-                            height={isScrolled ? 36 : 44}
-                            className="w-auto h-auto transition-all duration-500 rounded-full"
-                            priority
-                        />
+
                         <span className={`font-montserrat tracking-[0.22em] font-semibold transition-all duration-300 select-none
                             ${isScrolled ? 'text-base md:text-lg' : 'text-lg md:text-xl'} text-white`}
                         >

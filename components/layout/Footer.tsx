@@ -8,13 +8,7 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
                     <div className="md:col-span-2">
                         <div className="flex items-center space-x-3 mb-6">
-                            <Image
-                                src="/logo_final.png"
-                                alt="Velora Logo"
-                                width={64}
-                                height={64}
-                                className="w-16 h-auto mb-[2px]"
-                            />
+
                             <div className="font-montserrat text-3xl tracking-widest text-brand-light flex items-center">
                                 VELORA<span className="text-brand-accent">.</span>
                             </div>
