@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   title: "VeloraTravel",
   description: "Curated Escapes and Luxury Travel Experiences",
   icons: {
-    icon: '/VERJAPESS.png',
+    icon: '/TAZEN.png',
   },
 };
 
@@ -88,6 +88,7 @@ export default function RootLayout({
           }}
         />
 
+        <link rel="icon" type="image/png" href="/TAZEN.png" />
       </head>
       <body
         className={`${cormorant.variable} ${inter.variable} ${montserrat.variable} ${roboto.variable} antialiased bg-brand-dark text-brand-light font-sans`}
