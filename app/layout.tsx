@@ -74,7 +74,7 @@ export default function RootLayout({
               "@type": "Organization",
               "name": "VeloraTravel",
               "url": "https://veloratravel.org",
-              "logo": "https://veloratravel.org/logo_final.png",
+              "logo": "https://veloratravel.org/TAZEN.png",
               "sameAs": [
                 "https://www.instagram.com/veloratravel",
                 "https://www.facebook.com/veloratravel"
