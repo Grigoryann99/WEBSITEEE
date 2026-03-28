@@ -135,6 +135,12 @@ export default function Navigation() {
                         className="flex items-center gap-2.5 shrink-0 outline-none focus-visible:ring-2 focus-visible:ring-brand-accent rounded-lg"
                     >
 
+                        <img
+                            src="/logo.svg"
+                            alt="VeloraTravel logo"
+                            className={`transition-all duration-300 ${isScrolled ? 'h-8' : 'h-9'}`}
+                            style={{ background: 'transparent' }}
+                        />
                         <span className={`font-montserrat tracking-[0.22em] font-semibold transition-all duration-300 select-none
                             ${isScrolled ? 'text-base md:text-lg' : 'text-lg md:text-xl'} text-white`}
                         >

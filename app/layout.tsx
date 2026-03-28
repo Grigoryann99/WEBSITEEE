@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   title: "VeloraTravel",
   description: "Curated Escapes and Luxury Travel Experiences",
   icons: {
-    icon: '/TAZEN.png',
+    icon: '/logo.svg',
   },
 };
 
@@ -74,7 +74,7 @@ export default function RootLayout({
               "@type": "Organization",
               "name": "VeloraTravel",
               "url": "https://veloratravel.org",
-              "logo": "https://veloratravel.org/TAZEN.png",
+              "logo": "https://veloratravel.org/logo.svg",
               "sameAs": [
                 "https://www.instagram.com/veloratravel",
                 "https://www.facebook.com/veloratravel"
@@ -88,7 +88,7 @@ export default function RootLayout({
           }}
         />
 
-        <link rel="icon" type="image/png" href="/TAZEN.png" />
+        <link rel="icon" type="image/svg+xml" href="/logo.svg" />
       </head>
       <body
         className={`${cormorant.variable} ${inter.variable} ${montserrat.variable} ${roboto.variable} antialiased bg-brand-dark text-brand-light font-sans`}

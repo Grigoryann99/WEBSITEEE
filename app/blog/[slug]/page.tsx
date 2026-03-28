@@ -144,7 +144,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                             "name": "VeloraTravel",
                             "logo": {
                                 "@type": "ImageObject",
-                                "url": "https://veloratravel.org/logo.png"
+                                "url": "https://veloratravel.org/logo.svg"
                             }
                         },
                         "mainEntityOfPage": {
