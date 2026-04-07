@@ -3,9 +3,10 @@
 import { useState, useMemo, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Search, Compass, ArrowRight, ChevronDown } from 'lucide-react';
+import { Search, Compass, ArrowRight, ChevronDown, SlidersHorizontal } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import TravelStyleQuiz from '@/components/destinations/TravelStyleQuiz';
+import FilterSidebar, { FilterState } from '@/components/destinations/FilterSidebar';
 import {
     globalDestinations,
     destinationCategories,
@@ -21,6 +22,8 @@ export default function DestinationsPage() {
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
     const [activeFaq, setActiveFaq] = useState<string | null>(null);
     const [currentBannerIdx, setCurrentBannerIdx] = useState(0);
+    const [isFilterOpen, setIsFilterOpen] = useState(false);
+    const [activeFilters, setActiveFilters] = useState<FilterState | null>(null);
 
     // Auto-rotate featured banner
     useEffect(() => {
@@ -50,13 +53,27 @@ export default function DestinationsPage() {
                 d.name.toLowerCase().includes(q)
             );
         }
+
+        if (activeFilters) {
+            if (activeFilters.regions.length > 0) {
+                // globalDestinations has region (e.g. 'Europe'). 
+                results = results.filter(d => d.region && activeFilters.regions.includes(d.region));
+            }
+            // Note: Since price and specific travel styles aren't mapped strictly per individual 
+            // destination in globalDestinations, they serve as UI demo hooks unless data is updated.
+        }
         
         return results;
-    }, [searchQuery, selectedCategory]);
+    }, [searchQuery, selectedCategory, activeFilters]);
 
     const clearAllFilters = () => {
         setSearchQuery('');
         setSelectedCategory(null);
+        setActiveFilters(null);
+    };
+
+    const handleApplyFilters = (filters: FilterState) => {
+        setActiveFilters(filters);
     };
 
     const toggleCategory = (id: string) => {
@@ -109,16 +126,24 @@ export default function DestinationsPage() {
                             Curated intelligence on 50 of the world&apos;s most captivating locations. Find your next extraordinary journey.
                         </p>
 
-                        {/* Live Search */}
-                        <div className="relative max-w-xl mx-auto">
-                            <input
-                                type="text"
-                                placeholder="Search by country name..."
-                                value={searchQuery}
-                                onChange={(e) => setSearchQuery(e.target.value)}
-                                className="w-full bg-white/5 border border-white/10 rounded-full py-5 pl-14 pr-6 text-white placeholder:text-white/30 focus:outline-none focus:border-[#1D9E75]/50 focus:bg-white/10 transition-all backdrop-blur-md"
-                            />
-                            <Search className="absolute left-5 top-1/2 -translate-y-1/2 w-5 h-5 text-[#1D9E75]" />
+                        {/* Live Search & Filter */}
+                        <div className="relative max-w-2xl mx-auto flex flex-col sm:flex-row items-center gap-3">
+                            <button
+                                onClick={() => setIsFilterOpen(true)}
+                                className="flex items-center gap-2 bg-[#1D9E75]/10 border border-[#1D9E75]/30 text-[#1D9E75] hover:bg-[#1D9E75] hover:text-black hover:scale-105 transition-all px-8 py-5 rounded-full font-bold uppercase tracking-widest text-[10px] whitespace-nowrap w-full sm:w-auto justify-center shadow-[0_0_20px_rgba(29,158,117,0.1)]"
+                            >
+                                <SlidersHorizontal className="w-4 h-4" /> Filters
+                            </button>
+                            <div className="relative flex-1 w-full">
+                                <input
+                                    type="text"
+                                    placeholder="Search by country name..."
+                                    value={searchQuery}
+                                    onChange={(e) => setSearchQuery(e.target.value)}
+                                    className="w-full bg-white/5 border border-white/10 rounded-full py-5 pl-14 pr-6 text-white placeholder:text-white/30 focus:outline-none focus:border-[#1D9E75]/50 focus:bg-white/10 transition-all backdrop-blur-md"
+                                />
+                                <Search className="absolute left-5 top-1/2 -translate-y-1/2 w-5 h-5 text-[#1D9E75]" />
+                            </div>
                         </div>
                     </motion.div>
                 </div>
@@ -548,6 +573,12 @@ export default function DestinationsPage() {
                 </div>
             </section>
 
+
+            <FilterSidebar 
+                isOpen={isFilterOpen} 
+                onClose={() => setIsFilterOpen(false)} 
+                onApply={handleApplyFilters} 
+            />
         </main>
     );
 }
