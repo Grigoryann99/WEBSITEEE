@@ -46,17 +46,17 @@ export default function CountryPage({ params }: CountryPageProps) {
             <section className="relative h-[60vh] md:h-[70vh] flex flex-col items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <CountryHeroImage src={data.heroImage} countryName={data.name} />
-                    <div className="absolute inset-0 bg-gradient-to-b from-[#F9F9F9]/60 via-[#F9F9F9]/20 to-[#F9F9F9]" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-[#F9F9F9]" />
                 </div>
 
                 <div className="relative z-10 text-center w-full max-w-4xl mx-auto px-6 mt-16">
                     <p className="font-sans text-brand-accent tracking-[0.3em] text-xs sm:text-sm uppercase mb-4 animate-fade-in-up">
                         Discover
                     </p>
-                    <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-brand-dark mb-6 leading-tight tracking-wider drop-shadow-sm">
+                    <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white mb-6 leading-tight tracking-wider drop-shadow-md">
                         {data.name}
                     </h1>
-                    <p className="font-light text-brand-dark/80 text-lg md:text-xl max-w-2xl mx-auto">
+                    <p className="font-light text-white/85 text-lg md:text-xl max-w-2xl mx-auto drop-shadow-sm">
                         {data.description}
                     </p>
                 </div>
