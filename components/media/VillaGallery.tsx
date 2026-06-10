@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 import { ArrowRight, BedDouble, Users, MapPin, Waves } from 'lucide-react';
 
 const villas = [
@@ -109,8 +110,7 @@ const villas = [
 
 const VillaGallery = () => {
     return (
-        <section id="villas" className="relative py-32 bg-gradient-to-b from-[#050505] to-black text-white overflow-hidden">
-            {/* Subtle background particles / lighting could go here */}
+        <section id="villas" className="relative py-24 md:py-32 bg-[#F9F9F9] text-brand-dark overflow-hidden border-t border-gray-150">
             <div className="absolute inset-0 bg-mesh-luxury opacity-10 pointer-events-none" />
 
             {/* Section Header */}
@@ -138,7 +138,7 @@ const VillaGallery = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="max-w-2xl mx-auto text-white/50 font-sans text-lg font-light leading-relaxed"
+                    className="max-w-2xl mx-auto text-brand-dark/60 font-sans text-lg font-light leading-relaxed"
                 >
                     Crafted for unforgettable escapes. Experience the pinnacle of luxury in our curated collection of private residences around the globe.
                 </motion.p>
@@ -154,71 +154,60 @@ const VillaGallery = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: "-100px" }}
                             transition={{ duration: 0.8, delay: (index % 3) * 0.15, ease: [0.21, 0.47, 0.32, 0.98] }}
-                            className="group relative flex flex-col rounded-[2rem] overflow-hidden bg-[#111] shadow-2xl transition-all duration-700 hover:-translate-y-3 cursor-pointer"
+                            className="group relative flex flex-col rounded-[2rem] overflow-hidden bg-white border border-gray-200 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_30px_rgba(0,0,0,0.08)] hover:border-brand-accent/30 transition-all duration-500 hover:-translate-y-2 cursor-pointer"
                         >
                             {/* Card Image Container */}
-                            <div className="relative w-full aspect-[4/5] overflow-hidden">
+                            <div className="relative w-full aspect-[16/11] overflow-hidden">
                                 <Image
                                     src={villa.image}
                                     alt={villa.name}
                                     fill
-                                    className="object-cover transition-all duration-1000 ease-out group-hover:scale-110 group-hover:brightness-110"
-                                    sizes="(max-w-768px) 100vw, (max-w-1200px) 50vw, 33vw"
+                                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 />
 
-                                {/* Inner Gradient for Text Readability */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-100" />
-
                                 {/* Floating Metadata Badges (Top) */}
-                                <div className="absolute top-6 left-6 right-6 flex justify-between items-start opacity-0 -translate-y-4 transition-all duration-500 delay-100 group-hover:opacity-100 group-hover:translate-y-0">
-                                    <span className="flex items-center gap-1.5 bg-black/40 backdrop-blur-md px-3 py-1.5 rounded-full text-[11px] font-sans tracking-widest uppercase border border-white/10">
+                                <div className="absolute top-4 left-4 right-4 flex justify-between items-start z-10">
+                                    <span className="flex items-center gap-1.5 bg-white/85 backdrop-blur-md px-3 py-1.5 rounded-full text-[10px] font-sans tracking-widest uppercase border border-black/5 text-brand-dark">
                                         <MapPin className="w-3 h-3 text-brand-accent" />
                                         {villa.location}
                                     </span>
-                                    <span className="flex items-center gap-1.5 bg-brand-accent/90 text-black px-3 py-1.5 rounded-full text-[11px] font-sans tracking-widest font-semibold uppercase">
-                                        {villa.price.split(' ')[0]} {/* Takes just "From" or "Inquire" */}
+                                    <span className="bg-brand-accent text-white px-3 py-1.5 rounded-full text-[10px] font-sans tracking-widest font-semibold uppercase shadow-sm">
+                                        {villa.price.split(' ')[0] === 'Inquire' ? 'Inquire' : villa.price.split(' ')[1] || 'Special'}
                                     </span>
                                 </div>
+                            </div>
 
-                                {/* Content Overlay (Bottom) */}
-                                <div className="absolute bottom-0 left-0 right-0 p-8 flex flex-col justify-end h-full">
+                            {/* Content Box */}
+                            <div className="flex flex-col flex-grow p-7 text-left">
+                                <div className="mb-4">
+                                    <h3 className="font-serif text-2xl md:text-3xl text-brand-dark group-hover:text-brand-accent transition-colors duration-300 leading-snug">
+                                        {villa.name}
+                                    </h3>
+                                    <p className="text-brand-accent font-sans text-xs tracking-widest uppercase font-medium mt-1">
+                                        {villa.price}
+                                    </p>
+                                </div>
+                                
+                                <p className="text-brand-dark/60 font-sans text-xs md:text-sm leading-relaxed mb-6 font-light flex-grow">
+                                    {villa.description}
+                                </p>
 
-                                    {/* Villa Title & Price */}
-                                    <div className="mb-4 transform translate-y-4 transition-transform duration-500 group-hover:translate-y-0 relative z-10">
-                                        <h3 className="font-serif text-3xl md:text-4xl mb-2 text-white/90 group-hover:text-white transition-colors duration-300">
-                                            {villa.name}
-                                        </h3>
-                                        <p className="text-brand-accent font-sans text-sm tracking-wide font-medium">
-                                            {villa.price}
-                                        </p>
-                                    </div>
-
-                                    {/* Micro-Interaction Details (Fades in on hover) */}
-                                    <div className="overflow-hidden relative z-10 h-0 group-hover:h-auto transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:mt-4">
-                                        <p className="text-white/60 font-sans text-sm leading-relaxed mb-6 font-light">
-                                            {villa.description}
-                                        </p>
-
-                                        {/* Amenity Icons */}
-                                        <div className="flex items-center gap-4 text-white/70 text-xs font-sans">
-                                            <div className="flex items-center gap-1.5">
-                                                <BedDouble className="w-4 h-4" />
-                                                <span>{villa.bedrooms} Beds</span>
-                                            </div>
-                                            <div className="flex items-center gap-1.5">
-                                                <Users className="w-4 h-4" />
-                                                <span>{villa.guests} Guests</span>
-                                            </div>
-                                            <div className="flex items-center gap-1.5">
-                                                <Waves className="w-4 h-4" />
-                                                <span className="truncate max-w-[100px]">{villa.amenity}</span>
-                                            </div>
+                                {/* Bottom Row */}
+                                <div className="flex items-center justify-between pt-5 border-t border-gray-100 mt-auto">
+                                    <div className="flex items-center gap-4 text-brand-dark/50 text-[11px] font-sans">
+                                        <div className="flex items-center gap-1">
+                                            <BedDouble className="w-3.5 h-3.5 text-brand-accent" />
+                                            <span>{villa.bedrooms} Beds</span>
+                                        </div>
+                                        <div className="flex items-center gap-1">
+                                            <Users className="w-3.5 h-3.5 text-brand-accent" />
+                                            <span>{villa.guests} Guests</span>
                                         </div>
                                     </div>
-
-                                    {/* Interactive Arrow Button */}
-                                    <div className="absolute bottom-8 right-8 w-12 h-12 rounded-full border border-white/20 flex items-center justify-center bg-black/20 backdrop-blur-sm transition-all duration-500 group-hover:bg-brand-accent group-hover:border-brand-accent group-hover:text-black">
-                                        <ArrowRight className="w-5 h-5 transition-transform duration-500 group-hover:-rotate-45" />
+                                    
+                                    <div className="w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center bg-gray-50 text-brand-dark group-hover:bg-brand-accent group-hover:border-brand-accent group-hover:text-white transition-all duration-300">
+                                        <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:-rotate-45" />
                                     </div>
                                 </div>
                             </div>
@@ -234,16 +223,16 @@ const VillaGallery = () => {
                     transition={{ duration: 0.8, delay: 0.4 }}
                     className="mt-20 text-center"
                 >
-                    <p className="font-sans text-brand-light/60 mb-6 tracking-wide font-light">
+                    <p className="font-sans text-brand-dark/60 mb-6 tracking-wide font-light">
                         Explore our complete collection of 9 private residences worldwide.
                     </p>
-                    <button className="group relative inline-flex items-center gap-4 px-8 py-4 bg-transparent border border-white/20 rounded-full font-sans tracking-widest uppercase text-sm hover:border-brand-accent hover:text-brand-accent transition-colors duration-500">
-                        <span>View All Residences</span>
-                        <span className="relative flex h-2 w-2">
-                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-accent opacity-40"></span>
-                            <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-accent"></span>
-                        </span>
-                    </button>
+                    <Link
+                        href="/destinations"
+                        className="inline-flex items-center gap-4 text-brand-dark border-b border-brand-dark/30 pb-1 font-sans text-xs tracking-[0.18em] uppercase font-medium hover:border-brand-accent hover:text-brand-accent transition-all duration-300 group"
+                    >
+                        View All Destinations
+                        <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
+                    </Link>
                 </motion.div>
             </div>
         </section>

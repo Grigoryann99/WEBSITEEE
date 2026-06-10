@@ -26,8 +26,8 @@ const options = [
 
 export default function SupportAdditional() {
     return (
-        <section className="pb-24 px-4 bg-brand-dark">
-            <div className="max-w-7xl mx-auto border-t border-white/5 pt-20">
+        <section className="pb-24 px-4 bg-[#F9F9F9]">
+            <div className="max-w-7xl mx-auto border-t border-gray-200 pt-20">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                     {options.map((opt, idx) => (
                         <motion.div
@@ -38,12 +38,12 @@ export default function SupportAdditional() {
                             transition={{ duration: 0.5, delay: idx * 0.1 }}
                             className="flex flex-col items-center text-center group"
                         >
-                            <div className="w-16 h-16 rounded-full bg-white/[0.02] border border-white/10 flex items-center justify-center mb-6 group-hover:bg-brand-accent/10 group-hover:border-brand-accent/30 transition-all duration-500">
-                                <opt.icon className="text-white/40 group-hover:text-brand-accent transition-colors" size={28} />
+                            <div className="w-16 h-16 rounded-full bg-white border border-gray-200 flex items-center justify-center mb-6 group-hover:bg-brand-accent/10 group-hover:border-brand-accent/30 transition-all duration-500 shadow-sm">
+                                <opt.icon className="text-[#1A1A1A]/40 group-hover:text-brand-accent transition-colors" size={28} />
                             </div>
-                            <h4 className="font-serif text-xl text-white mb-2">{opt.title}</h4>
-                            <p className="text-white/30 text-xs uppercase tracking-widest mb-4 font-inter">{opt.desc}</p>
-                            <p className="text-white/80 font-medium font-inter group-hover:text-brand-accent transition-colors cursor-pointer">{opt.value}</p>
+                            <h4 className="font-serif text-xl text-[#1A1A1A] mb-2">{opt.title}</h4>
+                            <p className="text-[#1A1A1A]/30 text-xs uppercase tracking-widest mb-4 font-inter">{opt.desc}</p>
+                            <p className="text-[#1A1A1A]/70 font-medium font-inter group-hover:text-brand-accent transition-colors cursor-pointer">{opt.value}</p>
                         </motion.div>
                     ))}
                 </div>

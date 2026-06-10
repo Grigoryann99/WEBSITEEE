@@ -7,7 +7,7 @@ import { Globe, Pen, Home, ArrowRight, CheckCircle2 } from 'lucide-react';
 
 export default function AboutPage() {
     return (
-        <main className="min-h-screen bg-[#0a0a0a] text-brand-light font-sans selection:bg-[#1D9E75]/30 overflow-hidden">
+        <main className="min-h-screen bg-[#F9F9F9] text-[#1A1A1A] font-sans selection:bg-brand-accent/20 overflow-hidden">
             
             {/* SECTION 1 — Hero */}
             <section className="relative pt-48 pb-32 px-6 text-center overflow-hidden">
@@ -19,10 +19,10 @@ export default function AboutPage() {
                     className="max-w-4xl mx-auto relative z-10"
                 >
                     <p className="font-sans text-[#1D9E75] tracking-[0.4em] text-xs uppercase mb-8">Established in Curation</p>
-                    <h1 className="font-serif text-6xl md:text-8xl text-brand-light mb-10 leading-tight tracking-tight">
+                    <h1 className="font-serif text-6xl md:text-8xl text-[#1A1A1A] mb-10 leading-tight tracking-tight">
                         About VeloraTravel
                     </h1>
-                    <p className="font-sans text-brand-light/80 text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed font-light">
+                    <p className="font-sans text-[#1A1A1A]/70 text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed font-light">
                         We believe travel is not a product to be purchased — it is an experience to be curated, a story to be lived, and a perspective to be changed.
                     </p>
                 </motion.div>
@@ -37,8 +37,8 @@ export default function AboutPage() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h2 className="font-serif text-4xl md:text-5xl text-brand-light mb-8">Our Story</h2>
-                        <div className="space-y-6 font-sans text-brand-light/70 text-lg font-light leading-relaxed">
+                        <h2 className="font-serif text-4xl md:text-5xl text-[#1A1A1A] mb-8">Our Story</h2>
+                        <div className="space-y-6 font-sans text-[#1A1A1A]/70 text-lg font-light leading-relaxed">
                             <p>
                                 VeloraTravel was born from a simple, personal frustration. As a lifelong traveler, I spent years navigating a web filled with shallow "top 10" lists and AI-generated clickbait that offered little more than surface-level advice. I realized that what the modern explorer truly needed wasn't more options, but better curation—a single, trusted place to find honest, deep travel guides that respect the reader's time and intelligence.
                             </p>
@@ -59,15 +59,15 @@ export default function AboutPage() {
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="relative aspect-[4/5] rounded-3xl overflow-hidden bg-[#141414] border border-white/10 group"
+                        className="relative aspect-[4/5] rounded-3xl overflow-hidden bg-white border border-gray-200 shadow-sm group"
                     >
                         <Image 
                             src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1000&auto=format&fit=crop"
                             alt="Our Founding Story"
                             fill
-                            className="object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
+                            className="object-cover opacity-75 group-hover:scale-105 transition-transform duration-700"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#F9F9F9]/80 via-transparent to-transparent" />
                         <div className="absolute bottom-10 left-10">
                             <p className="text-[#1D9E75] font-serif italic text-2xl">&quot;Quality over quantity, always.&quot;</p>
                         </div>
@@ -76,10 +76,10 @@ export default function AboutPage() {
             </section>
 
             {/* SECTION 3 — What We Offer */}
-            <section className="py-32 bg-[#141414]/50 border-y border-white/5">
+            <section className="py-32 bg-white border-y border-gray-100">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="text-center mb-20">
-                        <h2 className="font-serif text-4xl md:text-5xl text-brand-light mb-4">What We Offer</h2>
+                        <h2 className="font-serif text-4xl md:text-5xl text-[#1A1A1A] mb-4">What We Offer</h2>
                         <div className="w-20 h-1 bg-[#1D9E75] mx-auto opacity-50" />
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -106,11 +106,11 @@ export default function AboutPage() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: idx * 0.2 }}
-                                className="p-10 bg-[#0a0a0a] border border-white/5 rounded-3xl hover:border-[#1D9E75]/30 transition-colors group text-center"
+                                className="p-10 bg-white border border-gray-200 rounded-3xl hover:border-[#1D9E75]/40 shadow-sm hover:shadow-md transition-all group text-center"
                             >
                                 <div className="mb-6 flex justify-center">{item.icon}</div>
-                                <h3 className="font-serif text-2xl text-brand-light mb-4">{item.title}</h3>
-                                <p className="font-sans text-brand-light/60 font-light leading-relaxed">{item.text}</p>
+                                <h3 className="font-serif text-2xl text-[#1A1A1A] mb-4">{item.title}</h3>
+                                <p className="font-sans text-[#1A1A1A]/60 font-light leading-relaxed">{item.text}</p>
                             </motion.div>
                         ))}
                     </div>
@@ -140,18 +140,18 @@ export default function AboutPage() {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ delay: idx * 0.1 }}
-                            className="relative p-1 border-l border-white/10 pl-10"
+                            className="relative p-1 border-l-2 border-[#1D9E75]/30 pl-10"
                         >
-                            <span className="absolute left-0 top-0 text-7xl font-serif text-white/5 select-none">0{idx + 1}</span>
+                            <span className="absolute left-0 top-0 text-7xl font-serif text-[#1A1A1A]/[0.04] select-none">0{idx + 1}</span>
                             <h3 className="font-serif text-2xl text-[#1D9E75] mb-4 relative z-10">{value.title}</h3>
-                            <p className="font-sans text-brand-light/70 font-light leading-relaxed relative z-10">{value.desc}</p>
+                            <p className="font-sans text-[#1A1A1A]/70 font-light leading-relaxed relative z-10">{value.desc}</p>
                         </motion.div>
                     ))}
                 </div>
             </section>
 
             {/* SECTION 5 — Honest Stats */}
-            <section className="py-24 bg-[#141414] border-y border-white/5">
+            <section className="py-24 bg-[#F9F9F9] border-y border-gray-100">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
                         {[
@@ -160,7 +160,7 @@ export default function AboutPage() {
                             { value: "Weekly", label: "New guides added" }
                         ].map((stat, idx) => (
                             <div key={idx} className="space-y-2">
-                                <p className="font-serif text-6xl text-brand-light tracking-tight">{stat.value}</p>
+                                <p className="font-serif text-6xl text-[#1A1A1A] tracking-tight">{stat.value}</p>
                                 <p className="font-sans text-xs uppercase tracking-[0.3em] text-[#1D9E75] font-medium">{stat.label}</p>
                             </div>
                         ))}
@@ -177,21 +177,21 @@ export default function AboutPage() {
                     viewport={{ once: true }}
                     className="max-w-3xl mx-auto text-center relative z-10"
                 >
-                    <h2 className="font-serif text-5xl md:text-7xl text-brand-light mb-10 leading-tight">
+                    <h2 className="font-serif text-5xl md:text-7xl text-[#1A1A1A] mb-10 leading-tight">
                         Ready to Explore?
                     </h2>
                     <div className="flex flex-col sm:flex-row gap-6 justify-center">
                         <Link 
-                            href="/destinations" 
-                            className="bg-[#1D9E75] text-[#0a0a0a] px-10 py-5 rounded-full text-sm font-sans tracking-widest uppercase font-semibold hover:bg-white transition-all transform hover:scale-105 shadow-xl shadow-[#1D9E75]/20"
+                            href="/support" 
+                            className="bg-[#1D9E75] text-white px-10 py-5 rounded-full text-sm font-sans tracking-widest uppercase font-semibold hover:bg-[#1A1A1A] transition-all transform hover:scale-105 shadow-xl shadow-[#1D9E75]/20"
                         >
-                            Browse Destinations
+                            Contact Our Team
                         </Link>
                         <Link 
-                            href="/blog" 
-                            className="border border-[#1D9E75] text-[#1D9E75] px-10 py-5 rounded-full text-sm font-sans tracking-widest uppercase font-semibold hover:bg-[#1D9E75] hover:text-[#0a0a0a] transition-all transform hover:scale-105"
+                            href="/destinations" 
+                            className="border border-[#1D9E75] text-[#1D9E75] px-10 py-5 rounded-full text-sm font-sans tracking-widest uppercase font-semibold hover:bg-[#1D9E75] hover:text-white transition-all transform hover:scale-105"
                         >
-                            Read the Journal
+                            Explore Destinations
                         </Link>
                     </div>
                 </motion.div>

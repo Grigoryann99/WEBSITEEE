@@ -18,7 +18,7 @@ export default function SupportHero() {
 
                 {/* Cinematic Overlays */}
                 <div className="absolute inset-0 bg-black/50 z-10" />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-brand-dark/60 z-10" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#F9F9F9] via-transparent to-black/40 z-10" />
                 {/* Radial vignette for focus */}
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_20%,_#000_150%)] z-10 pointer-events-none" />
             </div>

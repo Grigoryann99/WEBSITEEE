@@ -48,7 +48,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
             if (line.startsWith('## ')) {
                 elements.push(
-                    <h2 key={i} className="font-serif text-2xl md:text-3xl text-brand-light mt-12 mb-5 leading-snug">
+                    <h2 key={i} className="font-serif text-2xl md:text-3xl text-[#1A1A1A] mt-12 mb-5 leading-snug">
                         {line.replace('## ', '')}
                     </h2>
                 );
@@ -68,16 +68,16 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                 const headers = tableRows[0].split('|').filter(Boolean).map(s => s.trim());
                 const rows = tableRows.slice(2).map(row => row.split('|').filter(Boolean).map(s => s.trim()));
                 elements.push(
-                    <div key={`table-${i}`} className="overflow-x-auto my-8 rounded-2xl border border-white/10">
-                        <table className="w-full font-sans text-sm text-brand-light/70">
+                    <div key={`table-${i}`} className="overflow-x-auto my-8 rounded-2xl border border-gray-200">
+                        <table className="w-full font-sans text-sm text-[#1A1A1A]/70">
                             <thead>
-                                <tr className="bg-[#1a1a1a]">
-                                    {headers.map((h, hi) => <th key={hi} className="text-left px-5 py-3 text-brand-light/90 font-medium tracking-wide text-xs uppercase">{h}</th>)}
+                                <tr className="bg-gray-100">
+                                    {headers.map((h, hi) => <th key={hi} className="text-left px-5 py-3 text-[#1A1A1A]/90 font-medium tracking-wide text-xs uppercase">{h}</th>)}
                                 </tr>
                             </thead>
                             <tbody>
                                 {rows.map((row, ri) => (
-                                    <tr key={ri} className="border-t border-white/5 hover:bg-white/[0.02] transition-colors">
+                                    <tr key={ri} className="border-t border-gray-100 hover:bg-black/[0.01] transition-colors">
                                         {row.map((cell, ci) => <td key={ci} className="px-5 py-3">{cell}</td>)}
                                     </tr>
                                 ))}
@@ -96,7 +96,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                 elements.push(
                     <ul key={`ul-${i}`} className="space-y-2 my-4 ml-4">
                         {bullets.map((b, bi) => (
-                            <li key={bi} className="font-sans text-brand-light/70 font-light leading-relaxed flex gap-3">
+                            <li key={bi} className="font-sans text-[#1A1A1A]/70 font-light leading-relaxed flex gap-3">
                                 <span className="text-brand-accent mt-1 flex-shrink-0">›</span>
                                 <span>{b}</span>
                             </li>
@@ -105,10 +105,10 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                 );
                 continue;
             } else if (line.startsWith('---')) {
-                elements.push(<hr key={i} className="border-white/10 my-12" />);
+                elements.push(<hr key={i} className="border-gray-200 my-12" />);
             } else {
                 elements.push(
-                    <p key={i} className="font-sans text-brand-light/70 font-light leading-relaxed text-[15px]">
+                    <p key={i} className="font-sans text-[#1A1A1A]/70 font-light leading-relaxed text-[15px]">
                         {line}
                     </p>
                 );
@@ -119,7 +119,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     };
 
     return (
-        <main className="min-h-screen bg-[#0a0a0a] text-brand-light">
+        <main className="min-h-screen bg-[#F9F9F9] text-[#1A1A1A]">
             {/* Schema.org Article JSON-LD */}
             <script
                 type="application/ld+json"
@@ -156,7 +156,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
             />
 
             {/* Hero image */}
-            <div className="relative h-[55vh] md:h-[65vh] overflow-hidden bg-[#1a1a1a]">
+            <div className="relative h-[55vh] md:h-[65vh] overflow-hidden bg-gray-200">
                 <Image
                     src={post.image}
                     alt={post.title}
@@ -164,7 +164,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                     className="object-cover"
                     priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/40 via-[#0a0a0a]/20 to-[#0a0a0a]" />
+                <div className="absolute inset-0 bg-gradient-to-b from-[#F9F9F9]/20 via-transparent to-[#F9F9F9]" />
             </div>
 
             {/* Article */}
@@ -180,8 +180,8 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                         />
                     </div>
                     <div>
-                        <p className="font-sans text-sm text-brand-light font-medium">Elena Morozova</p>
-                        <div className="flex items-center gap-2 text-brand-light/40 text-xs font-sans">
+                        <p className="font-sans text-sm text-[#1A1A1A] font-medium">Elena Morozova</p>
+                        <div className="flex items-center gap-2 text-[#1A1A1A]/40 text-xs font-sans">
                             <span>{new Date(post.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
                             <span>·</span>
                             <span>{post.readTime}</span>
@@ -191,10 +191,10 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                     </div>
                 </div>
 
-                <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-brand-light mb-6 leading-tight tracking-wide">
+                <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#1A1A1A] mb-6 leading-tight tracking-wide">
                     {post.title}
                 </h1>
-                <p className="font-sans text-brand-light/60 text-lg font-light leading-relaxed mb-12 border-b border-white/10 pb-12">
+                <p className="font-sans text-[#1A1A1A]/60 text-lg font-light leading-relaxed mb-12 border-b border-gray-200 pb-12">
                     {post.description}
                 </p>
 
@@ -207,10 +207,10 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                 <AuthorBox />
 
                 {/* Back to Blog */}
-                <div className="mt-12 pt-10 border-t border-white/10">
+                <div className="mt-12 pt-10 border-t border-gray-200">
                     <Link
                         href="/blog"
-                        className="inline-flex items-center gap-2 font-sans text-xs tracking-widest uppercase text-brand-accent hover:text-brand-light transition-colors duration-300"
+                        className="inline-flex items-center gap-2 font-sans text-xs tracking-widest uppercase text-brand-accent hover:text-[#1A1A1A] transition-colors duration-300"
                     >
                         <span>←</span> Back to Journal
                     </Link>
@@ -219,18 +219,18 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
             {/* Related Articles */}
             {related.length > 0 && (
-                <section className="border-t border-white/5 py-20 px-6">
+                <section className="border-t border-gray-200 py-20 px-6 bg-[#F9F9F9]">
                     <div className="max-w-7xl mx-auto">
-                        <h2 className="font-serif text-3xl text-brand-light mb-10 text-center">More from the Journal</h2>
+                        <h2 className="font-serif text-3xl text-[#1A1A1A] mb-10 text-center">More from the Journal</h2>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             {related.map((rp) => (
-                                <Link key={rp.slug} href={`/blog/${rp.slug}`} className="group flex flex-col bg-[#141414] border border-white/5 hover:border-brand-accent/30 rounded-3xl overflow-hidden transition-all duration-500 hover:-translate-y-1">
-                                    <div className="relative aspect-[16/9] overflow-hidden bg-[#1a1a1a]">
+                                <Link key={rp.slug} href={`/blog/${rp.slug}`} className="group flex flex-col bg-white border border-gray-200 hover:border-brand-accent/30 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-500 hover:-translate-y-1">
+                                    <div className="relative aspect-[16/9] overflow-hidden bg-gray-100">
                                         <Image src={rp.image} alt={rp.title} fill className="object-cover group-hover:scale-110 transition-transform duration-700" />
                                     </div>
                                     <div className="p-6">
-                                        <p className="font-sans text-xs text-brand-light/40 mb-2">{rp.category} · {rp.readTime}</p>
-                                        <h3 className="font-serif text-lg text-brand-light group-hover:text-brand-accent transition-colors duration-300 leading-snug">
+                                        <p className="font-sans text-xs text-[#1A1A1A]/40 mb-2">{rp.category} · {rp.readTime}</p>
+                                        <h3 className="font-serif text-lg text-[#1A1A1A] group-hover:text-brand-accent transition-colors duration-300 leading-snug">
                                             {rp.title}
                                         </h3>
                                     </div>

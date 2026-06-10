@@ -76,11 +76,11 @@ export default function DestinationsPage() {
     };
 
     return (
-        <main className="min-h-screen bg-[#000000] text-white font-sans selection:bg-[#1D9E75]/30 overflow-hidden">
+        <main className="min-h-screen bg-[#F9F9F9] text-brand-dark font-sans selection:bg-[#1D9E75]/30 overflow-hidden">
 
             {/* 1. HERO SECTION */}
             <section className="relative h-screen min-h-[600px] flex items-center justify-center pt-20">
-                <div className="absolute inset-0 z-0 overflow-hidden bg-[#0a0a0a]">
+                <div className="absolute inset-0 z-0 overflow-hidden bg-white">
                     <Image
                         src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2000&auto=format&fit=crop"
                         alt="Global Travel Destinations"
@@ -88,7 +88,7 @@ export default function DestinationsPage() {
                         className="object-cover scale-105 animate-slow-pan"
                         priority
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-[#000000]/90 via-[#000000]/60 to-[#000000]" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/35 to-[#F9F9F9]" />
                 </div>
 
                 <div className="relative z-10 w-full max-w-5xl mx-auto px-6 text-center pb-24 md:pb-32">
@@ -102,10 +102,10 @@ export default function DestinationsPage() {
                             Discover the World
                             <span className="w-8 h-[1px] bg-[#1D9E75]/50" />
                         </p>
-                        <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-white mb-8 tracking-tight drop-shadow-2xl">
+                        <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-white mb-8 tracking-tight drop-shadow-md">
                             Explore <br className="md:hidden" /> Destinations
                         </h1>
-                        <p className="font-sans text-white/70 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed mb-12">
+                        <p className="font-sans text-white/85 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed mb-12 drop-shadow-sm">
                             Curated intelligence on 50 of the world&apos;s most captivating locations. Find your next extraordinary journey.
                         </p>
 
@@ -116,7 +116,7 @@ export default function DestinationsPage() {
                                 placeholder="Search by country name..."
                                 value={searchQuery}
                                 onChange={(e) => setSearchQuery(e.target.value)}
-                                className="w-full bg-white/5 border border-white/10 rounded-full py-5 pl-14 pr-6 text-white placeholder:text-white/30 focus:outline-none focus:border-[#1D9E75]/50 focus:bg-white/10 transition-all backdrop-blur-md"
+                                className="w-full bg-white border border-black/10 rounded-full py-5 pl-14 pr-6 text-brand-dark placeholder:text-brand-dark/30 focus:outline-none focus:border-[#1D9E75]/50 focus:bg-white transition-all shadow-sm"
                             />
                             <Search className="absolute left-5 top-1/2 -translate-y-1/2 w-5 h-5 text-[#1D9E75]" />
                         </div>
@@ -126,7 +126,7 @@ export default function DestinationsPage() {
                 {/* Scroll indicator */}
                 <motion.div
                     initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1, duration: 1 }}
-                    className="absolute bottom-24 md:bottom-32 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/40"
+                    className="absolute bottom-24 md:bottom-32 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-brand-dark/40"
                 >
                     <span className="text-[10px] uppercase tracking-widest hidden md:block">Scroll</span>
                     <div className="w-[1px] h-8 md:h-12 bg-gradient-to-b from-[#1D9E75]/50 to-transparent hidden md:block" />
@@ -134,7 +134,7 @@ export default function DestinationsPage() {
             </section>
 
             {/* TRAVEL STYLE QUIZ */}
-            <section className="mb-[80px]">
+            <section className="py-16 px-0">
                 <TravelStyleQuiz />
             </section>
 
@@ -191,7 +191,7 @@ export default function DestinationsPage() {
                                 >
                                     <Link
                                         href={featuredBanners[currentBannerIdx].href}
-                                        className="inline-flex items-center gap-2 bg-[#1D9E75] text-black font-semibold uppercase tracking-widest text-xs px-8 py-4 rounded-full hover:bg-white transition-colors duration-300"
+                                        className="inline-flex items-center gap-2 bg-[#1D9E75] text-white font-semibold uppercase tracking-widest text-xs px-8 py-4 rounded-full hover:bg-white hover:text-black transition-colors duration-300"
                                     >
                                         Explore Now <ArrowRight className="w-4 h-4" />
                                     </Link>
@@ -212,10 +212,10 @@ export default function DestinationsPage() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                         onClick={() => setSelectedCategory(null)}
-                        className={`relative z-10 bg-[#0a0a0a] border rounded-xl py-4 px-2 text-center hover:bg-[#141414] transition-all group cursor-pointer ${
+                        className={`relative z-10 bg-white border rounded-xl py-4 px-2 text-center hover:bg-[#F9F9F9] transition-all group cursor-pointer shadow-sm ${
                             selectedCategory === null
                             ? 'border-[#1D9E75] ring-1 ring-[#1D9E75]/30'
-                            : 'border-white/10 hover:border-[#1D9E75]/30'
+                            : 'border-gray-200 hover:border-[#1D9E75]/30'
                         }`}
                     >
                         <div className={`text-xl mb-2 transition-transform duration-300 ${
@@ -224,7 +224,7 @@ export default function DestinationsPage() {
                             🌍
                         </div>
                         <h3 className={`font-sans text-xs uppercase tracking-widest transition-colors ${
-                            selectedCategory === null ? 'text-[#1D9E75] font-semibold' : 'text-white/60 font-medium'
+                            selectedCategory === null ? 'text-[#1D9E75] font-semibold' : 'text-brand-dark/60 font-medium'
                         }`}>
                             All
                         </h3>
@@ -238,10 +238,10 @@ export default function DestinationsPage() {
                             viewport={{ once: true }}
                             transition={{ delay: i * 0.05, duration: 0.6 }}
                             onClick={() => toggleCategory(cat.id)}
-                            className={`relative z-10 bg-[#0a0a0a] border rounded-xl py-4 px-2 text-center hover:bg-[#141414] transition-all group cursor-pointer ${
+                            className={`relative z-10 bg-white border rounded-xl py-4 px-2 text-center hover:bg-[#F9F9F9] transition-all group cursor-pointer shadow-sm ${
                                 selectedCategory === cat.id 
                                 ? 'border-[#1D9E75] ring-1 ring-[#1D9E75]/30' 
-                                : 'border-white/10 hover:border-[#1D9E75]/30'
+                                : 'border-gray-200 hover:border-[#1D9E75]/30'
                             }`}
                         >
                             <div className={`text-xl mb-2 transition-transform duration-300 ${
@@ -250,7 +250,7 @@ export default function DestinationsPage() {
                                 {cat.icon}
                             </div>
                             <h3 className={`font-sans text-xs uppercase tracking-widest transition-colors ${
-                                selectedCategory === cat.id ? 'text-[#1D9E75] font-semibold' : 'text-white/60 font-medium'
+                                selectedCategory === cat.id ? 'text-[#1D9E75] font-semibold' : 'text-brand-dark/60 font-medium'
                             }`}>
                                 {cat.title}
                             </h3>
@@ -265,20 +265,20 @@ export default function DestinationsPage() {
                     <p className="font-sans text-[#1D9E75] tracking-[0.3em] text-[10px] uppercase mb-4 font-semibold">
                         EXPLORE THE WORLD
                     </p>
-                    <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white mb-6">
+                    <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-brand-dark mb-6">
                         50 Extraordinary Destinations
                     </h2>
-                    <p className="font-sans text-white/50 font-light text-lg mb-8 max-w-2xl">
+                    <p className="font-sans text-brand-dark/50 font-light text-lg mb-8 max-w-2xl">
                         A curated archive of the world's most compelling regions, ready for your next adventure.
                     </p>
                     <div className="w-[40px] h-[2px] bg-[#1D9E75] mb-8" />
                     
                     <div className="flex items-center gap-4 w-full">
-                        <div className="flex-grow h-px bg-white/5" />
-                        <p className="font-sans text-white/40 text-[11px] tracking-[0.2em] uppercase whitespace-nowrap">
+                        <div className="flex-grow h-px bg-black/5" />
+                        <p className="font-sans text-brand-dark/40 text-[11px] tracking-[0.2em] uppercase whitespace-nowrap">
                             Showing <span className="text-[#1D9E75] font-semibold">{filteredDestinations.length}</span> Results
                         </p>
-                        <div className="flex-grow h-px bg-white/5" />
+                        <div className="flex-grow h-px bg-black/5" />
                     </div>
                 </div>
             </section>
@@ -286,113 +286,98 @@ export default function DestinationsPage() {
             {/* MAGAZINE DIRECTORY GRID */}
             <section id="directory-grid" className="max-w-[1600px] mx-auto px-6 mb-[80px]">
                 {filteredDestinations.length === 0 ? (
-                    <div className="text-center py-32 border border-white/5 bg-[#0a0a0a]">
-                        <Compass className="w-12 h-12 text-white/20 mx-auto mb-4" />
-                        <h3 className="font-serif text-2xl text-white mb-2">No Destinations Found</h3>
-                        <p className="text-white/50 mb-6">Try adjusting your search or filter.</p>
+                    <div className="text-center py-32 border border-gray-200 bg-white shadow-sm rounded-3xl">
+                        <Compass className="w-12 h-12 text-brand-dark/20 mx-auto mb-4" />
+                        <h3 className="font-serif text-2xl text-brand-dark mb-2">No Destinations Found</h3>
+                        <p className="text-brand-dark/50 mb-6">Try adjusting your search or filter.</p>
                         <button
                             onClick={clearAllFilters}
-                            className="text-xs uppercase tracking-widest text-[#1D9E75] hover:text-white underline underline-offset-4 transition-colors"
+                            className="text-xs uppercase tracking-widest text-[#1D9E75] hover:text-brand-dark underline underline-offset-4 transition-colors"
                         >
                             Clear All Filters
                         </button>
                     </div>
                 ) : (
-                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[3px]">
-                        {/* 
-                          MAGAZINE GRID PATTERN IMPLEMENTATION:
-                          Row 1: 1 large (span 2), 2 small (span 1 each)
-                          Row 2: 4 equal (technically 3 equal cards in a different setup, but 4-col allows simple mapping. We'll implement cycle)
-                          Since it's dynamic data, we map grid column spans cyclically based on index.
-                          Cycle length = 7 items
-                          0: col-span-2, large (500px)
-                          1: col-span-1, medium (350px) / small depending on row break, we'll keep heights fixed classes.
-                          2: col-span-1, 
-                          3: col-span-1
-                          4: col-span-1
-                          5: col-span-2, large
-                          6: col-span-2, large
-                        */}
-                        <AnimatePresence mode="popLayout">
-                            {filteredDestinations.map((dest, i) => {
-                                // Determine classes based on index cycle
-                                const cycle = i % 7;
-                                let spanClass = "col-span-1 md:col-span-1 xl:col-span-1";
-                                let heightClass = "h-[280px] md:h-[350px]";
-                                
-                                if (cycle === 0) {
-                                    spanClass = "col-span-1 md:col-span-2 xl:col-span-2";
-                                    heightClass = "h-[350px] md:h-[500px]";
-                                } else if (cycle === 5 || cycle === 6) {
-                                    spanClass = "col-span-1 md:col-span-2 xl:col-span-2";
-                                    heightClass = "h-[350px] md:h-[400px]";
-                                }
+                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[3px] grid-flow-row-dense">
+                        {filteredDestinations.map((dest, i) => {
+                            // Asymmetric cycle of 8 cards
+                            const cycle = i % 8;
+                            let spanClass = "col-span-1";
+                            let heightClass = "h-[300px] md:h-[380px]";
+                            
+                            if (cycle === 0 || cycle === 3 || cycle === 7) {
+                                // Taller vertical cards
+                                spanClass = "col-span-1";
+                                heightClass = "h-[450px] md:h-[580px]";
+                            } else if (cycle === 1 || cycle === 2 || cycle === 5) {
+                                // Wide landscape cards
+                                spanClass = "col-span-1 md:col-span-2 xl:col-span-2";
+                                heightClass = "h-[300px] md:h-[380px]";
+                            }
 
-                                return (
-                                    <motion.div
-                                        key={dest.id}
-                                        layout
-                                        initial={{ opacity: 0, y: 40 }}
-                                        whileInView={{ opacity: 1, y: 0 }}
-                                        viewport={{ once: true, margin: "-100px" }}
-                                        exit={{ opacity: 0 }}
-                                        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-                                        className={`${spanClass} ${heightClass} relative group overflow-hidden bg-[#0a0a0a] block`}
+                            return (
+                                <motion.div
+                                    key={dest.id}
+                                    layout
+                                    initial={{ opacity: 0, y: 40 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true, margin: "-100px" }}
+                                    exit={{ opacity: 0 }}
+                                    transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+                                    className={`${spanClass} ${heightClass} relative group overflow-hidden bg-white border border-gray-150 shadow-sm block`}
+                                >
+                                    <Link
+                                        href={`/countries/${dest.name.toLowerCase().replace(/ /g, '_')}`}
+                                        className="block w-full h-full"
                                     >
-                                        <Link
-                                            href={`/countries/${dest.name.toLowerCase().replace(/ /g, '_')}`}
-                                            className="block w-full h-full"
-                                        >
-                                            <div className="relative w-full h-full">
-                                                <Image
-                                                    src={dest.image}
-                                                    alt={dest.name}
-                                                    fill
-                                                    sizes="(max-width: 768px) 100vw, 50vw"
-                                                    priority={i < 4}
-                                                    loading={i < 4 ? undefined : "lazy"}
-                                                    className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-[1.05]"
-                                                />
-                                            </div>
+                                        <div className="relative w-full h-full">
+                                            <Image
+                                                src={dest.image}
+                                                alt={dest.name}
+                                                fill
+                                                sizes="(max-width: 768px) 100vw, 50vw"
+                                                priority={i < 4}
+                                                loading={i < 4 ? undefined : "lazy"}
+                                                className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+                                            />
+                                        </div>
 
-                                            {/* Top-to-Bottom Gradient Overlay */}
-                                            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent transition-colors duration-400 group-hover:from-black" />
+                                        {/* Top-to-Bottom Gradient Overlay */}
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent transition-all duration-500 group-hover:from-black/95 group-hover:via-black/35" />
 
-                                            {/* Badges container (Top) */}
-                                            <div className="absolute top-0 left-0 right-0 p-5 md:p-6 flex justify-between items-start">
-                                                {dest.region && (
-                                                    <span className="inline-block px-3 py-1 bg-black/40 backdrop-blur-md rounded-full border border-white/10 text-[9px] uppercase tracking-widest font-sans text-white/90">
-                                                        {dest.region}
-                                                    </span>
-                                                )}
-                                                {/* Budget Badge (moved to bottom right for standard layout, but we'll adapt) */}
-                                            </div>
+                                        {/* Badges container (Top) */}
+                                        <div className="absolute top-0 left-0 right-0 p-5 md:p-6 flex justify-between items-start">
+                                            {dest.region && (
+                                                <span className="inline-block px-3 py-1 bg-black/40 backdrop-blur-md rounded-full border border-white/10 text-[9px] uppercase tracking-widest font-sans text-white/90">
+                                                    {dest.region}
+                                                </span>
+                                            )}
+                                        </div>
 
-                                            {/* Info container (Bottom) */}
-                                            <div className="absolute bottom-0 left-0 right-0 p-5 md:p-6 flex justify-between items-end">
-                                                <div>
-                                                    <h3 className="font-serif text-3xl md:text-4xl text-white leading-tight drop-shadow-md">
-                                                        {dest.name}
-                                                    </h3>
-                                                </div>
-                                                
-                                                <div className="text-right flex flex-col items-end gap-3">
-                                                    {/* Hover 'Explore' indicator */}
-                                                    <div className="overflow-hidden">
-                                                        <span className="flex items-center gap-2 text-[10px] tracking-widest uppercase font-sans font-semibold text-[#1D9E75] translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-out">
-                                                            Explore <ArrowRight className="w-3 h-3" />
-                                                        </span>
-                                                    </div>
-                                                </div>
+                                        {/* Info container (Bottom) with slide-up micro-interaction */}
+                                        <div className="absolute bottom-0 left-0 right-0 p-5 md:p-6 flex justify-between items-end transition-transform duration-500 group-hover:-translate-y-2">
+                                            <div className="text-left">
+                                                <h3 className="font-serif text-3xl md:text-4xl text-white leading-tight drop-shadow-md">
+                                                    {dest.name}
+                                                </h3>
                                             </div>
                                             
-                                            {/* Edge border instead of radius */}
-                                            <div className="absolute inset-0 border border-white/5 pointer-events-none" />
-                                        </Link>
-                                    </motion.div>
-                                );
-                            })}
-                        </AnimatePresence>
+                                            <div className="text-right flex flex-col items-end gap-3">
+                                                {/* Hover 'Explore' indicator */}
+                                                <div className="overflow-hidden">
+                                                    <span className="flex items-center gap-2 text-[10px] tracking-widest uppercase font-sans font-semibold text-[#1D9E75] translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-out">
+                                                        Explore <ArrowRight className="w-3 h-3" />
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        {/* Edge border instead of radius */}
+                                        <div className="absolute inset-0 border border-black/5 pointer-events-none" />
+                                    </Link>
+                                </motion.div>
+                            );
+                        })}
                     </div>
                 )}
             </section>
@@ -402,7 +387,7 @@ export default function DestinationsPage() {
             <section className="py-24 max-w-7xl mx-auto px-6 mb-[80px]">
                 <div className="text-center mb-16">
                     <p className="font-sans text-[#1D9E75] tracking-[0.2em] text-[10px] uppercase mb-4">Curated Collections</p>
-                    <h2 className="font-serif text-4xl md:text-5xl text-white">Travel Inspiration</h2>
+                    <h2 className="font-serif text-4xl md:text-5xl text-brand-dark">Travel Inspiration</h2>
                 </div>
 
                 <div className="
@@ -418,7 +403,7 @@ export default function DestinationsPage() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: Math.min(i, 5) * 0.08, duration: 0.5 }}
-                            className="group relative flex-shrink-0 w-[280px] sm:w-auto h-[400px] bg-[#0a0a0a] overflow-hidden cursor-pointer"
+                            className="group relative flex-shrink-0 w-[280px] sm:w-auto h-[400px] bg-white border border-gray-200 overflow-hidden cursor-pointer rounded-2xl shadow-sm"
                         >
                             <Link href={card.href} className="block w-full h-full">
                                 <Image
@@ -435,9 +420,9 @@ export default function DestinationsPage() {
                                 </span>
 
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-90 group-hover:from-black transition-opacity duration-300" />
-                                <div className="absolute inset-0 border border-white/5 pointer-events-none" />
+                                <div className="absolute inset-0 border border-black/5 pointer-events-none" />
 
-                                <div className="absolute inset-0 p-6 flex flex-col justify-end">
+                                <div className="absolute inset-0 p-6 flex flex-col justify-end text-left">
                                     <h3 className="font-serif text-2xl text-white drop-shadow-lg leading-snug mb-4 transition-transform duration-300 ease-out group-hover:-translate-y-1">
                                         {card.title}
                                     </h3>
@@ -453,9 +438,9 @@ export default function DestinationsPage() {
 
 
             {/* 6. TRAVEL TIPS */}
-            <section className="py-24 bg-[#050505] border-y border-white/5 mb-[80px]">
+            <section className="py-24 bg-[#F9F9F9] border-y border-black/5 mb-[80px]">
                 <div className="max-w-7xl mx-auto px-6">
-                    <h2 className="font-serif text-4xl md:text-5xl text-white mb-16 text-center">Expert Travel Tips</h2>
+                    <h2 className="font-serif text-4xl md:text-5xl text-brand-dark mb-16 text-center">Expert Travel Tips</h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-[3px]">
                         {travelTips.map((tip, i) => (
@@ -465,11 +450,11 @@ export default function DestinationsPage() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: i * 0.1 }}
-                                className="bg-[#0a0a0a] border border-white/5 p-10 hover:bg-[#0f0f0f] transition-colors"
+                                className="bg-white border border-gray-200 p-10 hover:bg-[#F9F9F9] transition-colors shadow-sm text-left rounded-3xl"
                             >
-                                <span className="text-[#1D9E75] font-serif text-5xl opacity-40 block mb-6 drop-shadow-md">0{i + 1}</span>
-                                <h3 className="font-serif text-2xl text-white mb-4">{tip.title}</h3>
-                                <p className="font-sans text-white/50 font-light leading-relaxed text-sm">
+                                <span className="text-[#1D9E75] font-serif text-5xl opacity-40 block mb-6 drop-shadow-sm">0{i + 1}</span>
+                                <h3 className="font-serif text-2xl text-brand-dark mb-4">{tip.title}</h3>
+                                <p className="font-sans text-brand-dark/60 font-light leading-relaxed text-sm">
                                     {tip.content}
                                 </p>
                             </motion.div>
@@ -482,7 +467,7 @@ export default function DestinationsPage() {
             <section className="py-24 max-w-4xl mx-auto px-6 mb-[80px]">
                 <div className="text-center mb-16">
                     <p className="font-sans text-[#1D9E75] tracking-[0.2em] text-[10px] uppercase mb-4">Common Questions</p>
-                    <h2 className="font-serif text-4xl md:text-5xl text-white">Travel FAQ</h2>
+                    <h2 className="font-serif text-4xl md:text-5xl text-brand-dark">Travel FAQ</h2>
                 </div>
 
                 <div className="space-y-2">
@@ -493,13 +478,13 @@ export default function DestinationsPage() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: i * 0.1 }}
-                            className="border border-white/5 bg-[#0a0a0a] overflow-hidden"
+                            className="border border-gray-200 bg-white rounded-2xl overflow-hidden shadow-sm"
                         >
                             <button
                                 onClick={() => toggleFaq(faq.id)}
-                                className="w-full text-left px-8 py-6 flex justify-between items-center hover:bg-white/[0.03]"
+                                className="w-full text-left px-8 py-6 flex justify-between items-center hover:bg-black/[0.02]"
                             >
-                                <h3 className="font-serif text-xl text-white/90 pr-8">{faq.question}</h3>
+                                <h3 className="font-serif text-xl text-brand-dark pr-8">{faq.question}</h3>
                                 <ChevronDown className={`w-5 h-5 text-[#1D9E75] transition-transform duration-300 ${activeFaq === faq.id ? 'rotate-180' : ''}`} />
                             </button>
                             <AnimatePresence>
@@ -510,7 +495,7 @@ export default function DestinationsPage() {
                                         exit={{ height: 0, opacity: 0 }}
                                         transition={{ duration: 0.3 }}
                                     >
-                                        <div className="px-8 pb-6 font-sans text-white/50 font-light text-sm leading-relaxed border-t border-white/5 pt-6">
+                                        <div className="px-8 pb-6 font-sans text-brand-dark/60 font-light text-sm leading-relaxed border-t border-black/5 pt-6 text-left">
                                             {faq.answer}
                                         </div>
                                     </motion.div>
@@ -522,28 +507,28 @@ export default function DestinationsPage() {
             </section>
 
             {/* 8. CALL TO ACTION */}
-            <section className="relative py-40 border-t border-white/5 overflow-hidden">
+            <section className="relative py-40 border-t border-black/5 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <Image
                         src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2000&auto=format&fit=crop"
                         alt="Flight wing luxury travel"
                         fill
-                        className="object-cover opacity-10"
+                        className="object-cover opacity-5"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-[#000000]/60 to-[#000000]" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#F9F9F9] via-[#F9F9F9]/60 to-[#F9F9F9]" />
                 </div>
                 <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
-                    <h2 className="font-serif text-5xl md:text-7xl text-white mb-8 leading-tight">
+                    <h2 className="font-serif text-5xl md:text-7xl text-brand-dark mb-8 leading-tight">
                         Start Planning Your Dream Journey
                     </h2>
-                    <p className="font-sans text-white/50 text-lg mb-12 max-w-xl mx-auto font-light">
+                    <p className="font-sans text-brand-dark/50 text-lg mb-12 max-w-xl mx-auto font-light">
                         Get in touch with our curatorial team to begin crafting your next extraordinary escape.
                     </p>
                     <Link
                         href="/support"
-                        className="inline-flex items-center justify-center gap-3 bg-[#1D9E75] text-[#000000] px-10 py-5 rounded-none text-[10px] tracking-widest uppercase font-bold hover:bg-white hover:scale-105 transition-all"
+                        className="inline-flex items-center justify-center gap-3 bg-[#1D9E75] text-white px-10 py-5 rounded-full text-[10px] tracking-widest uppercase font-bold hover:bg-brand-dark hover:scale-105 transition-all"
                     >
-                        Explore the World <ArrowRight className="w-4 h-4" />
+                        Get in Touch <ArrowRight className="w-4 h-4" />
                     </Link>
                 </div>
             </section>

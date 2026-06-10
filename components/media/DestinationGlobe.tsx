@@ -66,7 +66,7 @@ export default function DestinationGlobe() {
     return (
         <div
             ref={containerRef}
-            className="relative min-h-[160vh] w-full bg-[#050505] flex flex-col items-center justify-center py-24 px-6 overflow-hidden perspective-1000"
+            className="relative bg-white flex flex-col items-center justify-center py-24 md:py-32 px-6 overflow-hidden border-t border-gray-150"
         >
             {/* Cinematic Background Image Layer with Parallax */}
             <motion.div
@@ -78,7 +78,7 @@ export default function DestinationGlobe() {
                     alt="World Landmarks Panorama"
                     fill
                     priority
-                    className="object-cover"
+                    className="object-cover brightness-[0.65] contrast-[1.05]"
                     quality={100}
                 />
             </motion.div>
@@ -86,7 +86,7 @@ export default function DestinationGlobe() {
             {/* Clouds/Atmosphere Layer (simulated with a soft radial overlay) */}
             <motion.div
                 style={{ y: cloudsY }}
-                className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white/5 via-transparent to-transparent opacity-60 mix-blend-screen"
+                className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-black/[0.02] via-transparent to-transparent opacity-60 mix-blend-multiply"
             />
 
             {/* Floating particles/birds animation */}
@@ -94,7 +94,7 @@ export default function DestinationGlobe() {
                 {[...Array(12)].map((_, i) => (
                     <motion.div
                         key={i}
-                        className="absolute w-1 h-1 bg-white rounded-full shadow-[0_0_10px_2px_rgba(255,255,255,0.8)]"
+                        className="absolute w-1 h-1 bg-brand-dark/30 rounded-full shadow-[0_0_10px_2px_rgba(0,0,0,0.05)]"
                         initial={{
                             x: Math.random() * 100 + "vw",
                             y: Math.random() * 100 + "vh",
@@ -115,9 +115,9 @@ export default function DestinationGlobe() {
                 ))}
             </div>
 
-            {/* Dark Cinematic Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#020202] via-[#050505]/70 to-transparent z-[1]" />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#020202]/90 via-transparent to-[#020202]/80 z-[1]" />
+            {/* Light Cinematic Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#F9F9F9] via-[#F9F9F9]/70 to-transparent z-[1]" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#F9F9F9]/90 via-transparent to-[#F9F9F9]/80 z-[1]" />
 
             {/* Content overlay */}
             <div className="z-10 w-full max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
@@ -135,20 +135,20 @@ export default function DestinationGlobe() {
 
                     <motion.h2
                         style={{ opacity: titleOpacity, y: titleY, filter: headerBlur }}
-                        className="font-serif text-5xl md:text-7xl lg:text-[5rem] text-white leading-[1.1] mb-8 drop-shadow-2xl"
+                        className="font-serif text-5xl md:text-7xl lg:text-[5rem] text-brand-dark leading-[1.1] mb-8 drop-shadow-sm"
                     >
                         Discover the <br /> World with <br />
-                        <span className="text-brand-light/90 italic font-light">VeloraTravel</span>
+                        <span className="text-brand-dark/90 italic font-light">VeloraTravel</span>
                     </motion.h2>
 
                     <motion.div
                         style={{ opacity: descOpacity, y: descY }}
-                        className="backdrop-blur-xl bg-white/[0.03] border border-white/[0.08] rounded-2xl p-8 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] relative overflow-hidden group"
+                        className="backdrop-blur-xl bg-white/70 border border-black/5 rounded-2xl p-8 shadow-sm relative overflow-hidden group"
                     >
                         {/* Subtle inner glow */}
-                        <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                        <div className="absolute inset-0 bg-gradient-to-br from-black/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
 
-                        <p className="font-sans text-brand-light/80 text-lg leading-relaxed max-w-md relative z-10 font-light">
+                        <p className="font-sans text-brand-dark/80 text-lg leading-relaxed max-w-md relative z-10 font-light">
                             Five exclusive packages designed for the world&apos;s most discerning travelers. Unmatched elegance, ultimate privacy, and cinematic experiences crafted just for you.
                         </p>
                     </motion.div>
@@ -170,20 +170,20 @@ export default function DestinationGlobe() {
                                 transition={{ duration: 0.8, delay: i * 0.15, ease: [0.21, 0.47, 0.32, 0.98] }}
                                 className="group cursor-pointer"
                             >
-                                <div className="backdrop-blur-md bg-white/[0.05] border border-white/[0.1] hover:border-brand-accent/40 hover:bg-white/[0.08] rounded-xl p-6 transition-all duration-500 ease-out transform hover:-translate-y-2 shadow-lg hover:shadow-[0_15px_40px_-5px_rgba(255,255,255,0.08)] flex items-center gap-6 relative overflow-hidden">
+                                <div className="backdrop-blur-md bg-white/70 border border-black/5 hover:border-brand-accent/40 hover:bg-white/95 rounded-xl p-6 transition-all duration-500 ease-out transform hover:-translate-y-2 shadow-sm hover:shadow-md flex items-center gap-6 relative overflow-hidden">
 
                                     {/* Hover gradient sweep */}
-                                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/[0.05] to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-in-out" />
+                                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/[0.02] to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-in-out" />
 
                                     <div className="flex-shrink-0 w-12 h-12 rounded-full bg-brand-accent/10 border border-brand-accent/20 flex items-center justify-center text-brand-accent group-hover:scale-110 group-hover:bg-brand-accent/20 transition-all duration-500">
                                         <Icon size={20} strokeWidth={1.5} />
                                     </div>
 
                                     <div className="relative z-10">
-                                        <h3 className="font-serif text-xl md:text-2xl text-brand-light transition-colors duration-300">
+                                        <h3 className="font-serif text-xl md:text-2xl text-brand-dark transition-colors duration-300">
                                             {dest.title}
                                         </h3>
-                                        <p className="font-sans font-light text-brand-light/60 mt-1.5 text-sm tracking-wide group-hover:text-brand-light/80 transition-colors duration-300">
+                                        <p className="font-sans font-light text-brand-dark/60 mt-1.5 text-sm tracking-wide group-hover:text-brand-dark/85 transition-colors duration-300">
                                             {dest.desc}
                                         </p>
                                     </div>

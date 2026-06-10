@@ -127,7 +127,7 @@ export default function SupportForm() {
     };
 
     return (
-        <section id="support-form" className="py-24 px-4 bg-brand-dark overflow-hidden relative">
+        <section id="support-form" className="py-24 px-4 bg-[#F9F9F9] overflow-hidden relative">
             <SupportToast 
                 isVisible={toast.visible} 
                 message={toast.message} 
@@ -138,19 +138,19 @@ export default function SupportForm() {
 
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16">
                 <div className="lg:w-1/3 flex flex-col justify-center">
-                    <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">Send a Request</h2>
-                    <p className="font-inter text-white/50 mb-8 font-light leading-relaxed">
+                    <h2 className="font-serif text-4xl md:text-5xl text-[#1A1A1A] mb-6">Send a Request</h2>
+                    <p className="font-inter text-[#1A1A1A]/50 mb-8 font-light leading-relaxed">
                         Can&apos;t find what you need? Fill out the form and our support specialists will get back to you with detailed information.
                     </p>
                     
                     <div className="space-y-6">
-                        <div className="flex items-center gap-4 text-white/70">
-                            <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center border border-white/10">
+                        <div className="flex items-center gap-4 text-[#1A1A1A]/70">
+                            <div className="w-10 h-10 rounded-full bg-black/[0.03] flex items-center justify-center border border-gray-200">
                                 <Send size={18} className="text-brand-accent" />
                             </div>
                             <div>
-                                <p className="text-xs uppercase tracking-widest text-white/30 font-inter">Direct Email</p>
-                                <p className="text-sm font-medium">veloratravel.support@gmail.com</p>
+                                <p className="text-xs uppercase tracking-widest text-[#1A1A1A]/30 font-inter">Direct Email</p>
+                                <p className="text-sm font-medium text-[#1A1A1A]">veloratravel.support@gmail.com</p>
                             </div>
                         </div>
                     </div>
@@ -160,7 +160,7 @@ export default function SupportForm() {
                     <form 
                         ref={formRef}
                         onSubmit={handleSubmit(onSubmit)} 
-                        className="space-y-8 backdrop-blur-md bg-white/[0.02] p-8 md:p-12 rounded-[2.5rem] border border-white/5 shadow-2xl transition-all duration-500 overflow-hidden"
+                        className="space-y-8 bg-white/60 backdrop-blur-xl p-8 md:p-12 rounded-[2.5rem] border border-white/30 shadow-[0_20px_50px_rgba(0,0,0,0.03)] hover:shadow-[0_25px_60px_rgba(0,0,0,0.06)] transition-all duration-500 overflow-hidden"
                     >
                         {/* Honeypot Field (Hidden from users) */}
                         <div className="hidden" aria-hidden="true">
@@ -169,68 +169,68 @@ export default function SupportForm() {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div className="space-y-3">
-                                <label className="block font-inter text-xs tracking-widest uppercase text-white/40 pl-2">Full Name</label>
+                                <label className="block font-inter text-xs tracking-widest uppercase text-[#1A1A1A]/40 pl-2">Full Name</label>
                                 <input
                                     {...register("fullName")}
-                                    className="bg-transparent border-b border-white/10 px-2 py-4 w-full text-white font-inter focus:outline-none focus:border-brand-accent transition-all"
+                                    className="bg-transparent border-b border-gray-200 px-2 py-4 w-full text-[#1A1A1A] font-inter focus:outline-none focus:border-brand-accent transition-all placeholder:text-[#1A1A1A]/30"
                                     placeholder="Enter your name"
                                     disabled={isSubmitting}
                                 />
-                                {errors.fullName && <p className="text-red-400 text-[10px] mt-1 pl-2 font-inter">{errors.fullName.message}</p>}
+                                {errors.fullName && <p className="text-red-500 text-[10px] mt-1 pl-2 font-inter">{errors.fullName.message}</p>}
                             </div>
 
                             <div className="space-y-3">
-                                <label className="block font-inter text-xs tracking-widest uppercase text-white/40 pl-2">Email Address</label>
+                                <label className="block font-inter text-xs tracking-widest uppercase text-[#1A1A1A]/40 pl-2">Email Address</label>
                                 <input
                                     {...register("email")}
-                                    className="bg-transparent border-b border-white/10 px-2 py-4 w-full text-white font-inter focus:outline-none focus:border-brand-accent transition-all"
+                                    className="bg-transparent border-b border-gray-200 px-2 py-4 w-full text-[#1A1A1A] font-inter focus:outline-none focus:border-brand-accent transition-all placeholder:text-[#1A1A1A]/30"
                                     placeholder="your@email.com"
                                     disabled={isSubmitting}
                                 />
-                                {errors.email && <p className="text-red-400 text-[10px] mt-1 pl-2 font-inter">{errors.email.message}</p>}
+                                {errors.email && <p className="text-red-500 text-[10px] mt-1 pl-2 font-inter">{errors.email.message}</p>}
                             </div>
                         </div>
 
                         <div className="space-y-3">
-                            <label className="block font-inter text-xs tracking-widest uppercase text-white/40 pl-2">Support Topic</label>
+                            <label className="block font-inter text-xs tracking-widest uppercase text-[#1A1A1A]/40 pl-2">Support Topic</label>
                             <select
                                 {...register("subject")}
-                                className="bg-transparent border-b border-white/10 px-2 py-4 w-full text-white font-inter focus:outline-none focus:border-brand-accent transition-all appearance-none cursor-pointer"
+                                className="bg-transparent border-b border-gray-200 px-2 py-4 w-full text-[#1A1A1A] font-inter focus:outline-none focus:border-brand-accent transition-all appearance-none cursor-pointer"
                                 disabled={isSubmitting}
                             >
-                                <option value="" className="bg-[#0f0f0f]">Select a topic</option>
-                                <option value="navigation" className="bg-[#0f0f0f]">Website Navigation</option>
-                                <option value="info" className="bg-[#0f0f0f]">Travel Information</option>
-                                <option value="tech" className="bg-[#0f0f0f]">Technical Issues</option>
-                                <option value="feedback" className="bg-[#0f0f0f]">Content Feedback</option>
-                                <option value="partnership" className="bg-[#0f0f0f]">Partnership</option>
-                                <option value="other" className="bg-[#0f0f0f]">Other</option>
+                                <option value="" className="bg-white text-[#1A1A1A]">Select a topic</option>
+                                <option value="navigation" className="bg-white text-[#1A1A1A]">Website Navigation</option>
+                                <option value="info" className="bg-white text-[#1A1A1A]">Travel Information</option>
+                                <option value="tech" className="bg-white text-[#1A1A1A]">Technical Issues</option>
+                                <option value="feedback" className="bg-white text-[#1A1A1A]">Content Feedback</option>
+                                <option value="partnership" className="bg-white text-[#1A1A1A]">Partnership</option>
+                                <option value="other" className="bg-white text-[#1A1A1A]">Other</option>
                             </select>
-                            {errors.subject && <p className="text-red-400 text-[10px] mt-1 pl-2 font-inter">{errors.subject.message}</p>}
+                            {errors.subject && <p className="text-red-500 text-[10px] mt-1 pl-2 font-inter">{errors.subject.message}</p>}
                         </div>
 
                         <div className="space-y-3">
                             <div className="flex justify-between items-center">
-                                <label className="block font-inter text-xs tracking-widest uppercase text-white/40 pl-2">Message</label>
-                                <span className={`text-[10px] font-inter uppercase tracking-widest ${errors.message ? 'text-red-400' : 'text-white/20'}`}>
+                                <label className="block font-inter text-xs tracking-widest uppercase text-[#1A1A1A]/40 pl-2">Message</label>
+                                <span className={`text-[10px] font-inter uppercase tracking-widest ${errors.message ? 'text-red-500' : 'text-[#1A1A1A]/20'}`}>
                                     Max 1000 characters
                                 </span>
                             </div>
                             <textarea
                                 {...register("message")}
                                 rows={4}
-                                className="bg-transparent border-b border-white/10 px-2 py-4 w-full text-white font-inter focus:outline-none focus:border-brand-accent transition-all resize-none"
+                                className="bg-transparent border-b border-gray-200 px-2 py-4 w-full text-[#1A1A1A] font-inter focus:outline-none focus:border-brand-accent transition-all resize-none placeholder:text-[#1A1A1A]/30"
                                 placeholder="How can we help you today?"
                                 disabled={isSubmitting}
                             />
-                            {errors.message && <p className="text-red-400 text-[10px] mt-1 pl-2 font-inter">{errors.message.message}</p>}
+                            {errors.message && <p className="text-red-500 text-[10px] mt-1 pl-2 font-inter">{errors.message.message}</p>}
                         </div>
 
                         <div className="pt-4 flex flex-col gap-4">
                             <button
                                 type="submit"
                                 disabled={isSubmitting || cooldown > 0}
-                                className="relative w-full bg-brand-light text-brand-dark py-5 rounded-xl font-inter font-semibold tracking-wider text-sm hover:scale-[1.02] active:scale-95 transition-all duration-300 flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed group overflow-hidden"
+                                className="relative w-full bg-brand-accent text-white py-5 rounded-xl font-inter font-semibold tracking-wider text-sm hover:scale-[1.02] active:scale-95 transition-all duration-300 flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed group overflow-hidden"
                             >
                                 <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 pointer-events-none" />
                                 

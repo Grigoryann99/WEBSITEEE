@@ -13,12 +13,12 @@ export default function BlogPage() {
     const [featured, ...rest] = posts;
 
     return (
-        <main className="min-h-screen bg-[#0a0a0a] text-brand-light">
+        <main className="min-h-screen bg-[#F9F9F9] text-brand-dark">
             {/* Header */}
             <section className="pt-40 pb-16 px-6 text-center">
                 <p className="font-sans text-brand-accent tracking-[0.3em] text-xs uppercase mb-6">Editorial</p>
-                <h1 className="font-serif text-5xl md:text-7xl text-brand-light mb-6 tracking-wide">Travel Journal</h1>
-                <p className="font-sans text-brand-light/60 text-lg max-w-xl mx-auto font-light leading-relaxed">
+                <h1 className="font-serif text-5xl md:text-7xl text-[#1A1A1A] mb-6 tracking-wide">Travel Journal</h1>
+                <p className="font-sans text-[#1A1A1A]/60 text-lg max-w-xl mx-auto font-light leading-relaxed">
                     Original guides, destination stories, and practical travel wisdom from our editorial team.
                 </p>
             </section>
@@ -27,8 +27,8 @@ export default function BlogPage() {
 
                 {/* Featured post */}
                 <Link href={`/blog/${featured.slug}`} className="group block">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden bg-[#141414] border border-white/5 hover:border-brand-accent/30 transition-all duration-500">
-                        <div className="relative aspect-[16/10] lg:aspect-auto lg:min-h-[400px] overflow-hidden bg-[#1a1a1a]">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden bg-white border border-gray-200 hover:border-brand-accent/40 shadow-sm hover:shadow-lg transition-all duration-500">
+                        <div className="relative aspect-[16/10] lg:aspect-auto lg:min-h-[400px] overflow-hidden bg-gray-100">
                             <Image
                                 src={featured.image}
                                 alt={featured.title}
@@ -36,19 +36,19 @@ export default function BlogPage() {
                                 className="object-cover group-hover:scale-105 transition-transform duration-700"
                                 priority
                             />
-                            <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#141414]/30 lg:to-[#141414]" />
+                            <div className="absolute inset-0 bg-gradient-to-r from-transparent to-white/10 lg:to-white/20" />
                         </div>
-                        <div className="p-10 flex flex-col justify-center">
+                        <div className="p-10 flex flex-col justify-center bg-white">
                             <div className="flex items-center gap-3 mb-6">
-                                <span className="font-sans text-[10px] tracking-widest uppercase text-brand-accent border border-brand-accent/30 px-3 py-1 rounded-full">
+                                <span className="font-sans text-[10px] tracking-widest uppercase text-white bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full">
                                     {featured.category}
                                 </span>
-                                <span className="font-sans text-xs text-brand-light/40">{featured.readTime}</span>
+                                <span className="font-sans text-xs text-[#1A1A1A]/40">{featured.readTime}</span>
                             </div>
-                            <h2 className="font-serif text-3xl md:text-4xl text-brand-light mb-5 leading-tight group-hover:text-brand-accent transition-colors duration-300">
+                            <h2 className="font-serif text-3xl md:text-4xl text-[#1A1A1A] mb-5 leading-tight group-hover:text-brand-accent transition-colors duration-300">
                                 {featured.title}
                             </h2>
-                            <p className="font-sans text-brand-light/60 font-light leading-relaxed mb-8 text-sm">
+                            <p className="font-sans text-[#1A1A1A]/60 font-light leading-relaxed mb-8 text-sm">
                                 {featured.description}
                             </p>
                             <div className="flex items-center gap-3 text-brand-accent text-xs font-sans tracking-widest uppercase">
@@ -62,8 +62,8 @@ export default function BlogPage() {
                 {/* Grid of remaining posts */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {rest.map((post) => (
-                        <Link key={post.slug} href={`/blog/${post.slug}`} className="group flex flex-col bg-[#141414] border border-white/5 hover:border-brand-accent/30 rounded-3xl overflow-hidden transition-all duration-500 hover:-translate-y-2">
-                            <div className="relative aspect-[16/10] overflow-hidden bg-[#1a1a1a]">
+                        <Link key={post.slug} href={`/blog/${post.slug}`} className="group flex flex-col bg-white border border-gray-200 hover:border-brand-accent/30 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-500 hover:-translate-y-2">
+                            <div className="relative aspect-[16/10] overflow-hidden bg-gray-100">
                                 <Image
                                     src={post.image}
                                     alt={post.title}
@@ -71,19 +71,19 @@ export default function BlogPage() {
                                     className="object-cover group-hover:scale-110 transition-transform duration-700"
                                 />
                                 <div className="absolute top-4 left-4">
-                                    <span className="font-sans text-[10px] tracking-widest uppercase text-brand-light bg-black/60 backdrop-blur-sm px-3 py-1 rounded-full">
+                                    <span className="font-sans text-[10px] tracking-widest uppercase text-white bg-black/50 backdrop-blur-sm px-3 py-1 rounded-full">
                                         {post.category}
                                     </span>
                                 </div>
                             </div>
                             <div className="p-7 flex flex-col flex-grow">
-                                <p className="font-sans text-xs text-brand-light/40 mb-3">
+                                <p className="font-sans text-xs text-[#1A1A1A]/40 mb-3">
                                     {new Date(post.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })} · {post.readTime}
                                 </p>
-                                <h3 className="font-serif text-xl text-brand-light mb-3 leading-snug group-hover:text-brand-accent transition-colors duration-300 flex-grow">
+                                <h3 className="font-serif text-xl text-[#1A1A1A] mb-3 leading-snug group-hover:text-brand-accent transition-colors duration-300 flex-grow">
                                     {post.title}
                                 </h3>
-                                <p className="font-sans text-sm text-brand-light/50 font-light leading-relaxed line-clamp-2 mb-6">
+                                <p className="font-sans text-sm text-[#1A1A1A]/50 font-light leading-relaxed line-clamp-2 mb-6">
                                     {post.description}
                                 </p>
                                 <span className="font-sans text-xs tracking-widest uppercase text-brand-accent inline-flex items-center gap-2 group-hover:gap-3 transition-all duration-300">

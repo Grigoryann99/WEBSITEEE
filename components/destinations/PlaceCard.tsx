@@ -29,9 +29,9 @@ export default function PlaceCard({ title, image, rating, description }: PlaceCa
     const currentSrc = fallbackSources[currentImageIndex];
 
     return (
-        <div className="group flex flex-col bg-[#141414] rounded-3xl overflow-hidden border border-white/5 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
-            <div className="relative aspect-video overflow-hidden bg-[#222]">
-                {/* Skeleton loading background via bg-[#222] above */}
+        <div className="group flex flex-col bg-white rounded-3xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 text-left">
+            <div className="relative aspect-video overflow-hidden bg-gray-100">
+                {/* Skeleton loading background via bg-gray-100 above */}
 
                 {currentSrc && (
                     <Image
@@ -52,12 +52,12 @@ export default function PlaceCard({ title, image, rating, description }: PlaceCa
                 </div>
             </div>
             <div className="flex flex-col flex-grow p-6">
-                <h4 className="font-serif text-2xl text-brand-light mb-3">{title}</h4>
-                <p className="font-sans text-sm text-brand-light/60 font-light leading-relaxed mb-6 flex-grow">
+                <h4 className="font-serif text-2xl text-brand-dark mb-3">{title}</h4>
+                <p className="font-sans text-sm text-brand-dark/60 font-light leading-relaxed mb-6 flex-grow">
                     {description}
                 </p>
 
-                <button className="text-left font-sans text-xs tracking-widest uppercase text-brand-accent hover:text-brand-light transition-colors duration-300 w-fit">
+                <button className="text-left font-sans text-xs tracking-widest uppercase text-brand-accent hover:text-brand-dark transition-colors duration-300 w-fit">
                     View Details
                 </button>
             </div>

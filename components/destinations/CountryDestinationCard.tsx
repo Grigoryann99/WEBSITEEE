@@ -63,7 +63,7 @@ export default function CountryDestinationCard({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="group flex flex-col md:flex-row bg-[#0a0a0a] border border-white/5 overflow-hidden transition-all duration-300 hover:border-[#1D9E75]/30 hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#1D9E75]/5 w-full max-w-5xl mx-auto"
+            className="group flex flex-col md:flex-row bg-white border border-gray-200 overflow-hidden transition-all duration-300 hover:border-[#1D9E75]/30 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/5 w-full max-w-5xl mx-auto rounded-3xl"
         >
             {/* Left: Photo (40% width on Desktop) */}
             <div className="relative w-full md:w-[40%] h-[250px] md:h-auto shrink-0 overflow-hidden">
@@ -74,11 +74,11 @@ export default function CountryDestinationCard({
                     sizes="(max-width: 768px) 100vw, 40vw"
                     className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent md:bg-gradient-to-r" />
+                <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent md:bg-gradient-to-r md:from-transparent md:to-white/80" />
             </div>
 
             {/* Right: Content (60% width on Desktop) */}
-            <div className="flex flex-col justify-between p-6 md:p-8 md:w-[60%] flex-grow relative">
+            <div className="flex flex-col justify-between p-6 md:p-8 md:w-[60%] flex-grow relative text-left">
                 
                 {/* Decorative background accent */}
                 <div className="absolute right-0 top-0 w-32 h-32 bg-[#1D9E75]/5 blur-[80px] rounded-full pointer-events-none" />
@@ -98,10 +98,10 @@ export default function CountryDestinationCard({
                     </div>
 
                     {/* Title & Description */}
-                    <h3 className="font-serif text-3xl md:text-4xl text-white mb-3 leading-tight">
+                    <h3 className="font-serif text-3xl md:text-4xl text-brand-dark mb-3 leading-tight">
                         {name}
                     </h3>
-                    <p className="font-sans text-white/50 font-light text-sm leading-relaxed mb-8 line-clamp-2 md:line-clamp-3">
+                    <p className="font-sans text-brand-dark/60 font-light text-sm leading-relaxed mb-8 line-clamp-2 md:line-clamp-3">
                         {description}
                     </p>
                 </div>
@@ -111,20 +111,20 @@ export default function CountryDestinationCard({
                     {/* Info Pills Row */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
                         {/* Best Time */}
-                        <div className="flex items-start gap-3 p-3 rounded-lg bg-white/[0.02] border border-white/5">
+                        <div className="flex items-start gap-3 p-3 rounded-lg bg-black/[0.02] border border-black/5">
                             <Clock className="w-4 h-4 text-[#1D9E75] shrink-0 mt-0.5" />
                             <div>
-                                <p className="text-[9px] uppercase tracking-widest font-sans text-white/30 mb-0.5">Best Time</p>
-                                <p className="text-xs font-sans text-white/80">{bestTime}</p>
+                                <p className="text-[9px] uppercase tracking-widest font-sans text-brand-dark/40 mb-0.5">Best Time</p>
+                                <p className="text-xs font-sans text-brand-dark/80">{bestTime}</p>
                             </div>
                         </div>
 
                         {/* Tip Preview */}
-                        <div className="flex items-start gap-3 p-3 rounded-lg bg-white/[0.02] border border-white/5 sm:col-span-1">
+                        <div className="flex items-start gap-3 p-3 rounded-lg bg-black/[0.02] border border-black/5 sm:col-span-1">
                             <Lightbulb className="w-4 h-4 text-[#1D9E75] shrink-0 mt-0.5" />
                             <div>
-                                <p className="text-[9px] uppercase tracking-widest font-sans text-white/30 mb-0.5">Insider Tip</p>
-                                <p className="text-xs font-sans text-white/80 line-clamp-1" title={insiderTip}>{shortTip}</p>
+                                <p className="text-[9px] uppercase tracking-widest font-sans text-brand-dark/40 mb-0.5">Insider Tip</p>
+                                <p className="text-xs font-sans text-brand-dark/80 line-clamp-1" title={insiderTip}>{shortTip}</p>
                             </div>
                         </div>
                     </div>
@@ -132,7 +132,7 @@ export default function CountryDestinationCard({
                     {/* Action */}
                     <Link
                         href={`/destinations/${name.toLowerCase().replace(/ /g, '-')}`}
-                        className="inline-flex items-center justify-between w-full md:w-auto px-6 py-3 border border-[#1D9E75]/30 rounded-none text-xs uppercase tracking-widest font-sans font-semibold text-[#1D9E75] hover:bg-[#1D9E75] hover:text-black transition-all group/btn"
+                        className="inline-flex items-center justify-between w-full md:w-auto px-6 py-3 border border-[#1D9E75]/30 rounded-full text-xs uppercase tracking-widest font-sans font-semibold text-[#1D9E75] hover:bg-[#1D9E75] hover:text-white transition-all group/btn"
                     >
                         <span>Explore Details</span>
                         <ArrowRight className="w-4 h-4 md:ml-4 transform group-hover/btn:translate-x-1 transition-transform" />

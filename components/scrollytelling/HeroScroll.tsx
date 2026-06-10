@@ -1,263 +1,155 @@
 'use client';
 
-import { useRef, useEffect, useState } from 'react';
-import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
-import { useImagePreloader } from '@/lib/hooks/useImagePreloader';
-import Link from 'next/link';
+import { useEffect, useState, useRef } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
-// ─── Scroll Progress Zones (0 to 1) ──────────────────────────────────────────
-//
-//  0.00 ─ 0.08  │ Initial title visible, then fades out
-//  0.10 ─ 0.38  │ Text 1 – "Paradise is Closer Than it Seems"
-//  0.42 ─ 0.68  │ Text 2 – "Worry-Free Vacation"
-//  0.72 ─ 1.00  │ Text 3 – "How about a perfect trip – in one click"
-//
-// ─────────────────────────────────────────────────────────────────────────────
+interface SlideData {
+    id: number;
+    videoSrc: string;
+    tagline: string;
+    title: string;
+    description: string;
+}
 
-export default function HeroScroll() {
-    const containerRef = useRef<HTMLDivElement>(null);
-    const canvasRef = useRef<HTMLCanvasElement>(null);
+const slides: SlideData[] = [
+    {
+        id: 0,
+        videoSrc: '/videos/hero-1.mp4',
+        tagline: 'DISCOVER THE EXTRAORDINARY',
+        title: 'What are you\nwaiting for?',
+        description: 'Explore private sanctuaries, curated destinations, and luxury travel guides designed for the modern explorer.',
+    },
+    {
+        id: 1,
+        videoSrc: '/videos/hero-2.mp4',
+        tagline: 'PRIVATE SANCTUARIES',
+        title: 'Where Luxury Meets\nthe Horizon',
+        description: 'Immerse yourself in spectacular landscapes, handpicked villas, and local secrets around the globe.',
+    },
+    {
+        id: 2,
+        videoSrc: '/videos/hero-3.mp4',
+        tagline: 'YOUR JOURNEY BEGINS',
+        title: 'From Dream\nto Destination',
+        description: 'Browse 50+ destinations, discover private villas, and read expert travel guides — everything you need to plan your next extraordinary journey, all in one place.',
+    }
+];
 
-    // Mouse Parallax State
-    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+function VideoPlayer({ src, isActive, onEnded }: { src: string; isActive: boolean; onEnded: () => void }) {
+    const videoRef = useRef<HTMLVideoElement>(null);
 
-    const handleMouseMove = (e: React.MouseEvent) => {
-        const { clientX, clientY } = e;
-        const centerX = window.innerWidth / 2;
-        const centerY = window.innerHeight / 2;
-        setMousePosition({
-            x: (clientX - centerX) / centerX,
-            y: (clientY - centerY) / centerY
-        });
-    };
-
-    const mouseXSpring = useSpring(mousePosition.x, { stiffness: 50, damping: 20 });
-    const mouseYSpring = useSpring(mousePosition.y, { stiffness: 50, damping: 20 });
-
-    const parallaxX = useTransform(mouseXSpring, [-1, 1], [-20, 20]);
-    const parallaxY = useTransform(mouseYSpring, [-1, 1], [-20, 20]);
-
-    // 264 jpg frames: ezgif-frame-011.jpg → ezgif-frame-274.jpg
-    const frameCount = 264;
-    const startOffset = 10;
-
-    const { images, isComplete } = useImagePreloader(
-        frameCount,
-        '/sequence-1/ezgif-frame-',
-        '.jpg',
-        startOffset,
-        3
-    );
-
-    const { scrollYProgress } = useScroll({
-        target: containerRef,
-        offset: ['start start', 'end end']
-    });
-
-    // Spring physics – mass adds inertia for smooth wheel-release
-    const smoothProgress = useSpring(scrollYProgress, { damping: 100, stiffness: 200, mass: 1.5 });
-
-    // Background Cinema Scale
-    const bgScale = useTransform(smoothProgress, [0, 1], [1, 1.15]);
-
-    // Map 0-1 scroll progress to frame index
-    const frameIndex = useTransform(smoothProgress, [0, 1], [0, frameCount - 1]);
-
-    // ── Initial headline (fades out as you start scrolling) ──────────────────
-    const initialOpacity = useTransform(smoothProgress, [0, 0.0, 0.06, 0.12], [1, 1, 1, 0]);
-    const initialY = useTransform(smoothProgress, [0, 0.06, 0.12], [0, 0, -30]);
-    const initialBlur = useTransform(smoothProgress, [0, 0.06, 0.12], ["blur(0px)", "blur(0px)", "blur(10px)"]);
-
-    // ── Text 1: "Paradise is Closer Than it Seems" ───────────────────────────
-    const text1Opacity = useTransform(smoothProgress, [0.10, 0.18, 0.32, 0.40], [0, 1, 1, 0]);
-    const text1Y = useTransform(smoothProgress, [0.10, 0.18, 0.32, 0.40], [30, 0, 0, -30]);
-    const text1Blur = useTransform(smoothProgress, [0.10, 0.18, 0.32, 0.40], ["blur(10px)", "blur(0px)", "blur(0px)", "blur(10px)"]);
-
-    // ── Text 2: "Worry-Free Vacation" ────────────────────────────────────────
-    const text2Opacity = useTransform(smoothProgress, [0.42, 0.50, 0.62, 0.70], [0, 1, 1, 0]);
-    const text2Y = useTransform(smoothProgress, [0.42, 0.50, 0.62, 0.70], [30, 0, 0, -30]);
-    const text2Blur = useTransform(smoothProgress, [0.42, 0.50, 0.62, 0.70], ["blur(10px)", "blur(0px)", "blur(0px)", "blur(10px)"]);
-
-    // ── Text 3: "How about a perfect trip – in one click" ────────────────────
-    const text3Opacity = useTransform(smoothProgress, [0.72, 0.80, 0.96, 1.0], [0, 1, 1, 1]);
-    const text3Y = useTransform(smoothProgress, [0.72, 0.80, 1.0], [30, 0, 0]);
-    const text3Blur = useTransform(smoothProgress, [0.72, 0.80, 1.0], ["blur(10px)", "blur(0px)", "blur(0px)"]);
-
-    // ── Canvas render loop ────────────────────────────────────────────────────
     useEffect(() => {
-        if (!isComplete || !canvasRef.current) return;
+        const video = videoRef.current;
+        if (!video) return;
 
-        const canvas = canvasRef.current;
-        const ctx = canvas.getContext('2d');
-        if (!ctx) return;
-
-        const dpr = window.devicePixelRatio || 1;
-        let animationFrameId: number;
-        let lastDrawnIndex = -1;
-
-        const render = () => {
-            if (canvas.width !== window.innerWidth * dpr || canvas.height !== window.innerHeight * dpr) {
-                canvas.width = window.innerWidth * dpr;
-                canvas.height = window.innerHeight * dpr;
-                ctx.scale(dpr, dpr);
-                lastDrawnIndex = -1;
+        if (isActive) {
+            video.currentTime = 0;
+            const playPromise = video.play();
+            if (playPromise !== undefined) {
+                playPromise.catch((err) => {
+                    console.log('Video autoplay blocked or failed:', err);
+                });
             }
-
-            const currentIndex = Math.round(frameIndex.get());
-
-            if (currentIndex !== lastDrawnIndex) {
-                const img = images[currentIndex] || images[images.length - 1];
-
-                if (img && img.width > 0 && img.height > 0) {
-                    const ratio = Math.max(window.innerWidth / img.width, window.innerHeight / img.height);
-                    const w = img.width * ratio;
-                    const h = img.height * ratio;
-                    const x = (window.innerWidth - w) / 2;
-                    const y = (window.innerHeight - h) / 2;
-
-                    ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
-                    ctx.drawImage(img, x, y, w, h);
-                    lastDrawnIndex = currentIndex;
-                }
-            }
-
-            animationFrameId = requestAnimationFrame(render);
-        };
-
-        render();
-        return () => cancelAnimationFrame(animationFrameId);
-    }, [isComplete, frameIndex, images]);
+        } else {
+            video.pause();
+        }
+    }, [isActive]);
 
     return (
-        <div ref={containerRef} className="relative h-[400vh] bg-brand-dark" onMouseMove={handleMouseMove}>
-            <div className="sticky top-0 h-screen w-full overflow-hidden">
+        <video
+            ref={videoRef}
+            src={src}
+            muted
+            playsInline
+            onEnded={onEnded}
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
+                isActive ? 'opacity-100 z-10' : 'opacity-0 z-0'
+            }`}
+        />
+    );
+}
 
-                {/* Canvas frame sequence with smooth zoom effect */}
-                <motion.div style={{ scale: bgScale }} className="absolute inset-0 w-full h-full pointer-events-none origin-center">
-                    <canvas
-                        ref={canvasRef}
-                        className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ${isComplete ? 'opacity-100' : 'opacity-0'}`}
+export default function HeroScroll() {
+    const [currentSlide, setCurrentSlide] = useState(0);
+
+    const handleVideoEnded = () => {
+        setCurrentSlide((prev) => (prev + 1) % slides.length);
+    };
+
+    // Auto-advance backup timer in case video fails to load or onEnded doesn't fire
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            handleVideoEnded();
+        }, 12000); // 12 seconds per slide fallback
+        return () => clearTimeout(timer);
+    }, [currentSlide]);
+
+    return (
+        <div className="relative h-screen w-full bg-brand-dark overflow-hidden">
+            {/* Background Videos */}
+            <div className="absolute inset-0 w-full h-full pointer-events-none">
+                {slides.map((slide, idx) => (
+                    <VideoPlayer
+                        key={slide.id}
+                        src={slide.videoSrc}
+                        isActive={currentSlide === idx}
+                        onEnded={handleVideoEnded}
                     />
-                </motion.div>
+                ))}
+                {/* Permanent dark overlay over the videos to comply with WCAG text contrast */}
+                <div className="absolute inset-0 bg-black/40 z-20 pointer-events-none" />
+            </div>
 
-                {/* Floating Particles Overlay */}
-                <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-50 z-0">
-                    {[...Array(20)].map((_, i) => (
+            {/* Subtle vignette — just enough to frame the text */}
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_35%,_rgba(0,0,0,0.45)_130%)] pointer-events-none z-20" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/5 to-black/30 pointer-events-none z-20" />
+
+            {/* Slide Content Overlay */}
+            <div className="relative z-30 h-full w-full flex flex-col items-center justify-center px-6 text-center">
+                {/* Static luxury card container: does not jump, does not scale or unmount */}
+                <div className="backdrop-blur-md bg-black/15 p-8 md:p-14 rounded-[2.5rem] border border-white/10 shadow-2xl flex flex-col items-center w-full max-w-[90%] md:max-w-3xl justify-center">
+                    <AnimatePresence mode="wait">
                         <motion.div
-                            key={i}
-                            className="absolute w-1 h-1 bg-white rounded-full shadow-[0_0_12px_2px_rgba(255,255,255,0.8)]"
-                            initial={{
-                                x: Math.random() * 100 + "vw",
-                                y: Math.random() * 100 + "vh",
-                                opacity: Math.random() * 0.5 + 0.1,
-                                scale: Math.random() * 0.5 + 0.5
-                            }}
-                            animate={{
-                                y: [null, Math.random() * -100 - 50],
-                                x: [null, (Math.random() - 0.5) * 50],
-                                opacity: [null, 0],
-                            }}
-                            transition={{
-                                duration: Math.random() * 15 + 15,
-                                repeat: Infinity,
-                                ease: "linear",
-                            }}
-                        />
-                    ))}
-                </div>
+                            key={currentSlide}
+                            initial={{ opacity: 0, y: 15, filter: 'blur(4px)' }}
+                            animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+                            exit={{ opacity: 0, y: -15, filter: 'blur(4px)' }}
+                            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+                            className="w-full flex flex-col items-center"
+                        >
+                            {/* Tagline */}
+                            <p className="font-sans text-brand-accent tracking-[0.3em] text-xs md:text-sm uppercase mb-6 flex items-center gap-4 font-light">
+                                <span className="w-8 h-[1px] bg-brand-accent block"></span>
+                                {slides[currentSlide].tagline}
+                                <span className="w-8 h-[1px] bg-brand-accent block"></span>
+                            </p>
 
-                {/* Cinematic gradient vignette for text legibility */}
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_20%,_#000_120%)] pointer-events-none z-[1]" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/40 pointer-events-none z-[1]" />
-
-                {/* Text Container with Mouse Parallax */}
-                <motion.div
-                    style={{ x: parallaxX, y: parallaxY }}
-                    className="absolute inset-0 flex flex-col items-center justify-center z-10 pointer-events-none"
-                >
-                    {/* ── Initial Headline ─────────────────────────────────────── */}
-                    <motion.div
-                        style={{ opacity: initialOpacity, y: initialY, filter: initialBlur }}
-                        className="absolute inset-0 flex flex-col items-center justify-center will-change-transform"
-                    >
-                        <div className="backdrop-blur-md bg-black/10 p-12 rounded-3xl border border-white/5 shadow-2xl flex flex-col items-center">
-                            <h1 className="font-serif text-[72px] md:text-[84px] lg:text-[96px] leading-[1.1] tracking-wide text-white text-center drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)]">
-                                What are you <br /> waiting for?
+                            {/* Title */}
+                            <h1 className="font-serif text-[36px] sm:text-[48px] md:text-[60px] lg:text-[68px] leading-[1.15] tracking-wide text-white mb-6 drop-shadow-[0_4px_20px_rgba(0,0,0,0.6)] whitespace-pre-line">
+                                {slides[currentSlide].title}
                             </h1>
-                            <p className="mt-8 font-inter text-lg md:text-xl text-white/80 font-light tracking-widest uppercase max-w-[600px] text-center drop-shadow-md">
-                                Discover the extraordinary
+
+                            {/* Description */}
+                            <p className="font-sans font-light text-white/90 max-w-xl text-sm md:text-base leading-relaxed drop-shadow-md">
+                                {slides[currentSlide].description}
                             </p>
-                        </div>
-                    </motion.div>
+                        </motion.div>
+                    </AnimatePresence>
+                </div>
+            </div>
 
-                    {/* ── Text 1: Villa Exterior ───────────────────────────────── */}
-                    <motion.div
-                        style={{ opacity: text1Opacity, y: text1Y, filter: text1Blur }}
-                        className="absolute inset-0 flex flex-col items-center justify-center will-change-transform"
-                    >
-                        <div className="backdrop-blur-md bg-black/10 p-12 rounded-3xl border border-white/5 shadow-2xl flex flex-col items-center">
-                            <h2 className="font-serif text-[72px] md:text-[84px] lg:text-[96px] leading-[1.1] tracking-wide text-white text-center drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)]">
-                                Your Next Chapter<br />Starts Here
-                            </h2>
-                            <p className="mt-8 font-inter text-lg md:text-xl text-brand-accent font-medium tracking-widest uppercase max-w-[600px] text-center drop-shadow-md">
-                                PRIVATE SANCTUARIES
-                            </p>
-                        </div>
-                    </motion.div>
-
-                    {/* ── Text 2: Villa Interior ───────────────────────────────── */}
-                    <motion.div
-                        style={{ opacity: text2Opacity, y: text2Y, filter: text2Blur }}
-                        className="absolute inset-0 flex flex-col items-center justify-center will-change-transform"
-                    >
-                        <div className="backdrop-blur-md bg-black/10 p-12 rounded-3xl border border-white/5 shadow-2xl flex flex-col items-center">
-                            <h2 className="font-serif text-[72px] md:text-[84px] lg:text-[96px] leading-[1.1] tracking-wide text-white text-center drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)]">
-                                Where Luxury Meets<br />the Horizon
-                            </h2>
-                            <p className="mt-8 font-inter text-lg md:text-xl text-brand-accent font-medium tracking-widest uppercase max-w-[600px] text-center drop-shadow-md">
-                                CURATED ESCAPES
-                            </p>
-                        </div>
-                    </motion.div>
-
-                    {/* ── Text 3: Exit / CTA ───────────────────────────────────── */}
-                    <motion.div
-                        style={{ opacity: text3Opacity, y: text3Y, filter: text3Blur }}
-                        className="absolute inset-0 flex flex-col items-center justify-center will-change-transform pointer-events-auto"
-                    >
-                        <div className="backdrop-blur-xl bg-black/20 p-12 md:p-16 rounded-[2.5rem] border border-white/10 shadow-2xl flex flex-col items-center mx-6">
-                            <p className="font-inter text-brand-accent tracking-[0.3em] text-sm uppercase mb-6 flex items-center gap-4">
-                                <span className="w-8 h-[1px] bg-brand-accent block"></span>
-                                YOUR JOURNEY BEGINS
-                                <span className="w-8 h-[1px] bg-brand-accent block"></span>
-                            </p>
-
-                            <h2 className="font-serif text-[64px] md:text-[76px] lg:text-[84px] leading-[1.1] tracking-wide text-white text-center drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)] max-w-[800px] mb-8">
-                                From Dream to Destination
-                            </h2>
-
-                            <p className="font-sans font-light text-white/80 max-w-2xl text-center text-lg md:text-xl leading-relaxed mb-10 drop-shadow-md">
-                                Browse 50+ destinations, discover private villas, and read expert travel guides — everything you need to plan your next extraordinary journey, all in one place.
-                            </p>
-
-                            <div className="flex flex-col sm:flex-row items-center gap-6">
-                                <Link 
-                                    href="/destinations" 
-                                    className="bg-brand-accent text-[#0a0a0a] px-8 py-4 rounded-full text-xs font-sans tracking-widest uppercase font-semibold hover:bg-white transition-all transform hover:scale-105"
-                                >
-                                    Explore Destinations
-                                </Link>
-                                <a 
-                                    href="#villas" 
-                                    className="border border-brand-accent text-brand-accent px-8 py-4 rounded-full text-xs font-sans tracking-widest uppercase font-semibold hover:bg-brand-accent hover:text-[#0a0a0a] transition-all transform hover:scale-105"
-                                >
-                                    Browse Villas
-                                </a>
-                            </div>
-                        </div>
-                    </motion.div>
-
-                </motion.div>
+            {/* Slide Navigation Dots */}
+            <div className="absolute bottom-10 left-0 right-0 z-30 flex justify-center gap-3">
+                {slides.map((_, idx) => (
+                    <button
+                        key={idx}
+                        onClick={() => setCurrentSlide(idx)}
+                        aria-label={`Go to slide ${idx + 1}`}
+                        className={`h-2.5 rounded-full transition-all duration-500 ${
+                            currentSlide === idx ? 'w-8 bg-brand-accent' : 'w-2.5 bg-white/30 hover:bg-white/50'
+                        }`}
+                    />
+                ))}
             </div>
         </div>
     );

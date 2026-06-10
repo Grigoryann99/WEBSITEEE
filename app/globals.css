@@ -4,15 +4,8 @@
 @import "tailwindcss/utilities";
 
 :root {
-  --background: #1a1a1a;
-  --foreground: #ffffff;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #1a1a1a;
-    --foreground: #ffffff;
-  }
+  --background: #F9F9F9;
+  --foreground: #1A1A1A;
 }
 
 body {
@@ -68,7 +61,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(105deg, transparent 30%, rgba(255, 255, 255, 0.55) 50%, transparent 70%);
+  background: linear-gradient(105deg, transparent 30%, rgba(31, 180, 180, 0.55) 50%, transparent 70%);
   pointer-events: none;
   opacity: 0;
 }
@@ -97,7 +90,7 @@ body {
 }
 
 .bg-mesh-luxury {
-  background-color: #0c0c0c;
+  background-color: #f5f5f5;
   position: relative;
   overflow: hidden;
 }
@@ -109,7 +102,7 @@ body {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle at center, rgba(31, 180, 180, 0.03) 0%, transparent 50%);
+  background: radial-gradient(circle at center, rgba(31, 180, 180, 0.05) 0%, transparent 50%);
   animation: mesh-pulse 15s ease-in-out infinite;
   pointer-events: none;
 }
@@ -121,7 +114,7 @@ body {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle at 30% 70%, rgba(31, 180, 180, 0.02) 0%, transparent 40%);
+  background: radial-gradient(circle at 30% 70%, rgba(31, 180, 180, 0.03) 0%, transparent 40%);
   animation: mesh-pulse 20s ease-in-out infinite reverse;
   pointer-events: none;
 }
@@ -140,4 +133,14 @@ body {
 
 .animate-popup {
   animation: popupScale 0.25s ease-out forwards;
+}
+
+/* Luxury Global Typography Styles */
+h1, h2, h3, h4, h5, h6, .font-serif {
+  font-family: var(--font-cormorant), serif !important;
+}
+
+/* Ensure luxury thinness for headings unless specifically styled */
+h1, h2, h3 {
+  font-weight: 300;
 }

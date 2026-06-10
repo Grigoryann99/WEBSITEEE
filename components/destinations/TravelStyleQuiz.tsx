@@ -165,18 +165,18 @@ export default function TravelStyleQuiz() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="bg-[#141414] border border-white/10 rounded-3xl py-16 md:py-24 px-8 md:px-12 text-center shadow-2xl shadow-black/50"
+                className="bg-white border border-gray-200 rounded-3xl py-16 md:py-24 px-8 md:px-12 text-center shadow-md shadow-black/5"
             >
-                <h3 className="font-serif text-3xl md:text-4xl text-brand-light mb-4">
+                <h3 className="font-serif text-3xl md:text-4xl text-brand-dark mb-4">
                     Not sure where to go?
                 </h3>
-                <p className="font-sans text-brand-light/60 font-light text-lg max-w-xl mx-auto mb-8">
+                <p className="font-sans text-brand-dark/60 font-light text-lg max-w-xl mx-auto mb-8">
                     Answer 3 quick questions and we&apos;ll suggest your perfect destination.
                 </p>
                 {!isOpen && (
                     <button
                         onClick={handleOpen}
-                        className="inline-flex items-center gap-3 bg-[#1D9E75] text-[#0a0a0a] px-8 py-4 rounded-full text-xs font-sans tracking-widest uppercase font-semibold hover:bg-white hover:scale-105 transition-all"
+                        className="inline-flex items-center gap-3 bg-[#1D9E75] text-[#0a0a0a] px-8 py-4 rounded-full text-xs font-sans tracking-widest uppercase font-semibold hover:bg-white hover:scale-105 transition-all border border-[#1D9E75]"
                     >
                         Find My Destination <ArrowRight className="w-4 h-4" />
                     </button>
@@ -194,7 +194,7 @@ export default function TravelStyleQuiz() {
                         transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
                         className="overflow-hidden"
                     >
-                        <div className="bg-[#111] border border-white/5 border-t-0 rounded-b-3xl p-8 md:p-12">
+                        <div className="bg-[#fcfcfc] border border-gray-200 border-t-0 rounded-b-3xl p-8 md:p-12 shadow-sm">
 
                             {/* Questions */}
                             {step < 3 && (
@@ -208,22 +208,22 @@ export default function TravelStyleQuiz() {
                                     >
                                         {/* Progress */}
                                         <div className="flex items-center justify-between mb-8">
-                                            <p className="font-sans text-brand-light/40 text-sm tracking-wide">
-                                                Question <span className="text-[#1D9E75] font-medium">{step + 1}</span> of <span className="text-brand-light/60">3</span>
+                                            <p className="font-sans text-brand-dark/40 text-sm tracking-wide">
+                                                Question <span className="text-[#1D9E75] font-medium">{step + 1}</span> of <span className="text-brand-dark/60">3</span>
                                             </p>
                                             <div className="flex gap-2">
                                                 {[0, 1, 2].map(i => (
                                                     <div
                                                         key={i}
                                                         className={`h-1 rounded-full transition-all duration-300 ${
-                                                            i <= step ? 'w-8 bg-[#1D9E75]' : 'w-4 bg-white/10'
+                                                            i <= step ? 'w-8 bg-[#1D9E75]' : 'w-4 bg-black/10'
                                                         }`}
                                                     />
                                                 ))}
                                             </div>
                                         </div>
 
-                                        <h4 className="font-serif text-2xl md:text-3xl text-brand-light mb-8">
+                                        <h4 className="font-serif text-2xl md:text-3xl text-brand-dark mb-8">
                                             {questions[step].label}
                                         </h4>
 
@@ -232,16 +232,16 @@ export default function TravelStyleQuiz() {
                                                 <button
                                                     key={opt.value}
                                                     onClick={() => handleSelect(opt.value)}
-                                                    className={`group relative bg-[#1a1a1a] border rounded-2xl p-6 text-center transition-all duration-300 hover:-translate-y-1 cursor-pointer ${
+                                                    className={`group relative bg-white border rounded-2xl p-6 text-center transition-all duration-300 hover:-translate-y-1 cursor-pointer ${
                                                         answers[step] === opt.value
-                                                            ? 'border-[#1D9E75] bg-[#1D9E75]/10 shadow-lg shadow-[#1D9E75]/10'
-                                                            : 'border-white/5 hover:border-[#1D9E75]/40'
+                                                            ? 'border-[#1D9E75] bg-[#1D9E75]/5 shadow-sm shadow-[#1D9E75]/10'
+                                                            : 'border-gray-200 hover:border-[#1D9E75]/40'
                                                     }`}
                                                 >
                                                     <span className="text-3xl block mb-3 group-hover:scale-110 transition-transform">
                                                         {opt.emoji}
                                                     </span>
-                                                    <span className="font-sans text-sm text-brand-light/80 font-light">
+                                                    <span className="font-sans text-sm text-brand-dark/80 font-light">
                                                         {opt.text}
                                                     </span>
                                                 </button>
@@ -258,10 +258,10 @@ export default function TravelStyleQuiz() {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.5 }}
                                 >
-                                    <h4 className="font-serif text-2xl md:text-3xl text-brand-light mb-3 text-center">
+                                    <h4 className="font-serif text-2xl md:text-3xl text-brand-dark mb-3 text-center">
                                         Your Perfect Destinations
                                     </h4>
-                                    <p className="font-sans text-brand-light/50 text-center mb-10 font-light">
+                                    <p className="font-sans text-brand-dark/50 text-center mb-10 font-light">
                                         Based on your answers, we recommend:
                                     </p>
 
@@ -272,20 +272,20 @@ export default function TravelStyleQuiz() {
                                                 initial={{ opacity: 0, y: 20 }}
                                                 animate={{ opacity: 1, y: 0 }}
                                                 transition={{ delay: i * 0.15, duration: 0.4 }}
-                                                className="bg-[#1a1a1a] border border-white/5 rounded-2xl p-8 text-center hover:border-[#1D9E75]/30 transition-colors group"
+                                                className="bg-white border border-gray-200 rounded-2xl p-8 text-center hover:border-[#1D9E75]/30 transition-colors group shadow-sm hover:shadow-md"
                                             >
-                                                <h5 className="font-serif text-2xl text-brand-light mb-4 group-hover:text-[#1D9E75] transition-colors">
+                                                <h5 className="font-serif text-2xl text-brand-dark mb-4 group-hover:text-[#1D9E75] transition-colors">
                                                     {country.name}
                                                 </h5>
                                                 <span className="inline-block text-[10px] uppercase tracking-widest font-sans text-[#1D9E75] bg-[#1D9E75]/10 border border-[#1D9E75]/20 rounded-full px-3 py-1 mb-4">
                                                     Best: {country.bestSeason}
                                                 </span>
-                                                <p className="font-sans text-brand-light/50 text-sm mb-6">
+                                                <p className="font-sans text-brand-dark/50 text-sm mb-6">
                                                     {country.budget}
                                                 </p>
                                                 <Link
                                                     href={`/countries/${country.slug}`}
-                                                    className="inline-flex items-center gap-2 text-xs tracking-widest uppercase font-sans font-medium text-[#1D9E75] hover:text-white transition-colors"
+                                                    className="inline-flex items-center gap-2 text-xs tracking-widest uppercase font-sans font-medium text-[#1D9E75] hover:text-black transition-colors"
                                                 >
                                                     Explore <ArrowRight className="w-3 h-3" />
                                                 </Link>
@@ -296,13 +296,13 @@ export default function TravelStyleQuiz() {
                                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                                         <button
                                             onClick={handleReset}
-                                            className="inline-flex items-center gap-2 border border-white/10 text-brand-light/70 px-6 py-3 rounded-full text-xs tracking-widest uppercase font-sans hover:border-[#1D9E75] hover:text-[#1D9E75] transition-all"
+                                            className="inline-flex items-center gap-2 border border-black/10 text-brand-dark/70 px-6 py-3 rounded-full text-xs tracking-widest uppercase font-sans hover:border-[#1D9E75] hover:text-[#1D9E75] transition-all"
                                         >
                                             <RotateCcw className="w-3.5 h-3.5" /> Start Over
                                         </button>
                                         <button
                                             onClick={scrollToGrid}
-                                            className="inline-flex items-center gap-2 border border-white/10 text-brand-light/70 px-6 py-3 rounded-full text-xs tracking-widest uppercase font-sans hover:border-[#1D9E75] hover:text-[#1D9E75] transition-all"
+                                            className="inline-flex items-center gap-2 border border-black/10 text-brand-dark/70 px-6 py-3 rounded-full text-xs tracking-widest uppercase font-sans hover:border-[#1D9E75] hover:text-[#1D9E75] transition-all"
                                         >
                                             <ChevronDown className="w-3.5 h-3.5" /> Show All Destinations
                                         </button>

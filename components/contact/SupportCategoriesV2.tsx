@@ -51,11 +51,11 @@ const categories = [
 
 export default function SupportCategories() {
     return (
-        <section className="py-24 px-4 bg-brand-dark">
+        <section className="py-24 px-4 bg-[#F5F4F0]">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
-                    <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">Expert Assistance</h2>
-                    <p className="font-inter text-white/50 max-w-2xl mx-auto font-light leading-relaxed">
+                    <h2 className="font-serif text-4xl md:text-5xl text-[#1A1A1A] mb-6">Expert Assistance</h2>
+                    <p className="font-inter text-[#1A1A1A]/50 max-w-2xl mx-auto font-light leading-relaxed">
                         Select a category below to get targeted help with your travel exploration or technical needs.
                     </p>
                 </div>
@@ -69,13 +69,13 @@ export default function SupportCategories() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: idx * 0.1 }}
                             whileHover={{ scale: 1.03, translateY: -5 }}
-                            className="group cursor-pointer p-8 rounded-[2rem] bg-white/[0.03] border border-white/5 backdrop-blur-md hover:bg-white/[0.05] hover:border-brand-accent/20 transition-all duration-300 shadow-xl"
+                            className="group cursor-pointer p-8 rounded-[2.5rem] bg-white/40 backdrop-blur-xl border border-white/20 hover:border-brand-accent/40 shadow-[0_20px_50px_rgba(0,0,0,0.03)] hover:shadow-[0_25px_60px_rgba(0,0,0,0.06)] hover:bg-white/60 transition-all duration-500"
                         >
-                            <div className={`mb-6 p-4 rounded-2xl bg-white/[0.03] w-fit group-hover:scale-110 transition-transform duration-500`}>
-                                <cat.icon className={`${cat.color} group-hover:brightness-125 transition-all`} size={32} />
+                            <div className={`mb-6 p-4 rounded-2xl bg-white/40 border border-white/20 w-fit group-hover:scale-110 transition-transform duration-500`}>
+                                <cat.icon className={`${cat.color} group-hover:brightness-110 transition-all`} size={32} />
                             </div>
-                            <h3 className="font-serif text-2xl text-white mb-3 tracking-wide">{cat.title}</h3>
-                            <p className="font-inter text-white/40 text-sm leading-relaxed font-light">
+                            <h3 className="font-serif text-2xl text-[#1A1A1A] mb-3 tracking-wide">{cat.title}</h3>
+                            <p className="font-inter text-[#1A1A1A]/50 text-sm leading-relaxed font-light">
                                 {cat.description}
                             </p>
                         </motion.div>

@@ -41,22 +41,22 @@ export default function CountryPage({ params }: CountryPageProps) {
     }
 
     return (
-        <main className="min-h-screen bg-[#0a0a0a] text-brand-light font-sans selection:bg-brand-accent selection:text-white">
+        <main className="min-h-screen bg-[#F9F9F9] text-brand-dark font-sans selection:bg-brand-accent selection:text-white">
             {/* 1. Hero Section */}
             <section className="relative h-[60vh] md:h-[70vh] flex flex-col items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <CountryHeroImage src={data.heroImage} countryName={data.name} />
-                    <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/60 via-[#0a0a0a]/20 to-[#0a0a0a]" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-[#F9F9F9]/60 via-[#F9F9F9]/20 to-[#F9F9F9]" />
                 </div>
 
                 <div className="relative z-10 text-center w-full max-w-4xl mx-auto px-6 mt-16">
                     <p className="font-sans text-brand-accent tracking-[0.3em] text-xs sm:text-sm uppercase mb-4 animate-fade-in-up">
                         Discover
                     </p>
-                    <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-brand-light mb-6 leading-tight tracking-wider drop-shadow-2xl">
+                    <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-brand-dark mb-6 leading-tight tracking-wider drop-shadow-sm">
                         {data.name}
                     </h1>
-                    <p className="font-light text-brand-light/80 text-lg md:text-xl max-w-2xl mx-auto">
+                    <p className="font-light text-brand-dark/80 text-lg md:text-xl max-w-2xl mx-auto">
                         {data.description}
                     </p>
                 </div>
@@ -66,10 +66,10 @@ export default function CountryPage({ params }: CountryPageProps) {
             <div className="max-w-7xl mx-auto px-6 space-y-24 py-20">
                 {/* 2. Top Destinations */}
                 <section>
-                    <div className="mb-12">
-                        <h2 className="font-serif text-4xl md:text-5xl text-brand-light mb-4">Top Destinations</h2>
+                    <div className="mb-12 text-left">
+                        <h2 className="font-serif text-4xl md:text-5xl text-brand-dark mb-4">Top Destinations</h2>
                         <div className="w-24 h-1 bg-brand-accent" />
-                        <p className="text-brand-light/60 font-light mt-4 max-w-xl">
+                        <p className="text-brand-dark/60 font-light mt-4 max-w-xl">
                             Explore our curated selection of landmarks and cities you must visit.
                         </p>
                     </div>
@@ -92,15 +92,15 @@ export default function CountryPage({ params }: CountryPageProps) {
                 </section>
 
                 {/* 3. Travel Tips */}
-                <section className="bg-[#111] -mx-6 px-6 py-16 border-y border-white/5 relative overflow-hidden">
+                <section className="bg-white -mx-6 px-6 py-16 border-y border-black/5 relative overflow-hidden">
                     <div className="absolute top-0 right-0 w-1/3 h-full bg-mesh-luxury opacity-10 pointer-events-none" />
-                    <div className="max-w-7xl mx-auto relative z-10">
-                        <h2 className="font-serif text-3xl md:text-4xl text-brand-light mb-8">Travel Tips for {data.name}</h2>
+                    <div className="max-w-7xl mx-auto relative z-10 text-left">
+                        <h2 className="font-serif text-3xl md:text-4xl text-brand-dark mb-8">Travel Tips for {data.name}</h2>
                         <ul className="grid grid-cols-1 md:grid-cols-3 gap-6">
                             {data.tips.map((tip, i) => (
-                                <li key={i} className="flex items-start bg-[#1a1a1a] p-6 rounded-2xl border border-white/5 shadow-sm">
+                                <li key={i} className="flex items-start bg-[#F9F9F9] p-6 rounded-2xl border border-black/5 shadow-sm">
                                     <span className="text-brand-accent font-serif text-2xl mr-4 leading-none">{i + 1}.</span>
-                                    <p className="font-sans text-brand-light/80 text-sm font-light">
+                                    <p className="font-sans text-brand-dark/80 text-sm font-light">
                                         {tip}
                                     </p>
                                 </li>

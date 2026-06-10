@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
 import SupportHero from '@/components/contact/SupportHeroV2';
-import SupportSearch from '@/components/contact/SupportSearchV2';
 import SupportCategories from '@/components/contact/SupportCategoriesV2';
 import FAQSection from '@/components/contact/FAQSectionV2';
 import SupportForm from '@/components/contact/SupportFormV2';
@@ -13,9 +12,8 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
     return (
-        <div className="bg-brand-dark min-h-screen">
+        <div className="bg-[#F9F9F9] min-h-screen">
             <SupportHero />
-            <SupportSearch />
             <SupportCategories />
             <FAQSection />
             <SupportForm />
