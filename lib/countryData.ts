@@ -2,6 +2,7 @@ import { franceAttractions } from '../data/franceAttractions';
 import { italyAttractions } from '../data/italyAttractions';
 import { spainAttractions } from '../data/spainAttractions';
 import { japanAttractions } from '../data/japanAttractions';
+import { usaAttractions } from '../data/usaAttractions';
 
 export interface Destination {
     name: string;
@@ -93,43 +94,19 @@ export const countries: Record<string, CountryData> = {
         description: "Explore diverse landscapes from soaring mountains to iconic mega-cities.",
         heroImage: "https://images.unsplash.com/photo-1485738422979-f5c462d49f74?q=80&w=2000&auto=format&fit=crop",
         tips: ["Remember to tip 15-20%", "Distances are huge, plan travel accordingly", "Prices shown often exclude tax"],
-        destinations: [
-            {
-                name: "Grand Canyon",
-                city: "Arizona",
-                country: "USA",
-                description: "A steep-sided canyon carved by the Colorado River, a natural wonder of the world.",
-                image: "https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Statue of Liberty",
-                city: "New York",
-                country: "USA",
-                description: "A colossal copper statue given as a gift from France to the United States.",
-                image: "https://images.unsplash.com/photo-1605130284535-11dd9eedc58a?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Yellowstone",
-                city: "Wyoming",
-                country: "USA",
-                description: "A sprawling national park known for wildlife and geothermal features like Old Faithful.",
-                image: "https://images.unsplash.com/photo-1510410427958-452109bc4aa8?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Golden Gate Bridge",
-                city: "San Francisco",
-                country: "USA",
-                description: "A world-famous suspension bridge spanning the Golden Gate strait.",
-                image: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Las Vegas Strip",
-                city: "Las Vegas",
-                country: "USA",
-                description: "A stretch of South Las Vegas Boulevard known for its concentration of resort hotels and casinos.",
-                image: "https://images.unsplash.com/photo-1605805561570-8b1c1cde8a8c?auto=format&fit=crop&q=80&w=800"
-            }
-        ]
+        destinations: usaAttractions.map(attr => ({
+            name: attr.name,
+            city: attr.location,
+            country: 'USA',
+            description: attr.description,
+            image: attr.image || '',
+            category: attr.category,
+            whyVisit: attr.whyVisit,
+            bestTime: attr.bestTime,
+            insiderTip: attr.insiderTip,
+            howToGetThere: attr.howToGetThere,
+            cost: attr.cost,
+        }))
     },
     spain: {
         name: "Spain",
