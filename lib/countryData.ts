@@ -1,3 +1,4 @@
+import { franceAttractions } from '../data/franceAttractions';
 import { italyAttractions } from '../data/italyAttractions';
 import { spainAttractions } from '../data/spainAttractions';
 
@@ -31,43 +32,19 @@ export const countries: Record<string, CountryData> = {
         description: "Experience the romance, culture, and unmatched culinary excellence of France.",
         heroImage: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=2000&auto=format&fit=crop",
         tips: ["Learn basic French phrases", "Book Louvre tickets in advance", "Try local boulangeries"],
-        destinations: [
-            {
-                name: "Eiffel Tower",
-                city: "Paris",
-                country: "France",
-                description: "The iconic iron lattice tower on the Champ de Mars, a global symbol of France.",
-                image: "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Louvre Museum",
-                city: "Paris",
-                country: "France",
-                description: "The world's largest art museum and a historic monument in Paris.",
-                image: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Mont Saint-Michel",
-                city: "Normandy",
-                country: "France",
-                description: "A tidal island and mainland commune topped by a gravity-defying medieval monastery.",
-                image: "https://images.unsplash.com/photo-1596394723269-e1e8c8383a8e?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Château de Versailles",
-                city: "Versailles",
-                country: "France",
-                description: "The principal royal residence of France and a marvel of French Baroque architecture.",
-                image: "https://images.unsplash.com/photo-1551410224-699683e15636?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "French Riviera",
-                city: "Nice",
-                country: "France",
-                description: "The Mediterranean coastline of the southeast corner of France, known for luxury.",
-                image: "https://images.unsplash.com/photo-1533575770077-052fa2c609fc?auto=format&fit=crop&q=80&w=800"
-            }
-        ]
+        destinations: franceAttractions.map(attr => ({
+            name: attr.name,
+            city: attr.location,
+            country: 'France',
+            description: attr.description,
+            image: attr.image,
+            category: attr.category,
+            whyVisit: attr.whyVisit,
+            bestTime: attr.bestTime,
+            insiderTip: attr.insiderTip,
+            howToGetThere: attr.howToGetThere,
+            cost: attr.cost
+        }))
     },
     italy: {
         name: "Italy",
