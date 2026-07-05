@@ -88,7 +88,7 @@ export default function DestinationsPage() {
                         className="object-cover scale-105 animate-slow-pan"
                         priority
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/35 to-[#F9F9F9]" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/15 to-transparent" />
                 </div>
 
                 <div className="relative z-10 w-full max-w-5xl mx-auto px-6 text-center pb-24 md:pb-32">
