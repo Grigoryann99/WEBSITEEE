@@ -9,7 +9,7 @@ export const franceAttractions = [
     insiderTip: "Book 'Summit Access' tickets online exactly 60 days in advance at midnight Paris time. To avoid long security lines, book a lunch reservation at Madame Brasserie or dinner at Jules Verne.",
     howToGetThere: "Take Metro Line 6 to Bir-Hakeim or RER C to Champ de Mars-Tour Eiffel.",
     cost: "Paid. €29.40 for lift access to the summit.",
-    image: "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/france-eiffel-tower.jpg"
   },
   {
     name: "Louvre Museum",
@@ -21,7 +21,7 @@ export const franceAttractions = [
     insiderTip: "Never use the main Pyramid entrance. Use the 'Porte des Lions' entrance or enter through the Carrousel du Louvre underground mall to bypass the longest security queues.",
     howToGetThere: "Take Metro Line 1 or 7 to Palais Royal-Musée du Louvre.",
     cost: "Paid. €22.00 (advance online booking required).",
-    image: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/france-louvre-museum.jpg"
   },
   {
     name: "Palace of Versailles",
@@ -33,7 +33,7 @@ export const franceAttractions = [
     insiderTip: "Rent an electric golf cart to explore the massive 800-hectare estate, and make sure to visit Marie Antoinette's private rustic retreat, the Hameau de la Reine.",
     howToGetThere: "Take RER C from central Paris to Versailles Château Rive Gauche station (40-minute journey), then walk 10 minutes.",
     cost: "Paid. €24.00 for the Passport ticket (grants access to the entire estate).",
-    image: "https://images.unsplash.com/photo-1551410224-699683e15636?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/france-palace-of-versailles.jpg"
   },
   {
     name: "Mont Saint-Michel",
@@ -45,7 +45,7 @@ export const franceAttractions = [
     insiderTip: "Stay overnight on the island. After 6:00 PM, all day-trippers leave, the streets fall silent, and you can experience the magical, atmospheric medieval town under the stars.",
     howToGetThere: "Take the TGV train from Paris Montparnasse to Rennes, then a direct connection bus to the Mont Saint-Michel visitor center.",
     cost: "Free to enter the island. Abbey entry is €13.00.",
-    image: "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/france-mont-saint-michel.jpg"
   },
   {
     name: "Château de Chambord",
@@ -57,7 +57,7 @@ export const franceAttractions = [
     insiderTip: "Rent a boat on the castle canal at sunset to capture perfect reflection photos of the elaborate chimney skyline and roof terrace.",
     howToGetThere: "Take the train from Paris Austerlitz to Blois-Chambord, then take the seasonal shuttle bus directly to the château.",
     cost: "Paid. €16.00 for adult entry.",
-    image: "https://images.unsplash.com/photo-1580137189272-c9379f8864fd?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/france-chateau-de-chambord.jpg"
   },
   {
     name: "Promenade des Anglais",
@@ -69,7 +69,7 @@ export const franceAttractions = [
     insiderTip: "Walk up to the Castle Hill (Colline du Château) at the eastern end of the promenade for the famous postcard view of Nice and the bay.",
     howToGetThere: "Nice Côte d'Azur Airport is 15 minutes away; the promenade is easily reached on foot from any central Nice location.",
     cost: "Free.",
-    image: "https://images.unsplash.com/photo-1485601930021-b61726ee8f2a?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/france-promenade-des-anglais.jpg"
   },
   {
     name: "Verdon Gorge",
@@ -81,7 +81,7 @@ export const franceAttractions = [
     insiderTip: "Drive the panoramic 'Route des Crêtes' (D23 loop) for dramatic lookout points over the deepest sections of the canyon where wild vultures soar.",
     howToGetThere: "A rental car is essential; the gorge is roughly a 2-hour drive from Nice or Marseille.",
     cost: "Free to visit; kayak rentals average €20 per hour.",
-    image: "https://images.unsplash.com/photo-1508873699372-7aeab60b44ab?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/france-verdon-gorge.jpg"
   },
   {
     name: "Aiguille du Midi",
@@ -93,7 +93,7 @@ export const franceAttractions = [
     insiderTip: "Take the earliest cable car of the morning (8:00 AM) to beat the cloud cover that frequently develops over Mont Blanc by afternoon.",
     howToGetThere: "Walk to the Aiguille du Midi cable car station in the center of Chamonix town.",
     cost: "Paid. €75.00 for a return ticket.",
-    image: "https://images.unsplash.com/photo-1549880181-56a44cf4a9a1?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/france-aiguille-du-midi.jpg"
   },
   {
     name: "Sainte-Chapelle",
@@ -105,7 +105,7 @@ export const franceAttractions = [
     insiderTip: "Book a ticket for an evening classical music concert inside Sainte-Chapelle to enjoy the acoustics and stained glass without daytime crowds.",
     howToGetThere: "Take Metro Line 4 to Cité station, the chapel is located within the Palais de Justice complex.",
     cost: "Paid. €13.00.",
-    image: "https://images.unsplash.com/photo-1548625361-155defe219f5?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/france-sainte-chapelle.jpg"
   },
   {
     name: "Calanques National Park",
@@ -117,7 +117,7 @@ export const franceAttractions = [
     insiderTip: "Take a boat tour from the port of Cassis to see the calanques from the water if you want to avoid the strenuous 2-hour rocky hike.",
     howToGetThere: "Take the train to Cassis, then hike from the Port-Miou parking lot.",
     cost: "Free.",
-    image: "https://images.unsplash.com/photo-1563841930606-67e2b64a896e?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/france-calanques-national-park.jpg"
   },
   {
     name: "Dune of Pilat",
@@ -129,7 +129,7 @@ export const franceAttractions = [
     insiderTip: "Climb the wooden stairs installed from May to November, or challenge yourself by scrambling up the shifting sand directly.",
     howToGetThere: "Take the train from Bordeaux to Arcachon (50 minutes), then take the local bus Line 1 to the dune.",
     cost: "Free entry; parking costs €6.00.",
-    image: "https://images.unsplash.com/photo-1628157777174-884c599133b3?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/france-dune-of-pilat.jpg"
   },
   {
     name: "Carcassonne Medieval City",
@@ -141,7 +141,7 @@ export const franceAttractions = [
     insiderTip: "Walk the ramparts and visit the Château Comtal (Count's Castle) for the best views over the lower town and the Aude river.",
     howToGetThere: "Take the train direct from Toulouse (1 hour) or Montpellier (1.5 hours) to Carcassonne station.",
     cost: "Free to enter the old town. Castle and ramparts entry is €11.00.",
-    image: "https://images.unsplash.com/photo-1524396309943-e03f5db026a0?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/france-carcassonne-medieval-city.jpg"
   },
   {
     name: "Eze Village",
@@ -153,7 +153,7 @@ export const franceAttractions = [
     insiderTip: "Have a cocktail on the terrace of the legendary Chateau de la Chevre d'Or hotel for a breathtaking cliffside view of the coastline.",
     howToGetThere: "Take Bus 82 from Nice to Eze Village, or hike up the strenuous Nietzsche Path from Eze-sur-Mer train station.",
     cost: "Free to enter the village. Jardin Exotique entry is €7.00.",
-    image: "https://images.unsplash.com/photo-1596436889106-be35e843f974?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/france-eze-village.jpg"
   },
   {
     name: "Valensole Lavender Fields",
@@ -165,7 +165,7 @@ export const franceAttractions = [
     insiderTip: "Visit at sunrise. You will avoid the crowds of Instagram photographers and capture the soft morning light hitting the purple waves.",
     howToGetThere: "A rental car is essential; the plateau is roughly a 1.5-hour drive north of Aix-en-Provence.",
     cost: "Free.",
-    image: "https://images.unsplash.com/photo-1508849789987-4e5333c12b78?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/france-valensole-lavender-fields.jpg"
   },
   {
     name: "Strasbourg Grande Île",
@@ -177,7 +177,7 @@ export const franceAttractions = [
     insiderTip: "Take a boat tour on the Ill River that goes through the historic locks and past the European Parliament building.",
     howToGetThere: "Take the high-speed TGV train from Paris Est to Strasbourg (1 hour 45 minutes).",
     cost: "Free.",
-    image: "https://images.unsplash.com/photo-1517404212738-1b26126f4979?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/france-strasbourg-grande-ile.jpg"
   },
   {
     name: "Palace of the Popes",
@@ -189,7 +189,7 @@ export const franceAttractions = [
     insiderTip: "Walk out onto the nearby Pont d'Avignon, the iconic ruined 12th-century bridge crossing the Rhône River.",
     howToGetThere: "Take the TGV train direct from Paris Gare de Lyon to Avignon TGV (2 hours 40 minutes).",
     cost: "Paid. €12.00 for the Palace entry.",
-    image: "https://images.unsplash.com/photo-1601979031246-81cf984918e7?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/france-palace-of-the-popes.jpg"
   },
   {
     name: "Champagne Cellars of Reims",
@@ -201,7 +201,7 @@ export const franceAttractions = [
     insiderTip: "Book your cellar tour weeks in advance, especially for Ruinart, which has the most historic and visually stunning Roman chalk quarries.",
     howToGetThere: "Take the TGV train from Paris Gare de l'Est to Reims (45 minutes).",
     cost: "Paid. Cellar tours and tastings range from €30.00 to €100.00.",
-    image: "https://images.unsplash.com/photo-1560512823-829485b8bf24?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/france-champagne-cellars-of-reims.jpg"
   },
   {
     name: "Saint-Émilion Vineyards",
@@ -213,7 +213,7 @@ export const franceAttractions = [
     insiderTip: "Climb the Bell Tower of the monolithic church for a view over the clay-limestone plateau that gives Saint-Émilion wine its unique flavor.",
     howToGetThere: "Take the regional train from Bordeaux Saint-Jean station to Saint-Émilion (35 minutes).",
     cost: "Free to enter the village. Church tour is €8.00.",
-    image: "https://images.unsplash.com/photo-1553142282-aba4d09338e3?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/france-saint-emilion-vineyards.jpg"
   },
   {
     name: "Étretat Cliffs",
@@ -225,7 +225,7 @@ export const franceAttractions = [
     insiderTip: "Walk onto the beach at low tide to explore the oyster beds and walk through the natural rock tunnels, but monitor tide times closely to avoid getting cut off.",
     howToGetThere: "Take the train from Paris Saint-Lazare to Le Havre, then take the local bus Line 24 directly to Étretat.",
     cost: "Free.",
-    image: "https://images.unsplash.com/photo-1498623116890-37e912163d5d?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/france-etretat-cliffs.jpg"
   },
   {
     name: "Corsica (Calanches de Piana)",
@@ -237,6 +237,6 @@ export const franceAttractions = [
     insiderTip: "Book a boat tour from Porto at sunset. The red granite cliffs glow with a fiery orange-red color under the setting sun.",
     howToGetThere: "Fly to Calvi or Ajaccio, or take a ferry from Nice/Marseille. A car is essential.",
     cost: "Free.",
-    image: "https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/france-corsica-calanches-de-piana.jpg"
   }
 ];

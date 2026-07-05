@@ -5,7 +5,7 @@ export const spainAttractions = [
     category: "Religious",
     description: "A large unfinished Roman Catholic minor basilica architected by Antoni Gaudí.",
     unsplashQuery: "Sagrada Familia Gaudi Barcelona church facade",
-    image: "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/spain-sagrada-familia.jpg"
   },
   {
     name: "Alhambra",
@@ -13,7 +13,7 @@ export const spainAttractions = [
     category: "Historical",
     description: "A palace and fortress complex that showcases breathtaking Moorish architecture.",
     unsplashQuery: "Alhambra palace Granada Spain moorish arches",
-    image: "https://images.unsplash.com/photo-1591981206737-3b8b10c0f7ed?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/spain-alhambra.jpg"
   },
   {
     name: "Park Güell",
@@ -21,7 +21,7 @@ export const spainAttractions = [
     category: "Architectural",
     description: "A public park system composed of gardens and architectonic elements located on Carmel Hill.",
     unsplashQuery: "Park Guell Gaudi mosaic Barcelona terrace",
-    image: "https://images.unsplash.com/photo-1523531294919-4bea7c65e894?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/spain-park-guell.jpg"
   },
   {
     name: "Prado Museum",
@@ -29,7 +29,7 @@ export const spainAttractions = [
     category: "Cultural",
     description: "The main Spanish national art museum, widely considered to have one of the world's finest collections.",
     unsplashQuery: "Prado Museum Madrid Spain building exterior",
-    image: "https://images.unsplash.com/photo-1582298538104-fe2e74c27f59?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/spain-prado-museum.jpg"
   },
   {
     name: "Ibiza",
@@ -37,7 +37,7 @@ export const spainAttractions = [
     category: "Coastal",
     description: "An island in the Mediterranean Sea well known for its lively nightlife and stunning coves.",
     unsplashQuery: "Ibiza beach turquoise sea Balearic Islands",
-    image: "https://images.unsplash.com/photo-1661887561486-1f771e7b2cab?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    image: "/images/attractions/spain-ibiza.jpg"
   },
   {
     name: "Toledo Old City",
@@ -50,7 +50,7 @@ export const spainAttractions = [
     howToGetThere: "High-speed train from Madrid Atocha takes 33 minutes.",
     cost: "Cathedral entry €10",
     unsplashQuery: "Toledo Spain medieval city hilltop panorama",
-    image: "https://images.unsplash.com/photo-1669372561088-a4bb6c396b9e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    image: "/images/attractions/spain-toledo-old-city.jpg"
   },
   {
     name: "Seville Cathedral & Giralda",
@@ -63,7 +63,7 @@ export const spainAttractions = [
     howToGetThere: "High-speed AVE from Madrid takes 2.5 hours.",
     cost: "Paid — €12 including Giralda tower",
     unsplashQuery: "Seville Cathedral Giralda tower Andalusia",
-    image: "https://images.unsplash.com/photo-1509840841025-9088ba78a826?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    image: "/images/attractions/spain-seville-cathedral-giralda.jpg"
   },
   {
     name: "San Sebastián",
@@ -76,7 +76,7 @@ export const spainAttractions = [
     howToGetThere: "Train from Madrid 5.5 hours. Bus from Bilbao 1 hour.",
     cost: "Pintxos €2–€4 each",
     unsplashQuery: "San Sebastian beach La Concha bay Basque",
-    image: "https://images.unsplash.com/photo-1647526232039-6099babcca81?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    image: "/images/attractions/spain-san-sebastian.jpg"
   },
   {
     name: "Ronda",
@@ -89,7 +89,7 @@ export const spainAttractions = [
     howToGetThere: "Train from Málaga 2 hours.",
     cost: "Free to explore — bullring museum €8",
     unsplashQuery: "Ronda bridge Puente Nuevo gorge Spain",
-    image: "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/spain-ronda.jpg"
   },
   {
     name: "Córdoba Mezquita",
@@ -102,7 +102,7 @@ export const spainAttractions = [
     howToGetThere: "AVE from Madrid 1h45m. From Seville 45 minutes.",
     cost: "€13, free weekday mornings 8:30–9:30am",
     unsplashQuery: "Cordoba Mezquita mosque columns arches interior",
-    image: "https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/spain-cordoba-mezquita.jpg"
   },
   {
     name: "Camino de Santiago",
@@ -115,7 +115,7 @@ export const spainAttractions = [
     howToGetThere: "Fly to Santiago de Compostela or Pamplona.",
     cost: "Albergues €8–€15/night",
     unsplashQuery: "Camino Santiago pilgrims walking Galicia path",
-    image: "https://images.unsplash.com/photo-1638704645810-708030b50ce5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    image: "/images/attractions/spain-camino-de-santiago.jpg"
   },
   {
     name: "Ibiza Old Town Dalt Vila",
@@ -128,7 +128,7 @@ export const spainAttractions = [
     howToGetThere: "Fly direct to Ibiza Airport. Ferry from Barcelona 8 hours.",
     cost: "Dalt Vila free — Archaeological Museum €4",
     unsplashQuery: "Ibiza Dalt Vila old town walls harbour",
-    image: "https://images.unsplash.com/photo-1591962282848-7548229ddf3d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    image: "/images/attractions/spain-ibiza-old-town-dalt-vila.jpg"
   },
   {
     name: "Montserrat Mountain",
@@ -141,7 +141,7 @@ export const spainAttractions = [
     howToGetThere: "FGC train from Barcelona Plaça Espanya then rack railway. Total 1.5 hours.",
     cost: "Combined train and rack railway €32 return",
     unsplashQuery: "Montserrat mountain monastery Catalonia Spain",
-    image: "https://images.unsplash.com/photo-1502920514313-52581002a659?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/spain-montserrat-mountain.jpg"
   },
   {
     name: "Valencia City of Arts & Sciences",
@@ -154,7 +154,7 @@ export const spainAttractions = [
     howToGetThere: "AVE from Madrid 1h35m. 30-minute tram from Valencia Nord.",
     cost: "Exterior free — Oceanogràfic €32",
     unsplashQuery: "Valencia City Arts Sciences Calatrava Spain",
-    image: "https://images.unsplash.com/photo-1595181980894-399fa5b5f3eb?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/spain-valencia-city-of-arts-sciences.jpg"
   },
   {
     name: "Bilbao Guggenheim Museum",
@@ -167,7 +167,7 @@ export const spainAttractions = [
     howToGetThere: "Fly to Bilbao Airport. Train from Madrid 4.5 hours.",
     cost: "Paid — €16",
     unsplashQuery: "Guggenheim Museum Bilbao titanium building",
-    image: "https://images.unsplash.com/photo-1748790485676-b36207bd1cb7?q=80&w=1183&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    image: "/images/attractions/spain-bilbao-guggenheim-museum.jpg"
   },
   {
     name: "Costa Brava",
@@ -180,7 +180,7 @@ export const spainAttractions = [
     howToGetThere: "Car essential. Train from Barcelona to Figueres 1 hour.",
     cost: "Beaches free — Dalí Theatre-Museum €15",
     unsplashQuery: "Costa Brava rocky coast coves Catalonia",
-    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/spain-costa-brava.jpg"
   },
   {
     name: "Mallorca",
@@ -193,7 +193,7 @@ export const spainAttractions = [
     howToGetThere: "Fly direct to Palma. Ferry from Barcelona 8 hours overnight.",
     cost: "Train Palma–Sóller €13 return",
     unsplashQuery: "Mallorca beach turquoise water Balearic Spain",
-    image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1536768139911-e290a5900281?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "Doñana National Park",
@@ -206,7 +206,7 @@ export const spainAttractions = [
     howToGetThere: "Car essential — 1.5 hours from Seville.",
     cost: "Guided 4x4 tour €34",
     unsplashQuery: "Donana flamingo wetlands Andalusia Spain",
-    image: "https://images.unsplash.com/photo-1535083376224-b17f5437a1f5?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/spain-donana-national-park.jpg"
   },
   {
     name: "Sierra Nevada",
@@ -219,7 +219,7 @@ export const spainAttractions = [
     howToGetThere: "Bus from Granada 45 minutes.",
     cost: "Ski day pass €42 — hiking free",
     unsplashQuery: "Sierra Nevada ski resort snow Granada Spain",
-    image: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/spain-sierra-nevada.jpg"
   },
   {
     name: "Teide National Park",
@@ -232,6 +232,6 @@ export const spainAttractions = [
     howToGetThere: "Fly to Tenerife. Car essential for the national park.",
     cost: "Cable car €27 return — park free",
     unsplashQuery: "Teide volcano Tenerife Canary Islands Spain",
-    image: "https://images.unsplash.com/photo-1586500036706-41963de24d8b?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/spain-teide-national-park.jpg"
   }
 ];
