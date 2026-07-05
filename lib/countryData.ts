@@ -1,6 +1,7 @@
 import { franceAttractions } from '../data/franceAttractions';
 import { italyAttractions } from '../data/italyAttractions';
 import { spainAttractions } from '../data/spainAttractions';
+import { japanAttractions } from '../data/japanAttractions';
 
 export interface Destination {
     name: string;
@@ -72,43 +73,19 @@ export const countries: Record<string, CountryData> = {
         description: "A unique blend of ancient traditions and futuristic innovation.",
         heroImage: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=2000&auto=format&fit=crop",
         tips: ["Buy a JR Pass before arriving", "Have Google Translate ready", "Respect local etiquette on trains"],
-        destinations: [
-            {
-                name: "Mount Fuji",
-                city: "Honshu",
-                country: "Japan",
-                description: "An active volcano and Japan's tallest peak, known for its scenic beauty.",
-                image: "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Fushimi Inari Taisha",
-                city: "Kyoto",
-                country: "Japan",
-                description: "An important Shinto shrine famous for its thousands of vermilion torii gates.",
-                image: "https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Shibuya Crossing",
-                city: "Tokyo",
-                country: "Japan",
-                description: "The world's busiest pedestrian crossing, surrounded by neon signs.",
-                image: "https://images.unsplash.com/photo-1542051812871-34f40f0c0b7d?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Kinkaku-ji",
-                city: "Kyoto",
-                country: "Japan",
-                description: "A Zen Buddhist temple whose top two floors are completely covered in gold leaf.",
-                image: "https://images.unsplash.com/photo-1571842013180-205167660233?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Hiroshima Peace Memorial",
-                city: "Hiroshima",
-                country: "Japan",
-                description: "A stark reminder of the devastating effects of war and a symbol of peace.",
-                image: "https://images.unsplash.com/photo-1626084666014-ba3676c12ba3?auto=format&fit=crop&q=80&w=800"
-            }
-        ]
+        destinations: japanAttractions.map(attr => ({
+            name: attr.name,
+            city: attr.location,
+            country: 'Japan',
+            description: attr.description,
+            image: attr.image,
+            category: attr.category,
+            whyVisit: attr.whyVisit,
+            bestTime: attr.bestTime,
+            insiderTip: attr.insiderTip,
+            howToGetThere: attr.howToGetThere,
+            cost: attr.cost
+        }))
     },
     united_states: {
         name: "USA",
