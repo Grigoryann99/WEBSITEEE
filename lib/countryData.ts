@@ -3,6 +3,9 @@ import { italyAttractions } from '../data/italyAttractions';
 import { spainAttractions } from '../data/spainAttractions';
 import { japanAttractions } from '../data/japanAttractions';
 import { usaAttractions } from '../data/usaAttractions';
+import { greeceAttractions } from '../data/greeceAttractions';
+import { thailandAttractions } from '../data/thailandAttractions';
+import { uaeAttractions } from '../data/uaeAttractions';
 
 export interface Destination {
     name: string;
@@ -135,43 +138,19 @@ export const countries: Record<string, CountryData> = {
         description: "The cradle of Western civilization with idyllic islands and ancient mythology.",
         heroImage: "https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=2000&auto=format&fit=crop",
         tips: ["Island hopping requires planning", "Try the street food (Souvlaki)", "Sun protection is essential"],
-        destinations: [
-            {
-                name: "Acropolis of Athens",
-                city: "Athens",
-                country: "Greece",
-                description: "An ancient citadel located on a rocky outcrop containing the remains of several historically significant buildings.",
-                image: "https://images.unsplash.com/photo-1555993539-1732fc44e3f3?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Santorini",
-                city: "Cyclades",
-                country: "Greece",
-                description: "Famous for its dramatic views, stunning sunsets from Oia town, and active volcano.",
-                image: "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Mykonos",
-                city: "Cyclades",
-                country: "Greece",
-                description: "An island known for its cosmopolitan summer party atmosphere.",
-                image: "https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Meteora",
-                city: "Kalabaka",
-                country: "Greece",
-                description: "Monasteries built on immense natural pillars and hill-like rounded boulders.",
-                image: "https://images.unsplash.com/photo-1516489370617-e2fe9abcb71b?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Delphi",
-                city: "Phocis",
-                country: "Greece",
-                description: "An ancient sanctuary that grew rich as the seat of the oracle that was consulted on important decisions.",
-                image: "https://images.unsplash.com/photo-1608730973680-81f0f568d2e3?auto=format&fit=crop&q=80&w=800"
-            }
-        ]
+        destinations: greeceAttractions.map(attr => ({
+            name: attr.name,
+            city: attr.location,
+            country: 'Greece',
+            description: attr.description,
+            image: attr.image || '',
+            category: attr.category,
+            whyVisit: attr.whyVisit,
+            bestTime: attr.bestTime,
+            insiderTip: attr.insiderTip,
+            howToGetThere: attr.howToGetThere,
+            cost: attr.cost,
+        }))
     },
     united_arab_emirates: {
         name: "UAE",
@@ -179,43 +158,19 @@ export const countries: Record<string, CountryData> = {
         description: "A luxury oasis combining ultramodern aesthetics with deep Bedouin roots.",
         heroImage: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2000&auto=format&fit=crop",
         tips: ["Dress modestly in public areas", "Weekends are Friday-Saturday", "Use the efficient Dubai Metro"],
-        destinations: [
-            {
-                name: "Burj Khalifa",
-                city: "Dubai",
-                country: "UAE",
-                description: "The tallest structure and building in the world since its topping out in 2009.",
-                image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Sheikh Zayed Mosque",
-                city: "Abu Dhabi",
-                country: "UAE",
-                description: "The largest mosque in the country and a key place of worship for Friday gathering.",
-                image: "https://images.unsplash.com/photo-1588693899144-8d9e29ccae6b?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Palm Jumeirah",
-                city: "Dubai",
-                country: "UAE",
-                description: "An artificial archipelago resembling a palm tree covered in luxury resorts.",
-                image: "https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Louvre Abu Dhabi",
-                city: "Abu Dhabi",
-                country: "UAE",
-                description: "An art and civilization museum establishing a dialogue between different cultures.",
-                image: "https://images.unsplash.com/photo-1552834371-3375bce34360?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Burj Al Arab",
-                city: "Dubai",
-                country: "UAE",
-                description: "A luxury hotel celebrated as one of the most iconic symbols of Dubai.",
-                image: "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&q=80&w=800"
-            }
-        ]
+        destinations: uaeAttractions.map(attr => ({
+            name: attr.name,
+            city: attr.location,
+            country: 'UAE',
+            description: attr.description,
+            image: attr.image || '',
+            category: attr.category,
+            whyVisit: attr.whyVisit,
+            bestTime: attr.bestTime,
+            insiderTip: attr.insiderTip,
+            howToGetThere: attr.howToGetThere,
+            cost: attr.cost,
+        }))
     },
     brazil: {
         name: "Brazil",
@@ -267,43 +222,19 @@ export const countries: Record<string, CountryData> = {
         description: "The land of smiles offering golden temples, pristine beaches, and unforgettable cuisine.",
         heroImage: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=2000&auto=format&fit=crop",
         tips: ["Respect the monarchy and temples", "Negotiate before getting in a Tuk Tuk", "Street food is highly recommended"],
-        destinations: [
-            {
-                name: "Grand Palace",
-                city: "Bangkok",
-                country: "Thailand",
-                description: "A complex of buildings at the heart of Bangkok, the official residence of the Kings of Siam.",
-                image: "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Phi Phi Islands",
-                city: "Krabi",
-                country: "Thailand",
-                description: "An island group largely featured in movies, known for pristine waters and limestone cliffs.",
-                image: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Wat Phra That Doi Suthep",
-                city: "Chiang Mai",
-                country: "Thailand",
-                description: "A revered Theravada Buddhist temple overlooking the city of Chiang Mai.",
-                image: "https://images.unsplash.com/photo-1550953830-ec02b2de0a96?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Ayutthaya",
-                city: "Ayutthaya",
-                country: "Thailand",
-                description: "The historic city of Ayutthaya was the second capital of the Siamese Kingdom.",
-                image: "https://images.unsplash.com/photo-1542152643-d34eab8b5e94?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Railay Beach",
-                city: "Krabi",
-                country: "Thailand",
-                description: "A small peninsula reachable only by boat due to high limestone cliffs cutting off mainland access.",
-                image: "https://images.unsplash.com/photo-1548678957-31bab8f5228c?auto=format&fit=crop&q=80&w=800"
-            }
-        ]
+        destinations: thailandAttractions.map(attr => ({
+            name: attr.name,
+            city: attr.location,
+            country: 'Thailand',
+            description: attr.description,
+            image: attr.image || '',
+            category: attr.category,
+            whyVisit: attr.whyVisit,
+            bestTime: attr.bestTime,
+            insiderTip: attr.insiderTip,
+            howToGetThere: attr.howToGetThere,
+            cost: attr.cost,
+        }))
     },
     united_kingdom: {
         name: "United Kingdom",
