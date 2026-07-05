@@ -21,7 +21,7 @@ export const spainAttractions = [
     category: "Architectural",
     description: "A public park system composed of gardens and architectonic elements located on Carmel Hill.",
     unsplashQuery: "Park Guell Gaudi mosaic Barcelona terrace",
-    image: "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1523531294919-4bea7c65e894?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "Prado Museum",
@@ -29,7 +29,7 @@ export const spainAttractions = [
     category: "Cultural",
     description: "The main Spanish national art museum, widely considered to have one of the world's finest collections.",
     unsplashQuery: "Prado Museum Madrid Spain building exterior",
-    image: "https://images.unsplash.com/photo-1543429257-3eb0b65d9c58?auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1582298538104-fe2e74c27f59?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "Ibiza",
@@ -154,7 +154,7 @@ export const spainAttractions = [
     howToGetThere: "AVE from Madrid 1h35m. 30-minute tram from Valencia Nord.",
     cost: "Exterior free — Oceanogràfic €32",
     unsplashQuery: "Valencia City Arts Sciences Calatrava Spain",
-    image: "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1595181980894-399fa5b5f3eb?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "Bilbao Guggenheim Museum",
@@ -206,7 +206,7 @@ export const spainAttractions = [
     howToGetThere: "Car essential — 1.5 hours from Seville.",
     cost: "Guided 4x4 tour €34",
     unsplashQuery: "Donana flamingo wetlands Andalusia Spain",
-    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1535083376224-b17f5437a1f5?auto=format&fit=crop&w=800&q=80"
   },
   {
     name: "Sierra Nevada",
