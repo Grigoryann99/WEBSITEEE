@@ -1,3 +1,5 @@
+import { brazilAttractions } from '../data/brazilAttractions';
+import { ukAttractions } from '../data/ukAttractions';
 import { franceAttractions } from '../data/franceAttractions';
 import { italyAttractions } from '../data/italyAttractions';
 import { spainAttractions } from '../data/spainAttractions';
