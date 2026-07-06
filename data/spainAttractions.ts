@@ -37,7 +37,7 @@ export const spainAttractions = [
     category: "Coastal",
     description: "An island in the Mediterranean Sea well known for its lively nightlife and stunning coves.",
     unsplashQuery: "Ibiza beach turquoise sea Balearic Islands",
-    image: "/images/attractions/spain-ibiza.jpg"
+    image: "https://images.unsplash.com/photo-1554072675-66db59dba794?auto=format&fit=crop&w=1200&q=80"
   },
   {
     name: "Toledo Old City",
@@ -128,7 +128,7 @@ export const spainAttractions = [
     howToGetThere: "Fly direct to Ibiza Airport. Ferry from Barcelona 8 hours.",
     cost: "Dalt Vila free — Archaeological Museum €4",
     unsplashQuery: "Ibiza Dalt Vila old town walls harbour",
-    image: "/images/attractions/spain-ibiza-old-town-dalt-vila.jpg"
+    image: "https://images.unsplash.com/photo-1532878056386-1e96eb5221ad?auto=format&fit=crop&w=1200&q=80"
   },
   {
     name: "Montserrat Mountain",
@@ -154,7 +154,7 @@ export const spainAttractions = [
     howToGetThere: "AVE from Madrid 1h35m. 30-minute tram from Valencia Nord.",
     cost: "Exterior free — Oceanogràfic €32",
     unsplashQuery: "Valencia City Arts Sciences Calatrava Spain",
-    image: "/images/attractions/spain-valencia-city-of-arts-sciences.jpg"
+    image: "https://images.unsplash.com/photo-1595856988891-38de8fec97a9?auto=format&fit=crop&w=1200&q=80"
   },
   {
     name: "Bilbao Guggenheim Museum",
@@ -193,7 +193,7 @@ export const spainAttractions = [
     howToGetThere: "Fly direct to Palma. Ferry from Barcelona 8 hours overnight.",
     cost: "Train Palma–Sóller €13 return",
     unsplashQuery: "Mallorca beach turquoise water Balearic Spain",
-    image: "https://images.unsplash.com/photo-1536768139911-e290a5900281?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/spain-mallorca.jpg"
   },
   {
     name: "Doñana National Park",
