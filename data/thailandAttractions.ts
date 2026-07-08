@@ -21,7 +21,7 @@ export const thailandAttractions = [
     insiderTip: "Book a 30-minute traditional Thai foot massage at the temple massage school (260 THB) — it is one of the most authentic massage experiences in the country and directly funds the preservation of traditional medicine.",
     howToGetThere: "Walk 10 minutes south from the Grand Palace, or take the Chao Phraya boat to Tha Tien Pier.",
     cost: "Paid. 200 THB (approx. $5.50) entry.",
-    image: ""
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Wat_Pho_Reclining_Buddha.jpg"
   },
   {
     name: "Phi Phi Islands",
@@ -45,7 +45,7 @@ export const thailandAttractions = [
     insiderTip: "Rent a red songthaew (shared truck) from Chiang Mai's city centre, which takes you up the winding mountain road (30 minutes) for approximately 50 THB. Visit at 6:00 AM for the monks' dawn chanting ceremony.",
     howToGetThere: "Hire a tuk-tuk or songthaew from Chiang Mai city centre. The drive takes 30 minutes up the mountain road.",
     cost: "Paid. 50 THB for foreigners. Cable car alternative 30 THB each way.",
-    image: ""
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/a7/Wat_Phrathat_Doi_Suthep.jpg"
   },
   {
     name: "Ayutthaya Historical Park",
@@ -69,7 +69,7 @@ export const thailandAttractions = [
     insiderTip: "Hike the steep jungle trail from Railay Beach to the Diamond Cave and Railay Viewpoint (45-minute round trip) for an aerial view over the entire peninsula. The trail is unmarked — ask locals for directions.",
     howToGetThere: "Take a longtail boat from Krabi Town (45 minutes) or from Ao Nang Beach (20 minutes). Boats depart regularly throughout the day.",
     cost: "Free beach access. Longtail boat from Ao Nang approx. 100 THB.",
-    image: ""
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/50/Railay_Beach%2C_Krabi%2C_Thailand.jpg"
   },
   {
     name: "Khao Sok National Park",
@@ -81,7 +81,7 @@ export const thailandAttractions = [
     insiderTip: "Book a two-night stay in the floating raft house bungalows on Cheow Lan Lake rather than the jungle camp — the experience of sleeping above the still lake with only cliff reflections surrounding you is extraordinary.",
     howToGetThere: "Take a bus from Surat Thani (2 hours) or from Phuket (3 hours) to the Khao Sok village entrance.",
     cost: "National park entry 300 THB. Floating bungalows from 800–3,000 THB per night.",
-    image: ""
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Khao_Sok_National_Park.jpg"
   },
   {
     name: "Wat Arun (Temple of Dawn)",
@@ -93,7 +93,7 @@ export const thailandAttractions = [
     insiderTip: "Visit at sunset from the opposite east bank of the river — buy a beer from a riverside bar in the Tha Tien area and watch the sun go down behind Wat Arun. The reflection in the river is extraordinary. Then cross by ferry (5 THB) to visit the temple itself.",
     howToGetThere: "Take the cross-river ferry from Tha Tien Pier (near Wat Pho) for 5 THB. Or take a Chao Phraya Express boat to Phra Arthit Pier and walk.",
     cost: "Paid. 100 THB entry.",
-    image: ""
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Wat_Arun_2006.jpg"
   },
   {
     name: "James Bond Island",
@@ -105,7 +105,7 @@ export const thailandAttractions = [
     insiderTip: "Avoid the crowded speedboat tours to James Bond Island and instead book a long-tail boat or kayaking tour that spends more time in the caves and hongs and less time at the tourist-packed main island.",
     howToGetThere: "Take a tour from Phuket (2 hours by speedboat or 2.5 hours by longtail) or from Khao Lak. Most operators include Phang Nga Bay as a day trip.",
     cost: "National park fee 300 THB. Tours from 1,200–2,000 THB including fees.",
-    image: ""
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Ko_Tapu%2C_Phang_Nga_Bay%2C_Thailand.jpg"
   },
   {
     name: "Wat Rong Khun (White Temple)",
@@ -117,7 +117,7 @@ export const thailandAttractions = [
     insiderTip: "Visit the Blue Temple (Wat Rong Suea Ten) in Chiang Rai Town on the same day — it is a 10-minute drive away and equally dramatic in its deep blue and gold colour scheme, but receives far fewer visitors.",
     howToGetThere: "Rent a scooter or hire a songthaew from Chiang Rai city centre (13 km south). The drive takes 20 minutes.",
     cost: "Free entry (donation box available).",
-    image: ""
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/43/Wat_Rong_Khun.jpg"
   },
   {
     name: "Erawan National Park",
@@ -129,7 +129,7 @@ export const thailandAttractions = [
     insiderTip: "Tier 7 (the top) is the least visited and most beautiful. The 1.5 km hike takes 1.5 hours up a sometimes steep jungle path — bring water and wear solid shoes. Take a headlamp for the descent after sunset.",
     howToGetThere: "Take a bus from Bangkok's Southern Bus Terminal to Kanchanaburi (2.5 hours), then a local bus to Erawan National Park (1.5 hours). Or rent a car from Bangkok (3 hours).",
     cost: "Paid. 300 THB foreigners' entry.",
-    image: ""
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/2e/Erawan_Falls%2C_Thailand.jpg"
   },
   {
     name: "Koh Samui Beaches",
@@ -141,7 +141,7 @@ export const thailandAttractions = [
     insiderTip: "Rent a scooter and drive the entire coastal ring road (51 km) in one day to see every beach type — from the party atmosphere of Chaweng to the quiet fishing villages of the north coast — and discover your perfect spot.",
     howToGetThere: "Fly from Bangkok (Suvarnabhumi or Don Mueang) to Koh Samui Airport (1 hour). Or take a ferry from Surat Thani (1.5 hours).",
     cost: "Free beach access. Ang Thong Marine Park day trip approx. 1,500 THB.",
-    image: ""
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Koh_Samui_Chaweng_beach.jpg"
   },
   {
     name: "Pai Valley",
@@ -213,7 +213,7 @@ export const thailandAttractions = [
     insiderTip: "Book a dawn birding tour from the Km 31 area below the summit — the spectacle of hundreds of rare species feeding in the forest at dawn, combined with the morning mist rising from the valleys below, is one of the great wildlife experiences of northern Thailand.",
     howToGetThere: "Rent a car from Chiang Mai (2 hours) or hire a day tour from the city. The mountain road is winding but well-surfaced.",
     cost: "Paid. 300 THB foreigners' park entry.",
-    image: ""
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/7d/Doi_Inthanon_national_park.jpg"
   },
   {
     name: "Sukhothai Historical Park",
@@ -225,7 +225,7 @@ export const thailandAttractions = [
     insiderTip: "Rent a bicycle (30 THB/day) from the new town and spend a full day cycling the flat, tree-lined paths between the ruins. The outer zones (barely visited by tourists) contain temples just as beautiful as the central zone.",
     howToGetThere: "Take a bus from Bangkok's Mochit terminal (6 hours) or fly to Phitsanulok then take a local bus (1 hour).",
     cost: "Paid. 220 THB for the central zone; multiple zones each require separate tickets.",
-    image: ""
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Sukhothai_historical_park.jpg"
   },
   {
     name: "Tiger Cave Temple",
