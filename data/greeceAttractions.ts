@@ -9,7 +9,7 @@ export const greeceAttractions = [
     insiderTip: "Arrive at the gate exactly when it opens at 8:00 AM to have the Parthenon virtually to yourself for 30 minutes before the tour groups arrive. The afternoon light from the west turns the marble golden.",
     howToGetThere: "Take the Athens Metro (Line 2, red) to Akropoli station. The entrance is a 5-minute walk from the station.",
     cost: "Paid. €30.00 combined ticket covers 7 archaeological sites including the Acropolis Museum.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/d/da/The_Parthenon_in_Athens.jpg"
+    image: "/images/attractions/greece-acropolis-of-athens.jpg"
   },
   {
     name: "Santorini",
@@ -21,7 +21,7 @@ export const greeceAttractions = [
     insiderTip: "Book a caldera-view table at a restaurant in Imerovigli rather than Oia — the sunsets are equally spectacular but with half the crowd. Rent an ATV to explore the island's hidden black-sand beaches.",
     howToGetThere: "Fly to Santorini International Airport (JTR) directly, or take a high-speed ferry from Athens' Piraeus port (5 hours) or Rafina port (4 hours).",
     cost: "Free to explore. Cable car in Fira is €6.00 one-way.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Oia_Santorini_Thira_Greece_Cyclades.jpg"
+    image: "/images/attractions/greece-santorini.jpg"
   },
   {
     name: "Meteora Monasteries",
@@ -33,7 +33,7 @@ export const greeceAttractions = [
     insiderTip: "Hire a taxi for the day (approx. €60–80) to visit all six monasteries at your own pace. Modesty clothing (long skirts for women, trousers for men) is mandatory for entry — wraps are provided at the entrance if needed.",
     howToGetThere: "Take a train from Athens (Larissa station) to Kalabaka (approx. 4.5 hours), then taxi or bus to the monasteries.",
     cost: "Paid. €3.00 per monastery, maximum 6 monasteries open on any given day.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/a/a8/Meteora_-_Monastery_of_Saint_Stephen.jpg"
+    image: "/images/attractions/greece-meteora-monasteries.jpg"
   },
   {
     name: "Mykonos Old Town",
@@ -45,7 +45,7 @@ export const greeceAttractions = [
     insiderTip: "Walk to the iconic row of 16th-century windmills on the Kato Mili hill at sunset for the best photo in the Cyclades. Book restaurant tables at least 2 days in advance in summer.",
     howToGetThere: "Fly directly to Mykonos Airport (JMK) from Athens (45 minutes) or take a high-speed Seajets ferry from Piraeus (2.5 hours).",
     cost: "Free to explore the town. Archaeological Museum entry is €4.00.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Mykonos_island%2C_Greece.jpg"
+    image: "/images/attractions/greece-mykonos-old-town.jpg"
   },
   {
     name: "Delphi",
@@ -57,7 +57,7 @@ export const greeceAttractions = [
     insiderTip: "Visit the Delphi Museum immediately before or after the site — it holds the bronze Charioteer of Delphi, one of the finest surviving bronze sculptures from antiquity, which gives crucial context to the ruins.",
     howToGetThere: "Rent a car from Athens (approx. 2.5 hours drive) or take the KTEL bus from Athens' Liosion terminal (3 hours).",
     cost: "Paid. €12.00 for the site, €12.00 for the museum, or €20.00 combined.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Delphi_-_Sanctuary_of_Athena_Pronoia.jpg"
+    image: "/images/attractions/greece-delphi.jpg"
   },
   {
     name: "Rhodes Medieval Old Town",
@@ -69,7 +69,7 @@ export const greeceAttractions = [
     insiderTip: "Rent a scooter and drive south to Lindos, where a hilltop acropolis overlooks one of the most beautiful bays in Greece. The 2-hour drive south through traditional villages is as rewarding as the destination.",
     howToGetThere: "Fly to Rhodes International Airport (RHO) from Athens (45 minutes) or from major European cities directly.",
     cost: "Free to walk the streets. Palace of the Grand Masters entry €8.00.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Rhodes_Old_Town.jpg"
+    image: "/images/attractions/greece-rhodes-medieval-old-town.jpg"
   },
   {
     name: "Knossos Palace",
@@ -81,7 +81,7 @@ export const greeceAttractions = [
     insiderTip: "Hire a licensed guide at the entrance (approx. €10–15/hour) rather than relying solely on the audio guide — the myths and archaeology come alive with expert storytelling.",
     howToGetThere: "Fly to Heraklion International Airport (HER). Take city bus No. 2 from Eleftherias Square to Knossos (20 minutes).",
     cost: "Paid. €15.00 general entry.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/c/ce/Knossos_-_Throne_Room_north_detail.jpg"
+    image: "/images/attractions/greece-knossos-palace.jpg"
   },
   {
     name: "Thessaloniki Waterfront",
@@ -93,7 +93,7 @@ export const greeceAttractions = [
     insiderTip: "Climb to the Byzantine Walls (Heptapyrgion) at sunset for the most spectacular panoramic view over the city and the Thermaic Gulf below.",
     howToGetThere: "Fly to Thessaloniki 'Makedonia' Airport (SKG), then take bus X1 to the city center (30 minutes). Or take the high-speed train from Athens (approx. 4 hours).",
     cost: "Free to walk the waterfront. White Tower Museum entry €4.00.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/3/3b/Thessaloniki_White_Tower.jpg"
+    image: "/images/attractions/greece-thessaloniki-waterfront.jpg"
   },
   {
     name: "Corfu Old Town",
@@ -105,7 +105,7 @@ export const greeceAttractions = [
     insiderTip: "Visit the Achilleion Palace, a neoclassical fantasy built by Empress Elisabeth of Austria (Sisi) on a hilltop with sweeping sea views. It perfectly captures 19th-century Romantic Hellenism.",
     howToGetThere: "Fly to Corfu International Airport (CFU) from Athens (1 hour) or from major European cities directly.",
     cost: "Free to walk the town. Old Fortress entry €6.00.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/c/cd/Corfu_Old_Town.jpg"
+    image: "/images/attractions/greece-corfu-old-town.jpg"
   },
   {
     name: "Ancient Olympia",
@@ -117,7 +117,7 @@ export const greeceAttractions = [
     insiderTip: "Arrive early and walk the original starting blocks in the Olympic stadium before the crowds arrive. The experience of standing where the first Olympians competed is profoundly moving.",
     howToGetThere: "Rent a car from Athens (approx. 3.5 hours) or take a KTEL bus from Athens to Pyrgos, then a connecting bus to Olympia.",
     cost: "Paid. €12.00 for the site, €12.00 for the museum, or €20.00 combined.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/1/1a/Ancient_Olympia_-_Temple_of_Hera.jpg"
+    image: "/images/attractions/greece-ancient-olympia.jpg"
   },
   {
     name: "Navagio Beach (Shipwreck Beach)",
@@ -129,7 +129,7 @@ export const greeceAttractions = [
     insiderTip: "Book an early-morning boat trip (before 9:00 AM) from Porto Vromi to have the beach nearly to yourself. The cliffside viewpoint above the beach is equally spectacular and accessible by road.",
     howToGetThere: "Fly to Zakynthos International Airport (ZTH) from Athens (45 minutes), rent a car or take a taxi to Porto Vromi, then take a short boat trip to the beach.",
     cost: "Free entry. Boat trip approximately €15–20 per person.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Navagio_bay_with_shipwreck_on_Zakynthos_Island%2C_Greece.jpg"
+    image: "/images/attractions/greece-navagio-beach-shipwreck-beach.jpg"
   },
   {
     name: "Samaria Gorge",
@@ -141,7 +141,7 @@ export const greeceAttractions = [
     insiderTip: "The hike is one-way downhill (top to bottom). Arrange return transportation in advance — take the boat from the beach village of Agia Roumeli to Hora Sfakion, then a bus or taxi back to your accommodation.",
     howToGetThere: "Take the KTEL bus from Chania to Omalos (1.5 hours), then hike down. Return by ferry and bus.",
     cost: "Paid. €5.00 national park entrance fee.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/c/c7/Samaria_Gorge_National_Park_Crete.jpg"
+    image: "/images/attractions/greece-samaria-gorge.jpg"
   },
   {
     name: "Cape Sounion",
@@ -165,7 +165,7 @@ export const greeceAttractions = [
     insiderTip: "Bring a picnic and watch the Epidaurus Festival performance at sunset — ancient Greek tragedy under the stars in the finest acoustics ever designed is an unforgettable experience. Book tickets months in advance.",
     howToGetThere: "Rent a car from Athens (approx. 2 hours) or take a KTEL bus from Athens' Kifissos terminal to Nafplio, then taxi to Epidaurus.",
     cost: "Paid. €12.00 archaeological site entry. Festival tickets from €15.00.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/8d/GR-epidauros-theater.jpg"
+    image: "/images/attractions/greece-epidaurus-ancient-theatre.jpg"
   },
   {
     name: "Mount Athos Peninsula",
@@ -177,7 +177,7 @@ export const greeceAttractions = [
     insiderTip: "Even without a permit, take the half-day cruise from Ouranoupolis to view the monasteries from the sea — the boat passes within metres of buildings like Simonopetra and Dionysiou that cling impossibly to 300-metre cliffs.",
     howToGetThere: "Take a bus from Thessaloniki to Ouranoupolis (2 hours), then a ferry to the peninsula. For entry permits: apply via the Mount Athos Pilgrim Bureau in Thessaloniki.",
     cost: "Entry permit (diamonitirion) is €25.00 for non-Orthodox visitors (limited availability).",
-    image: "https://upload.wikimedia.org/wikipedia/commons/4/46/Great_Lavra_Mount_Athos.jpg"
+    image: "/images/attractions/greece-mount-athos-peninsula.jpg"
   },
   {
     name: "Nafplio Old Town",
@@ -189,7 +189,7 @@ export const greeceAttractions = [
     insiderTip: "Book accommodation in the old town rather than the modern city. The evening 'volta' (promenade) along the harbour is a charming local tradition. Local ice cream shops on Farmakopoulou Street are famous across Greece.",
     howToGetThere: "Take a KTEL bus from Athens (Kifissos terminal) to Nafplio (approx. 2.5 hours) or rent a car.",
     cost: "Free to explore. Palamidi Fortress entry €8.00.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Nafplio_-_panoramio_%283%29.jpg"
+    image: "/images/attractions/greece-nafplio-old-town.jpg"
   },
   {
     name: "Patmos Island",
@@ -201,7 +201,7 @@ export const greeceAttractions = [
     insiderTip: "Attend the Easter midnight liturgy at the Monastery — the procession of candlelit monks descending through the Chora streets is deeply moving. Book accommodation months in advance for Easter week.",
     howToGetThere: "Take a ferry from Piraeus (8 hours) or a fast ferry from Rhodes (3 hours). In summer, hydrofoils connect Patmos to other Dodecanese islands.",
     cost: "Free to visit the Cave of the Apocalypse. Monastery €5.00.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/9/95/Patmos_-_Monastery_of_St_John_the_Theologian.jpg"
+    image: "/images/attractions/greece-patmos-island.jpg"
   },
   {
     name: "Delos Island",
@@ -213,7 +213,7 @@ export const greeceAttractions = [
     insiderTip: "Take the first morning boat from Mykonos (8:30 AM) to have the site nearly to yourself. Bring water, sun protection, and snacks — there are no shops on the island.",
     howToGetThere: "Take the regular boat service from Mykonos' Old Port (30 minutes). Boats depart multiple times daily from April to October.",
     cost: "Paid. €12.00 site and museum combined entry.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/4/46/Delos_ruins.jpg"
+    image: "/images/attractions/greece-delos-island.jpg"
   },
   {
     name: "Vikos Gorge",
@@ -225,7 +225,7 @@ export const greeceAttractions = [
     insiderTip: "Stay overnight in one of the Zagori villages (Monodendri, Kipi, or Papigo) and hike the gorge over 2 days. The stone guesthouses (xenones) serve authentic Epirote cuisine — pies, grilled meats, and local red wine.",
     howToGetThere: "Rent a car from Ioannina (approx. 40 minutes to the Zagori villages). Ioannina is accessible by bus from Athens (6 hours) or by flight from Athens (1 hour).",
     cost: "Free to hike the gorge.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/5/5b/Vikos_gorge.jpg"
+    image: "/images/attractions/greece-vikos-gorge.jpg"
   },
   {
     name: "Monemvasia Byzantine Fortress",
@@ -237,6 +237,6 @@ export const greeceAttractions = [
     insiderTip: "Stay overnight in one of the restored Byzantine mansions within the castle walls. After the day-trippers leave at sunset, the town becomes utterly magical — lit by lanterns, completely silent except for the sea.",
     howToGetThere: "Rent a car from Athens (approx. 3.5 hours via the Corinth highway). KTEL bus from Athens to Monemvasia is available but takes 5+ hours.",
     cost: "Free to enter the old town. Upper fortress ruins free.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Monemvasia-rock.jpg"
+    image: "/images/attractions/greece-monemvasia-byzantine-fortress.jpg"
   }
 ];

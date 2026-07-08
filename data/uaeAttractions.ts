@@ -9,7 +9,7 @@ export const uaeAttractions = [
     insiderTip: "Book the 'At the Top SKY' Level 148 ticket (rather than the cheaper Level 124) for the highest outdoor platform. Visit at sunset — the transition from golden hour to the city lighting up at dusk is more dramatic than both the day view and the night view alone.",
     howToGetThere: "Take the Dubai Metro (Red Line) to Burj Khalifa/Dubai Mall station. The entrance is through the Dubai Mall via a dedicated path from the metro.",
     cost: "Paid. 'At the Top' Level 124: AED 169. 'At the Top SKY' Level 148: AED 379. Book online for discounts.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/9/93/Burj_Khalifa.jpg"
+    image: "/images/attractions/uae-burj-khalifa.jpg"
   },
   {
     name: "Sheikh Zayed Grand Mosque",
@@ -21,7 +21,7 @@ export const uaeAttractions = [
     insiderTip: "Arrive at blue hour (30 minutes after sunset) when the mosque is lit from within and the sky is still deep blue. The reflection pools produce mirror images of the white domes. Modest dress (including headscarf for women) is required — abayas are provided free at the entrance.",
     howToGetThere: "Take a taxi from Abu Dhabi city centre (15 minutes). The No. 54 public bus from Abu Dhabi Central Bus Station also stops nearby.",
     cost: "Free entry for all visitors.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/6/67/Sheikh_Zayed_Grand_Mosque%2C_Abu_Dhabi%2C_UAE.jpg"
+    image: "/images/attractions/uae-sheikh-zayed-grand-mosque.jpg"
   },
   {
     name: "Palm Jumeirah",
@@ -33,7 +33,7 @@ export const uaeAttractions = [
     insiderTip: "Visit 'The View' at the Palm Tower observation deck at Level 52 (AED 95) for the best aerial photograph of the entire palm structure. Brunch at the Atlantis 'Saffron' on Fridays (AED 420) includes access to the hotel's private beach and Aquaventure Waterpark.",
     howToGetThere: "Take the Dubai Metro (Red Line) to Nakheel Harbour and Tower station, then transfer to the Palm Monorail to the Atlantis. Alternatively, take the water taxi from Marina Walk.",
     cost: "The View observation deck: AED 95. Palm Monorail: AED 25 return.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/b/b8/Palm_Island_Jumeirah.jpg"
+    image: "/images/attractions/uae-palm-jumeirah.jpg"
   },
   {
     name: "Burj Al Arab",
@@ -45,7 +45,7 @@ export const uaeAttractions = [
     insiderTip: "Non-guests cannot enter without a reservation. Book afternoon tea at 'Skyview Bar' (minimum spend AED 550 per person) for the full interior experience at the most reasonable cost. The 270° panoramic view over Jumeirah Beach from 200 metres is extraordinary.",
     howToGetThere: "Take a taxi from anywhere in Dubai. Most taxi apps show the Burj Al Arab entrance on the access road from Jumeirah Beach Road.",
     cost: "Access by reservation only. Minimum spend from AED 360 (Gold on 27) to AED 550 (Skyview Bar) for non-guests.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/e/e6/Burj_Al_Arab%2C_Dubai%2C_by_Joi_Ito_Dec2007.jpg"
+    image: "/images/attractions/uae-burj-al-arab.jpg"
   },
   {
     name: "Dubai Mall & Dubai Fountain",
@@ -57,7 +57,7 @@ export const uaeAttractions = [
     insiderTip: "Book a table at a waterside restaurant (Zuma, Thiptara, or Rivington Grill) for a front-row seated view of the fountain show with dinner. The boardwalk itself is free but extremely crowded during shows.",
     howToGetThere: "Dubai Metro (Red Line) to Burj Khalifa/Dubai Mall station, then a 10-minute walk through the covered connector bridge.",
     cost: "Free to enter the mall and watch the fountain. Dubai Aquarium entry AED 100.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/6/65/Dubai_Fountain%2C_Burj_Khalifa_Lake%2C_Dubai.jpg"
+    image: "/images/attractions/uae-dubai-mall-dubai-fountain.jpg"
   },
   {
     name: "Louvre Abu Dhabi",
@@ -69,7 +69,7 @@ export const uaeAttractions = [
     insiderTip: "Stand in the central plaza beneath the dome during the 'rain of light' phenomenon — when sunlight filters through the 7,850 stars of the dome at specific times of day. The reflected dots of light on the water create an otherworldly atmosphere unlike any other museum in the world.",
     howToGetThere: "Take a taxi from Abu Dhabi city (20 minutes) or hire a car. A bus service connects to Yas Island. Saadiyat is 35 km from Abu Dhabi city centre.",
     cost: "Paid. AED 63 for adults, AED 31.5 for students. Free entry for under-18s.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Louvre_Abu_Dhabi_-_Dome_interior.jpg"
+    image: "/images/attractions/uae-louvre-abu-dhabi.jpg"
   },
   {
     name: "Desert Safari Dubai",
@@ -81,7 +81,7 @@ export const uaeAttractions = [
     insiderTip: "Book a private 4x4 safari rather than a group tour for a more authentic experience. The 'sunrise desert safari' (4:30 AM departure) offers the most dramatic light and significantly cooler temperatures, plus fewer other tourist vehicles on the dunes.",
     howToGetThere: "All tours include hotel pickup and drop-off from Dubai properties. Book through a reputable operator such as Arabian Adventures or Platinum Heritage.",
     cost: "Group tour from AED 200 per person. Private premium safari from AED 800–1,500 per person.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/d/d3/Desert_Safari_Dubai.jpg"
+    image: "/images/attractions/uae-desert-safari-dubai.jpg"
   },
   {
     name: "Dubai Frame",
@@ -93,7 +93,7 @@ export const uaeAttractions = [
     insiderTip: "The Dubai Frame is best photographed from outside at night when it is illuminated in gold from the outside. For interior views, the late afternoon (4:00–5:00 PM) light is most dramatic on the glass walkway.",
     howToGetThere: "Take a taxi to Zabeel Park Gate No. 1. The park is accessible from the Dubai Metro (Green Line) at Al Jafiliya station (10-minute walk).",
     cost: "Paid. AED 50 for adults, AED 20 for children under 12.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/7/70/Dubai_Frame.jpg"
+    image: "/images/attractions/uae-dubai-frame.jpg"
   },
   {
     name: "Dubai Creek & Gold Souk",
@@ -105,7 +105,7 @@ export const uaeAttractions = [
     insiderTip: "Cross the creek by abra (1 AED, 2-minute ride) for the most atmospheric water-level view of the old dhow wharves. In the Gold Souk, prices are negotiable — never pay the first asking price and compare several shops before purchasing.",
     howToGetThere: "Take the Dubai Metro (Green Line) to Al Ras station (Gold Souk) or Bur Dubai station (Al Fahidi). The abra ferry operates from both banks of the creek.",
     cost: "Free to browse. Abra ferry 1 AED per crossing.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/a/a0/Dubai_Creek_-_panoramio.jpg"
+    image: "/images/attractions/uae-dubai-creek-gold-souk.jpg"
   },
   {
     name: "Ferrari World Abu Dhabi",
@@ -165,7 +165,7 @@ export const uaeAttractions = [
     insiderTip: "The building is more impressive from the outside than the inside for most visitors. Book at least 2 weeks in advance as tickets sell out quickly. The rooftop restaurant 'Luna' offers the most dramatic aerial perspective of the museum's elliptical form.",
     howToGetThere: "Take the Dubai Metro (Red Line) to Emirates Towers station. The museum is a 5-minute walk from the metro.",
     cost: "Paid. AED 149 for adults, AED 109 for children.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/83/Museum_of_the_Future%2C_Dubai.jpg"
+    image: "/images/attractions/uae-museum-of-the-future.jpg"
   },
   {
     name: "Jumeirah Beach",
@@ -177,7 +177,7 @@ export const uaeAttractions = [
     insiderTip: "Section Kite Beach (near Umm Suqeim) is the best for active beachgoers — kite-surfers, paddleboarders, and beach fitness enthusiasts make it the most energetic stretch. The Sunset Beach section, facing the Burj Al Arab directly, is the best for photography.",
     howToGetThere: "Take the Dubai Metro to Mall of the Emirates or Nakheel stations, then a taxi (10 minutes) to the beach. Numerous taxis run from the metro.",
     cost: "Free public beach access.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/e/e2/Jumeirah_Beach_Hotel_and_Burj_Al_Arab_2_Dec_2009.jpg"
+    image: "/images/attractions/uae-jumeirah-beach.jpg"
   },
   {
     name: "Abu Dhabi Corniche",
@@ -225,7 +225,7 @@ export const uaeAttractions = [
     insiderTip: "Take the cable car up Jebel Hafeet mountain (AED 50 return) for a panoramic view over the oasis, the Hajar Mountains, and into Oman. Drive the 11-km winding mountain road at sunset for dramatic lighting.",
     howToGetThere: "Take a bus from Abu Dhabi (2 hours) or rent a car (1.5 hours via E22 highway). Al Ain is also accessible from Dubai (1.5 hours).",
     cost: "Al Ain Oasis free entry. Al Ain National Museum AED 3.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/2/23/Al_Ain_Oasis.jpg"
+    image: "/images/attractions/uae-al-ain-oasis.jpg"
   },
   {
     name: "Global Village Dubai",
