@@ -105,7 +105,7 @@ export const hungaryAttractions = [
     insiderTip: "Book the full 5km guided tour rather than the short tourist route — the deeper sections of the cave contain the most spectacular formations. The underground concert experience (chamber music in the great cave hall) is extraordinary.",
     howToGetThere: "Drive from Miskolc (60km, 1.5 hours) or from Budapest (240km, 3 hours). Bus from Eger.",
     cost: "Short tour adults 3,400 HUF (€9). Long tour 4,200 HUF (€11).",
-    image: "/images/attractions/hungary-aggtelek-caves.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Baradla_barlang.jpg/960px-Baradla_barlang.jpg"
   },
   {
     name: "Chain Bridge (Budapest)",
@@ -165,7 +165,7 @@ export const hungaryAttractions = [
     insiderTip: "The Empress's apartment suite is the emotional heart of the visit — the blue salon, the private dining room, and Sisi's personal bath create an intimate connection with the legendary Empress. The baroque riding hall is also superb.",
     howToGetThere: "HÉV suburban railway from Budapest (Keleti station) to Gödöllő (50 minutes).",
     cost: "Adults 3,500 HUF (€9). Full tour including Empress apartment 5,500 HUF (€14).",
-    image: "/images/attractions/hungary-godollo-palace.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/G%C3%B6d%C3%B6ll%C5%91_Royal_Palace.jpg/960px-G%C3%B6d%C3%B6ll%C5%91_Royal_Palace.jpg"
   },
   {
     name: "Lake Hévíz",
@@ -201,7 +201,7 @@ export const hungaryAttractions = [
     insiderTip: "Visit Szimpla Kert (the original ruin bar) on Sunday morning when a local farmers' market fills the courtyard and the bar is at its most authentic — far more interesting than the crowded weekend evenings.",
     howToGetThere: "Metro Line 2 to Astoria or Keleti. The Quarter is a 10-minute walk from the centre.",
     cost: "Synagogue 7,000 HUF (€18). Ruin bars: drinks from 800 HUF (€2).",
-    image: "/images/attractions/hungary-budapest-jewish-quarter.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Szimpla_Kert_2019.jpg/960px-Szimpla_Kert_2019.jpg"
   },
   {
     name: "Esterházy Palace (Fertőd)",
@@ -213,7 +213,7 @@ export const hungaryAttractions = [
     insiderTip: "Book the Haydn Days concert festival tickets in advance — hearing the composer's chamber music performed by period instruments in the actual palace where it was first played is a unique experience.",
     howToGetThere: "Drive from Győr (30km) or Sopron (27km). Bus from Sopron. No direct train.",
     cost: "Palace tour adults 3,000 HUF (€8). Concert tickets from 8,000 HUF (€20).",
-    image: "/images/attractions/hungary-esterhazy-palace.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Fertod07jul0004.jpg/960px-Fertod07jul0004.jpg"
   },
   {
     name: "Miskolc-Tapolca Cave Bath",

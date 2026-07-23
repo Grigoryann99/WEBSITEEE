@@ -13,6 +13,7 @@ import { swedenAttractions } from '../data/swedenAttractions';
 import { finlandAttractions } from '../data/finlandAttractions';
 import { polandAttractions } from '../data/polandAttractions';
 import { czechAttractions } from '../data/czechAttractions';
+import { hungaryAttractions } from '../data/hungaryAttractions';
 
 export interface Destination {
     name: string;
@@ -345,43 +346,19 @@ export const countries: Record<string, CountryData> = {
         description: "Budapest's thermal baths, grand architecture, and rich Hungarian culture.",
         heroImage: "https://images.unsplash.com/photo-1551867633-194f125bddfa?q=80&w=2000&auto=format&fit=crop",
         tips: ["Try the thermal baths (Széchenyi is the most famous)", "Forint is the currency", "Tokaji wine is a must-try"],
-        destinations: [
-            {
-                name: "Hungarian Parliament",
-                city: "Budapest",
-                country: "Hungary",
-                description: "One of Europe's oldest legislative buildings, a Neo-Gothic masterpiece on the Danube.",
-                image: "https://images.unsplash.com/photo-1541343672885-9be56236302a?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Buda Castle",
-                city: "Budapest",
-                country: "Hungary",
-                description: "A UNESCO-listed royal palace complex above the Danube with panoramic views over Pest.",
-                image: "https://images.unsplash.com/photo-1549218299-ab82a7efd81c?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Széchenyi Thermal Bath",
-                city: "Budapest",
-                country: "Hungary",
-                description: "The largest medicinal bath in Europe, a stunning Neo-Baroque complex with outdoor pools.",
-                image: "https://images.unsplash.com/photo-1551867633-194f1f517682?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Fisherman's Bastion",
-                city: "Budapest",
-                country: "Hungary",
-                description: "A Neo-Romanesque terrace on the Buda side offering the best views of the city.",
-                image: "https://images.unsplash.com/photo-1565426873118-a17ed65d74b9?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Lake Balaton",
-                city: "Siófok",
-                country: "Hungary",
-                description: "Central Europe's largest lake, known as the Hungarian Sea, perfect for summer holidays.",
-                image: "https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&q=80&w=800"
-            }
-        ]
+        destinations: hungaryAttractions.map(attr => ({
+            name: attr.name,
+            city: attr.location,
+            country: 'Hungary',
+            description: attr.description,
+            image: attr.image || '',
+            category: attr.category,
+            whyVisit: attr.whyVisit,
+            bestTime: attr.bestTime,
+            insiderTip: attr.insiderTip,
+            howToGetThere: attr.howToGetThere,
+            cost: attr.cost,
+        }))
     },
     qatar: {
         name: "Qatar",
