@@ -20,6 +20,8 @@ import { malaysiaAttractions } from '../data/malaysiaAttractions';
 import { sriLankaAttractions } from '../data/sriLankaAttractions';
 import { newZealandAttractions } from '../data/newZealandAttractions';
 import { mexicoAttractions } from '../data/mexicoAttractions';
+import { argentinaAttractions } from '../data/argentinaAttractions';
+
 
 
 
@@ -496,43 +498,19 @@ export const countries: Record<string, CountryData> = {
         description: "From Patagonian glaciers to the sultry streets of Buenos Aires, a land of passion.",
         heroImage: "https://images.unsplash.com/photo-1545386575-78c5a0a50553?q=80&w=2000&auto=format&fit=crop",
         tips: ["Learn some tango steps before visiting", "Dinner is served after 9 PM", "Steak is a must – try an asado"],
-        destinations: [
-            {
-                name: "Perito Moreno Glacier",
-                city: "El Calafate",
-                country: "Argentina",
-                description: "One of the world's few advancing glaciers, a UNESCO site in Los Glaciares National Park.",
-                image: "https://images.unsplash.com/photo-1614749292331-9252796695b2?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Iguazu Falls",
-                city: "Puerto Iguazú",
-                country: "Argentina",
-                description: "Wider than Niagara and more powerful than Victoria, these waterfalls are truly awe-inspiring.",
-                image: "https://images.unsplash.com/photo-1595115166304-453664d603a1?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Buenos Aires",
-                city: "Buenos Aires",
-                country: "Argentina",
-                description: "The 'Paris of South America', famed for tango, steak, and rich European-influenced architecture.",
-                image: "https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Torres del Paine",
-                city: "Magallanes",
-                country: "Argentina",
-                description: "A national park featuring the dramatic Paine Massif and stunning Patagonian wilderness.",
-                image: "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Mendoza Wine Region",
-                city: "Mendoza",
-                country: "Argentina",
-                description: "The heart of Argentina's wine country set against the backdrop of the Andes Mountains.",
-                image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&q=80&w=800"
-            }
-        ]
+        destinations: argentinaAttractions.map(attr => ({
+            name: attr.name,
+            city: attr.location,
+            country: 'Argentina',
+            description: attr.description,
+            image: attr.image || '',
+            category: attr.category,
+            whyVisit: attr.whyVisit,
+            bestTime: attr.bestTime,
+            insiderTip: attr.insiderTip,
+            howToGetThere: attr.howToGetThere,
+            cost: attr.cost,
+        }))
     },
     chile: {
         name: "Chile",
