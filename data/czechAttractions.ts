@@ -153,7 +153,7 @@ export const czechAttractions = [
     insiderTip: "The Archbishop's library is one of the most beautiful in the Czech Republic — request access on the chateau tour. The circular colonnade of the Flower Garden is used as a wedding venue — the space has exceptional elegance.",
     howToGetThere: "Train from Brno (1 hour) or Olomouc (40 minutes).",
     cost: "Chateau tour adults 220 CZK (€9). Flower Garden free.",
-    image: "/images/attractions/czech-kromeriz-gardens.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Z%C3%A1mek_Krom%C4%9B%C5%99%C3%AD%C5%BE_2017.jpg/960px-Z%C3%A1mek_Krom%C4%9B%C5%99%C3%AD%C5%BE_2017.jpg"
   },
   {
     name: "Olomouc Holy Trinity Column",
@@ -201,7 +201,7 @@ export const czechAttractions = [
     insiderTip: "Take Tour III (the longest tour) to access the most private apartments including the Archduke's personal bedroom, bathroom, and the Chambre du Chasseur with thousands of hunting trophies. This tour requires advance booking.",
     howToGetThere: "Train from Prague to Benešov (1 hour) then 2km walk or taxi to the castle.",
     cost: "Tour III adults 320 CZK (€13).",
-    image: "/images/attractions/czech-konopiste-castle.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Z%C3%A1mek_Konopi%C5%A1t%C4%9B_2019.jpg/960px-Z%C3%A1mek_Konopi%C5%A1t%C4%9B_2019.jpg"
   },
   {
     name: "Mariánské Lázně",

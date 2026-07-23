@@ -12,6 +12,7 @@ import { norwayAttractions } from '../data/norwayAttractions';
 import { swedenAttractions } from '../data/swedenAttractions';
 import { finlandAttractions } from '../data/finlandAttractions';
 import { polandAttractions } from '../data/polandAttractions';
+import { czechAttractions } from '../data/czechAttractions';
 
 export interface Destination {
     name: string;
@@ -324,43 +325,19 @@ export const countries: Record<string, CountryData> = {
         description: "Fairy-tale castles, bohemian culture, and the golden city of Prague.",
         heroImage: "https://images.unsplash.com/photo-1541849546-216549ae216d?q=80&w=2000&auto=format&fit=crop",
         tips: ["Carry small change for tipping", "Prague is very walkable", "Try trdelník and svíčková"],
-        destinations: [
-            {
-                name: "Prague Castle",
-                city: "Prague",
-                country: "Czech Republic",
-                description: "The largest ancient castle in the world, dominating the city's skyline.",
-                image: "https://images.unsplash.com/photo-1541849546-216549ae216d?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Charles Bridge",
-                city: "Prague",
-                country: "Czech Republic",
-                description: "A historic 14th-century bridge adorned with Baroque statues spanning the Vltava River.",
-                image: "https://images.unsplash.com/photo-1519677100203-a0e668c92439?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Old Town Square",
-                city: "Prague",
-                country: "Czech Republic",
-                description: "A vibrant square with the famous Astronomical Clock and Gothic Týn Church.",
-                image: "https://images.unsplash.com/photo-1592906209472-a36b1f3782ef?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Český Krumlov Castle",
-                city: "Český Krumlov",
-                country: "Czech Republic",
-                description: "A UNESCO-listed castle complex in a stunning medieval town surrounded by the Vltava River.",
-                image: "https://images.unsplash.com/photo-1558618047-f4e90b4ee24a?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Karlovy Vary",
-                city: "Karlovy Vary",
-                country: "Czech Republic",
-                description: "A famous spa town known for its hot springs, colonnades, and film festival.",
-                image: "https://images.unsplash.com/photo-1543783207-ec64e4d95325?auto=format&fit=crop&q=80&w=800"
-            }
-        ]
+        destinations: czechAttractions.map(attr => ({
+            name: attr.name,
+            city: attr.location,
+            country: 'Czech Republic',
+            description: attr.description,
+            image: attr.image || '',
+            category: attr.category,
+            whyVisit: attr.whyVisit,
+            bestTime: attr.bestTime,
+            insiderTip: attr.insiderTip,
+            howToGetThere: attr.howToGetThere,
+            cost: attr.cost,
+        }))
     },
     hungary: {
         name: "Hungary",
