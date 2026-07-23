@@ -19,6 +19,8 @@ import { jordanAttractions } from '../data/jordanAttractions';
 import { malaysiaAttractions } from '../data/malaysiaAttractions';
 import { sriLankaAttractions } from '../data/sriLankaAttractions';
 import { newZealandAttractions } from '../data/newZealandAttractions';
+import { mexicoAttractions } from '../data/mexicoAttractions';
+
 
 
 
@@ -474,43 +476,19 @@ export const countries: Record<string, CountryData> = {
         description: "Ancient Mayan ruins, vibrant beaches, and a rich tapestry of culture and cuisine.",
         heroImage: "https://images.unsplash.com/photo-1518638150340-f706e86654de?q=80&w=2000&auto=format&fit=crop",
         tips: ["Don't drink tap water", "Try authentic tacos from street stalls", "Bargain at local markets"],
-        destinations: [
-            {
-                name: "Chichen Itza",
-                city: "Yucatán",
-                country: "Mexico",
-                description: "A UNESCO Wonder of the World – the pre-Columbian Mayan city dominated by the El Castillo pyramid.",
-                image: "https://images.unsplash.com/photo-1518638150340-f706e86654de?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Cenotes of Yucatán",
-                city: "Yucatán",
-                country: "Mexico",
-                description: "Natural sinkholes filled with crystal-clear waters, sacred to the ancient Maya people.",
-                image: "https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Mexico City Historic Centre",
-                city: "Mexico City",
-                country: "Mexico",
-                description: "A UNESCO-listed historic center with Aztec ruins, colonial architecture, and vibrant street life.",
-                image: "https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Palenque",
-                city: "Chiapas",
-                country: "Mexico",
-                description: "One of the finest examples of Maya art and architecture, set in a lush tropical jungle.",
-                image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Tulum",
-                city: "Quintana Roo",
-                country: "Mexico",
-                description: "Clifftop Mayan ruins overlooking turquoise Caribbean waters and white sandy beaches.",
-                image: "https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?auto=format&fit=crop&q=80&w=800"
-            }
-        ]
+        destinations: mexicoAttractions.map(attr => ({
+            name: attr.name,
+            city: attr.location,
+            country: 'Mexico',
+            description: attr.description,
+            image: attr.image || '',
+            category: attr.category,
+            whyVisit: attr.whyVisit,
+            bestTime: attr.bestTime,
+            insiderTip: attr.insiderTip,
+            howToGetThere: attr.howToGetThere,
+            cost: attr.cost,
+        }))
     },
     argentina: {
         name: "Argentina",
