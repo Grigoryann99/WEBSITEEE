@@ -8,6 +8,7 @@ import { usaAttractions } from '../data/usaAttractions';
 import { greeceAttractions } from '../data/greeceAttractions';
 import { thailandAttractions } from '../data/thailandAttractions';
 import { uaeAttractions } from '../data/uaeAttractions';
+import { norwayAttractions } from '../data/norwayAttractions';
 
 export interface Destination {
     name: string;
@@ -240,43 +241,19 @@ export const countries: Record<string, CountryData> = {
         description: "Dramatic fjords, the Northern Lights, and pristine Arctic landscapes await.",
         heroImage: "https://images.unsplash.com/photo-1504233529578-6d46baba6d34?q=80&w=2000&auto=format&fit=crop",
         tips: ["Embrace the 'friluftsliv' outdoor lifestyle", "Book fjord cruises in advance", "Pack layers for unpredictable weather"],
-        destinations: [
-            {
-                name: "Geirangerfjord",
-                city: "Geiranger",
-                country: "Norway",
-                description: "A UNESCO-listed fjord famous for its stunning natural beauty and cascading waterfalls.",
-                image: "https://images.unsplash.com/photo-1507272931001-fc06c17e4f43?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Northern Lights",
-                city: "Tromsø",
-                country: "Norway",
-                description: "The aurora borealis dancing across the Arctic sky in one of the world's best viewing spots.",
-                image: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Bryggen Wharf",
-                city: "Bergen",
-                country: "Norway",
-                description: "A UNESCO World Heritage Site featuring colourful wooden houses along the old wharf.",
-                image: "https://images.unsplash.com/photo-1555993539-1732fc44e3f3?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Preikestolen",
-                city: "Stavanger",
-                country: "Norway",
-                description: "A massive cliff rising 604 metres above the Lysefjord, offering breathtaking views.",
-                image: "https://images.unsplash.com/photo-1562177257-dbb47ddd9d92?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Lofoten Islands",
-                city: "Lofoten",
-                country: "Norway",
-                description: "An archipelago with dramatic peaks, calm fjords, and traditional red fishing cabins.",
-                image: "https://images.unsplash.com/photo-1520180072364-5b2e28650722?auto=format&fit=crop&q=80&w=800"
-            }
-        ]
+        destinations: norwayAttractions.map(attr => ({
+            name: attr.name,
+            city: attr.location,
+            country: 'Norway',
+            description: attr.description,
+            image: attr.image || '',
+            category: attr.category,
+            whyVisit: attr.whyVisit,
+            bestTime: attr.bestTime,
+            insiderTip: attr.insiderTip,
+            howToGetThere: attr.howToGetThere,
+            cost: attr.cost,
+        }))
     },
     sweden: {
         name: "Sweden",
