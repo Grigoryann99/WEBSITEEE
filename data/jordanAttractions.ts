@@ -153,7 +153,7 @@ export const jordanAttractions = [
     insiderTip: "Explore the lower Crusader castle levels with a torch — the underground vaulted halls and storage galleries are dark but atmospheric and extend considerably further than most visitors venture.",
     howToGetThere: "Drive from Amman (130km south, 2 hours) or take a bus from Amman South Bus Station.",
     cost: "Adults 3 JOD (€4). Jordan Pass includes entry.",
-    image: "/images/attractions/jordan-kerak-castle.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Kerak_BW_1.JPG/960px-Kerak_BW_1.JPG"
   },
   {
     name: "Shobak Castle",
@@ -165,7 +165,7 @@ export const jordanAttractions = [
     insiderTip: "Descend the secret staircase inside the castle that the Crusaders used to reach a water supply below during sieges — over 300 steps descend through solid rock to an underground spring, an extraordinary feat of medieval engineering.",
     howToGetThere: "Drive from Petra (35km north). En route from Amman to Petra.",
     cost: "Adults 1 JOD (€1.30). Jordan Pass does not include.",
-    image: "/images/attractions/jordan-shobak-castle.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Shobak_Castle_in_Jordan.jpg/960px-Shobak_Castle_in_Jordan.jpg"
   },
   {
     name: "Umm Qais (Gadara)",
@@ -177,7 +177,7 @@ export const jordanAttractions = [
     insiderTip: "Spend time at the Umm Qais Resthouse restaurant (on the site, in an Ottoman mansion) — the terrace view over the Sea of Galilee while eating Jordan's best mezze is one of the country's finest dining experiences.",
     howToGetThere: "Drive from Amman (110km north, 2 hours) or take a bus to Irbid then taxi.",
     cost: "Adults 3 JOD (€4). Jordan Pass includes entry.",
-    image: "/images/attractions/jordan-umm-qais.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Modern_Umm_Qais%2C_Jordan.jpg/960px-Modern_Umm_Qais%2C_Jordan.jpg"
   },
   {
     name: "Qasr Amra Desert Castle",
@@ -189,7 +189,7 @@ export const jordanAttractions = [
     insiderTip: "Look for the zodiac ceiling fresco in the caldarium (hot room) — the 12 zodiac constellations, painted in the early 8th century in a desert bath house, constitute one of the earliest surviving representations of the zodiac in the world.",
     howToGetThere: "Drive from Amman (80km east, 1 hour) on the Desert Highway. No public transport.",
     cost: "Adults 3 JOD (€4). Jordan Pass includes entry.",
-    image: "/images/attractions/jordan-qasr-amra.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Qasr_Amra_Jordan.jpg/960px-Qasr_Amra_Jordan.jpg"
   },
   {
     name: "Ma'in Hot Springs",
@@ -201,7 +201,7 @@ export const jordanAttractions = [
     insiderTip: "The Evason Ma'In Six Senses resort has a day-use thermal pool complex with extraordinary Dead Sea views — worth the entry fee for the combination of luxury spa facilities and natural springs.",
     howToGetThere: "Drive from Madaba (25km, 30 minutes) or from Amman (65km, 1 hour).",
     cost: "Public area free. Resort day use from 30 JOD (€39) including use of facilities.",
-    image: "/images/attractions/jordan-main-hot-springs.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Ma%27in_Hot_Springs2.JPG/960px-Ma%27in_Hot_Springs2.JPG"
   },
   {
     name: "Azraq Wetland Reserve",
@@ -213,7 +213,7 @@ export const jordanAttractions = [
     insiderTip: "Take an early morning birding walk with an RSCN guide — the diversity and numbers of migratory birds in spring (particularly on April mornings) can be exceptional. The Azraq Fort where Lawrence of Arabia spent two winters is also worth visiting.",
     howToGetThere: "Drive from Amman (100km east, 1.5 hours). Combine with the eastern desert castles circuit.",
     cost: "Reserve entry 7 JOD (€9). Guided birdwatching from 10 JOD (€13).",
-    image: "/images/attractions/jordan-azraq-wetland.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Azraq_view.jpg/960px-Azraq_view.jpg"
   },
   {
     name: "Wadi al-Hasa",
@@ -225,7 +225,7 @@ export const jordanAttractions = [
     insiderTip: "Hire a local guide from the village of Safi at the base of the wadi — they know the location of the hot spring pools (naturally heated by geothermal activity) hidden within the canyon walls, accessible only on foot.",
     howToGetThere: "Drive from Karak (40km south) or from Petra (60km north). A local guide from Safi is essential.",
     cost: "Area free. Local guide from 30 JOD (€39) for a half day.",
-    image: "/images/attractions/jordan-wadi-al-hasa.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Wadi_Hasa_Jordan.jpg/960px-Wadi_Hasa_Jordan.jpg"
   },
   {
     name: "Royal Automobile Museum",

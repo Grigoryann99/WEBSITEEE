@@ -15,6 +15,7 @@ import { polandAttractions } from '../data/polandAttractions';
 import { czechAttractions } from '../data/czechAttractions';
 import { hungaryAttractions } from '../data/hungaryAttractions';
 import { qatarAttractions } from '../data/qatarAttractions';
+import { jordanAttractions } from '../data/jordanAttractions';
 
 export interface Destination {
     name: string;
@@ -387,43 +388,19 @@ export const countries: Record<string, CountryData> = {
         description: "An ancient land of rose-red cities, desert wonders, and extraordinary hospitality.",
         heroImage: "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=2000&auto=format&fit=crop",
         tips: ["Jordan Pass saves on visa and entrance fees", "Wadi Rum is best at sunrise or sunset", "Bargaining is expected in markets"],
-        destinations: [
-            {
-                name: "Petra",
-                city: "Ma'an Governorate",
-                country: "Jordan",
-                description: "The iconic rose-red city carved into sandstone cliffs, a UNESCO Wonder of the World.",
-                image: "https://images.unsplash.com/photo-1501233345909-17369106823c?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Wadi Rum",
-                city: "Aqaba",
-                country: "Jordan",
-                description: "A protected desert wilderness with dramatic red sand dunes and ancient rock inscriptions.",
-                image: "https://images.unsplash.com/photo-1582236479702-8240596cdcc7?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Dead Sea",
-                city: "Madaba",
-                country: "Jordan",
-                description: "The lowest point on Earth, where the extreme salt concentration allows effortless floating.",
-                image: "https://images.unsplash.com/photo-1544971587-b842c27f8e14?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Jerash Ruins",
-                city: "Jerash",
-                country: "Jordan",
-                description: "One of the best-preserved Roman provincial cities in the world, with colonnaded streets.",
-                image: "https://images.unsplash.com/photo-1551821437-0570b5a93901?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Aqaba",
-                city: "Aqaba",
-                country: "Jordan",
-                description: "Jordan's only coastal city on the Red Sea, a paradise for divers with vibrant coral reefs.",
-                image: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80&w=800"
-            }
-        ]
+        destinations: jordanAttractions.map(attr => ({
+            name: attr.name,
+            city: attr.location,
+            country: 'Jordan',
+            description: attr.description,
+            image: attr.image || '',
+            category: attr.category,
+            whyVisit: attr.whyVisit,
+            bestTime: attr.bestTime,
+            insiderTip: attr.insiderTip,
+            howToGetThere: attr.howToGetThere,
+            cost: attr.cost,
+        }))
     },
     malaysia: {
         name: "Malaysia",
