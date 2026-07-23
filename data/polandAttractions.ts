@@ -177,7 +177,7 @@ export const polandAttractions = [
     insiderTip: "Visit the Old Synagogue (the oldest surviving synagogue in Poland, now a museum), then walk through Szeroka Street for the atmospheric heart of the quarter. Evening klezmer concerts in Kazimierz's courtyard restaurants are genuinely moving.",
     howToGetThere: "20-minute walk from Kraków Market Square or tram 3/19/24 to Miodowa.",
     cost: "Quarter free. Old Synagogue 14 PLN (€3). Schindler's Factory 36 PLN (€8).",
-    image: "/images/attractions/poland-kazimierz-jewish-quarter.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Krak%C3%B3w_Kazimierz_Plac_Nowy.jpg/960px-Krak%C3%B3w_Kazimierz_Plac_Nowy.jpg"
   },
   {
     name: "Zamość Old Town",

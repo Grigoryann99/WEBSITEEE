@@ -11,6 +11,7 @@ import { uaeAttractions } from '../data/uaeAttractions';
 import { norwayAttractions } from '../data/norwayAttractions';
 import { swedenAttractions } from '../data/swedenAttractions';
 import { finlandAttractions } from '../data/finlandAttractions';
+import { polandAttractions } from '../data/polandAttractions';
 
 export interface Destination {
     name: string;
@@ -303,43 +304,19 @@ export const countries: Record<string, CountryData> = {
         description: "A land of medieval castles, stunning old towns, and rich cultural heritage.",
         heroImage: "https://images.unsplash.com/photo-1540835237482-cb9ca281c01f?q=80&w=2000&auto=format&fit=crop",
         tips: ["Polish zloty is the currency, not Euro", "Try pierogi and bigos", "Tipping ~10% is appreciated"],
-        destinations: [
-            {
-                name: "Wawel Castle",
-                city: "Kraków",
-                country: "Poland",
-                description: "A fortified architectural complex in Kraków that served as the residence of Polish kings.",
-                image: "https://images.unsplash.com/photo-1519197924294-4ba991a11128?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Auschwitz-Birkenau",
-                city: "Oświęcim",
-                country: "Poland",
-                description: "A sobering UNESCO World Heritage Site and reminder of the Holocaust's atrocities.",
-                image: "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Warsaw Old Town",
-                city: "Warsaw",
-                country: "Poland",
-                description: "The historic center of Warsaw, meticulously rebuilt after WWII destruction, now a UNESCO site.",
-                image: "https://images.unsplash.com/photo-1607427293702-036933bbf746?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Wieliczka Salt Mine",
-                city: "Wieliczka",
-                country: "Poland",
-                description: "A UNESCO-listed mine with stunning underground chapels, lakes, and sculptures carved from salt.",
-                image: "https://images.unsplash.com/photo-1569431511475-e52013a69d4e?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Białowieża Forest",
-                city: "Białowieża",
-                country: "Poland",
-                description: "Europe's last primeval forest, home to the continent's largest population of European bison.",
-                image: "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&q=80&w=800"
-            }
-        ]
+        destinations: polandAttractions.map(attr => ({
+            name: attr.name,
+            city: attr.location,
+            country: 'Poland',
+            description: attr.description,
+            image: attr.image || '',
+            category: attr.category,
+            whyVisit: attr.whyVisit,
+            bestTime: attr.bestTime,
+            insiderTip: attr.insiderTip,
+            howToGetThere: attr.howToGetThere,
+            cost: attr.cost,
+        }))
     },
     czech_republic: {
         name: "Czech Republic",
