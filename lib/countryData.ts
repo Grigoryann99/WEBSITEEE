@@ -16,6 +16,8 @@ import { czechAttractions } from '../data/czechAttractions';
 import { hungaryAttractions } from '../data/hungaryAttractions';
 import { qatarAttractions } from '../data/qatarAttractions';
 import { jordanAttractions } from '../data/jordanAttractions';
+import { malaysiaAttractions } from '../data/malaysiaAttractions';
+
 
 export interface Destination {
     name: string;
@@ -408,43 +410,19 @@ export const countries: Record<string, CountryData> = {
         description: "Tropical rainforests, diverse cultures, and iconic skyscrapers define this vibrant nation.",
         heroImage: "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?q=80&w=2000&auto=format&fit=crop",
         tips: ["Bring mosquito repellent for jungle trips", "Remove shoes when entering temples/homes", "Ringgit is the currency"],
-        destinations: [
-            {
-                name: "Petronas Twin Towers",
-                city: "Kuala Lumpur",
-                country: "Malaysia",
-                description: "The world's tallest twin towers, an iconic symbol of Malaysia's modern ambition.",
-                image: "https://images.unsplash.com/photo-1551524164-687a55ea1110?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Batu Caves",
-                city: "Gombak",
-                country: "Malaysia",
-                description: "A series of limestone caves housing colourful Hindu temples and a golden Lord Murugan statue.",
-                image: "https://images.unsplash.com/photo-1600367163359-d51d40bcb5f5?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Langkawi",
-                city: "Langkawi",
-                country: "Malaysia",
-                description: "An archipelago of 99 islands with stunning beaches, mangroves, and duty-free shopping.",
-                image: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Borneo Rainforest",
-                city: "Kota Kinabalu",
-                country: "Malaysia",
-                description: "One of the world's oldest rainforests, home to orangutans, pygmy elephants, and proboscis monkeys.",
-                image: "https://images.unsplash.com/photo-1571607388263-1044f9ea01dd?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "George Town",
-                city: "Penang",
-                country: "Malaysia",
-                description: "A UNESCO-listed city famous for its street art, heritage architecture, and incredible food scene.",
-                image: "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&q=80&w=800"
-            }
-        ]
+        destinations: malaysiaAttractions.map(attr => ({
+            name: attr.name,
+            city: attr.location,
+            country: 'Malaysia',
+            description: attr.description,
+            image: attr.image || '',
+            category: attr.category,
+            whyVisit: attr.whyVisit,
+            bestTime: attr.bestTime,
+            insiderTip: attr.insiderTip,
+            howToGetThere: attr.howToGetThere,
+            cost: attr.cost,
+        }))
     },
     sri_lanka: {
         name: "Sri Lanka",
