@@ -225,7 +225,7 @@ export const newZealandAttractions = [
     insiderTip: "Walk the easy 20-minute paved loop track at sunset for warm light on the rugged West Coast sea stacks.",
     howToGetThere: "Located along State Highway 6 on the West Coast, 45 minutes drive north of Greymouth.",
     cost: "Free entry and parking at the Punakaiki Visitor Centre.",
-    image: "/images/attractions/new-zealand-pancake-rocks.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/a8/Pancake_Rocks_Punakaiki.jpg"
   },
   {
     name: "Stewart Island / Rakiura",
@@ -237,6 +237,6 @@ export const newZealandAttractions = [
     insiderTip: "Take a water taxi to Ulva Island Open Sanctuary for predator-free birdwatching featuring rare endemic species.",
     howToGetThere: "1-hour express ferry crossing from Bluff across the Foveaux Strait or a 15-minute flight from Invercargill.",
     cost: "Ferry crossing: approx. NZD $220 (€122) return. Flight: NZD $230 (€128) return.",
-    image: "/images/attractions/new-zealand-stewart-island.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/75/Oban_Stewart_Island.jpg"
   }
 ];
