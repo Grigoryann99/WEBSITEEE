@@ -22,6 +22,8 @@ import { newZealandAttractions } from '../data/newZealandAttractions';
 import { mexicoAttractions } from '../data/mexicoAttractions';
 import { argentinaAttractions } from '../data/argentinaAttractions';
 import { chileAttractions } from '../data/chileAttractions';
+import { peruAttractions } from '../data/peruAttractions';
+
 
 
 
@@ -540,43 +542,19 @@ export const countries: Record<string, CountryData> = {
         description: "Land of the Incas, from the highlands of Machu Picchu to the depths of the Amazon.",
         heroImage: "https://images.unsplash.com/photo-1587595431973-160d0d94add1?q=80&w=2000&auto=format&fit=crop",
         tips: ["Acclimatise to altitude in Cusco before Machu Picchu", "Try ceviche and lomo saltado", "Boots are essential for Inca Trail"],
-        destinations: [
-            {
-                name: "Machu Picchu",
-                city: "Cusco",
-                country: "Peru",
-                description: "The legendary Inca citadel set high in the Andes Mountains, a Wonder of the World.",
-                image: "https://images.unsplash.com/photo-1580619305218-8423a7ef79b4?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Cusco",
-                city: "Cusco",
-                country: "Peru",
-                description: "The historic capital of the Inca Empire, featuring dazzling colonial architecture over Inca foundations.",
-                image: "https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Lake Titicaca",
-                city: "Puno",
-                country: "Peru",
-                description: "The world's highest navigable lake, home to the floating Uros reed islands.",
-                image: "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Nazca Lines",
-                city: "Nazca",
-                country: "Peru",
-                description: "Giant ancient geoglyphs etched into the desert, best seen from a small aircraft.",
-                image: "https://images.unsplash.com/photo-1555529323-c6ec6ec6ec6e?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Amazon Rainforest",
-                city: "Iquitos",
-                country: "Peru",
-                description: "A remote Amazon city accessible only by air or river, gateway to pristine jungle adventures.",
-                image: "https://images.unsplash.com/photo-1580619305218-8423a7ef79b4?auto=format&fit=crop&q=80&w=800"
-            }
-        ]
+        destinations: peruAttractions.map(attr => ({
+            name: attr.name,
+            city: attr.location,
+            country: 'Peru',
+            description: attr.description,
+            image: attr.image || '',
+            category: attr.category,
+            whyVisit: attr.whyVisit,
+            bestTime: attr.bestTime,
+            insiderTip: attr.insiderTip,
+            howToGetThere: attr.howToGetThere,
+            cost: attr.cost,
+        }))
     },
     colombia: {
         name: "Colombia",
