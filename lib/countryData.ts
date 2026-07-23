@@ -14,6 +14,7 @@ import { finlandAttractions } from '../data/finlandAttractions';
 import { polandAttractions } from '../data/polandAttractions';
 import { czechAttractions } from '../data/czechAttractions';
 import { hungaryAttractions } from '../data/hungaryAttractions';
+import { qatarAttractions } from '../data/qatarAttractions';
 
 export interface Destination {
     name: string;
@@ -366,43 +367,19 @@ export const countries: Record<string, CountryData> = {
         description: "A futuristic Gulf state blending ultramodern skylines with ancient desert traditions.",
         heroImage: "https://images.unsplash.com/photo-1572705655951-9c9e2f8f1b4c?q=80&w=2000&auto=format&fit=crop",
         tips: ["Dress modestly in public", "Alcohol is available in licensed venues", "Visit the souqs for authentic culture"],
-        destinations: [
-            {
-                name: "Museum of Islamic Art",
-                city: "Doha",
-                country: "Qatar",
-                description: "A stunning I. M. Pei-designed museum showcasing 1,400 years of Islamic art.",
-                image: "https://images.unsplash.com/photo-1578330101861-197c31d9999c?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Souq Waqif",
-                city: "Doha",
-                country: "Qatar",
-                description: "A traditional market offering spices, handicrafts, and authentic Qatari culture.",
-                image: "https://images.unsplash.com/photo-1578913171703-46461a1ef837?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "The Pearl-Qatar",
-                city: "Doha",
-                country: "Qatar",
-                description: "An artificial island with luxury residences, yacht marinas, and world-class dining.",
-                image: "https://images.unsplash.com/photo-1647252262017-582a7dbb73d0?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Katara Cultural Village",
-                city: "Doha",
-                country: "Qatar",
-                description: "A cultural complex featuring theaters, galleries, and traditional Qatari architecture.",
-                image: "https://images.unsplash.com/photo-1634547474026-8051642fb376?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Inland Sea (Khor Al Adaid)",
-                city: "Al Wakrah",
-                country: "Qatar",
-                description: "A UNESCO-recognized natural reserve where the sea meets the desert in spectacular fashion.",
-                image: "https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&q=80&w=800"
-            }
-        ]
+        destinations: qatarAttractions.map(attr => ({
+            name: attr.name,
+            city: attr.location,
+            country: 'Qatar',
+            description: attr.description,
+            image: attr.image || '',
+            category: attr.category,
+            whyVisit: attr.whyVisit,
+            bestTime: attr.bestTime,
+            insiderTip: attr.insiderTip,
+            howToGetThere: attr.howToGetThere,
+            cost: attr.cost,
+        }))
     },
     jordan: {
         name: "Jordan",
