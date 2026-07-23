@@ -189,7 +189,7 @@ export const finlandAttractions = [
     insiderTip: "Rent a canoe and paddle along the 'Prehistoric Painting Route' — the red ochre figures painted by Stone Age people on the lakeside cliffs are accessible only by water and are genuinely moving to see.",
     howToGetThere: "Drive from Kuusamo (1 hour) or Kajaani (2 hours). No public transport to the park.",
     cost: "Park free. Canoe rental from €40/day.",
-    image: "/images/attractions/finland-hossa-national-park.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Julma-%C3%96lkky_gorge.jpg/960px-Julma-%C3%96lkky_gorge.jpg"
   },
   {
     name: "Riisitunturi National Park",
@@ -201,7 +201,7 @@ export const finlandAttractions = [
     insiderTip: "Snowshoe to the summit rather than skiing — snowshoes let you wander between the tykky trees in any direction. Sunrise on a clear February morning transforms the snow into a golden spectacle.",
     howToGetThere: "Drive from Posio village (20km). Fly to Kuusamo Airport (1 hour away) from Helsinki.",
     cost: "Park free. Snowshoe rental from €15/day.",
-    image: "/images/attractions/finland-riisitunturi-national-park.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Noukavaara_-_Riisitunturi_-_Posio_-_Finland.jpg/960px-Noukavaara_-_Riisitunturi_-_Posio_-_Finland.jpg"
   },
   {
     name: "Savonlinna Opera Festival",
@@ -213,7 +213,7 @@ export const finlandAttractions = [
     insiderTip: "Book tickets at least 6 months in advance — the festival sells out fast, especially for opening night and weekend performances. Dress warmly (Finnish summer evenings can be cool even in July) and bring a blanket.",
     howToGetThere: "Train from Helsinki to Savonlinna (3.5 hours). The castle is a 15-minute walk from the station.",
     cost: "Opera tickets from €60 to €200. Castle entry separate.",
-    image: "/images/attractions/finland-savonlinna-opera-festival.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Olofsborg_fr%C3%A5n_sj%C3%B6sidan.JPG/960px-Olofsborg_fr%C3%A5n_sj%C3%B6sidan.JPG"
   },
   {
     name: "Tampere Vapriikki Museum",
@@ -225,7 +225,7 @@ export const finlandAttractions = [
     insiderTip: "The Moomin Museum within Vapriikki is the world's only museum dedicated to Tove Jansson's Moomin characters — featuring original illustrations and the extraordinary diorama scenes. Essential for Moomin fans of any age.",
     howToGetThere: "5-minute walk from Tampere Central Station along the river.",
     cost: "Adults €15. Includes all permanent collections.",
-    image: "/images/attractions/finland-tampere-vapriikki.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Vapriikki.jpg/960px-Vapriikki.jpg"
   },
   {
     name: "Midnight Sun Experience",

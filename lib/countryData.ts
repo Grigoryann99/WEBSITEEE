@@ -10,6 +10,7 @@ import { thailandAttractions } from '../data/thailandAttractions';
 import { uaeAttractions } from '../data/uaeAttractions';
 import { norwayAttractions } from '../data/norwayAttractions';
 import { swedenAttractions } from '../data/swedenAttractions';
+import { finlandAttractions } from '../data/finlandAttractions';
 
 export interface Destination {
     name: string;
@@ -282,43 +283,19 @@ export const countries: Record<string, CountryData> = {
         description: "Land of a thousand lakes, saunas, and the magical Arctic wilderness.",
         heroImage: "https://images.unsplash.com/photo-1538332576228-eb5b4c4de6f5?q=80&w=2000&auto=format&fit=crop",
         tips: ["Sauna etiquette is important – clothing optional", "Silence is a sign of respect", "Try salmiakki (salty liquorice)"],
-        destinations: [
-            {
-                name: "Helsinki Cathedral",
-                city: "Helsinki",
-                country: "Finland",
-                description: "A striking neoclassical cathedral dominating the Senate Square in the capital.",
-                image: "https://images.unsplash.com/photo-1536721107434-6b1a85a20ab1?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Santa Claus Village",
-                city: "Rovaniemi",
-                country: "Finland",
-                description: "The official hometown of Santa Claus on the Arctic Circle, open year-round.",
-                image: "https://images.unsplash.com/photo-1491555103944-7c647fd857e6?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Lakeland",
-                city: "Savonlinna",
-                country: "Finland",
-                description: "One of Europe's largest lake districts with over 180,000 lakes surrounded by forests.",
-                image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Nuuksio National Park",
-                city: "Espoo",
-                country: "Finland",
-                description: "A pristine wilderness close to Helsinki, perfect for hiking and wildlife watching.",
-                image: "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Suomenlinna Sea Fortress",
-                city: "Helsinki",
-                country: "Finland",
-                description: "A UNESCO-listed sea fortress built on an archipelago, now a vibrant island community.",
-                image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=800"
-            }
-        ]
+        destinations: finlandAttractions.map(attr => ({
+            name: attr.name,
+            city: attr.location,
+            country: 'Finland',
+            description: attr.description,
+            image: attr.image || '',
+            category: attr.category,
+            whyVisit: attr.whyVisit,
+            bestTime: attr.bestTime,
+            insiderTip: attr.insiderTip,
+            howToGetThere: attr.howToGetThere,
+            cost: attr.cost,
+        }))
     },
     poland: {
         name: "Poland",
