@@ -18,6 +18,8 @@ import { qatarAttractions } from '../data/qatarAttractions';
 import { jordanAttractions } from '../data/jordanAttractions';
 import { malaysiaAttractions } from '../data/malaysiaAttractions';
 import { sriLankaAttractions } from '../data/sriLankaAttractions';
+import { newZealandAttractions } from '../data/newZealandAttractions';
+
 
 
 
@@ -452,43 +454,19 @@ export const countries: Record<string, CountryData> = {
         description: "Middle Earth awaits with majestic fjords, Māori culture, and adventure sports.",
         heroImage: "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?q=80&w=2000&auto=format&fit=crop",
         tips: ["Drive on the left side of the road", "Book huts on popular Tramping trails early", "Respect Māori customs and marae"],
-        destinations: [
-            {
-                name: "Milford Sound",
-                city: "Fiordland",
-                country: "New Zealand",
-                description: "Often called the Eighth Wonder of the World, this fjord features towering peaks and cascading waterfalls.",
-                image: "https://images.unsplash.com/photo-1465056836041-7f43ac27dcb5?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Queenstown",
-                city: "Queenstown",
-                country: "New Zealand",
-                description: "The adventure capital of the world, set against the Remarkables mountain range.",
-                image: "https://images.unsplash.com/photo-1488085061387-422e29b40080?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Tongariro Alpine Crossing",
-                city: "Tongariro",
-                country: "New Zealand",
-                description: "One of the world's great day walks through volcanic landscapes past emerald lakes.",
-                image: "https://images.unsplash.com/photo-1494783367193-149034c05e8f?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Bay of Islands",
-                city: "Paihia",
-                country: "New Zealand",
-                description: "A subtropical paradise with 144 islands, great for sailing, dolphin encounters, and diving.",
-                image: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Rotorua",
-                city: "Rotorua",
-                country: "New Zealand",
-                description: "A geothermal wonderland with bubbling mud pools, geysers, and rich Māori culture.",
-                image: "https://images.unsplash.com/photo-1494783367193-149034c05e8f?auto=format&fit=crop&q=80&w=800"
-            }
-        ]
+        destinations: newZealandAttractions.map(attr => ({
+            name: attr.name,
+            city: attr.location,
+            country: 'New Zealand',
+            description: attr.description,
+            image: attr.image || '',
+            category: attr.category,
+            whyVisit: attr.whyVisit,
+            bestTime: attr.bestTime,
+            insiderTip: attr.insiderTip,
+            howToGetThere: attr.howToGetThere,
+            cost: attr.cost,
+        }))
     },
     mexico: {
         name: "Mexico",
