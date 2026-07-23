@@ -21,6 +21,8 @@ import { sriLankaAttractions } from '../data/sriLankaAttractions';
 import { newZealandAttractions } from '../data/newZealandAttractions';
 import { mexicoAttractions } from '../data/mexicoAttractions';
 import { argentinaAttractions } from '../data/argentinaAttractions';
+import { chileAttractions } from '../data/chileAttractions';
+
 
 
 
@@ -518,43 +520,19 @@ export const countries: Record<string, CountryData> = {
         description: "A sliver of land stretching from the driest desert to the end of the world.",
         heroImage: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=2000&auto=format&fit=crop",
         tips: ["Chile is very long – domestic flights save time", "Try empanadas and pisco sours", "The currency is Chilean peso"],
-        destinations: [
-            {
-                name: "Easter Island",
-                city: "Hanga Roa",
-                country: "Chile",
-                description: "Home to the mysterious moai statues, colossal figures carved by the Rapa Nui people.",
-                image: "https://images.unsplash.com/photo-1517400508447-f8dd518b86db?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Atacama Desert",
-                city: "San Pedro de Atacama",
-                country: "Chile",
-                description: "The driest non-polar desert on Earth, with otherworldly landscapes like Moon Valley.",
-                image: "https://images.unsplash.com/photo-1510253687831-0f982d7862fc?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Torres del Paine",
-                city: "Magallanes",
-                country: "Chile",
-                description: "Iconic granite towers piercing the Patagonian sky above ancient glaciers and turquoise lakes.",
-                image: "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Valparaíso",
-                city: "Valparaíso",
-                country: "Chile",
-                description: "A bohemian port city with colourful hillside homes, street art, and a vibrant cultural scene.",
-                image: "https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Chiloé Archipelago",
-                city: "Castro",
-                country: "Chile",
-                description: "A mystical island group with palafito stilt houses, UNESCO-listed wooden churches, and penguins.",
-                image: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80&w=800"
-            }
-        ]
+        destinations: chileAttractions.map(attr => ({
+            name: attr.name,
+            city: attr.location,
+            country: 'Chile',
+            description: attr.description,
+            image: attr.image || '',
+            category: attr.category,
+            whyVisit: attr.whyVisit,
+            bestTime: attr.bestTime,
+            insiderTip: attr.insiderTip,
+            howToGetThere: attr.howToGetThere,
+            cost: attr.cost,
+        }))
     },
     peru: {
         name: "Peru",
