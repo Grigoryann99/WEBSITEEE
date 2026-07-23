@@ -9,6 +9,7 @@ import { greeceAttractions } from '../data/greeceAttractions';
 import { thailandAttractions } from '../data/thailandAttractions';
 import { uaeAttractions } from '../data/uaeAttractions';
 import { norwayAttractions } from '../data/norwayAttractions';
+import { swedenAttractions } from '../data/swedenAttractions';
 
 export interface Destination {
     name: string;
@@ -261,43 +262,19 @@ export const countries: Record<string, CountryData> = {
         description: "Scandinavian design, enchanted forests, and a thriving cultural scene.",
         heroImage: "https://images.unsplash.com/photo-1509356843151-3e7d96a77d11?q=80&w=2000&auto=format&fit=crop",
         tips: ["Embrace 'fika' (coffee & cake breaks)", "Public transport is excellent", "Tap water is safe and delicious"],
-        destinations: [
-            {
-                name: "Gamla Stan",
-                city: "Stockholm",
-                country: "Sweden",
-                description: "Stockholm's old town with cobblestone streets, medieval buildings, and royal palace.",
-                image: "https://images.unsplash.com/photo-1509356843151-3e7d96a77d11?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "ABBA Museum",
-                city: "Stockholm",
-                country: "Sweden",
-                description: "An interactive museum dedicated to the legendary pop group ABBA on Djurgården island.",
-                image: "https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Vasa Museum",
-                city: "Stockholm",
-                country: "Sweden",
-                description: "Home to the only preserved 17th-century warship in the world, the Vasa.",
-                image: "https://images.unsplash.com/photo-1531219432768-9f540ce91ef3?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Gothenburg Archipelago",
-                city: "Gothenburg",
-                country: "Sweden",
-                description: "Thousands of islands perfect for kayaking, cycling, and enjoying Swedish seafood.",
-                image: "https://images.unsplash.com/photo-1572698495515-de5c6025b2a4?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Ice Hotel",
-                city: "Jukkasjärvi",
-                country: "Sweden",
-                description: "The world's first ice hotel, rebuilt each winter with unique art suites and ice sculptures.",
-                image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80&w=800"
-            }
-        ]
+        destinations: swedenAttractions.map(attr => ({
+            name: attr.name,
+            city: attr.location,
+            country: 'Sweden',
+            description: attr.description,
+            image: attr.image || '',
+            category: attr.category,
+            whyVisit: attr.whyVisit,
+            bestTime: attr.bestTime,
+            insiderTip: attr.insiderTip,
+            howToGetThere: attr.howToGetThere,
+            cost: attr.cost,
+        }))
     },
     finland: {
         name: "Finland",
