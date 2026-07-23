@@ -17,6 +17,8 @@ import { hungaryAttractions } from '../data/hungaryAttractions';
 import { qatarAttractions } from '../data/qatarAttractions';
 import { jordanAttractions } from '../data/jordanAttractions';
 import { malaysiaAttractions } from '../data/malaysiaAttractions';
+import { sriLankaAttractions } from '../data/sriLankaAttractions';
+
 
 
 export interface Destination {
@@ -430,43 +432,19 @@ export const countries: Record<string, CountryData> = {
         description: "The Pearl of the Indian Ocean, blessed with temples, tea, and pristine beaches.",
         heroImage: "https://images.unsplash.com/photo-1505856291099-4e1d3ea3cdb6?q=80&w=2000&auto=format&fit=crop",
         tips: ["Hire a tuk-tuk for short trips", "Respect temple dress codes", "Try Ceylon tea at its source"],
-        destinations: [
-            {
-                name: "Sigiriya Rock Fortress",
-                city: "Sigiriya",
-                country: "Sri Lanka",
-                description: "A 5th-century rock fortress rising 200m above the surrounding jungle, a UNESCO site.",
-                image: "https://images.unsplash.com/photo-1505856291099-4e1d3ea3cdb6?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Temple of the Tooth",
-                city: "Kandy",
-                country: "Sri Lanka",
-                description: "Sri Lanka's most sacred Buddhist temple housing the relic of the Buddha's tooth.",
-                image: "https://images.unsplash.com/photo-1581023067645-03704381e469?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Ella",
-                city: "Ella",
-                country: "Sri Lanka",
-                description: "A hill country gem with stunning viewpoints, tea plantations, and the famous Nine Arch Bridge.",
-                image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Unawatuna Beach",
-                city: "Galle",
-                country: "Sri Lanka",
-                description: "One of the world's best beaches, with a crescent bay, coral reefs, and beach restaurants.",
-                image: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80&w=800"
-            },
-            {
-                name: "Yala National Park",
-                city: "Yala",
-                country: "Sri Lanka",
-                description: "Sri Lanka's most visited park with the world's highest density of leopards and diverse wildlife.",
-                image: "https://images.unsplash.com/photo-1581023067645-03704381e469?auto=format&fit=crop&q=80&w=800"
-            }
-        ]
+        destinations: sriLankaAttractions.map(attr => ({
+            name: attr.name,
+            city: attr.location,
+            country: 'Sri Lanka',
+            description: attr.description,
+            image: attr.image || '',
+            category: attr.category,
+            whyVisit: attr.whyVisit,
+            bestTime: attr.bestTime,
+            insiderTip: attr.insiderTip,
+            howToGetThere: attr.howToGetThere,
+            cost: attr.cost,
+        }))
     },
     new_zealand: {
         name: "New Zealand",
