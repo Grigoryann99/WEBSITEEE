@@ -65,7 +65,7 @@ export default function SupportHero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.9 }}
                     >
-                        <button 
+                        <button
                             onClick={() => document.getElementById('support-form')?.scrollIntoView({ behavior: 'smooth' })}
                             className="bg-brand-light text-brand-dark px-[36px] py-[14px] rounded-[40px] font-inter font-medium tracking-wider text-sm hover:scale-105 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] active:scale-95 transition-all duration-300"
                         >

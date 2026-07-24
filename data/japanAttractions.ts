@@ -153,7 +153,7 @@ export const japanAttractions = [
     insiderTip: "Walk up to the Shiroyama Viewpoint at the north of the village for the famous panoramic shot of all the thatched roofs nestled in the valley.",
     howToGetThere: "Take the Shinkansen to Kanazawa, then board the Nohi Highway Bus to Shirakawa-go (approx. 1 hour 15 minutes).",
     cost: "Free to visit the village. Entry to historic farmhouses is ¥300.",
-    image: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80"
+    image: "/images/attractions/japan-shirakawa-go-village.jpg"
   },
   {
     name: "Hakone Onsen",
