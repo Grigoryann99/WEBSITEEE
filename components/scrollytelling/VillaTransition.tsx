@@ -39,11 +39,9 @@ export default function VillaTransition() {
     return (
         <section
             ref={containerRef}
-            className="relative min-h-screen flex items-center justify-center overflow-hidden py-32 border-t border-b border-black/10"
+            className="relative min-h-screen flex items-center justify-center overflow-hidden py-32 border-t border-b border-black/10 animate-vivid-gradient"
             style={{
                 background: 'linear-gradient(-45deg, #D1FAE5, #FEF3C7, #E0F2FE, #F3E8FF)',
-                backgroundSize: '400% 400%',
-                animation: 'vividGradient4Color 10s ease infinite'
             }}
         >
             {/* VIVID 4-COLOR ANIMATED MESH GRADIENT BLOBS */}
@@ -181,21 +179,6 @@ export default function VillaTransition() {
                     </p>
                 </motion.div>
             </motion.div>
-
-            {/* CSS Animation Keyframes for Vivid 4-Color Gradient */}
-            <style jsx>{`
-                @keyframes vividGradient4Color {
-                    0% {
-                        background-position: 0% 50%;
-                    }
-                    50% {
-                        background-position: 100% 50%;
-                    }
-                    100% {
-                        background-position: 0% 50%;
-                    }
-                }
-            `}</style>
         </section>
     );
 }

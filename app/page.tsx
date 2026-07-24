@@ -8,11 +8,9 @@ import Link from "next/link";
 function WelcomeSection() {
   return (
     <section
-      className="relative text-[#0F172A] py-28 md:py-40 px-6 border-b border-black/10 overflow-hidden"
+      className="relative text-[#0F172A] py-28 md:py-40 px-6 border-b border-black/10 overflow-hidden animate-vivid-gradient"
       style={{
         background: 'linear-gradient(-45deg, #D1FAE5, #FEF3C7, #E0F2FE, #F3E8FF)',
-        backgroundSize: '400% 400%',
-        animation: 'vividGradient4Color 10s ease infinite'
       }}
     >
       {/* Background Soft Vivid Glow Orbs */}
@@ -54,14 +52,6 @@ function WelcomeSection() {
           </div>
         </div>
       </div>
-
-      <style jsx>{`
-        @keyframes vividGradient4Color {
-          0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
-        }
-      `}</style>
     </section>
   );
 }
@@ -70,11 +60,9 @@ function WelcomeSection() {
 function MiniStatsSection() {
   return (
     <section
-      className="py-0 border-b border-black/10 relative overflow-hidden backdrop-blur-md"
+      className="py-0 border-b border-black/10 relative overflow-hidden backdrop-blur-md animate-vivid-gradient"
       style={{
         background: 'linear-gradient(90deg, #E0F2FE, #D1FAE5, #FEF3C7, #F3E8FF)',
-        backgroundSize: '300% 300%',
-        animation: 'vividGradient4Color 12s ease infinite'
       }}
     >
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-3 divide-x divide-black/10 relative z-10">
@@ -89,14 +77,6 @@ function MiniStatsSection() {
           </div>
         ))}
       </div>
-
-      <style jsx>{`
-        @keyframes vividGradient4Color {
-          0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
-        }
-      `}</style>
     </section>
   );
 }

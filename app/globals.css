@@ -33,6 +33,23 @@ body {
     -webkit-line-clamp: 3;
     line-clamp: 3;
   }
+
+  .animate-vivid-gradient {
+    background-size: 400% 400% !important;
+    animation: vividGradient4Color 10s ease infinite !important;
+  }
+}
+
+@keyframes vividGradient4Color {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Logo shimmer animation */
