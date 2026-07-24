@@ -251,10 +251,9 @@ export default function HeroScroll() {
                     className="absolute inset-0 w-full h-full object-cover"
                 />
 
-                {/* Permanent Luxury Vignette for Text Contrast */}
-                <div className="absolute inset-0 bg-black/40 z-10 pointer-events-none" />
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_30%,_rgba(0,0,0,0.7)_100%)] pointer-events-none z-10" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/60 pointer-events-none z-10" />
+                {/* Soft, Subtle Luxury Dark Gradient Overlay for Maximum Frame Clarity & Text Contrast */}
+                <div className="absolute inset-0 bg-black/15 z-10 pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-black/25 pointer-events-none z-10" />
 
                 {/* Initial Loading Indicator */}
                 {loadProgress < 15 && (
