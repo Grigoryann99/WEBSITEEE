@@ -255,15 +255,6 @@ export default function HeroScroll() {
                 <div className="absolute inset-0 bg-black/15 z-10 pointer-events-none" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-black/25 pointer-events-none z-10" />
 
-                {/* Initial Loading Indicator */}
-                {loadProgress < 15 && (
-                    <div className="absolute top-8 left-1/2 -translate-x-1/2 z-40 bg-black/60 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 flex items-center gap-3 shadow-xl">
-                        <div className="w-3 h-3 rounded-full border-2 border-brand-accent border-t-transparent animate-spin" />
-                        <span className="font-sans text-[11px] uppercase tracking-widest text-white/80 font-medium">
-                            Loading Experience {loadProgress}%
-                        </span>
-                    </div>
-                )}
 
                 {/* Pure Clean Typography Overlays (No card boxes, no buttons) */}
                 <div className="relative z-20 w-full max-w-5xl px-6 text-center flex flex-col items-center justify-center">
