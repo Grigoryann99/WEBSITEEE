@@ -197,7 +197,7 @@ export default function HeroScroll() {
 
                 Promise.all(chunk.map(loadSingleImage)).then(() => {
                     if ('requestIdleCallback' in window) {
-                        (window as unknown as { requestIdleCallback: (cb: () => void) => void })(loadNextChunk);
+                        (window as any).requestIdleCallback(loadNextChunk);
                     } else {
                         setTimeout(loadNextChunk, 30);
                     }
