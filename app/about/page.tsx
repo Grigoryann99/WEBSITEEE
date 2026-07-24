@@ -8,16 +8,17 @@ import { Globe, Pen, Home, ArrowRight, CheckCircle2 } from 'lucide-react';
 export default function AboutPage() {
     return (
         <main
-            className="min-h-screen text-[#0F172A] font-sans selection:bg-[#059669]/20 overflow-hidden relative animate-vivid-gradient"
+            className="min-h-screen text-[#0F172A] font-sans selection:bg-[#2563EB]/20 overflow-hidden relative animate-about-gradient"
             style={{
-                background: 'linear-gradient(-45deg, #D1FAE5, #FEF3C7, #E0F2FE, #F3E8FF)',
+                background: 'linear-gradient(-45deg, #CFFAFE, #D1FAE5, #E0F2FE, #DBEAFE)',
             }}
         >
-            {/* Background Soft Vivid Glow Orbs */}
-            <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-60 z-0">
-                <div className="absolute top-0 left-1/4 w-[550px] h-[550px] bg-[#10B981]/35 rounded-full blur-[110px] animate-pulse" />
-                <div className="absolute bottom-1/3 right-1/4 w-[600px] h-[600px] bg-[#F59E0B]/35 rounded-full blur-[120px] animate-pulse" />
-                <div className="absolute top-1/2 left-10 w-[450px] h-[450px] bg-[#8B5CF6]/30 rounded-full blur-[100px]" />
+            {/* Background Soft Vivid Glow Orbs — Oceanic Sapphire & Sky Azure */}
+            <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-65 z-0">
+                <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[#2563EB]/35 rounded-full blur-[110px] animate-pulse" />
+                <div className="absolute bottom-1/3 right-1/4 w-[650px] h-[650px] bg-[#059669]/35 rounded-full blur-[120px] animate-pulse" />
+                <div className="absolute top-1/2 left-10 w-[500px] h-[500px] bg-[#0891B2]/30 rounded-full blur-[100px]" />
+                <div className="absolute top-1/4 right-10 w-[450px] h-[450px] bg-[#4F46E5]/30 rounded-full blur-[100px]" />
             </div>
 
             <div className="relative z-10">
@@ -30,7 +31,7 @@ export default function AboutPage() {
                         transition={{ duration: 0.8 }}
                         className="max-w-4xl mx-auto relative z-10"
                     >
-                        <p className="font-sans text-[#059669] tracking-[0.4em] text-xs uppercase mb-8 font-bold">Established in Curation</p>
+                        <p className="font-sans text-[#2563EB] tracking-[0.4em] text-xs uppercase mb-8 font-bold">Established in Curation</p>
                         <h1 className="font-serif text-6xl md:text-8xl text-[#0F172A] mb-10 leading-tight tracking-tight font-semibold drop-shadow-sm">
                             About VeloraTravel
                         </h1>
@@ -41,14 +42,14 @@ export default function AboutPage() {
                 </section>
 
                 {/* SECTION 2 — Our Story */}
-                <section className="max-w-7xl mx-auto px-6 py-24 border-t border-black/10">
+                <section className="max-w-7xl mx-auto px-6 py-24 border-t border-blue-900/10">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
                         <motion.div
                             initial={{ opacity: 0, x: -30 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
-                            className="bg-white/90 backdrop-blur-md p-10 md:p-12 rounded-3xl border border-gray-200/80 shadow-lg"
+                            className="bg-white/90 backdrop-blur-md p-10 md:p-12 rounded-3xl border border-blue-200/80 shadow-lg"
                         >
                             <h2 className="font-serif text-4xl md:text-5xl text-[#0F172A] mb-8 font-semibold">Our Story</h2>
                             <div className="space-y-6 font-sans text-[#334155] text-lg font-normal leading-relaxed">
@@ -72,7 +73,7 @@ export default function AboutPage() {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
-                            className="relative aspect-[4/5] rounded-3xl overflow-hidden bg-white border border-gray-200 shadow-xl group"
+                            className="relative aspect-[4/5] rounded-3xl overflow-hidden bg-white border border-blue-200 shadow-xl group"
                         >
                             <Image 
                                 src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1000&auto=format&fit=crop"
@@ -89,26 +90,26 @@ export default function AboutPage() {
                 </section>
 
                 {/* SECTION 3 — What We Offer */}
-                <section className="py-32 border-y border-black/10">
+                <section className="py-32 border-y border-blue-900/10">
                     <div className="max-w-7xl mx-auto px-6">
                         <div className="text-center mb-20">
                             <h2 className="font-serif text-4xl md:text-5xl text-[#0F172A] mb-4 font-semibold">What We Offer</h2>
-                            <div className="w-20 h-1 bg-[#059669] mx-auto rounded-full" />
+                            <div className="w-20 h-1 bg-[#2563EB] mx-auto rounded-full" />
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             {[
                                 {
-                                    icon: <Globe className="w-8 h-8 text-[#059669]" />,
+                                    icon: <Globe className="w-8 h-8 text-[#2563EB]" />,
                                     title: "Destination Guides",
                                     text: "In-depth guides for 50+ destinations covering best seasons, visa info, local tips, and hidden gems."
                                 },
                                 {
-                                    icon: <Pen className="w-8 h-8 text-[#059669]" />,
+                                    icon: <Pen className="w-8 h-8 text-[#2563EB]" />,
                                     title: "Travel Journal",
                                     text: "Original articles written by our editorial team — practical guides, top lists, and destination deep dives."
                                 },
                                 {
-                                    icon: <Home className="w-8 h-8 text-[#059669]" />,
+                                    icon: <Home className="w-8 h-8 text-[#2563EB]" />,
                                     title: "Luxury Villa Collection",
                                     text: "A curated selection of the world's finest private residences, from overwater bungalows to alpine retreats."
                                 }
@@ -119,7 +120,7 @@ export default function AboutPage() {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: idx * 0.2 }}
-                                    className="p-10 bg-white/90 backdrop-blur-md border border-gray-200/80 rounded-3xl hover:border-[#059669]/50 shadow-md hover:shadow-xl transition-all group text-center"
+                                    className="p-10 bg-white/90 backdrop-blur-md border border-blue-200/80 rounded-3xl hover:border-[#2563EB]/50 shadow-md hover:shadow-xl transition-all group text-center"
                                 >
                                     <div className="mb-6 flex justify-center">{item.icon}</div>
                                     <h3 className="font-serif text-2xl text-[#0F172A] mb-4 font-semibold">{item.title}</h3>
@@ -153,10 +154,10 @@ export default function AboutPage() {
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: idx * 0.1 }}
-                                className="relative p-8 bg-white/80 backdrop-blur-md rounded-3xl border-l-4 border-[#059669] border border-gray-200/80 shadow-md"
+                                className="relative p-8 bg-white/85 backdrop-blur-md rounded-3xl border-l-4 border-[#2563EB] border border-blue-200/80 shadow-md"
                             >
                                 <span className="absolute right-6 top-6 text-6xl font-serif text-[#0F172A]/10 select-none font-bold">0{idx + 1}</span>
-                                <h3 className="font-serif text-2xl text-[#059669] mb-4 relative z-10 font-semibold">{value.title}</h3>
+                                <h3 className="font-serif text-2xl text-[#2563EB] mb-4 relative z-10 font-semibold">{value.title}</h3>
                                 <p className="font-sans text-[#334155] font-normal leading-relaxed relative z-10">{value.desc}</p>
                             </motion.div>
                         ))}
@@ -164,7 +165,7 @@ export default function AboutPage() {
                 </section>
 
                 {/* SECTION 5 — Honest Stats */}
-                <section className="py-24 border-y border-black/10">
+                <section className="py-24 border-y border-blue-900/10">
                     <div className="max-w-7xl mx-auto px-6">
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
                             {[
@@ -172,9 +173,9 @@ export default function AboutPage() {
                                 { value: "6", label: "Travel Categories" },
                                 { value: "Weekly", label: "New guides added" }
                             ].map((stat, idx) => (
-                                <div key={idx} className="space-y-2 bg-white/80 backdrop-blur-md p-8 rounded-3xl border border-gray-200/80 shadow-md">
+                                <div key={idx} className="space-y-2 bg-white/85 backdrop-blur-md p-8 rounded-3xl border border-blue-200/80 shadow-md">
                                     <p className="font-serif text-6xl text-[#0F172A] tracking-tight font-bold">{stat.value}</p>
-                                    <p className="font-sans text-xs uppercase tracking-[0.3em] text-[#059669] font-bold">{stat.label}</p>
+                                    <p className="font-sans text-xs uppercase tracking-[0.3em] text-[#2563EB] font-bold">{stat.label}</p>
                                 </div>
                             ))}
                         </div>
@@ -187,7 +188,7 @@ export default function AboutPage() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="max-w-3xl mx-auto text-center relative z-10 bg-white/90 backdrop-blur-md p-16 rounded-3xl border border-gray-200/80 shadow-2xl"
+                        className="max-w-3xl mx-auto text-center relative z-10 bg-white/90 backdrop-blur-md p-16 rounded-3xl border border-blue-200/80 shadow-2xl"
                     >
                         <h2 className="font-serif text-5xl md:text-7xl text-[#0F172A] mb-10 leading-tight font-semibold">
                             Ready to Explore?
@@ -195,13 +196,13 @@ export default function AboutPage() {
                         <div className="flex flex-col sm:flex-row gap-6 justify-center">
                             <Link 
                                 href="/support" 
-                                className="bg-[#059669] text-white px-10 py-5 rounded-full text-sm font-sans tracking-widest uppercase font-bold hover:bg-[#0F172A] transition-all transform hover:scale-105 shadow-xl shadow-[#059669]/20"
+                                className="bg-[#2563EB] text-white px-10 py-5 rounded-full text-sm font-sans tracking-widest uppercase font-bold hover:bg-[#0F172A] transition-all transform hover:scale-105 shadow-xl shadow-[#2563EB]/25"
                             >
                                 Contact Our Team
                             </Link>
                             <Link 
                                 href="/destinations" 
-                                className="border-2 border-[#059669] text-[#059669] px-10 py-5 rounded-full text-sm font-sans tracking-widest uppercase font-bold hover:bg-[#059669] hover:text-white transition-all transform hover:scale-105"
+                                className="border-2 border-[#2563EB] text-[#2563EB] px-10 py-5 rounded-full text-sm font-sans tracking-widest uppercase font-bold hover:bg-[#2563EB] hover:text-white transition-all transform hover:scale-105"
                             >
                                 Explore Destinations
                             </Link>
