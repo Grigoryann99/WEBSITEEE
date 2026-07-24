@@ -123,10 +123,15 @@ export default function Navigation() {
     const useDarkText = isScrolled || isMenuOpen || !hasDarkHero;
 
     const navBgStyle: React.CSSProperties = isMenuOpen
-        ? { backgroundColor: 'rgba(255,255,255,0.95)', backdropFilter: 'blur(20px)' }
+        ? {
+            backgroundColor: 'rgba(10, 10, 10, 0.88)',
+            backdropFilter: 'blur(24px)',
+            WebkitBackdropFilter: 'blur(24px)',
+          }
         : {
-            backgroundColor: `rgba(255,255,255,${bgOpacity * 0.88})`,
-            backdropFilter: bgOpacity > 0.05 ? `blur(${bgOpacity * 20}px)` : 'none',
+            backgroundColor: isScrolled ? 'rgba(10, 10, 10, 0.65)' : 'rgba(0, 0, 0, 0.35)',
+            backdropFilter: 'blur(20px)',
+            WebkitBackdropFilter: 'blur(20px)',
           };
 
     return (
@@ -137,10 +142,10 @@ export default function Navigation() {
                 animate={{ y: isVisible ? 0 : '-100%', opacity: isVisible ? 1 : 0 }}
                 transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
                 style={navBgStyle}
-                className={`fixed top-0 w-full z-50 transition-[border-color,box-shadow,padding] duration-500 border-b
+                className={`fixed top-0 w-full z-50 transition-[border-color,box-shadow,padding] duration-500 border-b border-white/10
                     ${isScrolled || isMenuOpen
-                        ? 'shadow-[0_4px_32px_rgba(0,0,0,0.07)] border-black/[0.06] py-3'
-                        : 'border-transparent shadow-none py-5'
+                        ? 'shadow-[0_8px_32px_rgba(0,0,0,0.35)] py-3.5'
+                        : 'shadow-none py-5'
                     }`}
             >
                 <div className="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between gap-6">
@@ -160,16 +165,15 @@ export default function Navigation() {
                             style={{ background: 'transparent' }}
                         />
                         <span
-                            className="font-montserrat tracking-[0.22em] font-semibold transition-all duration-300 select-none"
-                            style={{ color: useDarkText ? '#1A1A1A' : '#FFFFFF' }}
+                            className="font-montserrat tracking-[0.22em] font-semibold transition-all duration-300 select-none text-white"
                         >
                             VELORA<span className="text-brand-accent">.</span>
                         </span>
                     </a>
 
-                    {/* DESKTOP NAV — Singita minimal: no pill, just spaced links */}
+                    {/* DESKTOP NAV — Inter 18px Medium */}
                     <div
-                        className="hidden lg:flex items-center gap-1 relative"
+                        className="hidden lg:flex items-center gap-2 relative"
                         onMouseLeave={() => setHoveredId(null)}
                     >
                         {/* Sliding bottom underline indicator */}
@@ -180,7 +184,7 @@ export default function Navigation() {
                                 opacity: indicatorStyle.opacity,
                             }}
                             transition={{ type: 'spring', stiffness: 380, damping: 32 }}
-                            className={`absolute -bottom-0.5 h-[1.5px] rounded-full pointer-events-none bg-brand-accent`}
+                            className={`absolute -bottom-0.5 h-[2px] rounded-full pointer-events-none bg-brand-accent`}
                         />
 
                         {navLinks.map((link) => {
@@ -195,14 +199,12 @@ export default function Navigation() {
                                     onClick={() => handleNavLinkClick(link.id)}
                                     onMouseEnter={() => setHoveredId(link.id)}
                                     aria-current={isActive ? 'page' : undefined}
-                                    className={`relative px-4 py-2 font-sans text-[11px] tracking-widest uppercase font-light
+                                    className={`relative px-4 py-2 font-sans text-[18px] font-medium tracking-wide uppercase
                                         transition-colors duration-300 outline-none focus-visible:ring-2 focus-visible:ring-brand-accent rounded-sm
                                         ${
                                             isActive
-                                                ? useDarkText ? 'text-brand-dark' : 'text-white'
-                                                : useDarkText
-                                                    ? 'text-brand-dark/50 hover:text-brand-dark'
-                                                    : 'text-white/70 hover:text-white'
+                                                ? 'text-white'
+                                                : 'text-white/75 hover:text-white'
                                         }`}
                                 >
                                     {link.name}
@@ -214,12 +216,8 @@ export default function Navigation() {
                     {/* RIGHT SIDE: CTA + Hamburger */}
                     <div className="flex items-center gap-3 shrink-0">
                         <button
-                            className={`lg:hidden w-9 h-9 flex items-center justify-center rounded-xl border
-                                transition-all duration-200 active:scale-95 outline-none focus-visible:ring-2 focus-visible:ring-brand-accent
-                                ${useDarkText
-                                    ? 'border-black/[0.12] text-brand-dark/85 hover:bg-black/[0.08] bg-black/[0.02]'
-                                    : 'border-white/[0.12] text-white/80 hover:bg-white/[0.08] bg-white/[0.04]'
-                                }`}
+                            className={`lg:hidden w-9 h-9 flex items-center justify-center rounded-xl border border-white/20 text-white hover:bg-white/10 bg-black/30 backdrop-blur-md
+                                transition-all duration-200 active:scale-95 outline-none focus-visible:ring-2 focus-visible:ring-brand-accent`}
                             onClick={() => setIsMenuOpen(v => !v)}
                             aria-label="Toggle navigation menu"
                             aria-expanded={isMenuOpen}
@@ -231,7 +229,7 @@ export default function Navigation() {
                                         <X size={18} className="text-brand-accent" />
                                       </motion.span>
                                     : <motion.span key="m" initial={{ rotate: 90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: -90, opacity: 0 }} transition={{ duration: 0.2 }}>
-                                        <Menu size={18} className={useDarkText ? 'text-brand-dark' : 'text-white'} />
+                                        <Menu size={18} className="text-white" />
                                       </motion.span>
                                 }
                             </AnimatePresence>
