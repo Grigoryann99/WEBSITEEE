@@ -45,7 +45,7 @@ export const jordanAttractions = [
     insiderTip: "Watch the Roman Army and Chariot Experience (RACE) — a re-enactment show using the Roman Hippodrome with costumed legionaries and chariot racing. It is theatrical but genuinely informative and fun.",
     howToGetThere: "JETT bus from Amman (1.5 hours). Drive from Amman (45km, 45 minutes).",
     cost: "Adults 10 JOD (€13). Jordan Pass includes entry. RACE show 15 JOD (€19) extra.",
-    image: "/images/attractions/jordan-jerash-roman-city.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Gerasa10.jpg/960px-Gerasa10.jpg"
   },
   {
     name: "Aqaba Red Sea",
@@ -57,7 +57,7 @@ export const jordanAttractions = [
     insiderTip: "The Marine Park south of Aqaba city offers the best protected snorkelling. Book with local diving operators for reef dives to Japanese Garden (a Japanese vessel deliberately sunk as a dive site) — an extraordinary shallow reef ecosystem.",
     howToGetThere: "Fly to Aqaba Airport (Queen Alia) from Amman (50 minutes). Drive from Petra (2 hours) or Wadi Rum (1 hour).",
     cost: "Marine Park entry 2 JOD (€2.60). Snorkel equipment rental from 5 JOD (€6.50).",
-    image: "/images/attractions/jordan-aqaba-red-sea.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Aqaba_Flagpole.jpg/960px-Aqaba_Flagpole.jpg"
   },
   {
     name: "Amman Citadel",
@@ -81,7 +81,7 @@ export const jordanAttractions = [
     insiderTip: "Climb to the very top row of the theatre for the best view over the theatre, the Citadel hill behind it, and the spreading white city of Amman in all directions — a superb urban panorama.",
     howToGetThere: "Walking distance from downtown Amman hotels. Taxi from anywhere in the city.",
     cost: "Adults 3 JOD (€4). Jordan Pass includes entry.",
-    image: "/images/attractions/jordan-roman-amphitheatre-amman.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Roman_Amphitheater_Amman.jpg/960px-Roman_Amphitheater_Amman.jpg"
   },
   {
     name: "Dana Biosphere Reserve",
@@ -93,7 +93,7 @@ export const jordanAttractions = [
     insiderTip: "Stay at Dana Tower Hotel or the RSCN's Rummana Campsite for an immersive wilderness experience. The 2-day Wadi Dana trail through the reserve (ending at Wadi Rum) is one of Jordan's finest multi-day hikes.",
     howToGetThere: "Drive from Petra (1.5 hours) or Amman (3 hours). Village of Dana is accessible by road.",
     cost: "Reserve entry 5 JOD (€6.50). Guided hikes from 25 JOD (€32).",
-    image: "/images/attractions/jordan-dana-biosphere-reserve.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Dana_Biosphere_Reserve_01.jpg/960px-Dana_Biosphere_Reserve_01.jpg"
   },
   {
     name: "Wadi Mujib",

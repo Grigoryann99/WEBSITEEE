@@ -105,7 +105,7 @@ export const newZealandAttractions = [
     insiderTip: "Take a Heli-Hike tour to land directly on the upper ice field with crampons for a guided walk through blue ice tunnels.",
     howToGetThere: "Located along scenic Highway 6 on the West Coast, 3.5 hours south of Greymouth or 5 hours north of Queenstown.",
     cost: "Free to view from valley walk lookouts. Heli-hike guided tours cost around NZD $550–$600 (€300–€335).",
-    image: "/images/attractions/new-zealand-franz-josef.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Franz_Josef_Glacier_3.jpg/960px-Franz_Josef_Glacier_3.jpg"
   },
   {
     name: "Bay of Islands",

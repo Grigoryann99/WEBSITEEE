@@ -9,7 +9,7 @@ export const qatarAttractions = [
     insiderTip: "Arrive 30 minutes before closing for the best light in the atrium courtyard. The museum café overlooking the Doha skyline across the water is one of the finest café views in any museum anywhere.",
     howToGetThere: "10-minute taxi from Doha city centre. Free shuttle from some city centre hotels.",
     cost: "Adults 100 QAR (€26). Tuesdays free. Under 16 free.",
-    image: "/images/attractions/qatar-museum-islamic-art.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Museum_of_Islamic_Art_Doha_2019.jpg/960px-Museum_of_Islamic_Art_Doha_2019.jpg"
   },
   {
     name: "Souq Waqif",
@@ -129,7 +129,7 @@ export const qatarAttractions = [
     insiderTip: "The Bin Jelmood House museum covers the history of slavery in the Gulf region — an important and little-discussed history presented with intelligence and sensitivity. The architecture of the entire district is worthy of careful examination.",
     howToGetThere: "Doha Metro Gold Line to Msheireb station (central location).",
     cost: "District free. Museums from 10 QAR (€3) each.",
-    image: "/images/attractions/qatar-msheireb-downtown.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Msheireb_Downtown_Doha.jpg/960px-Msheireb_Downtown_Doha.jpg"
   },
   {
     name: "Aspire Park",
@@ -153,7 +153,7 @@ export const qatarAttractions = [
     insiderTip: "Walk the corniche at sunset and then dine at one of the small local restaurants overlooking the beach — the fresh fish and seafood here is excellent and prices are significantly lower than Doha.",
     howToGetThere: "Drive from Doha (20km south, 20 minutes). No direct Metro connection.",
     cost: "Free to explore. Meals from 40–100 QAR (€11–27).",
-    image: "/images/attractions/qatar-al-wakrah-old-town.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Souq_Al_Wakrah_Qatar.jpg/960px-Souq_Al_Wakrah_Qatar.jpg"
   },
   {
     name: "Doha Design District (D3)",
@@ -238,17 +238,5 @@ export const qatarAttractions = [
     howToGetThere: "Doha Metro Red Line to Lusail (northern terminus). 25 minutes from downtown.",
     cost: "Free to explore. Stadium tours from 50 QAR (€14) on non-event days.",
     image: "/images/attractions/qatar-lusail-city.jpg"
-  },
-  {
-    name: "Qatar Desert Safari",
-    location: "Inland Qatar / Sealine",
-    category: "Adventure",
-    description: "Qatar's dramatic desert landscape — particularly around Sealine Beach Resort and the Mesaieed Industrial Area dunes — provides access to some of the Gulf's most accessible desert safari experiences, including dune bashing in 4WDs, sandboarding, sunset camel rides, and traditional Bedouin camp dinners under the stars.",
-    whyVisit: "Qatar's proximity to the Empty Quarter means that extraordinary dune landscapes are just 45 minutes from downtown Doha — the combination of red sand dunes, coastal cliffs dropping to the sea, and the atmospheric desert silence is a powerful experience.",
-    bestTime: "October–April for comfortable temperatures. Sunset tours offer the most dramatic light on the dunes.",
-    insiderTip: "Book a private desert camp experience rather than a large tour group — several operators offer private fire-side dinners in the dunes with stargazing, traditional music, and excellent food for groups of 2–10.",
-    howToGetThere: "Drive from Doha (45 minutes south to Sealine). All safari companies offer hotel pickup.",
-    cost: "Standard half-day safari from 250 QAR (€68). Private overnight camps from 800 QAR (€220).",
-    image: "/images/attractions/qatar-desert-safari.jpg"
   }
 ];

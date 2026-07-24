@@ -33,7 +33,7 @@ export const polandAttractions = [
     insiderTip: "Climb the St. Mary's Basilica tower for the panoramic view over the square — a trumpeter plays the hejnał (bugle call) from the highest tower every hour (interrupted mid-call, commemorating a 13th-century trumpeter shot by a Mongol arrow).",
     howToGetThere: "Kraków Central Station is a 10-minute walk from the Market Square. Trams run along the perimeter.",
     cost: "Square free. Basilica entry from 10 PLN (€2.50). Cloth Hall Museum 24 PLN (€6).",
-    image: "/images/attractions/poland-krakow-market-square.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Rynek_G%C5%82%C3%B3wny_w_Krakowie.jpg/960px-Rynek_G%C5%82%C3%B3wny_w_Krakowie.jpg"
   },
   {
     name: "Wieliczka Salt Mine",
@@ -141,7 +141,7 @@ export const polandAttractions = [
     insiderTip: "Start walking from the horse carriage turnoff rather than riding — the 9km trail through spruce forest is beautiful. Continue past Morskie Oko to Czarny Staw (Black Lake) above for a dramatically more isolated and equally stunning glacial lake.",
     howToGetThere: "Minibus from Zakopane to Polana Palenica (30 minutes), then 9km hike or horse-drawn carriage.",
     cost: "Tatra National Park entry adults 7 PLN (€1.60). Horse carriage from 60 PLN (€14). Hiking free.",
-    image: "/images/attractions/poland-morskie-oko.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Morskie_Oko_Tatrza%C5%84ski_Park_Narodowy.jpg/960px-Morskie_Oko_Tatrza%C5%84ski_Park_Narodowy.jpg"
   },
   {
     name: "Wrocław Market Square",

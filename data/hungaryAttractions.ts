@@ -9,7 +9,7 @@ export const hungaryAttractions = [
     insiderTip: "Book the English-language guided tour well in advance — the interior is accessible only with a guide and the rooms are overwhelmingly beautiful. The best view of the exterior is from the Buda Castle side of the river.",
     howToGetThere: "Metro Line 2 to Kossuth Lajos tér. 20-minute walk from the city centre.",
     cost: "EU citizens €13, Non-EU €25. Under 6 free.",
-    image: "/images/attractions/hungary-parliament-building.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Budapest_Parliament_over_the_Danube.jpg/960px-Budapest_Parliament_over_the_Danube.jpg"
   },
   {
     name: "Buda Castle",
@@ -33,7 +33,7 @@ export const hungaryAttractions = [
     insiderTip: "Go early on a weekday morning for a very different experience from the busy evening 'sparty' (spa party) events. Rent a private cabin to store clothes securely and arrive with your own towel. The outdoor pool in winter is extraordinary.",
     howToGetThere: "Metro Line 1 to Széchenyi fürdő in City Park. Tram 72 from the river.",
     cost: "Day ticket 7,500 HUF (€19) weekday, 7,900 HUF (€20) weekend.",
-    image: "/images/attractions/hungary-szechenyi-thermal-bath.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Szechenyi_bath_Budapest_Hungary.jpg/960px-Szechenyi_bath_Budapest_Hungary.jpg"
   },
   {
     name: "Fisherman's Bastion",
@@ -189,7 +189,7 @@ export const hungaryAttractions = [
     insiderTip: "Book an opera performance rather than just a tour — tickets are surprisingly affordable by Western European standards, and the acoustics and production values are excellent. Standing/gallery tickets can be as low as €5–10.",
     howToGetThere: "Metro Line 1 (yellow, Hungary's oldest metro line, 1896) to Opera station. 10-minute walk from Heroes' Square.",
     cost: "Opera tickets from 1,200 HUF (€3) standing to 35,000+ HUF (€90) premium. Daily guided tours 5,000 HUF (€13).",
-    image: "/images/attractions/hungary-state-opera-house.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Hungarian_State_Opera_House.jpg/960px-Hungarian_State_Opera_House.jpg"
   },
   {
     name: "Budapest Jewish Quarter & Ruin Bars",
@@ -225,7 +225,7 @@ export const hungaryAttractions = [
     insiderTip: "Arrive early morning (the baths open at 9am) before coach tours arrive. The cave passages connect to outdoor pools — the transition from warm cave bath to cold outdoor pool in winter is invigorating.",
     howToGetThere: "Train from Budapest to Miskolc (2.5 hours), then local bus to Tapolca.",
     cost: "Adults 3,200 HUF (€8).",
-    image: "/images/attractions/hungary-miskolc-tapolca-cave.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Barlangfurdo_Miskolctapolca.jpg/960px-Barlangfurdo_Miskolctapolca.jpg"
   },
   {
     name: "Pannonhalma Archabbey",
@@ -238,17 +238,5 @@ export const hungaryAttractions = [
     howToGetThere: "Train from Budapest to Győr (1.5 hours), then local bus or taxi to Pannonhalma (15km).",
     cost: "Adults 3,600 HUF (€9). Wine cellar tasting from 3,500 HUF (€9).",
     image: "/images/attractions/hungary-pannonhalma-archabbey.jpg"
-  },
-  {
-    name: "Danube Bend",
-    location: "Visegrád–Esztergom, Central Hungary",
-    category: "Nature",
-    description: "The most beautiful section of the Danube in Central Europe, where the river makes a dramatic 90-degree turn through forested hills between three historic Hungarian towns — Esztergom, Visegrád, and Szentendre. The panorama from Visegrád Castle over the Danube bend is one of Hungary's finest views.",
-    whyVisit: "The Danube Bend combines some of Hungary's finest natural scenery with its most important historical sites — Esztergom Basilica (the largest church in Hungary), Visegrád's medieval castle, and the charming artist town of Szentendre create a perfect day excursion from Budapest.",
-    bestTime: "April–October for boat cruises on the Danube and outdoor café culture in Szentendre.",
-    insiderTip: "Take the Mahart ferry from Budapest upstream to Esztergom and return by train — the river view from the boat of the Danube Bend is spectacular and you see the landscape as medieval travellers once did.",
-    howToGetThere: "Boat from Budapest (4 hours) or train from Budapest to Esztergom (1.5 hours). Regular boats from Vigadó tér.",
-    cost: "Boat ticket 2,600–3,200 HUF (€7–8). Visegrád Castle 2,000 HUF (€5).",
-    image: "/images/attractions/hungary-danube-bend.jpg"
   }
 ];
