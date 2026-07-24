@@ -199,12 +199,12 @@ export default function Navigation() {
                                     onClick={() => handleNavLinkClick(link.id)}
                                     onMouseEnter={() => setHoveredId(link.id)}
                                     aria-current={isActive ? 'page' : undefined}
-                                    className={`relative px-4 py-2 font-sans text-[18px] font-medium tracking-wide uppercase
+                                    className={`relative px-4 py-2 font-sans text-[11px] font-medium tracking-[0.2em] uppercase
                                         transition-colors duration-300 outline-none focus-visible:ring-2 focus-visible:ring-brand-accent rounded-sm
                                         ${
                                             isActive
-                                                ? 'text-white'
-                                                : 'text-white/75 hover:text-white'
+                                                ? 'text-white font-medium'
+                                                : 'text-white/70 hover:text-white font-medium'
                                         }`}
                                 >
                                     {link.name}
