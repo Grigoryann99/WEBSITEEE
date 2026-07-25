@@ -248,9 +248,9 @@ export default function Navigation() {
                         initial="hidden"
                         animate="show"
                         exit="exit"
-                        className="fixed inset-0 z-40 lg:hidden flex flex-col pt-[72px] bg-white/98 backdrop-blur-2xl overflow-y-auto"
+                        className="fixed inset-0 z-40 lg:hidden flex flex-col pt-[80px] bg-[#0A0A0A]/95 backdrop-blur-2xl overflow-y-auto"
                     >
-                        <div className="flex flex-col gap-2 px-5 pt-6 pb-4">
+                        <div className="flex flex-col gap-3 px-5 pt-6 pb-6">
                             {navLinks.map((link, i) => {
                                 const isActive = link.id === activeId ||
                                     (link.id === 'destinations' && pathname.startsWith('/destinations'));
@@ -261,16 +261,16 @@ export default function Navigation() {
                                             href={link.href}
                                             onClick={() => { handleNavLinkClick(link.id); }}
                                             aria-current={isActive ? 'page' : undefined}
-                                            className={`flex items-center justify-between w-full px-5 py-4 rounded-2xl border
-                                                transition-colors duration-200 outline-none focus-visible:ring-2 focus-visible:ring-brand-accent
+                                            className={`flex items-center justify-between w-full px-6 py-4.5 rounded-2xl border
+                                                transition-all duration-200 outline-none focus-visible:ring-2 focus-visible:ring-brand-accent
                                                 ${isActive
-                                                    ? 'bg-brand-accent/10 border-brand-accent/35 text-brand-accent'
-                                                    : 'bg-black/[0.02] border-black/5 text-brand-dark/75 active:bg-black/10'
+                                                    ? 'bg-brand-accent/20 border-brand-accent/50 text-brand-accent'
+                                                    : 'bg-white/10 border-white/15 text-white hover:bg-white/15 active:bg-white/20'
                                                 }`}
                                         >
-                                            <span className="font-serif text-xl">{link.name}</span>
+                                            <span className="font-sans text-lg font-medium tracking-wide">{link.name}</span>
                                             {isActive && (
-                                                <span className="w-1.5 h-1.5 rounded-full bg-brand-accent shadow-[0_0_8px_rgba(29,158,117,0.9)]" />
+                                                <span className="w-2 h-2 rounded-full bg-brand-accent shadow-[0_0_10px_rgba(29,158,117,1.0)]" />
                                             )}
                                         </Link>
                                     </motion.div>
