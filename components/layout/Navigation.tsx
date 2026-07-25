@@ -102,8 +102,8 @@ export default function Navigation() {
     // Mobile menu Framer Motion variants
     const mobileMenuVariants = {
         hidden: { opacity: 0, y: -10 },
-        show: { opacity: 1, y: 0, transition: { duration: 0.25, ease: [0.16, 1, 0.3, 1] } },
-        exit: { opacity: 0, y: -10, transition: { duration: 0.2, ease: [0.16, 1, 0.3, 1] } }
+        show: { opacity: 1, y: 0, transition: { duration: 0.25 } },
+        exit: { opacity: 0, y: -10, transition: { duration: 0.2 } }
     };
 
     const itemVariants = {
@@ -111,7 +111,7 @@ export default function Navigation() {
         show: (i: number) => ({
             opacity: 1,
             y: 0,
-            transition: { delay: i * 0.05, duration: 0.25, ease: [0.16, 1, 0.3, 1] }
+            transition: { delay: i * 0.05, duration: 0.25 }
         })
     };
 
