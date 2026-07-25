@@ -1,46 +1,35 @@
 'use client';
 
-import { useEffect, useState, useRef, useCallback } from 'react';
+import { useRef, useEffect, useCallback, useMemo } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 
 const TOTAL_FRAMES = 542;
 
-function getFramePath(index: number): string {
-    const padded = String(index + 1).padStart(4, '0');
-    return `/hero-frames/frame_${padded}.jpg`;
-}
-
-interface Chapter {
-    id: number;
-    tagline: string;
-    title: string;
-    highlight: string;
-    description: string;
-}
-
-const chapters: Chapter[] = [
+const chapters = [
     {
-        id: 0,
-        tagline: 'DISCOVER THE EXTRAORDINARY',
-        title: 'Where Luxury Meets',
-        highlight: ' the Horizon',
-        description: 'Explore private sanctuaries, handpicked villas, and luxury travel guides designed for the modern explorer.',
+        tagline: "DISCOVER THE EXTRAORDINARY",
+        title: "Where Luxury Meets ",
+        highlight: "the Horizon",
+        description: "Explore private sanctuaries, handpicked villas, and luxury travel guides designed for the modern explorer.",
     },
     {
-        id: 1,
-        tagline: 'UNRIVALED SANCTUARIES',
-        title: 'Crafted for the',
-        highlight: ' Discerning Voyager',
-        description: 'Immerse yourself in spectacular overwater retreats, private islands, and alpine escapes around the globe.',
+        tagline: "CURATED EXPERIENCES",
+        title: "Crafted for ",
+        highlight: "Discerning Travelers",
+        description: "From overwater retreats in the Maldives to high-altitude chalets in the Swiss Alps, every destination is chosen with precision.",
     },
     {
-        id: 2,
-        tagline: 'YOUR JOURNEY BEGINS',
-        title: 'From Dream to',
-        highlight: ' Destination',
-        description: 'Browse 50+ destinations across 6 continents and experience tailored luxury travel at its finest.',
+        tagline: "YOUR JOURNEY AWAITS",
+        title: "Begin Your ",
+        highlight: "Next Adventure",
+        description: "Immerse yourself in authentic culture, pristine landscapes, and unforgettable moments across 50+ world-class destinations.",
     },
 ];
+
+function getFramePath(index: number): string {
+    const frameNum = String(index + 1).padStart(4, '0');
+    return `/frames/frame_${frameNum}.jpg`;
+}
 
 export default function HeroScroll() {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -49,60 +38,56 @@ export default function HeroScroll() {
     const currentFrameIndexRef = useRef<number>(0);
     const rAFRef = useRef<number | null>(null);
 
-    const [isMobile, setIsMobile] = useState<boolean>(false);
-
-    // Frame step: step by 3 on desktop (~180 frames), step by 5 on mobile (~108 frames)
-    // Decreases RAM and network usage by 70%, boosting FPS to 60-120fps
-    const frameStep = isMobile ? 5 : 3;
-
-    useEffect(() => {
-        const checkMobile = () => {
-            setIsMobile(window.innerWidth < 768);
-        };
-        checkMobile();
-        window.addEventListener('resize', checkMobile, { passive: true });
-        return () => window.removeEventListener('resize', checkMobile);
+    // Responsive Frame Stepping
+    const frameStep = useMemo(() => {
+        if (typeof window === 'undefined') return 3;
+        return window.innerWidth < 768 ? 5 : 3;
     }, []);
 
-    // Framer motion scroll tracking
+    // Framer Motion Scroll Setup
     const { scrollYProgress } = useScroll({
         target: containerRef,
         offset: ['start start', 'end end'],
     });
 
     const smoothProgress = useSpring(scrollYProgress, {
-        stiffness: 120,
-        damping: 24,
+        stiffness: 280,
+        damping: 38,
         restDelta: 0.001,
     });
 
-    // Chapter content motion transforms
-    const ch0Opacity = useTransform(smoothProgress, [0, 0.02, 0.22, 0.28], [1, 1, 1, 0]);
-    const ch0Y = useTransform(smoothProgress, [0, 0.22, 0.28], [0, 0, -30]);
+    // Chapter Animations
+    const ch0Opacity = useTransform(smoothProgress, [0.0, 0.12, 0.28, 0.35], [1, 1, 1, 0]);
+    const ch0Y       = useTransform(smoothProgress, [0.0, 0.12, 0.28, 0.35], [0, 0, -20, -60]);
 
-    const ch1Opacity = useTransform(smoothProgress, [0.32, 0.38, 0.58, 0.64], [0, 1, 1, 0]);
-    const ch1Y = useTransform(smoothProgress, [0.32, 0.38, 0.58, 0.64], [30, 0, 0, -30]);
+    const ch1Opacity = useTransform(smoothProgress, [0.35, 0.42, 0.58, 0.65], [0, 1, 1, 0]);
+    const ch1Y       = useTransform(smoothProgress, [0.35, 0.42, 0.58, 0.65], [60, 0, 0, -60]);
 
-    const ch2Opacity = useTransform(smoothProgress, [0.68, 0.74, 0.94, 1], [0, 1, 1, 1]);
-    const ch2Y = useTransform(smoothProgress, [0.68, 0.74, 0.94], [30, 0, 0]);
+    const ch2Opacity = useTransform(smoothProgress, [0.65, 0.72, 0.90, 1.00], [0, 1, 1, 1]);
+    const ch2Y       = useTransform(smoothProgress, [0.65, 0.72, 0.90, 1.00], [60, 0, 0, 0]);
 
-    // Fast, Optimized Canvas Frame Renderer
-    const renderFrame = useCallback((frameIdx: number) => {
+    // Canvas Render Function
+    const renderFrame = useCallback((index: number) => {
         const canvas = canvasRef.current;
         if (!canvas) return;
         const ctx = canvas.getContext('2d', { alpha: false });
         if (!ctx) return;
 
-        // O(1) Instant lookup to nearest loaded step frame
-        const nearestStep = Math.round(frameIdx / frameStep) * frameStep;
-        const clampedStep = Math.min(TOTAL_FRAMES - 1, Math.max(0, nearestStep));
-        
-        let img = loadedImagesRef.current.get(clampedStep);
-        if (!img) {
-            // Fallback to first available loaded image
-            img = loadedImagesRef.current.get(0);
+        let targetIndex = index;
+        if (!loadedImagesRef.current.has(targetIndex)) {
+            const stepIndex = Math.round(index / frameStep) * frameStep;
+            const clampedStepIndex = Math.min(TOTAL_FRAMES - 1, Math.max(0, stepIndex));
+
+            if (loadedImagesRef.current.has(clampedStepIndex)) {
+                targetIndex = clampedStepIndex;
+            } else if (loadedImagesRef.current.has(0)) {
+                targetIndex = 0;
+            } else {
+                return;
+            }
         }
 
+        const img = loadedImagesRef.current.get(targetIndex);
         if (!img) return;
 
         const displayWidth = canvas.clientWidth;
@@ -185,26 +170,26 @@ export default function HeroScroll() {
 
         Promise.all(priorityIndices.map(loadSingleImage)).then(() => {
             if (!isMounted) return;
-            renderFrame(0);
+            let cursor = 0;
+            const batchSize = 6;
 
-            let chunkIndex = 0;
-            const chunkSize = 8;
+            const loadNextBatch = () => {
+                if (!isMounted || cursor >= remainingIndices.length) return;
+                const batch = remainingIndices.slice(cursor, cursor + batchSize);
+                cursor += batchSize;
 
-            const loadNextChunk = () => {
-                if (!isMounted || chunkIndex >= remainingIndices.length) return;
-                const chunk = remainingIndices.slice(chunkIndex, chunkIndex + chunkSize);
-                chunkIndex += chunkSize;
-
-                Promise.all(chunk.map(loadSingleImage)).then(() => {
-                    if ('requestIdleCallback' in window) {
-                        (window as any).requestIdleCallback(loadNextChunk);
-                    } else {
-                        setTimeout(loadNextChunk, 30);
+                Promise.all(batch.map(loadSingleImage)).then(() => {
+                    if (isMounted && cursor < remainingIndices.length) {
+                        if ('requestIdleCallback' in window) {
+                            (window as unknown as { requestIdleCallback: (cb: () => void) => void }).requestIdleCallback(loadNextBatch);
+                        } else {
+                            setTimeout(loadNextBatch, 20);
+                        }
                     }
                 });
             };
 
-            loadNextChunk();
+            loadNextBatch();
         });
 
         return () => {
@@ -212,7 +197,7 @@ export default function HeroScroll() {
         };
     }, [frameStep, renderFrame]);
 
-    // Bind Canvas rendering to Scroll Progress using requestAnimationFrame (No React State Re-renders!)
+    // Subscribe to scroll changes
     useEffect(() => {
         const unsubscribe = smoothProgress.on('change', (latest) => {
             const frameIdx = Math.min(
@@ -247,25 +232,26 @@ export default function HeroScroll() {
                     className="absolute inset-0 w-full h-full object-cover"
                 />
 
-                {/* Soft, Subtle Luxury Dark Gradient Overlay for Maximum Frame Clarity & Text Contrast */}
-                <div className="absolute inset-0 bg-black/15 z-10 pointer-events-none" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-black/25 pointer-events-none z-10" />
+                {/* Dark Contrast Overlays for Maximum Text Legibility */}
+                <div className="absolute inset-0 bg-black/35 z-10 pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/75 z-10 pointer-events-none" />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(0,0,0,0.6)_0%,_transparent_80%)] z-10 pointer-events-none" />
 
-                {/* Pure Clean Typography Overlays (No card boxes, no buttons) */}
+                {/* Pure Clean Typography Overlays with High Contrast */}
                 <div className="relative z-20 w-full max-w-5xl px-6 text-center flex flex-col items-center justify-center">
                     {/* Chapter 01 */}
                     <motion.div
                         style={{ opacity: ch0Opacity, y: ch0Y }}
                         className="absolute inset-x-0 flex flex-col items-center justify-center px-4"
                     >
-                        <p className="font-sans text-brand-accent tracking-[0.35em] text-xs sm:text-sm uppercase mb-4 font-medium drop-shadow-md">
+                        <p className="font-sans text-brand-accent tracking-[0.35em] text-xs sm:text-sm uppercase mb-4 font-bold drop-shadow-[0_2px_10px_rgba(0,0,0,1.0)]">
                             {chapters[0].tagline}
                         </p>
-                        <h1 className="font-serif text-[42px] sm:text-[64px] md:text-[80px] lg:text-[90px] leading-[1.05] tracking-tight text-white mb-6 drop-shadow-[0_4px_30px_rgba(0,0,0,0.9)]">
+                        <h1 className="font-serif text-[42px] sm:text-[64px] md:text-[80px] lg:text-[90px] leading-[1.05] tracking-tight text-white mb-6 font-semibold drop-shadow-[0_6px_30px_rgba(0,0,0,1.0)]">
                             {chapters[0].title}
-                            <em className="not-italic text-brand-accent">{chapters[0].highlight}</em>
+                            <span className="text-[#F59E0B] drop-shadow-[0_4px_20px_rgba(0,0,0,1.0)]">{chapters[0].highlight}</span>
                         </h1>
-                        <p className="font-sans font-light text-white/90 max-w-xl text-base md:text-lg leading-relaxed drop-shadow-[0_2px_15px_rgba(0,0,0,0.8)]">
+                        <p className="font-sans font-medium text-white max-w-xl text-base md:text-lg leading-relaxed drop-shadow-[0_3px_15px_rgba(0,0,0,1.0)]">
                             {chapters[0].description}
                         </p>
                     </motion.div>
@@ -275,14 +261,14 @@ export default function HeroScroll() {
                         style={{ opacity: ch1Opacity, y: ch1Y }}
                         className="absolute inset-x-0 flex flex-col items-center justify-center px-4"
                     >
-                        <p className="font-sans text-brand-accent tracking-[0.35em] text-xs sm:text-sm uppercase mb-4 font-medium drop-shadow-md">
+                        <p className="font-sans text-brand-accent tracking-[0.35em] text-xs sm:text-sm uppercase mb-4 font-bold drop-shadow-[0_2px_10px_rgba(0,0,0,1.0)]">
                             {chapters[1].tagline}
                         </p>
-                        <h2 className="font-serif text-[42px] sm:text-[64px] md:text-[80px] lg:text-[90px] leading-[1.05] tracking-tight text-white mb-6 drop-shadow-[0_4px_30px_rgba(0,0,0,0.9)]">
+                        <h2 className="font-serif text-[42px] sm:text-[64px] md:text-[80px] lg:text-[90px] leading-[1.05] tracking-tight text-white mb-6 font-semibold drop-shadow-[0_6px_30px_rgba(0,0,0,1.0)]">
                             {chapters[1].title}
-                            <em className="not-italic text-brand-accent">{chapters[1].highlight}</em>
+                            <span className="text-[#F59E0B] drop-shadow-[0_4px_20px_rgba(0,0,0,1.0)]">{chapters[1].highlight}</span>
                         </h2>
-                        <p className="font-sans font-light text-white/90 max-w-xl text-base md:text-lg leading-relaxed drop-shadow-[0_2px_15px_rgba(0,0,0,0.8)]">
+                        <p className="font-sans font-medium text-white max-w-xl text-base md:text-lg leading-relaxed drop-shadow-[0_3px_15px_rgba(0,0,0,1.0)]">
                             {chapters[1].description}
                         </p>
                     </motion.div>
@@ -292,14 +278,14 @@ export default function HeroScroll() {
                         style={{ opacity: ch2Opacity, y: ch2Y }}
                         className="absolute inset-x-0 flex flex-col items-center justify-center px-4"
                     >
-                        <p className="font-sans text-brand-accent tracking-[0.35em] text-xs sm:text-sm uppercase mb-4 font-medium drop-shadow-md">
+                        <p className="font-sans text-brand-accent tracking-[0.35em] text-xs sm:text-sm uppercase mb-4 font-bold drop-shadow-[0_2px_10px_rgba(0,0,0,1.0)]">
                             {chapters[2].tagline}
                         </p>
-                        <h2 className="font-serif text-[42px] sm:text-[64px] md:text-[80px] lg:text-[90px] leading-[1.05] tracking-tight text-white mb-6 drop-shadow-[0_4px_30px_rgba(0,0,0,0.9)]">
+                        <h2 className="font-serif text-[42px] sm:text-[64px] md:text-[80px] lg:text-[90px] leading-[1.05] tracking-tight text-white mb-6 font-semibold drop-shadow-[0_6px_30px_rgba(0,0,0,1.0)]">
                             {chapters[2].title}
-                            <em className="not-italic text-brand-accent">{chapters[2].highlight}</em>
+                            <span className="text-[#F59E0B] drop-shadow-[0_4px_20px_rgba(0,0,0,1.0)]">{chapters[2].highlight}</span>
                         </h2>
-                        <p className="font-sans font-light text-white/90 max-w-xl text-base md:text-lg leading-relaxed drop-shadow-[0_2px_15px_rgba(0,0,0,0.8)]">
+                        <p className="font-sans font-medium text-white max-w-xl text-base md:text-lg leading-relaxed drop-shadow-[0_3px_15px_rgba(0,0,0,1.0)]">
                             {chapters[2].description}
                         </p>
                     </motion.div>
