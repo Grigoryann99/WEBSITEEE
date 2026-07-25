@@ -1,113 +1,131 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef } from 'react';
 
 export default function AuroraBorealisBackground() {
-    const [mouse, setMouse] = useState({ x: 0, y: 0 });
+    const containerRef = useRef<HTMLDivElement>(null);
 
+    // Optimized mousemove using requestAnimationFrame (0 React re-renders, 0% CPU lag)
     useEffect(() => {
+        let rafId: number;
+        let targetX = 0;
+        let targetY = 0;
+        let currentX = 0;
+        let currentY = 0;
+
         const handleMouseMove = (e: MouseEvent) => {
-            setMouse({
-                x: (e.clientX / window.innerWidth - 0.5) * 40,
-                y: (e.clientY / window.innerHeight - 0.5) * 40,
-            });
+            targetX = (e.clientX / window.innerWidth - 0.5) * 30;
+            targetY = (e.clientY / window.innerHeight - 0.5) * 30;
         };
-        window.addEventListener('mousemove', handleMouseMove);
-        return () => window.removeEventListener('mousemove', handleMouseMove);
+
+        const updatePosition = () => {
+            // Smooth lerp interpolation
+            currentX += (targetX - currentX) * 0.05;
+            currentY += (targetY - currentY) * 0.05;
+
+            if (containerRef.current) {
+                containerRef.current.style.setProperty('--aurora-x', `${currentX}px`);
+                containerRef.current.style.setProperty('--aurora-y', `${currentY}px`);
+            }
+            rafId = requestAnimationFrame(updatePosition);
+        };
+
+        window.addEventListener('mousemove', handleMouseMove, { passive: true });
+        rafId = requestAnimationFrame(updatePosition);
+
+        return () => {
+            window.removeEventListener('mousemove', handleMouseMove);
+            cancelAnimationFrame(rafId);
+        };
     }, []);
 
     return (
-        <div className="fixed inset-0 pointer-events-none overflow-hidden z-0 bg-[#0B131E]">
-            {/* Dark Deep Night Sky Foundation */}
-            <div className="absolute inset-0 bg-gradient-to-b from-[#090D16] via-[#0F172A] to-[#0A0F1D] opacity-95" />
+        <div
+            ref={containerRef}
+            className="fixed inset-0 pointer-events-none overflow-hidden z-0 bg-[#0B131E]"
+            style={{
+                ['--aurora-x' as string]: '0px',
+                ['--aurora-y' as string]: '0px',
+            }}
+        >
+            {/* Deep Night Sky Gradient */}
+            <div className="absolute inset-0 bg-gradient-to-b from-[#080D1A] via-[#0D1527] to-[#0A0F1D]" />
 
-            {/* Aurora Light Wave 1: Emerald & Mint Ribbon */}
-            <motion.div
-                animate={{
-                    x: [0 + mouse.x, 80 + mouse.x, -50 + mouse.x, 0 + mouse.x],
-                    y: [0 + mouse.y, -60 + mouse.y, 40 + mouse.y, 0 + mouse.y],
-                    scaleY: [1, 1.4, 0.9, 1],
-                    rotate: [-12, -2, -18, -12],
+            {/* GPU Hardware-Accelerated Aurora Light Ribbon Container */}
+            <div
+                className="absolute inset-0 w-full h-full transform-gpu transition-transform duration-75 ease-out"
+                style={{
+                    transform: 'translate3d(var(--aurora-x), var(--aurora-y), 0)',
+                    willChange: 'transform',
                 }}
-                transition={{ duration: 18, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute -top-[10%] left-[-20%] w-[140%] h-[70%] bg-gradient-to-r from-transparent via-[#059669]/45 to-transparent blur-[90px] mix-blend-screen transform origin-center"
-            />
+            >
+                {/* Aurora Wave Layer 1 — Emerald Teal & Mint */}
+                <div
+                    className="absolute -top-[20%] -left-[20%] w-[140%] h-[80%] opacity-40 transform-gpu animate-aurora-flow-1"
+                    style={{
+                        background: 'radial-gradient(ellipse 80% 50% at 50% 50%, rgba(5, 150, 105, 0.45), rgba(13, 148, 136, 0.25), transparent 70%)',
+                        willChange: 'transform',
+                    }}
+                />
 
-            {/* Aurora Light Wave 2: Cyan & Teal Wave */}
-            <motion.div
-                animate={{
-                    x: [0 - mouse.x, -100 - mouse.x, 60 - mouse.x, 0 - mouse.x],
-                    y: [0 - mouse.y, 80 - mouse.y, -50 - mouse.y, 0 - mouse.y],
-                    scaleY: [1.2, 0.8, 1.3, 1.2],
-                    rotate: [15, 5, 20, 15],
-                }}
-                transition={{ duration: 22, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute top-[15%] left-[-10%] w-[130%] h-[65%] bg-gradient-to-r from-transparent via-[#0D9488]/40 to-transparent blur-[100px] mix-blend-screen transform origin-center"
-            />
+                {/* Aurora Wave Layer 2 — Sapphire Indigo & Lavender */}
+                <div
+                    className="absolute top-[20%] -left-[10%] w-[130%] h-[75%] opacity-35 transform-gpu animate-aurora-flow-2"
+                    style={{
+                        background: 'radial-gradient(ellipse 75% 45% at 50% 50%, rgba(99, 102, 241, 0.4), rgba(139, 92, 246, 0.25), transparent 70%)',
+                        willChange: 'transform',
+                    }}
+                />
 
-            {/* Aurora Light Wave 3: Sapphire Indigo Veil */}
-            <motion.div
-                animate={{
-                    x: [0 + mouse.x * 0.5, 90 + mouse.x * 0.5, -70 + mouse.x * 0.5, 0 + mouse.x * 0.5],
-                    y: [0 + mouse.y * 0.5, -40 + mouse.y * 0.5, 60 + mouse.y * 0.5, 0 + mouse.y * 0.5],
-                    scale: [1, 1.2, 0.9, 1],
-                    rotate: [-5, 8, -10, -5],
-                }}
-                transition={{ duration: 25, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute top-[35%] left-[-15%] w-[140%] h-[70%] bg-gradient-to-r from-transparent via-[#6366F1]/35 to-transparent blur-[110px] mix-blend-screen transform origin-center"
-            />
-
-            {/* Aurora Light Wave 4: Radiant Violet Stream */}
-            <motion.div
-                animate={{
-                    x: [0 - mouse.x * 0.7, -80 - mouse.x * 0.7, 70 - mouse.x * 0.7, 0 - mouse.x * 0.7],
-                    y: [0 - mouse.y * 0.7, 50 - mouse.y * 0.7, -40 - mouse.y * 0.7, 0 - mouse.y * 0.7],
-                    scaleY: [0.9, 1.3, 1, 0.9],
-                    rotate: [8, -12, 4, 8],
-                }}
-                transition={{ duration: 20, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute top-[55%] left-[-10%] w-[135%] h-[60%] bg-gradient-to-r from-transparent via-[#8B5CF6]/30 to-transparent blur-[120px] mix-blend-screen transform origin-center"
-            />
-
-            {/* Aurora Light Wave 5: Lower Emerald Curtain */}
-            <motion.div
-                animate={{
-                    x: [0 + mouse.x * 0.8, 60 + mouse.x * 0.8, -80 + mouse.x * 0.8, 0 + mouse.x * 0.8],
-                    y: [0 + mouse.y * 0.8, -50 + mouse.y * 0.8, 30 + mouse.y * 0.8, 0 + mouse.y * 0.8],
-                    scaleY: [1.1, 0.85, 1.25, 1.1],
-                    rotate: [-15, -4, -18, -15],
-                }}
-                transition={{ duration: 24, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute top-[70%] left-[-15%] w-[140%] h-[65%] bg-gradient-to-r from-transparent via-[#10B981]/35 to-transparent blur-[105px] mix-blend-screen transform origin-center"
-            />
-
-            {/* Soft Ambient Starlight Particles */}
-            <div className="absolute inset-0 opacity-40">
-                {[...Array(25)].map((_, i) => (
-                    <motion.div
-                        key={i}
-                        className="absolute w-1 h-1 bg-white rounded-full shadow-[0_0_8px_2px_rgba(255,255,255,0.8)]"
-                        style={{
-                            top: `${(i * 37) % 100}%`,
-                            left: `${(i * 53) % 100}%`,
-                        }}
-                        animate={{
-                            opacity: [0.2, 0.9, 0.2],
-                            scale: [0.8, 1.3, 0.8],
-                        }}
-                        transition={{
-                            duration: 3 + (i % 4),
-                            repeat: Infinity,
-                            ease: 'easeInOut',
-                            delay: (i % 5) * 0.6,
-                        }}
-                    />
-                ))}
+                {/* Aurora Wave Layer 3 — Deep Mint Curtain */}
+                <div
+                    className="absolute top-[50%] -left-[15%] w-[140%] h-[70%] opacity-30 transform-gpu animate-aurora-flow-3"
+                    style={{
+                        background: 'radial-gradient(ellipse 85% 50% at 50% 50%, rgba(16, 185, 129, 0.35), rgba(6, 182, 212, 0.2), transparent 70%)',
+                        willChange: 'transform',
+                    }}
+                />
             </div>
 
-            {/* Subtle Vignette for Contrast */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#090D16] via-transparent to-[#090D16]/80 pointer-events-none" />
+            {/* Static CSS Lightweight Starlight Overlay */}
+            <div
+                className="absolute inset-0 opacity-30 pointer-events-none"
+                style={{
+                    backgroundImage: 'radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.8) 1px, transparent 1.5px), radial-gradient(circle at 70% 60%, rgba(255, 255, 255, 0.7) 1px, transparent 1.5px), radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.6) 1px, transparent 1.5px), radial-gradient(circle at 85% 20%, rgba(255, 255, 255, 0.8) 1px, transparent 1.5px)',
+                    backgroundSize: '300px 300px',
+                }}
+            />
+
+            {/* Smooth Vignette Edge */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#080D1A] via-transparent to-[#080D1A]/80 pointer-events-none" />
+
+            {/* GPU Keyframe CSS Styles */}
+            <style jsx>{`
+                @keyframes auroraFlow1 {
+                    0% { transform: translate3d(0, 0, 0) rotate(-8deg) scale(1); }
+                    50% { transform: translate3d(60px, -40px, 0) rotate(-4deg) scale(1.1); }
+                    100% { transform: translate3d(0, 0, 0) rotate(-8deg) scale(1); }
+                }
+                @keyframes auroraFlow2 {
+                    0% { transform: translate3d(0, 0, 0) rotate(6deg) scale(1.05); }
+                    50% { transform: translate3d(-50px, 40px, 0) rotate(10deg) scale(0.95); }
+                    100% { transform: translate3d(0, 0, 0) rotate(6deg) scale(1.05); }
+                }
+                @keyframes auroraFlow3 {
+                    0% { transform: translate3d(0, 0, 0) rotate(-10deg) scale(0.95); }
+                    50% { transform: translate3d(40px, 30px, 0) rotate(-6deg) scale(1.08); }
+                    100% { transform: translate3d(0, 0, 0) rotate(-10deg) scale(0.95); }
+                }
+                .animate-aurora-flow-1 {
+                    animation: auroraFlow1 22s ease-in-out infinite;
+                }
+                .animate-aurora-flow-2 {
+                    animation: auroraFlow2 28s ease-in-out infinite;
+                }
+                .animate-aurora-flow-3 {
+                    animation: auroraFlow3 25s ease-in-out infinite;
+                }
+            `}</style>
         </div>
     );
 }
