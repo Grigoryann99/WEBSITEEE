@@ -28,7 +28,7 @@ const chapters = [
 
 function getFramePath(index: number): string {
     const frameNum = String(index + 1).padStart(4, '0');
-    return `/frames/frame_${frameNum}.jpg`;
+    return `/hero-frames/frame_${frameNum}.jpg`;
 }
 
 export default function HeroScroll() {
