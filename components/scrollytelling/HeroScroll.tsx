@@ -232,10 +232,8 @@ export default function HeroScroll() {
                     className="absolute inset-0 w-full h-full object-cover"
                 />
 
-                {/* Dark Contrast Overlays for Maximum Text Legibility */}
-                <div className="absolute inset-0 bg-black/35 z-10 pointer-events-none" />
-                <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/75 z-10 pointer-events-none" />
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(0,0,0,0.6)_0%,_transparent_80%)] z-10 pointer-events-none" />
+                {/* Subtle Edge Vignette for Frame Clarity (Image/Video is 100% Bright & Visible) */}
+                <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/25 z-10 pointer-events-none" />
 
                 {/* Pure Clean Typography Overlays with High Contrast */}
                 <div className="relative z-20 w-full max-w-5xl px-6 text-center flex flex-col items-center justify-center">
