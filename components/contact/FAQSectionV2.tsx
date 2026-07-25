@@ -31,11 +31,11 @@ export default function FAQSection() {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
 
     return (
-        <section className="py-24 px-4 bg-[#F9F9F9]">
+        <section className="py-24 px-4 bg-transparent">
             <div className="max-w-4xl mx-auto">
                 <div className="text-center mb-16">
-                    <h2 className="font-serif text-4xl md:text-5xl text-[#1A1A1A] mb-6">Frequently Asked Questions</h2>
-                    <p className="font-inter text-[#1A1A1A]/50 font-light">Find instant answers to the most common questions about VeloraTravel.</p>
+                    <h2 className="font-serif text-4xl md:text-5xl text-white mb-6 font-medium">Frequently Asked Questions</h2>
+                    <p className="font-inter text-slate-300 font-light">Find instant answers to the most common questions about VeloraTravel.</p>
                 </div>
 
                 <div className="space-y-4">
@@ -43,16 +43,18 @@ export default function FAQSection() {
                         <div 
                             key={idx} 
                             className={`rounded-2xl border transition-all duration-300 ${
-                                openIndex === idx ? 'bg-white border-brand-accent/20 shadow-sm' : 'bg-white border-gray-200 hover:border-gray-300'
+                                openIndex === idx
+                                    ? 'bg-slate-900/85 backdrop-blur-xl border-emerald-400/50 shadow-2xl'
+                                    : 'bg-slate-900/60 backdrop-blur-xl border-white/15 hover:border-white/30'
                             }`}
                         >
                             <button
                                 onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
                                 className="w-full p-6 md:p-8 flex items-center justify-between text-left"
                             >
-                                <span className="font-serif text-xl text-[#1A1A1A] tracking-wide">{faq.question}</span>
+                                <span className="font-serif text-xl text-white tracking-wide font-medium">{faq.question}</span>
                                 <div className={`ml-4 flex-shrink-0 transition-transform duration-300 ${openIndex === idx ? 'rotate-180' : ''}`}>
-                                    {openIndex === idx ? <Minus className="text-brand-accent" size={20} /> : <Plus className="text-[#1A1A1A]/30" size={20} />}
+                                    {openIndex === idx ? <Minus className="text-emerald-400" size={20} /> : <Plus className="text-white/60" size={20} />}
                                 </div>
                             </button>
                             
@@ -65,7 +67,7 @@ export default function FAQSection() {
                                         transition={{ duration: 0.3, ease: 'easeInOut' }}
                                         className="overflow-hidden"
                                     >
-                                        <div className="px-8 pb-8 text-[#1A1A1A]/60 font-inter font-light leading-relaxed">
+                                        <div className="px-8 pb-8 text-slate-300 font-inter font-normal leading-relaxed">
                                             {faq.answer}
                                         </div>
                                     </motion.div>

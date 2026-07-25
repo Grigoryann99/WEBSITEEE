@@ -26,8 +26,8 @@ const options = [
 
 export default function SupportAdditional() {
     return (
-        <section className="pb-24 px-4 bg-[#F9F9F9]">
-            <div className="max-w-7xl mx-auto border-t border-gray-200 pt-20">
+        <section className="pb-24 px-4 bg-transparent">
+            <div className="max-w-7xl mx-auto border-t border-white/15 pt-20">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                     {options.map((opt, idx) => (
                         <motion.div
@@ -36,14 +36,14 @@ export default function SupportAdditional() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: idx * 0.1 }}
-                            className="flex flex-col items-center text-center group"
+                            className="flex flex-col items-center text-center group bg-slate-900/60 backdrop-blur-xl p-8 rounded-3xl border border-white/15 shadow-xl hover:border-emerald-400/50 transition-all"
                         >
-                            <div className="w-16 h-16 rounded-full bg-white border border-gray-200 flex items-center justify-center mb-6 group-hover:bg-brand-accent/10 group-hover:border-brand-accent/30 transition-all duration-500 shadow-sm">
-                                <opt.icon className="text-[#1A1A1A]/40 group-hover:text-brand-accent transition-colors" size={28} />
+                            <div className="w-16 h-16 rounded-2xl bg-white/10 border border-white/15 flex items-center justify-center mb-6 group-hover:bg-emerald-500/20 group-hover:border-emerald-400/40 transition-all duration-500">
+                                <opt.icon className="text-emerald-400 group-hover:scale-110 transition-transform" size={28} />
                             </div>
-                            <h4 className="font-serif text-xl text-[#1A1A1A] mb-2">{opt.title}</h4>
-                            <p className="text-[#1A1A1A]/30 text-xs uppercase tracking-widest mb-4 font-inter">{opt.desc}</p>
-                            <p className="text-[#1A1A1A]/70 font-medium font-inter group-hover:text-brand-accent transition-colors cursor-pointer">{opt.value}</p>
+                            <h4 className="font-serif text-xl text-white mb-2 font-medium">{opt.title}</h4>
+                            <p className="text-slate-400 text-xs uppercase tracking-widest mb-4 font-inter font-medium">{opt.desc}</p>
+                            <p className="text-white font-medium font-inter group-hover:text-emerald-400 transition-colors cursor-pointer">{opt.value}</p>
                         </motion.div>
                     ))}
                 </div>
