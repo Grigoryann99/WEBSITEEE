@@ -232,24 +232,21 @@ export default function HeroScroll() {
                     className="absolute inset-0 w-full h-full object-cover"
                 />
 
-                {/* Subtle Edge Vignette for Frame Clarity (Image/Video is 100% Bright & Visible) */}
-                <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/25 z-10 pointer-events-none" />
-
-                {/* Pure Clean Typography Overlays with High Contrast */}
+                {/* Pure Clean Typography Overlays */}
                 <div className="relative z-20 w-full max-w-5xl px-6 text-center flex flex-col items-center justify-center">
                     {/* Chapter 01 */}
                     <motion.div
                         style={{ opacity: ch0Opacity, y: ch0Y }}
                         className="absolute inset-x-0 flex flex-col items-center justify-center px-4"
                     >
-                        <p className="font-sans text-brand-accent tracking-[0.35em] text-xs sm:text-sm uppercase mb-4 font-bold drop-shadow-[0_2px_10px_rgba(0,0,0,1.0)]">
+                        <p className="font-sans text-brand-accent tracking-[0.35em] text-xs sm:text-sm uppercase mb-4 font-bold">
                             {chapters[0].tagline}
                         </p>
-                        <h1 className="font-serif text-[42px] sm:text-[64px] md:text-[80px] lg:text-[90px] leading-[1.05] tracking-tight text-white mb-6 font-semibold drop-shadow-[0_6px_30px_rgba(0,0,0,1.0)]">
+                        <h1 className="font-serif text-[42px] sm:text-[64px] md:text-[80px] lg:text-[90px] leading-[1.05] tracking-tight text-white mb-6 font-semibold">
                             {chapters[0].title}
-                            <span className="text-[#F59E0B] drop-shadow-[0_4px_20px_rgba(0,0,0,1.0)]">{chapters[0].highlight}</span>
+                            <span className="text-[#F59E0B]">{chapters[0].highlight}</span>
                         </h1>
-                        <p className="font-sans font-medium text-white max-w-xl text-base md:text-lg leading-relaxed drop-shadow-[0_3px_15px_rgba(0,0,0,1.0)]">
+                        <p className="font-sans font-medium text-white max-w-xl text-base md:text-lg leading-relaxed">
                             {chapters[0].description}
                         </p>
                     </motion.div>
@@ -259,14 +256,14 @@ export default function HeroScroll() {
                         style={{ opacity: ch1Opacity, y: ch1Y }}
                         className="absolute inset-x-0 flex flex-col items-center justify-center px-4"
                     >
-                        <p className="font-sans text-brand-accent tracking-[0.35em] text-xs sm:text-sm uppercase mb-4 font-bold drop-shadow-[0_2px_10px_rgba(0,0,0,1.0)]">
+                        <p className="font-sans text-brand-accent tracking-[0.35em] text-xs sm:text-sm uppercase mb-4 font-bold">
                             {chapters[1].tagline}
                         </p>
-                        <h2 className="font-serif text-[42px] sm:text-[64px] md:text-[80px] lg:text-[90px] leading-[1.05] tracking-tight text-white mb-6 font-semibold drop-shadow-[0_6px_30px_rgba(0,0,0,1.0)]">
+                        <h2 className="font-serif text-[42px] sm:text-[64px] md:text-[80px] lg:text-[90px] leading-[1.05] tracking-tight text-white mb-6 font-semibold">
                             {chapters[1].title}
-                            <span className="text-[#F59E0B] drop-shadow-[0_4px_20px_rgba(0,0,0,1.0)]">{chapters[1].highlight}</span>
+                            <span className="text-[#F59E0B]">{chapters[1].highlight}</span>
                         </h2>
-                        <p className="font-sans font-medium text-white max-w-xl text-base md:text-lg leading-relaxed drop-shadow-[0_3px_15px_rgba(0,0,0,1.0)]">
+                        <p className="font-sans font-medium text-white max-w-xl text-base md:text-lg leading-relaxed">
                             {chapters[1].description}
                         </p>
                     </motion.div>
@@ -276,14 +273,14 @@ export default function HeroScroll() {
                         style={{ opacity: ch2Opacity, y: ch2Y }}
                         className="absolute inset-x-0 flex flex-col items-center justify-center px-4"
                     >
-                        <p className="font-sans text-brand-accent tracking-[0.35em] text-xs sm:text-sm uppercase mb-4 font-bold drop-shadow-[0_2px_10px_rgba(0,0,0,1.0)]">
+                        <p className="font-sans text-brand-accent tracking-[0.35em] text-xs sm:text-sm uppercase mb-4 font-bold">
                             {chapters[2].tagline}
                         </p>
-                        <h2 className="font-serif text-[42px] sm:text-[64px] md:text-[80px] lg:text-[90px] leading-[1.05] tracking-tight text-white mb-6 font-semibold drop-shadow-[0_6px_30px_rgba(0,0,0,1.0)]">
+                        <h2 className="font-serif text-[42px] sm:text-[64px] md:text-[80px] lg:text-[90px] leading-[1.05] tracking-tight text-white mb-6 font-semibold">
                             {chapters[2].title}
-                            <span className="text-[#F59E0B] drop-shadow-[0_4px_20px_rgba(0,0,0,1.0)]">{chapters[2].highlight}</span>
+                            <span className="text-[#F59E0B]">{chapters[2].highlight}</span>
                         </h2>
-                        <p className="font-sans font-medium text-white max-w-xl text-base md:text-lg leading-relaxed drop-shadow-[0_3px_15px_rgba(0,0,0,1.0)]">
+                        <p className="font-sans font-medium text-white max-w-xl text-base md:text-lg leading-relaxed">
                             {chapters[2].description}
                         </p>
                     </motion.div>
