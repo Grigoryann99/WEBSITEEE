@@ -135,17 +135,6 @@ export default function SupportForm() {
                 onClose={() => setToast(prev => ({ ...prev, visible: false }))} 
             />
 
-
-            <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16">
-        <section id="support-form" className="py-24 px-4 bg-transparent overflow-hidden relative">
-            <SupportToast 
-                isVisible={toast.visible} 
-                message={toast.message} 
-                type={toast.type} 
-                onClose={() => setToast(prev => ({ ...prev, visible: false }))} 
-            />
-
-
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16">
                 <div className="lg:w-1/3 flex flex-col justify-center">
                     <h2 className="font-serif text-4xl md:text-5xl text-[#0F172A] mb-6 font-medium">Send a Request</h2>
