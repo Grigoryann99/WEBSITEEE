@@ -128,7 +128,7 @@ export default function DestinationGlobe() {
                                 transition={{ duration: 0.8, delay: i * 0.12, ease: [0.21, 0.47, 0.32, 0.98] }}
                                 className="group cursor-pointer"
                             >
-                                <div className="backdrop-blur-md bg-white/90 border border-gray-200/80 hover:border-brand-accent/50 hover:bg-white rounded-2xl p-6 transition-all duration-300 ease-out transform hover:-translate-y-1 shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_12px_32px_rgba(0,0,0,0.1)] flex items-center gap-6 relative overflow-hidden">
+                                <div className="backdrop-blur-xl bg-white/95 border border-slate-200/90 hover:border-brand-accent/50 hover:bg-white rounded-2xl p-6 transition-all duration-300 ease-out transform hover:-translate-y-1 shadow-xl flex items-center gap-6 relative overflow-hidden">
 
                                     {/* Hover subtle highlight */}
                                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-brand-accent/[0.04] to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-in-out" />
@@ -138,10 +138,10 @@ export default function DestinationGlobe() {
                                     </div>
 
                                     <div className="relative z-10">
-                                        <h3 className="font-serif text-xl md:text-2xl text-[#1A1A1A] font-medium group-hover:text-brand-accent transition-colors duration-300">
+                                        <h3 className="font-sans text-lg md:text-2xl text-[#0F172A] font-semibold group-hover:text-brand-accent transition-colors duration-300">
                                             {dest.title}
                                         </h3>
-                                        <p className="font-sans font-normal text-[#4A5568] mt-1.5 text-sm leading-relaxed tracking-wide group-hover:text-[#2D3748] transition-colors duration-300">
+                                        <p className="font-sans font-normal text-[#334155] mt-1.5 text-xs sm:text-sm leading-relaxed tracking-wide group-hover:text-[#0F172A] transition-colors duration-300">
                                             {dest.desc}
                                         </p>
                                     </div>
