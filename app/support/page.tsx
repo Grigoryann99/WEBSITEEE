@@ -13,11 +13,11 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
     return (
-        <div className="relative min-h-screen text-white bg-[#090D16]">
-            {/* Dynamic Aurora Borealis Background */}
+        <div className="relative min-h-screen text-[#0F172A] bg-[#F8FAF9]">
+            {/* Dynamic Light Aurora Background */}
             <AuroraBorealisBackground />
 
-            {/* Page Sections */}
+            {/* Page Content */}
             <div className="relative z-10">
                 <SupportHero />
                 <SupportCategories />

@@ -19,7 +19,6 @@ export default function AuroraBorealisBackground() {
         };
 
         const updatePosition = () => {
-            // Smooth lerp interpolation
             currentX += (targetX - currentX) * 0.05;
             currentY += (targetY - currentY) * 0.05;
 
@@ -42,16 +41,16 @@ export default function AuroraBorealisBackground() {
     return (
         <div
             ref={containerRef}
-            className="fixed inset-0 pointer-events-none overflow-hidden z-0 bg-[#0B131E]"
+            className="fixed inset-0 pointer-events-none overflow-hidden z-0 bg-[#F8FAF9]"
             style={{
                 ['--aurora-x' as string]: '0px',
                 ['--aurora-y' as string]: '0px',
             }}
         >
-            {/* Deep Night Sky Gradient */}
-            <div className="absolute inset-0 bg-gradient-to-b from-[#080D1A] via-[#0D1527] to-[#0A0F1D]" />
+            {/* Light Pearl Luxury Foundation */}
+            <div className="absolute inset-0 bg-gradient-to-b from-[#F0FDF4] via-[#F8FAFC] to-[#F1F5F9]" />
 
-            {/* GPU Hardware-Accelerated Aurora Light Ribbon Container */}
+            {/* GPU Hardware-Accelerated Light Aurora Wave Container */}
             <div
                 className="absolute inset-0 w-full h-full transform-gpu transition-transform duration-75 ease-out"
                 style={{
@@ -59,45 +58,36 @@ export default function AuroraBorealisBackground() {
                     willChange: 'transform',
                 }}
             >
-                {/* Aurora Wave Layer 1 — Emerald Teal & Mint */}
+                {/* Light Aurora Wave 1 — Mint Emerald & Soft Teal */}
                 <div
-                    className="absolute -top-[20%] -left-[20%] w-[140%] h-[80%] opacity-40 transform-gpu animate-aurora-flow-1"
+                    className="absolute -top-[20%] -left-[20%] w-[140%] h-[80%] opacity-70 transform-gpu animate-aurora-flow-1"
                     style={{
-                        background: 'radial-gradient(ellipse 80% 50% at 50% 50%, rgba(5, 150, 105, 0.45), rgba(13, 148, 136, 0.25), transparent 70%)',
+                        background: 'radial-gradient(ellipse 80% 50% at 50% 50%, rgba(16, 185, 129, 0.28), rgba(13, 148, 136, 0.18), transparent 70%)',
                         willChange: 'transform',
                     }}
                 />
 
-                {/* Aurora Wave Layer 2 — Sapphire Indigo & Lavender */}
+                {/* Light Aurora Wave 2 — Warm Amber Gold & Sunlit Peach */}
                 <div
-                    className="absolute top-[20%] -left-[10%] w-[130%] h-[75%] opacity-35 transform-gpu animate-aurora-flow-2"
+                    className="absolute top-[20%] -left-[10%] w-[130%] h-[75%] opacity-65 transform-gpu animate-aurora-flow-2"
                     style={{
-                        background: 'radial-gradient(ellipse 75% 45% at 50% 50%, rgba(99, 102, 241, 0.4), rgba(139, 92, 246, 0.25), transparent 70%)',
+                        background: 'radial-gradient(ellipse 75% 45% at 50% 50%, rgba(245, 158, 11, 0.25), rgba(249, 115, 22, 0.15), transparent 70%)',
                         willChange: 'transform',
                     }}
                 />
 
-                {/* Aurora Wave Layer 3 — Deep Mint Curtain */}
+                {/* Light Aurora Wave 3 — Sky Azure & Soft Violet */}
                 <div
-                    className="absolute top-[50%] -left-[15%] w-[140%] h-[70%] opacity-30 transform-gpu animate-aurora-flow-3"
+                    className="absolute top-[50%] -left-[15%] w-[140%] h-[70%] opacity-60 transform-gpu animate-aurora-flow-3"
                     style={{
-                        background: 'radial-gradient(ellipse 85% 50% at 50% 50%, rgba(16, 185, 129, 0.35), rgba(6, 182, 212, 0.2), transparent 70%)',
+                        background: 'radial-gradient(ellipse 85% 50% at 50% 50%, rgba(6, 182, 212, 0.22), rgba(139, 92, 246, 0.16), transparent 70%)',
                         willChange: 'transform',
                     }}
                 />
             </div>
 
-            {/* Static CSS Lightweight Starlight Overlay */}
-            <div
-                className="absolute inset-0 opacity-30 pointer-events-none"
-                style={{
-                    backgroundImage: 'radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.8) 1px, transparent 1.5px), radial-gradient(circle at 70% 60%, rgba(255, 255, 255, 0.7) 1px, transparent 1.5px), radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.6) 1px, transparent 1.5px), radial-gradient(circle at 85% 20%, rgba(255, 255, 255, 0.8) 1px, transparent 1.5px)',
-                    backgroundSize: '300px 300px',
-                }}
-            />
-
-            {/* Smooth Vignette Edge */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#080D1A] via-transparent to-[#080D1A]/80 pointer-events-none" />
+            {/* Subtle Vignette for Soft Contrast */}
+            <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-white/40 pointer-events-none" />
 
             {/* GPU Keyframe CSS Styles */}
             <style jsx>{`
