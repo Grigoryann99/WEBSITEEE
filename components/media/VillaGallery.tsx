@@ -122,13 +122,13 @@ const VillaGallery = () => {
                     className="mt-20 text-center"
                 >
                     <p className="font-sans text-brand-dark/60 mb-6 tracking-wide font-light">
-                        Explore our complete collection of 9 private residences worldwide.
+                        Explore our complete collection of 111 private residences worldwide.
                     </p>
                     <Link
-                        href="/destinations"
+                        href="/villas"
                         className="inline-flex items-center gap-4 text-brand-dark border-b border-brand-dark/30 pb-1 font-sans text-xs tracking-[0.18em] uppercase font-medium hover:border-brand-accent hover:text-brand-accent transition-all duration-300 group"
                     >
-                        View All Destinations
+                        View All Villas
                         <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
                     </Link>
                 </motion.div>
