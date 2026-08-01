@@ -2,6 +2,7 @@ import HeroScroll from "@/components/scrollytelling/HeroScroll";
 import VillaTransition from "@/components/scrollytelling/VillaTransition";
 import VillaGallery from "@/components/media/VillaGallery";
 import DestinationGlobe from "@/components/media/DestinationGlobe";
+import EditorialIntro from "@/components/layout/EditorialIntro";
 import Link from "next/link";
 
 // ─── Editorial Welcome (Singita-style) ────────────────────────────────────────
@@ -99,6 +100,8 @@ export default function Home() {
       <div id="destinations">
         <DestinationGlobe />
       </div>
+      
+      <EditorialIntro />
     </>
   );
 }

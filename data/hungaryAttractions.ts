@@ -9,7 +9,7 @@ export const hungaryAttractions = [
     insiderTip: "Book the English-language guided tour well in advance — the interior is accessible only with a guide and the rooms are overwhelmingly beautiful. The best view of the exterior is from the Buda Castle side of the river.",
     howToGetThere: "Metro Line 2 to Kossuth Lajos tér. 20-minute walk from the city centre.",
     cost: "EU citizens €13, Non-EU €25. Under 6 free.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Budapest_Parliament_over_the_Danube.jpg/960px-Budapest_Parliament_over_the_Danube.jpg"
+    image: "/images/attractions/hungary-hungarian-parliament-building.jpg"
   },
   {
     name: "Buda Castle",
@@ -33,7 +33,7 @@ export const hungaryAttractions = [
     insiderTip: "Go early on a weekday morning for a very different experience from the busy evening 'sparty' (spa party) events. Rent a private cabin to store clothes securely and arrive with your own towel. The outdoor pool in winter is extraordinary.",
     howToGetThere: "Metro Line 1 to Széchenyi fürdő in City Park. Tram 72 from the river.",
     cost: "Day ticket 7,500 HUF (€19) weekday, 7,900 HUF (€20) weekend.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Szechenyi_bath_Budapest_Hungary.jpg/960px-Szechenyi_bath_Budapest_Hungary.jpg"
+    image: "/images/attractions/hungary-sz-chenyi-thermal-bath.jpg"
   },
   {
     name: "Fisherman's Bastion",
@@ -105,7 +105,7 @@ export const hungaryAttractions = [
     insiderTip: "Book the full 5km guided tour rather than the short tourist route — the deeper sections of the cave contain the most spectacular formations. The underground concert experience (chamber music in the great cave hall) is extraordinary.",
     howToGetThere: "Drive from Miskolc (60km, 1.5 hours) or from Budapest (240km, 3 hours). Bus from Eger.",
     cost: "Short tour adults 3,400 HUF (€9). Long tour 4,200 HUF (€11).",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Baradla_barlang.jpg/960px-Baradla_barlang.jpg"
+    image: "/images/attractions/hungary-aggtelek-caves.jpg"
   },
   {
     name: "Chain Bridge (Budapest)",
@@ -165,7 +165,7 @@ export const hungaryAttractions = [
     insiderTip: "The Empress's apartment suite is the emotional heart of the visit — the blue salon, the private dining room, and Sisi's personal bath create an intimate connection with the legendary Empress. The baroque riding hall is also superb.",
     howToGetThere: "HÉV suburban railway from Budapest (Keleti station) to Gödöllő (50 minutes).",
     cost: "Adults 3,500 HUF (€9). Full tour including Empress apartment 5,500 HUF (€14).",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/G%C3%B6d%C3%B6ll%C5%91_Royal_Palace.jpg/960px-G%C3%B6d%C3%B6ll%C5%91_Royal_Palace.jpg"
+    image: "/images/attractions/hungary-g-d-ll-royal-palace.jpg"
   },
   {
     name: "Lake Hévíz",
@@ -189,7 +189,7 @@ export const hungaryAttractions = [
     insiderTip: "Book an opera performance rather than just a tour — tickets are surprisingly affordable by Western European standards, and the acoustics and production values are excellent. Standing/gallery tickets can be as low as €5–10.",
     howToGetThere: "Metro Line 1 (yellow, Hungary's oldest metro line, 1896) to Opera station. 10-minute walk from Heroes' Square.",
     cost: "Opera tickets from 1,200 HUF (€3) standing to 35,000+ HUF (€90) premium. Daily guided tours 5,000 HUF (€13).",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Hungarian_State_Opera_House.jpg/960px-Hungarian_State_Opera_House.jpg"
+    image: "/images/attractions/hungary-hungarian-state-opera-house.jpg"
   },
   {
     name: "Budapest Jewish Quarter & Ruin Bars",
@@ -201,7 +201,7 @@ export const hungaryAttractions = [
     insiderTip: "Visit Szimpla Kert (the original ruin bar) on Sunday morning when a local farmers' market fills the courtyard and the bar is at its most authentic — far more interesting than the crowded weekend evenings.",
     howToGetThere: "Metro Line 2 to Astoria or Keleti. The Quarter is a 10-minute walk from the centre.",
     cost: "Synagogue 7,000 HUF (€18). Ruin bars: drinks from 800 HUF (€2).",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Szimpla_Kert_2019.jpg/960px-Szimpla_Kert_2019.jpg"
+    image: "/images/attractions/hungary-budapest-jewish-quarter-ruin-bars.jpg"
   },
   {
     name: "Esterházy Palace (Fertőd)",

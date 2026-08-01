@@ -130,7 +130,7 @@ export default function DestinationsClient({ initialData }: DestinationsClientPr
                     {filteredDestinations.length > 0 ? (
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 hover-group">
                             {filteredDestinations.map((dest, i) => {
-                                const countrySlug = dest.country.toLowerCase().replace(' ', '_');
+                                const countrySlug = dest.country.toLowerCase().replace(/\s+/g, '-');
                                 return (
                                     <Link key={i} href={`/countries/${countrySlug}`} className="block">
                                         <DestinationCard {...dest} />

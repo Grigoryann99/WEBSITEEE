@@ -9,12 +9,12 @@ const chapters = [
     {
         tagline: "DISCOVER THE EXTRAORDINARY",
         title: "Where Luxury Meets ",
-        highlight: "the Horizon",
+        highlight: "The Horizon",
         description: "Explore private sanctuaries, handpicked villas, and luxury travel guides designed for the modern explorer.",
     },
     {
         tagline: "CURATED EXPERIENCES",
-        title: "Crafted for ",
+        title: "Crafted For ",
         highlight: "Discerning Travelers",
         description: "From overwater retreats in the Maldives to high-altitude chalets in the Swiss Alps, every destination is chosen with precision.",
     },
@@ -232,22 +232,25 @@ export default function HeroScroll() {
                     className="absolute inset-0 w-full h-full object-cover"
                 />
 
+                {/* Subtle Global Dark Gradient Overlay for perfect text contrast against bright sun/sky */}
+                <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/70 pointer-events-none z-10" />
+
                 {/* Mobile & Desktop Optimized Typography Overlays */}
                 <div className="relative z-20 w-full max-w-5xl px-4 sm:px-6 text-center flex flex-col items-center justify-center">
                     {/* Chapter 01 */}
                     <motion.div
                         style={{ opacity: ch0Opacity, y: ch0Y }}
-                        className="absolute inset-x-0 mx-auto max-w-2xl px-4 flex flex-col items-center justify-center"
+                        className="absolute inset-x-0 mx-auto max-w-4xl px-4 flex flex-col items-center justify-center drop-shadow-2xl"
                     >
-                        <div className="w-full bg-black/40 md:bg-transparent backdrop-blur-md md:backdrop-blur-none p-6 sm:p-8 md:p-0 rounded-3xl border border-white/15 md:border-none shadow-2xl md:shadow-none flex flex-col items-center">
-                            <p className="font-montserrat text-emerald-400 tracking-[0.25em] sm:tracking-[0.35em] text-[11px] sm:text-sm uppercase mb-3 sm:mb-4 font-bold">
+                        <div className="w-full flex flex-col items-center">
+                            <p className="font-sans text-[#D4AF37] tracking-[0.4em] sm:tracking-[0.5em] text-[10px] sm:text-xs uppercase mb-6 sm:mb-8 font-medium">
                                 {chapters[0].tagline}
                             </p>
-                            <h1 className="font-montserrat text-[26px] sm:text-[48px] md:text-[72px] lg:text-[84px] leading-[1.12] tracking-tight text-white mb-4 sm:mb-6 font-extrabold uppercase">
+                            <h1 className="font-serif text-[42px] sm:text-[64px] md:text-[86px] lg:text-[100px] leading-[1.05] text-white mb-6 sm:mb-8 font-light">
                                 {chapters[0].title}
-                                <span className="text-[#F59E0B] font-extrabold block sm:inline mt-1 sm:mt-0">{chapters[0].highlight}</span>
+                                <span className="font-light block sm:inline mt-2 sm:mt-0 italic text-white/90">{chapters[0].highlight}</span>
                             </h1>
-                            <p className="font-montserrat font-medium text-white/95 max-w-xl text-xs sm:text-base md:text-lg leading-relaxed">
+                            <p className="font-sans font-light text-white/80 max-w-xl text-sm sm:text-base md:text-lg leading-relaxed">
                                 {chapters[0].description}
                             </p>
                         </div>
@@ -256,17 +259,17 @@ export default function HeroScroll() {
                     {/* Chapter 02 */}
                     <motion.div
                         style={{ opacity: ch1Opacity, y: ch1Y }}
-                        className="absolute inset-x-0 mx-auto max-w-2xl px-4 flex flex-col items-center justify-center"
+                        className="absolute inset-x-0 mx-auto max-w-4xl px-4 flex flex-col items-center justify-center drop-shadow-2xl"
                     >
-                        <div className="w-full bg-black/40 md:bg-transparent backdrop-blur-md md:backdrop-blur-none p-6 sm:p-8 md:p-0 rounded-3xl border border-white/15 md:border-none shadow-2xl md:shadow-none flex flex-col items-center">
-                            <p className="font-montserrat text-emerald-400 tracking-[0.25em] sm:tracking-[0.35em] text-[11px] sm:text-sm uppercase mb-3 sm:mb-4 font-bold">
+                        <div className="w-full flex flex-col items-center">
+                            <p className="font-sans text-[#D4AF37] tracking-[0.4em] sm:tracking-[0.5em] text-[10px] sm:text-xs uppercase mb-6 sm:mb-8 font-medium">
                                 {chapters[1].tagline}
                             </p>
-                            <h2 className="font-montserrat text-[26px] sm:text-[48px] md:text-[72px] lg:text-[84px] leading-[1.12] tracking-tight text-white mb-4 sm:mb-6 font-extrabold uppercase">
+                            <h2 className="font-serif text-[42px] sm:text-[64px] md:text-[86px] lg:text-[100px] leading-[1.05] text-white mb-6 sm:mb-8 font-light">
                                 {chapters[1].title}
-                                <span className="text-[#F59E0B] font-extrabold block sm:inline mt-1 sm:mt-0">{chapters[1].highlight}</span>
+                                <span className="font-light block sm:inline mt-2 sm:mt-0 italic text-white/90">{chapters[1].highlight}</span>
                             </h2>
-                            <p className="font-montserrat font-medium text-white/95 max-w-xl text-xs sm:text-base md:text-lg leading-relaxed">
+                            <p className="font-sans font-light text-white/80 max-w-xl text-sm sm:text-base md:text-lg leading-relaxed">
                                 {chapters[1].description}
                             </p>
                         </div>
@@ -275,17 +278,17 @@ export default function HeroScroll() {
                     {/* Chapter 03 */}
                     <motion.div
                         style={{ opacity: ch2Opacity, y: ch2Y }}
-                        className="absolute inset-x-0 mx-auto max-w-2xl px-4 flex flex-col items-center justify-center"
+                        className="absolute inset-x-0 mx-auto max-w-4xl px-4 flex flex-col items-center justify-center drop-shadow-2xl"
                     >
-                        <div className="w-full bg-black/40 md:bg-transparent backdrop-blur-md md:backdrop-blur-none p-6 sm:p-8 md:p-0 rounded-3xl border border-white/15 md:border-none shadow-2xl md:shadow-none flex flex-col items-center">
-                            <p className="font-montserrat text-emerald-400 tracking-[0.25em] sm:tracking-[0.35em] text-[11px] sm:text-sm uppercase mb-3 sm:mb-4 font-bold">
+                        <div className="w-full flex flex-col items-center">
+                            <p className="font-sans text-[#D4AF37] tracking-[0.4em] sm:tracking-[0.5em] text-[10px] sm:text-xs uppercase mb-6 sm:mb-8 font-medium">
                                 {chapters[2].tagline}
                             </p>
-                            <h2 className="font-montserrat text-[26px] sm:text-[48px] md:text-[72px] lg:text-[84px] leading-[1.12] tracking-tight text-white mb-4 sm:mb-6 font-extrabold uppercase">
+                            <h2 className="font-serif text-[42px] sm:text-[64px] md:text-[86px] lg:text-[100px] leading-[1.05] text-white mb-6 sm:mb-8 font-light">
                                 {chapters[2].title}
-                                <span className="text-[#F59E0B] font-extrabold block sm:inline mt-1 sm:mt-0">{chapters[2].highlight}</span>
+                                <span className="font-light block sm:inline mt-2 sm:mt-0 italic text-white/90">{chapters[2].highlight}</span>
                             </h2>
-                            <p className="font-montserrat font-medium text-white/95 max-w-xl text-xs sm:text-base md:text-lg leading-relaxed">
+                            <p className="font-sans font-light text-white/80 max-w-xl text-sm sm:text-base md:text-lg leading-relaxed">
                                 {chapters[2].description}
                             </p>
                         </div>

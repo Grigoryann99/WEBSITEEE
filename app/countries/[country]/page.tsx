@@ -26,7 +26,7 @@ export async function generateMetadata(
         title: `Explore ${data.name} | Velora Travel`,
         description: data.description,
         robots: {
-            index: false,
+            index: true,
             follow: true,
         },
     };
@@ -42,6 +42,35 @@ export default function CountryPage({ params }: CountryPageProps) {
 
     return (
         <main className="min-h-screen bg-[#F9F9F9] text-brand-dark font-sans selection:bg-brand-accent selection:text-white">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "BreadcrumbList",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Home",
+                                "item": "https://veloratravel.org/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Destinations",
+                                "item": "https://veloratravel.org/destinations"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 3,
+                                "name": data.name,
+                                "item": `https://veloratravel.org/countries/${params.country.toLowerCase()}`
+                            }
+                        ]
+                    })
+                }}
+            />
             {/* 1. Hero Section */}
             <section className="relative h-[60vh] md:h-[70vh] flex flex-col items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-0">

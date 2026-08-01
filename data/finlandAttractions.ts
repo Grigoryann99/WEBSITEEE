@@ -225,7 +225,7 @@ export const finlandAttractions = [
     insiderTip: "The Moomin Museum within Vapriikki is the world's only museum dedicated to Tove Jansson's Moomin characters — featuring original illustrations and the extraordinary diorama scenes. Essential for Moomin fans of any age.",
     howToGetThere: "5-minute walk from Tampere Central Station along the river.",
     cost: "Adults €15. Includes all permanent collections.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Vapriikki.jpg/960px-Vapriikki.jpg"
+    image: "/images/attractions/finland-tampere-vapriikki-museum.jpg"
   },
   {
     name: "Midnight Sun Experience",

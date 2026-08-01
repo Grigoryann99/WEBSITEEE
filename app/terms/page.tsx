@@ -84,7 +84,7 @@ This includes, without limitation, damages arising from reliance on travel infor
                         },
                         {
                             title: '11. Support',
-                            content: `If you have questions about these Terms, please contact us via our Support page at /support.`
+                            content: `If you have questions about these Terms, please contact us via our Support page at /support or email us directly at veloratravel.support@gmail.com.`
                         }
                     ].map((section) => (
                         <div key={section.title}>

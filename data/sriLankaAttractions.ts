@@ -69,7 +69,7 @@ export const sriLankaAttractions = [
     insiderTip: "Start climbing at 2am from Dalhousie to reach the summit comfortably by sunrise (around 6am). The tea shops along the steps serve milky tea and biscuits — essential fuel for the 3-hour ascent. Descent is faster (2 hours) but harder on the knees.",
     howToGetThere: "Drive to Dalhousie from Colombo (5 hours) or Kandy (3 hours). Buses run overnight from Colombo during peak season.",
     cost: "Free to climb. Donations to temple accepted.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sri_Pada_%28Adam%27s_Peak%29_01.jpg/960px-Sri_Pada_%28Adam%27s_Peak%29_01.jpg"
+    image: "/images/attractions/srilanka-adam.jpg"
   },
   {
     name: "Anuradhapura Sacred City",
@@ -93,7 +93,7 @@ export const sriLankaAttractions = [
     insiderTip: "Visit Gal Vihara at dawn before the tourist coaches arrive — the three standing and reclining Buddhas carved directly from a single granite face have extraordinary presence in the early morning light with no one else present.",
     howToGetThere: "Drive from Sigiriya (1.5 hours). Train from Colombo (5 hours). Bus from Dambulla (2 hours).",
     cost: "Adults USD 25 (€23). Bicycle rental available at the entrance.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/%E0%B6%8B%E0%B6%AD%E0%B7%8A%E0%B6%AD%E0%B6%BB%E0%B7%8F%E0%B6%BB%E0%B7%8F%E0%B6%B8%E0%B6%BA_%E0%B6%9A%E0%B7%85%E0%B7%94_%E0%B6%9C%E0%B6%BD_%E0%B6%B1%E0%B7%99%E0%B6%BD%E0%B7%8F.jpg/960px-%E0%B6%8B%E0%B6%AD%E0%B7%8A%E0%B6%AD%E0%B6%BB%E0%B7%8F%E0%B6%BB%E0%B7%8F%E0%B6%B8%E0%B6%BA_%E0%B6%9A%E0%B7%85%E0%B7%94_%E0%B6%9C%E0%B6%BD_%E0%B6%B1%E0%B7%99%E0%B6%BD%E0%B7%8F.jpg"
+    image: "/images/attractions/srilanka-polonnaruwa-ancient-city.jpg"
   },
   {
     name: "Mirissa Whale Watching",
@@ -189,7 +189,7 @@ export const sriLankaAttractions = [
     insiderTip: "Trek the Mini World's End viewpoint (3 hours from Bambarella) — a cliff-edge precipice dropping 1,400 metres to the lowland plains, entirely unknown to most visitors and with views equally dramatic to the famous World's End at Horton Plains.",
     howToGetThere: "Drive from Kandy (45km to Elkaduwa, the main trekking base). Tuk-tuk from Matale.",
     cost: "Conservation area entry: 500 LKR (€1.50). Guided trek from 2,500 LKR (€7.50). Homestay from 1,500 LKR (€4.50)/night.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Knuckles_Mountain_Range.jpg/960px-Knuckles_Mountain_Range.jpg"
+    image: "/images/attractions/srilanka-knuckles-mountain-range.jpg"
   },
   {
     name: "Horton Plains & World's End",

@@ -132,7 +132,7 @@ export default function Navigation() {
 
                     {/* LOGO */}
                     <a
-                        href="#"
+                        href="/"
                         onClick={handleLogoClick}
                         aria-label="Go to homepage"
                         className="flex items-center gap-2.5 shrink-0 outline-none focus-visible:ring-2 focus-visible:ring-brand-accent rounded-lg"
