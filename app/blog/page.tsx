@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { getAllBlogPosts } from '@/lib/blogData';
 import Link from 'next/link';
 import Image from 'next/image';
+import FeaturedBlogCarousel from '@/components/blog/FeaturedBlogCarousel';
 
 export const metadata: Metadata = {
     title: 'Travel Blog | VeloraTravel',
@@ -10,7 +11,8 @@ export const metadata: Metadata = {
 
 export default function BlogPage() {
     const posts = getAllBlogPosts();
-    const [featured, ...rest] = posts;
+    const featuredPosts = posts.slice(0, 5); // Take top 5 for carousel
+    const restPosts = posts.slice(5); // The rest for the grid
 
     return (
         <main
@@ -39,43 +41,12 @@ export default function BlogPage() {
 
                 <div className="max-w-7xl mx-auto px-6 pb-24 space-y-16">
 
-                    {/* Featured post */}
-                    <Link href={`/blog/${featured.slug}`} className="group block">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden bg-white/90 backdrop-blur-md border border-rose-200/80 hover:border-[#E11D48]/50 shadow-md hover:shadow-2xl transition-all duration-500">
-                            <div className="relative aspect-[16/10] lg:aspect-auto lg:min-h-[400px] overflow-hidden bg-gray-100">
-                                <Image
-                                    src={featured.image}
-                                    alt={featured.title}
-                                    fill
-                                    className="object-cover group-hover:scale-105 transition-transform duration-700"
-                                    priority
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-white/10 lg:to-white/20" />
-                            </div>
-                            <div className="p-10 flex flex-col justify-center bg-white/95">
-                                <div className="flex items-center gap-3 mb-6">
-                                    <span className="font-sans text-[10px] tracking-widest uppercase text-white bg-gradient-to-r from-[#E11D48] to-[#F59E0B] backdrop-blur-md px-3.5 py-1.5 rounded-full font-bold shadow-sm">
-                                        {featured.category}
-                                    </span>
-                                    <span className="font-sans text-xs text-[#475569] font-medium">{featured.readTime}</span>
-                                </div>
-                                <h2 className="font-serif text-3xl md:text-4xl text-[#0F172A] mb-5 leading-tight group-hover:text-[#E11D48] transition-colors duration-300 font-semibold">
-                                    {featured.title}
-                                </h2>
-                                <p className="font-sans text-[#334155] font-normal leading-relaxed mb-8 text-sm">
-                                    {featured.description}
-                                </p>
-                                <div className="flex items-center gap-3 text-[#E11D48] text-xs font-sans tracking-widest uppercase font-bold">
-                                    <span>Read Article</span>
-                                    <span className="group-hover:translate-x-2 transition-transform duration-300">→</span>
-                                </div>
-                            </div>
-                        </div>
-                    </Link>
+                    {/* Featured Carousel */}
+                    <FeaturedBlogCarousel posts={featuredPosts} />
 
                     {/* Grid of remaining posts */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {rest.map((post) => (
+                        {restPosts.map((post) => (
                             <Link key={post.slug} href={`/blog/${post.slug}`} className="group flex flex-col bg-white/90 backdrop-blur-md border border-rose-200/80 hover:border-[#E11D48]/40 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
                                 <div className="relative aspect-[16/10] overflow-hidden bg-gray-100">
                                     <Image
