@@ -61,7 +61,7 @@ export default function FeaturedBlogCarousel({ posts }: { posts: BlogPost[] }) {
                             </h2>
                         </Link>
                         <p className="font-sans text-[#475569] text-base leading-relaxed mb-8">
-                            {featured.excerpt}
+                            {featured.description}
                         </p>
                         <Link
                             href={`/blog/${featured.slug}`}
