@@ -201,7 +201,7 @@ export const franceAttractions = [
     insiderTip: "Book your cellar tour weeks in advance, especially for Ruinart, which has the most historic and visually stunning Roman chalk quarries.",
     howToGetThere: "Take the TGV train from Paris Gare de l'Est to Reims (45 minutes).",
     cost: "Paid. Cellar tours and tastings range from €30.00 to €100.00.",
-    image: "/images/attractions/france-champagne-cellars-of-reims.jpg"
+    image: "https://loremflickr.com/1200/800/Champagne,Cellars,france/all?lock=10"
   },
   {
     name: "Saint-Émilion Vineyards",

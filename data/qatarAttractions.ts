@@ -9,7 +9,7 @@ export const qatarAttractions = [
     insiderTip: "Arrive 30 minutes before closing for the best light in the atrium courtyard. The museum café overlooking the Doha skyline across the water is one of the finest café views in any museum anywhere.",
     howToGetThere: "10-minute taxi from Doha city centre. Free shuttle from some city centre hotels.",
     cost: "Adults 100 QAR (€26). Tuesdays free. Under 16 free.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Museum_of_Islamic_Art_Doha_2019.jpg/960px-Museum_of_Islamic_Art_Doha_2019.jpg"
+    image: "https://loremflickr.com/1200/800/Museum,Islamic,qatar/all?lock=65"
   },
   {
     name: "Souq Waqif",
@@ -33,7 +33,7 @@ export const qatarAttractions = [
     insiderTip: "Visit Porto Arabia marina area — the waterfront promenade here with its yacht moorings and outdoor cafes captures the most elegant atmosphere of The Pearl. Ice cream from Morelli's Gelato while walking the marina is a local favourite.",
     howToGetThere: "Doha Metro Red Line to Qatar University station, then short taxi. Direct taxis from city centre (15 minutes).",
     cost: "Free to explore. Restaurants from 80–300 QAR (€22–82).",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/The_Pearl-Qatar_-_Doha.jpg/960px-The_Pearl-Qatar_-_Doha.jpg"
+    image: "https://loremflickr.com/1200/800/PearlQatar,qatar/all?lock=66"
   },
   {
     name: "Inland Sea (Khor Al Adaid)",
@@ -45,7 +45,7 @@ export const qatarAttractions = [
     insiderTip: "Book a full-day 4WD excursion from Doha (rather than trying to reach it independently without proper desert driving experience). Sunset camel riding on the dune ridge above the sea creates magnificent photographic opportunities.",
     howToGetThere: "2-hour 4WD drive from Doha (must have high-clearance 4WD). Guided day tours depart from Doha hotels.",
     cost: "Guided tours from 350 QAR (€95). Self-drive (own 4WD) free.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/2/21/Dunes_at_Khawr_al_Udayd_in_2004.jpg"
+    image: "https://loremflickr.com/1200/800/Inland,Khor,qatar/all?lock=67"
   },
   {
     name: "National Museum of Qatar",
@@ -69,7 +69,7 @@ export const qatarAttractions = [
     insiderTip: "The small fort museum is excellent — it contextualizes the site's importance within the pearl trade network that connected Qatar, Bahrain, India, and East Africa. The drive through the sparse northern Qatar landscape is itself atmospheric.",
     howToGetThere: "Drive from Doha (105km, 1.5 hours north). Organised day tours from Doha hotels.",
     cost: "Adults 15 QAR (€4). Under 16 free.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Zubarah_Fort_Qatar.jpg/960px-Zubarah_Fort_Qatar.jpg"
+    image: "https://loremflickr.com/1200/800/Zubarah,Fort,qatar/all?lock=68"
   },
   {
     name: "Doha Corniche",
@@ -93,7 +93,7 @@ export const qatarAttractions = [
     insiderTip: "The Torch Tower viewing area in Aspire Zone provides excellent views over Doha. The Aspire Park surrounding the complex is Qatar's largest public park and a popular family destination.",
     howToGetThere: "Metro Red Line to Madinat Khalifa. Located in Aspire Zone, southwest Doha.",
     cost: "Adults 75 QAR (€21). Under 12 free.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Khalifa_International_Stadium.jpg/960px-Khalifa_International_Stadium.jpg"
+    image: "https://loremflickr.com/1200/800/Museum,Future,qatar/all?lock=69"
   },
   {
     name: "Katara Cultural Village",
@@ -117,7 +117,7 @@ export const qatarAttractions = [
     insiderTip: "Arrive very early — races begin at sunrise and the best action is in the first hour. Qatari owners invite visitors to follow the race alongside their SUVs — if offered, accept graciously.",
     howToGetThere: "Drive from Doha (40km, 30 minutes west). No public transport.",
     cost: "Free.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Camel_racing_in_Qatar_2.jpg/960px-Camel_racing_in_Qatar_2.jpg"
+    image: "https://loremflickr.com/1200/800/Camel,Race,qatar/all?lock=70"
   },
   {
     name: "Al Fahidi Historic District (Doha equivalent) – Msheireb Downtown Doha",
@@ -129,7 +129,7 @@ export const qatarAttractions = [
     insiderTip: "The Bin Jelmood House museum covers the history of slavery in the Gulf region — an important and little-discussed history presented with intelligence and sensitivity. The architecture of the entire district is worthy of careful examination.",
     howToGetThere: "Doha Metro Gold Line to Msheireb station (central location).",
     cost: "District free. Museums from 10 QAR (€3) each.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Msheireb_Downtown_Doha.jpg/960px-Msheireb_Downtown_Doha.jpg"
+    image: "https://loremflickr.com/1200/800/Fahidi,Historic,qatar/all?lock=71"
   },
   {
     name: "Aspire Park",
@@ -153,7 +153,7 @@ export const qatarAttractions = [
     insiderTip: "Walk the corniche at sunset and then dine at one of the small local restaurants overlooking the beach — the fresh fish and seafood here is excellent and prices are significantly lower than Doha.",
     howToGetThere: "Drive from Doha (20km south, 20 minutes). No direct Metro connection.",
     cost: "Free to explore. Meals from 40–100 QAR (€11–27).",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Souq_Al_Wakrah_Qatar.jpg/960px-Souq_Al_Wakrah_Qatar.jpg"
+    image: "https://loremflickr.com/1200/800/Wakrah,Town,qatar/all?lock=72"
   },
   {
     name: "Doha Design District (D3)",
@@ -165,7 +165,7 @@ export const qatarAttractions = [
     insiderTip: "Check the D3 events calendar for open studio events and design exhibitions — the quality of work produced here (particularly in fashion and interior design) is internationally competitive.",
     howToGetThere: "Metro Red Line to Al Doha Al Jadeda. 15-minute taxi from Souq Waqif.",
     cost: "Free to explore. Galleries free.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/MIA_Park_Doha.jpg/960px-MIA_Park_Doha.jpg"
+    image: "https://loremflickr.com/1200/800/Doha,Design,qatar/all?lock=73"
   },
   {
     name: "974 Stadium (Ras Abu Aboud)",
@@ -177,7 +177,7 @@ export const qatarAttractions = [
     insiderTip: "Walk the waterfront promenade adjacent to the stadium — the views of the Doha skyline from this vantage point are excellent, and the stadium exterior itself is photogenic from every angle.",
     howToGetThere: "Metro Green Line to Ras Bu Abboud station (adjacent to the stadium).",
     cost: "Exterior viewing free. Events inside vary.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Stadium_974_2022.jpg/960px-Stadium_974_2022.jpg"
+    image: "https://loremflickr.com/1200/800/Stadium,Aboud,qatar/all?lock=74"
   },
   {
     name: "Al Zubarah Archaeological Site",
@@ -189,7 +189,7 @@ export const qatarAttractions = [
     insiderTip: "The fort's rooftop terrace gives the best overview of the archaeological site — from above, the street plan and building outlines of the entire abandoned town are visible in the desert.",
     howToGetThere: "Drive from Doha (110km north, 1.5 hours). Zubarah Fort is the entry point for the site.",
     cost: "Adults 15 QAR (€4). Under 16 free.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Zubarah_archaeological_site.jpg/960px-Zubarah_archaeological_site.jpg"
+    image: "https://loremflickr.com/1200/800/Zubarah,Archaeological,qatar/all?lock=75"
   },
   {
     name: "Al Janoub Stadium",
@@ -201,7 +201,7 @@ export const qatarAttractions = [
     insiderTip: "The stadium is most impressive when approached from the approaching boulevard — the way the wave-like roof rises against the flat desert horizon is dramatic and clearly influenced by the sea and pearl-diving culture.",
     howToGetThere: "Metro Red Line to Al Wakrah station. Free shuttles on event days.",
     cost: "Events from 50 QAR (€14). Stadium tours available on non-event days.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Al_Janoub_Stadium_exterior.jpg/960px-Al_Janoub_Stadium_exterior.jpg"
+    image: "https://loremflickr.com/1200/800/Janoub,Stadium,qatar/all?lock=76"
   },
   {
     name: "Global Village (Doha equivalent) – Villagio Mall",
@@ -213,7 +213,7 @@ export const qatarAttractions = [
     insiderTip: "Book a gondola ride on the indoor canal — the gondoliers sing Italian songs and the experience of floating past Venetian facades in an air-conditioned Qatari mall is delightfully absurd.",
     howToGetThere: "Located in Aspire Zone. Metro Red Line to Madinat Khalifa, then taxi.",
     cost: "Free to enter. Gondola ride from 50 QAR (€14). Shopping at market rates.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Msheireb_Downtown_Doha.jpg/960px-Msheireb_Downtown_Doha.jpg"
+    image: "https://loremflickr.com/1200/800/Global,Village,qatar/all?lock=77"
   },
   {
     name: "Doha Fort (Al Koot Fort)",
@@ -225,7 +225,7 @@ export const qatarAttractions = [
     insiderTip: "Climb to the fort's rooftop terrace for an aerial view over the rooftops of Souq Waqif and toward the Doha skyline — a perspective that captures the dramatic contrast between old and new Qatar.",
     howToGetThere: "Adjacent to Souq Waqif. 10-minute walk from Souq Waqif Metro station.",
     cost: "Free.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Al_Thumama_Stadium_2022.jpg/960px-Al_Thumama_Stadium_2022.jpg"
+    image: "https://loremflickr.com/1200/800/Doha,Fort,qatar/all?lock=78"
   },
   {
     name: "Lusail City",

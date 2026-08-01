@@ -21,7 +21,7 @@ export const greeceAttractions = [
     insiderTip: "Book a caldera-view table at a restaurant in Imerovigli rather than Oia — the sunsets are equally spectacular but with half the crowd. Rent an ATV to explore the island's hidden black-sand beaches.",
     howToGetThere: "Fly to Santorini International Airport (JTR) directly, or take a high-speed ferry from Athens' Piraeus port (5 hours) or Rafina port (4 hours).",
     cost: "Free to explore. Cable car in Fira is €6.00 one-way.",
-    image: "/images/attractions/greece-santorini.jpg"
+    image: "https://loremflickr.com/1200/800/Santorini,greece/all?lock=11"
   },
   {
     name: "Meteora Monasteries",
@@ -69,7 +69,7 @@ export const greeceAttractions = [
     insiderTip: "Rent a scooter and drive south to Lindos, where a hilltop acropolis overlooks one of the most beautiful bays in Greece. The 2-hour drive south through traditional villages is as rewarding as the destination.",
     howToGetThere: "Fly to Rhodes International Airport (RHO) from Athens (45 minutes) or from major European cities directly.",
     cost: "Free to walk the streets. Palace of the Grand Masters entry €8.00.",
-    image: "/images/attractions/greece-rhodes-medieval-old-town.jpg"
+    image: "https://loremflickr.com/1200/800/Rhodes,Medieval,greece/all?lock=12"
   },
   {
     name: "Knossos Palace",
@@ -141,7 +141,7 @@ export const greeceAttractions = [
     insiderTip: "The hike is one-way downhill (top to bottom). Arrange return transportation in advance — take the boat from the beach village of Agia Roumeli to Hora Sfakion, then a bus or taxi back to your accommodation.",
     howToGetThere: "Take the KTEL bus from Chania to Omalos (1.5 hours), then hike down. Return by ferry and bus.",
     cost: "Paid. €5.00 national park entrance fee.",
-    image: "/images/attractions/greece-samaria-gorge.jpg"
+    image: "https://loremflickr.com/1200/800/Samaria,Gorge,greece/all?lock=13"
   },
   {
     name: "Cape Sounion",

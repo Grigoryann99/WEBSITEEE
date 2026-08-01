@@ -57,7 +57,7 @@ export const uaeAttractions = [
     insiderTip: "Book a table at a waterside restaurant (Zuma, Thiptara, or Rivington Grill) for a front-row seated view of the fountain show with dinner. The boardwalk itself is free but extremely crowded during shows.",
     howToGetThere: "Dubai Metro (Red Line) to Burj Khalifa/Dubai Mall station, then a 10-minute walk through the covered connector bridge.",
     cost: "Free to enter the mall and watch the fountain. Dubai Aquarium entry AED 100.",
-    image: "/images/attractions/uae-dubai-mall-dubai-fountain.jpg"
+    image: "https://loremflickr.com/1200/800/Dubai,Mall,uae/all?lock=108"
   },
   {
     name: "Louvre Abu Dhabi",
@@ -69,7 +69,7 @@ export const uaeAttractions = [
     insiderTip: "Stand in the central plaza beneath the dome during the 'rain of light' phenomenon — when sunlight filters through the 7,850 stars of the dome at specific times of day. The reflected dots of light on the water create an otherworldly atmosphere unlike any other museum in the world.",
     howToGetThere: "Take a taxi from Abu Dhabi city (20 minutes) or hire a car. A bus service connects to Yas Island. Saadiyat is 35 km from Abu Dhabi city centre.",
     cost: "Paid. AED 63 for adults, AED 31.5 for students. Free entry for under-18s.",
-    image: "/images/attractions/uae-louvre-abu-dhabi.jpg"
+    image: "https://loremflickr.com/1200/800/Louvre,Dhabi,uae/all?lock=109"
   },
   {
     name: "Desert Safari Dubai",
@@ -93,7 +93,7 @@ export const uaeAttractions = [
     insiderTip: "The Dubai Frame is best photographed from outside at night when it is illuminated in gold from the outside. For interior views, the late afternoon (4:00–5:00 PM) light is most dramatic on the glass walkway.",
     howToGetThere: "Take a taxi to Zabeel Park Gate No. 1. The park is accessible from the Dubai Metro (Green Line) at Al Jafiliya station (10-minute walk).",
     cost: "Paid. AED 50 for adults, AED 20 for children under 12.",
-    image: "/images/attractions/uae-dubai-frame.jpg"
+    image: "https://loremflickr.com/1200/800/Dubai,Frame,uae/all?lock=110"
   },
   {
     name: "Dubai Creek & Gold Souk",
@@ -129,7 +129,7 @@ export const uaeAttractions = [
     insiderTip: "Book the Yas Marina Circuit 'Hot Lap' experience (from AED 295) to ride as a passenger in a high-performance car driven by a professional driver at racing speed around the same circuit where Lewis Hamilton and Max Verstappen compete.",
     howToGetThere: "Take a taxi from Abu Dhabi city centre (30 minutes) or from Abu Dhabi International Airport (10 minutes).",
     cost: "Individual attraction tickets from AED 250–395. Combo passes for multiple parks available at a discount.",
-    image: "/images/attractions/uae-yas-island.jpg"
+    image: "https://loremflickr.com/1200/800/Island,uae/all?lock=111"
   },
   {
     name: "Al Fahidi Historic District",
@@ -177,7 +177,7 @@ export const uaeAttractions = [
     insiderTip: "Section Kite Beach (near Umm Suqeim) is the best for active beachgoers — kite-surfers, paddleboarders, and beach fitness enthusiasts make it the most energetic stretch. The Sunset Beach section, facing the Burj Al Arab directly, is the best for photography.",
     howToGetThere: "Take the Dubai Metro to Mall of the Emirates or Nakheel stations, then a taxi (10 minutes) to the beach. Numerous taxis run from the metro.",
     cost: "Free public beach access.",
-    image: "/images/attractions/uae-jumeirah-beach.jpg"
+    image: "https://loremflickr.com/1200/800/Jumeirah,Beach,uae/all?lock=112"
   },
   {
     name: "Abu Dhabi Corniche",

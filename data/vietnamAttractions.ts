@@ -9,7 +9,7 @@ export const vietnamAttractions = [
     insiderTip: "Opt for a smaller, boutique cruise that visits the less crowded Bai Tu Long Bay or Lan Ha Bay to experience the majestic scenery in exclusive serenity.",
     howToGetThere: "A 2.5-hour drive or luxury limousine transfer from Hanoi via the new expressway.",
     cost: "From $150 to $500+ for a luxury overnight cruise.",
-    image: '/images/attractions/vietnam-ha-long-bay.jpg'
+    image: "https://loremflickr.com/1200/800/Long,vietnam/all?lock=117"
   },
   {
     name: "Hoi An Ancient Town",
@@ -21,7 +21,7 @@ export const vietnamAttractions = [
     insiderTip: "Visit during the monthly Full Moon Lantern Festival when all electric lights are turned off, and the town is illuminated solely by traditional lanterns.",
     howToGetThere: "A 45-minute drive from Da Nang International Airport.",
     cost: "Free to enter the town; $6 for a heritage sightseeing ticket; custom tailoring from $100+.",
-    image: '/images/attractions/vietnam-hoi-an-ancient-town.jpg'
+    image: "https://loremflickr.com/1200/800/Ancient,Town,vietnam/all?lock=118"
   },
   {
     name: "Phong Nha-Ke Bang",
@@ -33,7 +33,7 @@ export const vietnamAttractions = [
     insiderTip: "Book cave expeditions well in advance, especially for Son Doong or Tu Lan, as premium tour operators limit visitor numbers to preserve the ecosystem.",
     howToGetThere: "Fly into Dong Hoi Airport, followed by a 45-minute scenic drive to the national park.",
     cost: "From $10 for standard cave entry up to $3,000 for the exclusive multi-day Son Doong expedition.",
-    image: '/images/attractions/vietnam-phong-nha-ke-bang.jpg'
+    image: "https://loremflickr.com/1200/800/Phong,NhaKe,vietnam/all?lock=119"
   },
   {
     name: "Cu Chi Tunnels",
@@ -81,7 +81,7 @@ export const vietnamAttractions = [
     insiderTip: "Take the world's longest over-sea cable car to Hon Thom island for breathtaking aerial views of the archipelago and turquoise waters.",
     howToGetThere: "Direct flights from Ho Chi Minh City (1 hour), Hanoi (2 hours), or major Asian hubs.",
     cost: "Luxury resort stays range from $300 to $1,500+ per night.",
-    image: '/images/attractions/vietnam-phu-quoc-island.jpg'
+    image: "https://loremflickr.com/1200/800/Quoc,Island,vietnam/all?lock=120"
   },
   {
     name: "Mekong Delta",
@@ -105,7 +105,7 @@ export const vietnamAttractions = [
     insiderTip: "Hire a private guide to deeply understand the unique brick-making techniques of the Cham people, a mystery that still puzzles modern archaeologists.",
     howToGetThere: "A 1-hour scenic drive from Hoi An or Da Nang.",
     cost: "$6 for the entrance ticket; private guided tours from $50.",
-    image: '/images/attractions/vietnam-my-son-sanctuary.jpg'
+    image: "https://loremflickr.com/1200/800/Sanctuary,vietnam/all?lock=121"
   },
   {
     name: "Hoan Kiem Lake",
@@ -129,7 +129,7 @@ export const vietnamAttractions = [
     insiderTip: "Stay at a resort in Ba Na Hills to get exclusive early morning access to the bridge before the day-trippers arrive.",
     howToGetThere: "A 45-minute drive from Da Nang city center to the Ba Na Hills cable car station.",
     cost: "Approximately $35 for the Ba Na Hills cable car and entrance ticket.",
-    image: '/images/attractions/vietnam-da-nang-golden-bridge.jpg'
+    image: "https://loremflickr.com/1200/800/Nang,Golden,vietnam/all?lock=122"
   },
   {
     name: "Ninh Binh (Trang An)",
@@ -141,7 +141,7 @@ export const vietnamAttractions = [
     insiderTip: "Take the Trang An boat route number 3, which goes through the longest cave system and is generally less crowded than the other routes.",
     howToGetThere: "A comfortable 2-hour drive south of Hanoi via private luxury transfer.",
     cost: "Around $10 for a scenic boat tour; luxury resorts range from $150 to $300+ per night.",
-    image: '/images/attractions/vietnam-ninh-binh-trang-an.jpg'
+    image: "https://loremflickr.com/1200/800/Ninh,Binh,vietnam/all?lock=123"
   },
   {
     name: "Mui Ne Sand Dunes",
@@ -189,7 +189,7 @@ export const vietnamAttractions = [
     insiderTip: "Take the early morning cable car to experience the magical sunrise and to beat the large tour groups that arrive later in the day.",
     howToGetThere: "Accessible from Sapa town via a funicular train to the cable car station.",
     cost: "Around $35 for the round-trip cable car ticket.",
-    image: '/images/attractions/vietnam-fansipan.jpg'
+    image: "https://loremflickr.com/1200/800/Fansipan,vietnam/all?lock=124"
   },
   {
     name: "Con Dao Islands",
@@ -213,7 +213,7 @@ export const vietnamAttractions = [
     insiderTip: "Bargaining is expected; always counter-offer at about 50% of the initial asking price and negotiate with a friendly smile.",
     howToGetThere: "Located in the exact center of District 1, Ho Chi Minh City, easily accessible from all major luxury hotels.",
     cost: "Free to enter; spending depends entirely on your shopping and dining desires.",
-    image: '/images/attractions/vietnam-ben-thanh-market.jpg'
+    image: "https://loremflickr.com/1200/800/Thanh,Market,vietnam/all?lock=125"
   },
   {
     name: "Cat Ba Island",
@@ -237,6 +237,6 @@ export const vietnamAttractions = [
     insiderTip: "Take a boat through the Puong Cave, a massive river tunnel through a limestone mountain that is home to thousands of bats and features incredible stalactites.",
     howToGetThere: "A scenic 5 to 6-hour private car journey from Hanoi through the mountainous northern terrain.",
     cost: "Private boat tours around $30; upgraded boutique homestays from $50 to $100 per night.",
-    image: '/images/attractions/vietnam-ba-be-lake.jpg'
+    image: "https://loremflickr.com/1200/800/Lake,vietnam/all?lock=126"
   }
 ];

@@ -225,7 +225,7 @@ export const japanAttractions = [
     insiderTip: "Visit Ishigaki Island or Miyako Island for the absolute best white sand beaches and clearest water in the prefecture.",
     howToGetThere: "Fly direct to Naha Airport (Okinawa main island) from Tokyo (approx. 2.5 hours).",
     cost: "Free.",
-    image: "/images/attractions/japan-okinawa-beaches.jpg"
+    image: "https://loremflickr.com/1200/800/Okinawa,Beaches,japan/all?lock=36"
   },
   {
     name: "Sapporo Snow Festival",

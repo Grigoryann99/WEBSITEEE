@@ -153,7 +153,7 @@ export const norwayAttractions = [
     insiderTip: "Check the storm forecast — visiting during a moderate westerly gale (safely from the car) creates genuinely spectacular spray-over-bridge scenes that have made the road famous. Stop at the fishing hamlet of Håholmen for fresh crab.",
     howToGetThere: "Drive 70km from Kristiansund or 110km from Molde. A bus service runs between Molde and Kristiansund, stopping at Kårvåg near the road.",
     cost: "Free (previously a toll road, now free).",
-    image: "/images/attractions/norway-atlanterhavsveien.jpg"
+    image: "https://loremflickr.com/1200/800/Norwegian,Scenic,norway/all?lock=59"
   },
   {
     name: "Jostedalsbreen Glacier",

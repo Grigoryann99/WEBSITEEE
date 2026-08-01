@@ -33,7 +33,7 @@ export const thailandAttractions = [
     insiderTip: "Take an early-morning snorkelling tour (departing 7:00 AM) before the 200+ boats arrive at Maya Bay by 10:00 AM. Stay overnight on Ko Phi Phi Don to experience the magical quiet after the day-trippers leave.",
     howToGetThere: "Take a ferry from Phuket (2 hours) or Krabi (1.5 hours). Multiple daily services operate in high season.",
     cost: "National Marine Park fee 400 THB included in most tour packages.",
-    image: "/images/attractions/thailand-phi-phi-islands.jpg"
+    image: "https://loremflickr.com/1200/800/Islands,thailand/all?lock=99"
   },
   {
     name: "Wat Phra That Doi Suthep",
@@ -153,7 +153,7 @@ export const thailandAttractions = [
     insiderTip: "Watch the sunrise from Yun Lai Viewpoint overlooking a 'sea of clouds' filling the valley — one of the most beautiful sights in northern Thailand. Hire a scooter the evening before and sleep at the viewpoint guesthouse.",
     howToGetThere: "Catch a minivan from Chiang Mai's Arcade Bus Terminal (3 hours on 762 curves of mountain road). The 'Pai bus' is famous for causing motion sickness — take ginger sweets.",
     cost: "Free to explore. Most activities are extremely affordable.",
-    image: "/images/attractions/thailand-pai-valley.jpg"
+    image: "https://loremflickr.com/1200/800/Valley,thailand/all?lock=100"
   },
   {
     name: "Damnoen Saduak Floating Market",
@@ -225,7 +225,7 @@ export const thailandAttractions = [
     insiderTip: "Rent a bicycle (30 THB/day) from the new town and spend a full day cycling the flat, tree-lined paths between the ruins. The outer zones (barely visited by tourists) contain temples just as beautiful as the central zone.",
     howToGetThere: "Take a bus from Bangkok's Mochit terminal (6 hours) or fly to Phitsanulok then take a local bus (1 hour).",
     cost: "Paid. 220 THB for the central zone; multiple zones each require separate tickets.",
-    image: "/images/attractions/thailand-sukhothai-historical-park.jpg"
+    image: "https://loremflickr.com/1200/800/Sukhothai,Historical,thailand/all?lock=101"
   },
   {
     name: "Tiger Cave Temple",

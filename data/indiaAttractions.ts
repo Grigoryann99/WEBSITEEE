@@ -69,7 +69,7 @@ export const indiaAttractions = [
     insiderTip: "Rent a bicycle or a moped to explore the vast ruins at your own pace across both sides of the Tungabhadra River.",
     howToGetThere: "Take an overnight train from Bangalore to Hospet, followed by a short auto-rickshaw ride to Hampi.",
     cost: "$$",
-    image: '/images/attractions/india-hampi.jpg'
+    image: "https://loremflickr.com/1200/800/Hampi,india/all?lock=24"
   },
   {
     name: "Ranthambore National Park",
@@ -165,7 +165,7 @@ export const indiaAttractions = [
     insiderTip: "Visit during the Dasara festival (September/October) to witness the palace and city in their most spectacular, celebratory state.",
     howToGetThere: "A comfortable 3-hour drive or train ride from Bangalore.",
     cost: "$",
-    image: '/images/attractions/india-mysore-palace.jpg'
+    image: "https://loremflickr.com/1200/800/Mysore,Palace,india/all?lock=25"
   },
   {
     name: "Khajuraho Group of Monuments",
@@ -177,7 +177,7 @@ export const indiaAttractions = [
     insiderTip: "Attend the spectacular Sound and Light Show in the evening, which beautifully illuminates the temples and narrates their history.",
     howToGetThere: "Khajuraho has its own airport with flights from Delhi and Varanasi.",
     cost: "$$",
-    image: '/images/attractions/india-khajuraho-group-of-monuments.jpg'
+    image: "https://loremflickr.com/1200/800/Khajuraho,Group,india/all?lock=26"
   },
   {
     name: "Meenakshi Temple",
@@ -213,7 +213,7 @@ export const indiaAttractions = [
     insiderTip: "Take a scenic ferry from Port Blair to Havelock Island for the best luxury resorts and diving experiences.",
     howToGetThere: "Fly into Port Blair (Veer Savarkar International Airport) from major mainland cities like Chennai, Kolkata, or Delhi.",
     cost: "$$$",
-    image: '/images/attractions/india-andaman-islands.jpg'
+    image: "https://loremflickr.com/1200/800/Andaman,Islands,india/all?lock=27"
   },
   {
     name: "Munnar",
@@ -225,7 +225,7 @@ export const indiaAttractions = [
     insiderTip: "Visit the Tea Museum to understand the history of tea making, and ensure you take a guided trek through the plantations early in the morning.",
     howToGetThere: "A scenic 4-hour drive up the winding mountain roads from Cochin International Airport.",
     cost: "$$",
-    image: '/images/attractions/india-munnar.jpg'
+    image: "https://loremflickr.com/1200/800/Munnar,india/all?lock=28"
   },
   {
     name: "Mahabalipuram",
@@ -237,6 +237,6 @@ export const indiaAttractions = [
     insiderTip: "Visit the Shore Temple at sunrise for spectacular photography as the morning light hits the ancient stone structures.",
     howToGetThere: "A comfortable 1.5-hour drive down the scenic East Coast Road from Chennai.",
     cost: "$$",
-    image: '/images/attractions/india-mahabalipuram.jpg'
+    image: "https://loremflickr.com/1200/800/Mahabalipuram,india/all?lock=29"
   }
 ];

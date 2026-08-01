@@ -69,7 +69,7 @@ export const egyptAttractions = [
     insiderTip: "Visit in the late afternoon and stay through sunset to see the temple transition from golden hour sunlight to dramatic nighttime illumination.",
     howToGetThere: "Located in downtown Luxor on the East Bank, easily walkable from nearby luxury hotels or cruise docks.",
     cost: "Moderate entry fee.",
-    image: '/images/attractions/egypt-luxor-temple.jpg'
+    image: "https://loremflickr.com/1200/800/Luxor,Temple,egypt/all?lock=3"
   },
   {
     name: "Philae Temple",
@@ -129,7 +129,7 @@ export const egyptAttractions = [
     insiderTip: "Wander down Al-Muizz Street at dusk; it has the greatest concentration of medieval architectural treasures in the Islamic world and looks stunning when illuminated.",
     howToGetThere: "Located in central Cairo, best accessed via taxi or private driver.",
     cost: "Free to wander; purchases and private guides vary.",
-    image: '/images/attractions/egypt-islamic-cairo-khan-el-khalili.jpg'
+    image: "https://loremflickr.com/1200/800/Islamic,Cairo,egypt/all?lock=4"
   },
   {
     name: "Alexandria Library (Bibliotheca Alexandrina)",
@@ -153,7 +153,7 @@ export const egyptAttractions = [
     insiderTip: "Do not miss a sunset swim at Cleopatra's Spring, followed by a bespoke dinner in the dunes arranged by a luxury eco-lodge.",
     howToGetThere: "A long drive (approx. 9-10 hours) from Cairo, or via occasional private charter flights.",
     cost: "High, primarily due to transportation and high-end eco-luxury accommodations.",
-    image: '/images/attractions/egypt-siwa-oasis.jpg'
+    image: "https://loremflickr.com/1200/800/Siwa,Oasis,egypt/all?lock=5"
   },
   {
     name: "Dahshur Pyramids",
@@ -225,7 +225,7 @@ export const egyptAttractions = [
     insiderTip: "Take time to sit quietly on the carpets inside the Muhammad Ali Mosque to admire the staggering scale of the domed ceiling and the peaceful atmosphere.",
     howToGetThere: "Located in Islamic Cairo; easily reached by taxi or private vehicle.",
     cost: "Moderate entry fee.",
-    image: '/images/attractions/egypt-salah-el-din-citadel.jpg'
+    image: "https://loremflickr.com/1200/800/Salah,ElDin,egypt/all?lock=6"
   },
   {
     name: "Saqqara (Step Pyramid)",
@@ -237,6 +237,6 @@ export const egyptAttractions = [
     insiderTip: "Don't just look at the Step Pyramid; make sure you visit the Serapeum and the incredibly detailed Tomb of Mereruka, which are often missed by large bus tours.",
     howToGetThere: "About a 45-minute private drive south of central Cairo, often combined with a visit to Memphis or Dahshur.",
     cost: "Moderate; requires several different tickets to see all the major monuments on site.",
-    image: '/images/attractions/egypt-saqqara-step-pyramid.jpg'
+    image: "https://loremflickr.com/1200/800/Saqqara,Step,egypt/all?lock=7"
   }
 ];

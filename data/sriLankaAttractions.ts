@@ -93,7 +93,7 @@ export const sriLankaAttractions = [
     insiderTip: "Visit Gal Vihara at dawn before the tourist coaches arrive — the three standing and reclining Buddhas carved directly from a single granite face have extraordinary presence in the early morning light with no one else present.",
     howToGetThere: "Drive from Sigiriya (1.5 hours). Train from Colombo (5 hours). Bus from Dambulla (2 hours).",
     cost: "Adults USD 25 (€23). Bicycle rental available at the entrance.",
-    image: "/images/attractions/srilanka-polonnaruwa-ancient-city.jpg"
+    image: "https://loremflickr.com/1200/800/Polonnaruwa,Ancient,sriLanka/all?lock=80"
   },
   {
     name: "Mirissa Whale Watching",
@@ -105,7 +105,7 @@ export const sriLankaAttractions = [
     insiderTip: "Choose smaller boats with licensed operators (Raja and the Whales is reputable) rather than large tourist vessels — they are more manoeuverable and maintain a respectful distance from the whales. Bring sea-sickness tablets — the open ocean beyond the continental shelf can be rough.",
     howToGetThere: "Drive from Galle (40km, 1 hour). Drive from Colombo (180km, 3 hours). Bus from Matara or Galle.",
     cost: "Whale watching trip: 5,500–8,000 LKR (€17–24) per person. Departs 6am daily (November–April).",
-    image: "/images/attractions/sri-lanka-mirissa-whale-watching.jpg"
+    image: "https://loremflickr.com/1200/800/Mirissa,Whale,sriLanka/all?lock=81"
   },
   {
     name: "Nuwara Eliya Tea Country",
@@ -213,7 +213,7 @@ export const sriLankaAttractions = [
     insiderTip: "Cycle to the islands off Jaffna Peninsula (Nainativu, Neduntivu) — the causeway-connected string of flat islands with their fishing villages, Hindu shrines, and sea views offer the most peaceful and authentic northern Sri Lanka experience.",
     howToGetThere: "Fly from Colombo (50 minutes). Train from Colombo (11 hours on the restored Northern Line). Drive from Colombo (8 hours via Vavuniya).",
     cost: "Free to explore. Jaffna Fort: 250 LKR (€0.75). Nainativu island ferry: 300 LKR (€1) return.",
-    image: "/images/attractions/sri-lanka-jaffna.jpg"
+    image: "https://loremflickr.com/1200/800/Jaffna,Peninsula,sriLanka/all?lock=82"
   },
   {
     name: "Trincomalee & Pigeon Island",
@@ -225,7 +225,7 @@ export const sriLankaAttractions = [
     insiderTip: "Visit Koneswaram Temple (Thirukoneshwaram) at dawn during the temple's morning puja — the combination of Hindu religious ceremony performed at the cliff-edge above the Indian Ocean at sunrise creates an extraordinary atmosphere.",
     howToGetThere: "Drive from Colombo (7 hours). Fly to Trincomalee (limited services). Bus from Kandy (5 hours via Habarana).",
     cost: "Pigeon Island Marine National Park: USD 10 (€9). Boat to island: 500 LKR (€1.50) return.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Pigeon_Island_National_Park_%28Sri_Lanka%29.jpg/960px-Pigeon_Island_National_Park_%28Sri_Lanka%29.jpg"
+    image: "https://loremflickr.com/1200/800/Trincomalee,Pigeon,sriLanka/all?lock=83"
   },
   {
     name: "Pinnawala Elephant Orphanage",
@@ -237,6 +237,6 @@ export const sriLankaAttractions = [
     insiderTip: "Watch the bathing from the river restaurants and cafes rather than from the official viewing area — the proximity to the elephants from the restaurant terraces is closer and the lighting better for photography. The baby elephant feeding at 9:15am, 1:15pm, and 5pm is particularly charming.",
     howToGetThere: "Drive from Colombo (95km, 2 hours via Kandy Road). Bus from Colombo (Kegalle bus, 2.5 hours). En route between Colombo and Kandy.",
     cost: "Adults: 4,000 LKR (€12). Under 3: free.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Pinnawala_01.jpg/960px-Pinnawala_01.jpg"
+    image: "https://loremflickr.com/1200/800/Pinnawala,Elephant,sriLanka/all?lock=84"
   }
 ];

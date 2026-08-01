@@ -33,7 +33,7 @@ export const polandAttractions = [
     insiderTip: "Climb the St. Mary's Basilica tower for the panoramic view over the square — a trumpeter plays the hejnał (bugle call) from the highest tower every hour (interrupted mid-call, commemorating a 13th-century trumpeter shot by a Mongol arrow).",
     howToGetThere: "Kraków Central Station is a 10-minute walk from the Market Square. Trams run along the perimeter.",
     cost: "Square free. Basilica entry from 10 PLN (€2.50). Cloth Hall Museum 24 PLN (€6).",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Rynek_G%C5%82%C3%B3wny_w_Krakowie.jpg/960px-Rynek_G%C5%82%C3%B3wny_w_Krakowie.jpg"
+    image: "https://loremflickr.com/1200/800/Krakw,Town,poland/all?lock=60"
   },
   {
     name: "Wieliczka Salt Mine",
@@ -69,7 +69,7 @@ export const polandAttractions = [
     insiderTip: "Morskie Oko lake (the 'Eye of the Sea') at 1,395 metres altitude is the most visited attraction — take the horse-drawn carriage up the road, then hike the final section for an extraordinary view of the glacial lake beneath the jagged Tatra peaks.",
     howToGetThere: "Bus from Kraków to Zakopane (2 hours). Trains also available (2.5 hours).",
     cost: "Mountain access free. Cable car to Kasprowy Wierch 69 PLN (€16). Carriage to Morskie Oko from 60 PLN (€14).",
-    image: "/images/attractions/poland-tatra-mountains.jpg"
+    image: "https://loremflickr.com/1200/800/Tatra,Mountains,poland/all?lock=61"
   },
   {
     name: "Malbork Castle",
@@ -93,7 +93,7 @@ export const polandAttractions = [
     insiderTip: "Visit the Warsaw Rising Museum (Muzeum Powstania Warszawskiego) in addition to the Old Town — it tells the devastating story of the 1944 uprising and the systematic destruction that followed with brilliant emotional impact. Allow 3 hours.",
     howToGetThere: "Metro Line 1 to Ratusz-Arsenał. 20-minute walk from Warsaw Central Station.",
     cost: "Old Town free. Royal Castle 35 PLN (€8). Warsaw Rising Museum 25 PLN (€6).",
-    image: "/images/attractions/poland-warsaw-old-town.jpg"
+    image: "https://loremflickr.com/1200/800/Warsaw,Town,poland/all?lock=62"
   },
   {
     name: "Gdańsk Old Town",
@@ -141,7 +141,7 @@ export const polandAttractions = [
     insiderTip: "Start walking from the horse carriage turnoff rather than riding — the 9km trail through spruce forest is beautiful. Continue past Morskie Oko to Czarny Staw (Black Lake) above for a dramatically more isolated and equally stunning glacial lake.",
     howToGetThere: "Minibus from Zakopane to Polana Palenica (30 minutes), then 9km hike or horse-drawn carriage.",
     cost: "Tatra National Park entry adults 7 PLN (€1.60). Horse carriage from 60 PLN (€14). Hiking free.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Morskie_Oko_Tatrza%C5%84ski_Park_Narodowy.jpg/960px-Morskie_Oko_Tatrza%C5%84ski_Park_Narodowy.jpg"
+    image: "https://loremflickr.com/1200/800/Morskie,Lake,poland/all?lock=63"
   },
   {
     name: "Wrocław Market Square",
@@ -177,7 +177,7 @@ export const polandAttractions = [
     insiderTip: "Visit the Old Synagogue (the oldest surviving synagogue in Poland, now a museum), then walk through Szeroka Street for the atmospheric heart of the quarter. Evening klezmer concerts in Kazimierz's courtyard restaurants are genuinely moving.",
     howToGetThere: "20-minute walk from Kraków Market Square or tram 3/19/24 to Miodowa.",
     cost: "Quarter free. Old Synagogue 14 PLN (€3). Schindler's Factory 36 PLN (€8).",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Krak%C3%B3w_Kazimierz_Plac_Nowy.jpg/960px-Krak%C3%B3w_Kazimierz_Plac_Nowy.jpg"
+    image: "https://loremflickr.com/1200/800/Kazimierz,Krakw,poland/all?lock=64"
   },
   {
     name: "Zamość Old Town",

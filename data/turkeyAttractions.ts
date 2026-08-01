@@ -9,7 +9,7 @@ export const turkeyAttractions = [
     insiderTip: "Hire an expert private guide to fully understand the intricate details of the Byzantine mosaics and Islamic calligraphy that adorn the interior walls.",
     howToGetThere: "Located in the Sultanahmet district, easily accessible via the T1 Tram line (Sultanahmet station).",
     cost: "Free (as an active mosque), but guided tours vary in price.",
-    image: '/images/attractions/turkey-hagia-sophia.jpg'
+    image: "https://loremflickr.com/1200/800/Hagia,Sophia,turkey/all?lock=102"
   },
   {
     name: "Cappadocia",
@@ -117,7 +117,7 @@ export const turkeyAttractions = [
     insiderTip: "The ruins can be difficult to interpret on your own; hiring an expert guide or thoroughly exploring the new Museum of Troy beforehand is highly recommended.",
     howToGetThere: "A 4-5 hour drive from Istanbul, or fly into Çanakkale Airport (CKZ) followed by a short drive.",
     cost: "Approx. $20 for the ruins and $15 for the museum.",
-    image: '/images/attractions/turkey-troy-ancient-city.jpg'
+    image: "https://loremflickr.com/1200/800/Troy,Ancient,turkey/all?lock=103"
   },
   {
     name: "Antalya Coast (Lycian Way)",
@@ -153,7 +153,7 @@ export const turkeyAttractions = [
     insiderTip: "Purchase skip-the-line tickets in advance, as the queue to enter this popular underground attraction can wrap around the block.",
     howToGetThere: "Located in Sultanahmet Square, just a stone's throw from Hagia Sophia.",
     cost: "Approx. $30 entrance fee.",
-    image: '/images/attractions/turkey-basilica-cistern.jpg'
+    image: "https://loremflickr.com/1200/800/Basilica,Cistern,turkey/all?lock=104"
   },
   {
     name: "Bodrum Castle",
@@ -165,7 +165,7 @@ export const turkeyAttractions = [
     insiderTip: "Visit in the late afternoon to enjoy the golden hour lighting for photography, followed by an elegant seafood dinner at the nearby marina.",
     howToGetThere: "Fly into Milas-Bodrum Airport (BJV) and take a 40-minute premium transfer to Bodrum center.",
     cost: "Approx. $20 entrance fee.",
-    image: '/images/attractions/turkey-bodrum-castle.jpg'
+    image: "https://loremflickr.com/1200/800/Bodrum,Castle,turkey/all?lock=105"
   },
   {
     name: "Sumela Monastery",
@@ -189,7 +189,7 @@ export const turkeyAttractions = [
     insiderTip: "Check the schedule for the Aspendos International Opera and Ballet Festival (usually in late summer) and secure premium tickets well in advance.",
     howToGetThere: "A 45-minute drive east from Antalya; best reached by rental car or private transfer.",
     cost: "Approx. $15 entrance fee (festival tickets sold separately).",
-    image: '/images/attractions/turkey-aspendos-theatre.jpg'
+    image: "https://loremflickr.com/1200/800/Aspendos,Theatre,turkey/all?lock=106"
   },
   {
     name: "Fethiye (Ölüdeniz Blue Lagoon)",
@@ -225,7 +225,7 @@ export const turkeyAttractions = [
     insiderTip: "Charter a private boat from the nearby harbor of Çayağzı to visit the sunken city of Kekova on the same day for a premier coastal experience.",
     howToGetThere: "A 2.5-hour coastal drive west from Antalya; best explored via private car or as part of a luxury gulet cruise.",
     cost: "Approx. $15 for Myra ruins, and $15 for St. Nicholas Church.",
-    image: '/images/attractions/turkey-myra-rock-tombs.jpg'
+    image: "https://loremflickr.com/1200/800/Myra,Rock,turkey/all?lock=107"
   },
   {
     name: "Gobekli Tepe",

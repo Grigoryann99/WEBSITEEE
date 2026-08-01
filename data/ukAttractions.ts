@@ -69,7 +69,7 @@ export const ukAttractions = [
     insiderTip: "Stay in the tiny village of Kinlochewe for the best base to explore Torridon — the most ancient and dramatic mountains in Scotland (750 million years old, older than the Alps or Rockies). The peaks here are wilder and more remote than the more-visited Glencoe.",
     howToGetThere: "Take the train from London Euston to Inverness (8 hours, passing through Edinburgh) or fly direct to Inverness Airport.",
     cost: "Free to hike. Glencoe Visitor Centre parking £4.",
-    image: "/images/attractions/uk-scottish-highlands.jpg"
+    image: "https://loremflickr.com/1200/800/Scottish,Highlands,uk/all?lock=113"
   },
   {
     name: "Bath Roman Baths & City",
@@ -225,7 +225,7 @@ export const ukAttractions = [
     insiderTip: "Drive the Trotternish Peninsula anti-clockwise for the finest coastal views in the late afternoon light. The Quiraing — an ancient landslip of rock towers and hidden green plateaus — is accessible via a 6-km circular walk from the Staffin-Uig road.",
     howToGetThere: "Take the Caledonian MacBrayne ferry from Mallaig (30 minutes) or drive the Skye Bridge from Kyle of Lochalsh. Train to Kyle of Lochalsh from Inverness (2h45m).",
     cost: "Free outdoor access. Car ferry from Mallaig approx. £30 roundtrip.",
-    image: "/images/attractions/uk-isle-of-skye.jpg"
+    image: "https://loremflickr.com/1200/800/Isle,Skye,uk/all?lock=114"
   },
   {
     name: "North Coast 500",
@@ -237,6 +237,6 @@ export const ukAttractions = [
     insiderTip: "Drive the route counter-clockwise to save the most dramatic mountain vistas of the west coast (Torridon and Assynt) for the grand finale. Allow at least 5 to 7 days to fully enjoy the detour walks and castle ruins.",
     howToGetThere: "Fly or take the train to Inverness, where the route officially begins and ends. A rental car or campervan is essential.",
     cost: "Free route access. Petrol and accommodation costs vary.",
-    image: "/images/attractions/uk-north-coast-500.jpg"
+    image: "https://loremflickr.com/1200/800/North,Coast,uk/all?lock=115"
   }
 ];

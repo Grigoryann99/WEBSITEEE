@@ -21,7 +21,7 @@ export const swedenAttractions = [
     insiderTip: "Book in advance — the museum limits daily visitor numbers. The hologram 'Voyage Studio' where you dance alongside the ABBA holograms is extraordinary. Don't miss the secret phone that rings — it's Björn or Benny calling.",
     howToGetThere: "Bus 69 from Sergels Torg to Liljevalchs/Gröna Lund stop. Tram 7 to Waldermarsudde. A 20-minute walk from Gamla Stan.",
     cost: "Adults SEK 299 (€26). Book online in advance.",
-    image: "/images/attractions/sweden-abba-museum.jpg"
+    image: "https://loremflickr.com/1200/800/ABBA,Museum,sweden/all?lock=85"
   },
   {
     name: "Vasa Museum",
@@ -81,7 +81,7 @@ export const swedenAttractions = [
     insiderTip: "Book a theatre performance during summer — the experience of watching opera performed in a 1766 court theatre with original Baroque machinery (flying clouds, lightning effects) is unique in the world. The Chinese Pavilion garden section is surprisingly delightful.",
     howToGetThere: "Boat from City Hall (Stadshuset) in central Stockholm (50 minutes, May–September). Bus 177/178 or T-bana to Brommaplan then bus.",
     cost: "Palace adults SEK 140 (€13). Theatre tickets SEK 200–800 (€18–72).",
-    image: "/images/attractions/sweden-drottningholm-palace.jpg"
+    image: "https://loremflickr.com/1200/800/Drottningholm,Palace,sweden/all?lock=86"
   },
   {
     name: "Stockholm Archipelago",

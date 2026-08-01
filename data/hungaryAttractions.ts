@@ -93,7 +93,7 @@ export const hungaryAttractions = [
     insiderTip: "Book the horse show (csikós bemutatók) — the Hungarian cowboys performing their galloping tricks standing on horseback in traditional costume is genuinely impressive. The Nine-Arch Bridge is one of the longest stone bridges in Hungary.",
     howToGetThere: "Train from Debrecen to Hortobágy station (30 minutes). Drive from Debrecen (40km).",
     cost: "Park free. Csikós show from 2,000 HUF (€5).",
-    image: "/images/attractions/hungary-hortobagy-national-park.jpg"
+    image: "https://loremflickr.com/1200/800/Hortobgy,National,hungary/all?lock=14"
   },
   {
     name: "Aggtelek Caves",
@@ -105,7 +105,7 @@ export const hungaryAttractions = [
     insiderTip: "Book the full 5km guided tour rather than the short tourist route — the deeper sections of the cave contain the most spectacular formations. The underground concert experience (chamber music in the great cave hall) is extraordinary.",
     howToGetThere: "Drive from Miskolc (60km, 1.5 hours) or from Budapest (240km, 3 hours). Bus from Eger.",
     cost: "Short tour adults 3,400 HUF (€9). Long tour 4,200 HUF (€11).",
-    image: "/images/attractions/hungary-aggtelek-caves.jpg"
+    image: "https://loremflickr.com/1200/800/Aggtelek,Caves,hungary/all?lock=15"
   },
   {
     name: "Chain Bridge (Budapest)",
@@ -189,7 +189,7 @@ export const hungaryAttractions = [
     insiderTip: "Book an opera performance rather than just a tour — tickets are surprisingly affordable by Western European standards, and the acoustics and production values are excellent. Standing/gallery tickets can be as low as €5–10.",
     howToGetThere: "Metro Line 1 (yellow, Hungary's oldest metro line, 1896) to Opera station. 10-minute walk from Heroes' Square.",
     cost: "Opera tickets from 1,200 HUF (€3) standing to 35,000+ HUF (€90) premium. Daily guided tours 5,000 HUF (€13).",
-    image: "/images/attractions/hungary-hungarian-state-opera-house.jpg"
+    image: "https://loremflickr.com/1200/800/Hungarian,State,hungary/all?lock=16"
   },
   {
     name: "Budapest Jewish Quarter & Ruin Bars",
@@ -201,7 +201,7 @@ export const hungaryAttractions = [
     insiderTip: "Visit Szimpla Kert (the original ruin bar) on Sunday morning when a local farmers' market fills the courtyard and the bar is at its most authentic — far more interesting than the crowded weekend evenings.",
     howToGetThere: "Metro Line 2 to Astoria or Keleti. The Quarter is a 10-minute walk from the centre.",
     cost: "Synagogue 7,000 HUF (€18). Ruin bars: drinks from 800 HUF (€2).",
-    image: "/images/attractions/hungary-budapest-jewish-quarter-ruin-bars.jpg"
+    image: "https://loremflickr.com/1200/800/Budapest,Jewish,hungary/all?lock=17"
   },
   {
     name: "Esterházy Palace (Fertőd)",
@@ -213,7 +213,7 @@ export const hungaryAttractions = [
     insiderTip: "Book the Haydn Days concert festival tickets in advance — hearing the composer's chamber music performed by period instruments in the actual palace where it was first played is a unique experience.",
     howToGetThere: "Drive from Győr (30km) or Sopron (27km). Bus from Sopron. No direct train.",
     cost: "Palace tour adults 3,000 HUF (€8). Concert tickets from 8,000 HUF (€20).",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Fertod07jul0004.jpg/960px-Fertod07jul0004.jpg"
+    image: "https://loremflickr.com/1200/800/Esterhzy,Palace,hungary/all?lock=18"
   },
   {
     name: "Miskolc-Tapolca Cave Bath",
@@ -225,7 +225,7 @@ export const hungaryAttractions = [
     insiderTip: "Arrive early morning (the baths open at 9am) before coach tours arrive. The cave passages connect to outdoor pools — the transition from warm cave bath to cold outdoor pool in winter is invigorating.",
     howToGetThere: "Train from Budapest to Miskolc (2.5 hours), then local bus to Tapolca.",
     cost: "Adults 3,200 HUF (€8).",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Barlangfurdo_Miskolctapolca.jpg/960px-Barlangfurdo_Miskolctapolca.jpg"
+    image: "https://loremflickr.com/1200/800/MiskolcTapolca,Cave,hungary/all?lock=19"
   },
   {
     name: "Pannonhalma Archabbey",

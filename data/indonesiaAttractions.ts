@@ -21,7 +21,7 @@ export const indonesiaAttractions = [
     insiderTip: "Book a private sunrise tour via the Manohara Hotel for exclusive early access before the general public gates open.",
     howToGetThere: "Fly into Yogyakarta International Airport (YIA) and arrange a 1.5-hour private car transfer to the temple area.",
     cost: "$$",
-    image: '/images/attractions/indonesia-borobudur-temple.jpg'
+    image: "https://loremflickr.com/1200/800/Borobudur,Temple,indonesia/all?lock=30"
   },
   {
     name: "Komodo National Park",
@@ -45,7 +45,7 @@ export const indonesiaAttractions = [
     insiderTip: "Hike up to the Piaynemo viewpoint for the iconic, awe-inspiring panoramic view of the karst islands scattered across the turquoise sea.",
     howToGetThere: "Fly into Domine Eduard Osok Airport (SOQ) in Sorong, then take a speedboat or luxury resort transfer to the islands.",
     cost: "$$$$",
-    image: '/images/attractions/indonesia-raja-ampat.jpg'
+    image: "https://loremflickr.com/1200/800/Raja,Ampat,indonesia/all?lock=31"
   },
   {
     name: "Mount Bromo",
@@ -57,7 +57,7 @@ export const indonesiaAttractions = [
     insiderTip: "Instead of the crowded Mount Penanjakan, ask your private guide to take you to the alternative King Kong Hill for an equally stunning, quieter sunrise view.",
     howToGetThere: "Fly into Juanda International Airport (SUB) in Surabaya, followed by a scenic 3-4 hour private drive to the Bromo area.",
     cost: "$$",
-    image: '/images/attractions/indonesia-mount-bromo.jpg'
+    image: "https://loremflickr.com/1200/800/Mount,Bromo,indonesia/all?lock=32"
   },
   {
     name: "Prambanan Temple",
@@ -93,7 +93,7 @@ export const indonesiaAttractions = [
     insiderTip: "Hire a private speedboat from Bali to avoid the crowded public ferries and have the flexibility to visit the best snorkel spots like Manta Point on your own schedule.",
     howToGetThere: "A 45-minute speedboat ride from Sanur Harbor in Bali.",
     cost: "$$",
-    image: '/images/attractions/indonesia-nusa-penida.jpg'
+    image: "https://loremflickr.com/1200/800/Nusa,Penida,indonesia/all?lock=33"
   },
   {
     name: "Tana Toraja",
@@ -105,7 +105,7 @@ export const indonesiaAttractions = [
     insiderTip: "The elaborate funeral ceremonies (Rambu Solo) mostly take place during the dry season (July and August); coordinate with a specialized local guide to attend one respectfully.",
     howToGetThere: "Fly into Sultan Hasanuddin International Airport (UPG) in Makassar, then take a scenic but long (8-10 hour) private drive, or a short domestic flight to Toraja Airport (TRT).",
     cost: "$$",
-    image: '/images/attractions/indonesia-tana-toraja.jpg'
+    image: "https://loremflickr.com/1200/800/Tana,Toraja,indonesia/all?lock=34"
   },
   {
     name: "Lake Toba",

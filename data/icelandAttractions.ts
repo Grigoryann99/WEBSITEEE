@@ -21,7 +21,7 @@ export const icelandAttractions = [
     insiderTip: "Take a slight detour to the Secret Lagoon in Flúðir for a more authentic and less crowded hot spring soak.",
     howToGetThere: "Starts and ends in Reykjavik, typically driven in a loop taking 6-8 hours.",
     cost: "Free to drive; private luxury tours range from $500 to $1,500+ USD.",
-    image: '/images/attractions/iceland-golden-circle.jpg'
+    image: "https://loremflickr.com/1200/800/Golden,Circle,iceland/all?lock=20"
   },
   {
     name: "Gullfoss Waterfall",
@@ -45,7 +45,7 @@ export const icelandAttractions = [
     insiderTip: "Book a drysuit snorkeling tour in Silfra early in the morning to enjoy the pristine visibility before the crowds arrive.",
     howToGetThere: "About a 45-minute drive from Reykjavik along Route 36.",
     cost: "Free entry; parking fee applies; Silfra tours around $150-$200 USD.",
-    image: '/images/attractions/iceland-thingvellir-national-park.jpg'
+    image: "https://loremflickr.com/1200/800/Thingvellir,National,iceland/all?lock=21"
   },
   {
     name: "Geysir Geothermal Area",
@@ -141,7 +141,7 @@ export const icelandAttractions = [
     insiderTip: "Visit the Dimmuborgir 'Dark Castles' lava field early in the day to enjoy the eerie, towering rock formations in peace.",
     howToGetThere: "Located on the Ring Road in North Iceland, about 6 hours drive or a short flight from Reykjavik to Akureyri.",
     cost: "Free to explore; Nature Baths entry around $45 USD.",
-    image: '/images/attractions/iceland-lake-myvatn.jpg'
+    image: "https://loremflickr.com/1200/800/Lake,Myvatn,iceland/all?lock=22"
   },
   {
     name: "Diamond Beach",
@@ -225,7 +225,7 @@ export const icelandAttractions = [
     insiderTip: "Book a tour on a carbon-neutral electric oak boat for a silent, environmentally friendly experience that doesn't disturb the whales.",
     howToGetThere: "Located in North Iceland, about an hour drive east of Akureyri.",
     cost: "Whale watching tours range from $85 to $200+ USD.",
-    image: '/images/attractions/iceland-h-sav-k-whale-watching.jpg'
+    image: "https://loremflickr.com/1200/800/Hsavk,Whale,iceland/all?lock=23"
   },
   {
     name: "Westfjords",

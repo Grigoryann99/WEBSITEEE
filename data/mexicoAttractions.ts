@@ -69,7 +69,7 @@ export const mexicoAttractions = [
     insiderTip: "Take a guided hike into the jungle surrounding the main ruins to discover unrestored mounds overgrown by giant banyan trees.",
     howToGetThere: "Located a 20-minute bus drive from Palenque town; accessible via ADO buses from San Cristóbal de las Casas.",
     cost: "Park & ruins entry: approx. 180 MXN (€9.50).",
-    image: "/images/attractions/mexico-palenque.jpg"
+    image: "https://loremflickr.com/1200/800/Palenque,National,mexico/all?lock=50"
   },
   {
     name: "Guanajuato Historic City",
@@ -81,7 +81,7 @@ export const mexicoAttractions = [
     insiderTip: "Ride the Funicular up to the El Pípila monument at sunset for stunning panoramic views over the colorful city basin.",
     howToGetThere: "Located 4 hours drive or bus ride northwest of Mexico City; nearest airport is Del Bajío (BJX).",
     cost: "Walking around town is free. Funicular ticket: approx. 35 MXN (€1.80) one-way.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Guanajuato_City_Montage.jpg/960px-Guanajuato_City_Montage.jpg"
+    image: "https://loremflickr.com/1200/800/Guanajuato,Historic,mexico/all?lock=51"
   },
   {
     name: "Oaxaca City & Hierve el Agua",
@@ -141,7 +141,7 @@ export const mexicoAttractions = [
     insiderTip: "Motorized boats are restricted on Wednesdays to protect the delicate ecosystem—rent a paddleboard or kayak on Wednesday mornings.",
     howToGetThere: "Located a 2.5-hour drive south of Tulum or 40 minutes north of Chetumal Airport.",
     cost: "Lagoon access free. Boat tour approx. 400–600 MXN (€20–€30).",
-    image: "/images/attractions/mexico-bacalar.jpg"
+    image: "https://loremflickr.com/1200/800/Bacalar,Lagoon,mexico/all?lock=52"
   },
   {
     name: "Sumidero Canyon",
@@ -153,7 +153,7 @@ export const mexicoAttractions = [
     insiderTip: "Combine the river boat tour with a land trip to the five lookout points (Miradores) on the canyon rim for scenic perspective.",
     howToGetThere: "Boats depart from Chiapa de Corzo, a 20-minute drive from Tuxtla Gutiérrez or 1 hour from San Cristóbal.",
     cost: "Boat tour ticket: approx. 270 MXN (€14) per person.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Ca%C3%B1on_del_Sumidero_Chiapa_de_Corzo.jpg/960px-Ca%C3%B1on_del_Sumidero_Chiapa_de_Corzo.jpg"
+    image: "https://loremflickr.com/1200/800/Sumidero,Canyon,mexico/all?lock=53"
   },
   {
     name: "San Cristóbal de las Casas",
@@ -165,7 +165,7 @@ export const mexicoAttractions = [
     insiderTip: "Visit the nearby village of San Juan Chamula to observe extraordinary indigenous rituals inside a pine-needle covered church where no photography is permitted.",
     howToGetThere: "Located 1 hour drive east of Tuxtla Gutiérrez Airport (TGZ) via modern highway.",
     cost: "City walks free. San Juan Chamula church entry: 30 MXN (€1.50).",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/San_Crist%C3%B3bal_de_Las_Casas_Montage.jpg/960px-San_Crist%C3%B3bal_de_Las_Casas_Montage.jpg"
+    image: "https://loremflickr.com/1200/800/Cristbal,Casas,mexico/all?lock=54"
   },
   {
     name: "Isla Holbox",
@@ -177,7 +177,7 @@ export const mexicoAttractions = [
     insiderTip: "Wade out to Punta Mosquito sandbar at low tide to spot wild pink flamingos feeding in shallow sea lagoons.",
     howToGetThere: "Drive or take a bus 2 hours north of Cancún to Chiquilá port, followed by a 20-minute passenger ferry.",
     cost: "Ferry ticket: approx. 300 MXN (€15) one-way. Golf cart rental: approx. 1,000 MXN (€50)/day.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Isla_Holbox_playa.jpg/960px-Isla_Holbox_playa.jpg"
+    image: "https://loremflickr.com/1200/800/Isla,Holbox,mexico/all?lock=55"
   },
   {
     name: "San Miguel de Allende",
@@ -189,7 +189,7 @@ export const mexicoAttractions = [
     insiderTip: "Book a table at a rooftop restaurant overlooking the Parroquia at sunset to watch the pink stone church light up.",
     howToGetThere: "Located 1.5 hours drive from Guanajuato or Querétaro; 3.5 hours drive northwest of Mexico City.",
     cost: "Exploring the historic town and churches is free.",
-    image: "/images/attractions/mexico-san-miguel-allende.jpg"
+    image: "https://loremflickr.com/1200/800/Miguel,Allende,mexico/all?lock=56"
   },
   {
     name: "Los Cabos & El Arco",
@@ -201,7 +201,7 @@ export const mexicoAttractions = [
     insiderTip: "Take a water taxi out to Lover's Beach and Divorce Beach near El Arco, but only swim on the calm Sea of Cortez side.",
     howToGetThere: "Fly into San José del Cabo International Airport (SJD), located 35 minutes from Cabo San Lucas.",
     cost: "Water taxi to El Arco: approx. 350 to 500 MXN (€18–€26) return.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/El_Arco_Cabo_San_Lucas.jpg/960px-El_Arco_Cabo_San_Lucas.jpg"
+    image: "https://loremflickr.com/1200/800/Cabos,Arco,mexico/all?lock=57"
   },
   {
     name: "Monarch Butterfly Biosphere Reserve",
@@ -237,6 +237,6 @@ export const mexicoAttractions = [
     insiderTip: "Head to Embarcadero Cuemanco for an eco-focused canal route that visits authentic chinampa farms and axolotl conservation centers.",
     howToGetThere: "Take CDMX Metro to Tasqueña station, then Light Rail (Tren Ligero) to Xochimilco station.",
     cost: "Regulated boat rate: 600 MXN (€31) per boat per hour (split between all passengers).",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Trajinera_Xochimilco.jpg/960px-Trajinera_Xochimilco.jpg"
+    image: "https://loremflickr.com/1200/800/Xochimilco,Floating,mexico/all?lock=58"
   }
 ];

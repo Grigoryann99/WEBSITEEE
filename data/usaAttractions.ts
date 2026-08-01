@@ -129,7 +129,7 @@ export const usaAttractions = [
     insiderTip: "Rent a bicycle to explore the narrow streets of the Old Town; it is much easier than driving and parking a car on the small island.",
     howToGetThere: "Fly direct to Key West International Airport, or rent a car in Miami and take the scenic Overseas Highway drive across 42 bridges (approx. 3.5 hours).",
     cost: "Free to visit. Hemingway Home entry is $18.00.",
-    image: "/images/attractions/usa-key-west.jpg"
+    image: "https://loremflickr.com/1200/800/West,usa/all?lock=116"
   },
   {
     name: "Niagara Falls",

@@ -153,7 +153,7 @@ export const italyAttractions = [
     insiderTip: "Book a slot starting at 5:00 PM. During the last rotation of the day, tourist fatigue sets in, and large tour operators are generally absent, leaving the six Caravaggio paintings in Room VIII remarkably quiet.",
     howToGetThere: "Take Metro Line A to Spagna, walk up the Spanish Steps, and proceed through the Villa Borghese gardens (approx. 20-minute walk). Multiple bus lines (e.g., 910) stop at Pinciana/Museo Borghese.",
     cost: "Paid. Mandatory pre-booked tickets cost €13.00, plus a €2.00 reservation fee.",
-    image: "/images/attractions/italy-borghese-gallery.jpg"
+    image: "https://loremflickr.com/1200/800/Borghese,Gallery,italy/all?lock=35"
   },
   {
     name: "Piazza San Marco",
