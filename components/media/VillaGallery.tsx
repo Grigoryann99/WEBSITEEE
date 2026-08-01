@@ -45,7 +45,7 @@ const VillaGallery = () => {
             {/* Gallery Grid */}
             <div className="max-w-[1600px] mx-auto px-6 md:px-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
-                    {villas.map((villa, index) => (
+                    {villas.slice(0, 9).map((villa, index) => (
                         <motion.div
                             key={villa.id}
                             initial={{ opacity: 0, y: 40 }}
