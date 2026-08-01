@@ -7,6 +7,7 @@ const nextConfig = {
             { protocol: 'https', hostname: 'upload.wikimedia.org' },
             { protocol: 'https', hostname: 'images.pexels.com' },
             { protocol: 'https', hostname: 'picsum.photos' },
+            { protocol: 'https', hostname: 'loremflickr.com' },
         ]
     },
     eslint: {
