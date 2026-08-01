@@ -122,7 +122,7 @@ const VillaGallery = () => {
                     className="mt-20 text-center"
                 >
                     <p className="font-sans text-brand-dark/60 mb-6 tracking-wide font-light">
-                        Explore our complete collection of 111 private residences worldwide.
+                        Explore our complete collection of 60 private residences worldwide.
                     </p>
                     <Link
                         href="/villas"

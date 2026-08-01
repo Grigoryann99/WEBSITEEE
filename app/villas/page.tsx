@@ -37,7 +37,7 @@ export default function VillasPage() {
                         transition={{ duration: 0.8, delay: 0.1 }}
                         className="font-serif text-5xl md:text-7xl text-white mb-6 drop-shadow-lg"
                     >
-                        111 Private Residences
+                        60 Private Residences
                     </motion.h1>
                     <motion.p 
                         initial={{ opacity: 0, y: 20 }}
@@ -131,7 +131,7 @@ export default function VillasPage() {
                 <div className="max-w-3xl mx-auto">
                     <h2 className="font-serif text-4xl md:text-5xl mb-6">Ready for the Ultimate Escape?</h2>
                     <p className="font-sans text-white/60 mb-10 font-light leading-relaxed">
-                        Contact our dedicated concierge team to inquire about availability and personalize your luxurious stay at one of our 111 exclusive villas.
+                        Contact our dedicated concierge team to inquire about availability and personalize your luxurious stay at one of our 60 exclusive villas.
                     </p>
                     <Link
                         href="/support"
