@@ -191,15 +191,15 @@ export const featuredDestination = {
 };
 
 export const inspirationCards: InspirationItem[] = [
-    { id: 'insp1', title: 'Best Beaches in Thailand', tag: 'Beach', href: '/blog/best-beaches-thailand', image: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&q=80&w=800' },
-    { id: 'insp2', title: 'Hidden Islands of Indonesia', tag: 'Island', href: '/blog/hidden-islands-indonesia', image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&q=80&w=800' },
-    { id: 'insp3', title: 'Romantic Destinations in Italy', tag: 'Romance', href: '/blog/romantic-destinations-italy', image: 'https://images.unsplash.com/photo-1516483638261-f40af5ba3081?auto=format&fit=crop&q=80&w=800' },
-    { id: 'insp4', title: 'Adventure Travel in Iceland', tag: 'Adventure', href: '/blog/adventure-iceland', image: 'https://images.unsplash.com/photo-1476610182048-b716b8518aae?auto=format&fit=crop&q=80&w=800' },
-    { id: 'insp5', title: 'Cultural Cities of Spain', tag: 'Culture', href: '/blog/cultural-cities-spain', image: 'https://images.unsplash.com/photo-1533676802871-eca1ae998cd5?auto=format&fit=crop&q=80&w=800' },
-    { id: 'insp6', title: 'Luxury Escapes in the Maldives', tag: 'Luxury', href: '/blog/luxury-maldives', image: 'https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&q=80&w=800' },
-    { id: 'insp7', title: 'Sacred Temples of Japan', tag: 'Culture', href: '/blog/sacred-temples-japan', image: 'https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&q=80&w=800' },
-    { id: 'insp8', title: 'Safari Experiences in Kenya', tag: 'Adventure', href: '/blog/safari-kenya', image: 'https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&q=80&w=800' },
-    { id: 'insp9', title: 'Wine Country of Tuscany', tag: 'Luxury', href: '/blog/wine-tuscany', image: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&q=80&w=800' },
+    { id: 'insp1', title: 'Best Beaches in Thailand', tag: 'Beach', href: '/blog/best-beaches-thailand', image: '/images/inspiration/thailand-beaches.jpg' },
+    { id: 'insp2', title: 'Hidden Islands of Indonesia', tag: 'Island', href: '/blog/hidden-islands-indonesia', image: '/images/inspiration/indonesia-islands.jpg' },
+    { id: 'insp3', title: 'Romantic Destinations in Italy', tag: 'Romance', href: '/blog/romantic-destinations-italy', image: '/images/inspiration/italy-romance.jpg' },
+    { id: 'insp4', title: 'Adventure Travel in Iceland', tag: 'Adventure', href: '/blog/adventure-iceland', image: '/images/inspiration/iceland-adventure.jpg' },
+    { id: 'insp5', title: 'Cultural Cities of Spain', tag: 'Culture', href: '/blog/cultural-cities-spain', image: '/images/inspiration/spain-culture.jpg' },
+    { id: 'insp6', title: 'Luxury Escapes in the Maldives', tag: 'Luxury', href: '/blog/luxury-maldives', image: '/images/inspiration/maldives-luxury.jpg' },
+    { id: 'insp7', title: 'Sacred Temples of Japan', tag: 'Culture', href: '/blog/sacred-temples-japan', image: '/images/inspiration/japan-temples.jpg' },
+    { id: 'insp8', title: 'Safari Experiences in Kenya', tag: 'Adventure', href: '/blog/safari-kenya', image: '/images/inspiration/kenya-safari.jpg' },
+    { id: 'insp9', title: 'Wine Country of Tuscany', tag: 'Luxury', href: '/blog/wine-tuscany', image: '/images/inspiration/tuscany-wine.jpg' },
 ];
 
 export const travelTips: TravelTip[] = [
