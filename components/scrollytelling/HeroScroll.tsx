@@ -233,7 +233,7 @@ export default function HeroScroll() {
                 />
 
                 {/* Subtle Global Dark Gradient Overlay for perfect text contrast against bright sun/sky */}
-                <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/70 pointer-events-none z-10" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/40 pointer-events-none z-10" />
 
                 {/* Mobile & Desktop Optimized Typography Overlays */}
                 <div className="relative z-20 w-full max-w-5xl px-4 sm:px-6 text-center flex flex-col items-center justify-center">
