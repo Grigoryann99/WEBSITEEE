@@ -101,7 +101,7 @@ To exercise any of these rights, please contact us at the address below. We will
                         },
                         {
                             title: '10. Support',
-                            content: `If you have questions about this Privacy Policy or wish to exercise your data rights, please contact us through our Support page at /support or email us directly at veloratravel.support@gmail.com.
+                            content: `If you have questions about this Privacy Policy or wish to exercise your data rights, please contact us through our Support page at /support or email us directly at support@veloratravel.org.
 
 We will respond to all privacy-related inquiries within 30 days.`
                         }

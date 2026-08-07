@@ -149,7 +149,7 @@ export default function SupportForm() {
                             </div>
                             <div>
                                 <p className="text-xs uppercase tracking-widest text-[#64748B] font-inter font-medium">Direct Email</p>
-                                <p className="text-sm font-semibold text-[#0F172A]">veloratravel.support@gmail.com</p>
+                                <p className="text-sm font-semibold text-[#0F172A]">support@veloratravel.org</p>
                             </div>
                         </div>
                     </div>
