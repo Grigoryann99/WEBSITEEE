@@ -1,8 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
-import { ArrowRight, Clock, Lightbulb, Wallet } from 'lucide-react';
+import { Clock, Lightbulb, Wallet } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export interface CountryDestinationCardProps {
@@ -128,15 +127,6 @@ export default function CountryDestinationCard({
                             </div>
                         </div>
                     </div>
-
-                    {/* Action */}
-                    <Link
-                        href={`/destinations/${name.toLowerCase().replace(/ /g, '-')}`}
-                        className="inline-flex items-center justify-between w-full md:w-auto px-6 py-3 border border-[#1D9E75]/30 rounded-full text-xs uppercase tracking-widest font-sans font-semibold text-[#1D9E75] hover:bg-[#1D9E75] hover:text-white transition-all group/btn"
-                    >
-                        <span>Explore Details</span>
-                        <ArrowRight className="w-4 h-4 md:ml-4 transform group-hover/btn:translate-x-1 transition-transform" />
-                    </Link>
                 </div>
             </div>
         </motion.div>
