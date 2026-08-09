@@ -56,30 +56,7 @@ function WelcomeSection() {
   );
 }
 
-// ─── Editorial Stats Strip ────────────────────────────────────────────────────
-function MiniStatsSection() {
-  return (
-    <section
-      className="py-0 border-b border-black/10 relative overflow-hidden backdrop-blur-md animate-vivid-gradient"
-      style={{
-        background: 'linear-gradient(90deg, #E0F2FE, #D1FAE5, #FEF3C7, #F3E8FF)',
-      }}
-    >
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-3 divide-x divide-black/10 relative z-10">
-        {[
-          { value: '50+', label: 'Destinations' },
-          { value: '9',   label: 'Private Villas' },
-          { value: '6',   label: 'Travel Styles' },
-        ].map((s) => (
-          <div key={s.label} className="py-10 md:py-14 flex flex-col items-center gap-1">
-            <span className="font-serif text-4xl md:text-5xl text-[#0F172A] font-bold">{s.value}</span>
-            <span className="font-sans text-[#334155] tracking-[0.22em] uppercase text-[9px] md:text-[10px] font-bold">{s.label}</span>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-}
+
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 export default function Home() {
@@ -90,7 +67,7 @@ export default function Home() {
       </div>
 
       <WelcomeSection />
-      <MiniStatsSection />
+
 
       {/* Villas anchor lives inside VillaGallery itself */}
       <VillaTransition />

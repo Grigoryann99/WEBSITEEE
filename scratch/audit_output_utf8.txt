@@ -1,0 +1,1810 @@
+﻿================================================================================
+ЁЯФН GOOGLE ADSENSE IMAGE AUDIT REPORT
+================================================================================
+
+ЁЯУБ Found 51 country data files
+
+ЁЯУ╕ Total image references found: 1020
+
+================================================================================
+тЭМ CHECK 1: MISSING IMAGE FILES (╤Д╨░╨╣╨╗╤Л ╨╜╨╡ ╤Б╤Г╤Й╨╡╤Б╤В╨▓╤Г╤О╤В)
+================================================================================
+
+тЪая╕П  ╨Э╨Р╨Щ╨Ф╨Х╨Э╨Ю 340 ╨Ю╨в╨б╨г╨в╨б╨в╨Т╨г╨о╨й╨Ш╨е ╨д╨Р╨Щ╨Ы╨Ю╨Т:
+  [argentina] Iguazu Falls: /images/attractions/argentina-iguazu-falls.jpg
+  [argentina] Perito Moreno Glacier: /images/attractions/argentina-perito-moreno-glacier.jpg
+  [argentina] Tierra del Fuego National Park: /images/attractions/argentina-tierra-del-fuego-national-park.jpg
+  [argentina] Buenos Aires (La Boca): /images/attractions/argentina-buenos-aires-la-boca.jpg
+  [argentina] Mendoza Wine Region: /images/attractions/argentina-mendoza-wine-region.jpg
+  [argentina] Mount Fitz Roy (El Chalt├йn): /images/attractions/argentina-mount-fitz-roy-el-chalt-n.jpg
+  [argentina] Ushuaia (End of the World): /images/attractions/argentina-ushuaia-end-of-the-world.jpg
+  [argentina] Bariloche (Nahuel Huapi): /images/attractions/argentina-bariloche-nahuel-huapi.jpg
+  [argentina] Quebrada de Humahuaca: /images/attractions/argentina-quebrada-de-humahuaca.jpg
+  [argentina] Valdes Peninsula: /images/attractions/argentina-valdes-peninsula.jpg
+  [argentina] Los Glaciares National Park: /images/attractions/argentina-los-glaciares-national-park.jpg
+  [argentina] Mount Aconcagua: /images/attractions/argentina-mount-aconcagua.jpg
+  [argentina] Cordoba (Jesuit Block): /images/attractions/argentina-cordoba-jesuit-block.jpg
+  [argentina] Cafayate: /images/attractions/argentina-cafayate.jpg
+  [argentina] Beagle Channel: /images/attractions/argentina-beagle-channel.jpg
+  [argentina] Cueva de las Manos: /images/attractions/argentina-cueva-de-las-manos.jpg
+  [argentina] Recoleta Cemetery: /images/attractions/argentina-recoleta-cemetery.jpg
+  [argentina] Tigre Delta: /images/attractions/argentina-tigre-delta.jpg
+  [australia] Sydney Opera House: /images/attractions/australia-sydney-opera-house.jpg
+  [australia] Great Barrier Reef: /images/attractions/australia-great-barrier-reef.jpg
+  [australia] Uluru-Kata Tjuta National Park: /images/attractions/australia-uluru-kata-tjuta-national-park.jpg
+  [australia] Great Ocean Road: /images/attractions/australia-great-ocean-road.jpg
+  [australia] Bondi Beach: /images/attractions/australia-bondi-beach.jpg
+  [australia] Daintree Rainforest: /images/attractions/australia-daintree-rainforest.jpg
+  [australia] Kakadu National Park: /images/attractions/australia-kakadu-national-park.jpg
+  [australia] Whitsunday Islands: /images/attractions/australia-whitsunday-islands.jpg
+  [australia] Kangaroo Island: /images/attractions/australia-kangaroo-island.jpg
+  [australia] Blue Mountains National Park: /images/attractions/australia-blue-mountains-national-park.jpg
+  [australia] Sydney Harbour Bridge: /images/attractions/australia-sydney-harbour-bridge.jpg
+  [australia] Freycinet National Park (Wineglass Bay): /images/attractions/australia-freycinet-national-park-wineglass-bay.jpg
+  [australia] Twelve Apostles: /images/attractions/australia-twelve-apostles.jpg
+  [australia] Cradle Mountain: /images/attractions/australia-cradle-mountain.jpg
+  [australia] Byron Bay: /images/attractions/australia-byron-bay.jpg
+  [australia] Gold Coast: /images/attractions/australia-gold-coast.jpg
+  [australia] Rottnest Island: /images/attractions/australia-rottnest-island.jpg
+  [australia] Phillip Island: /images/attractions/australia-phillip-island.jpg
+  [austria] Sch├╢nbrunn Palace: /images/attractions/austria-sch-nbrunn-palace.jpg
+  [austria] Hofburg Palace: /images/attractions/austria-hofburg-palace.jpg
+  [austria] Salzburg Altstadt (Old Town): /images/attractions/austria-salzburg-altstadt-old-town.jpg
+  [austria] Innsbruck (Golden Roof): /images/attractions/austria-innsbruck-golden-roof.jpg
+  [austria] Melk Abbey: /images/attractions/austria-melk-abbey.jpg
+  [austria] St. Stephen: /images/attractions/austria-st-stephen.jpg
+  [austria] Zell am See: /images/attractions/austria-zell-am-see.jpg
+  [austria] Wachau Valley: /images/attractions/austria-wachau-valley.jpg
+  [colombia] Cartagena Old Town (Walled City): /images/attractions/colombia-cartagena-old-town-walled-city.jpg
+  [colombia] Tayrona National Park: /images/attractions/colombia-tayrona-national-park.jpg
+  [colombia] Cocora Valley (Valle de Cocora): /images/attractions/colombia-cocora-valley-valle-de-cocora.jpg
+  [colombia] Medell├нn (Comuna 13): /images/attractions/colombia-medell-n-comuna-13.jpg
+  [colombia] Salt Cathedral of Zipaquir├б: /images/attractions/colombia-salt-cathedral-of-zipaquir.jpg
+  [colombia] Gold Museum (Bogot├б): /images/attractions/colombia-gold-museum-bogot.jpg
+  [colombia] Monserrate (Bogot├б): /images/attractions/colombia-monserrate-bogot.jpg
+  [colombia] San Andr├йs Island: /images/attractions/colombia-san-andr-s-island.jpg
+  [colombia] Guatap├й (El Pe├▒├│n): /images/attractions/colombia-guatap-el-pe-n.jpg
+  [colombia] Ca├▒o Cristales (River of Five Colors): /images/attractions/colombia-ca-o-cristales-river-of-five-colors.jpg
+  [colombia] Rosario Islands: /images/attractions/colombia-rosario-islands.jpg
+  [colombia] Eje Cafetero (Coffee Triangle): /images/attractions/colombia-eje-cafetero-coffee-triangle.jpg
+  [colombia] San Agust├нn Archaeological Park: https://loremflickr.com/1200/800/Agustn,Archaeological,colombia/all?lock=1
+  [colombia] Tatacoa Desert: /images/attractions/colombia-tatacoa-desert.jpg
+  [colombia] Los Nevados National Natural Park: /images/attractions/colombia-los-nevados-national-natural-park.jpg
+  [colombia] Mompox (Santa Cruz de Mompox): https://loremflickr.com/1200/800/Mompox,Santa,colombia/all?lock=2
+  [colombia] Las Lajas Sanctuary: /images/attractions/colombia-las-lajas-sanctuary.jpg
+  [colombia] Providencia Island: /images/attractions/colombia-providencia-island.jpg
+  [colombia] Villa de Leyva: /images/attractions/colombia-villa-de-leyva.jpg
+  [denmark] Nyhavn: https://loremflickr.com/1200/800/Nyhavn,Copenhagen/all?lock=401
+  [denmark] Tivoli Gardens: https://loremflickr.com/1200/800/Tivoli,Gardens,Copenhagen/all?lock=402
+  [denmark] The Little Mermaid: https://loremflickr.com/1200/800/Little,Mermaid,Copenhagen/all?lock=403
+  [denmark] Kronborg Castle: https://loremflickr.com/1200/800/Kronborg,Castle,Denmark/all?lock=404
+  [denmark] Legoland Billund: https://loremflickr.com/1200/800/Legoland,Billund/all?lock=405
+  [denmark] Skagen: https://loremflickr.com/1200/800/Skagen,Denmark/all?lock=406
+  [denmark] Frederiksborg Castle: https://loremflickr.com/1200/800/Frederiksborg,Castle/all?lock=407
+  [denmark] Christiania: https://loremflickr.com/1200/800/Christiania,Copenhagen/all?lock=408
+  [denmark] Roskilde Cathedral: https://loremflickr.com/1200/800/Roskilde,Cathedral/all?lock=409
+  [denmark] Mons Klint: https://loremflickr.com/1200/800/Mons,Klint,Denmark/all?lock=410
+  [denmark] Aarhus Old Town (Den Gamle By): https://loremflickr.com/1200/800/Den,Gamle,By,Aarhus/all?lock=411
+  [denmark] Louisiana Museum of Modern Art: https://loremflickr.com/1200/800/Louisiana,Museum,Denmark/all?lock=412
+  [denmark] Viking Ship Museum: https://loremflickr.com/1200/800/Viking,Ship,Museum/all?lock=413
+  [denmark] Bornholm Island: https://loremflickr.com/1200/800/Bornholm,Denmark/all?lock=414
+  [denmark] Rosenborg Castle: https://loremflickr.com/1200/800/Rosenborg,Castle,Copenhagen/all?lock=415
+  [denmark] Wadden Sea National Park: https://loremflickr.com/1200/800/Wadden,Sea,Denmark/all?lock=416
+  [denmark] Amalienborg Palace: https://loremflickr.com/1200/800/Amalienborg,Palace/all?lock=417
+  [denmark] Ribe: https://loremflickr.com/1200/800/Ribe,Denmark,medieval/all?lock=418
+  [denmark] Nationalmuseet: https://loremflickr.com/1200/800/National,Museum,Copenhagen/all?lock=419
+  [denmark] Djurs Sommerland: https://loremflickr.com/1200/800/Djurs,Sommerland/all?lock=420
+  [egypt] Pyramids of Giza & Sphinx: /images/attractions/egypt-pyramids-of-giza-sphinx.jpg
+  [egypt] Karnak Temple: /images/attractions/egypt-karnak-temple.jpg
+  [egypt] Valley of the Kings: /images/attractions/egypt-valley-of-the-kings.jpg
+  [egypt] Egyptian Museum: /images/attractions/egypt-egyptian-museum.jpg
+  [egypt] Luxor Temple: https://loremflickr.com/1200/800/Luxor,Temple,egypt/all?lock=3
+  [egypt] Mount Sinai & St. Catherine: /images/attractions/egypt-mount-sinai-st-catherine.jpg
+  [egypt] Ras Mohammed National Park: /images/attractions/egypt-ras-mohammed-national-park.jpg
+  [egypt] Islamic Cairo (Khan el-Khalili): https://loremflickr.com/1200/800/Islamic,Cairo,egypt/all?lock=4
+  [egypt] Alexandria Library (Bibliotheca Alexandrina): /images/attractions/egypt-alexandria-library-bibliotheca-alexandrina.jpg
+  [egypt] Siwa Oasis: https://loremflickr.com/1200/800/Siwa,Oasis,egypt/all?lock=5
+  [egypt] Dahshur Pyramids: /images/attractions/egypt-dahshur-pyramids.jpg
+  [egypt] Aswan High Dam & Lake Nasser: /images/attractions/egypt-aswan-high-dam-lake-nasser.jpg
+  [egypt] Hatshepsut Temple: /images/attractions/egypt-hatshepsut-temple.jpg
+  [egypt] Hurghada Coast: /images/attractions/egypt-hurghada-coast.jpg
+  [egypt] Salah El-Din Citadel: https://loremflickr.com/1200/800/Salah,ElDin,egypt/all?lock=6
+  [egypt] Saqqara (Step Pyramid): https://loremflickr.com/1200/800/Saqqara,Step,egypt/all?lock=7
+  [finland] Hossa National Park: https://loremflickr.com/1200/800/Hossa,National,finland/all?lock=8
+  [finland] Tampere Vapriikki Museum: https://loremflickr.com/1200/800/Tampere,Vapriikki,finland/all?lock=9
+  [france] Champagne Cellars of Reims: https://loremflickr.com/1200/800/Champagne,Cellars,france/all?lock=10
+  [germany] Brandenburg Gate: https://loremflickr.com/1200/800/Brandenburg,Gate/all?lock=201
+  [germany] Neuschwanstein Castle: https://loremflickr.com/1200/800/Neuschwanstein,Castle/all?lock=202
+  [germany] Cologne Cathedral: https://loremflickr.com/1200/800/Cologne,Cathedral/all?lock=203
+  [germany] Berlin Wall Memorial: https://loremflickr.com/1200/800/Berlin,Wall/all?lock=204
+  [germany] Miniatur Wunderland: https://loremflickr.com/1200/800/Miniatur,Wunderland/all?lock=205
+  [germany] Black Forest: https://loremflickr.com/1200/800/Black,Forest,Germany/all?lock=206
+  [germany] Museum Island: https://loremflickr.com/1200/800/Museum,Island,Berlin/all?lock=207
+  [germany] Romantic Rhine Valley: https://loremflickr.com/1200/800/Rhine,Valley,castles/all?lock=208
+  [germany] Heidelberg Castle: https://loremflickr.com/1200/800/Heidelberg,Castle/all?lock=209
+  [germany] Oktoberfest Grounds: https://loremflickr.com/1200/800/Oktoberfest,Munich/all?lock=210
+  [germany] Saxon Switzerland National Park: https://loremflickr.com/1200/800/Saxon,Switzerland,Bastei/all?lock=211
+  [germany] Rothenburg ob der Tauber: https://loremflickr.com/1200/800/Rothenburg,Tauber/all?lock=212
+  [germany] Sanssouci Palace: https://loremflickr.com/1200/800/Sanssouci,Palace,Potsdam/all?lock=213
+  [germany] Lake Constance: https://loremflickr.com/1200/800/Lake,Constance,Bodensee/all?lock=214
+  [germany] Dresden Zwinger: https://loremflickr.com/1200/800/Dresden,Zwinger,Palace/all?lock=215
+  [germany] Zugspitze: https://loremflickr.com/1200/800/Zugspitze,mountain/all?lock=216
+  [germany] Hamburg Elbphilharmonie: https://loremflickr.com/1200/800/Elbphilharmonie,Hamburg/all?lock=217
+  [germany] Nuremberg Old Town: https://loremflickr.com/1200/800/Nuremberg,medieval/all?lock=218
+  [germany] Bamberg Old Town: https://loremflickr.com/1200/800/Bamberg,medieval,town/all?lock=219
+  [germany] Berchtesgaden & Eagle: https://loremflickr.com/1200/800/Berchtesgaden,Koenigssee/all?lock=220
+  [greece] Santorini: https://loremflickr.com/1200/800/Santorini,greece/all?lock=11
+  [greece] Rhodes Medieval Old Town: https://loremflickr.com/1200/800/Rhodes,Medieval,greece/all?lock=12
+  [greece] Samaria Gorge: https://loremflickr.com/1200/800/Samaria,Gorge,greece/all?lock=13
+  [hungary] Hortob├бgy National Park: https://loremflickr.com/1200/800/Hortobgy,National,hungary/all?lock=14
+  [hungary] Aggtelek Caves: https://loremflickr.com/1200/800/Aggtelek,Caves,hungary/all?lock=15
+  [hungary] Hungarian State Opera House: https://loremflickr.com/1200/800/Hungarian,State,hungary/all?lock=16
+  [hungary] Budapest Jewish Quarter & Ruin Bars: https://loremflickr.com/1200/800/Budapest,Jewish,hungary/all?lock=17
+  [hungary] Esterh├бzy Palace (Fert┼Сd): https://loremflickr.com/1200/800/Esterhzy,Palace,hungary/all?lock=18
+  [hungary] Miskolc-Tapolca Cave Bath: https://loremflickr.com/1200/800/MiskolcTapolca,Cave,hungary/all?lock=19
+  [iceland] Blue Lagoon: /images/attractions/iceland-blue-lagoon.jpg
+  [iceland] Golden Circle: https://loremflickr.com/1200/800/Golden,Circle,iceland/all?lock=20
+  [iceland] Thingvellir National Park: https://loremflickr.com/1200/800/Thingvellir,National,iceland/all?lock=21
+  [iceland] Vatnajokull National Park: /images/attractions/iceland-vatnajokull-national-park.jpg
+  [iceland] Snaefellsnes Peninsula: /images/attractions/iceland-snaefellsnes-peninsula.jpg
+  [iceland] Lake Myvatn: https://loremflickr.com/1200/800/Lake,Myvatn,iceland/all?lock=22
+  [iceland] Hallgrimskirkja: /images/attractions/iceland-hallgrimskirkja.jpg
+  [iceland] H├║sav├нk (Whale Watching): https://loremflickr.com/1200/800/Hsavk,Whale,iceland/all?lock=23
+  [iceland] Westfjords: /images/attractions/iceland-westfjords.jpg
+  [india] Taj Mahal: /images/attractions/india-taj-mahal.jpg
+  [india] Amber Fort: /images/attractions/india-amber-fort.jpg
+  [india] Ganges River: /images/attractions/india-ganges-river.jpg
+  [india] Goa Beaches: /images/attractions/india-goa-beaches.jpg
+  [india] Hampi: https://loremflickr.com/1200/800/Hampi,india/all?lock=24
+  [india] Ranthambore National Park: /images/attractions/india-ranthambore-national-park.jpg
+  [india] Golden Temple (Amritsar): /images/attractions/india-golden-temple-amritsar.jpg
+  [india] Udaipur (City Palace): /images/attractions/india-udaipur-city-palace.jpg
+  [india] Ellora & Ajanta Caves: /images/attractions/india-ellora-ajanta-caves.jpg
+  [india] Ladakh (Pangong Lake): /images/attractions/india-ladakh-pangong-lake.jpg
+  [india] Darjeeling Himalayan Railway: /images/attractions/india-darjeeling-himalayan-railway.jpg
+  [india] Jaisalmer Fort: /images/attractions/india-jaisalmer-fort.jpg
+  [india] Mysore Palace: https://loremflickr.com/1200/800/Mysore,Palace,india/all?lock=25
+  [india] Khajuraho Group of Monuments: https://loremflickr.com/1200/800/Khajuraho,Group,india/all?lock=26
+  [india] Meenakshi Temple: /images/attractions/india-meenakshi-temple.jpg
+  [india] Rishikesh: /images/attractions/india-rishikesh.jpg
+  [india] Andaman Islands: https://loremflickr.com/1200/800/Andaman,Islands,india/all?lock=27
+  [india] Munnar: https://loremflickr.com/1200/800/Munnar,india/all?lock=28
+  [india] Mahabalipuram: https://loremflickr.com/1200/800/Mahabalipuram,india/all?lock=29
+  [indonesia] Bali (Ubud): /images/attractions/indonesia-bali-ubud.jpg
+  [indonesia] Borobudur Temple: https://loremflickr.com/1200/800/Borobudur,Temple,indonesia/all?lock=30
+  [indonesia] Raja Ampat: https://loremflickr.com/1200/800/Raja,Ampat,indonesia/all?lock=31
+  [indonesia] Mount Bromo: https://loremflickr.com/1200/800/Mount,Bromo,indonesia/all?lock=32
+  [indonesia] Prambanan Temple: /images/attractions/indonesia-prambanan-temple.jpg
+  [indonesia] Gili Islands: /images/attractions/indonesia-gili-islands.jpg
+  [indonesia] Nusa Penida: https://loremflickr.com/1200/800/Nusa,Penida,indonesia/all?lock=33
+  [indonesia] Tana Toraja: https://loremflickr.com/1200/800/Tana,Toraja,indonesia/all?lock=34
+  [indonesia] Lake Toba: /images/attractions/indonesia-lake-toba.jpg
+  [indonesia] Mount Rinjani: /images/attractions/indonesia-mount-rinjani.jpg
+  [ireland] Cliffs of Moher: https://loremflickr.com/1200/800/Cliffs,Moher/all?lock=301
+  [ireland] Ring of Kerry: https://loremflickr.com/1200/800/Ring,Kerry,Ireland/all?lock=302
+  [ireland] Giant: https://loremflickr.com/1200/800/Giants,Causeway/all?lock=303
+  [ireland] Trinity College & Book of Kells: https://loremflickr.com/1200/800/Trinity,College,Dublin/all?lock=304
+  [ireland] Skellig Michael: https://loremflickr.com/1200/800/Skellig,Michael,Ireland/all?lock=305
+  [ireland] Guinness Storehouse: https://loremflickr.com/1200/800/Guinness,Storehouse,Dublin/all?lock=306
+  [ireland] Killarney National Park: https://loremflickr.com/1200/800/Killarney,National,Park/all?lock=307
+  [ireland] Galway City: https://loremflickr.com/1200/800/Galway,Ireland,streets/all?lock=308
+  [ireland] Blarney Castle & Stone: https://loremflickr.com/1200/800/Blarney,Castle/all?lock=309
+  [ireland] Dingle Peninsula: https://loremflickr.com/1200/800/Dingle,Peninsula,Ireland/all?lock=310
+  [ireland] Newgrange: https://loremflickr.com/1200/800/Newgrange,Ireland/all?lock=311
+  [ireland] Connemara: https://loremflickr.com/1200/800/Connemara,Ireland/all?lock=312
+  [ireland] Rock of Cashel: https://loremflickr.com/1200/800/Rock,Cashel,Ireland/all?lock=313
+  [ireland] Wild Atlantic Way: https://loremflickr.com/1200/800/Wild,Atlantic,Way/all?lock=314
+  [ireland] Aran Islands: https://loremflickr.com/1200/800/Aran,Islands,Ireland/all?lock=315
+  [ireland] Powerscourt Estate: https://loremflickr.com/1200/800/Powerscourt,Gardens,Wicklow/all?lock=316
+  [ireland] Temple Bar: https://loremflickr.com/1200/800/Temple,Bar,Dublin/all?lock=317
+  [ireland] Glendalough: https://loremflickr.com/1200/800/Glendalough,Ireland/all?lock=318
+  [ireland] Burren National Park: https://loremflickr.com/1200/800/Burren,limestone,Ireland/all?lock=319
+  [ireland] Kilmainham Gaol: https://loremflickr.com/1200/800/Kilmainham,Gaol,Dublin/all?lock=320
+  [italy] Borghese Gallery: https://loremflickr.com/1200/800/Borghese,Gallery,italy/all?lock=35
+  [japan] Okinawa Beaches: https://loremflickr.com/1200/800/Okinawa,Beaches,japan/all?lock=36
+  [jordan] Jerash Roman City: https://loremflickr.com/1200/800/Jerash,Roman,jordan/all?lock=37
+  [jordan] Aqaba Red Sea: https://loremflickr.com/1200/800/Aqaba,jordan/all?lock=38
+  [jordan] Roman Amphitheatre (Amman): https://loremflickr.com/1200/800/Roman,Amphitheatre,jordan/all?lock=39
+  [jordan] Dana Biosphere Reserve: https://loremflickr.com/1200/800/Dana,Biosphere,jordan/all?lock=40
+  [jordan] Madaba Map (St. George: https://loremflickr.com/1200/800/Madaba,George,jordan/all?lock=41
+  [jordan] Shobak Castle: https://loremflickr.com/1200/800/Shobak,Castle,jordan/all?lock=42
+  [jordan] Umm Qais (Gadara): https://loremflickr.com/1200/800/Qais,Gadara,jordan/all?lock=43
+  [jordan] Qasr Amra Desert Castle: https://loremflickr.com/1200/800/Qasr,Amra,jordan/all?lock=44
+  [jordan] Ma: https://loremflickr.com/1200/800/jordan,jordan/all?lock=45
+  [jordan] Azraq Wetland Reserve: https://loremflickr.com/1200/800/Azraq,Wetland,jordan/all?lock=46
+  [jordan] Wadi al-Hasa: https://loremflickr.com/1200/800/Wadi,alHasa,jordan/all?lock=47
+  [malaysia] Petronas Twin Towers: https://loremflickr.com/1200/800/Petronas,Twin,malaysia/all?lock=48
+  [malaysia] Kuala Lumpur Central Market & Chinatown: https://loremflickr.com/1200/800/Kuala,Lumpur,malaysia/all?lock=49
+  [mexico] Palenque National Park: https://loremflickr.com/1200/800/Palenque,National,mexico/all?lock=50
+  [mexico] Guanajuato Historic City: https://loremflickr.com/1200/800/Guanajuato,Historic,mexico/all?lock=51
+  [mexico] Bacalar Lagoon of Seven Colors: https://loremflickr.com/1200/800/Bacalar,Lagoon,mexico/all?lock=52
+  [mexico] Sumidero Canyon: https://loremflickr.com/1200/800/Sumidero,Canyon,mexico/all?lock=53
+  [mexico] San Crist├│bal de las Casas: https://loremflickr.com/1200/800/Cristbal,Casas,mexico/all?lock=54
+  [mexico] Isla Holbox: https://loremflickr.com/1200/800/Isla,Holbox,mexico/all?lock=55
+  [mexico] San Miguel de Allende: https://loremflickr.com/1200/800/Miguel,Allende,mexico/all?lock=56
+  [mexico] Los Cabos & El Arco: https://loremflickr.com/1200/800/Cabos,Arco,mexico/all?lock=57
+  [mexico] Xochimilco Floating Gardens: https://loremflickr.com/1200/800/Xochimilco,Floating,mexico/all?lock=58
+  [norway] Norwegian Scenic Routes тАУ Atlanterhavsveien: https://loremflickr.com/1200/800/Norwegian,Scenic,norway/all?lock=59
+  [panama] Panama Canal (Miraflores Locks): https://loremflickr.com/1200/800/Panama,Canal,Miraflores/all?lock=601
+  [panama] Casco Viejo: https://loremflickr.com/1200/800/Casco,Viejo,Panama/all?lock=602
+  [panama] Bocas del Toro Archipelago: https://loremflickr.com/1200/800/Bocas,Toro,Panama/all?lock=603
+  [panama] San Blas Islands (Guna Yala): https://loremflickr.com/1200/800/San,Blas,Islands/all?lock=604
+  [panama] Boquete: https://loremflickr.com/1200/800/Boquete,Panama,Coffee/all?lock=605
+  [panama] Volc├бn Bar├║: https://loremflickr.com/1200/800/Volcan,Baru,Panama/all?lock=606
+  [panama] Amador Causeway: https://loremflickr.com/1200/800/Amador,Causeway,Panama/all?lock=607
+  [panama] Biomuseo: https://loremflickr.com/1200/800/Biomuseo,Panama/all?lock=608
+  [panama] Coiba National Park: https://loremflickr.com/1200/800/Coiba,National,Park/all?lock=609
+  [panama] Portobelo: https://loremflickr.com/1200/800/Portobelo,Panama/all?lock=610
+  [panama] Soberan├нa National Park: https://loremflickr.com/1200/800/Soberania,National,Park/all?lock=611
+  [panama] Ember├б Indigenous Villages: https://loremflickr.com/1200/800/Embera,Village,Panama/all?lock=612
+  [panama] Santa Catalina: https://loremflickr.com/1200/800/Santa,Catalina,Surf/all?lock=613
+  [panama] Valle de Ant├│n (El Valle): https://loremflickr.com/1200/800/Valle,Anton,Panama/all?lock=614
+  [panama] Panam├б Viejo: https://loremflickr.com/1200/800/Panama,Viejo,Ruins/all?lock=615
+  [panama] Pearl Islands (Islas Perlas): https://loremflickr.com/1200/800/Pearl,Islands,Panama/all?lock=616
+  [panama] Gulf of Chiriqu├н National Marine Park: https://loremflickr.com/1200/800/Gulf,Chiriqui,Panama/all?lock=617
+  [panama] Metropolitan Natural Park: https://loremflickr.com/1200/800/Metropolitan,Park,Panama/all?lock=618
+  [panama] Monkey Island (Gatun Lake): https://loremflickr.com/1200/800/Monkey,Island,Panama/all?lock=619
+  [panama] Bridge of the Americas: https://loremflickr.com/1200/800/Bridge,Americas,Panama/all?lock=620
+  [poland] Krak├│w Old Town (Market Square): https://loremflickr.com/1200/800/Krakw,Town,poland/all?lock=60
+  [poland] Tatra Mountains (Zakopane): https://loremflickr.com/1200/800/Tatra,Mountains,poland/all?lock=61
+  [poland] Warsaw Old Town (Stare Miasto): https://loremflickr.com/1200/800/Warsaw,Town,poland/all?lock=62
+  [poland] Morskie Oko Lake: https://loremflickr.com/1200/800/Morskie,Lake,poland/all?lock=63
+  [poland] Kazimierz (Krak├│w Jewish Quarter): https://loremflickr.com/1200/800/Kazimierz,Krakw,poland/all?lock=64
+  [qatar] Museum of Islamic Art: https://loremflickr.com/1200/800/Museum,Islamic,qatar/all?lock=65
+  [qatar] The Pearl-Qatar: https://loremflickr.com/1200/800/PearlQatar,qatar/all?lock=66
+  [qatar] Inland Sea (Khor Al Adaid): https://loremflickr.com/1200/800/Inland,Khor,qatar/all?lock=67
+  [qatar] Zubarah Fort (UNESCO): https://loremflickr.com/1200/800/Zubarah,Fort,qatar/all?lock=68
+  [qatar] Museum of the Future (Doha version) тАУ 3-2-1 Qatar Olympic Sports Museum: https://loremflickr.com/1200/800/Museum,Future,qatar/all?lock=69
+  [qatar] Camel Race Track (Al Shahaniya): https://loremflickr.com/1200/800/Camel,Race,qatar/all?lock=70
+  [qatar] Al Fahidi Historic District (Doha equivalent) тАУ Msheireb Downtown Doha: https://loremflickr.com/1200/800/Fahidi,Historic,qatar/all?lock=71
+  [qatar] Al Wakrah Old Town: https://loremflickr.com/1200/800/Wakrah,Town,qatar/all?lock=72
+  [qatar] Doha Design District (D3): https://loremflickr.com/1200/800/Doha,Design,qatar/all?lock=73
+  [qatar] 974 Stadium (Ras Abu Aboud): https://loremflickr.com/1200/800/Stadium,Aboud,qatar/all?lock=74
+  [qatar] Al Zubarah Archaeological Site: https://loremflickr.com/1200/800/Zubarah,Archaeological,qatar/all?lock=75
+  [qatar] Al Janoub Stadium: https://loremflickr.com/1200/800/Janoub,Stadium,qatar/all?lock=76
+  [qatar] Global Village (Doha equivalent) тАУ Villagio Mall: https://loremflickr.com/1200/800/Global,Village,qatar/all?lock=77
+  [qatar] Doha Fort (Al Koot Fort): https://loremflickr.com/1200/800/Doha,Fort,qatar/all?lock=78
+  [singapore] Gardens by the Bay: https://loremflickr.com/1200/800/Singapore,Gardens,Bay/all?lock=501
+  [singapore] Marina Bay Sands SkyPark: https://loremflickr.com/1200/800/Marina,Bay,Sands/all?lock=502
+  [singapore] Singapore Botanic Gardens: https://loremflickr.com/1200/800/Singapore,Botanic,Gardens/all?lock=503
+  [singapore] Chinatown: https://loremflickr.com/1200/800/Chinatown,Singapore/all?lock=504
+  [singapore] Sentosa Island: https://loremflickr.com/1200/800/Sentosa,Island,Beach/all?lock=505
+  [singapore] Jewel Changi Airport: https://loremflickr.com/1200/800/Jewel,Changi,Airport/all?lock=506
+  [singapore] Singapore Zoo & Night Safari: https://loremflickr.com/1200/800/Singapore,Zoo/all?lock=507
+  [singapore] Little India: https://loremflickr.com/1200/800/Little,India,Singapore/all?lock=508
+  [singapore] National Gallery Singapore: https://loremflickr.com/1200/800/National,Gallery,Singapore/all?lock=509
+  [singapore] Kampong Glam & Arab Street: https://loremflickr.com/1200/800/Haji,Lane,Singapore/all?lock=510
+  [singapore] Singapore Flyer: https://loremflickr.com/1200/800/Singapore,Flyer/all?lock=511
+  [singapore] Clarke Quay: https://loremflickr.com/1200/800/Clarke,Quay,Singapore/all?lock=512
+  [singapore] ArtScience Museum: https://loremflickr.com/1200/800/ArtScience,Museum/all?lock=513
+  [singapore] Pulau Ubin: https://loremflickr.com/1200/800/Pulau,Ubin,Singapore/all?lock=514
+  [singapore] MacRitchie Reservoir & TreeTop Walk: https://loremflickr.com/1200/800/MacRitchie,TreeTop,Walk/all?lock=515
+  [singapore] Asian Civilisations Museum: https://loremflickr.com/1200/800/Asian,Civilisations,Museum/all?lock=516
+  [singapore] Haw Par Villa: https://loremflickr.com/1200/800/Haw,Par,Villa/all?lock=517
+  [singapore] Peranakan Houses at Joo Chiat: https://loremflickr.com/1200/800/Joo,Chiat,Houses/all?lock=518
+  [singapore] Henderson Waves: https://loremflickr.com/1200/800/Henderson,Waves,Singapore/all?lock=519
+  [singapore] Maxwell Food Centre: https://loremflickr.com/1200/800/Maxwell,Food,Centre/all?lock=520
+  [spain] Ibiza: https://loremflickr.com/1200/800/Ibiza,spain/all?lock=79
+  [sriLanka] Polonnaruwa Ancient City: https://loremflickr.com/1200/800/Polonnaruwa,Ancient,sriLanka/all?lock=80
+  [sriLanka] Mirissa Whale Watching: https://loremflickr.com/1200/800/Mirissa,Whale,sriLanka/all?lock=81
+  [sriLanka] Jaffna Peninsula: https://loremflickr.com/1200/800/Jaffna,Peninsula,sriLanka/all?lock=82
+  [sriLanka] Trincomalee & Pigeon Island: https://loremflickr.com/1200/800/Trincomalee,Pigeon,sriLanka/all?lock=83
+  [sriLanka] Pinnawala Elephant Orphanage: https://loremflickr.com/1200/800/Pinnawala,Elephant,sriLanka/all?lock=84
+  [sweden] ABBA Museum: https://loremflickr.com/1200/800/ABBA,Museum,sweden/all?lock=85
+  [sweden] Drottningholm Palace: https://loremflickr.com/1200/800/Drottningholm,Palace,sweden/all?lock=86
+  [switzerland] Matterhorn: https://loremflickr.com/1200/800/Matterhorn,switzerland/all?lock=87
+  [switzerland] Lake Geneva: https://loremflickr.com/1200/800/Lake,Geneva,switzerland/all?lock=88
+  [switzerland] Jungfraujoch: https://loremflickr.com/1200/800/Jungfraujoch,switzerland/all?lock=89
+  [switzerland] Lucerne Old Town: https://loremflickr.com/1200/800/Lucerne,Town,switzerland/all?lock=90
+  [switzerland] Interlaken: https://loremflickr.com/1200/800/Interlaken,switzerland/all?lock=91
+  [switzerland] Rhine Falls: /images/attractions/switzerland-rhine-falls.jpg
+  [switzerland] Bern Old Town: /images/attractions/switzerland-bern-old-town.jpg
+  [switzerland] Zermatt: https://loremflickr.com/1200/800/Zermatt,switzerland/all?lock=92
+  [switzerland] Lake Lugano: /images/attractions/switzerland-lake-lugano.jpg
+  [switzerland] Grindelwald: https://loremflickr.com/1200/800/Grindelwald,switzerland/all?lock=93
+  [switzerland] Glacier Express: https://loremflickr.com/1200/800/Glacier,Express,switzerland/all?lock=94
+  [switzerland] St. Moritz: https://loremflickr.com/1200/800/Moritz,switzerland/all?lock=95
+  [switzerland] Aletsch Glacier: https://loremflickr.com/1200/800/Aletsch,Glacier,switzerland/all?lock=96
+  [switzerland] Mount Rigi: https://loremflickr.com/1200/800/Mount,Rigi,switzerland/all?lock=97
+  [switzerland] Gruyeres: /images/attractions/switzerland-gruyeres.jpg
+  [switzerland] Montreux: https://loremflickr.com/1200/800/Montreux,switzerland/all?lock=98
+  [thailand] Phi Phi Islands: https://loremflickr.com/1200/800/Islands,thailand/all?lock=99
+  [thailand] Pai Valley: https://loremflickr.com/1200/800/Valley,thailand/all?lock=100
+  [thailand] Sukhothai Historical Park: https://loremflickr.com/1200/800/Sukhothai,Historical,thailand/all?lock=101
+  [turkey] Hagia Sophia: https://loremflickr.com/1200/800/Hagia,Sophia,turkey/all?lock=102
+  [turkey] Cappadocia: /images/attractions/turkey-cappadocia.jpg
+  [turkey] Topkapi Palace: /images/attractions/turkey-topkapi-palace.jpg
+  [turkey] Blue Mosque: /images/attractions/turkey-blue-mosque.jpg
+  [turkey] Ephesus Ancient City: /images/attractions/turkey-ephesus-ancient-city.jpg
+  [turkey] Grand Bazaar: /images/attractions/turkey-grand-bazaar.jpg
+  [turkey] Galata Tower & Bosphorus: /images/attractions/turkey-galata-tower-bosphorus.jpg
+  [turkey] Troy (Ancient City): https://loremflickr.com/1200/800/Troy,Ancient,turkey/all?lock=103
+  [turkey] Antalya Coast (Lycian Way): /images/attractions/turkey-antalya-coast-lycian-way.jpg
+  [turkey] Basilica Cistern: https://loremflickr.com/1200/800/Basilica,Cistern,turkey/all?lock=104
+  [turkey] Bodrum Castle: https://loremflickr.com/1200/800/Bodrum,Castle,turkey/all?lock=105
+  [turkey] Sumela Monastery: /images/attractions/turkey-sumela-monastery.jpg
+  [turkey] Aspendos Theatre: https://loremflickr.com/1200/800/Aspendos,Theatre,turkey/all?lock=106
+  [turkey] Myra Rock Tombs: https://loremflickr.com/1200/800/Myra,Rock,turkey/all?lock=107
+  [turkey] Gobekli Tepe: /images/attractions/turkey-gobekli-tepe.jpg
+  [uae] Dubai Mall & Dubai Fountain: https://loremflickr.com/1200/800/Dubai,Mall,uae/all?lock=108
+  [uae] Louvre Abu Dhabi: https://loremflickr.com/1200/800/Louvre,Dhabi,uae/all?lock=109
+  [uae] Dubai Frame: https://loremflickr.com/1200/800/Dubai,Frame,uae/all?lock=110
+  [uae] Yas Island: https://loremflickr.com/1200/800/Island,uae/all?lock=111
+  [uae] Jumeirah Beach: https://loremflickr.com/1200/800/Jumeirah,Beach,uae/all?lock=112
+  [uk] Scottish Highlands: https://loremflickr.com/1200/800/Scottish,Highlands,uk/all?lock=113
+  [uk] Isle of Skye: https://loremflickr.com/1200/800/Isle,Skye,uk/all?lock=114
+  [uk] North Coast 500: https://loremflickr.com/1200/800/North,Coast,uk/all?lock=115
+  [usa] Key West: https://loremflickr.com/1200/800/West,usa/all?lock=116
+  [vietnam] Ha Long Bay: https://loremflickr.com/1200/800/Long,vietnam/all?lock=117
+  [vietnam] Hoi An Ancient Town: https://loremflickr.com/1200/800/Ancient,Town,vietnam/all?lock=118
+  [vietnam] Phong Nha-Ke Bang: https://loremflickr.com/1200/800/Phong,NhaKe,vietnam/all?lock=119
+  [vietnam] Cu Chi Tunnels: /images/attractions/vietnam-cu-chi-tunnels.jpg
+  [vietnam] Hue Imperial City: /images/attractions/vietnam-hue-imperial-city.jpg
+  [vietnam] Phu Quoc Island: https://loremflickr.com/1200/800/Quoc,Island,vietnam/all?lock=120
+  [vietnam] Mekong Delta: /images/attractions/vietnam-mekong-delta.jpg
+  [vietnam] My Son Sanctuary: https://loremflickr.com/1200/800/Sanctuary,vietnam/all?lock=121
+  [vietnam] Hoan Kiem Lake: /images/attractions/vietnam-hoan-kiem-lake.jpg
+  [vietnam] Da Nang (Golden Bridge): https://loremflickr.com/1200/800/Nang,Golden,vietnam/all?lock=122
+  [vietnam] Ninh Binh (Trang An): https://loremflickr.com/1200/800/Ninh,Binh,vietnam/all?lock=123
+  [vietnam] Dalat: /images/attractions/vietnam-dalat.jpg
+  [vietnam] Fansipan: https://loremflickr.com/1200/800/Fansipan,vietnam/all?lock=124
+  [vietnam] Con Dao Islands: /images/attractions/vietnam-con-dao-islands.jpg
+  [vietnam] Ben Thanh Market: https://loremflickr.com/1200/800/Thanh,Market,vietnam/all?lock=125
+  [vietnam] Ba Be Lake: https://loremflickr.com/1200/800/Lake,vietnam/all?lock=126
+
+================================================================================
+ЁЯЪл CHECK 2: ╨Ч╨Р╨У╨Ы╨г╨и╨Ъ╨Ш (placeholder references)
+================================================================================
+
+тЪая╕П  ╨Э╨Р╨Щ╨Ф╨Х╨Э╨Ю 335 ╨б╨б╨л╨Ы╨Ю╨Ъ ╨Э╨Р ╨Ч╨Р╨У╨Ы╨г╨и╨Ъ╨Ш:
+  [argentina] Salinas Grandes: /images/placeholder.jpg (keyword: 'placeholder')
+  [argentina] Ibera Wetlands: /images/placeholder.jpg (keyword: 'placeholder')
+  [australia] Ningaloo Reef: /images/placeholder.jpg (keyword: 'placeholder')
+  [australia] Barossa Valley: /images/placeholder.jpg (keyword: 'placeholder')
+  [austria] Hallstatt: /images/placeholder.jpg (keyword: 'placeholder')
+  [austria] Belvedere Palace: /images/placeholder.jpg (keyword: 'placeholder')
+  [austria] Grossglockner High Alpine Road: /images/placeholder.jpg (keyword: 'placeholder')
+  [austria] Krimml Waterfalls: /images/placeholder.jpg (keyword: 'placeholder')
+  [austria] Eisriesenwelt (Ice Cave): /images/placeholder.jpg (keyword: 'placeholder')
+  [austria] Kitzb├╝hel: /images/placeholder.jpg (keyword: 'placeholder')
+  [austria] Schloss Hellbrunn: /images/placeholder.jpg (keyword: 'placeholder')
+  [austria] Hohensalzburg Fortress: /images/placeholder.jpg (keyword: 'placeholder')
+  [austria] Graz Old Town: /images/placeholder.jpg (keyword: 'placeholder')
+  [austria] Swarovski Crystal Worlds: /images/placeholder.jpg (keyword: 'placeholder')
+  [austria] Wolfgangsee: /images/placeholder.jpg (keyword: 'placeholder')
+  [austria] Dachstein Salzkammergut: /images/placeholder.jpg (keyword: 'placeholder')
+  [belgium] Grand Place: /images/placeholder.jpg (keyword: 'placeholder')
+  [belgium] Atomium: /images/placeholder.jpg (keyword: 'placeholder')
+  [belgium] Bruges Canals: /images/placeholder.jpg (keyword: 'placeholder')
+  [belgium] Ghent Altarpiece & Belfry: /images/placeholder.jpg (keyword: 'placeholder')
+  [belgium] Waterloo Battlefield: /images/placeholder.jpg (keyword: 'placeholder')
+  [belgium] Manneken Pis: /images/placeholder.jpg (keyword: 'placeholder')
+  [belgium] Dinant Citadel: /images/placeholder.jpg (keyword: 'placeholder')
+  [belgium] Royal Palace of Brussels: /images/placeholder.jpg (keyword: 'placeholder')
+  [belgium] Royal Greenhouses of Laeken: /images/placeholder.jpg (keyword: 'placeholder')
+  [belgium] Antwerp Central Station: /images/placeholder.jpg (keyword: 'placeholder')
+  [belgium] In Flanders Fields Museum: /images/placeholder.jpg (keyword: 'placeholder')
+  [belgium] Hallerbos (Blue Forest): /images/placeholder.jpg (keyword: 'placeholder')
+  [belgium] Gravensteen Castle: /images/placeholder.jpg (keyword: 'placeholder')
+  [belgium] Mini-Europe: /images/placeholder.jpg (keyword: 'placeholder')
+  [belgium] Cathedral of Our Lady (Antwerp): /images/placeholder.jpg (keyword: 'placeholder')
+  [belgium] Mechelen Old Town: /images/placeholder.jpg (keyword: 'placeholder')
+  [belgium] Leuven Town Hall: /images/placeholder.jpg (keyword: 'placeholder')
+  [belgium] Beguinage (Bruges): /images/placeholder.jpg (keyword: 'placeholder')
+  [belgium] Bouillon Castle: /images/placeholder.jpg (keyword: 'placeholder')
+  [belgium] Sonian Forest: /images/placeholder.jpg (keyword: 'placeholder')
+  [canada] Banff National Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [canada] Niagara Falls: /images/placeholder.jpg (keyword: 'placeholder')
+  [canada] Jasper National Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [canada] CN Tower: /images/placeholder.jpg (keyword: 'placeholder')
+  [canada] Lake Louise: /images/placeholder.jpg (keyword: 'placeholder')
+  [canada] Old Quebec (Vieux-Qu├йbec): /images/placeholder.jpg (keyword: 'placeholder')
+  [canada] Whistler Blackcomb: /images/placeholder.jpg (keyword: 'placeholder')
+  [canada] Vancouver Stanley Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [canada] Moraine Lake: /images/placeholder.jpg (keyword: 'placeholder')
+  [canada] Churchill (Polar Bears): /images/placeholder.jpg (keyword: 'placeholder')
+  [canada] Bay of Fundy: /images/placeholder.jpg (keyword: 'placeholder')
+  [canada] Gros Morne National Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [canada] Victoria Inner Harbour: /images/placeholder.jpg (keyword: 'placeholder')
+  [canada] Rideau Canal: /images/placeholder.jpg (keyword: 'placeholder')
+  [canada] Yoho National Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [canada] Peggy: /images/placeholder.jpg (keyword: 'placeholder')
+  [canada] Tofino (Pacific Rim National Park): /images/placeholder.jpg (keyword: 'placeholder')
+  [canada] Royal Ontario Museum: /images/placeholder.jpg (keyword: 'placeholder')
+  [canada] Algonquin Provincial Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [canada] Capilano Suspension Bridge: /images/placeholder.jpg (keyword: 'placeholder')
+  [chile] Torres del Paine National Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [chile] Atacama Desert: /images/placeholder.jpg (keyword: 'placeholder')
+  [chile] Easter Island (Rapa Nui): /images/placeholder.jpg (keyword: 'placeholder')
+  [chile] Valpara├нso: /images/placeholder.jpg (keyword: 'placeholder')
+  [chile] Chilo├й Island: /images/placeholder.jpg (keyword: 'placeholder')
+  [chile] Valle de la Luna: /images/placeholder.jpg (keyword: 'placeholder')
+  [chile] Marble Caves (Puerto Rio Tranquilo): /images/placeholder.jpg (keyword: 'placeholder')
+  [chile] Villarrica Volcano: /images/placeholder.jpg (keyword: 'placeholder')
+  [chile] Lake District (Puerto Varas): /images/placeholder.jpg (keyword: 'placeholder')
+  [chile] El Tatio Geysers: /images/placeholder.jpg (keyword: 'placeholder')
+  [chile] Santiago (San Cristobal Hill): /images/placeholder.jpg (keyword: 'placeholder')
+  [chile] Pumalin Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [chile] Cape Horn: /images/placeholder.jpg (keyword: 'placeholder')
+  [chile] Magdalena Island (Penguins): /images/placeholder.jpg (keyword: 'placeholder')
+  [chile] Cochamo Valley: /images/placeholder.jpg (keyword: 'placeholder')
+  [chile] Lauca National Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [chile] Altiplanic Lagoons: /images/placeholder.jpg (keyword: 'placeholder')
+  [chile] Puc├│n: /images/placeholder.jpg (keyword: 'placeholder')
+  [chile] Osorno Volcano: /images/placeholder.jpg (keyword: 'placeholder')
+  [chile] Humberstone and Santa Laura: /images/placeholder.jpg (keyword: 'placeholder')
+  [costaRica] Arenal Volcano: /images/placeholder.jpg (keyword: 'placeholder')
+  [costaRica] Monteverde Cloud Forest: /images/placeholder.jpg (keyword: 'placeholder')
+  [costaRica] Manuel Antonio National Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [costaRica] Tortuguero National Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [costaRica] Corcovado National Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [costaRica] Tamarindo: /images/placeholder.jpg (keyword: 'placeholder')
+  [costaRica] La Fortuna Waterfall: /images/placeholder.jpg (keyword: 'placeholder')
+  [costaRica] Poas Volcano: /images/placeholder.jpg (keyword: 'placeholder')
+  [costaRica] Celeste River (Rio Celeste): /images/placeholder.jpg (keyword: 'placeholder')
+  [costaRica] Cahuita National Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [costaRica] Nicoya Peninsula: /images/placeholder.jpg (keyword: 'placeholder')
+  [costaRica] San Jose (National Theatre): /images/placeholder.jpg (keyword: 'placeholder')
+  [costaRica] Rincon de la Vieja: /images/placeholder.jpg (keyword: 'placeholder')
+  [costaRica] Irazu Volcano: /images/placeholder.jpg (keyword: 'placeholder')
+  [costaRica] Tabacon Hot Springs: /images/placeholder.jpg (keyword: 'placeholder')
+  [costaRica] Nosara: /images/placeholder.jpg (keyword: 'placeholder')
+  [costaRica] Puerto Viejo de Talamanca: /images/placeholder.jpg (keyword: 'placeholder')
+  [costaRica] Uvita (Whale Tail): /images/placeholder.jpg (keyword: 'placeholder')
+  [costaRica] Braulio Carrillo: /images/placeholder.jpg (keyword: 'placeholder')
+  [costaRica] Drake Bay: /images/placeholder.jpg (keyword: 'placeholder')
+  [egypt] Abu Simbel Temples: /images/placeholder.jpg (keyword: 'placeholder')
+  [egypt] Philae Temple: /images/placeholder.jpg (keyword: 'placeholder')
+  [egypt] White Desert National Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [egypt] Sharm El-Sheikh (Naama Bay): /images/placeholder.jpg (keyword: 'placeholder')
+  [iceland] Gullfoss Waterfall: /images/placeholder.jpg (keyword: 'placeholder')
+  [iceland] Geysir Geothermal Area: /images/placeholder.jpg (keyword: 'placeholder')
+  [iceland] Jokulsarlon Glacier Lagoon: /images/placeholder.jpg (keyword: 'placeholder')
+  [iceland] Skogafoss Waterfall: /images/placeholder.jpg (keyword: 'placeholder')
+  [iceland] Reynisfjara Black Sand Beach: /images/placeholder.jpg (keyword: 'placeholder')
+  [iceland] Seljalandsfoss Waterfall: /images/placeholder.jpg (keyword: 'placeholder')
+  [iceland] Diamond Beach: /images/placeholder.jpg (keyword: 'placeholder')
+  [iceland] Dettifoss Waterfall: /images/placeholder.jpg (keyword: 'placeholder')
+  [iceland] Asbyrgi Canyon: /images/placeholder.jpg (keyword: 'placeholder')
+  [iceland] Kirkjufell Mountain: /images/placeholder.jpg (keyword: 'placeholder')
+  [iceland] Landmannalaugar: /images/placeholder.jpg (keyword: 'placeholder')
+  [india] Kerala Backwaters: /images/placeholder.jpg (keyword: 'placeholder')
+  [indonesia] Komodo National Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [indonesia] Yogyakarta: /images/placeholder.jpg (keyword: 'placeholder')
+  [indonesia] Tanjung Puting (Orangutans): /images/placeholder.jpg (keyword: 'placeholder')
+  [indonesia] Wakatobi: /images/placeholder.jpg (keyword: 'placeholder')
+  [indonesia] Lombok: /images/placeholder.jpg (keyword: 'placeholder')
+  [indonesia] Bunaken Marine Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [indonesia] Belitung Island: /images/placeholder.jpg (keyword: 'placeholder')
+  [indonesia] Mentawai Islands: /images/placeholder.jpg (keyword: 'placeholder')
+  [indonesia] Jakarta Old Town: /images/placeholder.jpg (keyword: 'placeholder')
+  [indonesia] Dieng Plateau: /images/placeholder.jpg (keyword: 'placeholder')
+  [maldives] Mal├й City (Grand Friday Mosque): /images/placeholder.jpg (keyword: 'placeholder')
+  [maldives] Baa Atoll (Hanifaru Bay): /images/placeholder.jpg (keyword: 'placeholder')
+  [maldives] Maafushi Island: /images/placeholder.jpg (keyword: 'placeholder')
+  [maldives] Ari Atoll (Whale Sharks): /images/placeholder.jpg (keyword: 'placeholder')
+  [maldives] Hulhumale: /images/placeholder.jpg (keyword: 'placeholder')
+  [maldives] Banana Reef: /images/placeholder.jpg (keyword: 'placeholder')
+  [maldives] Vaadhoo Island (Sea of Stars): /images/placeholder.jpg (keyword: 'placeholder')
+  [maldives] Sun Island: /images/placeholder.jpg (keyword: 'placeholder')
+  [maldives] Alimatha Island: /images/placeholder.jpg (keyword: 'placeholder')
+  [maldives] Biyadhoo Island: /images/placeholder.jpg (keyword: 'placeholder')
+  [maldives] Utheemu Ganduvaru: /images/placeholder.jpg (keyword: 'placeholder')
+  [maldives] Fuvahmulah: /images/placeholder.jpg (keyword: 'placeholder')
+  [maldives] HP Reef: /images/placeholder.jpg (keyword: 'placeholder')
+  [maldives] Artificial Beach (Mal├й): /images/placeholder.jpg (keyword: 'placeholder')
+  [maldives] Manta Point: /images/placeholder.jpg (keyword: 'placeholder')
+  [maldives] Veligandu Island Beach: /images/placeholder.jpg (keyword: 'placeholder')
+  [maldives] Baros: /images/placeholder.jpg (keyword: 'placeholder')
+  [maldives] Como Cocoa Island: /images/placeholder.jpg (keyword: 'placeholder')
+  [maldives] Dhigurah: /images/placeholder.jpg (keyword: 'placeholder')
+  [maldives] Kuramathi: /images/placeholder.jpg (keyword: 'placeholder')
+  [morocco] Marrakech Medina (Jemaa el-Fnaa): /images/placeholder.jpg (keyword: 'placeholder')
+  [morocco] Chefchaouen (Blue City): /images/placeholder.jpg (keyword: 'placeholder')
+  [morocco] Sahara Desert (Merzouga Dunes): /images/placeholder.jpg (keyword: 'placeholder')
+  [morocco] Hassan II Mosque: /images/placeholder.jpg (keyword: 'placeholder')
+  [morocco] Fes el Bali (Old Medina): /images/placeholder.jpg (keyword: 'placeholder')
+  [morocco] Ait Benhaddou: /images/placeholder.jpg (keyword: 'placeholder')
+  [morocco] Majorelle Garden: /images/placeholder.jpg (keyword: 'placeholder')
+  [morocco] Todra Gorge: /images/placeholder.jpg (keyword: 'placeholder')
+  [morocco] Ouzoud Waterfalls: /images/placeholder.jpg (keyword: 'placeholder')
+  [morocco] Essaouira Coast: /images/placeholder.jpg (keyword: 'placeholder')
+  [morocco] Atlas Mountains (Toubkal): /images/placeholder.jpg (keyword: 'placeholder')
+  [morocco] Volubilis Roman Ruins: /images/placeholder.jpg (keyword: 'placeholder')
+  [morocco] Bahia Palace: /images/placeholder.jpg (keyword: 'placeholder')
+  [morocco] Dades Valley: /images/placeholder.jpg (keyword: 'placeholder')
+  [morocco] Rabat (Hassan Tower & Kasbah): /images/placeholder.jpg (keyword: 'placeholder')
+  [morocco] Erg Chigaga Dunes: /images/placeholder.jpg (keyword: 'placeholder')
+  [morocco] Legzira Beach: /images/placeholder.jpg (keyword: 'placeholder')
+  [morocco] Koutoubia Mosque: /images/placeholder.jpg (keyword: 'placeholder')
+  [morocco] Meknes Medina: /images/placeholder.jpg (keyword: 'placeholder')
+  [morocco] Asilah Medina: /images/placeholder.jpg (keyword: 'placeholder')
+  [netherlands] Rijksmuseum: /images/placeholder.jpg (keyword: 'placeholder')
+  [netherlands] Van Gogh Museum: /images/placeholder.jpg (keyword: 'placeholder')
+  [netherlands] Anne Frank House: /images/placeholder.jpg (keyword: 'placeholder')
+  [netherlands] Keukenhof Gardens: /images/placeholder.jpg (keyword: 'placeholder')
+  [netherlands] Zaanse Schans: /images/placeholder.jpg (keyword: 'placeholder')
+  [netherlands] Vondelpark: /images/placeholder.jpg (keyword: 'placeholder')
+  [netherlands] Giethoorn: /images/placeholder.jpg (keyword: 'placeholder')
+  [netherlands] Kinderdijk Windmills: /images/placeholder.jpg (keyword: 'placeholder')
+  [netherlands] Efteling Theme Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [netherlands] Mauritshuis: /images/placeholder.jpg (keyword: 'placeholder')
+  [netherlands] Delft Canals: /images/placeholder.jpg (keyword: 'placeholder')
+  [netherlands] Dam Square: /images/placeholder.jpg (keyword: 'placeholder')
+  [netherlands] Euromast (Rotterdam): /images/placeholder.jpg (keyword: 'placeholder')
+  [netherlands] Hoge Veluwe National Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [netherlands] De Haar Castle: /images/placeholder.jpg (keyword: 'placeholder')
+  [netherlands] Scheveningen Pier: /images/placeholder.jpg (keyword: 'placeholder')
+  [netherlands] Alkmaar Cheese Market: /images/placeholder.jpg (keyword: 'placeholder')
+  [netherlands] Marken: /images/placeholder.jpg (keyword: 'placeholder')
+  [netherlands] Royal Palace of Amsterdam: /images/placeholder.jpg (keyword: 'placeholder')
+  [netherlands] Binnenhof (The Hague): /images/placeholder.jpg (keyword: 'placeholder')
+  [newZealand] Milford Sound: /images/placeholder.jpg (keyword: 'placeholder')
+  [newZealand] Hobbiton Movie Set: /images/placeholder.jpg (keyword: 'placeholder')
+  [newZealand] Tongariro National Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [newZealand] Rotorua Geothermal Parks: /images/placeholder.jpg (keyword: 'placeholder')
+  [newZealand] Aoraki Mount Cook: /images/placeholder.jpg (keyword: 'placeholder')
+  [newZealand] Queenstown (Adventure Capital): /images/placeholder.jpg (keyword: 'placeholder')
+  [newZealand] Bay of Islands: /images/placeholder.jpg (keyword: 'placeholder')
+  [newZealand] Waitomo Glowworm Caves: /images/placeholder.jpg (keyword: 'placeholder')
+  [newZealand] Franz Josef Glacier: /images/placeholder.jpg (keyword: 'placeholder')
+  [newZealand] Abel Tasman National Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [newZealand] Te Papa Tongarewa Museum: /images/placeholder.jpg (keyword: 'placeholder')
+  [newZealand] Lake Tekapo: /images/placeholder.jpg (keyword: 'placeholder')
+  [newZealand] Waiheke Island: /images/placeholder.jpg (keyword: 'placeholder')
+  [newZealand] Fiordland National Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [newZealand] Coromandel Peninsula (Hot Water Beach): /images/placeholder.jpg (keyword: 'placeholder')
+  [newZealand] Huka Falls: /images/placeholder.jpg (keyword: 'placeholder')
+  [newZealand] Mount Aspiring National Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [newZealand] Kaikoura (Whale Watching): /images/placeholder.jpg (keyword: 'placeholder')
+  [newZealand] Fox Glacier: /images/placeholder.jpg (keyword: 'placeholder')
+  [newZealand] Sky Tower (Auckland): /images/placeholder.jpg (keyword: 'placeholder')
+  [peru] Machu Picchu: /images/placeholder.jpg (keyword: 'placeholder')
+  [peru] Sacred Valley: /images/placeholder.jpg (keyword: 'placeholder')
+  [peru] Cusco Historic Center: /images/placeholder.jpg (keyword: 'placeholder')
+  [peru] Colca Canyon: /images/placeholder.jpg (keyword: 'placeholder')
+  [peru] Lake Titicaca (Uros Islands): /images/placeholder.jpg (keyword: 'placeholder')
+  [peru] Nazca Lines: /images/placeholder.jpg (keyword: 'placeholder')
+  [peru] Lima Historic Centre: /images/placeholder.jpg (keyword: 'placeholder')
+  [peru] Huacachina Oasis: /images/placeholder.jpg (keyword: 'placeholder')
+  [peru] Amazon Rainforest (Iquitos): /images/placeholder.jpg (keyword: 'placeholder')
+  [peru] Rainbow Mountain (Vinicunca): /images/placeholder.jpg (keyword: 'placeholder')
+  [peru] Paracas National Reserve: /images/placeholder.jpg (keyword: 'placeholder')
+  [peru] Arequipa (Plaza de Armas): /images/placeholder.jpg (keyword: 'placeholder')
+  [peru] Chan Chan (Trujillo): /images/placeholder.jpg (keyword: 'placeholder')
+  [peru] Kuelap Fortress: /images/placeholder.jpg (keyword: 'placeholder')
+  [peru] Huascaran National Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [peru] Pisac Ruins & Market: /images/placeholder.jpg (keyword: 'placeholder')
+  [peru] Ollantaytambo Ruins: /images/placeholder.jpg (keyword: 'placeholder')
+  [peru] Sacsayhuaman: /images/placeholder.jpg (keyword: 'placeholder')
+  [peru] Mancora Beaches: /images/placeholder.jpg (keyword: 'placeholder')
+  [peru] Salkantay Trek: /images/placeholder.jpg (keyword: 'placeholder')
+  [philippines] Palawan (El Nido): /images/placeholder.jpg (keyword: 'placeholder')
+  [philippines] Boracay: /images/placeholder.jpg (keyword: 'placeholder')
+  [philippines] Chocolate Hills: /images/placeholder.jpg (keyword: 'placeholder')
+  [philippines] Banaue Rice Terraces: /images/placeholder.jpg (keyword: 'placeholder')
+  [philippines] Siargao: /images/placeholder.jpg (keyword: 'placeholder')
+  [philippines] Intramuros (Manila): /images/placeholder.jpg (keyword: 'placeholder')
+  [philippines] Mayon Volcano: /images/placeholder.jpg (keyword: 'placeholder')
+  [philippines] Tubbataha Reefs: /images/placeholder.jpg (keyword: 'placeholder')
+  [philippines] Coron: /images/placeholder.jpg (keyword: 'placeholder')
+  [philippines] Cebu (Kawasan Falls): /images/placeholder.jpg (keyword: 'placeholder')
+  [philippines] Vigan: /images/placeholder.jpg (keyword: 'placeholder')
+  [philippines] Batanes: /images/placeholder.jpg (keyword: 'placeholder')
+  [philippines] Puerto Princesa Underground River: /images/placeholder.jpg (keyword: 'placeholder')
+  [philippines] Camiguin: /images/placeholder.jpg (keyword: 'placeholder')
+  [philippines] Panglao Island: /images/placeholder.jpg (keyword: 'placeholder')
+  [philippines] Taal Volcano: /images/placeholder.jpg (keyword: 'placeholder')
+  [philippines] Mount Pulag: /images/placeholder.jpg (keyword: 'placeholder')
+  [philippines] Apo Island: /images/placeholder.jpg (keyword: 'placeholder')
+  [philippines] Siquijor: /images/placeholder.jpg (keyword: 'placeholder')
+  [philippines] Malapascua Island: /images/placeholder.jpg (keyword: 'placeholder')
+  [portugal] Pena Palace: /images/placeholder.jpg (keyword: 'placeholder')
+  [portugal] Belem Tower: /images/placeholder.jpg (keyword: 'placeholder')
+  [portugal] Jeronimos Monastery: /images/placeholder.jpg (keyword: 'placeholder')
+  [portugal] Douro Valley: /images/placeholder.jpg (keyword: 'placeholder')
+  [portugal] Algarve Coast (Benagil Cave): /images/placeholder.jpg (keyword: 'placeholder')
+  [portugal] Alfama: /images/placeholder.jpg (keyword: 'placeholder')
+  [portugal] Ribeira: /images/placeholder.jpg (keyword: 'placeholder')
+  [portugal] Sao Jorge Castle: /images/placeholder.jpg (keyword: 'placeholder')
+  [portugal] Cabo da Roca: /images/placeholder.jpg (keyword: 'placeholder')
+  [portugal] Obidos Castle: /images/placeholder.jpg (keyword: 'placeholder')
+  [portugal] Livraria Lello: /images/placeholder.jpg (keyword: 'placeholder')
+  [portugal] Evora Roman Temple: /images/placeholder.jpg (keyword: 'placeholder')
+  [portugal] Peneda-Geres National Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [portugal] Quinta da Regaleira: /images/placeholder.jpg (keyword: 'placeholder')
+  [portugal] Dom Luis I Bridge: /images/placeholder.jpg (keyword: 'placeholder')
+  [portugal] Monsaraz: /images/placeholder.jpg (keyword: 'placeholder')
+  [portugal] Bom Jesus do Monte: /images/placeholder.jpg (keyword: 'placeholder')
+  [portugal] Batalha Monastery: /images/placeholder.jpg (keyword: 'placeholder')
+  [portugal] Azores (Sete Cidades): /images/placeholder.jpg (keyword: 'placeholder')
+  [portugal] Madeira (Levadas): /images/placeholder.jpg (keyword: 'placeholder')
+  [seychelles] Anse Source d: /images/placeholder.jpg (keyword: 'placeholder')
+  [seychelles] Vall├йe de Mai Nature Reserve: /images/placeholder.jpg (keyword: 'placeholder')
+  [seychelles] Beau Vallon Beach: /images/placeholder.jpg (keyword: 'placeholder')
+  [seychelles] Anse Lazio: /images/placeholder.jpg (keyword: 'placeholder')
+  [seychelles] Curieuse Island: /images/placeholder.jpg (keyword: 'placeholder')
+  [seychelles] Aldabra Atoll: /images/placeholder.jpg (keyword: 'placeholder')
+  [seychelles] Morne Seychellois National Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [seychelles] Sainte Anne Marine National Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [seychelles] Bird Island: /images/placeholder.jpg (keyword: 'placeholder')
+  [seychelles] Victoria (Clock Tower): /images/placeholder.jpg (keyword: 'placeholder')
+  [seychelles] Anse Intendance: /images/placeholder.jpg (keyword: 'placeholder')
+  [seychelles] Cousin Island Special Reserve: /images/placeholder.jpg (keyword: 'placeholder')
+  [seychelles] Aride Island Nature Reserve: /images/placeholder.jpg (keyword: 'placeholder')
+  [seychelles] Silhouette Island: /images/placeholder.jpg (keyword: 'placeholder')
+  [seychelles] La Digue Island: /images/placeholder.jpg (keyword: 'placeholder')
+  [seychelles] Moyenne Island: /images/placeholder.jpg (keyword: 'placeholder')
+  [seychelles] Grand Anse: /images/placeholder.jpg (keyword: 'placeholder')
+  [seychelles] Seychelles National Botanical Gardens: /images/placeholder.jpg (keyword: 'placeholder')
+  [seychelles] Anse Georgette: /images/placeholder.jpg (keyword: 'placeholder')
+  [seychelles] Felicite Island: /images/placeholder.jpg (keyword: 'placeholder')
+  [southAfrica] Kruger National Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [southAfrica] Table Mountain: /images/placeholder.jpg (keyword: 'placeholder')
+  [southAfrica] Cape of Good Hope & Cape Point: /images/placeholder.jpg (keyword: 'placeholder')
+  [southAfrica] Robben Island: /images/placeholder.jpg (keyword: 'placeholder')
+  [southAfrica] Victoria & Alfred Waterfront: /images/placeholder.jpg (keyword: 'placeholder')
+  [southAfrica] Boulders Beach (Penguin Colony): /images/placeholder.jpg (keyword: 'placeholder')
+  [southAfrica] Stellenbosch & Franschhoek Wine Routes: /images/placeholder.jpg (keyword: 'placeholder')
+  [southAfrica] Blyde River Canyon: /images/placeholder.jpg (keyword: 'placeholder')
+  [southAfrica] Garden Route: /images/placeholder.jpg (keyword: 'placeholder')
+  [southAfrica] Drakensberg Mountains: /images/placeholder.jpg (keyword: 'placeholder')
+  [southAfrica] Kirstenbosch Botanical Gardens: /images/placeholder.jpg (keyword: 'placeholder')
+  [southAfrica] Tsitsikamma National Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [southAfrica] Addo Elephant National Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [southAfrica] Kgalagadi Transfrontier Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [southAfrica] Apartheid Museum: /images/placeholder.jpg (keyword: 'placeholder')
+  [southAfrica] Chapman: /images/placeholder.jpg (keyword: 'placeholder')
+  [southAfrica] ISimangaliso Wetland Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [southAfrica] Hluhluwe-iMfolozi Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [southAfrica] Hermanus (Whale Watching): /images/placeholder.jpg (keyword: 'placeholder')
+  [southAfrica] Bo-Kaap (Cape Town): /images/placeholder.jpg (keyword: 'placeholder')
+  [southKorea] Gyeongbokgung Palace: /images/placeholder.jpg (keyword: 'placeholder')
+  [southKorea] Jeju Island: /images/placeholder.jpg (keyword: 'placeholder')
+  [southKorea] Bukchon Hanok Village: /images/placeholder.jpg (keyword: 'placeholder')
+  [southKorea] N Seoul Tower: /images/placeholder.jpg (keyword: 'placeholder')
+  [southKorea] DMZ (Demilitarized Zone): /images/placeholder.jpg (keyword: 'placeholder')
+  [southKorea] Seoraksan National Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [southKorea] Bulguksa Temple: /images/placeholder.jpg (keyword: 'placeholder')
+  [southKorea] Haeundae Beach: /images/placeholder.jpg (keyword: 'placeholder')
+  [southKorea] Nami Island: /images/placeholder.jpg (keyword: 'placeholder')
+  [southKorea] Changdeokgung Palace: /images/placeholder.jpg (keyword: 'placeholder')
+  [southKorea] Myeongdong: /images/placeholder.jpg (keyword: 'placeholder')
+  [southKorea] Suwon Hwaseong Fortress: /images/placeholder.jpg (keyword: 'placeholder')
+  [southKorea] Jeonju Hanok Village: /images/placeholder.jpg (keyword: 'placeholder')
+  [southKorea] Gamcheon Culture Village: /images/placeholder.jpg (keyword: 'placeholder')
+  [southKorea] Gyeongju Historic Areas: /images/placeholder.jpg (keyword: 'placeholder')
+  [southKorea] Hallasan National Park: /images/placeholder.jpg (keyword: 'placeholder')
+  [southKorea] Seongsan Ilchulbong: /images/placeholder.jpg (keyword: 'placeholder')
+  [southKorea] Andong Hahoe Folk Village: /images/placeholder.jpg (keyword: 'placeholder')
+  [southKorea] Lotte World: /images/placeholder.jpg (keyword: 'placeholder')
+  [southKorea] Boseong Green Tea Field: /images/placeholder.jpg (keyword: 'placeholder')
+  [switzerland] Chateau de Chillon: /images/placeholder.jpg (keyword: 'placeholder')
+  [switzerland] Lauterbrunnen Valley: /images/placeholder.jpg (keyword: 'placeholder')
+  [switzerland] Oberhofen Castle: /images/placeholder.jpg (keyword: 'placeholder')
+  [switzerland] Ruinaulta (Swiss Grand Canyon): /images/placeholder.jpg (keyword: 'placeholder')
+  [turkey] Pamukkale Thermal Pools: /images/placeholder.jpg (keyword: 'placeholder')
+  [turkey] Mount Nemrut: /images/placeholder.jpg (keyword: 'placeholder')
+  [turkey] G├╢reme Open Air Museum: /images/placeholder.jpg (keyword: 'placeholder')
+  [turkey] Fethiye (├Цl├╝deniz Blue Lagoon): /images/placeholder.jpg (keyword: 'placeholder')
+  [turkey] Olympos and Chimaera: /images/placeholder.jpg (keyword: 'placeholder')
+  [vietnam] Sapa Terraces: /images/placeholder.jpg (keyword: 'placeholder')
+  [vietnam] Mui Ne Sand Dunes: /images/placeholder.jpg (keyword: 'placeholder')
+  [vietnam] Ban Gioc Waterfall: /images/placeholder.jpg (keyword: 'placeholder')
+  [vietnam] Cat Ba Island: /images/placeholder.jpg (keyword: 'placeholder')
+
+  ЁЯУО ╨д╨░╨╣╨╗╤Л-╨╖╨░╨│╨╗╤Г╤И╨║╨╕ ╨▓ public/:
+    /images\placeholder.jpg (515,748 bytes)
+    /images\countries\fallback-destination.jpg (148,074 bytes)
+    /images\countries\placeholder.jpg (515,748 bytes)
+
+================================================================================
+ЁЯФД CHECK 3: ╨Ф╨г╨С╨Ы╨Ш╨а╨г╨о╨й╨Ш╨Х╨б╨п ╨Ш╨Ч╨Ю╨С╨а╨Р╨Ц╨Х╨Э╨Ш╨п (╨╛╨┤╨╕╨╜╨░╨║╨╛╨▓╤Л╨╡ ╤Д╨░╨╣╨╗╤Л)
+================================================================================
+
+тЪая╕П  ╨Э╨Р╨Щ╨Ф╨Х╨Э╨Ю 1 ╨У╨а╨г╨Я╨Я ╨Ф╨г╨С╨Ы╨Ш╨Ъ╨Р╨в╨Ю╨Т:
+
+  Hash: 5b678e1e6c6f... (335 ╨╕╤Б╨┐╨╛╨╗╤М╨╖╨╛╨▓╨░╨╜╨╕╨╣):
+    [argentina] Salinas Grandes: /images/placeholder.jpg
+    [argentina] Ibera Wetlands: /images/placeholder.jpg
+    [australia] Ningaloo Reef: /images/placeholder.jpg
+    [australia] Barossa Valley: /images/placeholder.jpg
+    [austria] Hallstatt: /images/placeholder.jpg
+    [austria] Belvedere Palace: /images/placeholder.jpg
+    [austria] Grossglockner High Alpine Road: /images/placeholder.jpg
+    [austria] Krimml Waterfalls: /images/placeholder.jpg
+    [austria] Eisriesenwelt (Ice Cave): /images/placeholder.jpg
+    [austria] Kitzb├╝hel: /images/placeholder.jpg
+    [austria] Schloss Hellbrunn: /images/placeholder.jpg
+    [austria] Hohensalzburg Fortress: /images/placeholder.jpg
+    [austria] Graz Old Town: /images/placeholder.jpg
+    [austria] Swarovski Crystal Worlds: /images/placeholder.jpg
+    [austria] Wolfgangsee: /images/placeholder.jpg
+    [austria] Dachstein Salzkammergut: /images/placeholder.jpg
+    [belgium] Grand Place: /images/placeholder.jpg
+    [belgium] Atomium: /images/placeholder.jpg
+    [belgium] Bruges Canals: /images/placeholder.jpg
+    [belgium] Ghent Altarpiece & Belfry: /images/placeholder.jpg
+    [belgium] Waterloo Battlefield: /images/placeholder.jpg
+    [belgium] Manneken Pis: /images/placeholder.jpg
+    [belgium] Dinant Citadel: /images/placeholder.jpg
+    [belgium] Royal Palace of Brussels: /images/placeholder.jpg
+    [belgium] Royal Greenhouses of Laeken: /images/placeholder.jpg
+    [belgium] Antwerp Central Station: /images/placeholder.jpg
+    [belgium] In Flanders Fields Museum: /images/placeholder.jpg
+    [belgium] Hallerbos (Blue Forest): /images/placeholder.jpg
+    [belgium] Gravensteen Castle: /images/placeholder.jpg
+    [belgium] Mini-Europe: /images/placeholder.jpg
+    [belgium] Cathedral of Our Lady (Antwerp): /images/placeholder.jpg
+    [belgium] Mechelen Old Town: /images/placeholder.jpg
+    [belgium] Leuven Town Hall: /images/placeholder.jpg
+    [belgium] Beguinage (Bruges): /images/placeholder.jpg
+    [belgium] Bouillon Castle: /images/placeholder.jpg
+    [belgium] Sonian Forest: /images/placeholder.jpg
+    [canada] Banff National Park: /images/placeholder.jpg
+    [canada] Niagara Falls: /images/placeholder.jpg
+    [canada] Jasper National Park: /images/placeholder.jpg
+    [canada] CN Tower: /images/placeholder.jpg
+    [canada] Lake Louise: /images/placeholder.jpg
+    [canada] Old Quebec (Vieux-Qu├йbec): /images/placeholder.jpg
+    [canada] Whistler Blackcomb: /images/placeholder.jpg
+    [canada] Vancouver Stanley Park: /images/placeholder.jpg
+    [canada] Moraine Lake: /images/placeholder.jpg
+    [canada] Churchill (Polar Bears): /images/placeholder.jpg
+    [canada] Bay of Fundy: /images/placeholder.jpg
+    [canada] Gros Morne National Park: /images/placeholder.jpg
+    [canada] Victoria Inner Harbour: /images/placeholder.jpg
+    [canada] Rideau Canal: /images/placeholder.jpg
+    [canada] Yoho National Park: /images/placeholder.jpg
+    [canada] Peggy: /images/placeholder.jpg
+    [canada] Tofino (Pacific Rim National Park): /images/placeholder.jpg
+    [canada] Royal Ontario Museum: /images/placeholder.jpg
+    [canada] Algonquin Provincial Park: /images/placeholder.jpg
+    [canada] Capilano Suspension Bridge: /images/placeholder.jpg
+    [chile] Torres del Paine National Park: /images/placeholder.jpg
+    [chile] Atacama Desert: /images/placeholder.jpg
+    [chile] Easter Island (Rapa Nui): /images/placeholder.jpg
+    [chile] Valpara├нso: /images/placeholder.jpg
+    [chile] Chilo├й Island: /images/placeholder.jpg
+    [chile] Valle de la Luna: /images/placeholder.jpg
+    [chile] Marble Caves (Puerto Rio Tranquilo): /images/placeholder.jpg
+    [chile] Villarrica Volcano: /images/placeholder.jpg
+    [chile] Lake District (Puerto Varas): /images/placeholder.jpg
+    [chile] El Tatio Geysers: /images/placeholder.jpg
+    [chile] Santiago (San Cristobal Hill): /images/placeholder.jpg
+    [chile] Pumalin Park: /images/placeholder.jpg
+    [chile] Cape Horn: /images/placeholder.jpg
+    [chile] Magdalena Island (Penguins): /images/placeholder.jpg
+    [chile] Cochamo Valley: /images/placeholder.jpg
+    [chile] Lauca National Park: /images/placeholder.jpg
+    [chile] Altiplanic Lagoons: /images/placeholder.jpg
+    [chile] Puc├│n: /images/placeholder.jpg
+    [chile] Osorno Volcano: /images/placeholder.jpg
+    [chile] Humberstone and Santa Laura: /images/placeholder.jpg
+    [costaRica] Arenal Volcano: /images/placeholder.jpg
+    [costaRica] Monteverde Cloud Forest: /images/placeholder.jpg
+    [costaRica] Manuel Antonio National Park: /images/placeholder.jpg
+    [costaRica] Tortuguero National Park: /images/placeholder.jpg
+    [costaRica] Corcovado National Park: /images/placeholder.jpg
+    [costaRica] Tamarindo: /images/placeholder.jpg
+    [costaRica] La Fortuna Waterfall: /images/placeholder.jpg
+    [costaRica] Poas Volcano: /images/placeholder.jpg
+    [costaRica] Celeste River (Rio Celeste): /images/placeholder.jpg
+    [costaRica] Cahuita National Park: /images/placeholder.jpg
+    [costaRica] Nicoya Peninsula: /images/placeholder.jpg
+    [costaRica] San Jose (National Theatre): /images/placeholder.jpg
+    [costaRica] Rincon de la Vieja: /images/placeholder.jpg
+    [costaRica] Irazu Volcano: /images/placeholder.jpg
+    [costaRica] Tabacon Hot Springs: /images/placeholder.jpg
+    [costaRica] Nosara: /images/placeholder.jpg
+    [costaRica] Puerto Viejo de Talamanca: /images/placeholder.jpg
+    [costaRica] Uvita (Whale Tail): /images/placeholder.jpg
+    [costaRica] Braulio Carrillo: /images/placeholder.jpg
+    [costaRica] Drake Bay: /images/placeholder.jpg
+    [egypt] Abu Simbel Temples: /images/placeholder.jpg
+    [egypt] Philae Temple: /images/placeholder.jpg
+    [egypt] White Desert National Park: /images/placeholder.jpg
+    [egypt] Sharm El-Sheikh (Naama Bay): /images/placeholder.jpg
+    [iceland] Gullfoss Waterfall: /images/placeholder.jpg
+    [iceland] Geysir Geothermal Area: /images/placeholder.jpg
+    [iceland] Jokulsarlon Glacier Lagoon: /images/placeholder.jpg
+    [iceland] Skogafoss Waterfall: /images/placeholder.jpg
+    [iceland] Reynisfjara Black Sand Beach: /images/placeholder.jpg
+    [iceland] Seljalandsfoss Waterfall: /images/placeholder.jpg
+    [iceland] Diamond Beach: /images/placeholder.jpg
+    [iceland] Dettifoss Waterfall: /images/placeholder.jpg
+    [iceland] Asbyrgi Canyon: /images/placeholder.jpg
+    [iceland] Kirkjufell Mountain: /images/placeholder.jpg
+    [iceland] Landmannalaugar: /images/placeholder.jpg
+    [india] Kerala Backwaters: /images/placeholder.jpg
+    [indonesia] Komodo National Park: /images/placeholder.jpg
+    [indonesia] Yogyakarta: /images/placeholder.jpg
+    [indonesia] Tanjung Puting (Orangutans): /images/placeholder.jpg
+    [indonesia] Wakatobi: /images/placeholder.jpg
+    [indonesia] Lombok: /images/placeholder.jpg
+    [indonesia] Bunaken Marine Park: /images/placeholder.jpg
+    [indonesia] Belitung Island: /images/placeholder.jpg
+    [indonesia] Mentawai Islands: /images/placeholder.jpg
+    [indonesia] Jakarta Old Town: /images/placeholder.jpg
+    [indonesia] Dieng Plateau: /images/placeholder.jpg
+    [maldives] Mal├й City (Grand Friday Mosque): /images/placeholder.jpg
+    [maldives] Baa Atoll (Hanifaru Bay): /images/placeholder.jpg
+    [maldives] Maafushi Island: /images/placeholder.jpg
+    [maldives] Ari Atoll (Whale Sharks): /images/placeholder.jpg
+    [maldives] Hulhumale: /images/placeholder.jpg
+    [maldives] Banana Reef: /images/placeholder.jpg
+    [maldives] Vaadhoo Island (Sea of Stars): /images/placeholder.jpg
+    [maldives] Sun Island: /images/placeholder.jpg
+    [maldives] Alimatha Island: /images/placeholder.jpg
+    [maldives] Biyadhoo Island: /images/placeholder.jpg
+    [maldives] Utheemu Ganduvaru: /images/placeholder.jpg
+    [maldives] Fuvahmulah: /images/placeholder.jpg
+    [maldives] HP Reef: /images/placeholder.jpg
+    [maldives] Artificial Beach (Mal├й): /images/placeholder.jpg
+    [maldives] Manta Point: /images/placeholder.jpg
+    [maldives] Veligandu Island Beach: /images/placeholder.jpg
+    [maldives] Baros: /images/placeholder.jpg
+    [maldives] Como Cocoa Island: /images/placeholder.jpg
+    [maldives] Dhigurah: /images/placeholder.jpg
+    [maldives] Kuramathi: /images/placeholder.jpg
+    [morocco] Marrakech Medina (Jemaa el-Fnaa): /images/placeholder.jpg
+    [morocco] Chefchaouen (Blue City): /images/placeholder.jpg
+    [morocco] Sahara Desert (Merzouga Dunes): /images/placeholder.jpg
+    [morocco] Hassan II Mosque: /images/placeholder.jpg
+    [morocco] Fes el Bali (Old Medina): /images/placeholder.jpg
+    [morocco] Ait Benhaddou: /images/placeholder.jpg
+    [morocco] Majorelle Garden: /images/placeholder.jpg
+    [morocco] Todra Gorge: /images/placeholder.jpg
+    [morocco] Ouzoud Waterfalls: /images/placeholder.jpg
+    [morocco] Essaouira Coast: /images/placeholder.jpg
+    [morocco] Atlas Mountains (Toubkal): /images/placeholder.jpg
+    [morocco] Volubilis Roman Ruins: /images/placeholder.jpg
+    [morocco] Bahia Palace: /images/placeholder.jpg
+    [morocco] Dades Valley: /images/placeholder.jpg
+    [morocco] Rabat (Hassan Tower & Kasbah): /images/placeholder.jpg
+    [morocco] Erg Chigaga Dunes: /images/placeholder.jpg
+    [morocco] Legzira Beach: /images/placeholder.jpg
+    [morocco] Koutoubia Mosque: /images/placeholder.jpg
+    [morocco] Meknes Medina: /images/placeholder.jpg
+    [morocco] Asilah Medina: /images/placeholder.jpg
+    [netherlands] Rijksmuseum: /images/placeholder.jpg
+    [netherlands] Van Gogh Museum: /images/placeholder.jpg
+    [netherlands] Anne Frank House: /images/placeholder.jpg
+    [netherlands] Keukenhof Gardens: /images/placeholder.jpg
+    [netherlands] Zaanse Schans: /images/placeholder.jpg
+    [netherlands] Vondelpark: /images/placeholder.jpg
+    [netherlands] Giethoorn: /images/placeholder.jpg
+    [netherlands] Kinderdijk Windmills: /images/placeholder.jpg
+    [netherlands] Efteling Theme Park: /images/placeholder.jpg
+    [netherlands] Mauritshuis: /images/placeholder.jpg
+    [netherlands] Delft Canals: /images/placeholder.jpg
+    [netherlands] Dam Square: /images/placeholder.jpg
+    [netherlands] Euromast (Rotterdam): /images/placeholder.jpg
+    [netherlands] Hoge Veluwe National Park: /images/placeholder.jpg
+    [netherlands] De Haar Castle: /images/placeholder.jpg
+    [netherlands] Scheveningen Pier: /images/placeholder.jpg
+    [netherlands] Alkmaar Cheese Market: /images/placeholder.jpg
+    [netherlands] Marken: /images/placeholder.jpg
+    [netherlands] Royal Palace of Amsterdam: /images/placeholder.jpg
+    [netherlands] Binnenhof (The Hague): /images/placeholder.jpg
+    [newZealand] Milford Sound: /images/placeholder.jpg
+    [newZealand] Hobbiton Movie Set: /images/placeholder.jpg
+    [newZealand] Tongariro National Park: /images/placeholder.jpg
+    [newZealand] Rotorua Geothermal Parks: /images/placeholder.jpg
+    [newZealand] Aoraki Mount Cook: /images/placeholder.jpg
+    [newZealand] Queenstown (Adventure Capital): /images/placeholder.jpg
+    [newZealand] Bay of Islands: /images/placeholder.jpg
+    [newZealand] Waitomo Glowworm Caves: /images/placeholder.jpg
+    [newZealand] Franz Josef Glacier: /images/placeholder.jpg
+    [newZealand] Abel Tasman National Park: /images/placeholder.jpg
+    [newZealand] Te Papa Tongarewa Museum: /images/placeholder.jpg
+    [newZealand] Lake Tekapo: /images/placeholder.jpg
+    [newZealand] Waiheke Island: /images/placeholder.jpg
+    [newZealand] Fiordland National Park: /images/placeholder.jpg
+    [newZealand] Coromandel Peninsula (Hot Water Beach): /images/placeholder.jpg
+    [newZealand] Huka Falls: /images/placeholder.jpg
+    [newZealand] Mount Aspiring National Park: /images/placeholder.jpg
+    [newZealand] Kaikoura (Whale Watching): /images/placeholder.jpg
+    [newZealand] Fox Glacier: /images/placeholder.jpg
+    [newZealand] Sky Tower (Auckland): /images/placeholder.jpg
+    [peru] Machu Picchu: /images/placeholder.jpg
+    [peru] Sacred Valley: /images/placeholder.jpg
+    [peru] Cusco Historic Center: /images/placeholder.jpg
+    [peru] Colca Canyon: /images/placeholder.jpg
+    [peru] Lake Titicaca (Uros Islands): /images/placeholder.jpg
+    [peru] Nazca Lines: /images/placeholder.jpg
+    [peru] Lima Historic Centre: /images/placeholder.jpg
+    [peru] Huacachina Oasis: /images/placeholder.jpg
+    [peru] Amazon Rainforest (Iquitos): /images/placeholder.jpg
+    [peru] Rainbow Mountain (Vinicunca): /images/placeholder.jpg
+    [peru] Paracas National Reserve: /images/placeholder.jpg
+    [peru] Arequipa (Plaza de Armas): /images/placeholder.jpg
+    [peru] Chan Chan (Trujillo): /images/placeholder.jpg
+    [peru] Kuelap Fortress: /images/placeholder.jpg
+    [peru] Huascaran National Park: /images/placeholder.jpg
+    [peru] Pisac Ruins & Market: /images/placeholder.jpg
+    [peru] Ollantaytambo Ruins: /images/placeholder.jpg
+    [peru] Sacsayhuaman: /images/placeholder.jpg
+    [peru] Mancora Beaches: /images/placeholder.jpg
+    [peru] Salkantay Trek: /images/placeholder.jpg
+    [philippines] Palawan (El Nido): /images/placeholder.jpg
+    [philippines] Boracay: /images/placeholder.jpg
+    [philippines] Chocolate Hills: /images/placeholder.jpg
+    [philippines] Banaue Rice Terraces: /images/placeholder.jpg
+    [philippines] Siargao: /images/placeholder.jpg
+    [philippines] Intramuros (Manila): /images/placeholder.jpg
+    [philippines] Mayon Volcano: /images/placeholder.jpg
+    [philippines] Tubbataha Reefs: /images/placeholder.jpg
+    [philippines] Coron: /images/placeholder.jpg
+    [philippines] Cebu (Kawasan Falls): /images/placeholder.jpg
+    [philippines] Vigan: /images/placeholder.jpg
+    [philippines] Batanes: /images/placeholder.jpg
+    [philippines] Puerto Princesa Underground River: /images/placeholder.jpg
+    [philippines] Camiguin: /images/placeholder.jpg
+    [philippines] Panglao Island: /images/placeholder.jpg
+    [philippines] Taal Volcano: /images/placeholder.jpg
+    [philippines] Mount Pulag: /images/placeholder.jpg
+    [philippines] Apo Island: /images/placeholder.jpg
+    [philippines] Siquijor: /images/placeholder.jpg
+    [philippines] Malapascua Island: /images/placeholder.jpg
+    [portugal] Pena Palace: /images/placeholder.jpg
+    [portugal] Belem Tower: /images/placeholder.jpg
+    [portugal] Jeronimos Monastery: /images/placeholder.jpg
+    [portugal] Douro Valley: /images/placeholder.jpg
+    [portugal] Algarve Coast (Benagil Cave): /images/placeholder.jpg
+    [portugal] Alfama: /images/placeholder.jpg
+    [portugal] Ribeira: /images/placeholder.jpg
+    [portugal] Sao Jorge Castle: /images/placeholder.jpg
+    [portugal] Cabo da Roca: /images/placeholder.jpg
+    [portugal] Obidos Castle: /images/placeholder.jpg
+    [portugal] Livraria Lello: /images/placeholder.jpg
+    [portugal] Evora Roman Temple: /images/placeholder.jpg
+    [portugal] Peneda-Geres National Park: /images/placeholder.jpg
+    [portugal] Quinta da Regaleira: /images/placeholder.jpg
+    [portugal] Dom Luis I Bridge: /images/placeholder.jpg
+    [portugal] Monsaraz: /images/placeholder.jpg
+    [portugal] Bom Jesus do Monte: /images/placeholder.jpg
+    [portugal] Batalha Monastery: /images/placeholder.jpg
+    [portugal] Azores (Sete Cidades): /images/placeholder.jpg
+    [portugal] Madeira (Levadas): /images/placeholder.jpg
+    [seychelles] Anse Source d: /images/placeholder.jpg
+    [seychelles] Vall├йe de Mai Nature Reserve: /images/placeholder.jpg
+    [seychelles] Beau Vallon Beach: /images/placeholder.jpg
+    [seychelles] Anse Lazio: /images/placeholder.jpg
+    [seychelles] Curieuse Island: /images/placeholder.jpg
+    [seychelles] Aldabra Atoll: /images/placeholder.jpg
+    [seychelles] Morne Seychellois National Park: /images/placeholder.jpg
+    [seychelles] Sainte Anne Marine National Park: /images/placeholder.jpg
+    [seychelles] Bird Island: /images/placeholder.jpg
+    [seychelles] Victoria (Clock Tower): /images/placeholder.jpg
+    [seychelles] Anse Intendance: /images/placeholder.jpg
+    [seychelles] Cousin Island Special Reserve: /images/placeholder.jpg
+    [seychelles] Aride Island Nature Reserve: /images/placeholder.jpg
+    [seychelles] Silhouette Island: /images/placeholder.jpg
+    [seychelles] La Digue Island: /images/placeholder.jpg
+    [seychelles] Moyenne Island: /images/placeholder.jpg
+    [seychelles] Grand Anse: /images/placeholder.jpg
+    [seychelles] Seychelles National Botanical Gardens: /images/placeholder.jpg
+    [seychelles] Anse Georgette: /images/placeholder.jpg
+    [seychelles] Felicite Island: /images/placeholder.jpg
+    [southAfrica] Kruger National Park: /images/placeholder.jpg
+    [southAfrica] Table Mountain: /images/placeholder.jpg
+    [southAfrica] Cape of Good Hope & Cape Point: /images/placeholder.jpg
+    [southAfrica] Robben Island: /images/placeholder.jpg
+    [southAfrica] Victoria & Alfred Waterfront: /images/placeholder.jpg
+    [southAfrica] Boulders Beach (Penguin Colony): /images/placeholder.jpg
+    [southAfrica] Stellenbosch & Franschhoek Wine Routes: /images/placeholder.jpg
+    [southAfrica] Blyde River Canyon: /images/placeholder.jpg
+    [southAfrica] Garden Route: /images/placeholder.jpg
+    [southAfrica] Drakensberg Mountains: /images/placeholder.jpg
+    [southAfrica] Kirstenbosch Botanical Gardens: /images/placeholder.jpg
+    [southAfrica] Tsitsikamma National Park: /images/placeholder.jpg
+    [southAfrica] Addo Elephant National Park: /images/placeholder.jpg
+    [southAfrica] Kgalagadi Transfrontier Park: /images/placeholder.jpg
+    [southAfrica] Apartheid Museum: /images/placeholder.jpg
+    [southAfrica] Chapman: /images/placeholder.jpg
+    [southAfrica] ISimangaliso Wetland Park: /images/placeholder.jpg
+    [southAfrica] Hluhluwe-iMfolozi Park: /images/placeholder.jpg
+    [southAfrica] Hermanus (Whale Watching): /images/placeholder.jpg
+    [southAfrica] Bo-Kaap (Cape Town): /images/placeholder.jpg
+    [southKorea] Gyeongbokgung Palace: /images/placeholder.jpg
+    [southKorea] Jeju Island: /images/placeholder.jpg
+    [southKorea] Bukchon Hanok Village: /images/placeholder.jpg
+    [southKorea] N Seoul Tower: /images/placeholder.jpg
+    [southKorea] DMZ (Demilitarized Zone): /images/placeholder.jpg
+    [southKorea] Seoraksan National Park: /images/placeholder.jpg
+    [southKorea] Bulguksa Temple: /images/placeholder.jpg
+    [southKorea] Haeundae Beach: /images/placeholder.jpg
+    [southKorea] Nami Island: /images/placeholder.jpg
+    [southKorea] Changdeokgung Palace: /images/placeholder.jpg
+    [southKorea] Myeongdong: /images/placeholder.jpg
+    [southKorea] Suwon Hwaseong Fortress: /images/placeholder.jpg
+    [southKorea] Jeonju Hanok Village: /images/placeholder.jpg
+    [southKorea] Gamcheon Culture Village: /images/placeholder.jpg
+    [southKorea] Gyeongju Historic Areas: /images/placeholder.jpg
+    [southKorea] Hallasan National Park: /images/placeholder.jpg
+    [southKorea] Seongsan Ilchulbong: /images/placeholder.jpg
+    [southKorea] Andong Hahoe Folk Village: /images/placeholder.jpg
+    [southKorea] Lotte World: /images/placeholder.jpg
+    [southKorea] Boseong Green Tea Field: /images/placeholder.jpg
+    [switzerland] Chateau de Chillon: /images/placeholder.jpg
+    [switzerland] Lauterbrunnen Valley: /images/placeholder.jpg
+    [switzerland] Oberhofen Castle: /images/placeholder.jpg
+    [switzerland] Ruinaulta (Swiss Grand Canyon): /images/placeholder.jpg
+    [turkey] Pamukkale Thermal Pools: /images/placeholder.jpg
+    [turkey] Mount Nemrut: /images/placeholder.jpg
+    [turkey] G├╢reme Open Air Museum: /images/placeholder.jpg
+    [turkey] Fethiye (├Цl├╝deniz Blue Lagoon): /images/placeholder.jpg
+    [turkey] Olympos and Chimaera: /images/placeholder.jpg
+    [vietnam] Sapa Terraces: /images/placeholder.jpg
+    [vietnam] Mui Ne Sand Dunes: /images/placeholder.jpg
+    [vietnam] Ban Gioc Waterfall: /images/placeholder.jpg
+    [vietnam] Cat Ba Island: /images/placeholder.jpg
+
+================================================================================
+ЁЯУЛ CHECK 4: ╨Я╨Ю╨Т╨в╨Ю╨а╨п╨о╨й╨Ш╨Х╨б╨п ╨Я╨г╨в╨Ш (╨╛╨┤╨╕╨╜ ╨┐╤Г╤В╤М ╨╜╨░ ╤А╨░╨╖╨╜╤Л╤Е ╤Б╤В╤А╨░╨╜╨╕╤Ж╨░╤Е)
+================================================================================
+
+тЪая╕П  ╨Э╨Р╨Щ╨Ф╨Х╨Э╨Ю 1 ╨Я╨Ю╨Т╨в╨Ю╨а╨п╨о╨й╨Ш╨е╨б╨п ╨Я╨г╨в╨Х╨Щ:
+
+  /images/placeholder.jpg (╨╕╤Б╨┐╨╛╨╗╤М╨╖╤Г╨╡╤В╤Б╤П 335 ╤А╨░╨╖):
+    [argentina] Salinas Grandes
+    [argentina] Ibera Wetlands
+    [australia] Ningaloo Reef
+    [australia] Barossa Valley
+    [austria] Hallstatt
+    [austria] Belvedere Palace
+    [austria] Grossglockner High Alpine Road
+    [austria] Krimml Waterfalls
+    [austria] Eisriesenwelt (Ice Cave)
+    [austria] Kitzb├╝hel
+    [austria] Schloss Hellbrunn
+    [austria] Hohensalzburg Fortress
+    [austria] Graz Old Town
+    [austria] Swarovski Crystal Worlds
+    [austria] Wolfgangsee
+    [austria] Dachstein Salzkammergut
+    [belgium] Grand Place
+    [belgium] Atomium
+    [belgium] Bruges Canals
+    [belgium] Ghent Altarpiece & Belfry
+    [belgium] Waterloo Battlefield
+    [belgium] Manneken Pis
+    [belgium] Dinant Citadel
+    [belgium] Royal Palace of Brussels
+    [belgium] Royal Greenhouses of Laeken
+    [belgium] Antwerp Central Station
+    [belgium] In Flanders Fields Museum
+    [belgium] Hallerbos (Blue Forest)
+    [belgium] Gravensteen Castle
+    [belgium] Mini-Europe
+    [belgium] Cathedral of Our Lady (Antwerp)
+    [belgium] Mechelen Old Town
+    [belgium] Leuven Town Hall
+    [belgium] Beguinage (Bruges)
+    [belgium] Bouillon Castle
+    [belgium] Sonian Forest
+    [canada] Banff National Park
+    [canada] Niagara Falls
+    [canada] Jasper National Park
+    [canada] CN Tower
+    [canada] Lake Louise
+    [canada] Old Quebec (Vieux-Qu├йbec)
+    [canada] Whistler Blackcomb
+    [canada] Vancouver Stanley Park
+    [canada] Moraine Lake
+    [canada] Churchill (Polar Bears)
+    [canada] Bay of Fundy
+    [canada] Gros Morne National Park
+    [canada] Victoria Inner Harbour
+    [canada] Rideau Canal
+    [canada] Yoho National Park
+    [canada] Peggy
+    [canada] Tofino (Pacific Rim National Park)
+    [canada] Royal Ontario Museum
+    [canada] Algonquin Provincial Park
+    [canada] Capilano Suspension Bridge
+    [chile] Torres del Paine National Park
+    [chile] Atacama Desert
+    [chile] Easter Island (Rapa Nui)
+    [chile] Valpara├нso
+    [chile] Chilo├й Island
+    [chile] Valle de la Luna
+    [chile] Marble Caves (Puerto Rio Tranquilo)
+    [chile] Villarrica Volcano
+    [chile] Lake District (Puerto Varas)
+    [chile] El Tatio Geysers
+    [chile] Santiago (San Cristobal Hill)
+    [chile] Pumalin Park
+    [chile] Cape Horn
+    [chile] Magdalena Island (Penguins)
+    [chile] Cochamo Valley
+    [chile] Lauca National Park
+    [chile] Altiplanic Lagoons
+    [chile] Puc├│n
+    [chile] Osorno Volcano
+    [chile] Humberstone and Santa Laura
+    [costaRica] Arenal Volcano
+    [costaRica] Monteverde Cloud Forest
+    [costaRica] Manuel Antonio National Park
+    [costaRica] Tortuguero National Park
+    [costaRica] Corcovado National Park
+    [costaRica] Tamarindo
+    [costaRica] La Fortuna Waterfall
+    [costaRica] Poas Volcano
+    [costaRica] Celeste River (Rio Celeste)
+    [costaRica] Cahuita National Park
+    [costaRica] Nicoya Peninsula
+    [costaRica] San Jose (National Theatre)
+    [costaRica] Rincon de la Vieja
+    [costaRica] Irazu Volcano
+    [costaRica] Tabacon Hot Springs
+    [costaRica] Nosara
+    [costaRica] Puerto Viejo de Talamanca
+    [costaRica] Uvita (Whale Tail)
+    [costaRica] Braulio Carrillo
+    [costaRica] Drake Bay
+    [egypt] Abu Simbel Temples
+    [egypt] Philae Temple
+    [egypt] White Desert National Park
+    [egypt] Sharm El-Sheikh (Naama Bay)
+    [iceland] Gullfoss Waterfall
+    [iceland] Geysir Geothermal Area
+    [iceland] Jokulsarlon Glacier Lagoon
+    [iceland] Skogafoss Waterfall
+    [iceland] Reynisfjara Black Sand Beach
+    [iceland] Seljalandsfoss Waterfall
+    [iceland] Diamond Beach
+    [iceland] Dettifoss Waterfall
+    [iceland] Asbyrgi Canyon
+    [iceland] Kirkjufell Mountain
+    [iceland] Landmannalaugar
+    [india] Kerala Backwaters
+    [indonesia] Komodo National Park
+    [indonesia] Yogyakarta
+    [indonesia] Tanjung Puting (Orangutans)
+    [indonesia] Wakatobi
+    [indonesia] Lombok
+    [indonesia] Bunaken Marine Park
+    [indonesia] Belitung Island
+    [indonesia] Mentawai Islands
+    [indonesia] Jakarta Old Town
+    [indonesia] Dieng Plateau
+    [maldives] Mal├й City (Grand Friday Mosque)
+    [maldives] Baa Atoll (Hanifaru Bay)
+    [maldives] Maafushi Island
+    [maldives] Ari Atoll (Whale Sharks)
+    [maldives] Hulhumale
+    [maldives] Banana Reef
+    [maldives] Vaadhoo Island (Sea of Stars)
+    [maldives] Sun Island
+    [maldives] Alimatha Island
+    [maldives] Biyadhoo Island
+    [maldives] Utheemu Ganduvaru
+    [maldives] Fuvahmulah
+    [maldives] HP Reef
+    [maldives] Artificial Beach (Mal├й)
+    [maldives] Manta Point
+    [maldives] Veligandu Island Beach
+    [maldives] Baros
+    [maldives] Como Cocoa Island
+    [maldives] Dhigurah
+    [maldives] Kuramathi
+    [morocco] Marrakech Medina (Jemaa el-Fnaa)
+    [morocco] Chefchaouen (Blue City)
+    [morocco] Sahara Desert (Merzouga Dunes)
+    [morocco] Hassan II Mosque
+    [morocco] Fes el Bali (Old Medina)
+    [morocco] Ait Benhaddou
+    [morocco] Majorelle Garden
+    [morocco] Todra Gorge
+    [morocco] Ouzoud Waterfalls
+    [morocco] Essaouira Coast
+    [morocco] Atlas Mountains (Toubkal)
+    [morocco] Volubilis Roman Ruins
+    [morocco] Bahia Palace
+    [morocco] Dades Valley
+    [morocco] Rabat (Hassan Tower & Kasbah)
+    [morocco] Erg Chigaga Dunes
+    [morocco] Legzira Beach
+    [morocco] Koutoubia Mosque
+    [morocco] Meknes Medina
+    [morocco] Asilah Medina
+    [netherlands] Rijksmuseum
+    [netherlands] Van Gogh Museum
+    [netherlands] Anne Frank House
+    [netherlands] Keukenhof Gardens
+    [netherlands] Zaanse Schans
+    [netherlands] Vondelpark
+    [netherlands] Giethoorn
+    [netherlands] Kinderdijk Windmills
+    [netherlands] Efteling Theme Park
+    [netherlands] Mauritshuis
+    [netherlands] Delft Canals
+    [netherlands] Dam Square
+    [netherlands] Euromast (Rotterdam)
+    [netherlands] Hoge Veluwe National Park
+    [netherlands] De Haar Castle
+    [netherlands] Scheveningen Pier
+    [netherlands] Alkmaar Cheese Market
+    [netherlands] Marken
+    [netherlands] Royal Palace of Amsterdam
+    [netherlands] Binnenhof (The Hague)
+    [newZealand] Milford Sound
+    [newZealand] Hobbiton Movie Set
+    [newZealand] Tongariro National Park
+    [newZealand] Rotorua Geothermal Parks
+    [newZealand] Aoraki Mount Cook
+    [newZealand] Queenstown (Adventure Capital)
+    [newZealand] Bay of Islands
+    [newZealand] Waitomo Glowworm Caves
+    [newZealand] Franz Josef Glacier
+    [newZealand] Abel Tasman National Park
+    [newZealand] Te Papa Tongarewa Museum
+    [newZealand] Lake Tekapo
+    [newZealand] Waiheke Island
+    [newZealand] Fiordland National Park
+    [newZealand] Coromandel Peninsula (Hot Water Beach)
+    [newZealand] Huka Falls
+    [newZealand] Mount Aspiring National Park
+    [newZealand] Kaikoura (Whale Watching)
+    [newZealand] Fox Glacier
+    [newZealand] Sky Tower (Auckland)
+    [peru] Machu Picchu
+    [peru] Sacred Valley
+    [peru] Cusco Historic Center
+    [peru] Colca Canyon
+    [peru] Lake Titicaca (Uros Islands)
+    [peru] Nazca Lines
+    [peru] Lima Historic Centre
+    [peru] Huacachina Oasis
+    [peru] Amazon Rainforest (Iquitos)
+    [peru] Rainbow Mountain (Vinicunca)
+    [peru] Paracas National Reserve
+    [peru] Arequipa (Plaza de Armas)
+    [peru] Chan Chan (Trujillo)
+    [peru] Kuelap Fortress
+    [peru] Huascaran National Park
+    [peru] Pisac Ruins & Market
+    [peru] Ollantaytambo Ruins
+    [peru] Sacsayhuaman
+    [peru] Mancora Beaches
+    [peru] Salkantay Trek
+    [philippines] Palawan (El Nido)
+    [philippines] Boracay
+    [philippines] Chocolate Hills
+    [philippines] Banaue Rice Terraces
+    [philippines] Siargao
+    [philippines] Intramuros (Manila)
+    [philippines] Mayon Volcano
+    [philippines] Tubbataha Reefs
+    [philippines] Coron
+    [philippines] Cebu (Kawasan Falls)
+    [philippines] Vigan
+    [philippines] Batanes
+    [philippines] Puerto Princesa Underground River
+    [philippines] Camiguin
+    [philippines] Panglao Island
+    [philippines] Taal Volcano
+    [philippines] Mount Pulag
+    [philippines] Apo Island
+    [philippines] Siquijor
+    [philippines] Malapascua Island
+    [portugal] Pena Palace
+    [portugal] Belem Tower
+    [portugal] Jeronimos Monastery
+    [portugal] Douro Valley
+    [portugal] Algarve Coast (Benagil Cave)
+    [portugal] Alfama
+    [portugal] Ribeira
+    [portugal] Sao Jorge Castle
+    [portugal] Cabo da Roca
+    [portugal] Obidos Castle
+    [portugal] Livraria Lello
+    [portugal] Evora Roman Temple
+    [portugal] Peneda-Geres National Park
+    [portugal] Quinta da Regaleira
+    [portugal] Dom Luis I Bridge
+    [portugal] Monsaraz
+    [portugal] Bom Jesus do Monte
+    [portugal] Batalha Monastery
+    [portugal] Azores (Sete Cidades)
+    [portugal] Madeira (Levadas)
+    [seychelles] Anse Source d
+    [seychelles] Vall├йe de Mai Nature Reserve
+    [seychelles] Beau Vallon Beach
+    [seychelles] Anse Lazio
+    [seychelles] Curieuse Island
+    [seychelles] Aldabra Atoll
+    [seychelles] Morne Seychellois National Park
+    [seychelles] Sainte Anne Marine National Park
+    [seychelles] Bird Island
+    [seychelles] Victoria (Clock Tower)
+    [seychelles] Anse Intendance
+    [seychelles] Cousin Island Special Reserve
+    [seychelles] Aride Island Nature Reserve
+    [seychelles] Silhouette Island
+    [seychelles] La Digue Island
+    [seychelles] Moyenne Island
+    [seychelles] Grand Anse
+    [seychelles] Seychelles National Botanical Gardens
+    [seychelles] Anse Georgette
+    [seychelles] Felicite Island
+    [southAfrica] Kruger National Park
+    [southAfrica] Table Mountain
+    [southAfrica] Cape of Good Hope & Cape Point
+    [southAfrica] Robben Island
+    [southAfrica] Victoria & Alfred Waterfront
+    [southAfrica] Boulders Beach (Penguin Colony)
+    [southAfrica] Stellenbosch & Franschhoek Wine Routes
+    [southAfrica] Blyde River Canyon
+    [southAfrica] Garden Route
+    [southAfrica] Drakensberg Mountains
+    [southAfrica] Kirstenbosch Botanical Gardens
+    [southAfrica] Tsitsikamma National Park
+    [southAfrica] Addo Elephant National Park
+    [southAfrica] Kgalagadi Transfrontier Park
+    [southAfrica] Apartheid Museum
+    [southAfrica] Chapman
+    [southAfrica] ISimangaliso Wetland Park
+    [southAfrica] Hluhluwe-iMfolozi Park
+    [southAfrica] Hermanus (Whale Watching)
+    [southAfrica] Bo-Kaap (Cape Town)
+    [southKorea] Gyeongbokgung Palace
+    [southKorea] Jeju Island
+    [southKorea] Bukchon Hanok Village
+    [southKorea] N Seoul Tower
+    [southKorea] DMZ (Demilitarized Zone)
+    [southKorea] Seoraksan National Park
+    [southKorea] Bulguksa Temple
+    [southKorea] Haeundae Beach
+    [southKorea] Nami Island
+    [southKorea] Changdeokgung Palace
+    [southKorea] Myeongdong
+    [southKorea] Suwon Hwaseong Fortress
+    [southKorea] Jeonju Hanok Village
+    [southKorea] Gamcheon Culture Village
+    [southKorea] Gyeongju Historic Areas
+    [southKorea] Hallasan National Park
+    [southKorea] Seongsan Ilchulbong
+    [southKorea] Andong Hahoe Folk Village
+    [southKorea] Lotte World
+    [southKorea] Boseong Green Tea Field
+    [switzerland] Chateau de Chillon
+    [switzerland] Lauterbrunnen Valley
+    [switzerland] Oberhofen Castle
+    [switzerland] Ruinaulta (Swiss Grand Canyon)
+    [turkey] Pamukkale Thermal Pools
+    [turkey] Mount Nemrut
+    [turkey] G├╢reme Open Air Museum
+    [turkey] Fethiye (├Цl├╝deniz Blue Lagoon)
+    [turkey] Olympos and Chimaera
+    [vietnam] Sapa Terraces
+    [vietnam] Mui Ne Sand Dunes
+    [vietnam] Ban Gioc Waterfall
+    [vietnam] Cat Ba Island
+
+================================================================================
+ЁЯУП CHECK 5: ╨Я╨Ю╨Ф╨Ю╨Ч╨а╨Ш╨в╨Х╨Ы╨м╨Э╨Ю ╨Ь╨Р╨Ы╨Х╨Э╨м╨Ъ╨Ш╨Х ╨д╨Р╨Щ╨Ы╨л (╨▓╨╛╨╖╨╝╨╛╨╢╨╜╤Л╨╡ ╨╖╨░╨│╨╗╤Г╤И╨║╨╕)
+================================================================================
+
+ЁЯЯб ╨Т╨Э╨Ш╨Ь╨Р╨Э╨Ш╨Х тАФ 1 ╤Д╨░╨╣╨╗╨╛╨▓ < 20KB (╨▓╨╛╨╖╨╝╨╛╨╢╨╜╨╛ ╨╜╨╕╨╖╨║╨╛╨╡ ╨║╨░╤З╨╡╤Б╤В╨▓╨╛):
+  15,060 bytes | [uae] Abu Dhabi Corniche: /images/attractions/uae-abu-dhabi-corniche.jpg
+
+================================================================================
+ЁЯУР CHECK 6: ╨д╨Р╨Щ╨Ы╨л ╨Ю╨Ф╨Ш╨Э╨Р╨Ъ╨Ю╨Т╨Ю╨У╨Ю ╨а╨Р╨Ч╨Ь╨Х╨а╨Р (╨┐╨╛╤В╨╡╨╜╤Ж╨╕╨░╨╗╤М╨╜╤Л╨╡ ╨║╨╗╨╛╨╜╤Л)
+================================================================================
+
+тЪая╕П  ╨Э╨Р╨Щ╨Ф╨Х╨Э╨Ю 1 ╨У╨а╨г╨Я╨Я ╨б ╨Ю╨Ф╨Ш╨Э╨Р╨Ъ╨Ю╨Т╨л╨Ь ╨а╨Р╨Ч╨Ь╨Х╨а╨Ю╨Ь:
+
+  ЁЯФ┤ ╨Ю╨Ф╨Ш╨Э╨Р╨Ъ╨Ю╨Т╨л╨Х ╨д╨Р╨Щ╨Ы╨л тАФ 515,748 bytes (335 ╤Д╨░╨╣╨╗╨╛╨▓):
+    [argentina] Salinas Grandes: /images/placeholder.jpg (hash: 5b678e1e)
+    [argentina] Ibera Wetlands: /images/placeholder.jpg (hash: 5b678e1e)
+    [australia] Ningaloo Reef: /images/placeholder.jpg (hash: 5b678e1e)
+    [australia] Barossa Valley: /images/placeholder.jpg (hash: 5b678e1e)
+    [austria] Hallstatt: /images/placeholder.jpg (hash: 5b678e1e)
+    [austria] Belvedere Palace: /images/placeholder.jpg (hash: 5b678e1e)
+    [austria] Grossglockner High Alpine Road: /images/placeholder.jpg (hash: 5b678e1e)
+    [austria] Krimml Waterfalls: /images/placeholder.jpg (hash: 5b678e1e)
+    [austria] Eisriesenwelt (Ice Cave): /images/placeholder.jpg (hash: 5b678e1e)
+    [austria] Kitzb├╝hel: /images/placeholder.jpg (hash: 5b678e1e)
+    [austria] Schloss Hellbrunn: /images/placeholder.jpg (hash: 5b678e1e)
+    [austria] Hohensalzburg Fortress: /images/placeholder.jpg (hash: 5b678e1e)
+    [austria] Graz Old Town: /images/placeholder.jpg (hash: 5b678e1e)
+    [austria] Swarovski Crystal Worlds: /images/placeholder.jpg (hash: 5b678e1e)
+    [austria] Wolfgangsee: /images/placeholder.jpg (hash: 5b678e1e)
+    [austria] Dachstein Salzkammergut: /images/placeholder.jpg (hash: 5b678e1e)
+    [belgium] Grand Place: /images/placeholder.jpg (hash: 5b678e1e)
+    [belgium] Atomium: /images/placeholder.jpg (hash: 5b678e1e)
+    [belgium] Bruges Canals: /images/placeholder.jpg (hash: 5b678e1e)
+    [belgium] Ghent Altarpiece & Belfry: /images/placeholder.jpg (hash: 5b678e1e)
+    [belgium] Waterloo Battlefield: /images/placeholder.jpg (hash: 5b678e1e)
+    [belgium] Manneken Pis: /images/placeholder.jpg (hash: 5b678e1e)
+    [belgium] Dinant Citadel: /images/placeholder.jpg (hash: 5b678e1e)
+    [belgium] Royal Palace of Brussels: /images/placeholder.jpg (hash: 5b678e1e)
+    [belgium] Royal Greenhouses of Laeken: /images/placeholder.jpg (hash: 5b678e1e)
+    [belgium] Antwerp Central Station: /images/placeholder.jpg (hash: 5b678e1e)
+    [belgium] In Flanders Fields Museum: /images/placeholder.jpg (hash: 5b678e1e)
+    [belgium] Hallerbos (Blue Forest): /images/placeholder.jpg (hash: 5b678e1e)
+    [belgium] Gravensteen Castle: /images/placeholder.jpg (hash: 5b678e1e)
+    [belgium] Mini-Europe: /images/placeholder.jpg (hash: 5b678e1e)
+    [belgium] Cathedral of Our Lady (Antwerp): /images/placeholder.jpg (hash: 5b678e1e)
+    [belgium] Mechelen Old Town: /images/placeholder.jpg (hash: 5b678e1e)
+    [belgium] Leuven Town Hall: /images/placeholder.jpg (hash: 5b678e1e)
+    [belgium] Beguinage (Bruges): /images/placeholder.jpg (hash: 5b678e1e)
+    [belgium] Bouillon Castle: /images/placeholder.jpg (hash: 5b678e1e)
+    [belgium] Sonian Forest: /images/placeholder.jpg (hash: 5b678e1e)
+    [canada] Banff National Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [canada] Niagara Falls: /images/placeholder.jpg (hash: 5b678e1e)
+    [canada] Jasper National Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [canada] CN Tower: /images/placeholder.jpg (hash: 5b678e1e)
+    [canada] Lake Louise: /images/placeholder.jpg (hash: 5b678e1e)
+    [canada] Old Quebec (Vieux-Qu├йbec): /images/placeholder.jpg (hash: 5b678e1e)
+    [canada] Whistler Blackcomb: /images/placeholder.jpg (hash: 5b678e1e)
+    [canada] Vancouver Stanley Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [canada] Moraine Lake: /images/placeholder.jpg (hash: 5b678e1e)
+    [canada] Churchill (Polar Bears): /images/placeholder.jpg (hash: 5b678e1e)
+    [canada] Bay of Fundy: /images/placeholder.jpg (hash: 5b678e1e)
+    [canada] Gros Morne National Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [canada] Victoria Inner Harbour: /images/placeholder.jpg (hash: 5b678e1e)
+    [canada] Rideau Canal: /images/placeholder.jpg (hash: 5b678e1e)
+    [canada] Yoho National Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [canada] Peggy: /images/placeholder.jpg (hash: 5b678e1e)
+    [canada] Tofino (Pacific Rim National Park): /images/placeholder.jpg (hash: 5b678e1e)
+    [canada] Royal Ontario Museum: /images/placeholder.jpg (hash: 5b678e1e)
+    [canada] Algonquin Provincial Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [canada] Capilano Suspension Bridge: /images/placeholder.jpg (hash: 5b678e1e)
+    [chile] Torres del Paine National Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [chile] Atacama Desert: /images/placeholder.jpg (hash: 5b678e1e)
+    [chile] Easter Island (Rapa Nui): /images/placeholder.jpg (hash: 5b678e1e)
+    [chile] Valpara├нso: /images/placeholder.jpg (hash: 5b678e1e)
+    [chile] Chilo├й Island: /images/placeholder.jpg (hash: 5b678e1e)
+    [chile] Valle de la Luna: /images/placeholder.jpg (hash: 5b678e1e)
+    [chile] Marble Caves (Puerto Rio Tranquilo): /images/placeholder.jpg (hash: 5b678e1e)
+    [chile] Villarrica Volcano: /images/placeholder.jpg (hash: 5b678e1e)
+    [chile] Lake District (Puerto Varas): /images/placeholder.jpg (hash: 5b678e1e)
+    [chile] El Tatio Geysers: /images/placeholder.jpg (hash: 5b678e1e)
+    [chile] Santiago (San Cristobal Hill): /images/placeholder.jpg (hash: 5b678e1e)
+    [chile] Pumalin Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [chile] Cape Horn: /images/placeholder.jpg (hash: 5b678e1e)
+    [chile] Magdalena Island (Penguins): /images/placeholder.jpg (hash: 5b678e1e)
+    [chile] Cochamo Valley: /images/placeholder.jpg (hash: 5b678e1e)
+    [chile] Lauca National Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [chile] Altiplanic Lagoons: /images/placeholder.jpg (hash: 5b678e1e)
+    [chile] Puc├│n: /images/placeholder.jpg (hash: 5b678e1e)
+    [chile] Osorno Volcano: /images/placeholder.jpg (hash: 5b678e1e)
+    [chile] Humberstone and Santa Laura: /images/placeholder.jpg (hash: 5b678e1e)
+    [costaRica] Arenal Volcano: /images/placeholder.jpg (hash: 5b678e1e)
+    [costaRica] Monteverde Cloud Forest: /images/placeholder.jpg (hash: 5b678e1e)
+    [costaRica] Manuel Antonio National Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [costaRica] Tortuguero National Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [costaRica] Corcovado National Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [costaRica] Tamarindo: /images/placeholder.jpg (hash: 5b678e1e)
+    [costaRica] La Fortuna Waterfall: /images/placeholder.jpg (hash: 5b678e1e)
+    [costaRica] Poas Volcano: /images/placeholder.jpg (hash: 5b678e1e)
+    [costaRica] Celeste River (Rio Celeste): /images/placeholder.jpg (hash: 5b678e1e)
+    [costaRica] Cahuita National Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [costaRica] Nicoya Peninsula: /images/placeholder.jpg (hash: 5b678e1e)
+    [costaRica] San Jose (National Theatre): /images/placeholder.jpg (hash: 5b678e1e)
+    [costaRica] Rincon de la Vieja: /images/placeholder.jpg (hash: 5b678e1e)
+    [costaRica] Irazu Volcano: /images/placeholder.jpg (hash: 5b678e1e)
+    [costaRica] Tabacon Hot Springs: /images/placeholder.jpg (hash: 5b678e1e)
+    [costaRica] Nosara: /images/placeholder.jpg (hash: 5b678e1e)
+    [costaRica] Puerto Viejo de Talamanca: /images/placeholder.jpg (hash: 5b678e1e)
+    [costaRica] Uvita (Whale Tail): /images/placeholder.jpg (hash: 5b678e1e)
+    [costaRica] Braulio Carrillo: /images/placeholder.jpg (hash: 5b678e1e)
+    [costaRica] Drake Bay: /images/placeholder.jpg (hash: 5b678e1e)
+    [egypt] Abu Simbel Temples: /images/placeholder.jpg (hash: 5b678e1e)
+    [egypt] Philae Temple: /images/placeholder.jpg (hash: 5b678e1e)
+    [egypt] White Desert National Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [egypt] Sharm El-Sheikh (Naama Bay): /images/placeholder.jpg (hash: 5b678e1e)
+    [iceland] Gullfoss Waterfall: /images/placeholder.jpg (hash: 5b678e1e)
+    [iceland] Geysir Geothermal Area: /images/placeholder.jpg (hash: 5b678e1e)
+    [iceland] Jokulsarlon Glacier Lagoon: /images/placeholder.jpg (hash: 5b678e1e)
+    [iceland] Skogafoss Waterfall: /images/placeholder.jpg (hash: 5b678e1e)
+    [iceland] Reynisfjara Black Sand Beach: /images/placeholder.jpg (hash: 5b678e1e)
+    [iceland] Seljalandsfoss Waterfall: /images/placeholder.jpg (hash: 5b678e1e)
+    [iceland] Diamond Beach: /images/placeholder.jpg (hash: 5b678e1e)
+    [iceland] Dettifoss Waterfall: /images/placeholder.jpg (hash: 5b678e1e)
+    [iceland] Asbyrgi Canyon: /images/placeholder.jpg (hash: 5b678e1e)
+    [iceland] Kirkjufell Mountain: /images/placeholder.jpg (hash: 5b678e1e)
+    [iceland] Landmannalaugar: /images/placeholder.jpg (hash: 5b678e1e)
+    [india] Kerala Backwaters: /images/placeholder.jpg (hash: 5b678e1e)
+    [indonesia] Komodo National Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [indonesia] Yogyakarta: /images/placeholder.jpg (hash: 5b678e1e)
+    [indonesia] Tanjung Puting (Orangutans): /images/placeholder.jpg (hash: 5b678e1e)
+    [indonesia] Wakatobi: /images/placeholder.jpg (hash: 5b678e1e)
+    [indonesia] Lombok: /images/placeholder.jpg (hash: 5b678e1e)
+    [indonesia] Bunaken Marine Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [indonesia] Belitung Island: /images/placeholder.jpg (hash: 5b678e1e)
+    [indonesia] Mentawai Islands: /images/placeholder.jpg (hash: 5b678e1e)
+    [indonesia] Jakarta Old Town: /images/placeholder.jpg (hash: 5b678e1e)
+    [indonesia] Dieng Plateau: /images/placeholder.jpg (hash: 5b678e1e)
+    [maldives] Mal├й City (Grand Friday Mosque): /images/placeholder.jpg (hash: 5b678e1e)
+    [maldives] Baa Atoll (Hanifaru Bay): /images/placeholder.jpg (hash: 5b678e1e)
+    [maldives] Maafushi Island: /images/placeholder.jpg (hash: 5b678e1e)
+    [maldives] Ari Atoll (Whale Sharks): /images/placeholder.jpg (hash: 5b678e1e)
+    [maldives] Hulhumale: /images/placeholder.jpg (hash: 5b678e1e)
+    [maldives] Banana Reef: /images/placeholder.jpg (hash: 5b678e1e)
+    [maldives] Vaadhoo Island (Sea of Stars): /images/placeholder.jpg (hash: 5b678e1e)
+    [maldives] Sun Island: /images/placeholder.jpg (hash: 5b678e1e)
+    [maldives] Alimatha Island: /images/placeholder.jpg (hash: 5b678e1e)
+    [maldives] Biyadhoo Island: /images/placeholder.jpg (hash: 5b678e1e)
+    [maldives] Utheemu Ganduvaru: /images/placeholder.jpg (hash: 5b678e1e)
+    [maldives] Fuvahmulah: /images/placeholder.jpg (hash: 5b678e1e)
+    [maldives] HP Reef: /images/placeholder.jpg (hash: 5b678e1e)
+    [maldives] Artificial Beach (Mal├й): /images/placeholder.jpg (hash: 5b678e1e)
+    [maldives] Manta Point: /images/placeholder.jpg (hash: 5b678e1e)
+    [maldives] Veligandu Island Beach: /images/placeholder.jpg (hash: 5b678e1e)
+    [maldives] Baros: /images/placeholder.jpg (hash: 5b678e1e)
+    [maldives] Como Cocoa Island: /images/placeholder.jpg (hash: 5b678e1e)
+    [maldives] Dhigurah: /images/placeholder.jpg (hash: 5b678e1e)
+    [maldives] Kuramathi: /images/placeholder.jpg (hash: 5b678e1e)
+    [morocco] Marrakech Medina (Jemaa el-Fnaa): /images/placeholder.jpg (hash: 5b678e1e)
+    [morocco] Chefchaouen (Blue City): /images/placeholder.jpg (hash: 5b678e1e)
+    [morocco] Sahara Desert (Merzouga Dunes): /images/placeholder.jpg (hash: 5b678e1e)
+    [morocco] Hassan II Mosque: /images/placeholder.jpg (hash: 5b678e1e)
+    [morocco] Fes el Bali (Old Medina): /images/placeholder.jpg (hash: 5b678e1e)
+    [morocco] Ait Benhaddou: /images/placeholder.jpg (hash: 5b678e1e)
+    [morocco] Majorelle Garden: /images/placeholder.jpg (hash: 5b678e1e)
+    [morocco] Todra Gorge: /images/placeholder.jpg (hash: 5b678e1e)
+    [morocco] Ouzoud Waterfalls: /images/placeholder.jpg (hash: 5b678e1e)
+    [morocco] Essaouira Coast: /images/placeholder.jpg (hash: 5b678e1e)
+    [morocco] Atlas Mountains (Toubkal): /images/placeholder.jpg (hash: 5b678e1e)
+    [morocco] Volubilis Roman Ruins: /images/placeholder.jpg (hash: 5b678e1e)
+    [morocco] Bahia Palace: /images/placeholder.jpg (hash: 5b678e1e)
+    [morocco] Dades Valley: /images/placeholder.jpg (hash: 5b678e1e)
+    [morocco] Rabat (Hassan Tower & Kasbah): /images/placeholder.jpg (hash: 5b678e1e)
+    [morocco] Erg Chigaga Dunes: /images/placeholder.jpg (hash: 5b678e1e)
+    [morocco] Legzira Beach: /images/placeholder.jpg (hash: 5b678e1e)
+    [morocco] Koutoubia Mosque: /images/placeholder.jpg (hash: 5b678e1e)
+    [morocco] Meknes Medina: /images/placeholder.jpg (hash: 5b678e1e)
+    [morocco] Asilah Medina: /images/placeholder.jpg (hash: 5b678e1e)
+    [netherlands] Rijksmuseum: /images/placeholder.jpg (hash: 5b678e1e)
+    [netherlands] Van Gogh Museum: /images/placeholder.jpg (hash: 5b678e1e)
+    [netherlands] Anne Frank House: /images/placeholder.jpg (hash: 5b678e1e)
+    [netherlands] Keukenhof Gardens: /images/placeholder.jpg (hash: 5b678e1e)
+    [netherlands] Zaanse Schans: /images/placeholder.jpg (hash: 5b678e1e)
+    [netherlands] Vondelpark: /images/placeholder.jpg (hash: 5b678e1e)
+    [netherlands] Giethoorn: /images/placeholder.jpg (hash: 5b678e1e)
+    [netherlands] Kinderdijk Windmills: /images/placeholder.jpg (hash: 5b678e1e)
+    [netherlands] Efteling Theme Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [netherlands] Mauritshuis: /images/placeholder.jpg (hash: 5b678e1e)
+    [netherlands] Delft Canals: /images/placeholder.jpg (hash: 5b678e1e)
+    [netherlands] Dam Square: /images/placeholder.jpg (hash: 5b678e1e)
+    [netherlands] Euromast (Rotterdam): /images/placeholder.jpg (hash: 5b678e1e)
+    [netherlands] Hoge Veluwe National Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [netherlands] De Haar Castle: /images/placeholder.jpg (hash: 5b678e1e)
+    [netherlands] Scheveningen Pier: /images/placeholder.jpg (hash: 5b678e1e)
+    [netherlands] Alkmaar Cheese Market: /images/placeholder.jpg (hash: 5b678e1e)
+    [netherlands] Marken: /images/placeholder.jpg (hash: 5b678e1e)
+    [netherlands] Royal Palace of Amsterdam: /images/placeholder.jpg (hash: 5b678e1e)
+    [netherlands] Binnenhof (The Hague): /images/placeholder.jpg (hash: 5b678e1e)
+    [newZealand] Milford Sound: /images/placeholder.jpg (hash: 5b678e1e)
+    [newZealand] Hobbiton Movie Set: /images/placeholder.jpg (hash: 5b678e1e)
+    [newZealand] Tongariro National Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [newZealand] Rotorua Geothermal Parks: /images/placeholder.jpg (hash: 5b678e1e)
+    [newZealand] Aoraki Mount Cook: /images/placeholder.jpg (hash: 5b678e1e)
+    [newZealand] Queenstown (Adventure Capital): /images/placeholder.jpg (hash: 5b678e1e)
+    [newZealand] Bay of Islands: /images/placeholder.jpg (hash: 5b678e1e)
+    [newZealand] Waitomo Glowworm Caves: /images/placeholder.jpg (hash: 5b678e1e)
+    [newZealand] Franz Josef Glacier: /images/placeholder.jpg (hash: 5b678e1e)
+    [newZealand] Abel Tasman National Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [newZealand] Te Papa Tongarewa Museum: /images/placeholder.jpg (hash: 5b678e1e)
+    [newZealand] Lake Tekapo: /images/placeholder.jpg (hash: 5b678e1e)
+    [newZealand] Waiheke Island: /images/placeholder.jpg (hash: 5b678e1e)
+    [newZealand] Fiordland National Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [newZealand] Coromandel Peninsula (Hot Water Beach): /images/placeholder.jpg (hash: 5b678e1e)
+    [newZealand] Huka Falls: /images/placeholder.jpg (hash: 5b678e1e)
+    [newZealand] Mount Aspiring National Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [newZealand] Kaikoura (Whale Watching): /images/placeholder.jpg (hash: 5b678e1e)
+    [newZealand] Fox Glacier: /images/placeholder.jpg (hash: 5b678e1e)
+    [newZealand] Sky Tower (Auckland): /images/placeholder.jpg (hash: 5b678e1e)
+    [peru] Machu Picchu: /images/placeholder.jpg (hash: 5b678e1e)
+    [peru] Sacred Valley: /images/placeholder.jpg (hash: 5b678e1e)
+    [peru] Cusco Historic Center: /images/placeholder.jpg (hash: 5b678e1e)
+    [peru] Colca Canyon: /images/placeholder.jpg (hash: 5b678e1e)
+    [peru] Lake Titicaca (Uros Islands): /images/placeholder.jpg (hash: 5b678e1e)
+    [peru] Nazca Lines: /images/placeholder.jpg (hash: 5b678e1e)
+    [peru] Lima Historic Centre: /images/placeholder.jpg (hash: 5b678e1e)
+    [peru] Huacachina Oasis: /images/placeholder.jpg (hash: 5b678e1e)
+    [peru] Amazon Rainforest (Iquitos): /images/placeholder.jpg (hash: 5b678e1e)
+    [peru] Rainbow Mountain (Vinicunca): /images/placeholder.jpg (hash: 5b678e1e)
+    [peru] Paracas National Reserve: /images/placeholder.jpg (hash: 5b678e1e)
+    [peru] Arequipa (Plaza de Armas): /images/placeholder.jpg (hash: 5b678e1e)
+    [peru] Chan Chan (Trujillo): /images/placeholder.jpg (hash: 5b678e1e)
+    [peru] Kuelap Fortress: /images/placeholder.jpg (hash: 5b678e1e)
+    [peru] Huascaran National Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [peru] Pisac Ruins & Market: /images/placeholder.jpg (hash: 5b678e1e)
+    [peru] Ollantaytambo Ruins: /images/placeholder.jpg (hash: 5b678e1e)
+    [peru] Sacsayhuaman: /images/placeholder.jpg (hash: 5b678e1e)
+    [peru] Mancora Beaches: /images/placeholder.jpg (hash: 5b678e1e)
+    [peru] Salkantay Trek: /images/placeholder.jpg (hash: 5b678e1e)
+    [philippines] Palawan (El Nido): /images/placeholder.jpg (hash: 5b678e1e)
+    [philippines] Boracay: /images/placeholder.jpg (hash: 5b678e1e)
+    [philippines] Chocolate Hills: /images/placeholder.jpg (hash: 5b678e1e)
+    [philippines] Banaue Rice Terraces: /images/placeholder.jpg (hash: 5b678e1e)
+    [philippines] Siargao: /images/placeholder.jpg (hash: 5b678e1e)
+    [philippines] Intramuros (Manila): /images/placeholder.jpg (hash: 5b678e1e)
+    [philippines] Mayon Volcano: /images/placeholder.jpg (hash: 5b678e1e)
+    [philippines] Tubbataha Reefs: /images/placeholder.jpg (hash: 5b678e1e)
+    [philippines] Coron: /images/placeholder.jpg (hash: 5b678e1e)
+    [philippines] Cebu (Kawasan Falls): /images/placeholder.jpg (hash: 5b678e1e)
+    [philippines] Vigan: /images/placeholder.jpg (hash: 5b678e1e)
+    [philippines] Batanes: /images/placeholder.jpg (hash: 5b678e1e)
+    [philippines] Puerto Princesa Underground River: /images/placeholder.jpg (hash: 5b678e1e)
+    [philippines] Camiguin: /images/placeholder.jpg (hash: 5b678e1e)
+    [philippines] Panglao Island: /images/placeholder.jpg (hash: 5b678e1e)
+    [philippines] Taal Volcano: /images/placeholder.jpg (hash: 5b678e1e)
+    [philippines] Mount Pulag: /images/placeholder.jpg (hash: 5b678e1e)
+    [philippines] Apo Island: /images/placeholder.jpg (hash: 5b678e1e)
+    [philippines] Siquijor: /images/placeholder.jpg (hash: 5b678e1e)
+    [philippines] Malapascua Island: /images/placeholder.jpg (hash: 5b678e1e)
+    [portugal] Pena Palace: /images/placeholder.jpg (hash: 5b678e1e)
+    [portugal] Belem Tower: /images/placeholder.jpg (hash: 5b678e1e)
+    [portugal] Jeronimos Monastery: /images/placeholder.jpg (hash: 5b678e1e)
+    [portugal] Douro Valley: /images/placeholder.jpg (hash: 5b678e1e)
+    [portugal] Algarve Coast (Benagil Cave): /images/placeholder.jpg (hash: 5b678e1e)
+    [portugal] Alfama: /images/placeholder.jpg (hash: 5b678e1e)
+    [portugal] Ribeira: /images/placeholder.jpg (hash: 5b678e1e)
+    [portugal] Sao Jorge Castle: /images/placeholder.jpg (hash: 5b678e1e)
+    [portugal] Cabo da Roca: /images/placeholder.jpg (hash: 5b678e1e)
+    [portugal] Obidos Castle: /images/placeholder.jpg (hash: 5b678e1e)
+    [portugal] Livraria Lello: /images/placeholder.jpg (hash: 5b678e1e)
+    [portugal] Evora Roman Temple: /images/placeholder.jpg (hash: 5b678e1e)
+    [portugal] Peneda-Geres National Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [portugal] Quinta da Regaleira: /images/placeholder.jpg (hash: 5b678e1e)
+    [portugal] Dom Luis I Bridge: /images/placeholder.jpg (hash: 5b678e1e)
+    [portugal] Monsaraz: /images/placeholder.jpg (hash: 5b678e1e)
+    [portugal] Bom Jesus do Monte: /images/placeholder.jpg (hash: 5b678e1e)
+    [portugal] Batalha Monastery: /images/placeholder.jpg (hash: 5b678e1e)
+    [portugal] Azores (Sete Cidades): /images/placeholder.jpg (hash: 5b678e1e)
+    [portugal] Madeira (Levadas): /images/placeholder.jpg (hash: 5b678e1e)
+    [seychelles] Anse Source d: /images/placeholder.jpg (hash: 5b678e1e)
+    [seychelles] Vall├йe de Mai Nature Reserve: /images/placeholder.jpg (hash: 5b678e1e)
+    [seychelles] Beau Vallon Beach: /images/placeholder.jpg (hash: 5b678e1e)
+    [seychelles] Anse Lazio: /images/placeholder.jpg (hash: 5b678e1e)
+    [seychelles] Curieuse Island: /images/placeholder.jpg (hash: 5b678e1e)
+    [seychelles] Aldabra Atoll: /images/placeholder.jpg (hash: 5b678e1e)
+    [seychelles] Morne Seychellois National Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [seychelles] Sainte Anne Marine National Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [seychelles] Bird Island: /images/placeholder.jpg (hash: 5b678e1e)
+    [seychelles] Victoria (Clock Tower): /images/placeholder.jpg (hash: 5b678e1e)
+    [seychelles] Anse Intendance: /images/placeholder.jpg (hash: 5b678e1e)
+    [seychelles] Cousin Island Special Reserve: /images/placeholder.jpg (hash: 5b678e1e)
+    [seychelles] Aride Island Nature Reserve: /images/placeholder.jpg (hash: 5b678e1e)
+    [seychelles] Silhouette Island: /images/placeholder.jpg (hash: 5b678e1e)
+    [seychelles] La Digue Island: /images/placeholder.jpg (hash: 5b678e1e)
+    [seychelles] Moyenne Island: /images/placeholder.jpg (hash: 5b678e1e)
+    [seychelles] Grand Anse: /images/placeholder.jpg (hash: 5b678e1e)
+    [seychelles] Seychelles National Botanical Gardens: /images/placeholder.jpg (hash: 5b678e1e)
+    [seychelles] Anse Georgette: /images/placeholder.jpg (hash: 5b678e1e)
+    [seychelles] Felicite Island: /images/placeholder.jpg (hash: 5b678e1e)
+    [southAfrica] Kruger National Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [southAfrica] Table Mountain: /images/placeholder.jpg (hash: 5b678e1e)
+    [southAfrica] Cape of Good Hope & Cape Point: /images/placeholder.jpg (hash: 5b678e1e)
+    [southAfrica] Robben Island: /images/placeholder.jpg (hash: 5b678e1e)
+    [southAfrica] Victoria & Alfred Waterfront: /images/placeholder.jpg (hash: 5b678e1e)
+    [southAfrica] Boulders Beach (Penguin Colony): /images/placeholder.jpg (hash: 5b678e1e)
+    [southAfrica] Stellenbosch & Franschhoek Wine Routes: /images/placeholder.jpg (hash: 5b678e1e)
+    [southAfrica] Blyde River Canyon: /images/placeholder.jpg (hash: 5b678e1e)
+    [southAfrica] Garden Route: /images/placeholder.jpg (hash: 5b678e1e)
+    [southAfrica] Drakensberg Mountains: /images/placeholder.jpg (hash: 5b678e1e)
+    [southAfrica] Kirstenbosch Botanical Gardens: /images/placeholder.jpg (hash: 5b678e1e)
+    [southAfrica] Tsitsikamma National Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [southAfrica] Addo Elephant National Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [southAfrica] Kgalagadi Transfrontier Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [southAfrica] Apartheid Museum: /images/placeholder.jpg (hash: 5b678e1e)
+    [southAfrica] Chapman: /images/placeholder.jpg (hash: 5b678e1e)
+    [southAfrica] ISimangaliso Wetland Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [southAfrica] Hluhluwe-iMfolozi Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [southAfrica] Hermanus (Whale Watching): /images/placeholder.jpg (hash: 5b678e1e)
+    [southAfrica] Bo-Kaap (Cape Town): /images/placeholder.jpg (hash: 5b678e1e)
+    [southKorea] Gyeongbokgung Palace: /images/placeholder.jpg (hash: 5b678e1e)
+    [southKorea] Jeju Island: /images/placeholder.jpg (hash: 5b678e1e)
+    [southKorea] Bukchon Hanok Village: /images/placeholder.jpg (hash: 5b678e1e)
+    [southKorea] N Seoul Tower: /images/placeholder.jpg (hash: 5b678e1e)
+    [southKorea] DMZ (Demilitarized Zone): /images/placeholder.jpg (hash: 5b678e1e)
+    [southKorea] Seoraksan National Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [southKorea] Bulguksa Temple: /images/placeholder.jpg (hash: 5b678e1e)
+    [southKorea] Haeundae Beach: /images/placeholder.jpg (hash: 5b678e1e)
+    [southKorea] Nami Island: /images/placeholder.jpg (hash: 5b678e1e)
+    [southKorea] Changdeokgung Palace: /images/placeholder.jpg (hash: 5b678e1e)
+    [southKorea] Myeongdong: /images/placeholder.jpg (hash: 5b678e1e)
+    [southKorea] Suwon Hwaseong Fortress: /images/placeholder.jpg (hash: 5b678e1e)
+    [southKorea] Jeonju Hanok Village: /images/placeholder.jpg (hash: 5b678e1e)
+    [southKorea] Gamcheon Culture Village: /images/placeholder.jpg (hash: 5b678e1e)
+    [southKorea] Gyeongju Historic Areas: /images/placeholder.jpg (hash: 5b678e1e)
+    [southKorea] Hallasan National Park: /images/placeholder.jpg (hash: 5b678e1e)
+    [southKorea] Seongsan Ilchulbong: /images/placeholder.jpg (hash: 5b678e1e)
+    [southKorea] Andong Hahoe Folk Village: /images/placeholder.jpg (hash: 5b678e1e)
+    [southKorea] Lotte World: /images/placeholder.jpg (hash: 5b678e1e)
+    [southKorea] Boseong Green Tea Field: /images/placeholder.jpg (hash: 5b678e1e)
+    [switzerland] Chateau de Chillon: /images/placeholder.jpg (hash: 5b678e1e)
+    [switzerland] Lauterbrunnen Valley: /images/placeholder.jpg (hash: 5b678e1e)
+    [switzerland] Oberhofen Castle: /images/placeholder.jpg (hash: 5b678e1e)
+    [switzerland] Ruinaulta (Swiss Grand Canyon): /images/placeholder.jpg (hash: 5b678e1e)
+    [turkey] Pamukkale Thermal Pools: /images/placeholder.jpg (hash: 5b678e1e)
+    [turkey] Mount Nemrut: /images/placeholder.jpg (hash: 5b678e1e)
+    [turkey] G├╢reme Open Air Museum: /images/placeholder.jpg (hash: 5b678e1e)
+    [turkey] Fethiye (├Цl├╝deniz Blue Lagoon): /images/placeholder.jpg (hash: 5b678e1e)
+    [turkey] Olympos and Chimaera: /images/placeholder.jpg (hash: 5b678e1e)
+    [vietnam] Sapa Terraces: /images/placeholder.jpg (hash: 5b678e1e)
+    [vietnam] Mui Ne Sand Dunes: /images/placeholder.jpg (hash: 5b678e1e)
+    [vietnam] Ban Gioc Waterfall: /images/placeholder.jpg (hash: 5b678e1e)
+    [vietnam] Cat Ba Island: /images/placeholder.jpg (hash: 5b678e1e)
+
+================================================================================
+ЁЯУК CHECK 7: ╨б╨Т╨Ю╨Ф╨Ъ╨Р ╨Я╨Ю ╨б╨в╨а╨Р╨Э╨Р╨Ь
+================================================================================
+
+╨б╤В╤А╨░╨╜╨░                     ╨Т╤Б╨╡╨│╨╛  ╨Ю╤В╤Б╤Г╤В╤Б╤В╨▓.    < 5KB     ╨б╤В╨░╤В╤Г╤Б
+-----------------------------------------------------------------
+  argentina                   20         18        0  тЪая╕П ISSUES
+  australia                   20         18        0  тЪая╕П ISSUES
+  austria                     20          8        0  тЪая╕П ISSUES
+  belgium                     20          0        0       тЬЕ OK
+  brazil                      20          0        0       тЬЕ OK
+  canada                      20          0        0       тЬЕ OK
+  chile                       20          0        0       тЬЕ OK
+  colombia                    20         19        0  тЪая╕П ISSUES
+  costaRica                   20          0        0       тЬЕ OK
+  czech                       20          0        0       тЬЕ OK
+  denmark                     20         20        0  тЪая╕П ISSUES
+  egypt                       20         16        0  тЪая╕П ISSUES
+  finland                     20          2        0  тЪая╕П ISSUES
+  france                      20          1        0  тЪая╕П ISSUES
+  germany                     20         20        0  тЪая╕П ISSUES
+  greece                      20          3        0  тЪая╕П ISSUES
+  hungary                     20          6        0  тЪая╕П ISSUES
+  iceland                     20          9        0  тЪая╕П ISSUES
+  india                       20         19        0  тЪая╕П ISSUES
+  indonesia                   20         10        0  тЪая╕П ISSUES
+  ireland                     20         20        0  тЪая╕П ISSUES
+  italy                       20          1        0  тЪая╕П ISSUES
+  japan                       20          1        0  тЪая╕П ISSUES
+  jordan                      20         11        0  тЪая╕П ISSUES
+  malaysia                    20          2        0  тЪая╕П ISSUES
+  maldives                    20          0        0       тЬЕ OK
+  mexico                      20          9        0  тЪая╕П ISSUES
+  morocco                     20          0        0       тЬЕ OK
+  netherlands                 20          0        0       тЬЕ OK
+  newZealand                  20          0        0       тЬЕ OK
+  norway                      20          1        0  тЪая╕П ISSUES
+  panama                      20         20        0  тЪая╕П ISSUES
+  peru                        20          0        0       тЬЕ OK
+  philippines                 20          0        0       тЬЕ OK
+  poland                      20          5        0  тЪая╕П ISSUES
+  portugal                    20          0        0       тЬЕ OK
+  qatar                       20         14        0  тЪая╕П ISSUES
+  seychelles                  20          0        0       тЬЕ OK
+  singapore                   20         20        0  тЪая╕П ISSUES
+  southAfrica                 20          0        0       тЬЕ OK
+  southKorea                  20          0        0       тЬЕ OK
+  spain                       20          1        0  тЪая╕П ISSUES
+  sriLanka                    20          5        0  тЪая╕П ISSUES
+  sweden                      20          2        0  тЪая╕П ISSUES
+  switzerland                 20         16        0  тЪая╕П ISSUES
+  thailand                    20          3        0  тЪая╕П ISSUES
+  turkey                      20         15        0  тЪая╕П ISSUES
+  uae                         20          5        0  тЪая╕П ISSUES
+  uk                          20          3        0  тЪая╕П ISSUES
+  usa                         20          1        0  тЪая╕П ISSUES
+  vietnam                     20         16        0  тЪая╕П ISSUES
+
+================================================================================
+ЁЯУЛ ╨Ш╨в╨Ю╨У╨Ю╨Т╨л╨Щ ╨Ю╨в╨з╨Б╨в ╨Ф╨Ы╨п GOOGLE ADSENSE
+================================================================================
+
+  ЁЯУ╕ ╨Т╤Б╨╡╨│╨╛ ╨╕╨╖╨╛╨▒╤А╨░╨╢╨╡╨╜╨╕╨╣:           1020
+  ЁЯУБ ╨б╤В╤А╨░╨╜/╨╜╨░╨┐╤А╨░╨▓╨╗╨╡╨╜╨╕╨╣:           51
+  
+  тЭМ ╨Ю╤В╤Б╤Г╤В╤Б╤В╨▓╤Г╤О╤Й╨╕╤Е ╤Д╨░╨╣╨╗╨╛╨▓:        340
+  ЁЯЪл ╨б╤Б╤Л╨╗╨╛╨║ ╨╜╨░ ╨╖╨░╨│╨╗╤Г╤И╨║╨╕:          335
+  ЁЯФД ╨У╤А╤Г╨┐╨┐ ╨┤╤Г╨▒╨╗╨╕╨║╨░╤В╨╛╨▓:            1 (335 ╤Д╨░╨╣╨╗╨╛╨▓)
+  ЁЯУЛ ╨Я╨╛╨▓╤В╨╛╤А╤П╤О╤Й╨╕╤Е╤Б╤П ╨┐╤Г╤В╨╡╨╣:         1
+  ЁЯФ┤ ╨д╨░╨╣╨╗╨╛╨▓ < 5KB (╨╖╨░╨│╨╗╤Г╤И╨║╨╕):     0
+  ЁЯЯб ╨д╨░╨╣╨╗╨╛╨▓ < 20KB (╨╜╨╕╨╖╨║╨╛╨╡ ╨║╨░╤З.): 1
+  
+  ЁЯФ┤ ╨б╨Р╨Щ╨в ╨Э╨Х ╨У╨Ю╨в╨Ю╨Т ╨Ъ ADSENSE тАФ ╨Х╨б╨в╨м ╨Я╨а╨Ю╨С╨Ы╨Х╨Ь╨л!
+

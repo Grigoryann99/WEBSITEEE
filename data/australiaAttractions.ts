@@ -201,7 +201,7 @@ export const australiaAttractions = [
     insiderTip: "Drift snorkel at Turquoise Bay; let the natural current carry you gently over the spectacular coral formations without having to swim.",
     howToGetThere: "Fly into Learmonth Airport (Exmouth) from Perth, about a 2-hour flight.",
     cost: "Snorkeling is free; whale shark swimming tours average $400-$500 AUD.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/australia-ningaloo-reef.jpg'
   },
   {
     name: "Rottnest Island",
@@ -237,6 +237,6 @@ export const australiaAttractions = [
     insiderTip: "Wake up early for a sunrise hot air balloon flight over the undulating vineyards, finishing with a gourmet champagne breakfast.",
     howToGetThere: "A scenic 1-hour drive northeast from Adelaide.",
     cost: "Varies; cellar door tastings often range from $10-$25 AUD, premium experiences are much higher.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/australia-barossa-valley.jpg'
   }
 ];

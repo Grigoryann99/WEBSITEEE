@@ -33,7 +33,7 @@ export const austriaAttractions = [
     insiderTip: "Stay overnight in the village to experience its tranquil charm after the daytime tour buses have departed.",
     howToGetThere: "Take a train to Hallstatt station, followed by a scenic ferry ride across the lake to the village.",
     cost: "Free to explore the village; the salt mine tour costs approximately €40.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/austria-hallstatt.jpg'
   },
   {
     name: "Salzburg Altstadt (Old Town)",
@@ -57,7 +57,7 @@ export const austriaAttractions = [
     insiderTip: "Purchase a combined ticket to see both palaces and visit the Upper Belvedere first thing in the morning to view Klimt's 'The Kiss' without the crowds.",
     howToGetThere: "Take tram D directly to the Schloss Belvedere stop, or a short walk from the Hauptbahnhof.",
     cost: "Upper Belvedere entry is about €18; combined tickets are around €25.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/austria-belvedere-palace.jpg'
   },
   {
     name: "Grossglockner High Alpine Road",
@@ -69,7 +69,7 @@ export const austriaAttractions = [
     insiderTip: "Start your drive at sunrise to enjoy the twisting roads with minimal traffic and beautiful morning light.",
     howToGetThere: "Accessible by car from Salzburg (via Zell am See) or from Carinthia (via Heiligenblut).",
     cost: "A day pass for a standard car is approximately €40.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/austria-grossglockner-high-alpine-road.jpg'
   },
   {
     name: "Innsbruck (Golden Roof)",
@@ -141,7 +141,7 @@ export const austriaAttractions = [
     insiderTip: "Hike up to the highest tier early in the day to beat the crowds, then reward yourself with traditional Austrian fare at the Schönangerl restaurant near the middle fall.",
     howToGetThere: "Accessible by car or local train (Pinzgauer Lokalbahn) from Zell am See.",
     cost: "Entrance fee to the waterfall path is roughly €8.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/austria-krimml-waterfalls.jpg'
   },
   {
     name: "Eisriesenwelt (Ice Cave)",
@@ -153,7 +153,7 @@ export const austriaAttractions = [
     insiderTip: "Dress warmly with sturdy footwear, as temperatures inside remain below freezing even in the height of summer.",
     howToGetThere: "A 40-minute drive from Salzburg, followed by a shuttle bus and cable car ride.",
     cost: "Combined ticket (cave entrance and cable car) is approximately €35.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/austria-eisriesenwelt-ice-cave.jpg'
   },
   {
     name: "Kitzbühel",
@@ -165,7 +165,7 @@ export const austriaAttractions = [
     insiderTip: "Book a table at the iconic Sonnbühel restaurant on the mountain for a luxurious high-altitude dining experience.",
     howToGetThere: "Easily accessible by train from Innsbruck or Munich; private transfers are popular among luxury travelers.",
     cost: "Ski passes are around €65-€70 per day, with luxury accommodations commanding premium rates.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/austria-kitzbuhel.jpg'
   },
   {
     name: "Schloss Hellbrunn",
@@ -177,7 +177,7 @@ export const austriaAttractions = [
     insiderTip: "Take the evening tour of the trick fountains in July and August, when the grottos are dramatically illuminated by candlelight.",
     howToGetThere: "A short 20-minute bus ride (Line 25) from the center of Salzburg.",
     cost: "Entrance to the palace, trick fountains, and folklore museum is around €15.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/austria-schloss-hellbrunn.jpg'
   },
   {
     name: "Hohensalzburg Fortress",
@@ -189,7 +189,7 @@ export const austriaAttractions = [
     insiderTip: "Take the quick Festungsbahn funicular up to save energy, but walk down the scenic pathways to enjoy unique perspectives of the Old Town.",
     howToGetThere: "Take the funicular from Festungsgasse in the Old Town, or walk up the steep path.",
     cost: "All-inclusive tickets, covering the funicular and state rooms, are roughly €17.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/austria-hohensalzburg-fortress.jpg'
   },
   {
     name: "Graz Old Town",
@@ -201,7 +201,7 @@ export const austriaAttractions = [
     insiderTip: "Take the glass elevator inside the mountain up to the Schlossberg, then dine at the panoramic restaurant overlooking the red rooftops.",
     howToGetThere: "A 2.5-hour train ride from Vienna; Graz also has its own international airport.",
     cost: "Exploring the Old Town is free; museums and the Schlossberg lift have minor fees.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/austria-graz-old-town.jpg'
   },
   {
     name: "Swarovski Crystal Worlds",
@@ -213,7 +213,7 @@ export const austriaAttractions = [
     insiderTip: "Don't miss the 'Chandelier of Grief' by Yayoi Kusama, a spectacular infinity mirror room inside the Chambers of Wonder.",
     howToGetThere: "A 20-minute drive or shuttle bus ride from Innsbruck.",
     cost: "Entrance tickets are around €23.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/austria-swarovski-crystal-worlds.jpg'
   },
   {
     name: "Wolfgangsee",
@@ -225,7 +225,7 @@ export const austriaAttractions = [
     insiderTip: "Take the historic paddle steamer 'Kaiser Franz Josef I' for a graceful and scenic journey across the lake between the villages.",
     howToGetThere: "A 45-minute drive from Salzburg, with regular bus connections available.",
     cost: "Free to visit the lake towns; the Schafbergbahn cog railway costs around €45 round trip.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/austria-wolfgangsee.jpg'
   },
   {
     name: "Dachstein Salzkammergut",
@@ -237,6 +237,6 @@ export const austriaAttractions = [
     insiderTip: "For the ultimate thrill, walk across the Dachstein Suspension Bridge, Austria's highest suspension bridge, leading to the 'Stairway to Nothingness'.",
     howToGetThere: "Accessible via cable car from Obertraun (near Hallstatt) or Ramsau am Dachstein.",
     cost: "A comprehensive ticket for the cable cars and caves costs approximately €55.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/austria-dachstein-salzkammergut.jpg'
   }
 ];

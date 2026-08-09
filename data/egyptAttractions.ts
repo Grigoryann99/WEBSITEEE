@@ -45,7 +45,7 @@ export const egyptAttractions = [
     insiderTip: "If you don't fly, arrange a private, comfortable vehicle for the early morning convoy from Aswan to sleep comfortably during the journey.",
     howToGetThere: "Accessible via a short domestic flight from Aswan, or a 3-4 hour drive through the desert.",
     cost: "High, especially if factoring in domestic flights or private transportation from Aswan.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/egypt-abu-simbel-temples.jpg'
   },
   {
     name: "Egyptian Museum",
@@ -69,7 +69,7 @@ export const egyptAttractions = [
     insiderTip: "Visit in the late afternoon and stay through sunset to see the temple transition from golden hour sunlight to dramatic nighttime illumination.",
     howToGetThere: "Located in downtown Luxor on the East Bank, easily walkable from nearby luxury hotels or cruise docks.",
     cost: "Moderate entry fee.",
-    image: "https://loremflickr.com/1200/800/Luxor,Temple,egypt/all?lock=3"
+    image: "/images/attractions/egypt-luxor-temple.jpg"
   },
   {
     name: "Philae Temple",
@@ -81,7 +81,7 @@ export const egyptAttractions = [
     insiderTip: "Take time to relax at the small cafe on the island after your tour; the view of the temple against the Nile is a perfect spot for reflection.",
     howToGetThere: "Accessible only by a short motorboat ride from the Marina Philae Temple in Aswan.",
     cost: "Moderate; requires an entry ticket plus negotiating a fee for the boat ride.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/egypt-philae-temple.jpg'
   },
   {
     name: "White Desert National Park",
@@ -93,7 +93,7 @@ export const egyptAttractions = [
     insiderTip: "Book a premium guided safari that offers luxury camping gear; sleeping comfortably under the stars here is a life-changing experience.",
     howToGetThere: "Typically accessed via a 4-5 hour drive from Cairo to the Bahariya Oasis, followed by an off-road 4x4 journey.",
     cost: "High for a premium, private 4x4 safari and luxury overnight camping.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/egypt-white-desert-national-park.jpg'
   },
   {
     name: "Mount Sinai & St. Catherine's Monastery",
@@ -129,7 +129,7 @@ export const egyptAttractions = [
     insiderTip: "Wander down Al-Muizz Street at dusk; it has the greatest concentration of medieval architectural treasures in the Islamic world and looks stunning when illuminated.",
     howToGetThere: "Located in central Cairo, best accessed via taxi or private driver.",
     cost: "Free to wander; purchases and private guides vary.",
-    image: "https://loremflickr.com/1200/800/Islamic,Cairo,egypt/all?lock=4"
+    image: "/images/attractions/egypt-islamic-cairo-khan-el-khalili.jpg"
   },
   {
     name: "Alexandria Library (Bibliotheca Alexandrina)",
@@ -153,7 +153,7 @@ export const egyptAttractions = [
     insiderTip: "Do not miss a sunset swim at Cleopatra's Spring, followed by a bespoke dinner in the dunes arranged by a luxury eco-lodge.",
     howToGetThere: "A long drive (approx. 9-10 hours) from Cairo, or via occasional private charter flights.",
     cost: "High, primarily due to transportation and high-end eco-luxury accommodations.",
-    image: "https://loremflickr.com/1200/800/Siwa,Oasis,egypt/all?lock=5"
+    image: "/images/attractions/egypt-siwa-oasis.jpg"
   },
   {
     name: "Dahshur Pyramids",
@@ -213,7 +213,7 @@ export const egyptAttractions = [
     insiderTip: "Book a hotel that offers a private 'house reef' so you can snorkel in pristine conditions directly from your luxurious beachfront suite.",
     howToGetThere: "Served by Sharm El-Sheikh International Airport, with quick transfers to resorts.",
     cost: "High for premium resorts and exclusive dining experiences.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/egypt-sharm-el-sheikh-naama-bay.jpg'
   },
   {
     name: "Salah El-Din Citadel",
@@ -225,7 +225,7 @@ export const egyptAttractions = [
     insiderTip: "Take time to sit quietly on the carpets inside the Muhammad Ali Mosque to admire the staggering scale of the domed ceiling and the peaceful atmosphere.",
     howToGetThere: "Located in Islamic Cairo; easily reached by taxi or private vehicle.",
     cost: "Moderate entry fee.",
-    image: "https://loremflickr.com/1200/800/Salah,ElDin,egypt/all?lock=6"
+    image: "/images/attractions/egypt-salah-el-din-citadel.jpg"
   },
   {
     name: "Saqqara (Step Pyramid)",
@@ -237,6 +237,6 @@ export const egyptAttractions = [
     insiderTip: "Don't just look at the Step Pyramid; make sure you visit the Serapeum and the incredibly detailed Tomb of Mereruka, which are often missed by large bus tours.",
     howToGetThere: "About a 45-minute private drive south of central Cairo, often combined with a visit to Memphis or Dahshur.",
     cost: "Moderate; requires several different tickets to see all the major monuments on site.",
-    image: "https://loremflickr.com/1200/800/Saqqara,Step,egypt/all?lock=7"
+    image: "/images/attractions/egypt-saqqara-step-pyramid.jpg"
   }
 ];

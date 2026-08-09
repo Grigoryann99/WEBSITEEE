@@ -21,7 +21,7 @@ export const indonesiaAttractions = [
     insiderTip: "Book a private sunrise tour via the Manohara Hotel for exclusive early access before the general public gates open.",
     howToGetThere: "Fly into Yogyakarta International Airport (YIA) and arrange a 1.5-hour private car transfer to the temple area.",
     cost: "$$",
-    image: "https://loremflickr.com/1200/800/Borobudur,Temple,indonesia/all?lock=30"
+    image: "/images/attractions/indonesia-borobudur-temple.jpg"
   },
   {
     name: "Komodo National Park",
@@ -33,7 +33,7 @@ export const indonesiaAttractions = [
     insiderTip: "Charter a private phinisi (traditional Indonesian yacht) for a multi-day journey to explore the park's hidden coves and dive sites in ultimate luxury.",
     howToGetThere: "Fly into Komodo Airport (LBJ) in Labuan Bajo, the gateway to the park, and board your chartered yacht or luxury cruise.",
     cost: "$$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/indonesia-komodo-national-park.jpg'
   },
   {
     name: "Raja Ampat",
@@ -45,7 +45,7 @@ export const indonesiaAttractions = [
     insiderTip: "Hike up to the Piaynemo viewpoint for the iconic, awe-inspiring panoramic view of the karst islands scattered across the turquoise sea.",
     howToGetThere: "Fly into Domine Eduard Osok Airport (SOQ) in Sorong, then take a speedboat or luxury resort transfer to the islands.",
     cost: "$$$$",
-    image: "https://loremflickr.com/1200/800/Raja,Ampat,indonesia/all?lock=31"
+    image: "/images/attractions/indonesia-raja-ampat.jpg"
   },
   {
     name: "Mount Bromo",
@@ -57,7 +57,7 @@ export const indonesiaAttractions = [
     insiderTip: "Instead of the crowded Mount Penanjakan, ask your private guide to take you to the alternative King Kong Hill for an equally stunning, quieter sunrise view.",
     howToGetThere: "Fly into Juanda International Airport (SUB) in Surabaya, followed by a scenic 3-4 hour private drive to the Bromo area.",
     cost: "$$",
-    image: "https://loremflickr.com/1200/800/Mount,Bromo,indonesia/all?lock=32"
+    image: "/images/attractions/indonesia-mount-bromo.jpg"
   },
   {
     name: "Prambanan Temple",
@@ -93,7 +93,7 @@ export const indonesiaAttractions = [
     insiderTip: "Hire a private speedboat from Bali to avoid the crowded public ferries and have the flexibility to visit the best snorkel spots like Manta Point on your own schedule.",
     howToGetThere: "A 45-minute speedboat ride from Sanur Harbor in Bali.",
     cost: "$$",
-    image: "https://loremflickr.com/1200/800/Nusa,Penida,indonesia/all?lock=33"
+    image: "/images/attractions/indonesia-nusa-penida.jpg"
   },
   {
     name: "Tana Toraja",
@@ -105,7 +105,7 @@ export const indonesiaAttractions = [
     insiderTip: "The elaborate funeral ceremonies (Rambu Solo) mostly take place during the dry season (July and August); coordinate with a specialized local guide to attend one respectfully.",
     howToGetThere: "Fly into Sultan Hasanuddin International Airport (UPG) in Makassar, then take a scenic but long (8-10 hour) private drive, or a short domestic flight to Toraja Airport (TRT).",
     cost: "$$",
-    image: "https://loremflickr.com/1200/800/Tana,Toraja,indonesia/all?lock=34"
+    image: "/images/attractions/indonesia-tana-toraja.jpg"
   },
   {
     name: "Lake Toba",
@@ -141,7 +141,7 @@ export const indonesiaAttractions = [
     insiderTip: "Arrange a private, curator-led tour of the Ullen Sentalu Museum to gain profound insights into Javanese royal culture and history.",
     howToGetThere: "Fly directly into Yogyakarta International Airport (YIA), which serves numerous domestic and international flights.",
     cost: "$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/indonesia-yogyakarta.jpg'
   },
   {
     name: "Tanjung Puting (Orangutans)",
@@ -153,7 +153,7 @@ export const indonesiaAttractions = [
     insiderTip: "Charter a private, luxury klotok (traditional houseboat) for a multi-day cruise down the Sekonyer River to observe the wildlife in exclusive comfort.",
     howToGetThere: "Fly into Iskandar Airport (PKN) in Pangkalan Bun, where your private guide and klotok crew will meet you for the river journey.",
     cost: "$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/indonesia-tanjung-puting-orangutans.jpg'
   },
   {
     name: "Wakatobi",
@@ -165,7 +165,7 @@ export const indonesiaAttractions = [
     insiderTip: "Stay at the Wakatobi Dive Resort, which operates its own private airstrip, allowing for seamless and exclusive access directly from Bali.",
     howToGetThere: "Take a private charter flight arranged by the luxury resorts directly from Bali to the Wakatobi airstrip on Tomia island.",
     cost: "$$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/indonesia-wakatobi.jpg'
   },
   {
     name: "Lombok",
@@ -177,7 +177,7 @@ export const indonesiaAttractions = [
     insiderTip: "Visit the southern coast, particularly around Kuta Lombok, to discover dramatic cliffside luxury resorts and some of the best, uncrowded surfing beaches in Indonesia.",
     howToGetThere: "Fly into Lombok International Airport (LOP), followed by a private transfer to your resort.",
     cost: "$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/indonesia-lombok.jpg'
   },
   {
     name: "Bunaken Marine Park",
@@ -189,7 +189,7 @@ export const indonesiaAttractions = [
     insiderTip: "While the diving is spectacular, the snorkeling along the shallow reef tops is equally rewarding; hire a private boat for a personalized snorkeling safari.",
     howToGetThere: "Fly into Sam Ratulangi International Airport (MDC) in Manado, then take a short 45-minute private speedboat ride to the island.",
     cost: "$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/indonesia-bunaken-marine-park.jpg'
   },
   {
     name: "Belitung Island",
@@ -201,7 +201,7 @@ export const indonesiaAttractions = [
     insiderTip: "Hire a private boat to hop between the smaller offshore islands, particularly Lengkuas Island, which features a historic 19th-century Dutch lighthouse you can climb.",
     howToGetThere: "Fly directly into H.A.S. Hanandjoeddin Airport (TJQ) in Tanjung Pandan from Jakarta, followed by a short drive to the coastal resorts.",
     cost: "$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/indonesia-belitung-island.jpg'
   },
   {
     name: "Mentawai Islands",
@@ -213,7 +213,7 @@ export const indonesiaAttractions = [
     insiderTip: "To experience the best of both worlds, combine a stay at a luxury surf resort with a guided, respectful day trip into the jungle to meet the indigenous Mentawai tribes.",
     howToGetThere: "Fly into Minangkabau International Airport (PDG) in Padang, then take a private fast ferry or charter a luxury surf yacht to the islands.",
     cost: "$$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/indonesia-mentawai-islands.jpg'
   },
   {
     name: "Jakarta Old Town",
@@ -225,7 +225,7 @@ export const indonesiaAttractions = [
     insiderTip: "Enjoy a sophisticated high tea or dinner at the historic Cafe Batavia, securing a window seat for a picturesque view over the bustling Fatahillah Square.",
     howToGetThere: "Located in central Jakarta, easily accessible via a private chauffeur from any of the city's premium luxury hotels.",
     cost: "$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/indonesia-jakarta-old-town.jpg'
   },
   {
     name: "Dieng Plateau",
@@ -237,6 +237,6 @@ export const indonesiaAttractions = [
     insiderTip: "Dress warmly for the pre-dawn hike up Sikunir Hill; the stunning 'Golden Sunrise' over the misty terraced valleys and distant volcanoes is absolutely worth the early wake-up.",
     howToGetThere: "Fly into Yogyakarta International Airport (YIA) or Ahmad Yani Airport (SRG) in Semarang, and take a scenic 3-4 hour private drive up the winding mountain roads.",
     cost: "$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/indonesia-dieng-plateau.jpg'
   }
 ];

@@ -9,7 +9,7 @@ export const chileAttractions = [
     insiderTip: "Book accommodations and campsite permits well in advance (up to 6 months), especially for the W trek. For a premium experience, consider an all-inclusive luxury lodge like Explora or Tierra Patagonia.",
     howToGetThere: "Fly to Puerto Natales (PNT) or Punta Arenas (PUQ), then take a bus or private transfer to the park.",
     cost: "$$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/chile-torres-del-paine-national-park.jpg'
   },
   {
     name: "Atacama Desert",
@@ -21,7 +21,7 @@ export const chileAttractions = [
     insiderTip: "Take time to acclimatize to the high altitude (San Pedro is at 2,400m) before attempting higher excursions like the El Tatio Geysers. Bring layers, as temperatures drop drastically after sunset.",
     howToGetThere: "Fly to Calama (CJC), then take a 1.5-hour shuttle or private transfer to San Pedro de Atacama.",
     cost: "$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/chile-atacama-desert.jpg'
   },
   {
     name: "Easter Island (Rapa Nui)",
@@ -33,7 +33,7 @@ export const chileAttractions = [
     insiderTip: "Hire a local Rapa Nui guide to truly understand the oral history and cultural significance of the different ahus (platforms) and moai.",
     howToGetThere: "Take a 5.5-hour flight from Santiago (SCL) via LATAM Airlines.",
     cost: "$$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/chile-easter-island-rapa-nui.jpg'
   },
   {
     name: "Valparaíso",
@@ -45,7 +45,7 @@ export const chileAttractions = [
     insiderTip: "Explore the hills of Cerro Alegre and Cerro Concepción on foot, and don't miss a visit to La Sebastiana, Pablo Neruda's eclectic former home.",
     howToGetThere: "A 1.5-hour drive or bus ride from the capital city of Santiago.",
     cost: "$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/chile-valparaiso.jpg'
   },
   {
     name: "Chiloé Island",
@@ -57,7 +57,7 @@ export const chileAttractions = [
     insiderTip: "Rent a car to explore the scattered wooden churches at your own pace. Try to time your visit to catch a local festival for an authentic curanto experience.",
     howToGetThere: "Fly to Castro (MHC) from Santiago, or take a ferry across the Chacao Channel from Puerto Montt.",
     cost: "$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/chile-chiloe-island.jpg'
   },
   {
     name: "Valle de la Luna",
@@ -69,7 +69,7 @@ export const chileAttractions = [
     insiderTip: "Instead of joining a large tour bus, hire a private guide or rent a mountain bike to explore the valley in the quieter morning hours.",
     howToGetThere: "Just 13 km (8 miles) west of San Pedro de Atacama; accessible by tour, bike, or car.",
     cost: "$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/chile-valle-de-la-luna.jpg'
   },
   {
     name: "Marble Caves (Puerto Rio Tranquilo)",
@@ -81,7 +81,7 @@ export const chileAttractions = [
     insiderTip: "Opt for a kayak tour instead of a motorboat; it allows you to silently navigate deeper into the smaller caverns and appreciate the scale and colors intimately.",
     howToGetThere: "Fly to Balmaceda (BBA), rent a 4x4, and drive 4-5 hours south along the Carretera Austral to Puerto Río Tranquilo.",
     cost: "$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/chile-marble-caves-puerto-rio-tranquilo.jpg'
   },
   {
     name: "Villarrica Volcano",
@@ -93,7 +93,7 @@ export const chileAttractions = [
     insiderTip: "Always climb with a reputable agency. After the gruelling ascent, celebrate by soaking in the Geometricas Hot Springs, hidden in a lush ravine nearby.",
     howToGetThere: "Fly to Temuco (ZCO) or Valdivia (ZAL), then drive or take a bus to Pucón.",
     cost: "$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/chile-villarrica-volcano.jpg'
   },
   {
     name: "Lake District (Puerto Varas)",
@@ -105,7 +105,7 @@ export const chileAttractions = [
     insiderTip: "Drive or cycle around Lake Llanquihue, making sure to stop at the spectacular Petrohué Waterfalls and the smaller, charming town of Frutillar.",
     howToGetThere: "Fly to Puerto Montt (PMC), then take a 30-minute drive or taxi to Puerto Varas.",
     cost: "$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/chile-lake-district-puerto-varas.jpg'
   },
   {
     name: "El Tatio Geysers",
@@ -117,7 +117,7 @@ export const chileAttractions = [
     insiderTip: "Tours depart San Pedro at 4:30 AM. Dress in extremely warm layers (it can be -10°C/14°F) and only do this tour after you have acclimatized to the altitude for a few days.",
     howToGetThere: "A 1.5 to 2-hour drive from San Pedro de Atacama. Joining a guided tour is highly recommended due to the rough, dark roads and high altitude.",
     cost: "$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/chile-el-tatio-geysers.jpg'
   },
   {
     name: "Santiago (San Cristobal Hill)",
@@ -129,7 +129,7 @@ export const chileAttractions = [
     insiderTip: "Try the traditional 'mote con huesillo' (a sweet peach and husked wheat drink) sold at the summit. Visit after a rainstorm during winter for the clearest, most spectacular views of the Andes.",
     howToGetThere: "Located in the Bellavista/Providencia neighborhoods of Santiago, accessible via the Baquedano or Pedro de Valdivia metro stations.",
     cost: "$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/chile-santiago-san-cristobal-hill.jpg'
   },
   {
     name: "Pumalin Park",
@@ -141,7 +141,7 @@ export const chileAttractions = [
     insiderTip: "Hike the Sendero de los Alerces to walk among ancient trees that predate the Roman Empire. Renting a campervan is an excellent way to explore the park's world-class campgrounds.",
     howToGetThere: "Fly to Chaitén (WCH) or take a scenic ferry from Puerto Montt to Caleta Gonzalo via the Carretera Austral.",
     cost: "$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/chile-pumalin-park.jpg'
   },
   {
     name: "Cape Horn",
@@ -153,7 +153,7 @@ export const chileAttractions = [
     insiderTip: "The only reliable way to visit is via an Australis expedition cruise from Punta Arenas or Ushuaia. Be prepared for rapid weather changes and rough seas, even in summer.",
     howToGetThere: "Accessible only by boat, typically via 4 to 5-day expedition cruises departing from Punta Arenas.",
     cost: "$$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/chile-cape-horn.jpg'
   },
   {
     name: "Magdalena Island (Penguins)",
@@ -165,7 +165,7 @@ export const chileAttractions = [
     insiderTip: "Book a morning tour when the sea is usually calmer. Bring a windbreaker and a zoom lens, and remember to always give the penguins the right of way on the walking paths.",
     howToGetThere: "A 2-hour ferry ride or 45-minute speedboat ride from Punta Arenas.",
     cost: "$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/chile-magdalena-island-penguins.jpg'
   },
   {
     name: "Cochamo Valley",
@@ -177,7 +177,7 @@ export const chileAttractions = [
     insiderTip: "Reservations for campsites in La Junta are mandatory and sell out months in advance. Hire a local arriero (horseman) to carry your heavy gear up the muddy, 4-6 hour access trail.",
     howToGetThere: "Fly to Puerto Montt (PMC), drive to the town of Cochamó, and hike or ride horseback into the valley.",
     cost: "$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/chile-cochamo-valley.jpg'
   },
   {
     name: "Lauca National Park",
@@ -189,7 +189,7 @@ export const chileAttractions = [
     insiderTip: "The park sits at an extreme altitude (Lake Chungará is at 4,500m / 14,700ft). Spend a day acclimatizing in Putre before ascending to the park.",
     howToGetThere: "Fly to Arica (ARI), then drive 3-4 hours inland and upward into the Andes, usually stopping in Putre.",
     cost: "$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/chile-lauca-national-park.jpg'
   },
   {
     name: "Altiplanic Lagoons",
@@ -201,7 +201,7 @@ export const chileAttractions = [
     insiderTip: "Combine this trip with a visit to the Salar de Talar (Piedras Rojas) for a full day of stunning high-altitude scenery. Walk slowly and drink plenty of water to combat the altitude.",
     howToGetThere: "A 2-hour drive south from San Pedro de Atacama, typically visited via a full-day guided tour.",
     cost: "$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/chile-altiplanic-lagoons.jpg'
   },
   {
     name: "Pucón",
@@ -213,7 +213,7 @@ export const chileAttractions = [
     insiderTip: "After a day of extreme sports, treat yourself to an evening at Termas Geométricas, a stunning, Japanese-inspired hot springs complex carved into a lush canyon.",
     howToGetThere: "Fly to Temuco (ZCO) or Valdivia (ZAL) and drive roughly 1.5 to 2 hours.",
     cost: "$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/chile-pucon.jpg'
   },
   {
     name: "Osorno Volcano",
@@ -225,7 +225,7 @@ export const chileAttractions = [
     insiderTip: "Take the chairlift up for lunch at the mountain station cafe; the views over Lake Llanquihue and the Calbuco volcano are spectacular on a clear day.",
     howToGetThere: "A 1-hour drive from Puerto Varas, winding up the scenic mountain road to the ski center.",
     cost: "$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/chile-osorno-volcano.jpg'
   },
   {
     name: "Humberstone and Santa Laura",
@@ -237,6 +237,6 @@ export const chileAttractions = [
     insiderTip: "Bring plenty of water, a hat, and sunscreen. The theater in Humberstone is a highlight, still echoing with the history of the families who lived there.",
     howToGetThere: "A 45-minute drive inland from the coastal city of Iquique (IQQ).",
     cost: "$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/chile-humberstone-and-santa-laura.jpg'
   }
 ];

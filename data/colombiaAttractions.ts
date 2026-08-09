@@ -165,7 +165,7 @@ export const colombiaAttractions = [
     insiderTip: "Hire a local guide on horseback to explore the more remote sites outside the main park, such as La Chaquira, which offers breathtaking views of the Magdalena River canyon.",
     howToGetThere: "Fly to Pitalito (PTX) or Neiva (NVA) and take a taxi or bus. From Neiva, it is a scenic 4 to 5-hour drive south through the Magdalena Valley.",
     cost: "Affordable",
-    image: "https://loremflickr.com/1200/800/Agustn,Archaeological,colombia/all?lock=1"
+    image: "/images/attractions/colombia-san-agustin-archaeological-park.jpg"
   },
   {
     name: "Tatacoa Desert",
@@ -201,7 +201,7 @@ export const colombiaAttractions = [
     insiderTip: "Take a traditional wooden canoe ride (chalupa) into the Pijiño Swamp at sunset to see incredible birdlife and watch the sky reflect flawlessly on the water.",
     howToGetThere: "It requires dedication: fly to Cartagena, Valledupar, or Corozal, then take a long overland journey (4-6 hours) that includes a ferry crossing or bridges over the Magdalena River.",
     cost: "Moderate",
-    image: "https://loremflickr.com/1200/800/Mompox,Santa,colombia/all?lock=2"
+    image: "/images/attractions/colombia-mompox-santa-cruz-de-mompox.jpg"
   },
   {
     name: "Las Lajas Sanctuary",

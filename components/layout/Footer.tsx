@@ -13,10 +13,37 @@ export default function Footer() {
                                 VELORA<span className="text-brand-accent">.</span>
                             </div>
                         </div>
-                        <p className="font-sans text-brand-dark/60 font-light max-w-sm leading-relaxed mb-8">
+                        <p className="font-sans text-brand-dark/60 font-light max-w-sm leading-relaxed mb-6">
                             Curating the world&apos;s most exclusive sanctuaries for discerning travelers.
                             Elevating escapism into an art form.
                         </p>
+                        <div className="flex gap-4">
+                            <a
+                                href="https://www.instagram.com/velorashow?igsh=MW1jZzkxYTY2cWlmcA=="
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Instagram"
+                                className="w-9 h-9 flex items-center justify-center rounded-full bg-black/5 text-brand-dark hover:bg-brand-accent hover:text-white transition-all duration-300"
+                            >
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+                                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                                </svg>
+                            </a>
+                            <a
+                                href="https://youtube.com/@velorashow1?si=UPuwLPXV3KRKcO1_"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="YouTube"
+                                className="w-9 h-9 flex items-center justify-center rounded-full bg-black/5 text-brand-dark hover:bg-brand-accent hover:text-white transition-all duration-300"
+                            >
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+                                    <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.56 49.56 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/>
+                                    <polygon points="10 15 15 12 10 9 10 15"/>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
 
                     <div>

@@ -21,7 +21,7 @@ export const icelandAttractions = [
     insiderTip: "Take a slight detour to the Secret Lagoon in Flúðir for a more authentic and less crowded hot spring soak.",
     howToGetThere: "Starts and ends in Reykjavik, typically driven in a loop taking 6-8 hours.",
     cost: "Free to drive; private luxury tours range from $500 to $1,500+ USD.",
-    image: "https://loremflickr.com/1200/800/Golden,Circle,iceland/all?lock=20"
+    image: "/images/attractions/iceland-golden-circle.jpg"
   },
   {
     name: "Gullfoss Waterfall",
@@ -33,7 +33,7 @@ export const icelandAttractions = [
     insiderTip: "Walk down the lower trail (open in summer) to feel the mist and get as close to the raging water as possible.",
     howToGetThere: "Located on the Golden Circle route, about 1.5 to 2 hours drive from Reykjavik.",
     cost: "Free admission and parking.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/iceland-gullfoss-waterfall.jpg'
   },
   {
     name: "Thingvellir National Park",
@@ -45,7 +45,7 @@ export const icelandAttractions = [
     insiderTip: "Book a drysuit snorkeling tour in Silfra early in the morning to enjoy the pristine visibility before the crowds arrive.",
     howToGetThere: "About a 45-minute drive from Reykjavik along Route 36.",
     cost: "Free entry; parking fee applies; Silfra tours around $150-$200 USD.",
-    image: "https://loremflickr.com/1200/800/Thingvellir,National,iceland/all?lock=21"
+    image: "/images/attractions/iceland-thingvellir-national-park.jpg"
   },
   {
     name: "Geysir Geothermal Area",
@@ -57,7 +57,7 @@ export const icelandAttractions = [
     insiderTip: "Hike up the small hill behind the geothermal area, Bjarnarfell, for a stunning panoramic view of the erupting geyser and the valley.",
     howToGetThere: "Located on the Golden Circle, roughly 1.5 hours from Reykjavik.",
     cost: "Free admission.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/iceland-geysir-geothermal-area.jpg'
   },
   {
     name: "Jokulsarlon Glacier Lagoon",
@@ -69,7 +69,7 @@ export const icelandAttractions = [
     insiderTip: "Take a Zodiac tour instead of the amphibious boat for a closer, more personal encounter with the icebergs and glacier face.",
     howToGetThere: "About a 5-hour drive from Reykjavik along the South Coast (Route 1).",
     cost: "Free to view; boat tours range from $45 to $100+ USD.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/iceland-jokulsarlon-glacier-lagoon.jpg'
   },
   {
     name: "Skogafoss Waterfall",
@@ -81,7 +81,7 @@ export const icelandAttractions = [
     insiderTip: "Climb the 500+ steps to the top and continue hiking along the river for a few kilometers to discover dozens of smaller, pristine waterfalls.",
     howToGetThere: "Directly off the Ring Road (Route 1), about 2 hours south of Reykjavik.",
     cost: "Free admission and parking.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/iceland-skogafoss-waterfall.jpg'
   },
   {
     name: "Reynisfjara Black Sand Beach",
@@ -93,7 +93,7 @@ export const icelandAttractions = [
     insiderTip: "Never turn your back on the ocean; 'sneaker waves' are extremely dangerous and can sweep people out to sea unexpectedly.",
     howToGetThere: "Located just off Route 1, right before the town of Vík, about 2.5 hours from Reykjavik.",
     cost: "Free admission.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/iceland-reynisfjara-black-sand-beach.jpg'
   },
   {
     name: "Seljalandsfoss Waterfall",
@@ -105,7 +105,7 @@ export const icelandAttractions = [
     insiderTip: "Wear waterproof clothing, as you will definitely get wet walking behind the falls. Don't miss Gljúfrabúi, a hidden waterfall just a 5-minute walk away.",
     howToGetThere: "Right on the Ring Road (Route 1), roughly 1.5 hours from Reykjavik.",
     cost: "Free admission; small parking fee (approx. $6 USD).",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/iceland-seljalandsfoss-waterfall.jpg'
   },
   {
     name: "Vatnajokull National Park",
@@ -141,7 +141,7 @@ export const icelandAttractions = [
     insiderTip: "Visit the Dimmuborgir 'Dark Castles' lava field early in the day to enjoy the eerie, towering rock formations in peace.",
     howToGetThere: "Located on the Ring Road in North Iceland, about 6 hours drive or a short flight from Reykjavik to Akureyri.",
     cost: "Free to explore; Nature Baths entry around $45 USD.",
-    image: "https://loremflickr.com/1200/800/Lake,Myvatn,iceland/all?lock=22"
+    image: "/images/attractions/iceland-lake-myvatn.jpg"
   },
   {
     name: "Diamond Beach",
@@ -153,7 +153,7 @@ export const icelandAttractions = [
     insiderTip: "The ice distribution changes daily with the tide and lagoon output; explore both sides of the bridge for the best formations.",
     howToGetThere: "Located directly across the Ring Road (Route 1) from Jökulsárlón Glacier Lagoon.",
     cost: "Free admission.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/iceland-diamond-beach.jpg'
   },
   {
     name: "Dettifoss Waterfall",
@@ -165,7 +165,7 @@ export const icelandAttractions = [
     insiderTip: "Visit the East side (Road 864) for a closer, unprotected view of the drop, or the West side (Road 862) for paved paths and broader vistas.",
     howToGetThere: "In North Iceland, a detour off the Ring Road between Mývatn and Egilsstaðir.",
     cost: "Free admission.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/iceland-dettifoss-waterfall.jpg'
   },
   {
     name: "Hallgrimskirkja",
@@ -189,7 +189,7 @@ export const icelandAttractions = [
     insiderTip: "Hike the trail to the top of Eyjan, the rock island in the middle of the canyon, for breathtaking views straight down the center of the horseshoe.",
     howToGetThere: "Part of the Diamond Circle route in North Iceland, about 1 hour from Húsavík.",
     cost: "Free admission.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/iceland-asbyrgi-canyon.jpg'
   },
   {
     name: "Kirkjufell Mountain",
@@ -201,7 +201,7 @@ export const icelandAttractions = [
     insiderTip: "Walk down to the lower level of the waterfall to capture the classic shot of the falls with the mountain perfectly framed in the background.",
     howToGetThere: "On the north coast of the Snæfellsnes Peninsula, near the town of Grundarfjörður.",
     cost: "Free admission; parking fee applies (approx. $5 USD).",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/iceland-kirkjufell-mountain.jpg'
   },
   {
     name: "Landmannalaugar",
@@ -213,7 +213,7 @@ export const icelandAttractions = [
     insiderTip: "Hike up Mount Bláhnjúkur (Blue Peak) for the best panoramic view of the incredibly colorful rhyolite mountains.",
     howToGetThere: "Requires a 4x4 vehicle to navigate the highland F-roads; about a 3.5-hour drive from Reykjavik.",
     cost: "Free to visit; guided super-jeep tours from $250-$400+ USD.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/iceland-landmannalaugar.jpg'
   },
   {
     name: "Húsavík (Whale Watching)",
@@ -225,7 +225,7 @@ export const icelandAttractions = [
     insiderTip: "Book a tour on a carbon-neutral electric oak boat for a silent, environmentally friendly experience that doesn't disturb the whales.",
     howToGetThere: "Located in North Iceland, about an hour drive east of Akureyri.",
     cost: "Whale watching tours range from $85 to $200+ USD.",
-    image: "https://loremflickr.com/1200/800/Hsavk,Whale,iceland/all?lock=23"
+    image: "/images/attractions/iceland-husavik-whale-watching.jpg"
   },
   {
     name: "Westfjords",

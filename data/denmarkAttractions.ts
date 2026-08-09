@@ -9,7 +9,7 @@ export const denmarkAttractions = [
     insiderTip: "Buy a beer from a nearby convenience store and sit on the canal edge like the locals rather than paying premium cafe prices. The sunny side (north) fills up first.",
     howToGetThere: "Metro to Kongens Nytorv, then a 2-minute walk.",
     cost: "Free to visit.",
-    image: "https://loremflickr.com/1200/800/Nyhavn,Copenhagen/all?lock=401"
+    image: "/images/attractions/denmark-nyhavn.jpg"
   },
   {
     name: "Tivoli Gardens",
@@ -21,7 +21,7 @@ export const denmarkAttractions = [
     insiderTip: "Visit on a Friday night for the free concert series featuring major international and Danish acts. The Demon roller coaster offers spectacular views of Copenhagen at its peak.",
     howToGetThere: "Directly opposite Copenhagen Central Station.",
     cost: "Entry €19; rides purchased separately or unlimited ride pass €29.",
-    image: "https://loremflickr.com/1200/800/Tivoli,Gardens,Copenhagen/all?lock=402"
+    image: "/images/attractions/denmark-tivoli-gardens.jpg"
   },
   {
     name: "The Little Mermaid",
@@ -33,7 +33,7 @@ export const denmarkAttractions = [
     insiderTip: "Combine the visit with a walk through the nearby star-shaped Kastellet fortress and the stunning Gefion Fountain. Visit at sunrise for the most atmospheric experience.",
     howToGetThere: "Bus to Langelinie, or a 20-minute walk from Nyhavn along the waterfront.",
     cost: "Free.",
-    image: "https://loremflickr.com/1200/800/Little,Mermaid,Copenhagen/all?lock=403"
+    image: "/images/attractions/denmark-the-little-mermaid.jpg"
   },
   {
     name: "Kronborg Castle",
@@ -45,7 +45,7 @@ export const denmarkAttractions = [
     insiderTip: "Time your visit for a Hamlet performance in the castle courtyard — it's performed annually by international theater companies. The underground casemates are atmospheric but bring a jacket, as they're cold year-round.",
     howToGetThere: "Train from Copenhagen to Helsingør (45 minutes), then a 15-minute walk.",
     cost: "DKK 95 (approx. €13) for adults.",
-    image: "https://loremflickr.com/1200/800/Kronborg,Castle,Denmark/all?lock=404"
+    image: "/images/attractions/denmark-kronborg-castle.jpg"
   },
   {
     name: "Legoland Billund",
@@ -57,7 +57,7 @@ export const denmarkAttractions = [
     insiderTip: "Combine with a visit to the LEGO House in town (separate ticket) for the ultimate Lego experience. Start at the back of the park and work forward to avoid the initial crowds.",
     howToGetThere: "Fly to Billund Airport (adjacent) or train from Copenhagen to Vejle, then bus.",
     cost: "DKK 379 (approx. €51) for ages 3+; free for under 3s.",
-    image: "https://loremflickr.com/1200/800/Legoland,Billund/all?lock=405"
+    image: "/images/attractions/denmark-legoland-billund.jpg"
   },
   {
     name: "Skagen",
@@ -69,7 +69,7 @@ export const denmarkAttractions = [
     insiderTip: "Visit Grenen at sunset when the collision of the two seas is most dramatic. The Tractor Bus (Sandormen) takes you to the tip if walking on the beach isn't your style.",
     howToGetThere: "Train from Copenhagen to Frederikshavn (5 hours), then bus to Skagen.",
     cost: "Free to visit Grenen; Skagen Museum DKK 100.",
-    image: "https://loremflickr.com/1200/800/Skagen,Denmark/all?lock=406"
+    image: "/images/attractions/denmark-skagen.jpg"
   },
   {
     name: "Frederiksborg Castle",
@@ -81,7 +81,7 @@ export const denmarkAttractions = [
     insiderTip: "Cross the lake to the Baroque garden for the best castle photographs. The castle chapel hosts free organ concerts on Thursday afternoons — the acoustics and setting are sublime.",
     howToGetThere: "S-train from Copenhagen to Hillerød (40 minutes), then a 15-minute walk.",
     cost: "DKK 90 (approx. €12) for adults.",
-    image: "https://loremflickr.com/1200/800/Frederiksborg,Castle/all?lock=407"
+    image: "/images/attractions/denmark-frederiksborg-castle.jpg"
   },
   {
     name: "Christiania",
@@ -93,7 +93,7 @@ export const denmarkAttractions = [
     insiderTip: "Take a guided tour to understand the community's complex history and current challenges. Morgenstedet restaurant serves exceptional vegetarian food in a garden setting. Respect the no-photography rule on Pusher Street.",
     howToGetThere: "Metro to Christianshavn, then a 5-minute walk.",
     cost: "Free to enter; guided tours available for DKK 40.",
-    image: "https://loremflickr.com/1200/800/Christiania,Copenhagen/all?lock=408"
+    image: "/images/attractions/denmark-christiania.jpg"
   },
   {
     name: "Roskilde Cathedral",
@@ -105,7 +105,7 @@ export const denmarkAttractions = [
     insiderTip: "Combine with a visit to the Viking Ship Museum on Roskilde's waterfront, housing five original Viking ships recovered from the fjord.",
     howToGetThere: "Train from Copenhagen (25 minutes).",
     cost: "DKK 60 (approx. €8).",
-    image: "https://loremflickr.com/1200/800/Roskilde,Cathedral/all?lock=409"
+    image: "/images/attractions/denmark-roskilde-cathedral.jpg"
   },
   {
     name: "Mons Klint",
@@ -117,7 +117,7 @@ export const denmarkAttractions = [
     insiderTip: "Descend the 497 steps to the beach for a completely different perspective and to search for fossil sea urchins. Stay after dark for some of the best stargazing in Northern Europe.",
     howToGetThere: "Drive from Copenhagen (2 hours) via the Farø Bridges.",
     cost: "GeoCenter DKK 120; cliff access free.",
-    image: "https://loremflickr.com/1200/800/Mons,Klint,Denmark/all?lock=410"
+    image: "/images/attractions/denmark-mons-klint.jpg"
   },
   {
     name: "Aarhus Old Town (Den Gamle By)",
@@ -129,7 +129,7 @@ export const denmarkAttractions = [
     insiderTip: "The 1970s street is surprisingly the most popular section — the nostalgia factor is powerful. Visit during the Christmas season when the entire museum is transformed with candles, mulled wine, and traditional festivities.",
     howToGetThere: "15-minute walk from Aarhus Central Station.",
     cost: "DKK 170 (approx. €23) in summer.",
-    image: "https://loremflickr.com/1200/800/Den,Gamle,By,Aarhus/all?lock=411"
+    image: "/images/attractions/denmark-aarhus-old-town-den-gamle-by.jpg"
   },
   {
     name: "Louisiana Museum of Modern Art",
@@ -141,7 +141,7 @@ export const denmarkAttractions = [
     insiderTip: "Take the coastal train for scenic views en route. Spend time in the sculpture garden before entering — the outdoor works by Calder, Henry Moore, and others set against the sea are magnificent.",
     howToGetThere: "Train from Copenhagen to Humlebæk (35 minutes), then a 10-minute walk.",
     cost: "DKK 145 (approx. €20).",
-    image: "https://loremflickr.com/1200/800/Louisiana,Museum,Denmark/all?lock=412"
+    image: "/images/attractions/denmark-louisiana-museum-of-modern-art.jpg"
   },
   {
     name: "Viking Ship Museum",
@@ -153,7 +153,7 @@ export const denmarkAttractions = [
     insiderTip: "Book a Viking ship sailing experience in advance — it's the highlight and fills up quickly. Watch the boatyard craftsmen working with Viking-era tools and techniques.",
     howToGetThere: "Train from Copenhagen to Roskilde (25 minutes), then a 15-minute walk to the harbor.",
     cost: "DKK 135 (approx. €18); Viking sailing DKK 80 extra.",
-    image: "https://loremflickr.com/1200/800/Viking,Ship,Museum/all?lock=413"
+    image: "/images/attractions/denmark-viking-ship-museum.jpg"
   },
   {
     name: "Bornholm Island",
@@ -165,7 +165,7 @@ export const denmarkAttractions = [
     insiderTip: "Cycle the coastal path from Gudhjem to Svaneke, stopping at smokehouses for Sol over Gudhjem (sun over Gudhjem — smoked herring with egg yolk). Visit Hammershus Castle at sunset for dramatic lighting.",
     howToGetThere: "Ferry from Ystad, Sweden (1.5 hours) or fly from Copenhagen (30 minutes).",
     cost: "Ferry from DKK 200 return.",
-    image: "https://loremflickr.com/1200/800/Bornholm,Denmark/all?lock=414"
+    image: "/images/attractions/denmark-bornholm-island.jpg"
   },
   {
     name: "Rosenborg Castle",
@@ -177,7 +177,7 @@ export const denmarkAttractions = [
     insiderTip: "Visit the crown jewels in the basement first before they get crowded. The King's Garden is where locals go for summer picnics — bring a blanket and join them.",
     howToGetThere: "Metro to Nørreport, then a 5-minute walk.",
     cost: "DKK 120 (approx. €16).",
-    image: "https://loremflickr.com/1200/800/Rosenborg,Castle,Copenhagen/all?lock=415"
+    image: "/images/attractions/denmark-rosenborg-castle.jpg"
   },
   {
     name: "Wadden Sea National Park",
@@ -189,7 +189,7 @@ export const denmarkAttractions = [
     insiderTip: "Book a 'Sort Sol' (Black Sun) guided tour in September for the starling murmuration — it's best seen from the marshes near Tønder. Try an oyster safari at low tide for a memorable culinary adventure.",
     howToGetThere: "Train to Ribe or Tønder from Copenhagen (3-4 hours), then local transport.",
     cost: "Free to visit; guided tours from DKK 150.",
-    image: "https://loremflickr.com/1200/800/Wadden,Sea,Denmark/all?lock=416"
+    image: "/images/attractions/denmark-wadden-sea-national-park.jpg"
   },
   {
     name: "Amalienborg Palace",
@@ -201,7 +201,7 @@ export const denmarkAttractions = [
     insiderTip: "Arrive by 11:30 AM to secure a good viewing spot for the changing of the guard. The waterfront behind the palace offers beautiful views of the Opera House across the harbor.",
     howToGetThere: "Metro to Marmorkirken or bus to Amalienborg.",
     cost: "Museum DKK 120; guard change free to watch.",
-    image: "https://loremflickr.com/1200/800/Amalienborg,Palace/all?lock=417"
+    image: "/images/attractions/denmark-amalienborg-palace.jpg"
   },
   {
     name: "Ribe",
@@ -213,7 +213,7 @@ export const denmarkAttractions = [
     insiderTip: "Join the night watchman's tour at 10 PM — it's free, atmospheric, and one of Denmark's most charming cultural experiences. Visit the VikingeCenter for interactive Viking life demonstrations.",
     howToGetThere: "Train from Copenhagen (3 hours) or Esbjerg (40 minutes).",
     cost: "Free to explore; VikingeCenter DKK 150.",
-    image: "https://loremflickr.com/1200/800/Ribe,Denmark,medieval/all?lock=418"
+    image: "/images/attractions/denmark-ribe.jpg"
   },
   {
     name: "Nationalmuseet",
@@ -225,7 +225,7 @@ export const denmarkAttractions = [
     insiderTip: "The Victorian Apartment collection on the upper floors is often empty — it's a fascinating time capsule of 19th-century Danish bourgeois life. The museum's courtyard cafe serves excellent Danish open-faced sandwiches (smørrebrød).",
     howToGetThere: "Bus to Stormbroen, or 10-minute walk from Copenhagen Central Station.",
     cost: "Free (permanent exhibitions).",
-    image: "https://loremflickr.com/1200/800/National,Museum,Copenhagen/all?lock=419"
+    image: "/images/attractions/denmark-nationalmuseet.jpg"
   },
   {
     name: "Djurs Sommerland",
@@ -237,6 +237,6 @@ export const denmarkAttractions = [
     insiderTip: "Arrive when gates open and head straight to Piraten — the queue grows dramatically by midday. The waterpark area is included in admission and is perfect for hot summer afternoons.",
     howToGetThere: "Drive from Aarhus (45 minutes); seasonal shuttle buses available.",
     cost: "DKK 359 (approx. €48) for all ages.",
-    image: "https://loremflickr.com/1200/800/Djurs,Sommerland/all?lock=420"
+    image: "/images/attractions/denmark-djurs-sommerland.jpg"
   }
 ];

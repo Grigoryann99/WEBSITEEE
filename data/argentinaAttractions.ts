@@ -153,7 +153,7 @@ export const argentinaAttractions = [
     insiderTip: "Bring creative props like toy dinosaurs or distinctive hats to fully exploit the lack of perspective for incredible, surreal optical illusion photographs.",
     howToGetThere: "Accessible via a spectacular, winding drive along Route 52 from the picturesque village of Purmamarca.",
     cost: "$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/argentina-salinas-grandes.jpg'
   },
   {
     name: "Cordoba (Jesuit Block)",
@@ -201,7 +201,7 @@ export const argentinaAttractions = [
     insiderTip: "Stay in a traditional, remote eco-lodge to experience spectacular, completely unpolluted night skies and profoundly peaceful sunrises over the expansive marshes.",
     howToGetThere: "Fly to Posadas (PSS) or Corrientes, followed by a sturdy 4x4 transfer into the deeply protected heart of the reserve.",
     cost: "$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/argentina-ibera-wetlands.jpg'
   },
   {
     name: "Cueva de las Manos",

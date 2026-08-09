@@ -9,7 +9,7 @@ export const costaRicaAttractions = [
     insiderTip: "For the best chance of a clear view of the peak, wake up early; clouds often roll in by mid-morning.",
     howToGetThere: "About a 2.5 to 3-hour drive from San Jose (SJO) or Liberia (LIR) international airports.",
     cost: "$15 USD for National Park entry; hot springs and tours vary widely.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/costa-rica-arenal-volcano.jpg'
   },
   {
     name: "Monteverde Cloud Forest",
@@ -21,7 +21,7 @@ export const costaRicaAttractions = [
     insiderTip: "Take a guided night tour; a huge percentage of the forest's wildlife is nocturnal and only comes alive after dark.",
     howToGetThere: "Approximately a 3-hour drive from San Jose or Liberia, with the final stretch being unpaved and bumpy.",
     cost: "$25 USD for adult reserve entry; guided tours are highly recommended and cost extra.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/costa-rica-monteverde-cloud-forest.jpg'
   },
   {
     name: "Manuel Antonio National Park",
@@ -33,7 +33,7 @@ export const costaRicaAttractions = [
     insiderTip: "Arrive right when the park opens at 7:00 AM to beat the crowds and experience peak wildlife activity.",
     howToGetThere: "A 2.5-hour drive from San Jose, or a short domestic flight to Quepos airport followed by a 15-minute drive.",
     cost: "$18 USD for adult entry; tickets must be purchased online in advance.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/costa-rica-manuel-antonio-national-park.jpg'
   },
   {
     name: "Tortuguero National Park",
@@ -45,7 +45,7 @@ export const costaRicaAttractions = [
     insiderTip: "Opt for a silent, paddle-powered canoe tour rather than a motorboat to get much closer to sensitive wildlife.",
     howToGetThere: "Domestic flight from San Jose, or a drive to La Pavona followed by a scenic 1-hour boat ride.",
     cost: "$15 USD for park entry; turtle nesting tours require an authorized guide (around $35 USD).",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/costa-rica-tortuguero-national-park.jpg'
   },
   {
     name: "Corcovado National Park",
@@ -57,7 +57,7 @@ export const costaRicaAttractions = [
     insiderTip: "Base yourself in Drake Bay and take a boat to Sirena Station, where wildlife density is the highest.",
     howToGetThere: "Domestic flight to Drake Bay or Puerto Jimenez, followed by a boat or 4x4 ride.",
     cost: "$15 USD park entry; however, entering without a certified local guide is strictly prohibited and costs vary.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/costa-rica-corcovado-national-park.jpg'
   },
   {
     name: "Tamarindo",
@@ -69,7 +69,7 @@ export const costaRicaAttractions = [
     insiderTip: "Escape the main beach crowds by taking a short panga (water taxi) ride across the estuary to the pristine Playa Grande.",
     howToGetThere: "A 1-hour drive from Liberia International Airport (LIR).",
     cost: "Free to visit the beach; surf lessons and board rentals average $50-$70 USD.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/costa-rica-tamarindo.jpg'
   },
   {
     name: "La Fortuna Waterfall",
@@ -81,7 +81,7 @@ export const costaRicaAttractions = [
     insiderTip: "Wear sturdy water shoes; the rocks around the base and swimming areas can be incredibly slippery.",
     howToGetThere: "A quick 10-minute drive or taxi ride from downtown La Fortuna.",
     cost: "$18 USD entrance fee, which goes directly to the local conservation association.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/costa-rica-la-fortuna-waterfall.jpg'
   },
   {
     name: "Poas Volcano",
@@ -93,7 +93,7 @@ export const costaRicaAttractions = [
     insiderTip: "Tickets are strictly limited and sell out quickly; you must purchase them online well in advance of your visit.",
     howToGetThere: "An easy 1.5-hour drive from San Jose through scenic coffee plantations.",
     cost: "$15 USD for adult entry plus a parking fee; advance online reservations only.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/costa-rica-poas-volcano.jpg'
   },
   {
     name: "Celeste River (Rio Celeste)",
@@ -105,7 +105,7 @@ export const costaRicaAttractions = [
     insiderTip: "Swimming is strictly prohibited inside the national park to protect the ecosystem, but you can swim in the river just outside the park boundaries.",
     howToGetThere: "About a 1.5-hour drive from La Fortuna or a 2-hour drive from Liberia.",
     cost: "$12 USD for national park entry; guided tours are optional.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/costa-rica-celeste-river-rio-celeste.jpg'
   },
   {
     name: "Cahuita National Park",
@@ -117,7 +117,7 @@ export const costaRicaAttractions = [
     insiderTip: "Enter through the Kelly Creek station in Cahuita town to pay by donation; the Puerto Vargas entrance charges a fixed fee.",
     howToGetThere: "A 4-hour drive from San Jose, or a short bus ride south from Puerto Viejo.",
     cost: "Donation-based at the main Cahuita town entrance; $5 USD at the Puerto Vargas entrance.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/costa-rica-cahuita-national-park.jpg'
   },
   {
     name: "Nicoya Peninsula",
@@ -129,7 +129,7 @@ export const costaRicaAttractions = [
     insiderTip: "Embrace the local diet of black beans, corn, squash, and fresh fruit—key elements of the Blue Zone longevity secret.",
     howToGetThere: "Drive from Liberia (LIR) or take the scenic Puntarenas ferry across the Gulf of Nicoya.",
     cost: "Free to explore; costs vary widely depending on towns and activities chosen.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/costa-rica-nicoya-peninsula.jpg'
   },
   {
     name: "San Jose (National Theatre)",
@@ -141,7 +141,7 @@ export const costaRicaAttractions = [
     insiderTip: "Check the schedule in advance; attending a live performance of the National Symphony Orchestra here is unforgettable.",
     howToGetThere: "Located directly in the downtown core of San Jose at the Plaza de la Cultura.",
     cost: "Approximately $10 USD for a guided historical tour.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/costa-rica-san-jose-national-theatre.jpg'
   },
   {
     name: "Rincon de la Vieja",
@@ -153,7 +153,7 @@ export const costaRicaAttractions = [
     insiderTip: "Hike the Las Pailas loop early in the morning, then spend the afternoon soaking in one of the natural volcanic mud baths at nearby lodges.",
     howToGetThere: "A straightforward 45-minute drive from Liberia International Airport (LIR).",
     cost: "$15 USD for national park entry; adventure tours are priced separately.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/costa-rica-rincon-de-la-vieja.jpg'
   },
   {
     name: "Irazu Volcano",
@@ -165,7 +165,7 @@ export const costaRicaAttractions = [
     insiderTip: "Bring a warm jacket and pants; temperatures at the summit frequently drop to near freezing.",
     howToGetThere: "About a 1.5 to 2-hour drive from San Jose, winding through scenic agricultural lands.",
     cost: "$15 USD for adult entry; advance online reservations are required.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/costa-rica-irazu-volcano.jpg'
   },
   {
     name: "Tabacon Hot Springs",
@@ -177,7 +177,7 @@ export const costaRicaAttractions = [
     insiderTip: "Book an evening pass that includes a buffet dinner, and explore the upper pools where the water is hottest and most secluded.",
     howToGetThere: "About a 15-minute drive from the center of La Fortuna town.",
     cost: "Day passes range from $70 to $105 USD depending on meal inclusions.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/costa-rica-tabacon-hot-springs.jpg'
   },
   {
     name: "Nosara",
@@ -189,7 +189,7 @@ export const costaRicaAttractions = [
     insiderTip: "Rent an ATV or a golf cart; it is the primary and most fun way to navigate the sprawling, unpaved dirt roads of the town.",
     howToGetThere: "A 2.5-hour drive from Liberia (LIR) or a short domestic flight to the local Nosara airstrip.",
     cost: "Free beach access; premium yoga classes and dining are relatively expensive.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/costa-rica-nosara.jpg'
   },
   {
     name: "Puerto Viejo de Talamanca",
@@ -201,7 +201,7 @@ export const costaRicaAttractions = [
     insiderTip: "Rent a beach cruiser bicycle to easily explore the beautiful string of beaches stretching down to Manzanillo.",
     howToGetThere: "A 4 to 5-hour drive or shuttle ride from San Jose.",
     cost: "Free beach access; food and accommodations offer a wide range of affordable to moderate options.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/costa-rica-puerto-viejo-de-talamanca.jpg'
   },
   {
     name: "Uvita (Whale Tail)",
@@ -213,7 +213,7 @@ export const costaRicaAttractions = [
     insiderTip: "Check the local tide charts carefully; you can only walk out onto the 'Whale Tail' sandbar during low tide.",
     howToGetThere: "A 3.5 to 4-hour drive south from San Jose along the well-paved Costanera Sur highway.",
     cost: "$6 USD for Marino Ballena National Park entry; whale watching boat tours are extra.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/costa-rica-uvita-whale-tail.jpg'
   },
   {
     name: "Braulio Carrillo",
@@ -225,7 +225,7 @@ export const costaRicaAttractions = [
     insiderTip: "Take the Rainforest Aerial Tram tour to see the canopy-level flora and fauna that you simply cannot see from the ground.",
     howToGetThere: "A 30 to 45-minute drive from downtown San Jose via Route 32.",
     cost: "$12 USD for basic park entry; the Aerial Tram and guided tours cost around $60-$80 USD.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/costa-rica-braulio-carrillo.jpg'
   },
   {
     name: "Drake Bay",
@@ -237,6 +237,6 @@ export const costaRicaAttractions = [
     insiderTip: "Opt for the scenic boat taxi ride down the Sierpe River to arrive in Drake Bay; it acts as a phenomenal wildlife tour in itself.",
     howToGetThere: "Domestic flight from San Jose, or drive to Sierpe and take a 1-hour boat ride through the mangroves.",
     cost: "Access is free, but premium eco-lodges and required guided tours in the region are quite expensive.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/costa-rica-drake-bay.jpg'
   }
 ];

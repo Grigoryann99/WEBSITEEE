@@ -189,7 +189,7 @@ export const finlandAttractions = [
     insiderTip: "Rent a canoe and paddle along the 'Prehistoric Painting Route' — the red ochre figures painted by Stone Age people on the lakeside cliffs are accessible only by water and are genuinely moving to see.",
     howToGetThere: "Drive from Kuusamo (1 hour) or Kajaani (2 hours). No public transport to the park.",
     cost: "Park free. Canoe rental from €40/day.",
-    image: "https://loremflickr.com/1200/800/Hossa,National,finland/all?lock=8"
+    image: "/images/attractions/finland-hossa-national-park.jpg"
   },
   {
     name: "Riisitunturi National Park",
@@ -225,7 +225,7 @@ export const finlandAttractions = [
     insiderTip: "The Moomin Museum within Vapriikki is the world's only museum dedicated to Tove Jansson's Moomin characters — featuring original illustrations and the extraordinary diorama scenes. Essential for Moomin fans of any age.",
     howToGetThere: "5-minute walk from Tampere Central Station along the river.",
     cost: "Adults €15. Includes all permanent collections.",
-    image: "https://loremflickr.com/1200/800/Tampere,Vapriikki,finland/all?lock=9"
+    image: "/images/attractions/finland-tampere-vapriikki-museum.jpg"
   },
   {
     name: "Midnight Sun Experience",

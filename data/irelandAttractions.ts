@@ -9,7 +9,7 @@ export const irelandAttractions = [
     insiderTip: "Walk south along the cliff path past the official viewing areas to the Hag's Head — far fewer crowds and equally stunning views. Visit near sunset for magical golden light.",
     howToGetThere: "Bus Éireann from Galway (2 hours) or drive from Shannon Airport (1 hour).",
     cost: "Parking €8 (includes visitor center).",
-    image: "https://loremflickr.com/1200/800/Cliffs,Moher/all?lock=301"
+    image: "/images/attractions/ireland-cliffs-of-moher.jpg"
   },
   {
     name: "Ring of Kerry",
@@ -21,7 +21,7 @@ export const irelandAttractions = [
     insiderTip: "Drive the ring counter-clockwise to avoid tour bus traffic (buses must go clockwise). Better yet, cycle the Ring of Kerry for an immersive multi-day experience.",
     howToGetThere: "Start and end in Killarney, accessible by train from Dublin (3.5 hours).",
     cost: "Free to drive; Muckross House €9.",
-    image: "https://loremflickr.com/1200/800/Ring,Kerry,Ireland/all?lock=302"
+    image: "/images/attractions/ireland-ring-of-kerry.jpg"
   },
   {
     name: "Giant's Causeway",
@@ -33,7 +33,7 @@ export const irelandAttractions = [
     insiderTip: "Arrive before 10 AM or after 4 PM when most tour groups have left. Walk the cliff-top path from the visitor center rather than the road for spectacular views before descending to the columns.",
     howToGetThere: "Bus from Belfast (2.5 hours) or drive via the scenic Causeway Coastal Route.",
     cost: "Parking and visitor center £13.",
-    image: "https://loremflickr.com/1200/800/Giants,Causeway/all?lock=303"
+    image: "/images/attractions/ireland-giant.jpg"
   },
   {
     name: "Trinity College & Book of Kells",
@@ -45,7 +45,7 @@ export const irelandAttractions = [
     insiderTip: "Book the first or last timed entry slot online for the smallest crowds. The free campus walking tour by Trinity students is both informative and entertaining.",
     howToGetThere: "In the heart of Dublin, walking distance from all city center areas.",
     cost: "€18 for adults (Book of Kells + Long Room).",
-    image: "https://loremflickr.com/1200/800/Trinity,College,Dublin/all?lock=304"
+    image: "/images/attractions/ireland-trinity-college-book-of-kells.jpg"
   },
   {
     name: "Skellig Michael",
@@ -57,7 +57,7 @@ export const irelandAttractions = [
     insiderTip: "Only a limited number of visitors can land each day — book your boat trip months in advance with a licensed operator from Portmagee or Ballinskelligs.",
     howToGetThere: "Boat from Portmagee or Ballinskelligs (45-minute crossing, weather dependent).",
     cost: "Boat trip approximately €100-120 per person.",
-    image: "https://loremflickr.com/1200/800/Skellig,Michael,Ireland/all?lock=305"
+    image: "/images/attractions/ireland-skellig-michael.jpg"
   },
   {
     name: "Guinness Storehouse",
@@ -69,7 +69,7 @@ export const irelandAttractions = [
     insiderTip: "Upgrade to the Connoisseur Experience for an intimate guided tasting. Skip the Gravity Bar at peak times and enjoy your pint at the less crowded Brewers' Dining Hall on the 5th floor.",
     howToGetThere: "Bus 13 or 40 from Dublin city center, or a 20-minute walk from Temple Bar.",
     cost: "€26 for adults (includes a pint).",
-    image: "https://loremflickr.com/1200/800/Guinness,Storehouse,Dublin/all?lock=306"
+    image: "/images/attractions/ireland-guinness-storehouse.jpg"
   },
   {
     name: "Killarney National Park",

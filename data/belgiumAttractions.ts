@@ -9,7 +9,7 @@ export const belgiumAttractions = [
     insiderTip: "Visit at dawn or late at night to experience the square's magic without the overwhelming crowds, and watch the buildings illuminate spectacularly.",
     howToGetThere: "A short walk from Brussels Central Station.",
     cost: "Free to visit the square; nearby museums vary.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/belgium-grand-place.jpg'
   },
   {
     name: "Atomium",
@@ -21,7 +21,7 @@ export const belgiumAttractions = [
     insiderTip: "Book your tickets online in advance to skip the notoriously long queues, and make a reservation at the panoramic restaurant for sunset dining.",
     howToGetThere: "Take Metro line 6 to Heysel station.",
     cost: "€16 for adults, discounts available.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/belgium-atomium.jpg'
   },
   {
     name: "Bruges Canals",
@@ -33,7 +33,7 @@ export const belgiumAttractions = [
     insiderTip: "Opt for the earliest boat tour of the day to enjoy the morning mist and glassy waters before the throngs of day-trippers arrive.",
     howToGetThere: "Walk from Bruges train station to various boarding points in the historic center.",
     cost: "Around €12 for a 30-minute boat tour.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/belgium-bruges-canals.jpg'
   },
   {
     name: "Ghent Altarpiece & Belfry",
@@ -45,7 +45,7 @@ export const belgiumAttractions = [
     insiderTip: "Take advantage of the cathedral's augmented reality tour to uncover the hidden histories and intricate details of the altarpiece's newly restored panels.",
     howToGetThere: "Located in the heart of Ghent, easily accessible by tram line 1 from Gent-Sint-Pieters station.",
     cost: "Cathedral is free; Altarpiece viewing is €12; Belfry is €11.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/belgium-ghent-altarpiece-belfry.jpg'
   },
   {
     name: "Waterloo Battlefield",
@@ -57,7 +57,7 @@ export const belgiumAttractions = [
     insiderTip: "Visit around June 18th to witness spectacular historical reenactments featuring thousands of enthusiasts in authentic period uniforms.",
     howToGetThere: "Take a train to Waterloo station, followed by a short bus ride (Line W) to the site.",
     cost: "Around €23 for a multi-attraction pass.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/belgium-waterloo-battlefield.jpg'
   },
   {
     name: "Manneken Pis",
@@ -69,7 +69,7 @@ export const belgiumAttractions = [
     insiderTip: "Don't miss his lesser-known 'siblings', Jeanneke Pis (the little girl) and Zinneke Pis (the dog), hidden in nearby alleys.",
     howToGetThere: "A five-minute walk from the Grand Place in central Brussels.",
     cost: "Free to view the statue; Museum entry is €8.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/belgium-manneken-pis.jpg'
   },
   {
     name: "Dinant Citadel",
@@ -81,7 +81,7 @@ export const belgiumAttractions = [
     insiderTip: "Take the cable car up but walk down the 408 steps to fully appreciate the sheer verticality and defensive brilliance of the cliff face.",
     howToGetThere: "Train to Dinant station, then a short walk across the Charles de Gaulle bridge.",
     cost: "€12, which includes the cable car ride.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/belgium-dinant-citadel.jpg'
   },
   {
     name: "Royal Palace of Brussels",
@@ -93,7 +93,7 @@ export const belgiumAttractions = [
     insiderTip: "The palace is only open for about six weeks during the summer; book your free tickets online immediately as they release, as slots fill up fast.",
     howToGetThere: "Metro lines 1 or 5 to Parc/Park station.",
     cost: "Free during summer opening.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/belgium-royal-palace-of-brussels.jpg'
   },
   {
     name: "Royal Greenhouses of Laeken",
@@ -105,7 +105,7 @@ export const belgiumAttractions = [
     insiderTip: "Visit during the evening openings when the greenhouses and flora are dramatically illuminated, creating a truly magical and romantic experience.",
     howToGetThere: "Bus 53 or tram 3 to the Araucaria or De Wand stops.",
     cost: "Around €5 (advance booking strictly required).",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/belgium-royal-greenhouses-of-laeken.jpg'
   },
   {
     name: "Antwerp Central Station",
@@ -117,7 +117,7 @@ export const belgiumAttractions = [
     insiderTip: "Head to the uppermost level to appreciate the dizzying height of the iron and glass train shed, then look down through the multi-tiered tracks.",
     howToGetThere: "Located in the center of Antwerp, it is the city's main railway hub.",
     cost: "Free.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/belgium-antwerp-central-station.jpg'
   },
   {
     name: "In Flanders Fields Museum",
@@ -129,7 +129,7 @@ export const belgiumAttractions = [
     insiderTip: "Combine your visit with the daily Last Post ceremony at the nearby Menin Gate, which takes place every evening at 8:00 PM precisely.",
     howToGetThere: "A short walk from Ypres (Ieper) train station.",
     cost: "€12 for adults.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/belgium-in-flanders-fields-museum.jpg'
   },
   {
     name: "Hallerbos (Blue Forest)",
@@ -141,7 +141,7 @@ export const belgiumAttractions = [
     insiderTip: "Arrive on a weekday at sunrise to capture the mystical morning fog rolling over the flowers without the intense weekend crowds.",
     howToGetThere: "Train to Halle, followed by a free shuttle bus or rented bicycle to the forest edge.",
     cost: "Free.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/belgium-hallerbos-blue-forest.jpg'
   },
   {
     name: "Gravensteen Castle",
@@ -153,7 +153,7 @@ export const belgiumAttractions = [
     insiderTip: "Make sure to grab the highly entertaining and unconventional audio guide, which makes the history of the fortress incredibly fun and memorable.",
     howToGetThere: "Take tram 1 or 4 from Gent-Sint-Pieters station to the Gravensteen stop.",
     cost: "€13 for adults.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/belgium-gravensteen-castle.jpg'
   },
   {
     name: "Mini-Europe",
@@ -165,7 +165,7 @@ export const belgiumAttractions = [
     insiderTip: "Purchase a combined ticket for both Mini-Europe and the adjacent Atomium to save money and enjoy a full day of unique attractions.",
     howToGetThere: "Take Metro line 6 to Heysel station.",
     cost: "€19 for adults.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/belgium-mini-europe.jpg'
   },
   {
     name: "Cathedral of Our Lady (Antwerp)",
@@ -177,7 +177,7 @@ export const belgiumAttractions = [
     insiderTip: "Check the schedule for the carillon concerts; hearing the bells ring out over the surrounding historic squares is a magical experience.",
     howToGetThere: "Located in the historic center of Antwerp, a 15-minute walk from Central Station.",
     cost: "€12 for adult entry.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/belgium-cathedral-of-our-lady-antwerp.jpg'
   },
   {
     name: "Mechelen Old Town",
@@ -189,7 +189,7 @@ export const belgiumAttractions = [
     insiderTip: "Take a stroll along the floating Dyle Path (Dijlepad) at twilight for a beautifully illuminated, romantic perspective of the old town's rear facades.",
     howToGetThere: "A 20-minute train ride from either Brussels or Antwerp.",
     cost: "Free to wander; St. Rumbold's Tower climb is €8.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/belgium-mechelen-old-town.jpg'
   },
   {
     name: "Leuven Town Hall",
@@ -201,7 +201,7 @@ export const belgiumAttractions = [
     insiderTip: "Join the daily guided tour at 3:00 PM, which is the only way to access the opulent interior salons and historical council chambers.",
     howToGetThere: "A 15-minute walk from Leuven train station.",
     cost: "€4 for the guided interior tour; exterior viewing is free.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/belgium-leuven-town-hall.jpg'
   },
   {
     name: "Beguinage (Bruges)",
@@ -213,7 +213,7 @@ export const belgiumAttractions = [
     insiderTip: "Respect the signs requesting silence; the quietness is strictly enforced, which truly enhances the mystical and peaceful atmosphere of the complex.",
     howToGetThere: "A short walk from the Minnewaterpark near the Bruges train station.",
     cost: "Free to enter the courtyard; the small museum house is €2.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/belgium-beguinage-bruges.jpg'
   },
   {
     name: "Bouillon Castle",
@@ -225,7 +225,7 @@ export const belgiumAttractions = [
     insiderTip: "Try the night tour during the summer months, where the castle is explored exclusively by the evocative light of flaming torches.",
     howToGetThere: "Best reached by car; approximately a 2-hour drive south from Brussels.",
     cost: "€11 for adults.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/belgium-bouillon-castle.jpg'
   },
   {
     name: "Sonian Forest",
@@ -237,6 +237,6 @@ export const belgiumAttractions = [
     insiderTip: "Rent a bicycle to cover more ground and visit the serene Rouge-Cloître Abbey nestled on the forest's edge for a picturesque lunch spot.",
     howToGetThere: "Accessible via various tram and train lines from Brussels, such as Tram 8 or 44.",
     cost: "Free.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/belgium-sonian-forest.jpg'
   }
 ];

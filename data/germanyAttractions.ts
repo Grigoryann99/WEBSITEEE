@@ -9,7 +9,7 @@ export const germanyAttractions = [
     insiderTip: "Visit at sunrise for virtually empty surroundings and golden light illuminating the Quadriga. The nearby Reichstag rooftop (free, reservation required) offers stunning aerial views.",
     howToGetThere: "U-Bahn/S-Bahn to Brandenburger Tor station.",
     cost: "Free to visit.",
-    image: "https://loremflickr.com/1200/800/Brandenburg,Gate/all?lock=201"
+    image: "/images/attractions/germany-brandenburg-gate.jpg"
   },
   {
     name: "Neuschwanstein Castle",
@@ -21,7 +21,7 @@ export const germanyAttractions = [
     insiderTip: "Book tickets online weeks in advance — walk-up tickets often sell out by 10 AM. Cross the Marienbrücke for the famous postcard view.",
     howToGetThere: "Train from Munich to Füssen (about 2 hours), then bus to the castle base.",
     cost: "€15 for adults.",
-    image: "https://loremflickr.com/1200/800/Neuschwanstein,Castle/all?lock=202"
+    image: "/images/attractions/germany-neuschwanstein-castle.jpg"
   },
   {
     name: "Cologne Cathedral",
@@ -33,7 +33,7 @@ export const germanyAttractions = [
     insiderTip: "Attend an evening organ concert for an absolutely transcendent acoustic experience within the cathedral's vast nave.",
     howToGetThere: "Directly adjacent to Köln Hauptbahnhof (central station).",
     cost: "Free entry to cathedral; tower climb €6.",
-    image: "https://loremflickr.com/1200/800/Cologne,Cathedral/all?lock=203"
+    image: "/images/attractions/germany-cologne-cathedral.jpg"
   },
   {
     name: "Berlin Wall Memorial",
@@ -45,7 +45,7 @@ export const germanyAttractions = [
     insiderTip: "Pick up the free audio guide at the visitor center — it includes firsthand accounts from escape attempts that bring the memorial's exhibits to life.",
     howToGetThere: "U-Bahn to Bernauer Straße station.",
     cost: "Free.",
-    image: "https://loremflickr.com/1200/800/Berlin,Wall/all?lock=204"
+    image: "/images/attractions/germany-berlin-wall-memorial.jpg"
   },
   {
     name: "Miniatur Wunderland",
@@ -57,7 +57,7 @@ export const germanyAttractions = [
     insiderTip: "Book a nighttime slot when the exhibition switches to its magical night mode with thousands of tiny lights. Look for the hidden miniature scenes and Easter eggs throughout.",
     howToGetThere: "U-Bahn to Baumwall station, short walk to Speicherstadt.",
     cost: "€20 for adults, €15 for children.",
-    image: "https://loremflickr.com/1200/800/Miniatur,Wunderland/all?lock=205"
+    image: "/images/attractions/germany-miniatur-wunderland.jpg"
   },
   {
     name: "Black Forest",
@@ -69,7 +69,7 @@ export const germanyAttractions = [
     insiderTip: "Visit the Triberg waterfalls early morning to have them almost to yourself, then sample authentic Schwarzwälder Kirschtorte (Black Forest cake) at Café Schäfer.",
     howToGetThere: "Train from Freiburg or Stuttgart to various Black Forest towns.",
     cost: "Free to explore; individual attractions vary.",
-    image: "https://loremflickr.com/1200/800/Black,Forest,Germany/all?lock=206"
+    image: "/images/attractions/germany-black-forest.jpg"
   },
   {
     name: "Museum Island",
@@ -81,7 +81,7 @@ export const germanyAttractions = [
     insiderTip: "Purchase the Museum Island day pass (€22) for access to all five museums — it saves significantly compared to individual tickets. Start with the Pergamon Museum before it gets crowded.",
     howToGetThere: "S-Bahn to Hackescher Markt or bus to Lustgarten.",
     cost: "€22 for a day pass to all museums.",
-    image: "https://loremflickr.com/1200/800/Museum,Island,Berlin/all?lock=207"
+    image: "/images/attractions/germany-museum-island.jpg"
   },
   {
     name: "Romantic Rhine Valley",
@@ -93,7 +93,7 @@ export const germanyAttractions = [
     insiderTip: "Take the KD Rhine cruise from Koblenz to Rüdesheim and return by train for the best of both perspectives. Stop in Bacharach for the most charming village experience.",
     howToGetThere: "Train from Frankfurt to Koblenz or Bingen (1-1.5 hours).",
     cost: "Rhine cruises from €30-60 depending on distance.",
-    image: "https://loremflickr.com/1200/800/Rhine,Valley,castles/all?lock=208"
+    image: "/images/attractions/germany-romantic-rhine-valley.jpg"
   },
   {
     name: "Heidelberg Castle",
@@ -105,7 +105,7 @@ export const germanyAttractions = [
     insiderTip: "Take the funicular up and walk down through the gardens. Visit during the castle illumination events (3 times each summer) when fireworks light up the ruins.",
     howToGetThere: "Funicular from Kornmarkt station in Heidelberg old town.",
     cost: "€9 including funicular round trip.",
-    image: "https://loremflickr.com/1200/800/Heidelberg,Castle/all?lock=209"
+    image: "/images/attractions/germany-heidelberg-castle.jpg"
   },
   {
     name: "Oktoberfest Grounds",
@@ -117,7 +117,7 @@ export const germanyAttractions = [
     insiderTip: "Arrive before 10 AM on weekdays to secure a seat in a tent — they fill up fast. The Augustiner tent is a local favorite with the best beer quality.",
     howToGetThere: "U-Bahn to Theresienwiese station.",
     cost: "Free entry to the grounds; beer costs around €14 per Maß (1 liter).",
-    image: "https://loremflickr.com/1200/800/Oktoberfest,Munich/all?lock=210"
+    image: "/images/attractions/germany-oktoberfest-grounds.jpg"
   },
   {
     name: "Saxon Switzerland National Park",
@@ -129,7 +129,7 @@ export const germanyAttractions = [
     insiderTip: "Hike the Malerweg (Painter's Trail), a 112 km trail through the most scenic parts of the park. For the Bastei, arrive before 8 AM to beat the tour buses.",
     howToGetThere: "S-Bahn from Dresden to Rathen station (40 minutes), then a short ferry and hike.",
     cost: "Free entry to the national park.",
-    image: "https://loremflickr.com/1200/800/Saxon,Switzerland,Bastei/all?lock=211"
+    image: "/images/attractions/germany-saxon-switzerland-national-park.jpg"
   },
   {
     name: "Rothenburg ob der Tauber",
@@ -141,7 +141,7 @@ export const germanyAttractions = [
     insiderTip: "Join the Night Watchman's Tour at 8 PM — a costumed guide leads you through dark medieval lanes sharing tales of plague, punishment, and daily life.",
     howToGetThere: "Train from Würzburg or Nuremberg with one change in Steinach.",
     cost: "Free to walk the town; individual museums €3-5.",
-    image: "https://loremflickr.com/1200/800/Rothenburg,Tauber/all?lock=212"
+    image: "/images/attractions/germany-rothenburg-ob-der-tauber.jpg"
   },
   {
     name: "Sanssouci Palace",
@@ -153,7 +153,7 @@ export const germanyAttractions = [
     insiderTip: "Combine a visit to Sanssouci with a walk through Potsdam's Dutch Quarter, a charming neighborhood of 134 red-brick houses built for Dutch craftsmen in the 1730s.",
     howToGetThere: "Regional train from Berlin to Potsdam (30 minutes), then bus 695 to Sanssouci.",
     cost: "€14 for palace entry; park is free.",
-    image: "https://loremflickr.com/1200/800/Sanssouci,Palace,Potsdam/all?lock=213"
+    image: "/images/attractions/germany-sanssouci-palace.jpg"
   },
   {
     name: "Lake Constance",
@@ -165,7 +165,7 @@ export const germanyAttractions = [
     insiderTip: "Take the ferry from Meersburg to Konstanz for stunning lake views, and visit the Mainau Island early morning before the tour groups arrive.",
     howToGetThere: "Train from Munich to Lindau (2.5 hours) or Stuttgart to Konstanz (2.5 hours).",
     cost: "Free to access the lake; Mainau Island €24.",
-    image: "https://loremflickr.com/1200/800/Lake,Constance,Bodensee/all?lock=214"
+    image: "/images/attractions/germany-lake-constance.jpg"
   },
   {
     name: "Dresden Zwinger",
@@ -177,7 +177,7 @@ export const germanyAttractions = [
     insiderTip: "The Nymphenbad fountain in the southeast corner is often overlooked by visitors — it's one of the most beautiful Baroque fountain ensembles in existence.",
     howToGetThere: "Short walk from Dresden Hauptbahnhof via Prager Straße.",
     cost: "€14 for the Old Masters Gallery; courtyard is free.",
-    image: "https://loremflickr.com/1200/800/Dresden,Zwinger,Palace/all?lock=215"
+    image: "/images/attractions/germany-dresden-zwinger.jpg"
   },
   {
     name: "Zugspitze",
@@ -189,7 +189,7 @@ export const germanyAttractions = [
     insiderTip: "Take the cogwheel railway up through the mountain tunnel and the cable car down (or vice versa) for two completely different experiences of the mountain.",
     howToGetThere: "Train from Munich to Garmisch-Partenkirchen (1.5 hours), then cogwheel railway or Eibsee cable car.",
     cost: "€63 round trip (cable car + cogwheel railway).",
-    image: "https://loremflickr.com/1200/800/Zugspitze,mountain/all?lock=216"
+    image: "/images/attractions/germany-zugspitze.jpg"
   },
   {
     name: "Hamburg Elbphilharmonie",
@@ -201,7 +201,7 @@ export const germanyAttractions = [
     insiderTip: "Free Plaza tickets can be booked online and are available on the spot, but slots fill up quickly. Try to attend a concert — even the cheapest seats have excellent acoustics.",
     howToGetThere: "U-Bahn to Baumwall, then a short walk along the HafenCity waterfront.",
     cost: "Free to visit the Plaza; concert tickets from €15.",
-    image: "https://loremflickr.com/1200/800/Elbphilharmonie,Hamburg/all?lock=217"
+    image: "/images/attractions/germany-hamburg-elbphilharmonie.jpg"
   },
   {
     name: "Nuremberg Old Town",
@@ -213,7 +213,7 @@ export const germanyAttractions = [
     insiderTip: "Eat at Bratwursthäusle near the Sebalduskirche for the most authentic Nuremberg bratwurst experience — order them 'sechs auf Kraut' (six on sauerkraut).",
     howToGetThere: "ICE high-speed train from Munich (1 hour) or Frankfurt (2 hours).",
     cost: "Castle €7; Documentation Center €6.",
-    image: "https://loremflickr.com/1200/800/Nuremberg,medieval/all?lock=218"
+    image: "/images/attractions/germany-nuremberg-old-town.jpg"
   },
   {
     name: "Bamberg Old Town",
@@ -225,7 +225,7 @@ export const germanyAttractions = [
     insiderTip: "Visit Schlenkerla brewery for the original Rauchbier experience — the smoky flavor is acquired but unforgettable. Climb to the Alte Rathaus from Klein Venedig (Little Venice) for the best photos.",
     howToGetThere: "Direct train from Nuremberg (45 minutes) or Munich (2 hours).",
     cost: "Free to explore; cathedral and museums are free or €3-5.",
-    image: "https://loremflickr.com/1200/800/Bamberg,medieval,town/all?lock=219"
+    image: "/images/attractions/germany-bamberg-old-town.jpg"
   },
   {
     name: "Berchtesgaden & Eagle's Nest",
@@ -237,6 +237,6 @@ export const germanyAttractions = [
     insiderTip: "Continue past St. Bartholomä to the Obersee — a hidden lake at the end of the Königssee that few tourists reach but is even more beautiful than its famous neighbor.",
     howToGetThere: "Train from Munich to Berchtesgaden (2.5 hours) or bus from Salzburg (45 minutes).",
     cost: "Königssee boat €20 round trip; Eagle's Nest bus €20.",
-    image: "https://loremflickr.com/1200/800/Berchtesgaden,Koenigssee/all?lock=220"
+    image: "/images/attractions/germany-berchtesgaden-eagle.jpg"
   }
 ];

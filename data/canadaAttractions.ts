@@ -9,7 +9,7 @@ export const canadaAttractions = [
     insiderTip: "Take the Banff Gondola just before sunset to witness a spectacular panoramic view of the mountains bathed in golden light.",
     howToGetThere: "Fly into Calgary International Airport (YYC), then take a scenic 90-minute drive west on the Trans-Canada Highway.",
     cost: "Park pass is $11.50 CAD per day; accommodations and activities vary widely.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/canada-banff-national-park.jpg'
   },
   {
     name: "Niagara Falls",
@@ -21,7 +21,7 @@ export const canadaAttractions = [
     insiderTip: "Book a Fallsview room at a premium hotel to enjoy the nightly illumination and fireworks displays from the comfort of your room.",
     howToGetThere: "Drive approximately 90 minutes south from Toronto Pearson International Airport (YYZ).",
     cost: "Viewing is free; attractions like the boat tour cost around $33 CAD.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/canada-niagara-falls.jpg'
   },
   {
     name: "Jasper National Park",
@@ -33,7 +33,7 @@ export const canadaAttractions = [
     insiderTip: "Take the Jasper SkyTram early in the morning to avoid crowds and gain incredible vantage points of the Athabasca Valley.",
     howToGetThere: "Drive via the scenic Icefields Parkway from Banff, or take the spectacular VIA Rail train journey from Vancouver or Edmonton.",
     cost: "Park pass is $11.50 CAD per day.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/canada-jasper-national-park.jpg'
   },
   {
     name: "CN Tower",
@@ -45,7 +45,7 @@ export const canadaAttractions = [
     insiderTip: "Dining at the 360 Restaurant includes complimentary access to the observation decks, allowing you to skip the regular admission lines.",
     howToGetThere: "Located in downtown Toronto, easily accessible via public transit (Union Station) or a short walk from most downtown hotels.",
     cost: "General admission starts at around $43 CAD; EdgeWalk is approximately $195 CAD.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/canada-cn-tower.jpg'
   },
   {
     name: "Lake Louise",
@@ -57,7 +57,7 @@ export const canadaAttractions = [
     insiderTip: "Arrive before 7 AM or after 7 PM during the summer to secure parking and enjoy a quieter experience, or use the Roam Transit shuttle.",
     howToGetThere: "A scenic 40-minute drive west from the town of Banff along the Trans-Canada Highway or the Bow Valley Parkway.",
     cost: "Park pass required; canoe rentals start around $145 CAD per hour for non-hotel guests.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/canada-lake-louise.jpg'
   },
   {
     name: "Old Quebec (Vieux-Québec)",
@@ -69,7 +69,7 @@ export const canadaAttractions = [
     insiderTip: "Take the funicular down to the Quartier Petit Champlain in the evening when the historic streets are beautifully illuminated and less crowded.",
     howToGetThere: "Fly into Québec City Jean Lesage International Airport (YQB) or take the VIA Rail train to Gare du Palais in the city center.",
     cost: "Exploring the streets is free; guided walking tours average $25-$40 CAD.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/canada-old-quebec-vieux-quebec.jpg'
   },
   {
     name: "Whistler Blackcomb",
@@ -81,7 +81,7 @@ export const canadaAttractions = [
     insiderTip: "Purchase lift tickets well in advance online to secure the best rates, and consider a guided 'First Tracks' experience to ski untouched powder before the mountain officially opens.",
     howToGetThere: "Drive the stunning Sea-to-Sky Highway from Vancouver, which takes about 2 hours, or book a luxury shuttle service.",
     cost: "Winter lift tickets can exceed $200 CAD per day; summer gondola access is around $90 CAD.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/canada-whistler-blackcomb.jpg'
   },
   {
     name: "Vancouver Stanley Park",
@@ -93,7 +93,7 @@ export const canadaAttractions = [
     insiderTip: "Rent a bicycle near the park entrance and ride the Seawall counter-clockwise to enjoy the best coastal breezes and unobstructed views.",
     howToGetThere: "Easily accessible by foot, bike, or bus from downtown Vancouver.",
     cost: "Park entry is free; parking and attractions like the Aquarium have fees.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/canada-vancouver-stanley-park.jpg'
   },
   {
     name: "Moraine Lake",
@@ -105,7 +105,7 @@ export const canadaAttractions = [
     insiderTip: "Personal vehicles are no longer permitted on the access road; you must book a Parks Canada shuttle or commercial tour well in advance.",
     howToGetThere: "Take a shuttle from the Lake Louise Ski Resort or the Banff townsite.",
     cost: "Shuttle reservations are around $8 CAD per adult, plus the park entry pass.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/canada-moraine-lake.jpg'
   },
   {
     name: "Churchill (Polar Bears)",
@@ -117,7 +117,7 @@ export const canadaAttractions = [
     insiderTip: "Book an excursion that includes a stay at a remote Tundra Lodge, allowing you to wake up completely surrounded by the bears' natural habitat.",
     howToGetThere: "There are no roads to Churchill; you must fly from Winnipeg or take a multi-day VIA Rail train journey.",
     cost: "Multi-day guided polar bear tours typically range from $5,000 to $10,000+ CAD.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/canada-churchill-polar-bears.jpg'
   },
   {
     name: "Bay of Fundy",
@@ -129,7 +129,7 @@ export const canadaAttractions = [
     insiderTip: "Check the tide charts meticulously to plan your visit to Hopewell Rocks; aim to arrive 3 hours before low tide to safely walk the ocean floor.",
     howToGetThere: "Fly into Moncton (YQM) or Saint John (YSJ) in New Brunswick, or Halifax (YHZ) in Nova Scotia, and drive to the coast.",
     cost: "Access to Hopewell Rocks is about $14 CAD; whale watching tours average $75-$100 CAD.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/canada-bay-of-fundy.jpg'
   },
   {
     name: "Gros Morne National Park",
@@ -141,7 +141,7 @@ export const canadaAttractions = [
     insiderTip: "Book the Western Brook Pond boat tour well in advance, and factor in the 45-minute hike required just to reach the boat dock from the parking lot.",
     howToGetThere: "Fly into Deer Lake Regional Airport (YDF) and drive approximately 30 minutes north to the park entrance.",
     cost: "Park pass is $11.50 CAD per day; the Western Brook Pond boat tour is around $70 CAD.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/canada-gros-morne-national-park.jpg'
   },
   {
     name: "Victoria Inner Harbour",
@@ -153,7 +153,7 @@ export const canadaAttractions = [
     insiderTip: "Visit the Inner Harbour at dusk to see the Parliament Buildings magically illuminated by thousands of classic incandescent lights.",
     howToGetThere: "Take a scenic seaplane flight directly into the harbor, or ride the BC Ferries from Vancouver and drive/bus into the city.",
     cost: "Walking the harbor is free; Afternoon Tea at the Empress is approximately $95 CAD.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/canada-victoria-inner-harbour.jpg'
   },
   {
     name: "Rideau Canal",
@@ -165,7 +165,7 @@ export const canadaAttractions = [
     insiderTip: "During winter, check the National Capital Commission's ice conditions daily online, as the Skateway's open status depends entirely on sustained freezing temperatures.",
     howToGetThere: "Located in downtown Ottawa, easily accessible on foot from Parliament Hill and major hotels.",
     cost: "Access to the Skateway and canal paths is free; skate rentals and boat tours have associated fees.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/canada-rideau-canal.jpg'
   },
   {
     name: "Yoho National Park",
@@ -177,7 +177,7 @@ export const canadaAttractions = [
     insiderTip: "Access to the spectacular Lake O'Hara area is strictly limited; you must win the Parks Canada bus lottery or be prepared to hike an 11km access road just to reach the trailheads.",
     howToGetThere: "Drive west from Banff/Lake Louise on the Trans-Canada Highway; the park is just across the provincial border in BC.",
     cost: "Park pass is $11.50 CAD per day.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/canada-yoho-national-park.jpg'
   },
   {
     name: "Peggy's Cove",
@@ -189,7 +189,7 @@ export const canadaAttractions = [
     insiderTip: "Arrive early in the morning for sunrise to beat the heavy tour bus crowds and photograph the lighthouse in spectacular golden light.",
     howToGetThere: "A scenic 45-minute drive south from Halifax, Nova Scotia.",
     cost: "Free to visit; parking is available on site.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/canada-peggy.jpg'
   },
   {
     name: "Tofino (Pacific Rim National Park)",
@@ -201,7 +201,7 @@ export const canadaAttractions = [
     insiderTip: "Book a stay at a beachfront resort like the Wickaninnish Inn to experience world-class luxury directly integrated with the wild coastal environment.",
     howToGetThere: "Drive 3 hours across Vancouver Island from Nanaimo, or take a spectacular small seaplane flight directly into Tofino harbor.",
     cost: "Park pass is $11.50 CAD per day; accommodations tend to be premium priced.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/canada-tofino-pacific-rim-national-park.jpg'
   },
   {
     name: "Royal Ontario Museum",
@@ -213,7 +213,7 @@ export const canadaAttractions = [
     insiderTip: "Check the museum's schedule for 'ROM After Dark' events, where the space transforms into an adult-only venue with food, drink, and live entertainment among the exhibits.",
     howToGetThere: "Located in downtown Toronto, steps away from the Museum subway station.",
     cost: "General admission is approximately $26 CAD; special exhibitions may cost extra.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/canada-royal-ontario-museum.jpg'
   },
   {
     name: "Algonquin Provincial Park",
@@ -225,7 +225,7 @@ export const canadaAttractions = [
     insiderTip: "To truly experience the park's magic, rent a canoe and paddle just one or two lakes away from the highway to instantly find complete wilderness isolation.",
     howToGetThere: "Drive approximately 3 hours north from Toronto to the West Gate on Highway 60.",
     cost: "Daily vehicle permit is around $21 CAD; backcountry camping permits are additional.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/canada-algonquin-provincial-park.jpg'
   },
   {
     name: "Capilano Suspension Bridge",
@@ -237,6 +237,6 @@ export const canadaAttractions = [
     insiderTip: "Take advantage of the free shuttle service offered from downtown Vancouver to avoid parking hassles at the busy site.",
     howToGetThere: "Take the free shuttle from downtown Vancouver, or drive 15 minutes north across the Lions Gate Bridge.",
     cost: "Admission is approximately $66 CAD, which includes access to all park attractions.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/canada-capilano-suspension-bridge.jpg'
   }
 ];
