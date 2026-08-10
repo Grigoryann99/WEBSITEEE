@@ -81,7 +81,7 @@ export const irelandAttractions = [
     insiderTip: "Rent a bicycle in Killarney town and cycle the lakeside paths to Muckross House — it's flat, scenic, and far more enjoyable than driving. Stop at Torc Waterfall en route.",
     howToGetThere: "Killarney town is accessible by train from Dublin (3.5 hours) or Cork (1.5 hours).",
     cost: "Free entry to the park; Muckross House €9.",
-    image: "https://loremflickr.com/1200/800/Killarney,National,Park/all?lock=307"
+    image: "/images/attractions/ireland-killarney-national-park.jpg"
   },
   {
     name: "Galway City",
@@ -93,7 +93,7 @@ export const irelandAttractions = [
     insiderTip: "Head to Tigh Coilí or Tig Cóilí on Mainguard Street for the best traditional music sessions. Walk along Salthill Promenade and kick the wall at the end — it's a Galway tradition.",
     howToGetThere: "Train from Dublin Heuston (2.5 hours) or Bus Éireann from most cities.",
     cost: "Free to explore; festival events vary.",
-    image: "https://loremflickr.com/1200/800/Galway,Ireland,streets/all?lock=308"
+    image: "/images/attractions/ireland-galway-city.jpg"
   },
   {
     name: "Blarney Castle & Stone",
@@ -105,7 +105,7 @@ export const irelandAttractions = [
     insiderTip: "Arrive when the castle opens at 9 AM to kiss the stone with minimal queuing. The castle gardens are extensive and often overlooked — don't miss the atmospheric Rock Close and the ancient yew trees.",
     howToGetThere: "Bus 215 from Cork city center (30 minutes).",
     cost: "€18 for adults.",
-    image: "https://loremflickr.com/1200/800/Blarney,Castle/all?lock=309"
+    image: "/images/attractions/ireland-blarney-castle-stone.jpg"
   },
   {
     name: "Dingle Peninsula",
@@ -117,7 +117,7 @@ export const irelandAttractions = [
     insiderTip: "Drive the Conor Pass for jaw-dropping mountain views before descending into Dingle. Visit Dick Mack's pub — half leather shop, half pub — for one of Ireland's most unique drinking experiences.",
     howToGetThere: "Drive from Killarney (1.5 hours) or Tralee (1 hour).",
     cost: "Free to explore.",
-    image: "https://loremflickr.com/1200/800/Dingle,Peninsula,Ireland/all?lock=310"
+    image: "/images/attractions/ireland-dingle-peninsula.jpg"
   },
   {
     name: "Newgrange",
@@ -129,7 +129,7 @@ export const irelandAttractions = [
     insiderTip: "The winter solstice experience is decided by lottery — enter at bryvonvalley.com. The simulated solstice illumination during regular tours is still incredibly atmospheric.",
     howToGetThere: "Access only via shuttle from Brú na Bóinne Visitor Centre, 1 hour north of Dublin by car.",
     cost: "€8 for adults (including shuttle).",
-    image: "https://loremflickr.com/1200/800/Newgrange,Ireland/all?lock=311"
+    image: "/images/attractions/ireland-newgrange.jpg"
   },
   {
     name: "Connemara",
@@ -141,7 +141,7 @@ export const irelandAttractions = [
     insiderTip: "Drive the Sky Road from Clifden for arguably the most beautiful coastal drive in Ireland. Visit the Dog's Bay and Gurteen Bay beaches — they have white coral sand that looks Caribbean.",
     howToGetThere: "Drive from Galway (1 hour to Clifden) or take Citylink bus.",
     cost: "Free to explore; Kylemore Abbey €14.",
-    image: "https://loremflickr.com/1200/800/Connemara,Ireland/all?lock=312"
+    image: "/images/attractions/ireland-connemara.jpg"
   },
   {
     name: "Rock of Cashel",
@@ -153,7 +153,7 @@ export const irelandAttractions = [
     insiderTip: "Walk around to the back of the rock for the most dramatic photographs. Visit the nearby Hore Abbey (free, open access) in the fields below for an atmospheric, crowd-free medieval ruin experience.",
     howToGetThere: "Bus from Dublin or Cork to Cashel town, then a short walk uphill.",
     cost: "€8 for adults.",
-    image: "https://loremflickr.com/1200/800/Rock,Cashel,Ireland/all?lock=313"
+    image: "/images/attractions/ireland-rock-of-cashel.jpg"
   },
   {
     name: "Wild Atlantic Way",
@@ -165,7 +165,7 @@ export const irelandAttractions = [
     insiderTip: "Don't try to drive the entire route in one go — pick a section and explore it deeply. The stretch between Clifden and Westport is arguably the most scenic and least crowded.",
     howToGetThere: "Start from Cork, Galway, or Donegal — the route is well-signposted throughout.",
     cost: "Free to drive.",
-    image: "https://loremflickr.com/1200/800/Wild,Atlantic,Way/all?lock=314"
+    image: "/images/attractions/ireland-wild-atlantic-way.jpg"
   },
   {
     name: "Aran Islands",
@@ -177,7 +177,7 @@ export const irelandAttractions = [
     insiderTip: "Stay overnight on Inis Mór to experience the island after the day-trippers leave — the evening light on the limestone is magical, and you can hear Irish spoken naturally in the local pubs.",
     howToGetThere: "Ferry from Rossaveal (40 min) or Doolin (25 min to Inis Oírr). Flights from Connemara Airport (10 min).",
     cost: "Ferry €25-30 return; Inis Mór bike hire €10.",
-    image: "https://loremflickr.com/1200/800/Aran,Islands,Ireland/all?lock=315"
+    image: "/images/attractions/ireland-aran-islands.jpg"
   },
   {
     name: "Powerscourt Estate",
@@ -189,7 +189,7 @@ export const irelandAttractions = [
     insiderTip: "Visit the Japanese Garden and Tower Valley in the afternoon when most visitors stick to the main terraces. The Powerscourt Waterfall is a separate site 6 km away — don't miss it.",
     howToGetThere: "30 minutes by car from Dublin; Dublin Bus 44 to Enniskerry village.",
     cost: "Gardens €10; Waterfall €6.50.",
-    image: "https://loremflickr.com/1200/800/Powerscourt,Gardens,Wicklow/all?lock=316"
+    image: "/images/attractions/ireland-powerscourt-estate.jpg"
   },
   {
     name: "Temple Bar",
@@ -201,7 +201,7 @@ export const irelandAttractions = [
     insiderTip: "Avoid drinking at the famous Temple Bar pub (tourist prices) — instead, head to The Porterhouse for craft beers or The Oliver St. John Gogarty for genuine traditional music sessions upstairs.",
     howToGetThere: "Central Dublin, walking distance from all major hotels and transport hubs.",
     cost: "Free to explore; pub prices vary.",
-    image: "https://loremflickr.com/1200/800/Temple,Bar,Dublin/all?lock=317"
+    image: "/images/attractions/ireland-temple-bar.jpg"
   },
   {
     name: "Glendalough",
@@ -213,7 +213,7 @@ export const irelandAttractions = [
     insiderTip: "Walk past the upper lake to the old miners' village for solitude and stunning views most visitors never see. The Spinc trail offers the most dramatic aerial views of the valley.",
     howToGetThere: "1 hour drive from Dublin; St. Kevin's Bus runs daily from Dublin city center.",
     cost: "Free to visit; parking €4.",
-    image: "https://loremflickr.com/1200/800/Glendalough,Ireland/all?lock=318"
+    image: "/images/attractions/ireland-glendalough.jpg"
   },
   {
     name: "Burren National Park",
@@ -225,7 +225,7 @@ export const irelandAttractions = [
     insiderTip: "Walk the Green Road from Fanore to Black Head for the most dramatic views of the Burren meeting the sea. In May, join a guided botanical walk to discover the rare orchids hidden in the limestone crevices.",
     howToGetThere: "Drive from Galway (1 hour) or combine with a Cliffs of Moher visit.",
     cost: "Free to explore; Aillwee Cave €15.",
-    image: "https://loremflickr.com/1200/800/Burren,limestone,Ireland/all?lock=319"
+    image: "/images/attractions/ireland-burren-national-park.jpg"
   },
   {
     name: "Kilmainham Gaol",
@@ -237,6 +237,6 @@ export const irelandAttractions = [
     insiderTip: "Book online at least two weeks in advance — this is Dublin's most in-demand attraction and regularly sells out. The museum exhibition before the tour provides important context.",
     howToGetThere: "Bus 13, 40, or 79 from Dublin city center; LUAS Red Line to Suir Road.",
     cost: "€8 for adults.",
-    image: "https://loremflickr.com/1200/800/Kilmainham,Gaol,Dublin/all?lock=320"
+    image: "/images/attractions/ireland-kilmainham-gaol.jpg"
   }
 ];

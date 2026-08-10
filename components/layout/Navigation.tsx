@@ -203,18 +203,7 @@ export default function Navigation() {
                         </span>
                     </a>
 
-                    {/* RIGHT — Book Now CTA */}
-                    <Link
-                        href="/villas"
-                        className="group relative px-4 py-2 lg:px-6 lg:py-2.5 border border-white/30 rounded-full
-                            font-sans text-[10px] lg:text-[11px] font-medium tracking-[0.2em] uppercase text-white
-                            hover:border-brand-accent hover:text-brand-accent
-                            active:scale-95 transition-all duration-300 outline-none
-                            focus-visible:ring-2 focus-visible:ring-brand-accent"
-                    >
-                        <span className="relative z-10">Book Now</span>
-                        <div className="absolute inset-0 rounded-full bg-brand-accent/0 group-hover:bg-brand-accent/10 transition-colors duration-300" />
-                    </Link>
+
                 </div>
             </motion.nav>
 

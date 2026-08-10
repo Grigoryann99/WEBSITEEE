@@ -201,11 +201,42 @@
     "ireland-giant.jpg",
     "ireland-trinity-college-book-of-kells.jpg",
     "ireland-skellig-michael.jpg",
-    "ireland-guinness-storehouse.jpg"
+    "ireland-guinness-storehouse.jpg",
+    "ireland-killarney-national-park.jpg",
+    "ireland-galway-city.jpg",
+    "ireland-blarney-castle-stone.jpg",
+    "ireland-dingle-peninsula.jpg",
+    "ireland-newgrange.jpg",
+    "ireland-connemara.jpg",
+    "ireland-rock-of-cashel.jpg",
+    "ireland-wild-atlantic-way.jpg",
+    "ireland-aran-islands.jpg",
+    "ireland-powerscourt-estate.jpg",
+    "ireland-temple-bar.jpg",
+    "ireland-glendalough.jpg",
+    "ireland-burren-national-park.jpg",
+    "ireland-kilmainham-gaol.jpg",
+    "italy-borghese-gallery.jpg",
+    "japan-okinawa-beaches.jpg",
+    "jordan-jerash-roman-city.jpg",
+    "jordan-aqaba-red-sea.jpg",
+    "jordan-roman-amphitheatre-amman.jpg",
+    "jordan-dana-biosphere-reserve.jpg",
+    "jordan-madaba-map-st-george.jpg",
+    "jordan-shobak-castle.jpg",
+    "jordan-umm-qais-gadara.jpg",
+    "jordan-qasr-amra-desert-castle.jpg",
+    "jordan-ma.jpg",
+    "jordan-azraq-wetland-reserve.jpg",
+    "jordan-wadi-al-hasa.jpg",
+    "malaysia-petronas-twin-towers.jpg",
+    "malaysia-kuala-lumpur-central-market-chinatown.jpg"
   ],
-  "failed": [],
+  "failed": [
+    "maldives-male-city-grand-friday-mosque.jpg"
+  ],
   "stats": {
-    "wikimedia": 60,
-    "unsplash": 106
+    "wikimedia": 62,
+    "unsplash": 133
   }
 }

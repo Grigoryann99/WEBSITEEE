@@ -45,7 +45,7 @@ export const jordanAttractions = [
     insiderTip: "Watch the Roman Army and Chariot Experience (RACE) — a re-enactment show using the Roman Hippodrome with costumed legionaries and chariot racing. It is theatrical but genuinely informative and fun.",
     howToGetThere: "JETT bus from Amman (1.5 hours). Drive from Amman (45km, 45 minutes).",
     cost: "Adults 10 JOD (€13). Jordan Pass includes entry. RACE show 15 JOD (€19) extra.",
-    image: "https://loremflickr.com/1200/800/Jerash,Roman,jordan/all?lock=37"
+    image: "/images/attractions/jordan-jerash-roman-city.jpg"
   },
   {
     name: "Aqaba Red Sea",
@@ -57,7 +57,7 @@ export const jordanAttractions = [
     insiderTip: "The Marine Park south of Aqaba city offers the best protected snorkelling. Book with local diving operators for reef dives to Japanese Garden (a Japanese vessel deliberately sunk as a dive site) — an extraordinary shallow reef ecosystem.",
     howToGetThere: "Fly to Aqaba Airport (Queen Alia) from Amman (50 minutes). Drive from Petra (2 hours) or Wadi Rum (1 hour).",
     cost: "Marine Park entry 2 JOD (€2.60). Snorkel equipment rental from 5 JOD (€6.50).",
-    image: "https://loremflickr.com/1200/800/Aqaba,jordan/all?lock=38"
+    image: "/images/attractions/jordan-aqaba-red-sea.jpg"
   },
   {
     name: "Amman Citadel",
@@ -81,7 +81,7 @@ export const jordanAttractions = [
     insiderTip: "Climb to the very top row of the theatre for the best view over the theatre, the Citadel hill behind it, and the spreading white city of Amman in all directions — a superb urban panorama.",
     howToGetThere: "Walking distance from downtown Amman hotels. Taxi from anywhere in the city.",
     cost: "Adults 3 JOD (€4). Jordan Pass includes entry.",
-    image: "https://loremflickr.com/1200/800/Roman,Amphitheatre,jordan/all?lock=39"
+    image: "/images/attractions/jordan-roman-amphitheatre-amman.jpg"
   },
   {
     name: "Dana Biosphere Reserve",
@@ -93,7 +93,7 @@ export const jordanAttractions = [
     insiderTip: "Stay at Dana Tower Hotel or the RSCN's Rummana Campsite for an immersive wilderness experience. The 2-day Wadi Dana trail through the reserve (ending at Wadi Rum) is one of Jordan's finest multi-day hikes.",
     howToGetThere: "Drive from Petra (1.5 hours) or Amman (3 hours). Village of Dana is accessible by road.",
     cost: "Reserve entry 5 JOD (€6.50). Guided hikes from 25 JOD (€32).",
-    image: "https://loremflickr.com/1200/800/Dana,Biosphere,jordan/all?lock=40"
+    image: "/images/attractions/jordan-dana-biosphere-reserve.jpg"
   },
   {
     name: "Wadi Mujib",
@@ -129,7 +129,7 @@ export const jordanAttractions = [
     insiderTip: "Look for the detailed depiction of Jerusalem at the map's centre — the Cardo Maximus, the Church of the Holy Sepulchre, the Lions Gate, and Jaffa Gate are all clearly identifiable. The Visitors Centre next door has excellent historical context.",
     howToGetThere: "Drive from Amman (30km, 40 minutes south) or take a JETT bus.",
     cost: "Free (donations appreciated).",
-    image: "https://loremflickr.com/1200/800/Madaba,George,jordan/all?lock=41"
+    image: "/images/attractions/jordan-madaba-map-st-george.jpg"
   },
   {
     name: "Baptism Site (Al-Maghtas)",
@@ -165,7 +165,7 @@ export const jordanAttractions = [
     insiderTip: "Descend the secret staircase inside the castle that the Crusaders used to reach a water supply below during sieges — over 300 steps descend through solid rock to an underground spring, an extraordinary feat of medieval engineering.",
     howToGetThere: "Drive from Petra (35km north). En route from Amman to Petra.",
     cost: "Adults 1 JOD (€1.30). Jordan Pass does not include.",
-    image: "https://loremflickr.com/1200/800/Shobak,Castle,jordan/all?lock=42"
+    image: "/images/attractions/jordan-shobak-castle.jpg"
   },
   {
     name: "Umm Qais (Gadara)",
@@ -177,7 +177,7 @@ export const jordanAttractions = [
     insiderTip: "Spend time at the Umm Qais Resthouse restaurant (on the site, in an Ottoman mansion) — the terrace view over the Sea of Galilee while eating Jordan's best mezze is one of the country's finest dining experiences.",
     howToGetThere: "Drive from Amman (110km north, 2 hours) or take a bus to Irbid then taxi.",
     cost: "Adults 3 JOD (€4). Jordan Pass includes entry.",
-    image: "https://loremflickr.com/1200/800/Qais,Gadara,jordan/all?lock=43"
+    image: "/images/attractions/jordan-umm-qais-gadara.jpg"
   },
   {
     name: "Qasr Amra Desert Castle",
@@ -189,7 +189,7 @@ export const jordanAttractions = [
     insiderTip: "Look for the zodiac ceiling fresco in the caldarium (hot room) — the 12 zodiac constellations, painted in the early 8th century in a desert bath house, constitute one of the earliest surviving representations of the zodiac in the world.",
     howToGetThere: "Drive from Amman (80km east, 1 hour) on the Desert Highway. No public transport.",
     cost: "Adults 3 JOD (€4). Jordan Pass includes entry.",
-    image: "https://loremflickr.com/1200/800/Qasr,Amra,jordan/all?lock=44"
+    image: "/images/attractions/jordan-qasr-amra-desert-castle.jpg"
   },
   {
     name: "Ma'in Hot Springs",
@@ -201,7 +201,7 @@ export const jordanAttractions = [
     insiderTip: "The Evason Ma'In Six Senses resort has a day-use thermal pool complex with extraordinary Dead Sea views — worth the entry fee for the combination of luxury spa facilities and natural springs.",
     howToGetThere: "Drive from Madaba (25km, 30 minutes) or from Amman (65km, 1 hour).",
     cost: "Public area free. Resort day use from 30 JOD (€39) including use of facilities.",
-    image: "https://loremflickr.com/1200/800/jordan,jordan/all?lock=45"
+    image: "/images/attractions/jordan-ma.jpg"
   },
   {
     name: "Azraq Wetland Reserve",
@@ -213,7 +213,7 @@ export const jordanAttractions = [
     insiderTip: "Take an early morning birding walk with an RSCN guide — the diversity and numbers of migratory birds in spring (particularly on April mornings) can be exceptional. The Azraq Fort where Lawrence of Arabia spent two winters is also worth visiting.",
     howToGetThere: "Drive from Amman (100km east, 1.5 hours). Combine with the eastern desert castles circuit.",
     cost: "Reserve entry 7 JOD (€9). Guided birdwatching from 10 JOD (€13).",
-    image: "https://loremflickr.com/1200/800/Azraq,Wetland,jordan/all?lock=46"
+    image: "/images/attractions/jordan-azraq-wetland-reserve.jpg"
   },
   {
     name: "Wadi al-Hasa",
@@ -225,7 +225,7 @@ export const jordanAttractions = [
     insiderTip: "Hire a local guide from the village of Safi at the base of the wadi — they know the location of the hot spring pools (naturally heated by geothermal activity) hidden within the canyon walls, accessible only on foot.",
     howToGetThere: "Drive from Karak (40km south) or from Petra (60km north). A local guide from Safi is essential.",
     cost: "Area free. Local guide from 30 JOD (€39) for a half day.",
-    image: "https://loremflickr.com/1200/800/Wadi,alHasa,jordan/all?lock=47"
+    image: "/images/attractions/jordan-wadi-al-hasa.jpg"
   },
   {
     name: "Royal Automobile Museum",

@@ -9,7 +9,7 @@ export const malaysiaAttractions = [
     insiderTip: "Buy sky bridge tickets online in advance — they sell out the morning they are released. The free KLCC Park surrounding the towers has excellent views of both towers reflected in the ornamental lake, especially at night when they are dramatically lit.",
     howToGetThere: "KLCC MRT/LRT station is directly beneath the towers. Walking distance from many KL city centre hotels.",
     cost: "Sky bridge + Observation deck: Adults 85 MYR (€17). Book online. KLCC Park free.",
-    image: "https://loremflickr.com/1200/800/Petronas,Twin,malaysia/all?lock=48"
+    image: "/images/attractions/malaysia-petronas-twin-towers.jpg"
   },
   {
     name: "Batu Caves",
@@ -141,7 +141,7 @@ export const malaysiaAttractions = [
     insiderTip: "Venture off Jalan Petaling into the smaller side streets — Jalan Sultan and Jalan Panggung have some of KL's finest heritage shophouses, now housing coffee shops, art galleries, and noodle restaurants in their original interiors.",
     howToGetThere: "Pasar Seni LRT/MRT station is directly adjacent. Walking distance from many KL city centre hotels.",
     cost: "Free to explore. Meals from 5–15 MYR (€1–3).",
-    image: "https://loremflickr.com/1200/800/Kuala,Lumpur,malaysia/all?lock=49"
+    image: "/images/attractions/malaysia-kuala-lumpur-central-market-chinatown.jpg"
   },
   {
     name: "Kinabatangan River",
