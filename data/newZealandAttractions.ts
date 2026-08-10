@@ -9,7 +9,7 @@ export const newZealandAttractions = [
     insiderTip: "Stay overnight on a luxury cruise to experience the sound in true serenity, long after the day-trippers have left.",
     howToGetThere: "Drive from Te Anau (2 hours) or take a scenic flight or luxury coach from Queenstown.",
     cost: "Premium cruises from NZD $150+, scenic flights from NZD $400+",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/new-zealand-milford-sound.jpg'
   },
   {
     name: "Hobbiton Movie Set",
@@ -21,7 +21,7 @@ export const newZealandAttractions = [
     insiderTip: "Book the Evening Banquet Tour for a magical twilight experience complete with a feast fit for a hobbit and lantern-lit paths.",
     howToGetThere: "A 2-hour drive south from Auckland, or 45 minutes from Rotorua.",
     cost: "Standard tours from NZD $89, Evening Banquet from NZD $199",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/new-zealand-hobbiton-movie-set.jpg'
   },
   {
     name: "Tongariro National Park",
@@ -33,7 +33,7 @@ export const newZealandAttractions = [
     insiderTip: "Hire a private guide for the Tongariro Crossing to ensure safety, pacing, and insightful commentary on the geology and Maori legends.",
     howToGetThere: "Approximately 4 hours drive from Auckland or Wellington.",
     cost: "Free park entry; private guided treks from NZD $250+",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/new-zealand-tongariro-national-park.jpg'
   },
   {
     name: "Rotorua Geothermal Parks",
@@ -45,7 +45,7 @@ export const newZealandAttractions = [
     insiderTip: "Book a private evening experience at a luxury geothermal spa like the Polynesian Spa or Hell's Gate for uninterrupted relaxation under the stars.",
     howToGetThere: "A 2.5-hour drive south from Auckland, or direct domestic flights.",
     cost: "Park entries NZD $30-$60; premium spa packages NZD $150+",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/new-zealand-rotorua-geothermal-parks.jpg'
   },
   {
     name: "Aoraki Mount Cook",
@@ -57,7 +57,7 @@ export const newZealandAttractions = [
     insiderTip: "Take a scenic ski-plane or helicopter flight that lands on the Tasman Glacier for a truly unforgettable alpine experience.",
     howToGetThere: "A scenic 4-hour drive from Queenstown or 3.5 hours from Christchurch.",
     cost: "Free park entry; scenic flights with glacier landing from NZD $350+",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/new-zealand-aoraki-mount-cook.jpg'
   },
   {
     name: "Queenstown (Adventure Capital)",
@@ -69,7 +69,7 @@ export const newZealandAttractions = [
     insiderTip: "Charter a private yacht on Lake Wakatipu at sunset, enjoying local Central Otago Pinot Noir away from the bustling town center.",
     howToGetThere: "Direct international flights to Queenstown Airport, or a spectacular drive through the South Island.",
     cost: "Activities range from NZD $100 to $500+; luxury lodging NZD $800+ per night",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/new-zealand-queenstown-adventure-capital.jpg'
   },
   {
     name: "Bay of Islands",
@@ -81,7 +81,7 @@ export const newZealandAttractions = [
     insiderTip: "Hire a private catamaran for a day trip to the outer islands, finding secluded beaches that tour boats cannot reach.",
     howToGetThere: "A 3.5-hour drive north of Auckland, or a 45-minute domestic flight to Kerikeri.",
     cost: "Private charters from NZD $1,500/day; historical grounds entry NZD $60",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/new-zealand-bay-of-islands.jpg'
   },
   {
     name: "Waitomo Glowworm Caves",
@@ -93,7 +93,7 @@ export const newZealandAttractions = [
     insiderTip: "For a premium and quiet experience, opt for a private guided walking and boat tour to avoid the large group crowds.",
     howToGetThere: "A 2.5-hour drive south of Auckland, or 2 hours west of Rotorua.",
     cost: "Standard tours from NZD $60; private or adventure tours NZD $150+",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/new-zealand-waitomo-glowworm-caves.jpg'
   },
   {
     name: "Franz Josef Glacier",
@@ -105,7 +105,7 @@ export const newZealandAttractions = [
     insiderTip: "A heli-hike is essential to truly experience the glacier, as the terminal face in the valley is often too dangerous and distant to approach on foot.",
     howToGetThere: "A beautiful but long 5-hour drive from Queenstown, or via the TranzAlpine train to Greymouth and driving south.",
     cost: "Heli-hikes from NZD $499+",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/new-zealand-franz-josef-glacier.jpg'
   },
   {
     name: "Abel Tasman National Park",
@@ -117,7 +117,7 @@ export const newZealandAttractions = [
     insiderTip: "Charter a water taxi to drop you at a secluded bay for a private gourmet picnic, picking you up a few hours later.",
     howToGetThere: "A 1-hour drive from Nelson, which has a domestic airport.",
     cost: "Park entry is free; kayak tours from NZD $100; private charters from NZD $1000+",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/new-zealand-abel-tasman-national-park.jpg'
   },
   {
     name: "Te Papa Tongarewa Museum",
@@ -129,7 +129,7 @@ export const newZealandAttractions = [
     insiderTip: "Book an early morning 'Early Bird' guided tour to experience the highlights of the museum before the doors open to the public.",
     howToGetThere: "Located centrally in Wellington, walking distance from major hotels.",
     cost: "General admission is free; premium private tours from NZD $150",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/new-zealand-te-papa-tongarewa-museum.jpg'
   },
   {
     name: "Lake Tekapo",
@@ -141,7 +141,7 @@ export const newZealandAttractions = [
     insiderTip: "Book a late-night private stargazing tour at the Mount John Observatory to look through professional telescopes without the crowds.",
     howToGetThere: "A 3-hour drive from either Christchurch or Queenstown.",
     cost: "Free to visit the lake; observatory tours from NZD $100+",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/new-zealand-lake-tekapo.jpg'
   },
   {
     name: "Waiheke Island",
@@ -153,7 +153,7 @@ export const newZealandAttractions = [
     insiderTip: "Charter a helicopter from Auckland directly to a premium vineyard like Mudbrick or Stonyridge for a glamorous arrival and lunch.",
     howToGetThere: "A 40-minute ferry ride from downtown Auckland, or a 10-minute helicopter flight.",
     cost: "Ferry NZD $45; high-end wine tasting lunches from NZD $150+",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/new-zealand-waiheke-island.jpg'
   },
   {
     name: "Fiordland National Park",
@@ -165,7 +165,7 @@ export const newZealandAttractions = [
     insiderTip: "Opt for an overnight cruise on Doubtful Sound instead of Milford for a more expansive, peaceful, and exclusive fiord experience.",
     howToGetThere: "Drive to Te Anau (2 hours from Queenstown), the gateway to the park.",
     cost: "Overnight luxury cruises from NZD $800+ per night",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/new-zealand-fiordland-national-park.jpg'
   },
   {
     name: "Coromandel Peninsula (Hot Water Beach)",
@@ -177,7 +177,7 @@ export const newZealandAttractions = [
     insiderTip: "Hire a private boat to visit Cathedral Cove early in the morning to avoid the walking crowds and enjoy the beach in pristine solitude.",
     howToGetThere: "A scenic 2.5-hour drive from Auckland.",
     cost: "Spades to dig your pool are NZD $10; private boat tours NZD $200+",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/new-zealand-coromandel-peninsula-hot-water-beach.jpg'
   },
   {
     name: "Huka Falls",
@@ -189,7 +189,7 @@ export const newZealandAttractions = [
     insiderTip: "Stay at or book a private dining experience at Huka Lodge, favored by royalty and celebrities, for the ultimate in New Zealand luxury.",
     howToGetThere: "A 10-minute drive from Taupo town center, or 1 hour from Rotorua.",
     cost: "Viewing is free; Jet boat rides from NZD $129; Huka Lodge from NZD $2,500/night",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/new-zealand-huka-falls.jpg'
   },
   {
     name: "Mount Aspiring National Park",
@@ -201,7 +201,7 @@ export const newZealandAttractions = [
     insiderTip: "Take a jet boat safari up the Dart River to access deep, remote parts of the park that are otherwise unreachable, combining thrill with pristine wilderness.",
     howToGetThere: "Accessible from Wanaka (1 hour drive) or Queenstown via Glenorchy.",
     cost: "Free park entry; Dart River jet safaris from NZD $250",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/new-zealand-mount-aspiring-national-park.jpg'
   },
   {
     name: "Kaikoura (Whale Watching)",
@@ -213,7 +213,7 @@ export const newZealandAttractions = [
     insiderTip: "Opt for a scenic whale-watching flight by helicopter or light aircraft; it offers a full perspective of the whale's immense size and avoids seasickness.",
     howToGetThere: "A 2.5-hour coastal drive north of Christchurch.",
     cost: "Boat tours from NZD $150; scenic flights from NZD $250+",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/new-zealand-kaikoura-whale-watching.jpg'
   },
   {
     name: "Fox Glacier",
@@ -225,7 +225,7 @@ export const newZealandAttractions = [
     insiderTip: "Visit Lake Matheson at dawn for the best chance of perfectly still waters and a breathtaking sunrise reflection of the Southern Alps.",
     howToGetThere: "A 4.5-hour drive from Queenstown, or a short 30-minute drive south of Franz Josef.",
     cost: "Heli-hikes from NZD $499+",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/new-zealand-fox-glacier.jpg'
   },
   {
     name: "Sky Tower (Auckland)",
@@ -237,6 +237,6 @@ export const newZealandAttractions = [
     insiderTip: "Book a window table at The Sugar Club for a spectacular fine-dining experience; your restaurant booking includes complimentary tower admission.",
     howToGetThere: "Located in the heart of downtown Auckland, easily walkable from any CBD hotel.",
     cost: "General admission NZD $40; SkyWalk/Jump from NZD $150; fine dining from NZD $120+",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/new-zealand-sky-tower-auckland.jpg'
   }
 ];

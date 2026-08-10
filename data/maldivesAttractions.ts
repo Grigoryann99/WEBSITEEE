@@ -9,7 +9,7 @@ export const maldivesAttractions = [
     insiderTip: "Modest dress is strictly required; women must cover their heads, and both men and women should wear clothing that covers their shoulders and knees.",
     howToGetThere: "A short walk from the main jetty in Malé city; easily accessible by taxi from any part of the capital.",
     cost: "Free",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/maldives-male-grand-friday-mosque.jpg'
   },
   {
     name: "Baa Atoll (Hanifaru Bay)",
@@ -21,7 +21,7 @@ export const maldivesAttractions = [
     insiderTip: "Scuba diving is prohibited to protect the animals; only snorkeling is allowed. Book your excursion well in advance as visitor numbers are strictly limited daily.",
     howToGetThere: "Accessible via a domestic flight to Dharavandhoo Airport followed by a short speedboat ride, or directly via seaplane from Malé.",
     cost: "$$, typically requires a guided excursion fee and a Marine Protected Area token.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/maldives-baa-atoll-hanifaru-bay.jpg'
   },
   {
     name: "Maafushi Island",
@@ -33,7 +33,7 @@ export const maldivesAttractions = [
     insiderTip: "Since it's a local island, alcohol is not permitted on the island itself, but 'floating bars' (safari boats) are anchored just offshore where drinks can be purchased.",
     howToGetThere: "A 30-minute speedboat ride or a 90-minute public ferry journey from Malé.",
     cost: "$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/maldives-maafushi-island.jpg'
   },
   {
     name: "Ari Atoll (Whale Sharks)",
@@ -45,7 +45,7 @@ export const maldivesAttractions = [
     insiderTip: "The most consistent sightings occur along the southern edge of the atoll, near Maamigili and Dhigurah. Opt for a reputable operator that follows ethical wildlife interaction guidelines.",
     howToGetThere: "Accessible by seaplane (around 30 minutes from Malé) or domestic flight to Maamigili Airport followed by a speedboat transfer.",
     cost: "$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/maldives-ari-atoll-whale-sharks.jpg'
   },
   {
     name: "Hulhumale",
@@ -57,7 +57,7 @@ export const maldivesAttractions = [
     insiderTip: "Rent a bicycle to explore the island's neat grid of streets, parks, and the beachfront promenade. The weekend night market is a great place to sample local street food.",
     howToGetThere: "Connected directly to Velana International Airport and Malé City via the Sinamalé Bridge, accessible by taxi or public bus in under 15 minutes.",
     cost: "$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/maldives-hulhumale.jpg'
   },
   {
     name: "Banana Reef",
@@ -69,7 +69,7 @@ export const maldivesAttractions = [
     insiderTip: "The eastern side of the reef features incredible caves and overhangs, while the western side is ideal for spotting large schools of fish. Currents can be strong, so dive with an experienced guide.",
     howToGetThere: "A short boat ride (typically 15-30 minutes) from Malé or nearby resorts in the North Malé Atoll.",
     cost: "$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/maldives-banana-reef.jpg'
   },
   {
     name: "Vaadhoo Island (Sea of Stars)",
@@ -81,7 +81,7 @@ export const maldivesAttractions = [
     insiderTip: "The phenomenon is highly dependent on environmental conditions and cannot be guaranteed; plan to stay a few nights to increase your chances. Try stirring the water gently to trigger the glow.",
     howToGetThere: "Accessible via a domestic flight to Ifuru Airport followed by a speedboat transfer, or a direct seaplane ride from Malé.",
     cost: "$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/maldives-vaadhoo-island-sea-of-stars.jpg'
   },
   {
     name: "Sun Island",
@@ -93,7 +93,7 @@ export const maldivesAttractions = [
     insiderTip: "Rent a bicycle to navigate the expansive island; don't miss the resort's spectacular botanical gardens, which are among the most impressive in the Maldives.",
     howToGetThere: "A scenic 20-minute domestic flight from Malé to Maamigili Airport, followed by a very short speedboat ride to the resort.",
     cost: "$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/maldives-sun-island.jpg'
   },
   {
     name: "Alimatha Island",
@@ -105,7 +105,7 @@ export const maldivesAttractions = [
     insiderTip: "Even if you don't scuba dive, the night snorkeling excursion at the house reef is an absolute must-do for the shark encounters. The water is shallow enough to see the action from the surface.",
     howToGetThere: "Approximately a 90-minute speedboat ride or a scenic 20-minute seaplane flight from Velana International Airport.",
     cost: "$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/maldives-alimatha-island.jpg'
   },
   {
     name: "Biyadhoo Island",
@@ -117,7 +117,7 @@ export const maldivesAttractions = [
     insiderTip: "Skip the fancy overwater villas; the charm here is the lush jungle and the reef. The island grows its own fruits and vegetables, which feature heavily in the resort's delicious, authentic curries.",
     howToGetThere: "A straightforward 40-minute speedboat ride from Velana International Airport.",
     cost: "$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/maldives-biyadhoo-island.jpg'
   },
   {
     name: "Utheemu Ganduvaru",
@@ -129,7 +129,7 @@ export const maldivesAttractions = [
     insiderTip: "Take the time to explore the rest of Utheemu island; the local community is incredibly welcoming, and you can observe traditional crafts and an authentic, unhurried way of life.",
     howToGetThere: "Requires a domestic flight to Hanimadhoo Airport, followed by a speedboat transfer to Utheemu Island.",
     cost: "$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/maldives-utheemu-ganduvaru.jpg'
   },
   {
     name: "Fuvahmulah",
@@ -141,7 +141,7 @@ export const maldivesAttractions = [
     insiderTip: "Diving with tiger sharks is the main draw, but ensure you dive with a highly reputable operator. On land, don't miss taking a mud bath in the natural wetlands.",
     howToGetThere: "A scenic domestic flight (about 1 hour and 15 minutes) direct from Malé to Fuvahmulah Airport.",
     cost: "$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/maldives-fuvahmulah.jpg'
   },
   {
     name: "HP Reef",
@@ -153,7 +153,7 @@ export const maldivesAttractions = [
     insiderTip: "Because of the strong currents, this site is strictly for advanced divers. A negative entry is often required to reach the reef quickly before being swept past the best features.",
     howToGetThere: "Accessible via speedboat from Malé or nearby resorts in the North Malé Atoll.",
     cost: "$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/maldives-hp-reef.jpg'
   },
   {
     name: "Artificial Beach (Malé)",
@@ -165,7 +165,7 @@ export const maldivesAttractions = [
     insiderTip: "Like all public beaches in local islands, tourists must adhere to modest dress codes; bikinis and revealing swimwear are strictly prohibited. Try the local street food, like 'bajiya' and 'kulhi boakibaa', from nearby vendors.",
     howToGetThere: "Easily reachable on foot from anywhere within Malé city, or a very short taxi ride.",
     cost: "Free",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/maldives-artificial-beach-male.jpg'
   },
   {
     name: "Manta Point",
@@ -177,7 +177,7 @@ export const maldivesAttractions = [
     insiderTip: "Maintain a respectful distance, stay low on the reef, and never chase or touch the mantas; they will naturally approach if they feel unthreatened.",
     howToGetThere: "Usually a short boat ride from resorts in the North Malé Atoll or via liveaboard dive safaris.",
     cost: "$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/maldives-manta-point.jpg'
   },
   {
     name: "Veligandu Island Beach",
@@ -189,7 +189,7 @@ export const maldivesAttractions = [
     insiderTip: "Book a private dining experience on the tip of the sandbank under the stars for the ultimate romantic evening. The house reef is also excellent and easily accessible from the beach.",
     howToGetThere: "A scenic 20-minute seaplane flight from Velana International Airport.",
     cost: "$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/maldives-veligandu-island-beach.jpg'
   },
   {
     name: "Baros",
@@ -201,7 +201,7 @@ export const maldivesAttractions = [
     insiderTip: "Don't miss a dinner at The Lighthouse Restaurant, not just for the incredible food, but for the stunning panoramic views and the chance to see reef sharks swimming in the illuminated waters below.",
     howToGetThere: "A swift and luxurious 25-minute speedboat transfer directly from Velana International Airport, available 24/7.",
     cost: "$$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/maldives-baros.jpg'
   },
   {
     name: "Como Cocoa Island",
@@ -213,7 +213,7 @@ export const maldivesAttractions = [
     insiderTip: "Take advantage of the complimentary daily yoga classes often held on the spa pavilion or the beach. The snorkeling on the house reef, particularly the drop-off, is superb.",
     howToGetThere: "A smooth 40-minute luxury speedboat ride from Velana International Airport.",
     cost: "$$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/maldives-como-cocoa-island.jpg'
   },
   {
     name: "Dhigurah",
@@ -225,7 +225,7 @@ export const maldivesAttractions = [
     insiderTip: "Walk to the very southern tip of the island to reach the spectacular sandbank, a perfect spot for a secluded picnic or sunset viewing. Support the local economy by dining at the island's small cafes.",
     howToGetThere: "A 20-minute domestic flight to Maamigili followed by a short speedboat ride, or a direct 2-hour speedboat transfer from Malé.",
     cost: "$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/maldives-dhigurah.jpg'
   },
   {
     name: "Kuramathi",
@@ -237,6 +237,6 @@ export const maldivesAttractions = [
     insiderTip: "Don't just stick to the beaches; take the time to wander through the island's impressive Eco Centre and the century-old Banyan tree forest. Opt for the Select All-Inclusive package to fully enjoy the vast culinary offerings.",
     howToGetThere: "A scenic 20-minute seaplane flight or a 90-minute speedboat transfer from Velana International Airport.",
     cost: "$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/maldives-kuramathi.jpg'
   }
 ];

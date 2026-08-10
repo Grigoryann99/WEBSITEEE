@@ -37,7 +37,7 @@ export const spainAttractions = [
     category: "Coastal",
     description: "An island in the Mediterranean Sea well known for its lively nightlife and stunning coves.",
     unsplashQuery: "Ibiza beach turquoise sea Balearic Islands",
-    image: "https://loremflickr.com/1200/800/Ibiza,spain/all?lock=79"
+    image: "/images/attractions/spain-ibiza.jpg"
   },
   {
     name: "Toledo Old City",

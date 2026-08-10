@@ -9,7 +9,7 @@ export const philippinesAttractions = [
     insiderTip: "Charter a private boat early in the morning to avoid the crowds at the Big and Small Lagoons, and ask your guide to take you to the lesser-known Shimizu Island.",
     howToGetThere: "Direct flights from Manila to Lio Airport (El Nido), followed by a short private transfer to the town or resort.",
     cost: "Premium luxury resorts range from $500 to $1,500+ per night.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/philippines-palawan-el-nido.jpg'
   },
   {
     name: "Boracay",
@@ -21,7 +21,7 @@ export const philippinesAttractions = [
     insiderTip: "For a more secluded and premium experience, stay in the Station 1 area or the tranquil Punta Bunga beach, away from the bustling crowds of Station 2.",
     howToGetThere: "Fly into Caticlan Airport from Manila, followed by a quick speedboat transfer directly to the island.",
     cost: "Luxury accommodations range from $300 to $800+ per night.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/philippines-boracay.jpg'
   },
   {
     name: "Chocolate Hills",
@@ -33,7 +33,7 @@ export const philippinesAttractions = [
     insiderTip: "Visit the Chocolate Hills Complex viewing deck at sunrise when a magical mist often blankets the valleys between the hills, providing a spectacular photographic opportunity.",
     howToGetThere: "Fly to Bohol-Panglao International Airport, then hire a private car for a 1.5-hour scenic drive to the interior of Bohol.",
     cost: "Private day tours range from $100 to $250; high-end resorts in Bohol run $200-$600 per night.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/philippines-chocolate-hills.jpg'
   },
   {
     name: "Banaue Rice Terraces",
@@ -45,7 +45,7 @@ export const philippinesAttractions = [
     insiderTip: "Trek to the nearby Batad Rice Terraces, which are shaped like an amphitheater and are less commercialized. Hire a local Ifugao guide for rich historical storytelling.",
     howToGetThere: "A 9-10 hour premium overnight bus from Manila, or a private chartered vehicle through the scenic mountain provinces.",
     cost: "Private guided tours and heritage stays cost around $150-$300 per day.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/philippines-banaue-rice-terraces.jpg'
   },
   {
     name: "Siargao",
@@ -57,7 +57,7 @@ export const philippinesAttractions = [
     insiderTip: "Rent a private villa in the quieter northern towns like Pacifico for undisturbed tranquility, and take a sunrise boat tour to the completely uninhabited Guyam and Daku islands.",
     howToGetThere: "Direct flights are available from Manila and Cebu to Sayak Airport in Siargao.",
     cost: "Boutique luxury resorts and private villas range from $250 to $700 per night.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/philippines-siargao.jpg'
   },
   {
     name: "Intramuros (Manila)",
@@ -69,7 +69,7 @@ export const philippinesAttractions = [
     insiderTip: "Book a sunset bamboo bicycle (Bambike) tour to explore the walls in an eco-friendly way, ending with a premium Filipino-Spanish fusion dinner at a boutique heritage restaurant.",
     howToGetThere: "Located in central Manila, easily accessible via private car or premium ride-hailing services from major hotels in Makati or BGC.",
     cost: "Private guided tours cost around $50-$100; fine dining experiences average $50-$120 per person.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/philippines-intramuros-manila.jpg'
   },
   {
     name: "Mayon Volcano",
@@ -81,7 +81,7 @@ export const philippinesAttractions = [
     insiderTip: "Visit the Cagsawa Ruins early in the morning for the classic photo of the sunken church belfry framed against the perfect cone of Mayon before the afternoon clouds roll in.",
     howToGetThere: "Fly from Manila to Bicol International Airport, followed by a private transfer to your resort in Legazpi.",
     cost: "Luxury accommodations with volcano views range from $150 to $400 per night. Private ATV tours are around $50-$100.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/philippines-mayon-volcano.jpg'
   },
   {
     name: "Tubbataha Reefs",
@@ -93,7 +93,7 @@ export const philippinesAttractions = [
     insiderTip: "Book your liveaboard trip at least a year in advance, as slots are highly limited due to strict environmental conservation quotas. Bring a high-quality underwater camera.",
     howToGetThere: "Fly to Puerto Princesa, Palawan, and board a pre-booked luxury dive liveaboard vessel.",
     cost: "Premium liveaboard trips typically cost between $2,500 and $5,000+ for a week-long expedition.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/philippines-tubbataha-reefs.jpg'
   },
   {
     name: "Coron",
@@ -105,7 +105,7 @@ export const philippinesAttractions = [
     insiderTip: "Hire an exclusive luxury yacht charter to explore the islands at your own pace, ensuring you visit popular spots like Kayangan Lake at dawn before the standard tour groups arrive.",
     howToGetThere: "Direct flights from Manila to Busuanga Airport, followed by a private van and speedboat transfer.",
     cost: "Private island resorts in the Coron area range from $600 to $2,000+ per night.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/philippines-coron.jpg'
   },
   {
     name: "Cebu (Kawasan Falls)",
@@ -117,7 +117,7 @@ export const philippinesAttractions = [
     insiderTip: "Opt for a VIP canyoneering tour that starts upstream at Alegria; this route is less crowded and allows you to enjoy a private luxury picnic prepared by your guides at the end of the trek.",
     howToGetThere: "Fly to Mactan-Cebu International Airport, then hire a private luxury vehicle for a 3-4 hour scenic drive south.",
     cost: "Private VIP canyoneering tours range from $100 to $200 per person.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/philippines-cebu-kawasan-falls.jpg'
   },
   {
     name: "Vigan",
@@ -129,7 +129,7 @@ export const philippinesAttractions = [
     insiderTip: "Take an early morning stroll down Calle Crisologo at 5:30 AM before the shops open; the soft morning light and empty cobblestone streets offer the best photographic moments.",
     howToGetThere: "A 1-hour flight from Manila to Laoag, followed by a 2-hour private transfer to Vigan.",
     cost: "Heritage boutique hotels range from $150 to $300 per night.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/philippines-vigan.jpg'
   },
   {
     name: "Batanes",
@@ -141,7 +141,7 @@ export const philippinesAttractions = [
     insiderTip: "Rent a private vehicle to explore Sabtang Island for a day; request a traditional Ivatan feast to be set up exclusively for you overlooking the cliffs of Chamantad-Tinyan.",
     howToGetThere: "Direct flights from Manila to Basco Airport, though flights are limited and highly weather-dependent.",
     cost: "Boutique accommodations and private all-inclusive tours range from $200 to $500 per day.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/philippines-batanes.jpg'
   },
   {
     name: "Puerto Princesa Underground River",
@@ -153,7 +153,7 @@ export const philippinesAttractions = [
     insiderTip: "Book a private VIP tour to bypass the long queues at the Sabang wharf, and combine the trip with an exclusive mangrove paddleboat tour for a complete eco-experience.",
     howToGetThere: "Fly to Puerto Princesa International Airport, then a 2-hour private luxury transfer to Sabang.",
     cost: "VIP guided day tours cost around $100-$200; luxury resorts in Puerto Princesa average $200-$400 per night.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/philippines-puerto-princesa-underground-river.jpg'
   },
   {
     name: "Camiguin",
@@ -165,7 +165,7 @@ export const philippinesAttractions = [
     insiderTip: "Charter a private boat to White Island (a stunning sandbar) for a champagne sunrise breakfast before the local day-trippers arrive.",
     howToGetThere: "Fly to Camiguin Airport from Cebu, or take a short ferry ride from the Balingoan port in mainland Mindanao.",
     cost: "Boutique luxury stays and private tours range from $150 to $350 per night.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/philippines-camiguin.jpg'
   },
   {
     name: "Panglao Island",
@@ -177,7 +177,7 @@ export const philippinesAttractions = [
     insiderTip: "Book a private yacht for a dolphin-watching tour at dawn, followed by an exclusive snorkeling session at the Balicasag marine sanctuary.",
     howToGetThere: "Fly directly into the modern Bohol-Panglao International Airport, located right on the island.",
     cost: "5-star luxury resorts on Alona or Dumaluan beach range from $300 to $800 per night.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/philippines-panglao-island.jpg'
   },
   {
     name: "Taal Volcano",
@@ -189,7 +189,7 @@ export const philippinesAttractions = [
     insiderTip: "Book a suite at one of Tagaytay's premium boutique wellness resorts that offer unobstructed, private balcony views of the volcano, and enjoy a private in-room massage at sunset.",
     howToGetThere: "A 1.5 to 2-hour private luxury car drive south from Manila to Tagaytay City.",
     cost: "Luxury boutique wellness resorts in Tagaytay range from $200 to $500+ per night.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/philippines-taal-volcano.jpg'
   },
   {
     name: "Mount Pulag",
@@ -201,7 +201,7 @@ export const philippinesAttractions = [
     insiderTip: "Opt for a premium 'glamping' tour operator that provides porters, comfortable sleeping arrangements, and private transport, allowing you to focus entirely on the trek and the views.",
     howToGetThere: "A private 4x4 transfer from Baguio City (which is accessible via private charter flight or luxury bus from Manila).",
     cost: "Premium guided expeditions with high-end equipment cost around $200-$400 per person.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/philippines-mount-pulag.jpg'
   },
   {
     name: "Apo Island",
@@ -213,7 +213,7 @@ export const philippinesAttractions = [
     insiderTip: "Charter a private boat from Dauin so you can time your arrival before the group tours; hire a local marine biologist guide to deeply understand the island's unique conservation success.",
     howToGetThere: "Fly to Dumaguete Airport, take a private transfer to Dauin, and then a 45-minute private boat ride to the island.",
     cost: "Luxury dive resorts in Dauin range from $200 to $500 per night.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/philippines-apo-island.jpg'
   },
   {
     name: "Siquijor",
@@ -225,7 +225,7 @@ export const philippinesAttractions = [
     insiderTip: "Rent a private vintage-style scooter to explore the coastal roads at your own pace, and arrange a private, respectful consultation with a traditional local healer (mambabarang) through your resort.",
     howToGetThere: "Take a fast craft ferry (approx. 1-2 hours) from Dumaguete or Bohol.",
     cost: "Boutique eco-resorts range from $150 to $300 per night.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/philippines-siquijor.jpg'
   },
   {
     name: "Malapascua Island",
@@ -237,6 +237,6 @@ export const philippinesAttractions = [
     insiderTip: "Book a private divemaster for the Monad Shoal dive at dawn to ensure you get the best, undisturbed viewing spot for the Thresher Sharks.",
     howToGetThere: "A 3-4 hour private car transfer from Mactan-Cebu International Airport to Maya Port, followed by a 45-minute private boat transfer.",
     cost: "Premium dive resorts and luxury suites range from $150 to $350 per night.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/philippines-malapascua-island.jpg'
   }
 ];

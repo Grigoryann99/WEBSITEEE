@@ -9,7 +9,7 @@ export const portugalAttractions = [
     insiderTip: "Arrive right at opening time and purchase skip-the-line tickets in advance to explore the terraces before the tour groups arrive.",
     howToGetThere: "Take a scenic train ride from Lisbon to Sintra, followed by a private taxi or the 434 tourist bus up the mountain.",
     cost: "Approx. €14 for full park and palace access.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/portugal-pena-palace.jpg'
   },
   {
     name: "Belem Tower",
@@ -21,7 +21,7 @@ export const portugalAttractions = [
     insiderTip: "Enjoy a private sunset sailing cruise on the Tagus River to view the tower from the water, escaping the shoreside crowds.",
     howToGetThere: "Easily accessible by tram 15 from Lisbon's city center or via a short scenic drive.",
     cost: "Approx. €6 for entry.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/portugal-belem-tower.jpg'
   },
   {
     name: "Jeronimos Monastery",
@@ -33,7 +33,7 @@ export const portugalAttractions = [
     insiderTip: "Combine your visit with a stop at the nearby original Pasteis de Belem bakery, but opt for table service to avoid the massive takeaway queues.",
     howToGetThere: "Located in the Belem district, reachable by tram 15, taxi, or private transfer from central Lisbon.",
     cost: "Approx. €10 for entry to the cloisters.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/portugal-jeronimos-monastery.jpg'
   },
   {
     name: "Douro Valley",
@@ -45,7 +45,7 @@ export const portugalAttractions = [
     insiderTip: "Charter a private Rabelo boat or a luxury yacht for a customized cruise along the Douro River, complete with on-board wine tasting.",
     howToGetThere: "A scenic train ride from Porto's Sao Bento station, or a scenic drive along the N222, often hailed as one of the world's best driving roads.",
     cost: "Varies greatly depending on wine tours and river cruises (typically €50 - €200+).",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/portugal-douro-valley.jpg'
   },
   {
     name: "Algarve Coast (Benagil Cave)",
@@ -57,7 +57,7 @@ export const portugalAttractions = [
     insiderTip: "Rent a private speedboat or join a luxury catamaran tour early in the morning to have the cave almost entirely to yourself before the kayak groups arrive.",
     howToGetThere: "Accessible only by water; take a boat tour, kayak, or paddleboard from the nearby Benagil Beach or Carvoeiro.",
     cost: "Boat tours range from €25 to €150+ for private charters.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/portugal-algarve-coast-benagil-cave.jpg'
   },
   {
     name: "Alfama",
@@ -69,7 +69,7 @@ export const portugalAttractions = [
     insiderTip: "Book a table at a premium, intimate Fado house like Clube de Fado well in advance for an exquisite dinner accompanied by world-class performances.",
     howToGetThere: "Take the iconic Tram 28, or simply wander up from the Baixa district if you enjoy a steep, scenic walk.",
     cost: "Free to explore; Fado dinners typically range from €50 to €100+.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/portugal-alfama.jpg'
   },
   {
     name: "Ribeira",
@@ -81,7 +81,7 @@ export const portugalAttractions = [
     insiderTip: "Seek out a high-end restaurant hidden in the historic alleys just behind the main promenade for exceptional local cuisine without the tourist crowds.",
     howToGetThere: "Located in central Porto, easily walkable from most downtown areas or accessible via the funicular.",
     cost: "Free to explore.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/portugal-ribeira.jpg'
   },
   {
     name: "Sao Jorge Castle",
@@ -93,7 +93,7 @@ export const portugalAttractions = [
     insiderTip: "Take time to visit the Camera Obscura located in one of the towers for a unique, 360-degree real-time projection of Lisbon.",
     howToGetThere: "Take Tram 28 or a tuk-tuk up the steep hills from the city center.",
     cost: "Approx. €15 for adult entry.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/portugal-sao-jorge-castle.jpg'
   },
   {
     name: "Cabo da Roca",
@@ -105,7 +105,7 @@ export const portugalAttractions = [
     insiderTip: "Bring a windbreaker regardless of the season, as the coastal winds can be exceptionally strong, and walk slightly away from the monument for quieter viewpoints.",
     howToGetThere: "Best reached by private car or chauffeured tour along the scenic coastal route from Cascais or Sintra.",
     cost: "Free to visit the viewpoint.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/portugal-cabo-da-roca.jpg'
   },
   {
     name: "Obidos Castle",
@@ -117,7 +117,7 @@ export const portugalAttractions = [
     insiderTip: "Stay overnight in the village; once the day-trippers leave in the late afternoon, you'll have the magical, illuminated streets almost to yourself.",
     howToGetThere: "A comfortable 1-hour drive north from Lisbon, perfect for a luxury day trip or en route to Porto.",
     cost: "Free to enter the town and walk the walls.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/portugal-obidos-castle.jpg'
   },
   {
     name: "Livraria Lello",
@@ -129,7 +129,7 @@ export const portugalAttractions = [
     insiderTip: "Purchase a 'ticket-voucher' online in advance; the cost of the ticket can be deducted from the purchase of any book during your visit.",
     howToGetThere: "Located in the center of Porto, easily accessible on foot from the Clerigos Tower.",
     cost: "Approx. €5 entry voucher (deductible from purchases).",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/portugal-livraria-lello.jpg'
   },
   {
     name: "Evora Roman Temple",
@@ -141,7 +141,7 @@ export const portugalAttractions = [
     insiderTip: "After admiring the temple, enjoy a high-end wine tasting experience at the nearby Cartuxa winery to fully appreciate the Alentejo region.",
     howToGetThere: "A pleasant 1.5-hour drive east from Lisbon, making it an ideal destination for a chauffeured day trip.",
     cost: "Free to view (located in a public square).",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/portugal-evora-roman-temple.jpg'
   },
   {
     name: "Peneda-Geres National Park",
@@ -153,7 +153,7 @@ export const portugalAttractions = [
     insiderTip: "Hire a private local guide and a 4x4 vehicle to access the most remote and stunning viewpoints that regular cars cannot reach.",
     howToGetThere: "About a 1.5-hour drive northeast from Porto; renting a car or booking a private driver is essential.",
     cost: "Free to enter the park, but guided tours and activities vary.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/portugal-peneda-geres-national-park.jpg'
   },
   {
     name: "Quinta da Regaleira",
@@ -165,7 +165,7 @@ export const portugalAttractions = [
     insiderTip: "Start your visit at the Initiation Well at the top of the gardens and work your way down, ending with the main palace to avoid the uphill climb in the heat.",
     howToGetThere: "A short, scenic walk from the historic center of Sintra.",
     cost: "Approx. €11 for adult entry.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/portugal-quinta-da-regaleira.jpg'
   },
   {
     name: "Dom Luis I Bridge",
@@ -177,7 +177,7 @@ export const portugalAttractions = [
     insiderTip: "Take the funicular up to the top deck on the Porto side, walk across enjoying the views, and then take the cable car down on the Gaia side for a seamless luxury experience.",
     howToGetThere: "Located in central Porto; easily accessible by foot, metro, or funicular.",
     cost: "Free to cross.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/portugal-dom-luis-i-bridge.jpg'
   },
   {
     name: "Monsaraz",
@@ -189,7 +189,7 @@ export const portugalAttractions = [
     insiderTip: "Book an exclusive stargazing session at the nearby Dark Sky Alqueva observatory, as this region has some of the lowest light pollution in Europe.",
     howToGetThere: "Requires a car; it's a beautifully scenic 2.5-hour drive from Lisbon through the rolling plains of the Alentejo.",
     cost: "Free to visit the village.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/portugal-monsaraz.jpg'
   },
   {
     name: "Bom Jesus do Monte",
@@ -201,7 +201,7 @@ export const portugalAttractions = [
     insiderTip: "Ride the remarkable water-powered funicular up the hill—it is the oldest functioning one of its kind in the world—and enjoy the scenic walk down the spectacular staircases.",
     howToGetThere: "A short drive or bus ride from the center of Braga, which is easily accessible from Porto.",
     cost: "Free to visit the grounds; a few euros for the funicular ride.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/portugal-bom-jesus-do-monte.jpg'
   },
   {
     name: "Batalha Monastery",
@@ -213,7 +213,7 @@ export const portugalAttractions = [
     insiderTip: "Hire a private historian guide to fully decode the complex symbolism and rich history etched into every stone of the monastery.",
     howToGetThere: "Located in central Portugal, easily reachable by car in about 1.5 hours from Lisbon, often combined with Alcobaca or Fatima.",
     cost: "Approx. €6 for access to the cloisters and chapels.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/portugal-batalha-monastery.jpg'
   },
   {
     name: "Azores (Sete Cidades)",
@@ -225,7 +225,7 @@ export const portugalAttractions = [
     insiderTip: "Head to the Boca do Inferno viewpoint for arguably the most spectacular, panoramic view of the entire crater and both lakes.",
     howToGetThere: "A short drive from Ponta Delgada on Sao Miguel Island; accessible via direct flights from Lisbon, Porto, or North America.",
     cost: "Free to visit the viewpoints and hike the trails.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/portugal-azores-sete-cidades.jpg'
   },
   {
     name: "Madeira (Levadas)",
@@ -237,6 +237,6 @@ export const portugalAttractions = [
     insiderTip: "Book a private, guided levada walk to tackle some of the less crowded, more spectacular routes, such as the Levada do Caldeirao Verde.",
     howToGetThere: "Fly into Funchal, Madeira; guided tours typically provide private transfers directly from your luxury hotel to the trailheads.",
     cost: "Trails are free, but a private guided tour is highly recommended (approx. €50 - €150).",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/portugal-madeira-levadas.jpg'
   }
 ];

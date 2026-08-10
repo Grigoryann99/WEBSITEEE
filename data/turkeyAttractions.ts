@@ -9,7 +9,7 @@ export const turkeyAttractions = [
     insiderTip: "Hire an expert private guide to fully understand the intricate details of the Byzantine mosaics and Islamic calligraphy that adorn the interior walls.",
     howToGetThere: "Located in the Sultanahmet district, easily accessible via the T1 Tram line (Sultanahmet station).",
     cost: "Free (as an active mosque), but guided tours vary in price.",
-    image: "https://loremflickr.com/1200/800/Hagia,Sophia,turkey/all?lock=102"
+    image: "/images/attractions/turkey-hagia-sophia.jpg"
   },
   {
     name: "Cappadocia",
@@ -45,7 +45,7 @@ export const turkeyAttractions = [
     insiderTip: "Enter through the South Gate to walk up the travertine path barefoot; bring a bag for your shoes and wear easily removable layers.",
     howToGetThere: "Fly to Denizli Çardak Airport (DNZ), followed by a 1-hour drive, or take a private transfer from Izmir or Antalya.",
     cost: "Approx. $30 for entry to Pamukkale and Hierapolis, extra fee for Cleopatra's Pool.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/turkey-pamukkale-thermal-pools.jpg'
   },
   {
     name: "Blue Mosque",
@@ -93,7 +93,7 @@ export const turkeyAttractions = [
     insiderTip: "Stay in the nearby town of Kahta and hire a local driver for the steep, winding mountain road; bring heavy layers as it is freezing before dawn.",
     howToGetThere: "Fly into Adıyaman Airport (ADF) or Şanlıurfa (GNY) and arrange a private tour or rental car.",
     cost: "Approx. $10 entrance fee, plus transportation costs.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/turkey-mount-nemrut.jpg'
   },
   {
     name: "Galata Tower & Bosphorus",
@@ -117,7 +117,7 @@ export const turkeyAttractions = [
     insiderTip: "The ruins can be difficult to interpret on your own; hiring an expert guide or thoroughly exploring the new Museum of Troy beforehand is highly recommended.",
     howToGetThere: "A 4-5 hour drive from Istanbul, or fly into Çanakkale Airport (CKZ) followed by a short drive.",
     cost: "Approx. $20 for the ruins and $15 for the museum.",
-    image: "https://loremflickr.com/1200/800/Troy,Ancient,turkey/all?lock=103"
+    image: "/images/attractions/turkey-troy-ancient-city.jpg"
   },
   {
     name: "Antalya Coast (Lycian Way)",
@@ -141,7 +141,7 @@ export const turkeyAttractions = [
     insiderTip: "Pay the extra fee to enter the Dark Church (Karanlık Kilise); the lack of light over the centuries has preserved the frescoes in astonishing, pristine condition.",
     howToGetThere: "A short, scenic 15-minute walk from the center of Göreme town.",
     cost: "Approx. $20 entrance fee, plus an extra $5 for the Dark Church.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/turkey-goreme-open-air-museum.jpg'
   },
   {
     name: "Basilica Cistern",
@@ -153,7 +153,7 @@ export const turkeyAttractions = [
     insiderTip: "Purchase skip-the-line tickets in advance, as the queue to enter this popular underground attraction can wrap around the block.",
     howToGetThere: "Located in Sultanahmet Square, just a stone's throw from Hagia Sophia.",
     cost: "Approx. $30 entrance fee.",
-    image: "https://loremflickr.com/1200/800/Basilica,Cistern,turkey/all?lock=104"
+    image: "/images/attractions/turkey-basilica-cistern.jpg"
   },
   {
     name: "Bodrum Castle",
@@ -165,7 +165,7 @@ export const turkeyAttractions = [
     insiderTip: "Visit in the late afternoon to enjoy the golden hour lighting for photography, followed by an elegant seafood dinner at the nearby marina.",
     howToGetThere: "Fly into Milas-Bodrum Airport (BJV) and take a 40-minute premium transfer to Bodrum center.",
     cost: "Approx. $20 entrance fee.",
-    image: "https://loremflickr.com/1200/800/Bodrum,Castle,turkey/all?lock=105"
+    image: "/images/attractions/turkey-bodrum-castle.jpg"
   },
   {
     name: "Sumela Monastery",
@@ -189,7 +189,7 @@ export const turkeyAttractions = [
     insiderTip: "Check the schedule for the Aspendos International Opera and Ballet Festival (usually in late summer) and secure premium tickets well in advance.",
     howToGetThere: "A 45-minute drive east from Antalya; best reached by rental car or private transfer.",
     cost: "Approx. $15 entrance fee (festival tickets sold separately).",
-    image: "https://loremflickr.com/1200/800/Aspendos,Theatre,turkey/all?lock=106"
+    image: "/images/attractions/turkey-aspendos-theatre.jpg"
   },
   {
     name: "Fethiye (Ölüdeniz Blue Lagoon)",
@@ -201,7 +201,7 @@ export const turkeyAttractions = [
     insiderTip: "Book a premium sunset paragliding flight for calmer winds and magnificent golden-hour views over the Mediterranean.",
     howToGetThere: "Fly to Dalaman Airport (DLM), then take a 1-hour luxury transfer to Fethiye or Ölüdeniz.",
     cost: "Lagoon entry approx. $5; Paragliding flights range from $100 to $150+.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/turkey-fethiye-oludeniz-blue-lagoon.jpg'
   },
   {
     name: "Olympos and Chimaera",
@@ -213,7 +213,7 @@ export const turkeyAttractions = [
     insiderTip: "Bring marshmallows or sausages to roast over the eternal flames at Chimaera, and definitely pack a headlamp for the dark hike back down.",
     howToGetThere: "About a 1.5-hour drive south of Antalya; accessible by rental car or private transfer.",
     cost: "Olympos ruins approx. $10; Chimaera entry approx. $5.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/turkey-olympos-and-chimaera.jpg'
   },
   {
     name: "Myra Rock Tombs",
@@ -225,7 +225,7 @@ export const turkeyAttractions = [
     insiderTip: "Charter a private boat from the nearby harbor of Çayağzı to visit the sunken city of Kekova on the same day for a premier coastal experience.",
     howToGetThere: "A 2.5-hour coastal drive west from Antalya; best explored via private car or as part of a luxury gulet cruise.",
     cost: "Approx. $15 for Myra ruins, and $15 for St. Nicholas Church.",
-    image: "https://loremflickr.com/1200/800/Myra,Rock,turkey/all?lock=107"
+    image: "/images/attractions/turkey-myra-rock-tombs.jpg"
   },
   {
     name: "Gobekli Tepe",

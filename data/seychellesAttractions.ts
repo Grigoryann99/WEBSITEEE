@@ -9,7 +9,7 @@ export const seychellesAttractions = [
     insiderTip: "Visit early in the morning or late in the afternoon to avoid the crowds and capture the best lighting on the granite boulders.",
     howToGetThere: "Accessible via the L'Union Estate on La Digue; entails an entrance fee and a short bicycle ride or walk.",
     cost: "Entrance fee to L'Union Estate (approx. 115 SCR)",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/seychelles-anse-source-d.jpg'
   },
   {
     name: "Vallée de Mai Nature Reserve",
@@ -21,7 +21,7 @@ export const seychellesAttractions = [
     insiderTip: "Hire a private local guide to spot the rare Seychelles black parrot and fully appreciate the intricate ecology of the Coco de Mer.",
     howToGetThere: "Located in the center of Praslin; easily accessible by taxi, rental car, or local bus.",
     cost: "Entrance fee (approx. 350 SCR)",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/seychelles-vallee-de-mai-nature-reserve.jpg'
   },
   {
     name: "Beau Vallon Beach",
@@ -33,7 +33,7 @@ export const seychellesAttractions = [
     insiderTip: "Visit on a Wednesday evening to experience the vibrant Bazar Labrin night market, featuring local street food, music, and crafts.",
     howToGetThere: "A 10-15 minute drive from Victoria, Mahé; accessible by taxi, car, or bus.",
     cost: "Free access; activities and dining vary",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/seychelles-beau-vallon-beach.jpg'
   },
   {
     name: "Anse Lazio",
@@ -45,7 +45,7 @@ export const seychellesAttractions = [
     insiderTip: "Swim towards the large rocks on the left side of the beach for the best snorkeling and coral formations.",
     howToGetThere: "Located in the northwest of Praslin; accessible by car or taxi, followed by a short walk over a hill.",
     cost: "Free access",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/seychelles-anse-lazio.jpg'
   },
   {
     name: "Curieuse Island",
@@ -57,7 +57,7 @@ export const seychellesAttractions = [
     insiderTip: "Combine your visit with a boat trip to St. Pierre islet for an afternoon of world-class snorkeling.",
     howToGetThere: "Accessible via a short boat ride or catamaran excursion from Praslin.",
     cost: "Landing fee (approx. 300 SCR)",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/seychelles-curieuse-island.jpg'
   },
   {
     name: "Aldabra Atoll",
@@ -69,7 +69,7 @@ export const seychellesAttractions = [
     insiderTip: "Access is strictly regulated; ensure you book an expedition through a specialized, high-end liveaboard charter well in advance.",
     howToGetThere: "Only accessible by chartered expedition cruise or specialized liveaboard vessel from Mahé.",
     cost: "Very high (Expedition costs run into thousands of dollars)",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/seychelles-aldabra-atoll.jpg'
   },
   {
     name: "Morne Seychellois National Park",
@@ -81,7 +81,7 @@ export const seychellesAttractions = [
     insiderTip: "Hike the Copolia Trail for a moderately challenging trek that concludes with stunning views and encounters with carnivorous pitcher plants.",
     howToGetThere: "Accessible by car or taxi from Victoria; trails start at various points along the Sans Soucis road.",
     cost: "Entrance fee for certain trails (approx. 100 SCR)",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/seychelles-morne-seychellois-national-park.jpg'
   },
   {
     name: "Sainte Anne Marine National Park",
@@ -93,7 +93,7 @@ export const seychellesAttractions = [
     insiderTip: "Book a private semi-submarine or glass-bottom boat tour for a luxurious and dry view of the magnificent coral reefs.",
     howToGetThere: "A short 15-minute boat ride from Victoria harbor on Mahé.",
     cost: "Marine park fee (approx. 250 SCR) plus excursion costs",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/seychelles-sainte-anne-marine-national-park.jpg'
   },
   {
     name: "Bird Island",
@@ -105,7 +105,7 @@ export const seychellesAttractions = [
     insiderTip: "Pack binoculars and a high-quality camera; the birds are unafraid of humans, allowing for incredible close-up photography.",
     howToGetThere: "Accessible via a 30-minute domestic flight from Mahé.",
     cost: "Access typically included in overnight lodge stays; day trips are rare",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/seychelles-bird-island.jpg'
   },
   {
     name: "Victoria (Clock Tower)",
@@ -117,7 +117,7 @@ export const seychellesAttractions = [
     insiderTip: "Visit the Sir Selwyn Selwyn-Clarke Market early on a Saturday morning to experience the vibrant local culture at its peak.",
     howToGetThere: "Located centrally on Mahé; easily accessible by car, taxi, or bus from anywhere on the island.",
     cost: "Free to explore",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/seychelles-victoria-clock-tower.jpg'
   },
   {
     name: "Anse Intendance",
@@ -129,7 +129,7 @@ export const seychellesAttractions = [
     insiderTip: "Watch out for nesting turtles between October and February, and respect the demarcated nesting areas on the beach.",
     howToGetThere: "Accessible by car or taxi; located in the southern part of Mahé.",
     cost: "Free access",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/seychelles-anse-intendance.jpg'
   },
   {
     name: "Cousin Island Special Reserve",
@@ -141,7 +141,7 @@ export const seychellesAttractions = [
     insiderTip: "Prepare for a thrilling beach landing on the reserve's small boats, and apply ample eco-friendly mosquito repellent before exploring the forest.",
     howToGetThere: "Accessible via guided boat tours departing from Praslin.",
     cost: "Landing and tour fee (approx. 600 SCR)",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/seychelles-cousin-island-special-reserve.jpg'
   },
   {
     name: "Aride Island Nature Reserve",
@@ -153,7 +153,7 @@ export const seychellesAttractions = [
     insiderTip: "Tours can often be cancelled due to rough seas, so book a flexible private charter and keep your schedule adaptable.",
     howToGetThere: "Accessible via private boat charters or organized tours from Praslin, dependent on sea conditions.",
     cost: "Landing fee (approx. 650 SCR)",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/seychelles-aride-island.jpg'
   },
   {
     name: "Silhouette Island",
@@ -165,7 +165,7 @@ export const seychellesAttractions = [
     insiderTip: "Book a guided hike to Grand Barbe to experience a challenging trek across the island to a spectacular, completely isolated beach.",
     howToGetThere: "Accessible via a 45-minute ferry ride or a 15-minute helicopter flight from Mahé.",
     cost: "Ferry (approx. 1,000 SCR return) or helicopter charter",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/seychelles-silhouette-island.jpg'
   },
   {
     name: "La Digue Island",
@@ -177,7 +177,7 @@ export const seychellesAttractions = [
     insiderTip: "Rent a bicycle to explore the island at your own pace, and venture down the less-traveled paths to find secluded, hidden beaches.",
     howToGetThere: "Accessible via a 15-minute ferry ride from Praslin or a direct ferry from Mahé.",
     cost: "Ferry tickets vary; bicycle rental (approx. 150 SCR/day)",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/seychelles-la-digue-island.jpg'
   },
   {
     name: "Moyenne Island",
@@ -189,7 +189,7 @@ export const seychellesAttractions = [
     insiderTip: "Take the time to read the historical markers along the trails to fully appreciate Brendon Grimshaw's incredible lifelong conservation effort.",
     howToGetThere: "Accessible via organized boat tours or private charters from Mahé.",
     cost: "Landing fee (approx. 150 SCR)",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/seychelles-moyenne-island.jpg'
   },
   {
     name: "Grand Anse",
@@ -201,7 +201,7 @@ export const seychellesAttractions = [
     insiderTip: "Due to dangerous currents, swimming is not recommended; instead, use the trail at the end of the beach to hike to the equally stunning, secluded Petit Anse.",
     howToGetThere: "Accessible via a scenic, moderately challenging bicycle ride across La Digue island.",
     cost: "Free access",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/seychelles-grand-anse.jpg'
   },
   {
     name: "Seychelles National Botanical Gardens",
@@ -213,7 +213,7 @@ export const seychellesAttractions = [
     insiderTip: "Do not miss the exquisite orchid house, which showcases some of the rarest and most beautiful tropical blooms in the Indian Ocean.",
     howToGetThere: "A short walk or a very quick taxi ride from the center of Victoria on Mahé.",
     cost: "Entrance fee (approx. 100 SCR)",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/seychelles-seychelles-national-botanical-gardens.jpg'
   },
   {
     name: "Anse Georgette",
@@ -225,7 +225,7 @@ export const seychellesAttractions = [
     insiderTip: "Access requires prior authorization from the Constance Lémuria Resort; call at least a day in advance to secure your free entry, or access it via a challenging hike from Anse Lazio.",
     howToGetThere: "Accessible via a 20-minute walk through the Constance Lémuria Resort golf course, or by boat.",
     cost: "Free access (authorization required)",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/seychelles-anse-georgette.jpg'
   },
   {
     name: "Felicite Island",
@@ -237,6 +237,6 @@ export const seychellesAttractions = [
     insiderTip: "Experience the island's supreme luxury by booking a stay at the Six Senses Zil Pasyon, or arrange a private boat charter to snorkel in the pristine waters surrounding the island.",
     howToGetThere: "Accessible via a scenic 20-minute helicopter flight from Mahé or a short speedboat ride from La Digue or Praslin.",
     cost: "Very high (primarily exclusive to resort guests or private charters)",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/seychelles-felicite-island.jpg'
   }
 ];

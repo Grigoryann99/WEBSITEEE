@@ -9,7 +9,7 @@ export const netherlandsAttractions = [
     insiderTip: "Download the free Rijksmuseum app for excellent multimedia tours and hidden stories behind the masterpieces.",
     howToGetThere: "Easily accessible by trams 2, 5, or 12 from Amsterdam Central Station.",
     cost: "€22.50 per adult; free for ages 18 and under.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/netherlands-rijksmuseum.jpg'
   },
   {
     name: "Van Gogh Museum",
@@ -21,7 +21,7 @@ export const netherlandsAttractions = [
     insiderTip: "Book your tickets well in advance online, as the museum often sells out days ahead, and explore the temporary exhibitions on the upper floors.",
     howToGetThere: "Located at Museumplein, reachable by tram lines 2, 5, and 12.",
     cost: "€22 per adult; free for visitors under 18.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/netherlands-van-gogh-museum.jpg'
   },
   {
     name: "Anne Frank House",
@@ -33,7 +33,7 @@ export const netherlandsAttractions = [
     insiderTip: "Tickets are released on the official website every Tuesday at 10:00 AM (Amsterdam time) for visits six weeks later—be ready to book immediately.",
     howToGetThere: "A 15-minute walk from Amsterdam Central Station, or take tram 13 or 17 to the Westermarkt stop.",
     cost: "€16 per adult.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/netherlands-anne-frank-house.jpg'
   },
   {
     name: "Keukenhof Gardens",
@@ -45,7 +45,7 @@ export const netherlandsAttractions = [
     insiderTip: "Rent a bicycle outside the park entrance to explore the surrounding, endless fields of commercially grown tulips away from the crowds.",
     howToGetThere: "Special Keukenhof Express buses run directly from Amsterdam RAI, Schiphol Airport, and Leiden during the season.",
     cost: "€19.50 per adult when bought online.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/netherlands-keukenhof-gardens.jpg'
   },
   {
     name: "Zaanse Schans",
@@ -57,7 +57,7 @@ export const netherlandsAttractions = [
     insiderTip: "Purchase the Zaanse Schans Card for inclusive access to multiple museums and windmills, saving time and money.",
     howToGetThere: "A direct 15-minute train ride from Amsterdam Central to Zaandijk Zaanse Schans station, followed by a scenic 15-minute walk.",
     cost: "Free to walk around the village; windmills and museums charge varying small fees (around €5-€7 each).",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/netherlands-zaanse-schans.jpg'
   },
   {
     name: "Vondelpark",
@@ -69,7 +69,7 @@ export const netherlandsAttractions = [
     insiderTip: "Visit the Blauwe Theehuis (Blue Tea House), a striking modernist pavilion in the middle of the park, for a delightful coffee or local craft beer.",
     howToGetThere: "Easily accessible on foot or by bicycle from the museum quarter and the city center.",
     cost: "Free.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/netherlands-vondelpark.jpg'
   },
   {
     name: "Giethoorn",
@@ -81,7 +81,7 @@ export const netherlandsAttractions = [
     insiderTip: "Rent your own electric whisper boat in advance, and pack a gourmet picnic to enjoy on the water while exploring the broader national park lakes nearby.",
     howToGetThere: "Best reached by car (about 1.5 hours from Amsterdam) or by train to Steenwijk followed by bus 70.",
     cost: "Free to walk; boat rentals start around €20-€35 per hour.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/netherlands-giethoorn.jpg'
   },
   {
     name: "Kinderdijk Windmills",
@@ -93,7 +93,7 @@ export const netherlandsAttractions = [
     insiderTip: "Take a scenic boat tour along the canals for the best vantage point of the windmills, and check the schedule for days when all mills are operating simultaneously.",
     howToGetThere: "Take the Waterbus from Rotterdam or Dordrecht for a highly scenic and convenient arrival right at the entrance.",
     cost: "€19 per adult (includes access to museum mills, an engine pumping station, and a boat tour).",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/netherlands-kinderdijk-windmills.jpg'
   },
   {
     name: "Efteling Theme Park",
@@ -105,7 +105,7 @@ export const netherlandsAttractions = [
     insiderTip: "Don't miss the spectacular \"Aquanura\" water show at the end of the day, a breathtaking combination of water, fire, light, and music.",
     howToGetThere: "Accessible by train to Tilburg or 's-Hertogenbosch, followed by a dedicated Efteling bus line.",
     cost: "Around €48-€51 depending on the season.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/netherlands-efteling-theme-park.jpg'
   },
   {
     name: "Mauritshuis",
@@ -117,7 +117,7 @@ export const netherlandsAttractions = [
     insiderTip: "Download the Mauritshuis app for an excellent audio guide, and enjoy a premium lunch at the museum's elegant brasserie.",
     howToGetThere: "A 10-minute walk from Den Haag Centraal station, right in the historic center of The Hague.",
     cost: "€19.50 per adult; free for ages 18 and under.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/netherlands-mauritshuis.jpg'
   },
   {
     name: "Delft Canals",
@@ -129,7 +129,7 @@ export const netherlandsAttractions = [
     insiderTip: "Take a private, guided canal cruise in a small, low-profile boat to hear local historical anecdotes and access narrower waterways.",
     howToGetThere: "A direct, 45-minute train ride from Amsterdam Central, or 15 minutes from Rotterdam or The Hague.",
     cost: "Free to explore the city; canal tours vary (around €12-€15).",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/netherlands-delft-canals.jpg'
   },
   {
     name: "Dam Square",
@@ -141,7 +141,7 @@ export const netherlandsAttractions = [
     insiderTip: "After exploring the square, head to the nearby luxurious De Bijenkorf department store for premium shopping and a fantastic rooftop cafe view.",
     howToGetThere: "A straight, 10-minute walk down the Damrak from Amsterdam Central Station.",
     cost: "Free to visit the square.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/netherlands-dam-square.jpg'
   },
   {
     name: "Euromast (Rotterdam)",
@@ -153,7 +153,7 @@ export const netherlandsAttractions = [
     insiderTip: "For adventurous luxury travelers, you can book a stay in one of the exclusive hotel suites located high up within the tower itself.",
     howToGetThere: "Take tram 8 to the Euromast stop, or enjoy a scenic walk through the park from the city center.",
     cost: "€12.50 per adult for basic entry.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/netherlands-euromast-rotterdam.jpg'
   },
   {
     name: "Hoge Veluwe National Park",
@@ -165,7 +165,7 @@ export const netherlandsAttractions = [
     insiderTip: "Grab one of the 1,800 free white bikes scattered at the entrances and cycle to the Jachthuis Sint Hubertus, an architectural masterpiece of a hunting lodge within the park.",
     howToGetThere: "Best accessed by car, or take a train to Ede-Wageningen or Apeldoorn, followed by a bus to the park entrances.",
     cost: "€13.05 for park entry; additional €13.05 for Kröller-Müller Museum access.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/netherlands-hoge-veluwe-national-park.jpg'
   },
   {
     name: "De Haar Castle",
@@ -177,7 +177,7 @@ export const netherlandsAttractions = [
     insiderTip: "Take a guided tour to access the castle's lavishly decorated private bedrooms and hear the juicy historical gossip of the elite guests.",
     howToGetThere: "Take a train to Utrecht Central, then a local bus, or take a 30-minute taxi/drive from Amsterdam.",
     cost: "€19 per adult for castle and park entry.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/netherlands-de-haar-castle.jpg'
   },
   {
     name: "Scheveningen Pier",
@@ -189,7 +189,7 @@ export const netherlandsAttractions = [
     insiderTip: "For thrill-seekers, the pier features a massive zipline and a bungee jump right over the ocean.",
     howToGetThere: "Take tram 1, 9, or 11 from The Hague Central Station directly to the Scheveningen beach boulevard.",
     cost: "Free to walk the pier; Ferris wheel rides are approximately €15.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/netherlands-scheveningen-pier.jpg'
   },
   {
     name: "Alkmaar Cheese Market",
@@ -201,7 +201,7 @@ export const netherlandsAttractions = [
     insiderTip: "After watching the market, take a walking tour of Alkmaar's stunning historic center, which is often much quieter and just as beautiful as Amsterdam.",
     howToGetThere: "A direct, 35-minute train ride from Amsterdam Central Station.",
     cost: "Free to watch the market.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/netherlands-alkmaar-cheese-market.jpg'
   },
   {
     name: "Marken",
@@ -213,7 +213,7 @@ export const netherlandsAttractions = [
     insiderTip: "Take the scenic 'Marken Express' ferry from the nearby fishing village of Volendam for a brilliant approach by water.",
     howToGetThere: "Accessible by car via the causeway, by bus 315 from Amsterdam North, or by ferry from Volendam.",
     cost: "Free to explore the village.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/netherlands-marken.jpg'
   },
   {
     name: "Royal Palace of Amsterdam",
@@ -225,7 +225,7 @@ export const netherlandsAttractions = [
     insiderTip: "The free audio guide is exceptionally well-produced and crucial for understanding the intricate symbolism carved into the marble throughout the palace.",
     howToGetThere: "Located right in the center of Amsterdam on Dam Square; a short walk from Central Station.",
     cost: "€12.50 per adult.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/netherlands-royal-palace-of-amsterdam.jpg'
   },
   {
     name: "Binnenhof (The Hague)",
@@ -237,6 +237,6 @@ export const netherlandsAttractions = [
     insiderTip: "Book a guided tour with ProDemos well in advance to access the impressive interiors of the Ridderzaal and the active parliamentary chambers.",
     howToGetThere: "A 10-minute walk from Den Haag Centraal station or take tram 1, 16, or 17.",
     cost: "Free to walk through the courtyards; guided interior tours vary from €6 to €12.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/netherlands-binnenhof-the-hague.jpg'
   }
 ];

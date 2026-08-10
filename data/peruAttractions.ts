@@ -9,7 +9,7 @@ export const peruAttractions = [
     insiderTip: "Arrive at sunrise for a magical, crowd-free experience and take time to explore the lesser-known Inca Bridge.",
     howToGetThere: "Train from Ollantaytambo to Aguas Calientes, followed by a short bus ride up to the entrance.",
     cost: "High",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/peru-machu-picchu.jpg'
   },
   {
     name: "Sacred Valley",
@@ -21,7 +21,7 @@ export const peruAttractions = [
     insiderTip: "Don't miss the circular terraces of Moray, which were likely used as an agricultural research station by the Incas.",
     howToGetThere: "Private transfer or organized tour from Cusco, which is about an hour away.",
     cost: "Moderate",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/peru-sacred-valley.jpg'
   },
   {
     name: "Cusco Historic Center",
@@ -33,7 +33,7 @@ export const peruAttractions = [
     insiderTip: "Take a leisurely walk through the bohemian neighborhood of San Blas to discover incredible local artisans and cozy cafes.",
     howToGetThere: "Fly into Alejandro Velasco Astete International Airport (CUZ) in Cusco.",
     cost: "Moderate to High",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/peru-cusco-historic-center.jpg'
   },
   {
     name: "Colca Canyon",
@@ -45,7 +45,7 @@ export const peruAttractions = [
     insiderTip: "Spend a night in a luxury lodge in the canyon to enjoy the thermal baths under a star-filled Andean sky.",
     howToGetThere: "A scenic 3 to 4-hour drive from the city of Arequipa.",
     cost: "Moderate",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/peru-colca-canyon.jpg'
   },
   {
     name: "Lake Titicaca (Uros Islands)",
@@ -57,7 +57,7 @@ export const peruAttractions = [
     insiderTip: "Extend your trip to the less-visited Taquile Island for pristine views and a deeper understanding of local textile arts.",
     howToGetThere: "Fly into Juliaca (JUL) and take an hour's drive to Puno, then a boat to the islands.",
     cost: "Moderate",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/peru-lake-titicaca-uros-islands.jpg'
   },
   {
     name: "Nazca Lines",
@@ -69,7 +69,7 @@ export const peruAttractions = [
     insiderTip: "Book an early morning scenic flight for the best visibility, less turbulence, and optimal photography conditions.",
     howToGetThere: "Bus or private transfer from Lima (about 6-7 hours) or a short flight from Paracas/Ica.",
     cost: "High",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/peru-nazca-lines.jpg'
   },
   {
     name: "Lima Historic Centre",
@@ -81,7 +81,7 @@ export const peruAttractions = [
     insiderTip: "Visit the San Francisco Convent to explore its remarkable library and the eerie, historical catacombs beneath the church.",
     howToGetThere: "Located in the heart of Lima, easily accessible by taxi or private transport from Miraflores or San Isidro.",
     cost: "Low to Moderate",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/peru-lima-historic-centre.jpg'
   },
   {
     name: "Huacachina Oasis",
@@ -93,7 +93,7 @@ export const peruAttractions = [
     insiderTip: "Climb the highest dune just before sunset for panoramic, golden-hour views of the oasis and the sprawling desert.",
     howToGetThere: "A 15-minute drive from the city of Ica, which is about 4-5 hours by bus from Lima.",
     cost: "Moderate",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/peru-huacachina-oasis.jpg'
   },
   {
     name: "Amazon Rainforest (Iquitos)",
@@ -105,7 +105,7 @@ export const peruAttractions = [
     insiderTip: "Opt for a premium Amazon river cruise to access remote reserves like Pacaya Samiria while enjoying luxury accommodations.",
     howToGetThere: "Fly directly into Coronel FAP Francisco Secada Vignetta International Airport (IQT) in Iquitos from Lima.",
     cost: "High",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/peru-amazon-rainforest-iquitos.jpg'
   },
   {
     name: "Rainbow Mountain (Vinicunca)",
@@ -117,7 +117,7 @@ export const peruAttractions = [
     insiderTip: "Acclimatize in Cusco for several days prior, and consider renting a horse for the steepest sections to manage the high altitude.",
     howToGetThere: "A 3-hour drive from Cusco followed by a demanding 1.5 to 2-hour hike to the summit.",
     cost: "Moderate",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/peru-rainbow-mountain-vinicunca.jpg'
   },
   {
     name: "Paracas National Reserve",
@@ -129,7 +129,7 @@ export const peruAttractions = [
     insiderTip: "Combine your visit to the reserve with a morning boat tour to the Ballestas Islands and keep an eye out for the mysterious Candelabra geoglyph.",
     howToGetThere: "About a 3 to 4-hour drive or luxury bus ride south from Lima.",
     cost: "Moderate",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/peru-paracas-national-reserve.jpg'
   },
   {
     name: "Arequipa (Plaza de Armas)",
@@ -141,7 +141,7 @@ export const peruAttractions = [
     insiderTip: "Dine on traditional Rocoto Relleno at a local picantería while enjoying views of the towering Misti volcano.",
     howToGetThere: "Fly directly into Rodríguez Ballón International Airport (AQP) from Lima or Cusco.",
     cost: "Moderate",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/peru-arequipa-plaza-de-armas.jpg'
   },
   {
     name: "Chan Chan (Trujillo)",
@@ -153,7 +153,7 @@ export const peruAttractions = [
     insiderTip: "Visit the nearby Huanchaco beach afterward to see traditional 'caballitos de totora' reed boats still used by local fishermen.",
     howToGetThere: "Fly to Trujillo (TRU) from Lima, then take a short 15-minute taxi or private transfer to the site.",
     cost: "Low to Moderate",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/peru-chan-chan-trujillo.jpg'
   },
   {
     name: "Kuelap Fortress",
@@ -165,7 +165,7 @@ export const peruAttractions = [
     insiderTip: "Take the scenic cable car from Nuevo Tingo for spectacular views of the Utcubamba Valley during your ascent to the fortress.",
     howToGetThere: "Fly to Chachapoyas or Tarapoto, travel to Nuevo Tingo, and take the 20-minute cable car ride.",
     cost: "Moderate",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/peru-kuelap-fortress.jpg'
   },
   {
     name: "Huascaran National Park",
@@ -177,7 +177,7 @@ export const peruAttractions = [
     insiderTip: "For a less crowded but equally stunning hike, consider the trek to Laguna Parón, the largest lake in the Cordillera Blanca.",
     howToGetThere: "An 8-hour bus ride or a short flight from Lima to Huaraz, which serves as the base camp for park excursions.",
     cost: "Moderate",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/peru-huascaran-national-park.jpg'
   },
   {
     name: "Pisac Ruins & Market",
@@ -189,7 +189,7 @@ export const peruAttractions = [
     insiderTip: "Hike down from the ruins to the town square rather than taking a taxi, to fully appreciate the stunning vistas and intricate terracing.",
     howToGetThere: "A 45-minute drive or bus ride from the city of Cusco.",
     cost: "Low to Moderate",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/peru-pisac-ruins-market.jpg'
   },
   {
     name: "Ollantaytambo Ruins",
@@ -201,7 +201,7 @@ export const peruAttractions = [
     insiderTip: "Climb the adjacent mountain to the Pinkuylluna storehouses for incredible panoramic views of the main ruins and the charming village below.",
     howToGetThere: "About 1.5 to 2 hours by road from Cusco, situated at the end of the Sacred Valley.",
     cost: "Moderate",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/peru-ollantaytambo-ruins.jpg'
   },
   {
     name: "Sacsayhuaman",
@@ -213,7 +213,7 @@ export const peruAttractions = [
     insiderTip: "Visit late in the afternoon to avoid the large tour groups and to enjoy a spectacular sunset over the city of Cusco.",
     howToGetThere: "A steep 30-minute walk or a quick 10-minute taxi ride from Cusco's Plaza de Armas.",
     cost: "Moderate",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/peru-sacsayhuaman.jpg'
   },
   {
     name: "Mancora Beaches",
@@ -225,7 +225,7 @@ export const peruAttractions = [
     insiderTip: "Book a premium beachfront eco-resort just outside the main town center for a serene, private experience away from the bustling nightlife.",
     howToGetThere: "Fly to Talara (TYL) or Tumbes (TBP) from Lima, followed by a scenic 1.5 to 2-hour drive.",
     cost: "Moderate to High",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/peru-mancora-beaches.jpg'
   },
   {
     name: "Salkantay Trek",
@@ -237,6 +237,6 @@ export const peruAttractions = [
     insiderTip: "Choose a luxury lodge-to-lodge tour to enjoy gourmet meals, hot tubs, and incredibly comfortable beds after long days of high-altitude trekking.",
     howToGetThere: "The trek typically begins near the town of Mollepata, a 2 to 3-hour drive from Cusco.",
     cost: "High",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/peru-salkantay-trek.jpg'
   }
 ];

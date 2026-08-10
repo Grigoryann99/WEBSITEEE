@@ -9,7 +9,7 @@ export const moroccoAttractions = [
     insiderTip: "Escape the crowds at sunset by heading to one of the rooftop cafes surrounding Jemaa el-Fnaa. The Café de France offers an iconic vantage point to watch the square transform as dusk falls.",
     howToGetThere: "Easily accessible on foot from anywhere in central Marrakech. Taxis can drop you at the edge of the pedestrian-only zone.",
     cost: "Free to enter; costs vary for shopping, dining, and tipping street performers.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/morocco-marrakech-medina-jemaa-el-fnaa.jpg'
   },
   {
     name: "Chefchaouen (Blue City)",
@@ -21,7 +21,7 @@ export const moroccoAttractions = [
     insiderTip: "Hike up to the Spanish Mosque just before sunset. The panoramic view of the blue city nestled in the valley, glowing in the fading light, is the best photo opportunity in town.",
     howToGetThere: "A scenic 2-hour drive from Tangier or a 4-hour drive from Fes. Private transfers are recommended for comfort.",
     cost: "Free to explore; moderate costs for boutique accommodations and artisan goods.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/morocco-chefchaouen-blue-city.jpg'
   },
   {
     name: "Sahara Desert (Merzouga Dunes)",
@@ -33,7 +33,7 @@ export const moroccoAttractions = [
     insiderTip: "Book a premium camp that offers sandboarding and 4x4 dune bashing for an adrenaline rush before relaxing with traditional Berber music by the campfire.",
     howToGetThere: "About a 9-hour drive from Marrakech or 7 hours from Fes. Many premium tours include private 4x4 transport.",
     cost: "Varies widely; luxury overnight camps typically range from $150 to $300+ per night.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/morocco-sahara-desert-merzouga-dunes.jpg'
   },
   {
     name: "Hassan II Mosque",
@@ -45,7 +45,7 @@ export const moroccoAttractions = [
     insiderTip: "Pay attention to the glass floor section that reveals the crashing ocean waves below, a unique feature designed to reflect a verse from the Quran stating God's throne was built on water.",
     howToGetThere: "Located on Boulevard de la Corniche, easily reached by taxi from anywhere in Casablanca.",
     cost: "Approximately 130 MAD ($13 USD) for a guided tour, which is required for entry.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/morocco-hassan-ii-mosque.jpg'
   },
   {
     name: "Fes el Bali (Old Medina)",
@@ -57,7 +57,7 @@ export const moroccoAttractions = [
     insiderTip: "Navigating the maze alone is challenging; hire an official private guide for your first day to understand the history and avoid getting hopelessly lost.",
     howToGetThere: "Accessible from the newer parts of Fes by taxi to one of the main gates (like Bab Boujloud), then entirely by foot.",
     cost: "Free to enter; guides cost around 200-300 MAD for a half-day.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/morocco-fes-el-bali-old-medina.jpg'
   },
   {
     name: "Ait Benhaddou",
@@ -69,7 +69,7 @@ export const moroccoAttractions = [
     insiderTip: "Cross the riverbed on foot (or by donkey if the water is high) and climb to the granary at the very top of the hill for sweeping panoramic views of the surrounding palm groves and mountains.",
     howToGetThere: "About 30 km from Ouarzazate, or a scenic 4-hour drive from Marrakech over the High Atlas Mountains.",
     cost: "Free to wander the village, though some families charge a nominal fee (around 10-20 MAD) to enter their specific kasbahs.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/morocco-ait-benhaddou.jpg'
   },
   {
     name: "Majorelle Garden",
@@ -81,7 +81,7 @@ export const moroccoAttractions = [
     insiderTip: "Buy a combined ticket online in advance that includes the adjacent Yves Saint Laurent Museum to skip the ticketing lines completely.",
     howToGetThere: "Located in the Gueliz district, a short 10-minute taxi ride from the central medina.",
     cost: "150 MAD (approx $15 USD) for the garden, with additional costs for the museums.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/morocco-majorelle-garden.jpg'
   },
   {
     name: "Todra Gorge",
@@ -93,7 +93,7 @@ export const moroccoAttractions = [
     insiderTip: "While most tourists stick to the paved road at the gorge's base, hire a local guide to take you on the 3-4 hour loop hike up and over the cliffs for incredible bird's-eye views and encounters with nomadic Berber camps.",
     howToGetThere: "About 15 km from the town of Tinghir, accessible by car or grand taxi.",
     cost: "Free to visit; costs apply for guided hikes or climbing equipment rental.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/morocco-todra-gorge.jpg'
   },
   {
     name: "Ouzoud Waterfalls",
@@ -105,7 +105,7 @@ export const moroccoAttractions = [
     insiderTip: "Avoid the heavily commercialized main path; instead, take the less-traveled trail down the opposite side of the gorge for a quieter hike and better vantage points.",
     howToGetThere: "A 2.5 to 3-hour drive from Marrakech. Private car hire or organized day tours are the best options.",
     cost: "Free to view the falls; small fees apply for boat rides (around 20 MAD) or local guides.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/morocco-ouzoud-waterfalls.jpg'
   },
   {
     name: "Essaouira Coast",
@@ -117,7 +117,7 @@ export const moroccoAttractions = [
     insiderTip: "Head to the bustling fishing port in the late morning to watch the iconic blue wooden boats bring in the daily catch, then pick your own fish to be grilled at the nearby waterfront stalls.",
     howToGetThere: "A comfortable 3-hour drive due west from Marrakech via bus or private transfer.",
     cost: "Free to explore; exceptional value for coastal dining and boutique riads.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/morocco-essaouira-coast.jpg'
   },
   {
     name: "Atlas Mountains (Toubkal)",
@@ -129,7 +129,7 @@ export const moroccoAttractions = [
     insiderTip: "You don't have to climb Toubkal to enjoy the Atlas. Stay at a luxury mountain retreat in Imlil or Ouirgane and take gentle day hikes between Berber villages for a more relaxed experience.",
     howToGetThere: "The village of Imlil, the main trekking hub, is a 1.5-hour drive south of Marrakech.",
     cost: "Varies; hiring a local guide (highly recommended) costs around 300-400 MAD per day.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/morocco-atlas-mountains-toubkal.jpg'
   },
   {
     name: "Volubilis Roman Ruins",
@@ -141,7 +141,7 @@ export const moroccoAttractions = [
     insiderTip: "Visit in the late afternoon. The golden hour light casts beautiful shadows across the ruins and illuminates the ancient mosaics, making for spectacular photography.",
     howToGetThere: "About a 45-minute drive from Meknes or 1.5 hours from Fes. Best visited via private taxi or tour.",
     cost: "70 MAD (approx $7 USD) for entry. Local guides are available at the entrance for an additional fee.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/morocco-volubilis-roman-ruins.jpg'
   },
   {
     name: "Bahia Palace",
@@ -153,7 +153,7 @@ export const moroccoAttractions = [
     insiderTip: "Look up in every room. While the tiled floors are beautiful, the meticulously painted and carved cedar wood ceilings are the true masterpieces of the palace.",
     howToGetThere: "Located in the southern part of the Marrakech Medina, easily accessible by foot or a short taxi ride.",
     cost: "70 MAD (approx $7 USD) for entry.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/morocco-bahia-palace.jpg'
   },
   {
     name: "Dades Valley",
@@ -165,7 +165,7 @@ export const moroccoAttractions = [
     insiderTip: "Stop at the cafe at the top of the famous winding hairpin road (Gorges du Dadès) for a mint tea and the ultimate panoramic photo of the dramatic switchbacks below.",
     howToGetThere: "Best explored by private 4x4 or rental car. It lies between Ouarzazate and Tinghir.",
     cost: "Free to drive through and explore.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/morocco-dades-valley.jpg'
   },
   {
     name: "Rabat (Hassan Tower & Kasbah)",
@@ -177,7 +177,7 @@ export const moroccoAttractions = [
     insiderTip: "After exploring the Kasbah of the Udayas, relax at the historic Café Maure overlooking the Bou Regreg river with traditional almond pastries and mint tea.",
     howToGetThere: "Well connected by high-speed train (Al Boraq) from Casablanca (45 mins) and Tangier (1.5 hrs).",
     cost: "Most major sites are free or charge a nominal 70 MAD entry fee.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/morocco-rabat-hassan-tower-kasbah.jpg'
   },
   {
     name: "Erg Chigaga Dunes",
@@ -189,7 +189,7 @@ export const moroccoAttractions = [
     insiderTip: "Ensure your tour operator uses high-quality 4x4 vehicles and experienced local nomadic drivers, as navigating the trackless desert to reach the dunes is a specialized skill.",
     howToGetThere: "Requires a 4x4 vehicle. Typically a 2-hour off-road drive from the end-of-the-road town of M'Hamid.",
     cost: "Higher than Merzouga due to remoteness; luxury camps range from $250 to $500+ per night.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/morocco-erg-chigaga-dunes.jpg'
   },
   {
     name: "Legzira Beach",
@@ -201,7 +201,7 @@ export const moroccoAttractions = [
     insiderTip: "Visit during low tide to safely walk through and under the massive red stone arches. Check tide charts carefully, as high tide makes the arches inaccessible and dangerous.",
     howToGetThere: "A 20-minute drive north from the town of Sidi Ifni, or about 2.5 hours south of Agadir.",
     cost: "Free access to the beach.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/morocco-legzira-beach.jpg'
   },
   {
     name: "Koutoubia Mosque",
@@ -213,7 +213,7 @@ export const moroccoAttractions = [
     insiderTip: "For the best photos of the mosque, head to the Lalla Hasna Park directly behind it, where you can frame the towering minaret beautifully between the palm trees and fountains.",
     howToGetThere: "Located adjacent to Jemaa el-Fnaa square in central Marrakech; impossible to miss.",
     cost: "Free to explore the surrounding plazas and gardens.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/morocco-koutoubia-mosque.jpg'
   },
   {
     name: "Meknes Medina",
@@ -225,7 +225,7 @@ export const moroccoAttractions = [
     insiderTip: "Don't miss the Heri es-Souani, the massive, cavernous ancient granaries and stables of Moulay Ismail, which feature stunning vaulted ceilings that stretch endlessly into the darkness.",
     howToGetThere: "Well connected by train; 45 minutes from Fes and about 3 hours from Casablanca.",
     cost: "Free to enter the medina; minor entry fees (around 70 MAD) for specific historical sites.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/morocco-meknes-medina.jpg'
   },
   {
     name: "Asilah Medina",
@@ -237,6 +237,6 @@ export const moroccoAttractions = [
     insiderTip: "Walk along the sea walls (ramparts) specifically at the Caraquia viewpoint during sunset. It is a local tradition and offers arguably the best ocean sunset view in northern Morocco.",
     howToGetThere: "A 45-minute drive or train ride south of Tangier.",
     cost: "Free to explore the town and view the murals.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/morocco-asilah-medina.jpg'
   }
 ];

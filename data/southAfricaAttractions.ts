@@ -9,7 +9,7 @@ export const southAfricaAttractions = [
     insiderTip: "Book a stay in a private concession within the park for exclusive traversing rights, off-road driving, and night safaris which are not permitted on public roads.",
     howToGetThere: "Fly into Skukuza Airport (SZK) directly in the park, or Hoedspruit (HDS) or Kruger Mpumalanga International Airport (MQP), followed by a transfer.",
     cost: "$$$ - $$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-africa-kruger-national-park.jpg'
   },
   {
     name: "Table Mountain",
@@ -21,7 +21,7 @@ export const southAfricaAttractions = [
     insiderTip: "Purchase cable car tickets online in advance to skip the queues, and always check the weather forecast on the day, as the cableway closes during high winds.",
     howToGetThere: "Drive or take an Uber/taxi to the Lower Cable Station on Tafelberg Road in Cape Town.",
     cost: "$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-africa-table-mountain.jpg'
   },
   {
     name: "Cape of Good Hope & Cape Point",
@@ -33,7 +33,7 @@ export const southAfricaAttractions = [
     insiderTip: "Hike the scenic, lesser-known trail from Cape Point to the Cape of Good Hope sign for a spectacular cliffside walk away from the main tourist crowds.",
     howToGetThere: "A scenic 1.5 to 2-hour drive from central Cape Town along the Atlantic Seaboard or False Bay coast.",
     cost: "$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-africa-cape-of-good-hope-cape-point.jpg'
   },
   {
     name: "Robben Island",
@@ -45,7 +45,7 @@ export const southAfricaAttractions = [
     insiderTip: "Book tickets weeks in advance as ferries sell out quickly, and take motion sickness medication before the boat ride if you are prone to seasickness.",
     howToGetThere: "Ferry departs from the Nelson Mandela Gateway at the V&A Waterfront in Cape Town.",
     cost: "$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-africa-robben-island.jpg'
   },
   {
     name: "Victoria & Alfred Waterfront",
@@ -57,7 +57,7 @@ export const southAfricaAttractions = [
     insiderTip: "Visit the Silo District within the Waterfront to explore the Zeitz MOCAA and enjoy a sunset cocktail at the rooftop bar of the Silo Hotel.",
     howToGetThere: "Located centrally in Cape Town, easily accessible via car, taxi, or the MyCiTi bus service.",
     cost: "$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-africa-victoria-alfred-waterfront.jpg'
   },
   {
     name: "Boulders Beach (Penguin Colony)",
@@ -69,7 +69,7 @@ export const southAfricaAttractions = [
     insiderTip: "Instead of just visiting the main viewing deck at Foxy Beach, head to the actual Boulders Beach entrance where you can swim in the ocean alongside the penguins.",
     howToGetThere: "About an hour’s drive from Cape Town city center, or accessible via the scenic Southern Line railway.",
     cost: "$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-africa-boulders-beach-penguin-colony.jpg'
   },
   {
     name: "Stellenbosch & Franschhoek Wine Routes",
@@ -81,7 +81,7 @@ export const southAfricaAttractions = [
     insiderTip: "Book well in advance for lunch or dinner at the top-tier restaurants in Franschhoek, and hire a private driver to fully enjoy the wine tastings safely.",
     howToGetThere: "A 45 to 60-minute drive from Cape Town.",
     cost: "$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-africa-stellenbosch-franschhoek-wine-routes.jpg'
   },
   {
     name: "Blyde River Canyon",
@@ -93,7 +93,7 @@ export const southAfricaAttractions = [
     insiderTip: "Start your drive early in the morning to avoid the tourist buses and the mist that often rolls in during the afternoon.",
     howToGetThere: "Drive along the Panorama Route, easily accessible from Graskop, Hazyview, or Hoedspruit.",
     cost: "$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-africa-blyde-river-canyon.jpg'
   },
   {
     name: "Garden Route",
@@ -105,7 +105,7 @@ export const southAfricaAttractions = [
     insiderTip: "Spend a few nights in Plettenberg Bay for the ultimate luxury coastal experience, and explore the boutique wine estates emerging in the area.",
     howToGetThere: "Drive from Cape Town (starting point usually Mossel Bay) or fly into George Airport (GRJ).",
     cost: "$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-africa-garden-route.jpg'
   },
   {
     name: "Drakensberg Mountains",
@@ -117,7 +117,7 @@ export const southAfricaAttractions = [
     insiderTip: "Take a guided hike to the Tugela Gorge or book a scenic helicopter flight to truly appreciate the sheer scale of the Amphitheatre escarpment.",
     howToGetThere: "A 2.5 to 3-hour drive from Durban (King Shaka International Airport) or a 4-hour drive from Johannesburg.",
     cost: "$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-africa-drakensberg-mountains.jpg'
   },
   {
     name: "Kirstenbosch Botanical Gardens",
@@ -129,7 +129,7 @@ export const southAfricaAttractions = [
     insiderTip: "Pack a luxury gourmet picnic (or pre-order one from the tea room) and arrive early to secure a prime spot on the lawns for the famous Summer Sunset Concerts.",
     howToGetThere: "A short 15-20 minute drive or Uber ride from Cape Town city center.",
     cost: "$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-africa-kirstenbosch-botanical-gardens.jpg'
   },
   {
     name: "Tsitsikamma National Park",
@@ -141,7 +141,7 @@ export const southAfricaAttractions = [
     insiderTip: "If you cannot secure a permit for the full Otter Trail, hike the first section to the spectacular waterfall for a fantastic day hike.",
     howToGetThere: "Drive along the N2 highway on the Garden Route; it is roughly an hour east of Plettenberg Bay.",
     cost: "$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-africa-tsitsikamma-national-park.jpg'
   },
   {
     name: "Addo Elephant National Park",
@@ -153,7 +153,7 @@ export const southAfricaAttractions = [
     insiderTip: "Book an excursion in the park's marine section to search for whales and sharks, making it a true 'Big Seven' safari experience.",
     howToGetThere: "A 45-minute drive from Port Elizabeth (Gqeberha) Airport.",
     cost: "$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-africa-addo-elephant-national-park.jpg'
   },
   {
     name: "Kgalagadi Transfrontier Park",
@@ -165,7 +165,7 @@ export const southAfricaAttractions = [
     insiderTip: "Stock up on supplies before entering, and book an unfenced wilderness camp like Kieliekrankie for an incredibly raw and exclusive desert experience.",
     howToGetThere: "Drive from Upington Airport (approx. 2.5 hours) or a long overland expedition from Johannesburg or Cape Town.",
     cost: "$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-africa-kgalagadi-transfrontier-park.jpg'
   },
   {
     name: "Apartheid Museum",
@@ -177,7 +177,7 @@ export const southAfricaAttractions = [
     insiderTip: "Combine this with a guided tour of nearby Soweto to see the Mandela House and the Hector Pieterson Memorial for a full day of historical context.",
     howToGetThere: "Located in the south of Johannesburg, easily accessible via Uber or a private tour from Sandton or Rosebank.",
     cost: "$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-africa-apartheid-museum.jpg'
   },
   {
     name: "Chapman's Peak Drive",
@@ -189,7 +189,7 @@ export const southAfricaAttractions = [
     insiderTip: "Stop at the highest viewpoint near the Hout Bay side for the most iconic photographs, and check online beforehand to ensure the road is open, as it closes during severe weather.",
     howToGetThere: "Accessible from Hout Bay (Cape Town side) or Noordhoek (Southern Peninsula side).",
     cost: "$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-africa-chapman.jpg'
   },
   {
     name: "ISimangaliso Wetland Park",
@@ -201,7 +201,7 @@ export const southAfricaAttractions = [
     insiderTip: "Book a stay at a luxury lodge in the private Makatana section of the park for exclusive access to the wetlands, beaches, and game drives.",
     howToGetThere: "Drive roughly 2.5 hours north from King Shaka International Airport (Durban).",
     cost: "$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-africa-isimangaliso-wetland-park.jpg'
   },
   {
     name: "Hluhluwe-iMfolozi Park",
@@ -213,7 +213,7 @@ export const southAfricaAttractions = [
     insiderTip: "To truly experience the soul of the park, book a multi-day primitive walking trail where you camp under the stars and track big game on foot.",
     howToGetThere: "A 3-hour drive north from Durban along the N2 highway.",
     cost: "$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-africa-hluhluwe-imfolozi-park.jpg'
   },
   {
     name: "Hermanus (Whale Watching)",
@@ -225,7 +225,7 @@ export const southAfricaAttractions = [
     insiderTip: "Listen for the blowing of the unique 'Whale Crier's' kelp horn, which alerts visitors to the whereabouts of whales along the coastline.",
     howToGetThere: "A scenic 1.5 to 2-hour drive from Cape Town via the spectacular coastal Clarence Drive (R44) or the N2.",
     cost: "$$$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-africa-hermanus-whale-watching.jpg'
   },
   {
     name: "Bo-Kaap (Cape Town)",
@@ -237,6 +237,6 @@ export const southAfricaAttractions = [
     insiderTip: "Don't just take photos; book a local Cape Malay cooking experience to learn how to make authentic samoosas and aromatic curries from scratch.",
     howToGetThere: "A short walk from the center of Cape Town (CBD) or a quick Uber ride.",
     cost: "$",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-africa-bo-kaap-cape-town.jpg'
   }
 ];

@@ -9,7 +9,7 @@ export const singaporeAttractions = [
     insiderTip: "The outdoor gardens and Supertree Grove are completely free to enter. Buy tickets only if you want to enter the conservatories or walk the OCBC Skyway.",
     howToGetThere: "MRT to Bayfront Station (CE1/DT16), then a 5-minute walk via the underground linkway.",
     cost: "Outdoor gardens free; Conservatories SGD 32; Skyway SGD 14.",
-    image: "https://loremflickr.com/1200/800/Singapore,Gardens,Bay/all?lock=501"
+    image: "/images/attractions/singapore-gardens-by-the-bay.jpg"
   },
   {
     name: "Marina Bay Sands SkyPark",
@@ -21,7 +21,7 @@ export const singaporeAttractions = [
     insiderTip: "Instead of paying the entry fee for the observation deck, you can go to the CÉ LA VI rooftop bar on the same level—you pay for a drink, but the view is identical.",
     howToGetThere: "MRT to Bayfront Station (CE1/DT16).",
     cost: "SGD 32 for the Observation Deck.",
-    image: "https://loremflickr.com/1200/800/Marina,Bay,Sands/all?lock=502"
+    image: "/images/attractions/singapore-marina-bay-sands-skypark.jpg"
   },
   {
     name: "Singapore Botanic Gardens",
@@ -33,7 +33,7 @@ export const singaporeAttractions = [
     insiderTip: "Pack a picnic and head to the Palm Valley on weekend evenings when the Shaw Foundation Symphony Stage occasionally hosts free classical concerts.",
     howToGetThere: "MRT to Botanic Gardens Station (CC19/DT9).",
     cost: "Gardens are free; National Orchid Garden SGD 15.",
-    image: "https://loremflickr.com/1200/800/Singapore,Botanic,Gardens/all?lock=503"
+    image: "/images/attractions/singapore-singapore-botanic-gardens.jpg"
   },
   {
     name: "Chinatown",
@@ -45,7 +45,7 @@ export const singaporeAttractions = [
     insiderTip: "Skip the tourist traps on Pagoda Street and head to the Chinatown Complex Food Centre (the largest hawker center in Singapore) for authentic, cheap local food, including Liao Fan Hawker Chan's famous soy sauce chicken.",
     howToGetThere: "MRT to Chinatown Station (NE4/DT19) or Maxwell Station (TE18).",
     cost: "Free to explore; temples are free.",
-    image: "https://loremflickr.com/1200/800/Chinatown,Singapore/all?lock=504"
+    image: "/images/attractions/singapore-chinatown.jpg"
   },
   {
     name: "Sentosa Island",
@@ -57,7 +57,7 @@ export const singaporeAttractions = [
     insiderTip: "Palawan Beach features a suspension bridge leading to a small islet which is the 'Southernmost Point of Continental Asia'. Tanjong Beach is the quietest and best for relaxing.",
     howToGetThere: "Sentosa Express monorail from VivoCity (HarbourFront MRT), or take the scenic Cable Car from Mount Faber.",
     cost: "Island entry SGD 4 (via monorail); attractions vary widely.",
-    image: "https://loremflickr.com/1200/800/Sentosa,Island,Beach/all?lock=505"
+    image: "/images/attractions/singapore-sentosa-island.jpg"
   },
   {
     name: "Jewel Changi Airport",
@@ -69,7 +69,7 @@ export const singaporeAttractions = [
     insiderTip: "You do not need a flight ticket to visit Jewel, as it is located landside. The light and sound shows at the Rain Vortex occur hourly from 8 PM to 10 PM.",
     howToGetThere: "MRT to Changi Airport Station (CG2), linked directly to Terminals 1, 2, and 3.",
     cost: "Free to enter; Canopy Park attractions from SGD 8.",
-    image: "https://loremflickr.com/1200/800/Jewel,Changi,Airport/all?lock=506"
+    image: "/images/attractions/singapore-jewel-changi-airport.jpg"
   },
   {
     name: "Singapore Zoo & Night Safari",
@@ -81,7 +81,7 @@ export const singaporeAttractions = [
     insiderTip: "For the Night Safari, book the earliest time slot and walk the leopard and fishing cat trails before taking the tram—the trails are much less crowded and offer incredible up-close views.",
     howToGetThere: "MRT to Khatib Station (NS14), then take the Mandai Khatib Shuttle bus (SGD 3).",
     cost: "Zoo SGD 48; Night Safari SGD 55.",
-    image: "https://loremflickr.com/1200/800/Singapore,Zoo/all?lock=507"
+    image: "/images/attractions/singapore-singapore-zoo-night-safari.jpg"
   },
   {
     name: "Little India",
@@ -93,7 +93,7 @@ export const singaporeAttractions = [
     insiderTip: "Visit Tekka Centre for biryani or roti prata, then explore the intricate statues of the Sri Veeramakaliamman Temple (remember to dress modestly and remove your shoes).",
     howToGetThere: "MRT to Little India Station (NE7/DT12).",
     cost: "Free to explore.",
-    image: "https://loremflickr.com/1200/800/Little,India,Singapore/all?lock=508"
+    image: "/images/attractions/singapore-little-india.jpg"
   },
   {
     name: "National Gallery Singapore",
@@ -105,7 +105,7 @@ export const singaporeAttractions = [
     insiderTip: "Don't miss the Ng Teng Fong Roof Garden on the top floor—it offers superb, unobstructed views of the Marina Bay skyline and the Padang.",
     howToGetThere: "MRT to City Hall Station (EW13/NS25).",
     cost: "SGD 20 for non-residents (free for citizens/PRs).",
-    image: "https://loremflickr.com/1200/800/National,Gallery,Singapore/all?lock=509"
+    image: "/images/attractions/singapore-national-gallery-singapore.jpg"
   },
   {
     name: "Kampong Glam & Arab Street",
@@ -117,7 +117,7 @@ export const singaporeAttractions = [
     insiderTip: "Stop by the Zam Zam Restaurant (established in 1908) facing the Sultan Mosque for arguably the best murtabak (stuffed pan-fried bread) in Singapore.",
     howToGetThere: "MRT to Bugis Station (EW12/DT14).",
     cost: "Free to explore.",
-    image: "https://loremflickr.com/1200/800/Haji,Lane,Singapore/all?lock=510"
+    image: "/images/attractions/singapore-kampong-glam-arab-street.jpg"
   },
   {
     name: "Singapore Flyer",
@@ -129,7 +129,7 @@ export const singaporeAttractions = [
     insiderTip: "Book a Premium Champagne Flight for a private, luxurious experience with a glass of champagne, perfect for couples or special occasions.",
     howToGetThere: "MRT to Promenade Station (CC4/DT15), then a 5-minute walk.",
     cost: "SGD 40 for adults.",
-    image: "https://loremflickr.com/1200/800/Singapore,Flyer/all?lock=511"
+    image: "/images/attractions/singapore-singapore-flyer.jpg"
   },
   {
     name: "Clarke Quay",
@@ -141,7 +141,7 @@ export const singaporeAttractions = [
     insiderTip: "Take the Singapore River Cruise at night from Clarke Quay to Marina Bay and back—it's the most scenic way to see the city's historical bridges and modern skyscrapers from the water.",
     howToGetThere: "MRT to Clarke Quay Station (NE5).",
     cost: "Free to explore; river cruise approx. SGD 28.",
-    image: "https://loremflickr.com/1200/800/Clarke,Quay,Singapore/all?lock=512"
+    image: "/images/attractions/singapore-clarke-quay.jpg"
   },
   {
     name: "ArtScience Museum",
@@ -153,7 +153,7 @@ export const singaporeAttractions = [
     insiderTip: "Buy tickets online in advance, as the Future World exhibition requires a timed entry and often sells out. The Crystal Universe installation at the end is the highlight.",
     howToGetThere: "MRT to Bayfront Station (CE1/DT16).",
     cost: "Around SGD 25 for a single exhibition.",
-    image: "https://loremflickr.com/1200/800/ArtScience,Museum/all?lock=513"
+    image: "/images/attractions/singapore-artscience-museum.jpg"
   },
   {
     name: "Pulau Ubin",
@@ -165,7 +165,7 @@ export const singaporeAttractions = [
     insiderTip: "Rent a mountain bike as soon as you arrive at the jetty. Bring mosquito repellent, plenty of water, and cash, as there are no ATMs on the island.",
     howToGetThere: "Bumboat from Changi Point Ferry Terminal (approx. 15 mins).",
     cost: "Bumboat is SGD 4 each way; bike rentals around SGD 10-15.",
-    image: "https://loremflickr.com/1200/800/Pulau,Ubin,Singapore/all?lock=514"
+    image: "/images/attractions/singapore-pulau-ubin.jpg"
   },
   {
     name: "MacRitchie Reservoir & TreeTop Walk",
@@ -177,7 +177,7 @@ export const singaporeAttractions = [
     insiderTip: "The hike to the TreeTop Walk and back is roughly 7-10 kilometers depending on the route, so wear good hiking shoes and carry water. Note that the TreeTop Walk is closed on Mondays.",
     howToGetThere: "Buses to MacRitchie Reservoir Park; or MRT to Marymount (CC16) followed by a short bus ride.",
     cost: "Free.",
-    image: "https://loremflickr.com/1200/800/MacRitchie,TreeTop,Walk/all?lock=515"
+    image: "/images/attractions/singapore-macritchie-reservoir-treetop-walk.jpg"
   },
   {
     name: "Asian Civilisations Museum",
@@ -189,7 +189,7 @@ export const singaporeAttractions = [
     insiderTip: "Join one of the free daily guided tours in English for a much deeper understanding of the artifacts and the historical trade routes they represent.",
     howToGetThere: "MRT to Raffles Place Station (EW14/NS26).",
     cost: "SGD 25 for non-residents.",
-    image: "https://loremflickr.com/1200/800/Asian,Civilisations,Museum/all?lock=516"
+    image: "/images/attractions/singapore-asian-civilisations-museum.jpg"
   },
   {
     name: "Haw Par Villa",
@@ -201,7 +201,7 @@ export const singaporeAttractions = [
     insiderTip: "The Ten Courts of Hell is fascinating but quite graphic, so exercise caution if visiting with very young children. Visit Hell's Museum (inside the park) for a deeper look into cultural perspectives on death.",
     howToGetThere: "MRT to Haw Par Villa Station (CC25).",
     cost: "Park entry is free; Hell's Museum is SGD 18.",
-    image: "https://loremflickr.com/1200/800/Haw,Par,Villa/all?lock=517"
+    image: "/images/attractions/singapore-haw-par-villa.jpg"
   },
   {
     name: "Peranakan Houses at Joo Chiat",
@@ -213,7 +213,7 @@ export const singaporeAttractions = [
     insiderTip: "After photographing the houses on Koon Seng Road, walk to 328 Katong Laksa for a bowl of authentic spicy coconut noodle soup, then browse the traditional wares at Rumah Bebe.",
     howToGetThere: "MRT to Dakota (CC8) or Paya Lebar (EW8/CC9), then a short bus ride or 15-minute walk.",
     cost: "Free to explore.",
-    image: "https://loremflickr.com/1200/800/Joo,Chiat,Houses/all?lock=518"
+    image: "/images/attractions/singapore-peranakan-houses-at-joo-chiat.jpg"
   },
   {
     name: "Henderson Waves",
@@ -225,7 +225,7 @@ export const singaporeAttractions = [
     insiderTip: "Start your walk at Mount Faber, cross the Henderson Waves, and continue through the elevated Forest Walk steel grating path for an incredible 2-hour nature trek entirely above the ground.",
     howToGetThere: "Bus 145 or 131 to Henderson Road; or walk up from HarbourFront MRT.",
     cost: "Free.",
-    image: "https://loremflickr.com/1200/800/Henderson,Waves,Singapore/all?lock=519"
+    image: "/images/attractions/singapore-henderson-waves.jpg"
   },
   {
     name: "Maxwell Food Centre",
@@ -237,6 +237,6 @@ export const singaporeAttractions = [
     insiderTip: "Don't just queue for Tian Tian—Ah Tai Chicken Rice (started by a former Tian Tian chef) is two stalls down, has a shorter line, and is considered by many locals to be just as good if not better.",
     howToGetThere: "MRT to Maxwell Station (TE18) or Chinatown Station (NE4/DT19).",
     cost: "Meals typically SGD 4 to SGD 8.",
-    image: "https://loremflickr.com/1200/800/Maxwell,Food,Centre/all?lock=520"
+    image: "/images/attractions/singapore-maxwell-food-centre.jpg"
   }
 ];

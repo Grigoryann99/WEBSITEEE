@@ -9,7 +9,7 @@ export const southKoreaAttractions = [
     insiderTip: "Rent and wear a traditional Korean Hanbok; not only does it make for incredible photographs, but it also grants you free admission to the palace.",
     howToGetThere: "Take the Seoul Subway Line 3 to Gyeongbokgung Station and use Exit 5, which leads directly into the palace grounds.",
     cost: "Adults: 3,000 KRW; Children: 1,500 KRW (Free if wearing a Hanbok).",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-korea-gyeongbokgung-palace.jpg'
   },
   {
     name: "Jeju Island",
@@ -21,7 +21,7 @@ export const southKoreaAttractions = [
     insiderTip: "Hire a private driver or rent a car to explore the island's hidden coastal roads and secluded cafes away from the main tourist hubs.",
     howToGetThere: "Take a short, 1-hour domestic flight from Seoul's Gimpo International Airport to Jeju International Airport.",
     cost: "Flight costs vary; attraction fees range from free to 5,000 KRW per site.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-korea-jeju-island.jpg'
   },
   {
     name: "Bukchon Hanok Village",
@@ -33,7 +33,7 @@ export const southKoreaAttractions = [
     insiderTip: "Venture to the top of the village to find the 'Eight Scenic Views of Bukchon' photo spots, which offer the most iconic perspectives of the hanok rooftops against the city skyline.",
     howToGetThere: "Take Seoul Subway Line 3 to Anguk Station, Exit 2, and walk straight for about 10 minutes.",
     cost: "Free to walk around; prices vary for entering teahouses or museums.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-korea-bukchon-hanok-village.jpg'
   },
   {
     name: "N Seoul Tower",
@@ -45,7 +45,7 @@ export const southKoreaAttractions = [
     insiderTip: "Skip the long lines by booking a dinner reservation at the n.GRILL rotating restaurant, which usually includes complimentary access to the observation deck.",
     howToGetThere: "Take the Namsan Cable Car from the base of the mountain, or hop on one of the Namsan circular shuttle buses from major subway stations.",
     cost: "Observation deck: ~16,000 KRW for adults; cable car round trip is ~14,000 KRW.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-korea-n-seoul-tower.jpg'
   },
   {
     name: "DMZ (Demilitarized Zone)",
@@ -57,7 +57,7 @@ export const southKoreaAttractions = [
     insiderTip: "Book a tour that specifically includes the Joint Security Area (JSA) at Panmunjom well in advance, as these slots are highly restricted and fill up quickly.",
     howToGetThere: "Only accessible via officially sanctioned guided tours departing from Seoul; independent travel to the restrictive zones is not permitted.",
     cost: "Tours range from 50,000 to 150,000 KRW depending on the inclusions and duration.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-korea-dmz-demilitarized-zone.jpg'
   },
   {
     name: "Seoraksan National Park",
@@ -69,7 +69,7 @@ export const southKoreaAttractions = [
     insiderTip: "Take the Seorak Cable Car up to Gwongeumseong Fortress early in the morning to beat the crowds and enjoy misty, ethereal views of the surrounding peaks.",
     howToGetThere: "Take an intercity bus from Seoul to Sokcho (about 2.5 hours), then a local bus (No. 7 or 7-1) directly to the national park entrance.",
     cost: "Park admission is roughly 3,500 KRW; the cable car is an additional 11,000 KRW.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-korea-seoraksan-national-park.jpg'
   },
   {
     name: "Bulguksa Temple",
@@ -81,7 +81,7 @@ export const southKoreaAttractions = [
     insiderTip: "Combine your visit with the nearby Seokguram Grotto, another incredible UNESCO site featuring a monumental stone Buddha, accessible via a short hike or bus ride from the temple.",
     howToGetThere: "Take a KTX train to Singyeongju Station, then hop on local Bus 700 directly to the temple.",
     cost: "Admission is approximately 6,000 KRW for adults.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-korea-bulguksa-temple.jpg'
   },
   {
     name: "Haeundae Beach",
@@ -93,7 +93,7 @@ export const southKoreaAttractions = [
     insiderTip: "Take an evening stroll to the nearby The Bay 101, an upscale yacht club complex that offers incredible dining and the best night views of the futuristic Marine City skyline.",
     howToGetThere: "Take Busan Subway Line 2 directly to Haeundae Station and walk 5 minutes toward the coast.",
     cost: "Free access to the beach; costs for renting parasols and sunbeds vary by season.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-korea-haeundae-beach.jpg'
   },
   {
     name: "Nami Island",
@@ -105,7 +105,7 @@ export const southKoreaAttractions = [
     insiderTip: "Instead of taking the standard ferry, arrive in style by taking the thrilling Zip-wire that glides you smoothly across the Han River directly onto the island.",
     howToGetThere: "Take the ITX-Cheongchun train to Gapyeong Station, then take a short taxi ride to the ferry terminal or Zip-wire tower.",
     cost: "Entrance fee (visa to Naminara Republic) including round-trip ferry is about 16,000 KRW; Zip-wire is roughly 49,900 KRW.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-korea-nami-island.jpg'
   },
   {
     name: "Changdeokgung Palace",
@@ -117,7 +117,7 @@ export const southKoreaAttractions = [
     insiderTip: "Access to the Secret Garden is strictly limited and requires a separate guided tour ticket; book these online weeks in advance to secure your spot.",
     howToGetThere: "Take Seoul Subway Line 3 to Anguk Station, Exit 3, and walk for about 5 minutes.",
     cost: "Palace admission is 3,000 KRW; the guided Secret Garden tour is an additional 5,000 KRW.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-korea-changdeokgung-palace.jpg'
   },
   {
     name: "Myeongdong",
@@ -129,7 +129,7 @@ export const southKoreaAttractions = [
     insiderTip: "Look for the multi-story flagship stores of Korean skincare brands for exclusive product lines and high-end spa treatments hidden on the upper floors.",
     howToGetThere: "Take Seoul Subway Line 4 to Myeongdong Station, using Exits 5, 6, 7, or 8 to enter the main district.",
     cost: "Free to explore; shopping and food costs vary widely.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-korea-myeongdong.jpg'
   },
   {
     name: "Suwon Hwaseong Fortress",
@@ -141,7 +141,7 @@ export const southKoreaAttractions = [
     insiderTip: "Experience the Flying Suwon, a tethered helium balloon that takes you 150 meters into the air for an extraordinary nighttime view of the entire illuminated fortress.",
     howToGetThere: "Take the Seoul Subway Line 1 to Suwon Station, then hop on a local bus or take a short taxi ride to the fortress.",
     cost: "Admission is around 1,000 KRW; activities like archery and the balloon ride are extra.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-korea-suwon-hwaseong-fortress.jpg'
   },
   {
     name: "Jeonju Hanok Village",
@@ -153,7 +153,7 @@ export const southKoreaAttractions = [
     insiderTip: "Avoid the main crowded street and explore the narrower side alleys to find the most authentic, centuries-old restaurants and serene traditional teahouses.",
     howToGetThere: "Take a KTX high-speed train from Seoul to Jeonju Station (approx. 1.5 hours), followed by a short taxi ride to the village.",
     cost: "Free to wander; accommodation and dining vary from budget to highly premium.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-korea-jeonju-hanok-village.jpg'
   },
   {
     name: "Gamcheon Culture Village",
@@ -165,7 +165,7 @@ export const southKoreaAttractions = [
     insiderTip: "Purchase the official village map at the entrance; it includes a stamp tour that guides you to the best viewpoints and hidden art installations, offering a postcard reward upon completion.",
     howToGetThere: "Take Busan Subway Line 1 to Toseong Station, use Exit 6, and take a local village bus (Saha 1-1, Seogu 2, or Seogu 2-2) up the steep hill.",
     cost: "Free to explore; the stamp tour map costs 2,000 KRW.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-korea-gamcheon-culture-village.jpg'
   },
   {
     name: "Gyeongju Historic Areas",
@@ -177,7 +177,7 @@ export const southKoreaAttractions = [
     insiderTip: "Visit the Donggung Palace and Wolji Pond (formerly Anapji) at night; the ancient structures are beautifully illuminated, casting perfect, mirror-like reflections on the water.",
     howToGetThere: "Take a KTX train from Seoul to Singyeongju Station (approx. 2 hours), then a bus or taxi into the historical city center.",
     cost: "Many sites are free; specific tomb parks and palaces charge around 3,000 KRW for entry.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-korea-gyeongju-historic-areas.jpg'
   },
   {
     name: "Hallasan National Park",
@@ -189,7 +189,7 @@ export const southKoreaAttractions = [
     insiderTip: "To hike to the actual summit (Baengnokdam), you must make an advance online reservation and start your hike early in the morning, as park rangers enforce strict turnaround times for safety.",
     howToGetThere: "Rent a car or take a local bus from Jeju City or Seogwipo to one of the main trailheads (Seongpanak or Gwaneumsa).",
     cost: "Park entry is free, but parking fees apply, and summit reservations must be secured online in advance.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-korea-hallasan-national-park.jpg'
   },
   {
     name: "Seongsan Ilchulbong",
@@ -201,7 +201,7 @@ export const southKoreaAttractions = [
     insiderTip: "Check the local schedule for the Haenyeo diving performance at the base; watching these remarkable women harvest seafood without breathing apparatus is a priceless cultural experience.",
     howToGetThere: "Drive or take an express bus (like 111 or 112) from Jeju City directly to the Seongsan transfer stop.",
     cost: "Admission is approximately 5,000 KRW for adults.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-korea-seongsan-ilchulbong.jpg'
   },
   {
     name: "Andong Hahoe Folk Village",
@@ -213,7 +213,7 @@ export const southKoreaAttractions = [
     insiderTip: "Take the small wooden ferry across the river to climb Buyongdae Cliff; it offers the absolute best panoramic view of the entire village nestled in the river bend.",
     howToGetThere: "Take a KTX to Andong Station, then catch Bus No. 246 which goes directly to the village entrance.",
     cost: "Admission is roughly 5,000 KRW; ferry ride to the cliff is a small additional fee.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-korea-andong-hahoe-folk-village.jpg'
   },
   {
     name: "Lotte World",
@@ -225,7 +225,7 @@ export const southKoreaAttractions = [
     insiderTip: "Purchase a Magic Pass Premium ticket to bypass the queues for the most popular rides, and don't miss the spectacular nighttime light mapping show on the outdoor magic castle.",
     howToGetThere: "Take Seoul Subway Line 2 or 8 directly to Jamsil Station, which connects seamlessly to the complex underground.",
     cost: "A one-day pass is roughly 62,000 KRW for adults; premium VIP passes are an additional cost.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-korea-lotte-world.jpg'
   },
   {
     name: "Boseong Green Tea Field",
@@ -237,6 +237,6 @@ export const southKoreaAttractions = [
     insiderTip: "Hike to the very top observatory deck on the plantation; on a clear day, the view extends past the rolling green hills all the way to the blue waters of the southern sea.",
     howToGetThere: "Take a KTX train to Gwangju-Songjeong Station, then an intercity bus to Boseong Terminal, followed by a local bus or taxi to the plantation.",
     cost: "Admission to the main Daehan Dawon plantation is about 4,000 KRW.",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/south-korea-boseong-green-tea-field.jpg'
   }
 ];

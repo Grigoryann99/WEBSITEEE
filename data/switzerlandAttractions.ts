@@ -9,7 +9,7 @@ export const switzerlandAttractions = [
     insiderTip: "Take the Gornergrat Bahn early in the morning to catch the spectacular sunrise reflecting on the mountain's east face.",
     howToGetThere: "Train from Visp or Brig to Zermatt, as Zermatt is a car-free zone.",
     cost: "High",
-    image: "https://loremflickr.com/1200/800/Matterhorn,switzerland/all?lock=87"
+    image: "/images/attractions/switzerland-matterhorn.jpg"
   },
   {
     name: "Lake Geneva",
@@ -21,7 +21,7 @@ export const switzerlandAttractions = [
     insiderTip: "Book a private sunset cruise on a classic paddle steamer to experience the lake's enchanting twilight atmosphere.",
     howToGetThere: "Accessible via international airports in Geneva and excellent train connections along the shoreline.",
     cost: "Moderate to High",
-    image: "https://loremflickr.com/1200/800/Lake,Geneva,switzerland/all?lock=88"
+    image: "/images/attractions/switzerland-lake-geneva.jpg"
   },
   {
     name: "Jungfraujoch",
@@ -33,7 +33,7 @@ export const switzerlandAttractions = [
     insiderTip: "Reserve your train tickets well in advance and secure a window seat on the right side when ascending for the best views.",
     howToGetThere: "Take the Jungfraubahn cogwheel train from Kleine Scheidegg.",
     cost: "Very High",
-    image: "https://loremflickr.com/1200/800/Jungfraujoch,switzerland/all?lock=89"
+    image: "/images/attractions/switzerland-jungfraujoch.jpg"
   },
   {
     name: "Chateau de Chillon",
@@ -45,7 +45,7 @@ export const switzerlandAttractions = [
     insiderTip: "Arrive early in the morning or late afternoon to avoid the tour groups and experience the castle's mystical atmosphere in peace.",
     howToGetThere: "A short walk, bus, or scenic boat ride from Montreux.",
     cost: "Moderate",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/switzerland-chateau-de-chillon.jpg'
   },
   {
     name: "Lucerne Old Town",
@@ -57,7 +57,7 @@ export const switzerlandAttractions = [
     insiderTip: "Walk the Musegg Wall for panoramic views of the city and lake, avoiding the densest tourist crowds.",
     howToGetThere: "Easily accessible by walking from the main Lucerne train station.",
     cost: "Moderate",
-    image: "https://loremflickr.com/1200/800/Lucerne,Town,switzerland/all?lock=90"
+    image: "/images/attractions/switzerland-lucerne-old-town.jpg"
   },
   {
     name: "Interlaken",
@@ -69,7 +69,7 @@ export const switzerlandAttractions = [
     insiderTip: "Take the funicular up to Harder Kulm at sunset for a spectacular dinner with views of both lakes and the Eiger.",
     howToGetThere: "Direct train connections from Zurich, Bern, and Geneva.",
     cost: "High",
-    image: "https://loremflickr.com/1200/800/Interlaken,switzerland/all?lock=91"
+    image: "/images/attractions/switzerland-interlaken.jpg"
   },
   {
     name: "Rhine Falls",
@@ -105,7 +105,7 @@ export const switzerlandAttractions = [
     insiderTip: "Book a table at a mountain restaurant in the hamlet of Findeln for an unforgettable gourmet lunch with Matterhorn views.",
     howToGetThere: "Train from Visp or Brig; cars must be parked in nearby Täsch.",
     cost: "Very High",
-    image: "https://loremflickr.com/1200/800/Zermatt,switzerland/all?lock=92"
+    image: "/images/attractions/switzerland-zermatt.jpg"
   },
   {
     name: "Lake Lugano",
@@ -129,7 +129,7 @@ export const switzerlandAttractions = [
     insiderTip: "Take the First Cliff Walk by Tissot for an exhilarating stroll along the sheer rock face with stunning valley views.",
     howToGetThere: "Direct train connection from Interlaken Ost.",
     cost: "High",
-    image: "https://loremflickr.com/1200/800/Grindelwald,switzerland/all?lock=93"
+    image: "/images/attractions/switzerland-grindelwald.jpg"
   },
   {
     name: "Lauterbrunnen Valley",
@@ -141,7 +141,7 @@ export const switzerlandAttractions = [
     insiderTip: "Visit the Trümmelbach Falls, a series of ten glacier-fed waterfalls hidden entirely inside the mountain.",
     howToGetThere: "A short 20-minute train ride from Interlaken Ost.",
     cost: "Moderate to High",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/switzerland-lauterbrunnen-valley.jpg'
   },
   {
     name: "Glacier Express",
@@ -153,7 +153,7 @@ export const switzerlandAttractions = [
     insiderTip: "Book the Excellence Class well in advance for guaranteed window seats and a 5-course premium dining experience.",
     howToGetThere: "Board at either Zermatt, St. Moritz, or Chur.",
     cost: "Very High",
-    image: "https://loremflickr.com/1200/800/Glacier,Express,switzerland/all?lock=94"
+    image: "/images/attractions/switzerland-glacier-express.jpg"
   },
   {
     name: "St. Moritz",
@@ -165,7 +165,7 @@ export const switzerlandAttractions = [
     insiderTip: "Visit Muottas Muragl at dusk for the most romantic and expansive view over the entire Engadin valley.",
     howToGetThere: "Accessible via the scenic Bernina or Glacier Express trains, or private transfer.",
     cost: "Very High",
-    image: "https://loremflickr.com/1200/800/Moritz,switzerland/all?lock=95"
+    image: "/images/attractions/switzerland-st-moritz.jpg"
   },
   {
     name: "Aletsch Glacier",
@@ -177,7 +177,7 @@ export const switzerlandAttractions = [
     insiderTip: "Take the cable car to Bettmerhorn or Eggishorn for the most expansive and dramatic views of the glacier's curve.",
     howToGetThere: "Cable cars from the valley towns of Mörel, Betten, or Fiesch.",
     cost: "Moderate to High",
-    image: "https://loremflickr.com/1200/800/Aletsch,Glacier,switzerland/all?lock=96"
+    image: "/images/attractions/switzerland-aletsch-glacier.jpg"
   },
   {
     name: "Oberhofen Castle",
@@ -189,7 +189,7 @@ export const switzerlandAttractions = [
     insiderTip: "Arrive by scenic boat across Lake Thun rather than by bus to truly appreciate the castle's striking waterfront facade.",
     howToGetThere: "Boat or bus from Thun or Interlaken.",
     cost: "Low to Moderate",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/switzerland-oberhofen-castle.jpg'
   },
   {
     name: "Mount Rigi",
@@ -201,7 +201,7 @@ export const switzerlandAttractions = [
     insiderTip: "Soak in the outdoor heated pool at Rigi Kaltbad during a winter snowfall for a truly magical wellness experience.",
     howToGetThere: "Cogwheel train from Vitznau or Arth-Goldau, or cable car from Weggis.",
     cost: "Moderate to High",
-    image: "https://loremflickr.com/1200/800/Mount,Rigi,switzerland/all?lock=97"
+    image: "/images/attractions/switzerland-mount-rigi.jpg"
   },
   {
     name: "Gruyeres",
@@ -225,7 +225,7 @@ export const switzerlandAttractions = [
     insiderTip: "Take the GoldenPass panoramic train from Montreux up into the mountains for an unforgettable transition from palm trees to glaciers.",
     howToGetThere: "Direct train connections from Geneva and Lausanne.",
     cost: "High",
-    image: "https://loremflickr.com/1200/800/Montreux,switzerland/all?lock=98"
+    image: "/images/attractions/switzerland-montreux.jpg"
   },
   {
     name: "Ruinaulta (Swiss Grand Canyon)",
@@ -237,6 +237,6 @@ export const switzerlandAttractions = [
     insiderTip: "Hike to the 'Il Spir' viewing platform near Flims for a breathtaking bird's-eye view looking directly down into the canyon.",
     howToGetThere: "Take the Rhaetian Railway from Chur or Ilanz, which travels directly through the gorge.",
     cost: "Moderate",
-    image: '/images/placeholder.jpg'
+    image: '/images/attractions/switzerland-ruinaulta-swiss-grand-canyon.jpg'
   }
 ];

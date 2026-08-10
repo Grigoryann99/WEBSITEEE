@@ -9,7 +9,7 @@ export const panamaAttractions = [
     insiderTip: "Check the canal transit schedule online before you go to ensure you arrive when ships are passing through. The IMAX 3D movie narrated by Morgan Freeman is surprisingly excellent and worth the extra ticket.",
     howToGetThere: "Uber or taxi from downtown Panama City (about 20-30 minutes), or Metro to Albrook then a bus.",
     cost: "Around $20 for adult foreigners.",
-    image: "https://loremflickr.com/1200/800/Panama,Canal,Miraflores/all?lock=601"
+    image: "/images/attractions/panama-panama-canal-miraflores-locks.jpg"
   },
   {
     name: "Casco Viejo",
@@ -21,7 +21,7 @@ export const panamaAttractions = [
     insiderTip: "Head to a rooftop bar (like Tantalo or CasaCasco) just before sunset for incredible views of the old city juxtaposed against the ultra-modern skyline of downtown Panama City.",
     howToGetThere: "Uber or taxi; it's a short drive from the banking district.",
     cost: "Free to explore.",
-    image: "https://loremflickr.com/1200/800/Casco,Viejo,Panama/all?lock=602"
+    image: "/images/attractions/panama-casco-viejo.jpg"
   },
   {
     name: "Bocas del Toro Archipelago",
@@ -33,7 +33,7 @@ export const panamaAttractions = [
     insiderTip: "Take a water taxi to Cayos Zapatilla—two uninhabited islands within the marine park surrounded by spectacular coral reefs. They offer the most pristine white sand beaches in the archipelago.",
     howToGetThere: "Flight from Panama City (Albrook Airport) to Bocas Town (1 hour), or overnight bus to Almirante then a water taxi.",
     cost: "Varies by island/activity; water taxis are cheap ($3-$5).",
-    image: "https://loremflickr.com/1200/800/Bocas,Toro,Panama/all?lock=603"
+    image: "/images/attractions/panama-bocas-del-toro-archipelago.jpg"
   },
   {
     name: "San Blas Islands (Guna Yala)",
@@ -45,7 +45,7 @@ export const panamaAttractions = [
     insiderTip: "Expect rustic conditions (limited electricity, bucket showers). Buy a handmade 'mola' directly from the Guna women—it is a beautiful piece of textile art and supports the local economy directly.",
     howToGetThere: "4x4 jeep from Panama City through the jungle (2.5 hours) to the port of Cartí, then a lancha (small boat).",
     cost: "Tours range from $100-$150 per day including transport, meals, and lodging.",
-    image: "https://loremflickr.com/1200/800/San,Blas,Islands/all?lock=604"
+    image: "/images/attractions/panama-san-blas-islands-guna-yala.jpg"
   },
   {
     name: "Boquete",
@@ -57,7 +57,7 @@ export const panamaAttractions = [
     insiderTip: "Book a coffee tasting tour at a high-end finca (farm) to taste Geisha coffee, which can sell for over $1,000 a pound globally. Hike the Pipeline Trail for the best chance to spot a Quetzal.",
     howToGetThere: "Flight to David (1 hour), then a 45-minute bus or taxi ride up the mountain.",
     cost: "Coffee tours around $30-$50.",
-    image: "https://loremflickr.com/1200/800/Boquete,Panama,Coffee/all?lock=605"
+    image: "/images/attractions/panama-boquete.jpg"
   },
   {
     name: "Volcán Barú",
@@ -69,7 +69,7 @@ export const panamaAttractions = [
     insiderTip: "Most people start the hike from Boquete at midnight to reach the summit by sunrise. It is extremely cold and windy at the top, so pack winter gear. Alternatively, you can hire a rugged 4x4 to drive you up.",
     howToGetThere: "Base of the hike is near Boquete or Volcán.",
     cost: "National Park entry is about $5; 4x4 tours are around $100-$150.",
-    image: "https://loremflickr.com/1200/800/Volcan,Baru,Panama/all?lock=606"
+    image: "/images/attractions/panama-volcan-baru.jpg"
   },
   {
     name: "Amador Causeway",
@@ -81,7 +81,7 @@ export const panamaAttractions = [
     insiderTip: "Rent a four-person pedal cart for a fun family activity. Stop for ceviche and a cold Balboa beer at one of the open-air restaurants on Isla Flamenco at the end of the causeway.",
     howToGetThere: "Uber, taxi, or MetroBus from downtown.",
     cost: "Free to access; bike rentals around $5/hour.",
-    image: "https://loremflickr.com/1200/800/Amador,Causeway,Panama/all?lock=607"
+    image: "/images/attractions/panama-amador-causeway.jpg"
   },
   {
     name: "Biomuseo",
@@ -93,7 +93,7 @@ export const panamaAttractions = [
     insiderTip: "Don't miss the outdoor Biodiversity Park surrounding the museum (which is free to enter) featuring endemic plant species. The museum café offers great views of the canal entrance.",
     howToGetThere: "Located at the start of the Amador Causeway; accessible by Uber or bus.",
     cost: "Around $18 for adult foreigners.",
-    image: "https://loremflickr.com/1200/800/Biomuseo,Panama/all?lock=608"
+    image: "/images/attractions/panama-biomuseo.jpg"
   },
   {
     name: "Coiba National Park",
@@ -105,7 +105,7 @@ export const panamaAttractions = [
     insiderTip: "You must book a tour from the mainland (usually Santa Catalina). Multi-day dive trips sleeping at the ranger station on the island offer the most immersive experience.",
     howToGetThere: "Boat from the surf town of Santa Catalina (approx. 1.5 hours).",
     cost: "Park entry $20; day tours $70-$100.",
-    image: "https://loremflickr.com/1200/800/Coiba,National,Park/all?lock=609"
+    image: "/images/attractions/panama-coiba-national-park.jpg"
   },
   {
     name: "Portobelo",
@@ -117,7 +117,7 @@ export const panamaAttractions = [
     insiderTip: "After exploring the forts, take a short boat ride to Playa Blanca or Isla Grande for a relaxing afternoon on a beautiful Caribbean beach.",
     howToGetThere: "Bus or taxi from Colón, or a 2-hour drive from Panama City.",
     cost: "Forts are free to explore.",
-    image: "https://loremflickr.com/1200/800/Portobelo,Panama/all?lock=610"
+    image: "/images/attractions/panama-portobelo.jpg"
   },
   {
     name: "Soberanía National Park",
@@ -129,7 +129,7 @@ export const panamaAttractions = [
     insiderTip: "Hire a specialized birding guide. The jungle is dense, and their trained eyes and spotting scopes will reveal wildlife you would walk right past. Also, visit the nearby Panama Rainforest Discovery Center to climb their observation tower.",
     howToGetThere: "Drive or taxi from Panama City (about 45 minutes).",
     cost: "Park entry $5; Discovery Center $30.",
-    image: "https://loremflickr.com/1200/800/Soberania,National,Park/all?lock=611"
+    image: "/images/attractions/panama-soberania-national-park.jpg"
   },
   {
     name: "Emberá Indigenous Villages",
@@ -141,7 +141,7 @@ export const panamaAttractions = [
     insiderTip: "Bring cash to purchase their incredibly intricate woven baskets and carved tagua nuts (vegetable ivory)—it is their main source of income and the craftsmanship is world-class.",
     howToGetThere: "Tour from Panama City including a drive to the river and a canoe ride.",
     cost: "Tours range from $70-$120 per person.",
-    image: "https://loremflickr.com/1200/800/Embera,Village,Panama/all?lock=612"
+    image: '/images/attractions/panama-embera-village.jpg'
   },
   {
     name: "Santa Catalina",
@@ -153,7 +153,7 @@ export const panamaAttractions = [
     insiderTip: "Visit Playa Estero for beginner surf lessons on a gorgeous, expansive black sand beach. Eat at one of the fondas (local eateries) for incredibly fresh, cheap seafood.",
     howToGetThere: "Bus or drive from Santiago (about 6 hours total from Panama City).",
     cost: "Free to visit; surf rentals around $10-$15/day.",
-    image: "https://loremflickr.com/1200/800/Santa,Catalina,Surf/all?lock=613"
+    image: "/images/attractions/panama-santa-catalina.jpg"
   },
   {
     name: "Valle de Antón (El Valle)",
@@ -165,7 +165,7 @@ export const panamaAttractions = [
     insiderTip: "Hike La India Dormida at sunrise. Afterwards, soothe your muscles in the Pozos Termales (hot springs) and apply the volcanic mud mask for a natural spa treatment.",
     howToGetThere: "Drive or bus from Panama City (about 2.5 hours).",
     cost: "Market is free; hot springs and trails have nominal fees ($2-$5).",
-    image: "https://loremflickr.com/1200/800/Valle,Anton,Panama/all?lock=614"
+    image: "/images/attractions/panama-valle-de-anton-el-valle.jpg"
   },
   {
     name: "Panamá Viejo",
@@ -177,7 +177,7 @@ export const panamaAttractions = [
     insiderTip: "Climb the restored Cathedral tower for a great panoramic view of the ruins and the modern city skyline. The on-site museum is highly recommended to understand the context before walking the ruins.",
     howToGetThere: "Uber, taxi, or MetroBus from downtown Panama City (about 15 mins).",
     cost: "Around $15 (includes ruins, tower, and museum).",
-    image: "https://loremflickr.com/1200/800/Panama,Viejo,Ruins/all?lock=615"
+    image: "/images/attractions/panama-panama-viejo.jpg"
   },
   {
     name: "Pearl Islands (Islas Perlas)",
@@ -189,7 +189,7 @@ export const panamaAttractions = [
     insiderTip: "Rent a golf cart on Contadora Island (there are virtually no cars) to hop between its seven distinct, beautiful beaches. Playa Larga is the largest and features an eerie, abandoned shipwreck.",
     howToGetThere: "Ferry from Panama City (Amador Causeway) takes 1.5 hours; or a 20-minute flight.",
     cost: "Ferry is around $90-$100 round trip.",
-    image: "https://loremflickr.com/1200/800/Pearl,Islands,Panama/all?lock=616"
+    image: "/images/attractions/panama-pearl-islands-islas-perlas.jpg"
   },
   {
     name: "Gulf of Chiriquí National Marine Park",
@@ -201,7 +201,7 @@ export const panamaAttractions = [
     insiderTip: "Base yourself in the small fishing village of Boca Chica. Hire a local fisherman to take you island hopping to Isla Bolaños and Isla Gámez for the best snorkeling and beach lounging.",
     howToGetThere: "Drive to Boca Chica (about 1 hour from David), then hire a boat.",
     cost: "Boat rentals range from $80-$120 for the day.",
-    image: "https://loremflickr.com/1200/800/Gulf,Chiriqui,Panama/all?lock=617"
+    image: "/images/attractions/panama-gulf-of-chiriqui-national-marine-park.jpg"
   },
   {
     name: "Metropolitan Natural Park",
@@ -213,7 +213,7 @@ export const panamaAttractions = [
     insiderTip: "Walk the Sendero Los Caobos trail for the best chance of spotting sloths in the canopy. Be very quiet and look for movement in the trees, or better yet, hire a guide.",
     howToGetThere: "Short Uber or taxi ride from anywhere in Panama City.",
     cost: "Around $4 for foreigners.",
-    image: "https://loremflickr.com/1200/800/Metropolitan,Park,Panama/all?lock=618"
+    image: "/images/attractions/panama-metropolitan-natural-park.jpg"
   },
   {
     name: "Monkey Island (Gatun Lake)",
@@ -225,7 +225,7 @@ export const panamaAttractions = [
     insiderTip: "Combine a Monkey Island boat tour with a visit to the nearby Sloth Sanctuary or the Gamboa Rainforest Resort's aerial tram for a full day of jungle exploration.",
     howToGetThere: "Tours depart from Gamboa, about 45 minutes from Panama City.",
     cost: "Boat tours range from $35-$60.",
-    image: "https://loremflickr.com/1200/800/Monkey,Island,Panama/all?lock=619"
+    image: '/images/attractions/panama-monkey-island-gatun-lake.jpg'
   },
   {
     name: "Bridge of the Americas",
@@ -237,6 +237,6 @@ export const panamaAttractions = [
     insiderTip: "You cannot walk on the bridge safely. The best place to photograph it is from the Chinese-Panamanian Monument viewpoint on the Amador Causeway, or from a boat transiting the canal beneath it.",
     howToGetThere: "Visible from Amador Causeway; drive over it heading west from Panama City.",
     cost: "Free.",
-    image: "https://loremflickr.com/1200/800/Bridge,Americas,Panama/all?lock=620"
+    image: "/images/attractions/panama-bridge-of-the-americas.jpg"
   }
 ];
