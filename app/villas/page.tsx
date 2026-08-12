@@ -5,6 +5,13 @@ import Image from 'next/image';
 import { villasData } from '../../data/villasData';
 import { MapPin, Users, BedDouble, Waves, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import SeoTextBlock from '@/components/shared/SeoTextBlock';
+
+const villasSeoContent = [
+    "When it comes to luxury travel, privacy and space are the ultimate commodities. At VeloraTravel, our exclusive collection of 60 private residences has been handpicked to offer an unparalleled level of luxury, comfort, and seclusion. From modernist cliffside villas overlooking the Mediterranean to sprawling historic estates nestled in the rolling hills of Tuscany, our properties redefine the concept of a private getaway. Each villa in our portfolio is more than just a place to stay; it is a meticulously designed sanctuary equipped with state-of-the-art amenities, breathtaking views, and architectural brilliance.",
+    "Booking a private villa offers a distinctly different experience compared to a luxury hotel. It provides the freedom to create your own schedule, dine on your own terms, and enjoy exclusive amenities without sharing them with other guests. Whether you are seeking a romantic retreat with private infinity pools, a family gathering space with expansive gardens and dedicated staff, or an eco-lodge immersed in tropical jungles, our diverse selection caters to every unique preference. We prioritize properties that seamlessly blend indoor and outdoor living, allowing you to fully immerse yourself in the beauty of your destination.",
+    "Beyond the physical beauty of our villas, VeloraTravel ensures that every aspect of your stay is effortlessly managed. We provide detailed insights into the unique features of each property, from private beach access to in-house chef services. Our goal is to connect you with a residence that not only meets but exceeds your expectations, providing a flawless backdrop for your most cherished memories. Explore our luxury villa collection and find the perfect private escape for your next journey."
+];
 
 export default function VillasPage() {
     return (
@@ -141,6 +148,11 @@ export default function VillasPage() {
                     </Link>
                 </div>
             </section>
+
+            <SeoTextBlock 
+                title="The Ultimate in Privacy and Luxury" 
+                content={villasSeoContent} 
+            />
         </main>
     );
 }

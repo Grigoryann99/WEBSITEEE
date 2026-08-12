@@ -6,6 +6,13 @@ import Link from 'next/link';
 import { Search, Compass, ArrowRight, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import TravelStyleQuiz from '@/components/destinations/TravelStyleQuiz';
+import SeoTextBlock from '@/components/shared/SeoTextBlock';
+
+const destinationsSeoContent = [
+    "Exploring the world's finest destinations requires more than just a map; it requires expert curation and local insight. At VeloraTravel, our destination guides are meticulously crafted to highlight the absolute best each country has to offer. We span across 50 countries and 6 continents, ensuring that our portfolio captures a diverse range of cultural, natural, and historical marvels. Whether you are drawn to the ancient ruins of Machu Picchu, the vibrant energy of Tokyo's neon streets, or the serene, untouched beaches of the Seychelles, our platform is designed to ignite your wanderlust and guide your journey.",
+    "Our approach to travel is rooted in authenticity and exclusivity. We understand that discerning travelers are not just looking for a place to stay; they are seeking transformative experiences. Our destination directory goes beyond typical tourist traps, pointing you toward hidden gems, private coastal enclaves, and off-the-beaten-path cultural experiences. We focus on regions that offer exceptional luxury infrastructure alongside genuine local charm, ensuring that your trip is as comfortable as it is enriching.",
+    "Navigating international travel can be complex, which is why VeloraTravel provides comprehensive insights into the best times to visit, local customs, and exclusive insider tips for each region. From securing private tours of historic landmarks in Italy to finding the most secluded safari lodges in South Africa, our intelligence network ensures you have the knowledge needed for a flawless trip. Explore our destination directory to discover the perfect backdrop for your next luxury escape."
+];
 import {
     globalDestinations,
     destinationCategories,
@@ -533,6 +540,10 @@ export default function DestinationsPage() {
                 </div>
             </section>
 
+            <SeoTextBlock 
+                title="Discovering the World's Best Destinations" 
+                content={destinationsSeoContent} 
+            />
         </main>
     );
 }

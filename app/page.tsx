@@ -3,6 +3,13 @@ import VillaTransition from "@/components/scrollytelling/VillaTransition";
 import VillaGallery from "@/components/media/VillaGallery";
 import DestinationGlobe from "@/components/media/DestinationGlobe";
 import Link from "next/link";
+import SeoTextBlock from "@/components/shared/SeoTextBlock";
+
+const homeSeoContent = [
+  "At VeloraTravel, we believe that true luxury is found in the extraordinary. Our curated collection of global destinations is designed for the discerning traveler who seeks more than just a vacation. From the pristine, sun-drenched beaches of the Maldives to the rugged, awe-inspiring peaks of the Swiss Alps, every location we feature has been hand-selected to offer an unparalleled travel experience. We understand that our clientele values privacy, exclusivity, and flawless service, which is why our portfolio focuses on private villas, hidden estates, and boutique sanctuaries that remain untouched by mass tourism.",
+  "Planning a luxury getaway requires meticulous attention to detail and a deep understanding of what makes a destination truly special. Whether you are searching for a romantic honeymoon retreat, a sprawling family estate in Tuscany, or an adventurous safari lodge in South Africa, VeloraTravel provides comprehensive insights and insider knowledge. Our travel journals and destination guides go beyond the ordinary, uncovering secret local restaurants, exclusive cultural experiences, and the best times to visit to avoid the crowds.",
+  "In a world where time is the ultimate luxury, we streamline the inspiration process. Our immersive platform allows you to explore over 50 global destinations across 6 continents from the comfort of your home. We are constantly expanding our portfolio, ensuring that our recommendations remain fresh, relevant, and aligned with the highest standards of luxury hospitality. Discover your next unforgettable journey with VeloraTravel and elevate the way you explore the world."
+];
 
 // ─── Editorial Welcome (Singita-style) ────────────────────────────────────────
 function WelcomeSection() {
@@ -76,6 +83,11 @@ export default function Home() {
       <div id="destinations">
         <DestinationGlobe />
       </div>
+
+      <SeoTextBlock 
+        title="Elevating the Art of Luxury Travel" 
+        content={homeSeoContent} 
+      />
     </>
   );
 }
