@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     description: 'Read the Terms of Service for using the VeloraTravel website.',
 };
 
-const LAST_UPDATED = 'March 10, 2025';
+const LAST_UPDATED = 'August 17, 2026';
 
 export default function TermsPage() {
     return (

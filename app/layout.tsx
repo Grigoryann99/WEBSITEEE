@@ -99,10 +99,11 @@ export default function RootLayout({
             gtag('config', 'G-9GPGCR7W9T');
           `}
         </Script>
-        <script
+        <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1654457169304666"
           crossOrigin="anonymous"
+          strategy="afterInteractive"
         />
         <script
           type="application/ld+json"
@@ -114,8 +115,8 @@ export default function RootLayout({
               "url": "https://veloratravel.org",
               "logo": "https://veloratravel.org/logo.svg",
               "sameAs": [
-                "https://www.instagram.com/veloratravel",
-                "https://www.facebook.com/veloratravel"
+                "https://www.instagram.com/velorashow?igsh=MW1jZzkxYTY2cWlmcA==",
+                "https://youtube.com/@velorashow1?si=UPuwLPXV3KRKcO1_"
               ],
               "contactPoint": {
                 "@type": "ContactPoint",

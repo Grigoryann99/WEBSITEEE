@@ -114,7 +114,7 @@ export default function CountryPage({ params }: CountryPageProps) {
                                 whyVisit={dest.whyVisit || dest.description}
                                 bestTime={dest.bestTime || 'April - October'}
                                 insiderTip={dest.insiderTip || 'Book tickets in advance to avoid long lines.'}
-                                imageUrl={dest.image || 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=800&auto=format&fit=crop'}
+                                imageUrl={dest.image || '/images/placeholder.jpg'}
                             />
                         ))}
                     </div>

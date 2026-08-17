@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     description: 'Learn how VeloraTravel collects, uses, and protects your personal information.',
 };
 
-const LAST_UPDATED = 'March 10, 2025';
+const LAST_UPDATED = 'August 17, 2026';
 
 export default function PrivacyPolicyPage() {
     return (
