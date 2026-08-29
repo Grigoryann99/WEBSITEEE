@@ -4,7 +4,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Youtube, Instagram } from 'lucide-react';
+import { Menu, X, ChevronRight, Search, User } from 'lucide-react';
 
 /* ── Menu link data ────────────────────────────────────────── */
 const menuLinks = [
@@ -316,33 +316,6 @@ export default function Navigation() {
                                         );
                                     })}
                                 </div>
-
-                                {/* Bottom Icons */}
-                                <motion.div
-                                    initial={{ opacity: 0, y: 20 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    transition={{ delay: 0.6, duration: 0.5 }}
-                                    className="mt-8 flex justify-end gap-5"
-                                >
-                                    <a
-                                        href="https://www.instagram.com/velorashow?igsh=MW1jZzkxYTY2cWlmcA=="
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        aria-label="Instagram"
-                                        className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 border border-white/10 text-white/60 hover:bg-brand-accent hover:border-brand-accent hover:text-white transition-all duration-300 active:scale-90"
-                                    >
-                                        <Instagram size={18} strokeWidth={1.5} />
-                                    </a>
-                                    <a
-                                        href="https://youtube.com/@velorashow1?si=UPuwLPXV3KRKcO1_"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        aria-label="YouTube"
-                                        className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 border border-white/10 text-white/60 hover:bg-brand-accent hover:border-brand-accent hover:text-white transition-all duration-300 active:scale-90"
-                                    >
-                                        <Youtube size={18} strokeWidth={1.5} />
-                                    </a>
-                                </motion.div>
                             </nav>
                         </motion.div>
                     </motion.div>
