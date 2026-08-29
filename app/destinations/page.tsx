@@ -305,21 +305,18 @@ export default function DestinationsPage() {
                         </button>
                     </div>
                 ) : (
-                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[3px] grid-flow-row-dense">
+                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[3px] grid-flow-row-dense auto-rows-[300px] md:auto-rows-[350px]">
                         {filteredDestinations.map((dest, i) => {
                             // Asymmetric cycle of 8 cards
                             const cycle = i % 8;
-                            let spanClass = "col-span-1";
-                            let heightClass = "h-[300px] md:h-[380px]";
+                            let spanClass = "col-span-1 row-span-1";
                             
                             if (cycle === 0 || cycle === 3 || cycle === 7) {
                                 // Taller vertical cards
-                                spanClass = "col-span-1";
-                                heightClass = "h-[450px] md:h-[580px]";
+                                spanClass = "col-span-1 md:row-span-2";
                             } else if (cycle === 1 || cycle === 2 || cycle === 5) {
                                 // Wide landscape cards
-                                spanClass = "col-span-1 md:col-span-2 xl:col-span-2";
-                                heightClass = "h-[300px] md:h-[380px]";
+                                spanClass = "col-span-1 md:col-span-2 row-span-1";
                             }
 
                             return (
@@ -331,7 +328,7 @@ export default function DestinationsPage() {
                                     viewport={{ once: true, margin: "-100px" }}
                                     exit={{ opacity: 0 }}
                                     transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-                                    className={`${spanClass} ${heightClass} relative group overflow-hidden bg-white border border-gray-150 shadow-sm block`}
+                                    className={`${spanClass} w-full h-full relative group overflow-hidden bg-white shadow-sm block`}
                                 >
                                     <Link
                                         href={`/countries/${dest.name.toLowerCase().replace(/ /g, '_')}`}
