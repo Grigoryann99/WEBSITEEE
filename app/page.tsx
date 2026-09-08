@@ -20,11 +20,20 @@ function WelcomeSection() {
         background: 'linear-gradient(-45deg, #D1FAE5, #FEF3C7, #E0F2FE, #F3E8FF)',
       }}
     >
-      {/* Background Soft Vivid Glow Orbs */}
+      {/* Background Soft Glow Orbs — static radial gradients instead of blur+pulse */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-60">
-        <div className="absolute top-0 left-1/4 w-[550px] h-[550px] bg-[#10B981]/40 rounded-full blur-[100px] animate-pulse" />
-        <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-[#F59E0B]/40 rounded-full blur-[110px] animate-pulse" />
-        <div className="absolute top-1/3 right-10 w-[450px] h-[450px] bg-[#8B5CF6]/35 rounded-full blur-[90px]" />
+        <div
+          className="absolute top-0 left-1/4 w-[550px] h-[550px] rounded-full"
+          style={{ background: 'radial-gradient(circle, rgba(16,185,129,0.4) 0%, transparent 70%)', transform: 'translateZ(0)' }}
+        />
+        <div
+          className="absolute bottom-0 right-1/4 w-[600px] h-[600px] rounded-full"
+          style={{ background: 'radial-gradient(circle, rgba(245,158,11,0.4) 0%, transparent 70%)', transform: 'translateZ(0)' }}
+        />
+        <div
+          className="absolute top-1/3 right-10 w-[450px] h-[450px] rounded-full"
+          style={{ background: 'radial-gradient(circle, rgba(139,92,246,0.35) 0%, transparent 70%)', transform: 'translateZ(0)' }}
+        />
       </div>
 
       <div className="max-w-5xl mx-auto relative z-10">

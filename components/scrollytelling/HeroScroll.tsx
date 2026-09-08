@@ -38,10 +38,10 @@ export default function HeroScroll() {
     const currentFrameIndexRef = useRef<number>(0);
     const rAFRef = useRef<number | null>(null);
 
-    // Responsive Frame Stepping
+    // Responsive Frame Stepping — much larger steps to reduce total images loaded
     const frameStep = useMemo(() => {
-        if (typeof window === 'undefined') return 3;
-        return window.innerWidth < 768 ? 5 : 3;
+        if (typeof window === 'undefined') return 6;
+        return window.innerWidth < 768 ? 10 : 6;
     }, []);
 
     // Framer Motion Scroll Setup
@@ -92,7 +92,8 @@ export default function HeroScroll() {
 
         const displayWidth = canvas.clientWidth;
         const displayHeight = canvas.clientHeight;
-        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        // Cap DPR at 1.5 to reduce canvas pixel count on retina screens
+        const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
 
         if (canvas.width !== displayWidth * dpr || canvas.height !== displayHeight * dpr) {
             canvas.width = displayWidth * dpr;
@@ -131,7 +132,7 @@ export default function HeroScroll() {
         return () => window.removeEventListener('resize', handleResize);
     }, [renderFrame]);
 
-    // Progressive Device Frame Preloader
+    // Progressive Device Frame Preloader — reduced batch size for smoother loading
     useEffect(() => {
         let isMounted = true;
         const framesToLoad: number[] = [];
@@ -142,8 +143,8 @@ export default function HeroScroll() {
             framesToLoad.push(TOTAL_FRAMES - 1);
         }
 
-        const priorityIndices = framesToLoad.slice(0, 15);
-        const remainingIndices = framesToLoad.slice(15);
+        const priorityIndices = framesToLoad.slice(0, 10);
+        const remainingIndices = framesToLoad.slice(10);
 
         const loadSingleImage = (idx: number): Promise<void> => {
             return new Promise((resolve) => {
@@ -153,6 +154,7 @@ export default function HeroScroll() {
                 }
 
                 const img = new Image();
+                img.decoding = 'async';
                 img.src = getFramePath(idx);
                 img.onload = () => {
                     if (!isMounted) return;
@@ -171,7 +173,7 @@ export default function HeroScroll() {
         Promise.all(priorityIndices.map(loadSingleImage)).then(() => {
             if (!isMounted) return;
             let cursor = 0;
-            const batchSize = 6;
+            const batchSize = 4;
 
             const loadNextBatch = () => {
                 if (!isMounted || cursor >= remainingIndices.length) return;
@@ -183,7 +185,7 @@ export default function HeroScroll() {
                         if ('requestIdleCallback' in window) {
                             (window as unknown as { requestIdleCallback: (cb: () => void) => void }).requestIdleCallback(loadNextBatch);
                         } else {
-                            setTimeout(loadNextBatch, 20);
+                            setTimeout(loadNextBatch, 40);
                         }
                     }
                 });
@@ -226,10 +228,11 @@ export default function HeroScroll() {
         <div ref={containerRef} className="relative h-[400vh] w-full bg-black">
             {/* Sticky Fullscreen Canvas Viewport */}
             <div className="sticky top-0 h-screen w-full overflow-hidden bg-black flex items-center justify-center">
-                {/* HTML5 Canvas Frame Renderer */}
+                {/* HTML5 Canvas Frame Renderer — GPU-accelerated */}
                 <canvas
                     ref={canvasRef}
                     className="absolute inset-0 w-full h-full object-cover"
+                    style={{ willChange: 'transform' }}
                 />
 
                 {/* Subtle Global Dark Gradient Overlay for perfect text contrast against bright sun/sky */}
