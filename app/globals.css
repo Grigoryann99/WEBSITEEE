@@ -8,6 +8,12 @@
   --foreground: #1A1A1A;
 }
 
+/* The stay showcase uses bold editorial type rather than the site's serif headings. */
+#villas h2, #villas h3 {
+  font-family: var(--font-montserrat), sans-serif !important;
+  font-weight: 700;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
