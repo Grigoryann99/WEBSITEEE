@@ -1,32 +1,38 @@
 'use client';
 
 import { motion, useReducedMotion } from 'framer-motion';
+import Link from 'next/link';
 import { MapPin, MountainSnow, Compass, Binoculars, Flower2 } from 'lucide-react';
 
 const destinations = [
     {
-        title: "The Maldivian Sanctum",
-        desc: "Seven nights in a private overwater villa with a dedicated chef, daily spa treatments, and a sunset dhoni cruise included. Full board, seaplane transfers, and a private snorkeling guide are all arranged.",
+        title: "Maldives: Island Escapes",
+        desc: "Explore island destinations and coastal highlights to find inspiration for your next beach getaway.",
+        href: "/countries/maldives",
         icon: Compass,
     },
     {
-        title: "Alpine Serenity",
-        desc: "Five nights in an exclusive Swiss Alps chalet with daily heliskiing, a private mountain guide, and Michelin-starred in-chalet dining every evening. Designed for those who demand the finest mountain experience on earth.",
+        title: "Switzerland: Alpine Adventures",
+        desc: "Discover mountain landscapes, lakes, and Swiss destinations to explore when planning an Alpine escape.",
+        href: "/countries/switzerland",
         icon: MountainSnow,
     },
     {
-        title: "Aegean Odyssey",
-        desc: "Eight days from a private cliffside villa in Santorini with day trips to Thirassia and Oia included. A private catamaran sunset cruise and dedicated concierge complete the experience.",
+        title: "Greece: Islands & Culture",
+        desc: "Browse Greek destinations, historic landmarks, and island highlights to shape your own itinerary.",
+        href: "/countries/greece",
         icon: MapPin,
     },
     {
-        title: "Safari Elegance",
-        desc: "Six nights across two luxury camps in the Serengeti timed to coincide with the Great Migration. Private game drives, bush dinners, and a sunrise hot air balloon safari are all included.",
+        title: "South Africa: Nature & Wildlife",
+        desc: "Explore national parks, coastal scenery, and city highlights for a trip that combines nature and culture.",
+        href: "/countries/south_africa",
         icon: Binoculars,
     },
     {
-        title: "Kyoto Harmony",
-        desc: "Five nights in a private ryokan in Higashiyama with exclusive temple access before opening hours. A private tea ceremony master and guided night walk through Gion are included.",
+        title: "Japan: Cities & Traditions",
+        desc: "Discover Japanese destinations, temples, and cultural landmarks as a starting point for your journey.",
+        href: "/countries/japan",
         icon: Flower2,
     }
 ];
@@ -62,14 +68,14 @@ export default function DestinationGlobe() {
                     <div>
                         <p className="font-sans text-brand-accent tracking-[0.3em] text-xs uppercase mb-6 flex items-center gap-4 font-semibold">
                             <span className="w-12 h-[2px] bg-brand-accent block"></span>
-                            Exclusive Journeys
+                            Find Your Travel Inspiration
                         </p>
                     </div>
 
                     <h2
                         className="font-serif text-5xl md:text-7xl lg:text-[4.5rem] text-[#1A1A1A] leading-[1.1] mb-8 drop-shadow-sm font-normal"
                     >
-                        Discover the <br /> World with <br />
+                        Explore the <br /> World with <br />
                         <span className="text-brand-accent italic font-light">VeloraTravel</span>
                     </h2>
 
@@ -77,8 +83,9 @@ export default function DestinationGlobe() {
                         className="backdrop-blur-md bg-white/85 border border-black/10 rounded-2xl p-8 shadow-[0_10px_30px_rgba(0,0,0,0.06)] relative overflow-hidden group"
                     >
                         <p className="font-sans text-[#2D3748] text-lg leading-relaxed max-w-md relative z-10 font-normal">
-                            Five exclusive packages designed for the world&apos;s most discerning travelers. Unmatched elegance, ultimate privacy, and cinematic experiences crafted just for you.
+                            Not sure where to go next? Start with these five destinations, explore their highlights, and follow the links to build your own travel shortlist.
                         </p>
+                        <Link href="/destinations" className="inline-flex mt-5 font-semibold text-brand-accent underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4">Browse all destinations →</Link>
                     </div>
                 </div>
 
@@ -97,7 +104,7 @@ export default function DestinationGlobe() {
                                 transition={{ duration: 0.8, delay: i * 0.12, ease: [0.21, 0.47, 0.32, 0.98] }}
                                 className="group cursor-pointer"
                             >
-                                <div className="backdrop-blur-xl bg-white/95 border border-slate-200/90 hover:border-brand-accent/50 hover:bg-white rounded-2xl p-6 transition-all duration-300 ease-out transform hover:-translate-y-1 shadow-xl flex items-center gap-6 relative overflow-hidden">
+                                <Link href={dest.href} className="backdrop-blur-xl bg-white/95 border border-slate-200/90 hover:border-brand-accent/50 hover:bg-white rounded-2xl p-6 transition-all duration-300 ease-out transform hover:-translate-y-1 shadow-xl flex items-center gap-6 relative overflow-hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-accent focus-visible:outline-offset-4">
 
                                     {/* Hover subtle highlight */}
                                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-brand-accent/[0.04] to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-in-out" />
@@ -113,9 +120,10 @@ export default function DestinationGlobe() {
                                         <p className="font-sans font-normal text-[#334155] mt-1.5 text-sm xl:text-base leading-relaxed group-hover:text-[#0F172A] transition-colors duration-300">
                                             {dest.desc}
                                         </p>
+                                        <span className="inline-block mt-3 text-sm font-semibold text-brand-accent">Explore destination →</span>
                                     </div>
 
-                                </div>
+                                </Link>
                             </motion.div>
                         );
                     })}

@@ -9,10 +9,10 @@ const TOTAL_FRAMES = 542;
 
 const chapters = [
     {
-        tagline: "DISCOVER THE EXTRAORDINARY",
-        title: "Where Luxury Meets ",
-        highlight: "The Horizon",
-        description: "Explore private sanctuaries, handpicked villas, and luxury travel guides designed for the modern explorer.",
+        tagline: "DESTINATION GUIDES & TRAVEL INSPIRATION",
+        title: "Find Your ",
+        highlight: "Next Destination",
+        description: "Explore places to visit, local highlights, and travel guides across 51 countries. Start with a destination and discover what makes it worth the journey.",
     },
     {
         tagline: "CURATED EXPERIENCES",
