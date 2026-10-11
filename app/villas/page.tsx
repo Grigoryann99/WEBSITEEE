@@ -1,158 +1,36 @@
-'use client';
-
-import { motion } from 'framer-motion';
-import Image from 'next/image';
-import { villasData } from '../../data/villasData';
-import { MapPin, Users, BedDouble, Waves, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
-import SeoTextBlock from '@/components/shared/SeoTextBlock';
+import { villasData } from '@/data/villasData';
+import VillaGuideCard from '@/components/media/VillaGuideCard';
 
-const villasSeoContent = [
-    "When it comes to luxury travel, privacy and space are the ultimate commodities. At VeloraTravel, our exclusive collection of 60 private residences has been handpicked to offer an unparalleled level of luxury, comfort, and seclusion. From modernist cliffside villas overlooking the Mediterranean to sprawling historic estates nestled in the rolling hills of Tuscany, our properties redefine the concept of a private getaway. Each villa in our portfolio is more than just a place to stay; it is a meticulously designed sanctuary equipped with state-of-the-art amenities, breathtaking views, and architectural brilliance.",
-    "Booking a private villa offers a distinctly different experience compared to a luxury hotel. It provides the freedom to create your own schedule, dine on your own terms, and enjoy exclusive amenities without sharing them with other guests. Whether you are seeking a romantic retreat with private infinity pools, a family gathering space with expansive gardens and dedicated staff, or an eco-lodge immersed in tropical jungles, our diverse selection caters to every unique preference. We prioritize properties that seamlessly blend indoor and outdoor living, allowing you to fully immerse yourself in the beauty of your destination.",
-    "Beyond the physical beauty of our villas, VeloraTravel ensures that every aspect of your stay is effortlessly managed. We provide detailed insights into the unique features of each property, from private beach access to in-house chef services. Our goal is to connect you with a residence that not only meets but exceeds your expectations, providing a flawless backdrop for your most cherished memories. Explore our luxury villa collection and find the perfect private escape for your next journey."
+const checklist = [
+    ['Total price', 'Request a quotation for your dates and party size, including taxes, transfers, meals, and mandatory charges. Compare the full stay cost rather than a headline nightly rate.'],
+    ['Layout and accessibility', 'Check the floor plan, bed configuration, steps, and distance to shared facilities. Ask about accessibility needs before paying a deposit.'],
+    ['Location and transfers', 'Confirm how you reach the property, the last transfer time, and what happens if your flight is delayed. Island and mountain stays can require additional travel arrangements.'],
+    ['Cancellation and inclusions', 'Read the deposit, refund, and cancellation terms. Get written confirmation of meal plans, activities, and services rather than assuming they are included.'],
 ];
-
 export default function VillasPage() {
     return (
-        <main className="min-h-screen bg-[#F9F9F9]">
-            {/* HERO SECTION */}
-            <section className="relative h-[60vh] md:h-[70vh] w-full flex items-center justify-center overflow-hidden">
-                <div className="absolute inset-0 z-0">
-                    <Image
-                        src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2000&auto=format&fit=crop"
-                        alt="Luxury Villa Hero"
-                        fill
-                        className="object-cover"
-                        priority
-                    />
-                    <div className="absolute inset-0 bg-black/40" />
-                </div>
-                
-                <div className="relative z-10 text-center px-6 max-w-4xl">
-                    <motion.span 
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
-                        className="block text-[#1D9E75] font-sans text-xs tracking-[0.3em] uppercase mb-6 font-semibold"
-                    >
-                        Exclusive Collection
-                    </motion.span>
-                    <motion.h1 
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.1 }}
-                        className="font-serif text-5xl md:text-7xl text-white mb-6 drop-shadow-lg"
-                    >
-                        60 Private Residences
-                    </motion.h1>
-                    <motion.p 
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.2 }}
-                        className="font-sans text-white/90 text-lg md:text-xl font-light leading-relaxed max-w-2xl mx-auto drop-shadow-md"
-                    >
-                        Discover our handpicked selection of the world's most luxurious and secluded villas across 51 iconic destinations.
-                    </motion.p>
+        <main className="min-h-screen bg-[#F9F9F9] text-brand-dark">
+            <header className="mb-12 bg-brand-dark px-6 pb-16 pt-36 text-center text-white sm:pt-44">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-accent">Accommodation research</p>
+                <h1 className="mx-auto mt-5 max-w-4xl font-serif text-5xl leading-tight sm:text-6xl">Compare Villas & Chalet Stays</h1>
+                <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/80">Start with three real properties and compare their setting, accommodation choices, and the details to confirm before booking.</p>
+            </header>
+            <section aria-label="Accommodation shortlist" className="mx-auto max-w-7xl px-6 pb-16">
+                <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">{villasData.map(villa => <VillaGuideCard key={villa.id} villa={villa} />)}</div>
+            </section>
+            <section className="mx-auto max-w-7xl px-6 pb-20" aria-labelledby="checklist-title">
+                <h2 id="checklist-title" className="font-serif text-3xl sm:text-4xl">Before you choose a stay</h2>
+                <div className="mt-8 grid gap-6 md:grid-cols-2">{checklist.map(([title, text]) => <div key={title} className="rounded-2xl border border-slate-200 bg-white p-6"><h3 className="text-lg font-semibold">{title}</h3><p className="mt-3 leading-relaxed text-slate-600">{text}</p></div>)}</div>
+            </section>
+            <section className="bg-white px-6 py-16">
+                <div className="mx-auto max-w-3xl">
+                    <h2 className="font-serif text-3xl">How we prepared this shortlist</h2>
+                    <p className="mt-5 leading-relaxed text-slate-600">Property descriptions were checked against the linked operators&apos; accommodation pages on 11 October 2026. The shortlist compares two island settings with an Alpine chalet. Suitability notes and booking questions are our editorial guidance; this is not a firsthand stay review.</p>
+                    <p className="mt-4 leading-relaxed text-slate-600">VeloraTravel is an independent travel information site. We do not manage these properties or take accommodation bookings. These are direct official links, not paid placements or affiliate links. Rates, availability, and inclusions should be confirmed with the operator for your dates.</p>
+                    <Link href="/destinations" className="mt-6 inline-block font-semibold text-brand-accent underline underline-offset-4">Explore destination guides →</Link>
                 </div>
             </section>
-
-            {/* VILLAS GRID */}
-            <section className="py-24 px-6 max-w-[1600px] mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
-                    {villasData.map((villa, idx) => (
-                        <motion.div 
-                            key={villa.id}
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true, margin: "-100px" }}
-                            transition={{ duration: 0.7, delay: (idx % 3) * 0.1 }}
-                            className="group flex flex-col h-full bg-white border border-gray-200 hover:border-gray-300 transition-all duration-500 rounded-sm overflow-hidden hover:shadow-xl"
-                        >
-                            {/* Image Container */}
-                            <div className="relative aspect-[4/3] w-full overflow-hidden bg-gray-100">
-                                <Image
-                                    src={villa.image}
-                                    alt={villa.name}
-                                    fill
-                                    className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
-                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                />
-                                {/* Overlay Gradient */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60" />
-                                
-                                {/* Location Tag */}
-                                <div className="absolute top-4 left-4 flex items-center gap-2 bg-black/40 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/20">
-                                    <MapPin className="w-3 h-3 text-white" />
-                                    <span className="text-[10px] uppercase tracking-widest text-white font-medium">
-                                        {villa.location}
-                                    </span>
-                                </div>
-                                
-                                {/* Price Tag */}
-                                <div className="absolute bottom-4 left-4">
-                                    <span className="text-sm font-sans font-medium text-white tracking-wide">
-                                        {villa.price}
-                                    </span>
-                                </div>
-                            </div>
-
-                            {/* Content */}
-                            <div className="p-8 flex flex-col flex-grow">
-                                <h3 className="font-serif text-2xl text-brand-dark mb-4 group-hover:text-[#1D9E75] transition-colors">
-                                    {villa.name}
-                                </h3>
-                                <p className="font-sans text-brand-dark/60 text-sm leading-relaxed mb-8 flex-grow font-light">
-                                    {villa.description}
-                                </p>
-
-                                {/* Amenities Line */}
-                                <div className="flex items-center gap-6 pt-6 border-t border-gray-100">
-                                    <div className="flex flex-col gap-1">
-                                        <div className="flex items-center gap-2 text-brand-dark/40">
-                                            <BedDouble className="w-4 h-4" />
-                                            <span className="text-[10px] uppercase tracking-widest font-semibold">{villa.bedrooms} Beds</span>
-                                        </div>
-                                    </div>
-                                    <div className="flex flex-col gap-1">
-                                        <div className="flex items-center gap-2 text-brand-dark/40">
-                                            <Users className="w-4 h-4" />
-                                            <span className="text-[10px] uppercase tracking-widest font-semibold">{villa.guests} Guests</span>
-                                        </div>
-                                    </div>
-                                    <div className="flex flex-col gap-1 ml-auto">
-                                        <div className="flex items-center gap-2 text-[#1D9E75]/70">
-                                            <Waves className="w-4 h-4" />
-                                            <span className="text-[10px] uppercase tracking-widest font-semibold text-[#1D9E75]">{villa.amenity}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </motion.div>
-                    ))}
-                </div>
-            </section>
-            
-            {/* CALL TO ACTION */}
-            <section className="py-32 bg-brand-dark text-white text-center px-6">
-                <div className="max-w-3xl mx-auto">
-                    <h2 className="font-serif text-4xl md:text-5xl mb-6">Ready for the Ultimate Escape?</h2>
-                    <p className="font-sans text-white/60 mb-10 font-light leading-relaxed">
-                        Contact our dedicated concierge team to inquire about availability and personalize your luxurious stay at one of our 60 exclusive villas.
-                    </p>
-                    <Link
-                        href="/support"
-                        className="inline-flex items-center gap-3 bg-[#1D9E75] text-white px-8 py-4 text-xs tracking-[0.2em] uppercase font-bold hover:bg-white hover:text-brand-dark transition-colors"
-                    >
-                        Inquire Now <ArrowRight className="w-4 h-4" />
-                    </Link>
-                </div>
-            </section>
-
-            <SeoTextBlock 
-                title="The Ultimate in Privacy and Luxury" 
-                content={villasSeoContent} 
-            />
         </main>
     );
 }

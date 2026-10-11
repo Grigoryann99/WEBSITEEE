@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Luxury Villas — 60 Private Residences Worldwide | VeloraTravel',
-    description: 'Discover our handpicked collection of 60 luxury private villas across 51 iconic destinations — from overwater bungalows in the Maldives to alpine retreats in Switzerland.',
+    title: 'Villas & Chalet Stays — Comparison and Booking Checklist | VeloraTravel',
+    description: 'Compare Soneva Fushi, Six Senses Zil Pasyon, and The Lodge in Verbier using official sources, suitability notes, and practical questions to ask before booking.',
 };
 
 export default function VillasLayout({
