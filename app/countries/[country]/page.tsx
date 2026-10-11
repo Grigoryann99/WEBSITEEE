@@ -3,6 +3,7 @@ import { countries } from '@/lib/countryData';
 import CountryDestinationCard from '@/components/destinations/CountryDestinationCard';
 import CountryHeroImage from '@/components/countries/CountryHeroImage';
 import { Metadata } from 'next';
+import MaldivesExperience from '@/components/countries/MaldivesExperience';
 
 interface CountryPageProps {
     params: {
@@ -93,8 +94,9 @@ export default function CountryPage({ params }: CountryPageProps) {
 
             {/* Container for content sections */}
             <div className="max-w-7xl mx-auto px-6 space-y-24 py-20">
+                {countryKey === 'maldives' && <MaldivesExperience />}
                 {/* 2. Top Destinations */}
-                <section>
+                <section id={countryKey === 'maldives' ? 'maldives-highlights' : undefined}>
                     <div className="mb-12 text-left">
                         <h2 className="font-serif text-4xl md:text-5xl text-brand-dark mb-4">Top Destinations</h2>
                         <div className="w-24 h-1 bg-brand-accent" />
