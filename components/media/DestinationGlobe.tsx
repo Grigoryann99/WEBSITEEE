@@ -1,8 +1,6 @@
 'use client';
 
-import { useRef } from 'react';
-import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion';
-import Image from 'next/image';
+import { motion, useReducedMotion } from 'framer-motion';
 import { MapPin, MountainSnow, Compass, Binoculars, Flower2 } from 'lucide-react';
 
 const destinations = [
@@ -34,39 +32,21 @@ const destinations = [
 ];
 
 export default function DestinationGlobe() {
-    const containerRef = useRef<HTMLDivElement>(null);
     const reducedMotion = useReducedMotion();
-    const { scrollYProgress } = useScroll({
-        target: containerRef,
-        offset: ["start end", "end start"]
-    });
-
-    // Main text animations
-    const titleOpacity = useTransform(scrollYProgress, [0.1, 0.3], [0, 1]);
-    const titleY = useTransform(scrollYProgress, [0.1, 0.3], [30, 0]);
-
-    const subtitleOpacity = useTransform(scrollYProgress, [0.15, 0.35], [0, 1]);
-    const subtitleY = useTransform(scrollYProgress, [0.15, 0.35], [20, 0]);
-
-    const descOpacity = useTransform(scrollYProgress, [0.2, 0.4], [0, 1]);
-    const descY = useTransform(scrollYProgress, [0.2, 0.4], [25, 0]);
 
     return (
         <div
-            ref={containerRef}
             className="relative isolate bg-white flex flex-col items-center justify-center py-24 md:py-32 px-6 overflow-clip border-t border-gray-100"
         >
             {/* Keep the image viewport-sized instead of enlarging it across the tall mobile list. */}
             <div className="absolute inset-0 z-0 pointer-events-none" aria-hidden="true">
                 <div className="sticky top-0 h-[100svh] min-h-[620px] w-full">
-                <Image
-                    src="/images/journeys-coast.webp"
-                    alt=""
-                    fill
-                    sizes="100vw"
-                    className="object-cover opacity-60"
-                    quality={85}
-                />
+                    <picture>
+                        <source media="(min-width: 1024px)" srcSet="/images/journeys-coast-desktop.webp" />
+                        {/* Art direction keeps the mobile and desktop compositions separate. */}
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img src="/images/journeys-coast.webp" alt="" loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover opacity-60" />
+                    </picture>
                 </div>
             </div>
 
@@ -75,38 +55,36 @@ export default function DestinationGlobe() {
             <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white to-transparent z-[1] pointer-events-none" />
 
             {/* Content overlay */}
-            <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
+            <div className="relative z-10 w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-12 xl:gap-20 items-center">
 
                 {/* Left Side: Elegant Text */}
-                <div className="w-full lg:w-1/2 flex flex-col items-start text-left lg:pr-8">
-                    <motion.div style={reducedMotion ? undefined : { opacity: subtitleOpacity, y: subtitleY }}>
+                <div className="w-full min-w-0 flex flex-col items-start text-left">
+                    <div>
                         <p className="font-sans text-brand-accent tracking-[0.3em] text-xs uppercase mb-6 flex items-center gap-4 font-semibold">
                             <span className="w-12 h-[2px] bg-brand-accent block"></span>
                             Exclusive Journeys
                         </p>
-                    </motion.div>
+                    </div>
 
-                    <motion.h2
-                        style={reducedMotion ? undefined : { opacity: titleOpacity, y: titleY }}
+                    <h2
                         className="font-serif text-5xl md:text-7xl lg:text-[4.5rem] text-[#1A1A1A] leading-[1.1] mb-8 drop-shadow-sm font-normal"
                     >
                         Discover the <br /> World with <br />
                         <span className="text-brand-accent italic font-light">VeloraTravel</span>
-                    </motion.h2>
+                    </h2>
 
-                    <motion.div
-                        style={reducedMotion ? undefined : { opacity: descOpacity, y: descY }}
+                    <div
                         className="backdrop-blur-md bg-white/85 border border-black/10 rounded-2xl p-8 shadow-[0_10px_30px_rgba(0,0,0,0.06)] relative overflow-hidden group"
                     >
                         <p className="font-sans text-[#2D3748] text-lg leading-relaxed max-w-md relative z-10 font-normal">
                             Five exclusive packages designed for the world&apos;s most discerning travelers. Unmatched elegance, ultimate privacy, and cinematic experiences crafted just for you.
                         </p>
-                    </motion.div>
+                    </div>
                 </div>
 
                 {/* Right Side: Clean White Luxury Glass Cards */}
                 <motion.div
-                    className="w-full lg:w-1/2 space-y-4 relative z-20"
+                    className="w-full min-w-0 space-y-4 relative z-20"
                 >
                     {destinations.map((dest, i) => {
                         const Icon = dest.icon;
@@ -132,7 +110,7 @@ export default function DestinationGlobe() {
                                         <h3 className="font-sans text-lg md:text-2xl text-[#0F172A] font-semibold group-hover:text-brand-accent transition-colors duration-300">
                                             {dest.title}
                                         </h3>
-                                        <p className="font-sans font-normal text-[#334155] mt-1.5 text-xs sm:text-sm leading-relaxed tracking-wide group-hover:text-[#0F172A] transition-colors duration-300">
+                                        <p className="font-sans font-normal text-[#334155] mt-1.5 text-sm xl:text-base leading-relaxed group-hover:text-[#0F172A] transition-colors duration-300">
                                             {dest.desc}
                                         </p>
                                     </div>

@@ -235,7 +235,16 @@ export default function HeroScroll() {
         <div ref={containerRef} className="relative w-full bg-black h-[100svh] min-h-[620px] md:h-[180svh] motion-reduce:!h-[100svh]">
             {/* Sticky Fullscreen Canvas Viewport */}
             <div className="sticky top-0 h-[100svh] min-h-[620px] w-full overflow-hidden bg-black flex items-center justify-center">
-                <NextImage src={animateHero ? getFramePath(0) : '/images/travel-hero-coast.webp'} alt="" fill priority sizes="100vw" quality={80} className="object-cover" />
+                {animateHero ? (
+                    <NextImage src={getFramePath(0)} alt="" fill priority sizes="100vw" quality={80} className="object-cover" />
+                ) : (
+                    <picture>
+                        <source media="(min-width: 1024px)" srcSet="/images/travel-hero-coast-desktop.webp" />
+                        {/* Native picture selects the correct composition before hydration. */}
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img src="/images/travel-hero-coast.webp" alt="" fetchPriority="high" className="absolute inset-0 h-full w-full object-cover" />
+                    </picture>
+                )}
                 {/* HTML5 Canvas Frame Renderer — GPU-accelerated */}
                 {animateHero && <canvas
                     ref={canvasRef}
