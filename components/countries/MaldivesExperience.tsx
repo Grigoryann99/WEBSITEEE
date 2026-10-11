@@ -13,19 +13,19 @@ const places = [
     { name: 'Baa Atoll', tag: 'Island & resort inspiration', x: 35, y: 24, text: 'Explore a different atoll setting, including the Soneva Fushi villas in our stay shortlist. Confirm the complete transfer route before combining it with another island.' },
 ];
 const days = [
-    ['Arrive & settle in', 'Meet your prearranged transfer, check in, and leave the first afternoon open. Ask your host about beach areas and tomorrow’s sea conditions.'],
-    ['Discover your island', 'Take a gentle walk, try a local café if staying on an inhabited island, and spend time at a suitable beach. Keep the afternoon unhurried.'],
-    ['A day on the water', 'Discuss a guided snorkeling or boat excursion with a local operator. Confirm safety equipment, conditions, and the cancellation policy before booking.'],
-    ['Choose your own pace', 'Plan a relaxed beach day or an optional excursion. Use this day as a weather buffer rather than filling every hour.'],
-    ['A little more island time', 'Revisit your favorite spot, enjoy a slow meal, or explore with your host’s advice. Avoid adding another transfer just to tick off a place.'],
-    ['Your flexible day', 'Keep a spare day for an activity postponed by weather, or simply rest. Reconfirm your departure transfer and airport arrival plan.'],
-    ['Homeward journey', 'Leave enough time for the transfer and your international flight. Follow the timing advised by your accommodation and airline.'],
+    ['Arrival and island transfer', 'Arrange the airport-to-island transfer before arrival. After check-in, confirm your return transfer, meal arrangements, and which beach to use. Leave this day free of prepaid activities in case the journey takes longer than planned.'],
+    ['Beach access and a snorkeling plan', 'Find out which beach you can use and whether snorkeling requires a guide or boat trip. Ask about equipment, swimming conditions, and the total activity cost before choosing an operator. On a local island, check designated swimwear areas with your host.'],
+    ['Your first boat excursion', 'Use this day for a snorkeling or boat trip if conditions allow. Before paying, confirm the duration, equipment, group size, cancellation terms, and any additional charges. Keep an alternative on the island if the trip is postponed.'],
+    ['A day without a transfer', 'Stay on your island rather than adding another journey. On a local island, ask your host about cafés and village walks; at a resort, compare included activities with paid options. Keep the day available for an excursion delayed by weather.'],
+    ['Choose a second activity', 'Decide whether another excursion adds something different to your trip. Compare its itinerary and cost with what you have already done. If you would rather spend the day at the beach, leave it unbooked.'],
+    ['Confirm your departure arrangements', 'Check the transfer pickup point, departure time, luggage arrangements, and airport arrival plan with your accommodation. Use the rest of the day for a postponed activity only if it leaves enough time to pack and settle your bill.'],
+    ['Island transfer and flight home', 'Follow the departure timing agreed with your accommodation and airline. Keep booking confirmations and transfer contact details available. Leave this day for travel rather than scheduling an excursion before your flight.'],
 ];
 const buttonClass = 'relative rounded-full px-4 py-3 text-sm font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-teal-700';
 const money = (value: number) => new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(value);
 
 function Heading({ number, title, children }: { number: string; title: string; children: ReactNode }) {
-    return <div className="mb-8"><p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-teal-700">{number} / YOUR ISLAND JOURNEY</p><h2 className="font-serif text-4xl sm:text-5xl">{title}</h2><p className="mt-4 max-w-2xl leading-relaxed text-slate-600">{children}</p></div>;
+    return <div className="mb-8"><p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-teal-700">{number} / MALDIVES TRIP PLANNER</p><h2 className="font-serif text-4xl sm:text-5xl">{title}</h2><p className="mt-4 max-w-2xl leading-relaxed text-slate-600">{children}</p></div>;
 }
 
 export default function MaldivesExperience() {
@@ -54,14 +54,14 @@ export default function MaldivesExperience() {
         <div className="space-y-20">
             <section className="relative overflow-hidden rounded-[2rem] bg-[#063f46] px-6 py-12 text-white sm:p-12">
                 <div className="pointer-events-none absolute -right-20 -top-20 h-80 w-80 rounded-full border border-white/10" aria-hidden="true" />
-                <p className="text-xs font-semibold uppercase tracking-[0.25em] text-teal-200">A journey you can shape</p>
-                <h2 className="mt-4 max-w-3xl font-serif text-4xl sm:text-6xl">Make the Maldives<br /><span className="italic text-teal-200">your kind of escape.</span></h2>
-                <p className="mt-6 max-w-xl leading-relaxed text-white/80">Pick a place. Find your season. Compare stays and sketch your week — one choice at a time.</p>
+                <p className="text-xs font-semibold uppercase tracking-[0.25em] text-teal-200">Maldives · planning tools</p>
+                <h2 className="mt-4 max-w-3xl font-serif text-4xl sm:text-6xl">Plan your Maldives trip<br /><span className="italic text-teal-200">before you book.</span></h2>
+                <p className="mt-6 max-w-xl leading-relaxed text-white/80">Compare a local-island stay with a resort, check seasonal conditions, and plan seven days from one island base. Add your accommodation and transfer quotes to calculate a trip total.</p>
                 <nav aria-label="Maldives planner sections" className="mt-8 flex flex-wrap gap-3">{[['Explore','island-explorer'],['When to go','island-season'],['Your stay','island-stay'],['Your week','island-week'],['Your budget','island-budget']].map(([label,id]) => <a key={id} href={'#'+id} className="rounded-full border border-white/30 px-4 py-3 text-sm hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white">{label} <ArrowRight size={14} className="ml-2 inline" aria-hidden="true" /></a>)}</nav>
             </section>
 
             <section id="island-explorer" className="scroll-mt-24">
-                <Heading number="01" title="Follow your curiosity.">Tap a place to explore a different side of island life.</Heading>
+                <Heading number="01" title="Malé, Maafushi or Baa Atoll?">Select a place to see what to consider before adding it to your route. Use the diagram to compare options; confirm the actual transfer route with your accommodation.</Heading>
                 <div className="grid gap-6 lg:grid-cols-2">
                     <div className="relative min-h-[360px] overflow-hidden rounded-3xl bg-[#073e48]">
                         <svg viewBox="0 0 400 360" className="absolute h-full w-full opacity-50" aria-hidden="true">
@@ -84,7 +84,7 @@ export default function MaldivesExperience() {
             </section>
 
             <section id="island-season" className="scroll-mt-24">
-                <Heading number="02" title="Find your season.">Choose a month for a climate overview and a planning tip.</Heading>
+                <Heading number="02" title="What changes in your travel month?">Select your month for a monsoon overview. Use it to plan flexible boat days, then check the local forecast closer to departure.</Heading>
                 <div className="grid grid-cols-3 gap-2 sm:grid-cols-6">{months.map((name,i)=><button key={name} aria-pressed={month===i} aria-controls="season-panel" onClick={()=>setMonth(i)} className={buttonClass+' '+(month===i?'bg-[#063f46] text-white':'bg-white text-slate-700 hover:bg-teal-50')}>{name.slice(0,3)}</button>)}</div>
                 <div id="season-panel" className="mt-6 rounded-3xl bg-gradient-to-br from-teal-50 to-sky-50 p-6 sm:p-10">
                     <AnimatePresence mode="wait" initial={false}><motion.div key={month} {...panelMotion} className="flex flex-col gap-5 sm:flex-row sm:items-start">
@@ -96,18 +96,18 @@ export default function MaldivesExperience() {
             </section>
 
             <section id="island-stay" className="scroll-mt-24">
-                <Heading number="03" title="Choose your island rhythm.">Compare two ways to stay. These notes help you decide what to ask your host.</Heading>
+                <Heading number="03" title="Local guesthouse or island resort?">Compare beach access, meals, activities, and transfers before choosing accommodation. Open either option for the questions to send your host.</Heading>
                 <div className="mb-6 flex flex-wrap gap-2">{(['local','resort'] as const).map(value=><button key={value} aria-pressed={stay===value} aria-controls="stay-panel" onClick={()=>setStay(value)} className={buttonClass+' '+(stay===value?'bg-[#063f46] text-white':'bg-white text-slate-700')}>{value==='local'?'Local island':'Resort island'}</button>)}</div>
                 <div id="stay-panel" className="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10">
                     <AnimatePresence mode="wait" initial={false}><motion.div key={stay} {...panelMotion} className="grid gap-8 md:grid-cols-2">
-                        <div><Compass className="mb-4 text-teal-700" aria-hidden="true"/><h3 className="font-serif text-3xl">{stay==='local'?'A window into local life':'A stay centered on one property'}</h3><p className="mt-4 leading-relaxed text-slate-600">{stay==='local'?'A guesthouse on an inhabited island may suit you if village walks and independent excursion choices matter. Dress modestly in the community and use designated swimwear beaches.':'A resort may suit you if you prefer arranging accommodation, dining, and activities through one operator. Compare the exact villa category and what the chosen rate includes.'}</p></div>
+                        <div><Compass className="mb-4 text-teal-700" aria-hidden="true"/><h3 className="font-serif text-3xl">{stay==='local'?'Guesthouse on a local island':'Accommodation on a resort island'}</h3><p className="mt-4 leading-relaxed text-slate-600">{stay==='local'?'A guesthouse on an inhabited island may suit you if village walks and independent excursion choices matter. Dress modestly in the community and use designated swimwear beaches.':'A resort may suit you if you prefer arranging accommodation, dining, and activities through one operator. Compare the exact villa category and what the chosen rate includes.'}</p></div>
                         <div className="rounded-2xl bg-teal-50 p-6"><p className="font-semibold">Before you choose</p><ul className="mt-4 space-y-3 text-sm leading-relaxed text-slate-600">{(stay==='local'?['Ask which beach permits swimwear and how far it is from your room.','Confirm boat times and the full return-transfer cost.','Check meal options and which excursions run on your dates.']:['Ask for a complete quotation including transfers and taxes.','Compare meal plans and activity charges, not just the room rate.','Check arrival-flight compatibility with the transfer schedule.']).map(text=><li key={text} className="flex gap-3"><span className="text-teal-700" aria-hidden="true">↗</span>{text}</li>)}</ul><a href={stay==='local'?'#maldives-highlights':'/villas'} className="mt-5 inline-block font-semibold text-teal-700 underline underline-offset-4">{stay==='local'?'Explore island highlights':'Compare sourced stays'} →</a></div>
                     </motion.div></AnimatePresence>
                 </div>
             </section>
 
             <section id="island-week" className="scroll-mt-24">
-                <Heading number="04" title="Let your week unfold.">A seven-day idea for one island base. Tap each day; adapt activities to your stay and sea conditions.</Heading>
+                <Heading number="04" title="Seven days, one island base.">This sample plan includes arrival and departure days, two optional activity days, and time to rearrange plans. Select each day for the checks to make with your host.</Heading>
                 <div className="flex flex-wrap gap-2">{days.map((_,i)=><button key={i} aria-pressed={day===i} aria-controls="day-panel" onClick={()=>setDay(i)} className={buttonClass+' '+(day===i?'bg-[#063f46] text-white':'bg-white text-slate-700')}>Day {i+1}</button>)}</div>
                 <div id="day-panel" className="relative mt-6 overflow-hidden rounded-3xl bg-[#063f46] p-8 text-white sm:p-12">
                     <span className="pointer-events-none absolute right-4 top-0 font-serif text-[180px] leading-none text-white/5" aria-hidden="true">{String(day+1).padStart(2,'0')}</span>
@@ -117,7 +117,7 @@ export default function MaldivesExperience() {
             </section>
 
             <section id="island-budget" className="scroll-mt-24">
-                <Heading number="05" title="Give your plans a number.">Use your own quotes in USD. This is a planning worksheet, not live prices or a booking offer.</Heading>
+                <Heading number="05" title="What will your trip cost?">Enter your quotes in USD to add accommodation, meals, flights, island transfers, and extras. The calculator shows a group total and a cost per traveler; it does not supply current prices.</Heading>
                 <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
                     <div className="rounded-3xl border border-slate-200 bg-white p-6 sm:p-8">
                         <div className="mb-8 grid gap-6 sm:grid-cols-2">
