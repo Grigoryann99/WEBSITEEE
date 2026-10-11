@@ -19,7 +19,7 @@ const config: Config = {
         }
       },
       fontFamily: {
-        serif: ['var(--font-cormorant)'],
+        serif: ['var(--font-playfair)', 'serif'],
         sans: ['var(--font-inter)'],
         montserrat: ['var(--font-montserrat)'],
         roboto: ['var(--font-roboto)'],

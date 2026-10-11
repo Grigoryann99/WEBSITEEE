@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Inter, Montserrat, Roboto } from "next/font/google";
+import { Playfair_Display, Inter, Montserrat, Roboto } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/layout/SmoothScroll";
 import Navigation from "@/components/layout/Navigation";
@@ -7,10 +7,11 @@ import Footer from "@/components/layout/Footer";
 import CookieBanner from "@/components/layout/CookieBanner";
 import Script from "next/script";
 
-const cormorant = Cormorant_Garamond({
+const playfair = Playfair_Display({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-cormorant",
+  weight: "700",
+  style: ["normal", "italic"],
+  variable: "--font-playfair",
   display: 'swap',
 });
 
@@ -146,7 +147,7 @@ export default function RootLayout({
         <link rel="icon" type="image/svg+xml" href="/logo.svg" />
       </head>
       <body
-        className={`${cormorant.variable} ${inter.variable} ${montserrat.variable} ${roboto.variable} antialiased bg-brand-light text-brand-dark font-sans`}
+        className={`${playfair.variable} ${inter.variable} ${montserrat.variable} ${roboto.variable} antialiased bg-brand-light text-brand-dark font-sans`}
       >
         <Navigation />
         <SmoothScroll>
