@@ -1,7 +1,7 @@
 'use client';
 
 import { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion';
 import Image from 'next/image';
 import { MapPin, MountainSnow, Compass, Binoculars, Flower2 } from 'lucide-react';
 
@@ -35,14 +35,11 @@ const destinations = [
 
 export default function DestinationGlobe() {
     const containerRef = useRef<HTMLDivElement>(null);
+    const reducedMotion = useReducedMotion();
     const { scrollYProgress } = useScroll({
         target: containerRef,
         offset: ["start end", "end start"]
     });
-
-    // Parallax background
-    const backgroundY = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
-    const backgroundScale = useTransform(scrollYProgress, [0, 0.5, 1], [1.05, 1.0, 1.05]);
 
     // Main text animations
     const titleOpacity = useTransform(scrollYProgress, [0.1, 0.3], [0, 1]);
@@ -54,40 +51,35 @@ export default function DestinationGlobe() {
     const descOpacity = useTransform(scrollYProgress, [0.2, 0.4], [0, 1]);
     const descY = useTransform(scrollYProgress, [0.2, 0.4], [25, 0]);
 
-    // Cards list container animation
-    const listOpacity = useTransform(scrollYProgress, [0.25, 0.5], [0, 1]);
-    const listY = useTransform(scrollYProgress, [0.25, 0.5], [40, 0]);
-
     return (
         <div
             ref={containerRef}
-            className="relative bg-white flex flex-col items-center justify-center py-24 md:py-32 px-6 overflow-hidden border-t border-gray-100"
+            className="relative isolate bg-white flex flex-col items-center justify-center py-24 md:py-32 px-6 overflow-clip border-t border-gray-100"
         >
-            {/* Background Image Layer — Clean, Rich & Crisp (No dark tint, no overexposure) */}
-            <motion.div
-                style={{ y: backgroundY, scale: backgroundScale }}
-                className="absolute inset-0 w-full h-[120%] -top-[10%]"
-            >
+            {/* Keep the image viewport-sized instead of enlarging it across the tall mobile list. */}
+            <div className="absolute inset-0 z-0 pointer-events-none" aria-hidden="true">
+                <div className="sticky top-0 h-[100svh] min-h-[620px] w-full">
                 <Image
-                    src="/NAPRAVLEN.png"
-                    alt="World Landmarks Panorama"
+                    src="/images/journeys-coast.webp"
+                    alt=""
                     fill
                     sizes="100vw"
-                    className="object-cover opacity-60 brightness-[0.95] contrast-[1.1] saturate-[1.05]"
-                    quality={80}
+                    className="object-cover opacity-60"
+                    quality={85}
                 />
-            </motion.div>
+                </div>
+            </div>
 
             {/* Subtle Clean Edge Softening Gradients */}
             <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-white to-transparent z-[1] pointer-events-none" />
             <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white to-transparent z-[1] pointer-events-none" />
 
             {/* Content overlay */}
-            <div className="z-10 w-full max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
+            <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
 
                 {/* Left Side: Elegant Text */}
                 <div className="w-full lg:w-1/2 flex flex-col items-start text-left lg:pr-8">
-                    <motion.div style={{ opacity: subtitleOpacity, y: subtitleY }}>
+                    <motion.div style={reducedMotion ? undefined : { opacity: subtitleOpacity, y: subtitleY }}>
                         <p className="font-sans text-brand-accent tracking-[0.3em] text-xs uppercase mb-6 flex items-center gap-4 font-semibold">
                             <span className="w-12 h-[2px] bg-brand-accent block"></span>
                             Exclusive Journeys
@@ -95,7 +87,7 @@ export default function DestinationGlobe() {
                     </motion.div>
 
                     <motion.h2
-                        style={{ opacity: titleOpacity, y: titleY }}
+                        style={reducedMotion ? undefined : { opacity: titleOpacity, y: titleY }}
                         className="font-serif text-5xl md:text-7xl lg:text-[4.5rem] text-[#1A1A1A] leading-[1.1] mb-8 drop-shadow-sm font-normal"
                     >
                         Discover the <br /> World with <br />
@@ -103,7 +95,7 @@ export default function DestinationGlobe() {
                     </motion.h2>
 
                     <motion.div
-                        style={{ opacity: descOpacity, y: descY }}
+                        style={reducedMotion ? undefined : { opacity: descOpacity, y: descY }}
                         className="backdrop-blur-md bg-white/85 border border-black/10 rounded-2xl p-8 shadow-[0_10px_30px_rgba(0,0,0,0.06)] relative overflow-hidden group"
                     >
                         <p className="font-sans text-[#2D3748] text-lg leading-relaxed max-w-md relative z-10 font-normal">
@@ -114,7 +106,6 @@ export default function DestinationGlobe() {
 
                 {/* Right Side: Clean White Luxury Glass Cards */}
                 <motion.div
-                    style={{ opacity: listOpacity, y: listY }}
                     className="w-full lg:w-1/2 space-y-4 relative z-20"
                 >
                     {destinations.map((dest, i) => {
@@ -122,7 +113,7 @@ export default function DestinationGlobe() {
                         return (
                             <motion.div
                                 key={i}
-                                initial={{ opacity: 0, y: 30 }}
+                                initial={reducedMotion ? false : { opacity: 0, y: 30 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-10%" }}
                                 transition={{ duration: 0.8, delay: i * 0.12, ease: [0.21, 0.47, 0.32, 0.98] }}
