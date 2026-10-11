@@ -5,13 +5,10 @@ import Image from 'next/image';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { Sun, CloudRain, Waves, ArrowRight, Compass, Wallet } from 'lucide-react';
 import { calculateTravelBudget } from '@/lib/travelBudget';
+import { maldivesPlaces as places } from '@/lib/maldivesPlaces';
+import MaldivesIslandMap from './MaldivesIslandMap';
 
 const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-const places = [
-    { name: 'Malé', tag: 'City & arrival hub', x: 52, y: 52, text: 'A city stop for culture and local life. Keep your arrival day flexible and confirm your onward island transfer with your accommodation.' },
-    { name: 'Maafushi', tag: 'Local island inspiration', x: 64, y: 76, text: 'Consider a local-island stay if you enjoy village life and choosing your own excursions. Ask your guesthouse about beach access and the current transfer schedule.' },
-    { name: 'Baa Atoll', tag: 'Island & resort inspiration', x: 35, y: 24, text: 'Explore a different atoll setting, including the Soneva Fushi villas in our stay shortlist. Confirm the complete transfer route before combining it with another island.' },
-];
 const days = [
     ['Arrival and island transfer', 'Arrange the airport-to-island transfer before arrival. After check-in, confirm your return transfer, meal arrangements, and which beach to use. Leave this day free of prepaid activities in case the journey takes longer than planned.'],
     ['Beach access and a snorkeling plan', 'Find out which beach you can use and whether snorkeling requires a guide or boat trip. Ask about equipment, swimming conditions, and the total activity cost before choosing an operator. On a local island, check designated swimwear areas with your host.'],
@@ -52,7 +49,6 @@ export default function MaldivesExperience() {
     ];
 
     const photos = ['/images/attractions/maldives-maafushi-island.jpg', '/images/attractions/maldives-male-grand-friday-mosque.jpg', '/images/attractions/maldives-baa-atoll-hanifaru-bay.jpg'];
-    const mapViews = ['73.46,4.14,73.55,4.20', '73.46,3.92,73.52,3.97', '72.80,4.80,73.25,5.40'];
     const budgetGroups = [['flights','transfers'], ['room','meals'], ['extras']];
     const breakdown = [['Accommodation',budget.accommodation], ['Meals',budget.food], ['Flights & transfers',budget.transport], ['Extras',numericCosts.extras]] as const;
 
@@ -74,7 +70,7 @@ export default function MaldivesExperience() {
                     <div className="flex flex-col">
                         <p className="mb-3 text-xs uppercase tracking-[0.2em] text-[#657a6b]">Choose your setting</p>
                         {places.map((item,i)=><button key={item.name} onClick={()=>setPlace(i)} aria-pressed={place===i} aria-controls="island-place-panel island-location-map" className="group flex min-h-20 items-center gap-5 border-b border-[#c9c8bc] py-5 text-left focus-visible:outline focus-visible:outline-2"><span className="text-xs text-[#6a7d70]">0{i+1}</span><span className={'flex-1 font-serif text-3xl transition-colors '+(place===i?'text-[#253732]':'text-[#788478]')}>{item.name}</span><ArrowRight size={20} className={place===i?'opacity-100':'opacity-30'} aria-hidden="true" /></button>)}
-                        <div id="island-location-map" className="mt-8 overflow-hidden border border-[#c9c8bc] bg-[#d6e5e1]"><iframe title={currentPlace.name+' location on OpenStreetMap'} src={'https://www.openstreetmap.org/export/embed.html?bbox='+mapViews[place]+'&layer=mapnik'} loading="lazy" referrerPolicy="no-referrer" className="block h-64 w-full border-0" /><p className="bg-[#edece2] px-4 py-3 text-xs text-[#52655b]">Geographic context · Baa is an atoll region. Confirm transfer routes with your host.</p></div>
+                        <MaldivesIslandMap selectedPlace={place} onSelect={setPlace} />
                         <a href="#maldives-highlights" className="mt-6 inline-flex items-center gap-3 text-sm underline underline-offset-4">Explore island highlights <ArrowRight size={16} aria-hidden="true" /></a>
                     </div>
                 </div>

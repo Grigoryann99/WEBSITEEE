@@ -291,6 +291,48 @@ body {
   }
 }
 
+.island-map .leaflet-container {
+  background: #dceffb;
+  font-family: var(--font-inter), sans-serif;
+}
+
+.island-map-dot {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 3px solid white;
+  border-radius: 50%;
+  background: #527b8e;
+  box-shadow: 0 2px 8px #243b4933;
+}
+
+.island-map-marker-selected .island-map-dot {
+  background: #137e99;
+  box-shadow: 0 0 0 6px #cbe7faaa, 0 2px 8px #243b4933;
+}
+
+.island-map .island-map-label {
+  border: 1px solid #c9d9de;
+  border-radius: 12px;
+  background: #fffdf8;
+  color: #243b49;
+  padding: 7px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 3px 12px #243b491a;
+}
+
+.island-map .island-map-label-selected {
+  border-color: #137e99;
+  background: #eef6fb;
+}
+
+.island-map .leaflet-tooltip-top::before { border-top-color: #fffdf8; }
+.island-map .leaflet-control-attribution { font-size: 10px; background: #fffdf8e6; }
+.island-map .leaflet-control-attribution a { color: #365767; }
+.island-map .leaflet-bar { overflow: hidden; border: 1px solid #c9d9de; border-radius: 12px; }
+.island-map .leaflet-bar a { color: #243b49; background: #fffdf8; }
+
 /* Luxury Global Typography Styles */
 h1, h2, h3, h4, h5, h6, .font-serif {
   font-family: var(--font-playfair), serif !important;
