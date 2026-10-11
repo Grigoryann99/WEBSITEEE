@@ -3,6 +3,11 @@ import VillaGallery from "@/components/media/VillaGallery";
 import DestinationGlobe from "@/components/media/DestinationGlobe";
 import Link from "next/link";
 import SeoTextBlock from "@/components/shared/SeoTextBlock";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/' },
+};
 
 const homeSeoContent = [
   "At VeloraTravel, we believe that true luxury is found in the extraordinary. Our curated collection of global destinations is designed for the discerning traveler who seeks more than just a vacation. From the pristine, sun-drenched beaches of the Maldives to the rugged, awe-inspiring peaks of the Swiss Alps, every location we feature has been hand-selected to offer an unparalleled travel experience. We understand that our clientele values privacy, exclusivity, and flawless service, which is why our portfolio focuses on private villas, hidden estates, and boutique sanctuaries that remain untouched by mass tourism.",

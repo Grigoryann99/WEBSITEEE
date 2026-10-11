@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
+    alternates: { canonical: '/privacy-policy' },
     title: 'Privacy Policy | VeloraTravel',
     description: 'Learn how VeloraTravel collects, uses, and protects your personal information.',
 };

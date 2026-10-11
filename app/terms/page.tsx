@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
+    alternates: { canonical: '/terms' },
     title: 'Terms of Service | VeloraTravel',
     description: 'Read the Terms of Service for using the VeloraTravel website.',
 };

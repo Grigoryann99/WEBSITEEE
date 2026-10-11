@@ -26,6 +26,7 @@ export async function generateMetadata(
     return {
         title: `Explore ${data.name} | Velora Travel`,
         description: data.description,
+        alternates: { canonical: `/countries/${countryKey.replace(/_/g, '-')}` },
         robots: {
             index: true,
             follow: true,
@@ -66,7 +67,7 @@ export default function CountryPage({ params }: CountryPageProps) {
                                 "@type": "ListItem",
                                 "position": 3,
                                 "name": data.name,
-                                "item": `https://veloratravel.org/countries/${params.country.toLowerCase()}`
+                                "item": `https://veloratravel.org/countries/${countryKey.replace(/_/g, '-')}`
                             }
                         ]
                     })

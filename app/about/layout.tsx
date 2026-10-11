@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
+    alternates: { canonical: '/about' },
     title: 'About Us | VeloraTravel',
     description: 'Learn about VeloraTravel — our story, our mission, and the people who curate the world\'s finest travel experiences for discerning travelers.',
 };

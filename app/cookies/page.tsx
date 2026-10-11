@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
+    alternates: { canonical: '/cookies' },
     title: 'Cookie Policy | VeloraTravel',
     description: 'Learn how VeloraTravel uses cookies and how you can manage your preferences.',
 };

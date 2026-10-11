@@ -20,7 +20,9 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     return {
         title: `${post.title} | VeloraTravel Blog`,
         description: post.description,
+        alternates: { canonical: `/blog/${post.slug}` },
         openGraph: {
+            url: `/blog/${post.slug}`,
             title: post.title,
             description: post.description,
             images: [{ url: post.image }],

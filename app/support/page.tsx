@@ -7,6 +7,7 @@ import SupportForm from '@/components/contact/SupportFormV2';
 import SupportAdditional from '@/components/contact/SupportAdditionalV2';
 
 export const metadata: Metadata = {
+    alternates: { canonical: '/support' },
     title: 'Support Center | VeloraTravel',
     description: 'Get help using VeloraTravel, explore destinations, and contact support for travel information and website assistance.',
 };

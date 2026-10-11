@@ -5,6 +5,7 @@ import Image from 'next/image';
 import FeaturedBlogCarousel from '@/components/blog/FeaturedBlogCarousel';
 
 export const metadata: Metadata = {
+    alternates: { canonical: '/blog' },
     title: 'Travel Blog | VeloraTravel',
     description: 'Explore our original travel guides, destination deep-dives, and expert tips for luxury travelers worldwide.',
 };

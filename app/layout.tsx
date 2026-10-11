@@ -71,9 +71,6 @@ export const metadata: Metadata = {
     images: ['/og-image.jpg'],
     creator: '@veloratravel',
   },
-  alternates: {
-    canonical: 'https://veloratravel.org',
-  },
   verification: {
     google: "PqeUm5izo6iBy7_ViFaOQG7PmnNl3Wvs8A2y40AV8ss",
   },
