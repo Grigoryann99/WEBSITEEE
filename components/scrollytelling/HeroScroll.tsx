@@ -1,7 +1,9 @@
 'use client';
 
-import { useRef, useEffect, useCallback, useMemo } from 'react';
+import { useRef, useEffect, useCallback, useState } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
+import NextImage from 'next/image';
+import Link from 'next/link';
 
 const TOTAL_FRAMES = 542;
 
@@ -38,10 +40,15 @@ export default function HeroScroll() {
     const currentFrameIndexRef = useRef<number>(0);
     const rAFRef = useRef<number | null>(null);
 
-    // Responsive Frame Stepping — much larger steps to reduce total images loaded
-    const frameStep = useMemo(() => {
-        if (typeof window === 'undefined') return 6;
-        return window.innerWidth < 768 ? 10 : 6;
+    // Start with a server-rendered poster; load the sequence only on desktop.
+    const [animateHero, setAnimateHero] = useState(false);
+    const frameStep = 6;
+    useEffect(() => {
+        const preference = window.matchMedia('(min-width: 768px) and (prefers-reduced-motion: no-preference)');
+        const update = () => setAnimateHero(preference.matches);
+        update();
+        preference.addEventListener('change', update);
+        return () => preference.removeEventListener('change', update);
     }, []);
 
     // Framer Motion Scroll Setup
@@ -73,19 +80,15 @@ export default function HeroScroll() {
         const ctx = canvas.getContext('2d', { alpha: false });
         if (!ctx) return;
 
-        let targetIndex = index;
-        if (!loadedImagesRef.current.has(targetIndex)) {
-            const stepIndex = Math.round(index / frameStep) * frameStep;
-            const clampedStepIndex = Math.min(TOTAL_FRAMES - 1, Math.max(0, stepIndex));
-
-            if (loadedImagesRef.current.has(clampedStepIndex)) {
-                targetIndex = clampedStepIndex;
-            } else if (loadedImagesRef.current.has(0)) {
-                targetIndex = 0;
-            } else {
-                return;
+        // Use the closest available frame while the sequence is loading.
+        let targetIndex = -1;
+        let distance = Infinity;
+        loadedImagesRef.current.forEach((_, candidate) => {
+            if (Math.abs(candidate - index) < distance) {
+                targetIndex = candidate;
+                distance = Math.abs(candidate - index);
             }
-        }
+        });
 
         const img = loadedImagesRef.current.get(targetIndex);
         if (!img) return;
@@ -95,9 +98,11 @@ export default function HeroScroll() {
         // Cap DPR at 1.5 to reduce canvas pixel count on retina screens
         const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
 
-        if (canvas.width !== displayWidth * dpr || canvas.height !== displayHeight * dpr) {
-            canvas.width = displayWidth * dpr;
-            canvas.height = displayHeight * dpr;
+        const width = Math.round(displayWidth * dpr);
+        const height = Math.round(displayHeight * dpr);
+        if (canvas.width !== width || canvas.height !== height) {
+            canvas.width = width;
+            canvas.height = height;
         }
 
         const canvasWidth = canvas.width;
@@ -122,18 +127,20 @@ export default function HeroScroll() {
         }
 
         ctx.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
-    }, [frameStep]);
+    }, []);
 
     useEffect(() => {
+        if (!animateHero) return;
         const handleResize = () => {
             renderFrame(currentFrameIndexRef.current);
         };
         window.addEventListener('resize', handleResize, { passive: true });
         return () => window.removeEventListener('resize', handleResize);
-    }, [renderFrame]);
+    }, [animateHero, renderFrame]);
 
     // Progressive Device Frame Preloader — reduced batch size for smoother loading
     useEffect(() => {
+        if (!animateHero) return;
         let isMounted = true;
         const framesToLoad: number[] = [];
         for (let i = 0; i < TOTAL_FRAMES; i += frameStep) {
@@ -157,10 +164,9 @@ export default function HeroScroll() {
                 img.decoding = 'async';
                 img.src = getFramePath(idx);
                 img.onload = () => {
-                    if (!isMounted) return;
-                    loadedImagesRef.current.set(idx, img);
-                    if (idx === 0) {
-                        renderFrame(0);
+                    if (isMounted) {
+                        loadedImagesRef.current.set(idx, img);
+                        renderFrame(currentFrameIndexRef.current);
                     }
                     resolve();
                 };
@@ -197,10 +203,11 @@ export default function HeroScroll() {
         return () => {
             isMounted = false;
         };
-    }, [frameStep, renderFrame]);
+    }, [animateHero, frameStep, renderFrame]);
 
     // Subscribe to scroll changes
     useEffect(() => {
+        if (!animateHero) return;
         const unsubscribe = smoothProgress.on('change', (latest) => {
             const frameIdx = Math.min(
                 TOTAL_FRAMES - 1,
@@ -222,18 +229,19 @@ export default function HeroScroll() {
                 cancelAnimationFrame(rAFRef.current);
             }
         };
-    }, [smoothProgress, renderFrame]);
+    }, [animateHero, smoothProgress, renderFrame]);
 
     return (
-        <div ref={containerRef} className="relative h-[400vh] w-full bg-black">
+        <div ref={containerRef} className="relative w-full bg-black h-[100svh] min-h-[620px] md:h-[180svh] motion-reduce:!h-[100svh]">
             {/* Sticky Fullscreen Canvas Viewport */}
-            <div className="sticky top-0 h-screen w-full overflow-hidden bg-black flex items-center justify-center">
+            <div className="sticky top-0 h-[100svh] min-h-[620px] w-full overflow-hidden bg-black flex items-center justify-center">
+                <NextImage src={getFramePath(0)} alt="" fill priority sizes="100vw" quality={80} className="object-cover" />
                 {/* HTML5 Canvas Frame Renderer — GPU-accelerated */}
-                <canvas
+                {animateHero && <canvas
                     ref={canvasRef}
                     className="absolute inset-0 w-full h-full object-cover"
-                    style={{ willChange: 'transform' }}
-                />
+                    aria-hidden="true"
+                />}
 
                 {/* Subtle Global Dark Gradient Overlay for perfect text contrast against bright sun/sky */}
                 <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/40 pointer-events-none z-10" />
@@ -242,7 +250,7 @@ export default function HeroScroll() {
                 <div className="relative z-20 w-full max-w-5xl px-4 sm:px-6 text-center flex flex-col items-center justify-center">
                     {/* Chapter 01 */}
                     <motion.div
-                        style={{ opacity: ch0Opacity, y: ch0Y }}
+                        style={animateHero ? { opacity: ch0Opacity, y: ch0Y } : { opacity: 1, y: 0 }}
                         className="absolute inset-x-0 mx-auto max-w-4xl px-4 flex flex-col items-center justify-center drop-shadow-2xl"
                     >
                         <div className="w-full flex flex-col items-center">
@@ -260,7 +268,7 @@ export default function HeroScroll() {
                     </motion.div>
 
                     {/* Chapter 02 */}
-                    <motion.div
+                    {animateHero && <motion.div
                         style={{ opacity: ch1Opacity, y: ch1Y }}
                         className="absolute inset-x-0 mx-auto max-w-4xl px-4 flex flex-col items-center justify-center drop-shadow-2xl"
                     >
@@ -276,10 +284,10 @@ export default function HeroScroll() {
                                 {chapters[1].description}
                             </p>
                         </div>
-                    </motion.div>
+                    </motion.div>}
 
                     {/* Chapter 03 */}
-                    <motion.div
+                    {animateHero && <motion.div
                         style={{ opacity: ch2Opacity, y: ch2Y }}
                         className="absolute inset-x-0 mx-auto max-w-4xl px-4 flex flex-col items-center justify-center drop-shadow-2xl"
                     >
@@ -295,7 +303,12 @@ export default function HeroScroll() {
                                 {chapters[2].description}
                             </p>
                         </div>
-                    </motion.div>
+                    </motion.div>}
+                </div>
+                <div className="absolute bottom-12 sm:bottom-16 inset-x-0 z-30 flex justify-center px-6">
+                    <Link href="/blog" className="rounded-full bg-white px-7 py-4 text-sm font-semibold text-[#0F172A] shadow-lg transition-colors hover:bg-[#F4E7BE] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">
+                        Explore Travel Guides <span aria-hidden="true">→</span>
+                    </Link>
                 </div>
             </div>
         </div>

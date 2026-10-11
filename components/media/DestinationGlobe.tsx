@@ -72,9 +72,9 @@ export default function DestinationGlobe() {
                     src="/NAPRAVLEN.png"
                     alt="World Landmarks Panorama"
                     fill
-                    priority
+                    sizes="100vw"
                     className="object-cover opacity-60 brightness-[0.95] contrast-[1.1] saturate-[1.05]"
-                    quality={100}
+                    quality={80}
                 />
             </motion.div>
 
