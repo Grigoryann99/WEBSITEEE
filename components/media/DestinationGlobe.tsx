@@ -2,38 +2,33 @@
 
 import { motion, useReducedMotion } from 'framer-motion';
 import Link from 'next/link';
-import { MapPin, MountainSnow, Compass, Binoculars, Flower2 } from 'lucide-react';
+import DestinationIcon from './DestinationIcon';
 
 const destinations = [
     {
         title: "Maldives: Island Escapes",
         desc: "Explore island destinations and coastal highlights to find inspiration for your next beach getaway.",
         href: "/countries/maldives",
-        icon: Compass,
     },
     {
         title: "Switzerland: Alpine Adventures",
         desc: "Discover mountain landscapes, lakes, and Swiss destinations to explore when planning an Alpine escape.",
         href: "/countries/switzerland",
-        icon: MountainSnow,
     },
     {
         title: "Greece: Islands & Culture",
         desc: "Browse Greek destinations, historic landmarks, and island highlights to shape your own itinerary.",
         href: "/countries/greece",
-        icon: MapPin,
     },
     {
         title: "South Africa: Nature & Wildlife",
         desc: "Explore national parks, coastal scenery, and city highlights for a trip that combines nature and culture.",
         href: "/countries/south_africa",
-        icon: Binoculars,
     },
     {
         title: "Japan: Cities & Traditions",
         desc: "Discover Japanese destinations, temples, and cultural landmarks as a starting point for your journey.",
         href: "/countries/japan",
-        icon: Flower2,
     }
 ];
 
@@ -94,7 +89,6 @@ export default function DestinationGlobe() {
                     className="w-full min-w-0 space-y-4 relative z-20"
                 >
                     {destinations.map((dest, i) => {
-                        const Icon = dest.icon;
                         return (
                             <motion.div
                                 key={i}
@@ -109,8 +103,8 @@ export default function DestinationGlobe() {
                                     {/* Hover subtle highlight */}
                                     <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-gradient-to-r from-transparent via-brand-accent/[0.04] to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-in-out motion-reduce:hidden" />
 
-                                    <div aria-hidden="true" className={`destination-icon destination-icon-${i} relative z-10 flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-[20px] bg-[#edf5f8] text-[#176974] sm:h-16 sm:w-16`}>
-                                        <Icon size={30} strokeWidth={1.6} />
+                                    <div aria-hidden="true" className="destination-icon relative z-10 flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-[18px] bg-[#dceffb] text-[#233946]">
+                                        <DestinationIcon variant={i} />
                                     </div>
 
                                     <div className="relative z-10">
