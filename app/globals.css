@@ -14,7 +14,8 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+  /* Keep the explicitly requested small icon illustrations playing. */
+  *:not(.destination-icon-part), *::before, *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -225,7 +226,7 @@ body {
   background: linear-gradient(to bottom, transparent, #f3f2ef);
 }
 
-/* Destination icons respond to pointer hover and keyboard focus. */
+/* These small illustrations autoplay, like the requested animated reference. */
 .destination-icon {
   transition: background-color 280ms ease, color 280ms ease, box-shadow 280ms ease;
 }
@@ -235,23 +236,13 @@ body {
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-play-state: paused;
+  animation-play-state: running;
 }
 
 .destination-card:is(:hover, :focus-visible) .destination-icon {
   background-color: #cbe7fa;
   color: #233946;
   box-shadow: 0 8px 22px rgba(75, 133, 169, 0.14);
-}
-
-.destination-card:focus-visible .destination-icon-part {
-  animation-play-state: running;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .destination-card:hover .destination-icon-part {
-    animation-play-state: running;
-  }
 }
 
 .compass-needle { animation-name: destination-compass; }
@@ -295,9 +286,7 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .destination-card .destination-icon,
-  .destination-card .destination-icon-part {
-    animation: none !important;
+  .destination-card .destination-icon {
     transition: none;
   }
 }
