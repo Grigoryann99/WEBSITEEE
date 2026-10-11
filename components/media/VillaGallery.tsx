@@ -31,7 +31,7 @@ export default function VillaGallery() {
                         {selected === index && <motion.span layoutId="stay-underline" transition={{ duration: reduceMotion ? 0 : 0.3 }} className="absolute bottom-[-1px] left-0 h-[3px] w-full bg-[#bc6448]" />}
                     </button>)}
                 </div>
-                <div id="stay-story" className="mt-7 grid overflow-hidden bg-[#191c1b] lg:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)]">
+                <div id="stay-story" className="mt-7 grid overflow-hidden rounded-[30px] bg-[#eaf3f8] lg:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)]">
                     <div className="relative isolate min-w-0 min-h-[360px] overflow-hidden sm:min-h-[470px] lg:min-h-[600px]">
                         <AnimatePresence initial={false}>
                             <motion.div key={story.image} initial={{ opacity: 0, scale: reduceMotion ? 1 : 1.04 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }} transition={{ duration: reduceMotion ? 0 : 0.65 }} className="absolute inset-0">
@@ -50,22 +50,22 @@ export default function VillaGallery() {
                         </div>
                         <p className="absolute bottom-3 left-6 right-6 text-[9px] leading-relaxed text-white/80 sm:left-10">{story.caption}</p>
                     </div>
-                    <div className="flex min-w-0 flex-col p-7 text-white sm:p-10 lg:p-12">
-                        <div className="mb-8 flex items-center justify-between border-b border-white/20 pb-5">
-                            <span className="text-[9px] font-bold uppercase tracking-[0.2em] text-[#d8b294]">A property to explore</span>
-                            <div className="flex items-center gap-3"><button type="button" onClick={() => change(-1)} aria-label="Previous stay" className="flex h-9 w-9 items-center justify-center border border-white/30 transition-colors hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4"><ArrowLeft size={16} /></button><button type="button" onClick={() => change(1)} aria-label="Next stay" className="flex h-9 w-9 items-center justify-center border border-white/30 transition-colors hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4"><ArrowRight size={16} /></button></div>
+                    <div className="flex min-w-0 flex-col bg-gradient-to-br from-[#eaf3fa] via-[#f2f6f6] to-[#fff3df] p-7 text-[#243b49] sm:p-10 lg:p-12">
+                        <div className="mb-8 flex items-center justify-between border-b border-[#243b49]/20 pb-5">
+                            <span className="text-[9px] font-bold uppercase tracking-[0.2em] text-[#5b7280]">A property to explore</span>
+                            <div className="flex items-center gap-3"><button type="button" onClick={() => change(-1)} aria-label="Previous stay" className="flex h-9 w-9 items-center justify-center rounded-full border border-[#243b49]/25 transition-colors hover:bg-white hover:text-[#243b49] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4"><ArrowLeft size={16} /></button><button type="button" onClick={() => change(1)} aria-label="Next stay" className="flex h-9 w-9 items-center justify-center rounded-full border border-[#243b49]/25 transition-colors hover:bg-white hover:text-[#243b49] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4"><ArrowRight size={16} /></button></div>
                         </div>
                         <div aria-live="polite" aria-atomic="true">
-                            <p className="mb-3 text-[10px] uppercase tracking-[0.2em] text-white/60">{villa.location}</p>
+                            <p className="mb-3 text-[10px] uppercase tracking-[0.2em] text-[#5b7280]">{villa.location}</p>
                             <h4 className="mb-5 font-serif text-4xl leading-tight sm:text-5xl">{villa.name}</h4>
-                            <p className="text-sm leading-[1.8] text-white/75">{villa.description}</p>
+                            <p className="text-sm leading-[1.8] text-[#3e5664]">{villa.description}</p>
                         </div>
-                        <div key={villa.id} className="my-7 divide-y divide-white/20 border-y border-white/20">
-                            {[['Who it may suit', villa.goodFor], ['Before you book', villa.checkBeforeBooking]].map(([title, text]) => <details key={title} className="group py-4"><summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-xs font-semibold [&::-webkit-details-marker]:hidden">{title}<Plus size={15} className="shrink-0 transition-transform group-open:rotate-45" aria-hidden="true" /></summary><p className="mt-3 text-sm leading-relaxed text-white/70">{text}</p></details>)}
+                        <div key={villa.id} className="my-7 divide-y divide-[#243b49]/20 border-y border-[#243b49]/20">
+                            {[['Who it may suit', villa.goodFor], ['Before you book', villa.checkBeforeBooking]].map(([title, text]) => <details key={title} className="group py-4"><summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-xs font-semibold [&::-webkit-details-marker]:hidden">{title}<Plus size={15} className="shrink-0 transition-transform group-open:rotate-45" aria-hidden="true" /></summary><p className="mt-3 text-sm leading-relaxed text-[#3e5664]">{text}</p></details>)}
                         </div>
                         <div className="mt-auto">
-                            <a href={villa.officialUrl} target="_blank" rel="noopener noreferrer" aria-label={`${villa.name}: visit official website (opens in a new tab)`} className="inline-flex min-h-12 w-full items-center justify-between gap-4 bg-white px-5 py-4 text-[10px] font-bold uppercase tracking-[0.1em] text-[#191919] transition-colors hover:bg-[#e6c9b1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4">Visit official website<ArrowUpRight size={17} aria-hidden="true" /></a>
-                            <p className="mt-4 text-[10px] leading-relaxed text-white/50">Source: {villa.sourceName}<br />Checked <time dateTime={checkedOn}>11 October 2026</time> · Confirm current rates with the operator.</p>
+                            <a href={villa.officialUrl} target="_blank" rel="noopener noreferrer" aria-label={`${villa.name}: visit official website (opens in a new tab)`} className="inline-flex min-h-12 w-full items-center justify-between gap-4 rounded-[30px] border border-[#243b49]/15 bg-white/80 px-5 py-4 text-[10px] font-bold uppercase tracking-[0.1em] text-[#191919] transition-colors hover:bg-[#deedf5] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4">Visit official website<ArrowUpRight size={17} aria-hidden="true" /></a>
+                            <p className="mt-4 text-[10px] leading-relaxed text-[#5b7280]">Source: {villa.sourceName}<br />Checked <time dateTime={checkedOn}>11 October 2026</time> · Confirm current rates with the operator.</p>
                         </div>
                     </div>
                 </div>
