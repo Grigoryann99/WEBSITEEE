@@ -200,12 +200,12 @@ h1, h2, h3, h4, h5, h6, .font-serif {
   font-family: var(--font-playfair), serif !important;
 }
 
-/* Use the requested bold weight consistently across all heading levels. */
+/* Keep headings expressive with a lighter medium weight. */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700 !important;
+  font-weight: 500 !important;
 }
 
-/* Preserve bold headings even when their emphasis spans use font-light utilities. */
+/* Keep emphasis spans at the same weight as their heading. */
 :is(h1, h2, h3, h4, h5, h6) :is(span, em, strong, a) {
   font-family: inherit !important;
   font-weight: inherit !important;

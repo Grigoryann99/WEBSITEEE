@@ -9,7 +9,7 @@ import Script from "next/script";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
-  weight: "700",
+  weight: "500",
   style: ["normal", "italic"],
   variable: "--font-playfair",
   display: 'swap',
