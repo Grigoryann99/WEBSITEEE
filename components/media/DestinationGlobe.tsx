@@ -104,13 +104,13 @@ export default function DestinationGlobe() {
                                 transition={{ duration: 0.8, delay: i * 0.12, ease: [0.21, 0.47, 0.32, 0.98] }}
                                 className="group cursor-pointer"
                             >
-                                <Link href={dest.href} className="backdrop-blur-xl bg-white/95 border border-slate-200/90 hover:border-brand-accent/50 hover:bg-white rounded-2xl p-6 transition-all duration-300 ease-out transform hover:-translate-y-1 shadow-xl flex items-center gap-6 relative overflow-hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-accent focus-visible:outline-offset-4">
+                                <Link href={dest.href} className="destination-card backdrop-blur-xl bg-white/95 border border-slate-200/90 hover:border-brand-accent/50 hover:bg-white rounded-2xl p-6 transition-all duration-300 ease-out transform hover:-translate-y-1 motion-reduce:transform-none shadow-xl flex items-center gap-6 relative overflow-hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-accent focus-visible:outline-offset-4">
 
                                     {/* Hover subtle highlight */}
-                                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-brand-accent/[0.04] to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-in-out" />
+                                    <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-gradient-to-r from-transparent via-brand-accent/[0.04] to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-in-out motion-reduce:hidden" />
 
-                                    <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-brand-accent/10 border border-brand-accent/30 flex items-center justify-center text-brand-accent group-hover:scale-105 group-hover:bg-brand-accent group-hover:text-white transition-all duration-300 shadow-sm">
-                                        <Icon size={22} strokeWidth={1.75} />
+                                    <div aria-hidden="true" className={`destination-icon destination-icon-${i} relative z-10 flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-[20px] bg-[#edf5f8] text-[#176974] sm:h-16 sm:w-16`}>
+                                        <Icon size={30} strokeWidth={1.6} />
                                     </div>
 
                                     <div className="relative z-10">
