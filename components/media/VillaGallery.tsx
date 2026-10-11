@@ -32,7 +32,7 @@ export default function VillaGallery() {
                     </button>)}
                 </div>
                 <div id="stay-story" className="mt-7 grid overflow-hidden rounded-[30px] bg-[#eaf3f8] lg:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)]">
-                    <div className="relative isolate min-w-0 min-h-[360px] overflow-hidden sm:min-h-[470px] lg:min-h-[600px]">
+                    <div className="relative isolate min-w-0 min-h-[360px] overflow-hidden rounded-[30px] sm:min-h-[470px] lg:min-h-[600px]">
                         <AnimatePresence initial={false}>
                             <motion.div key={story.image} initial={{ opacity: 0, scale: reduceMotion ? 1 : 1.04 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }} transition={{ duration: reduceMotion ? 0 : 0.65 }} className="absolute inset-0">
                                 <Image src={story.image} alt={story.alt} fill sizes="(min-width: 1024px) 60vw, 100vw" className="object-cover" />
