@@ -195,6 +195,36 @@ body {
   animation: popupScale 0.25s ease-out forwards;
 }
 
+/* Blend the hero, welcome gradient, and stay section through a shared color. */
+.home-section-fade::after,
+.welcome-section::before,
+.welcome-section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: clamp(80px, 14vh, 160px);
+  pointer-events: none;
+}
+
+.home-section-fade::after {
+  bottom: -1px;
+  z-index: 15;
+  background: linear-gradient(to bottom, transparent, #f3f2ef);
+}
+
+.welcome-section::before {
+  top: 0;
+  z-index: 1;
+  background: linear-gradient(to bottom, #f3f2ef, transparent);
+}
+
+.welcome-section::after {
+  bottom: -1px;
+  z-index: 1;
+  background: linear-gradient(to bottom, transparent, #f3f2ef);
+}
+
 /* Luxury Global Typography Styles */
 h1, h2, h3, h4, h5, h6, .font-serif {
   font-family: var(--font-playfair), serif !important;

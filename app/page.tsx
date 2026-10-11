@@ -14,7 +14,7 @@ const homeSeoContent = [
 function WelcomeSection() {
   return (
     <section
-      className="relative text-[#0F172A] py-28 md:py-40 px-6 border-b border-black/10 overflow-hidden animate-vivid-gradient"
+      className="welcome-section relative text-[#0F172A] py-28 md:py-40 px-6 overflow-hidden animate-vivid-gradient"
       style={{
         background: 'linear-gradient(-45deg, #D1FAE5, #FEF3C7, #E0F2FE, #F3E8FF)',
       }}
@@ -77,7 +77,7 @@ function WelcomeSection() {
 export default function Home() {
   return (
     <>
-      <div id="home">
+      <div id="home" className="home-section-fade relative">
         <HeroScroll />
       </div>
 
