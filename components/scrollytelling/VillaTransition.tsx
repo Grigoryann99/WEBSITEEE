@@ -1,122 +1,40 @@
 'use client';
 
-import { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
+
+const settings = ['Over the ocean.', 'Among the trees.', 'Above the clouds.'];
 
 export default function VillaTransition() {
-    const containerRef = useRef<HTMLDivElement>(null);
-
-    const { scrollYProgress } = useScroll({
-        target: containerRef,
-        offset: ['start end', 'end start']
-    });
-
-    // Scroll animations — lightweight transforms only
-    const y2 = useTransform(scrollYProgress, [0, 1], [-50, 50]);
-    const sectionOpacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]);
+    const reduceMotion = useReducedMotion();
 
     return (
-        <section
-            ref={containerRef}
-            className="relative min-h-screen flex items-center justify-center overflow-hidden py-32 border-t border-b border-black/10"
-            style={{
-                background: 'linear-gradient(-45deg, #D1FAE5, #FEF3C7, #E0F2FE, #F3E8FF)',
-                backgroundSize: '400% 400%',
-                animation: 'vivid-gradient 15s ease infinite',
-            }}
-        >
-            {/* Static gradient mesh — NO blur, NO infinite JS animations */}
-            <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-                {/* Emerald glow — static, hardware-accelerated with opacity instead of blur */}
-                <div
-                    className="absolute -top-20 -left-20 w-[650px] h-[650px] rounded-full opacity-30"
-                    style={{
-                        background: 'radial-gradient(circle, #10B981 0%, transparent 70%)',
-                        transform: 'translateZ(0)',
-                    }}
-                />
-                {/* Amber glow */}
-                <div
-                    className="absolute -bottom-20 -right-20 w-[700px] h-[700px] rounded-full opacity-30"
-                    style={{
-                        background: 'radial-gradient(circle, #F59E0B 0%, transparent 70%)',
-                        transform: 'translateZ(0)',
-                    }}
-                />
-                {/* Cyan glow */}
-                <div
-                    className="absolute top-1/4 right-1/4 w-[600px] h-[600px] rounded-full opacity-25"
-                    style={{
-                        background: 'radial-gradient(circle, #06B6D4 0%, transparent 70%)',
-                        transform: 'translateZ(0)',
-                    }}
-                />
-                {/* Purple glow */}
-                <div
-                    className="absolute bottom-1/4 left-1/4 w-[580px] h-[580px] rounded-full opacity-25"
-                    style={{
-                        background: 'radial-gradient(circle, #8B5CF6 0%, transparent 70%)',
-                        transform: 'translateZ(0)',
-                    }}
-                />
-            </div>
-
-            {/* Minimal decorative particles — CSS-only, 4 instead of 15 */}
-            <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30 z-0">
-                <div className="absolute w-2 h-2 bg-[#0F172A]/40 rounded-full" style={{ left: '15%', top: '20%', animation: 'float-particle 18s ease-in-out infinite' }} />
-                <div className="absolute w-1.5 h-1.5 bg-[#0F172A]/30 rounded-full" style={{ left: '70%', top: '60%', animation: 'float-particle 22s ease-in-out infinite 3s' }} />
-                <div className="absolute w-2 h-2 bg-[#0F172A]/35 rounded-full" style={{ left: '40%', top: '75%', animation: 'float-particle 20s ease-in-out infinite 6s' }} />
-                <div className="absolute w-1.5 h-1.5 bg-[#0F172A]/25 rounded-full" style={{ left: '85%', top: '30%', animation: 'float-particle 24s ease-in-out infinite 9s' }} />
-            </div>
-
-            <motion.div
-                style={{ opacity: sectionOpacity }}
-                className="relative z-10 max-w-5xl mx-auto text-center px-6 flex flex-col items-center"
+        <div className="mx-auto mb-9 max-w-4xl text-center md:mb-12">
+            <p className="mb-5 text-[10px] font-bold uppercase tracking-[0.25em] text-[#786a5e]">The stay is part of the story</p>
+            <motion.h2
+                id="stay-title"
+                initial={reduceMotion ? false : { opacity: 0, y: 14 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: reduceMotion ? 0 : 0.55 }}
+                className="font-montserrat text-[clamp(1.9rem,4.2vw,4rem)] font-bold uppercase leading-[1.1] tracking-[-0.045em] text-[#191919]"
             >
-                {/* Text 1: "You deserve" */}
-                <motion.h2
-                    initial={{ opacity: 0, y: 40 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-20%" }}
-                    transition={{ duration: 1.2, ease: [0.21, 0.47, 0.32, 0.98] }}
-                    className="font-serif text-5xl md:text-7xl lg:text-[6rem] tracking-widest leading-tight text-[#0F172A] uppercase font-semibold drop-shadow-sm"
-                >
-                    You deserve
-                </motion.h2>
-
-                {/* Text 2: "it." */}
-                <motion.h2
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true, margin: "-20%" }}
-                    transition={{ duration: 1.5, delay: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }}
-                    className="font-serif text-6xl md:text-8xl lg:text-[8rem] tracking-widest leading-none text-[#0F172A] mt-4 uppercase relative font-bold"
-                >
-                    it.
-                </motion.h2>
-
-                <motion.div
-                    style={{ y: y2 }}
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true, margin: "-10%" }}
-                    transition={{ duration: 1.2, delay: 1.0 }}
-                >
-                    <div className="w-[2px] h-24 bg-gradient-to-b from-[#10B981] via-[#F59E0B] to-transparent mx-auto mt-16 mb-12 shadow-sm" />
-
-                    <p className="font-sans font-medium text-[#1E293B] max-w-lg mx-auto text-lg leading-relaxed tracking-wide drop-shadow-sm">
-                        Curated escapes tailored to the extraordinary. From overwater sanctuaries to alpine serenity, experience the pinnacle of luxury travel.
-                    </p>
-                </motion.div>
-            </motion.div>
-
-            {/* CSS keyframes for lightweight particle float */}
-            <style jsx>{`
-                @keyframes float-particle {
-                    0%, 100% { transform: translateY(0) translateX(0); opacity: 0.2; }
-                    50% { transform: translateY(-40px) translateX(10px); opacity: 0.7; }
-                }
-            `}</style>
-        </section>
+                Where would you<br className="hidden sm:block" /> rather wake up<span className="text-[#bc6448]">?</span>
+            </motion.h2>
+            <div className="mt-7 flex flex-col items-center justify-center gap-2 sm:flex-row sm:flex-wrap sm:gap-x-7 sm:gap-y-3">
+                {settings.map((setting, index) => (
+                    <motion.p
+                        key={setting}
+                        initial={reduceMotion ? false : { opacity: 0, y: 12 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ duration: reduceMotion ? 0 : 0.45, delay: reduceMotion ? 0 : index * 0.18 }}
+                        className="flex items-center gap-2 font-serif text-xl italic leading-relaxed text-[#686058] sm:text-2xl"
+                    >
+                        <span aria-hidden="true" className="h-1 w-1 rounded-full bg-[#bc6448]" />{setting}
+                    </motion.p>
+                ))}
+            </div>
+            <p className="mt-5 text-xs leading-relaxed text-[#727272] sm:text-sm">Choose your setting. Find a stay worth exploring.</p>
+        </div>
     );
 }

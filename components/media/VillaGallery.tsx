@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { ArrowLeft, ArrowRight, ArrowUpRight, Plus } from 'lucide-react';
 import { checkedOn, villasData } from '@/data/villasData';
+import VillaTransition from '@/components/scrollytelling/VillaTransition';
 
 const stories = [
     { tab: 'Island villas', title: ['Island state', 'of mind.'], image: '/images/stays/island-concept.webp', alt: 'Concept illustration of a contemporary overwater villa', caption: 'Concept illustration · not a photograph of Soneva Fushi', mood: 'Ocean air. A slower rhythm.' },
@@ -23,11 +24,7 @@ export default function VillaGallery() {
     return (
         <section id="villas" aria-labelledby="stay-title" className="scroll-mt-20 bg-[#f3f2ef] px-5 py-16 text-[#191919] sm:px-8 md:py-24 lg:px-12">
             <div className="mx-auto max-w-[1440px]">
-                <div className="mb-10 text-center md:mb-14">
-                    <p className="mb-5 text-[10px] font-bold uppercase tracking-[0.3em] text-[#6c6258]">The stay is part of the story</p>
-                    <h2 id="stay-title" className="font-montserrat text-[clamp(2.1rem,4.8vw,4.75rem)] font-bold uppercase leading-[1.05] tracking-[-0.055em]">Find your kind<br />of escape<span className="text-[#bc6448]">.</span></h2>
-                    <p className="mx-auto mt-6 max-w-xl text-sm leading-relaxed text-[#606060] sm:text-base">An island hideaway, a private pool, or a mountain retreat.<br className="hidden sm:block" /> Start with the setting. Explore the details.</p>
-                </div>
+                <VillaTransition />
                 <div className="grid grid-cols-3 border-b border-[#191919]/20" aria-label="Choose a stay setting">
                     {stories.map((item, index) => <button key={item.tab} type="button" aria-pressed={selected === index} aria-controls="stay-story" onClick={() => setSelected(index)} className={`relative min-h-16 px-2 py-5 text-[10px] font-bold uppercase tracking-[0.12em] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-4px] sm:text-xs md:text-sm ${selected === index ? 'text-[#191919]' : 'text-[#727272] hover:text-[#191919]'}`}>
                         <span className="mr-3 hidden text-[10px] text-[#7a7066] sm:inline">0{index + 1}</span>{item.tab}

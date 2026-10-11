@@ -1,5 +1,4 @@
 import HeroScroll from "@/components/scrollytelling/HeroScroll";
-import VillaTransition from "@/components/scrollytelling/VillaTransition";
 import VillaGallery from "@/components/media/VillaGallery";
 import DestinationGlobe from "@/components/media/DestinationGlobe";
 import Link from "next/link";
@@ -86,7 +85,6 @@ export default function Home() {
 
 
       {/* Villas anchor lives inside VillaGallery itself */}
-      <VillaTransition />
       <VillaGallery />
 
       <div id="destinations">
