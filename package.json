@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "node scripts/check-secrets.cjs && next dev --webpack",
+    "dev": "node scripts/check-secrets.cjs && node scripts/build-media.cjs && next dev --webpack",
     "build": "node scripts/check-secrets.cjs && node scripts/build-content.cjs && next build --webpack",
     "start": "next start",
     "lint": "eslint app components lib middleware.ts",
