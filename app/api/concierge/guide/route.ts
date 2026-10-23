@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import OpenAI from 'openai';
-import { guideContext, guideRequestSchema, GUIDE_SYSTEM_PROMPT, validateGuideReply } from '@/lib/concierge-guide';
+import { guideContext, guidePromptContext, guidePromptHistory, guideRequestSchema, GUIDE_SYSTEM_PROMPT, validateGuideReply } from '@/lib/concierge-guide';
 import { serverSupabase } from '@/lib/supabase/server';
 import { boundedJson, sameOrigin } from '@/lib/request';
 import { groqModelOptions } from '@/lib/ai-config';
@@ -25,8 +25,8 @@ export async function POST(request: NextRequest) {
     try {
         const provider = new OpenAI({ apiKey: process.env.GROQ_API_KEY, baseURL: 'https://api.groq.com/openai/v1', timeout: 30000, maxRetries: 0 });
         const completion = await provider.chat.completions.create({ ...groqModelOptions(), temperature: 0.2, max_completion_tokens: 2400, response_format: { type: 'json_object' }, messages: [
-            { role: 'system', content: `${GUIDE_SYSTEM_PROMPT}\nDestination guide: ${JSON.stringify(context)}` },
-            ...body.history,
+            { role: 'system', content: `${GUIDE_SYSTEM_PROMPT}\nDestination guide: ${JSON.stringify(guidePromptContext(context))}` },
+            ...guidePromptHistory(body.history),
             { role: 'user', content: body.message },
         ] });
         const result = validateGuideReply(JSON.parse(completion.choices[0]?.message.content || '{}'), context.places);

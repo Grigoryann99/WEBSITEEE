@@ -162,6 +162,27 @@ check('guide chat rejects invented and foreign-country references', () => {
     assert.throws(() => guide.validateGuideReply({ ...valid, placeIds: [places[0].id, places[0].id] }, places));
     assert.throws(() => guide.validateGuideReply({ ...valid, url: 'https://invented.example' }, places));
 });
+check('Rome guide prompts fit the provider budget while retaining every valid place', () => {
+    const context = guide.guideContext('italy/rome');
+    const prompt = guide.guidePromptContext(context);
+    assert.ok(JSON.stringify(prompt).length < 14000);
+    assert.deepEqual(prompt.places.map(place => place.id), context.places.map(place => place.id));
+    assert.match(prompt.detailsNote, /Current prices, hours/);
+    assert.ok(prompt.places.every(place => !('sources' in place) && !('freshness' in place)));
+    const reply = guide.validateGuideReply({ answer: 'Explore these places from the guide.', placeIds: [prompt.places[0].id] }, context.places);
+    assert.equal(reply.places[0].href, context.places[0].href);
+    const japan = guide.guideContext('japan');
+    assert.deepEqual(guide.guidePromptContext(japan).tips, japan.tips);
+});
+check('provider history is bounded even after several long multilingual replies', () => {
+    const messages = Array.from({ length: 8 }, (_, index) => ({ role: index % 2 ? 'assistant' : 'user', content: `${index}:` + 'Հայերեն զրույց։ '.repeat(120) }));
+    const history = guide.guidePromptHistory(messages);
+    assert.equal(history.length, 4);
+    assert.ok(history.every(message => message.content.length <= 240));
+    assert.ok(history[0].content.startsWith('4:'));
+    assert.ok(history[3].content.startsWith('7:'));
+    assert.ok(messages[7].content.length > 240);
+});
 check('guide chat bounds conversational history and blocks extra system messages', () => {
     const request = { destinationId: 'france', message: 'I enjoy art', history: [{ role: 'user', content: 'Hello' }] };
     assert.equal(guide.guideRequestSchema.safeParse(request).success, true);
