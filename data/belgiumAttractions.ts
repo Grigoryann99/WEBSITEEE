@@ -201,7 +201,7 @@ export const belgiumAttractions = [
     insiderTip: "Join the daily guided tour at 3:00 PM, which is the only way to access the opulent interior salons and historical council chambers.",
     howToGetThere: "A 15-minute walk from Leuven train station.",
     cost: "€4 for the guided interior tour; exterior viewing is free.",
-    image: '/images/attractions/belgium-leuven-town-hall.jpg'
+    image: '/images/attractions/belgium-leuven-town-hall.optimized.webp'
   },
   {
     name: "Beguinage (Bruges)",
@@ -237,6 +237,6 @@ export const belgiumAttractions = [
     insiderTip: "Rent a bicycle to cover more ground and visit the serene Rouge-Cloître Abbey nestled on the forest's edge for a picturesque lunch spot.",
     howToGetThere: "Accessible via various tram and train lines from Brussels, such as Tram 8 or 44.",
     cost: "Free.",
-    image: '/images/attractions/belgium-sonian-forest.jpg'
+    image: '/images/attractions/belgium-sonian-forest.optimized.webp'
   }
 ];

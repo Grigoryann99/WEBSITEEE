@@ -71,7 +71,7 @@ export default function VillaGallery() {
                 </div>
                 <div className="mt-8 flex flex-col gap-5 border-b border-[#191919]/20 pb-7 sm:flex-row sm:items-center sm:justify-between">
                     <p className="max-w-lg text-xs leading-relaxed text-[#717171]">Independent stay inspiration. Read the comparison for property details and the questions to ask before booking.</p>
-                    <Link href="/villas" className="inline-flex shrink-0 items-center gap-5 text-[10px] font-bold uppercase tracking-[0.12em] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4">Compare all three stays<ArrowRight size={18} aria-hidden="true" /></Link>
+                    <Link href="/stay" className="inline-flex shrink-0 items-center gap-5 text-[10px] font-bold uppercase tracking-[0.12em] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4">Compare all three stays<ArrowRight size={18} aria-hidden="true" /></Link>
                 </div>
             </div>
         </section>

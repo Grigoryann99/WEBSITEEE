@@ -37,7 +37,7 @@ export default function MaldivesIslandMap({ selectedPlace, onSelect }: { selecte
                 const icon = L.divIcon({ className: 'island-map-marker', html: '<span class="island-map-dot"></span>', iconSize: [24, 24], iconAnchor: [12, 12] });
                 const marker = L.marker([place.latitude, place.longitude], { icon, title: place.name, alt: place.name, keyboard: true })
                     .addTo(map)
-                    .bindTooltip(place.name, { permanent: true, direction: 'top', offset: [0, -14], className: 'island-map-label', opacity: 1 })
+                    .bindTooltip(Object.assign(document.createElement('span'), { textContent: place.name }), { permanent: true, direction: 'top', offset: [0, -14], className: 'island-map-label', opacity: 1 })
                     .on('click', () => selectHandler.current(index));
                 return marker;
             });

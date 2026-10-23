@@ -153,7 +153,7 @@ export const usaAttractions = [
     insiderTip: "Avoid the tourist traps on Bourbon Street. Walk to Frenchmen Street in the nearby Marigny neighborhood for the best authentic live music clubs in the city.",
     howToGetThere: "Fly to Louis Armstrong New Orleans International Airport, then take a taxi or shuttle direct to the French Quarter.",
     cost: "Free to explore. Jazz club covers and food have costs.",
-    image: "/images/attractions/usa-french-quarter.jpg"
+    image: "/images/attractions/usa-french-quarter.optimized.webp"
   },
   {
     name: "Yosemite Falls",
@@ -165,7 +165,7 @@ export const usaAttractions = [
     insiderTip: "Hike the strenuous Upper Yosemite Fall Trail to the top of the falls for breathtaking views over the entire Yosemite Valley.",
     howToGetThere: "Take the Yosemite Valley Shuttle bus to Stop 6.",
     cost: "Free with park entrance fee.",
-    image: "/images/attractions/usa-yosemite-falls.jpg"
+    image: "/images/attractions/usa-yosemite-falls.optimized.webp"
   },
   {
     name: "Hana Highway",
@@ -177,7 +177,7 @@ export const usaAttractions = [
     insiderTip: "Start early (before 7:00 AM) to avoid the bumper-to-bumper tourist traffic, and buy fresh banana bread from local roadside stands along the way.",
     howToGetThere: "Fly to Kahului Airport on Maui, then rent a car (a Jeep or SUV is recommended).",
     cost: "Free drive. Entrance fee applies to Waianapanapa State Park.",
-    image: "/images/attractions/usa-hana-highway.jpg"
+    image: "/images/attractions/usa-hana-highway.optimized.webp"
   },
   {
     name: "Death Valley",

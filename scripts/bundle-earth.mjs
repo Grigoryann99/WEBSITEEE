@@ -1,0 +1,24 @@
+// Create a downloadable, self-contained HTML copy without changing the site runtime.
+import { readFile, writeFile } from 'node:fs/promises';
+const output = process.argv[2];
+if (!output) throw new Error('Provide an output HTML path');
+const dataUrl = (bytes, mime) => `data:${mime};base64,${Buffer.from(bytes).toString('base64')}`;
+const core = dataUrl(await readFile('public/vendor/three/three.core.js'), 'text/javascript');
+const moduleSource = (await readFile('public/vendor/three/three.module.js', 'utf8')).replaceAll('./three.core.js', 'three/core');
+const module = dataUrl(moduleSource, 'text/javascript');
+const controls = dataUrl(await readFile('public/vendor/three/OrbitControls.js'), 'text/javascript');
+const imports = { three: module, 'three/core': core, 'three/addons/controls/OrbitControls.js': controls };
+const files = ['day.jpg', 'night.jpg', 'day-mobile.webp', 'night-mobile.webp', 'bump.webp', 'specular.webp', 'clouds.webp', 'bump-mobile.webp', 'specular-mobile.webp', 'clouds-mobile.webp'];
+const assets = Object.fromEntries(await Promise.all(files.map(async file => [`/earth/${file}`, dataUrl(await readFile(`public/earth/${file}`), file.endsWith('.webp') ? 'image/webp' : 'image/jpeg')])));
+const world = await readFile('public/earth/destinations.json', 'utf8');
+let html = await readFile('public/earth-explorer.html', 'utf8');
+html = html.replace(/<script type="importmap">[\s\S]*?<\/script>/, `<script type="importmap">${JSON.stringify({ imports })}</script>`);
+html = html.replace("const stage=document.querySelector", `const EMBEDDED_ASSETS=${JSON.stringify(assets)};const EMBEDDED_WORLD=${world.replaceAll('<', '\\u003c')};\nconst stage=document.querySelector`);
+html = html.replace("const data=await fetch('/earth/destinations.json');if(!data.ok)throw Error('Directory unavailable');world=await data.json();", 'world=EMBEDDED_WORLD;');
+html = html.replace('loadAsync(path)', 'loadAsync(EMBEDDED_ASSETS[path])');
+html = html.replace('<head>', `<head><script>if(location.protocol==='file:'){const base=document.createElement('base');base.href='https://veloratravel.org/';document.head.append(base);}</script>`);
+html = html.replace('function loadingFailure(){', 'function loadingFailure(){');
+const license = await readFile('public/vendor/three/LICENSE', 'utf8');
+html = html.replace('</body>', `<!-- Three.js license\n${license}\nEarth textures: Solar System Scope, CC BY 4.0. Borders: Natural Earth, public domain.\n-->\n</body>`);
+await writeFile(output, html);
+console.log(`Created one-file Earth explorer (${Math.round(Buffer.byteLength(html) / 1024)} KB).`);

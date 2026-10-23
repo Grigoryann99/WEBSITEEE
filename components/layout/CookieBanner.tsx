@@ -1,68 +1,79 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import { Cookie } from 'lucide-react';
+import styles from './CookieBanner.module.css';
 
 export default function CookieBanner() {
     const [visible, setVisible] = useState(false);
+    const banner = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        const consent = localStorage.getItem('velora_cookie_consent');
+        const element = banner.current;
+        const report = () => window.dispatchEvent(new CustomEvent('velora:cookie-height', { detail: element ? Math.ceil(window.innerHeight - element.getBoundingClientRect().top) : 0 }));
+        report();
+        if (!element) return;
+        const observer = new ResizeObserver(report);
+        observer.observe(element);
+        window.addEventListener('resize', report);
+        return () => { observer.disconnect(); window.removeEventListener('resize', report); window.dispatchEvent(new CustomEvent('velora:cookie-height', { detail: 0 })); };
+    }, [visible]);
+
+    useEffect(() => {
+        let consent = null;
+        try { consent = localStorage.getItem('velora_cookie_consent'); } catch { /* ask without storage */ }
+        const reopen = () => setVisible(true);
+        window.addEventListener('velora:cookie-settings', reopen);
         if (!consent) {
             // Slight delay so it doesn't flash immediately on load
             const timer = setTimeout(() => setVisible(true), 1500);
-            return () => clearTimeout(timer);
+            return () => { clearTimeout(timer); window.removeEventListener('velora:cookie-settings', reopen); };
         }
+        return () => window.removeEventListener('velora:cookie-settings', reopen);
     }, []);
 
     const accept = () => {
-        localStorage.setItem('velora_cookie_consent', 'accepted');
+        try { localStorage.setItem('velora_cookie_consent', 'accepted'); } catch { /* storage unavailable */ }
+        window.dispatchEvent(new Event('velora:consent'));
         setVisible(false);
     };
 
     const decline = () => {
-        localStorage.setItem('velora_cookie_consent', 'essential_only');
+        const target = window as Window & { gtag?: (...args: unknown[]) => void };
+        target.gtag?.('consent', 'update', { ad_storage: 'denied', analytics_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
+        document.cookie.split(';').forEach(cookie => {
+            const name = cookie.trim().split('=')[0];
+            if (!/^(_ga|_gid|_gat|__gads|__gpi)/.test(name)) return;
+            ['', window.location.hostname, `.${window.location.hostname}`].forEach(domain => { document.cookie = `${name}=; Max-Age=0; path=/;${domain ? ` domain=${domain};` : ''}`; });
+        });
+        try { localStorage.setItem('velora_cookie_consent', 'essential_only'); } catch { /* storage unavailable */ }
+        window.dispatchEvent(new Event('velora:consent'));
+        // Reload after revocation so previously loaded third-party scripts stop executing.
+        if (document.querySelector('#google-analytics-consented')) window.location.reload();
         setVisible(false);
     };
 
     if (!visible) return null;
 
     return (
-        <div className="fixed bottom-0 left-0 right-0 z-50 p-4 md:p-6 animate-fade-in-up">
-            <div className="max-w-4xl mx-auto bg-[#0f0f0f] border border-white/10 rounded-2xl shadow-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start md:items-center backdrop-blur-xl">
-                {/* Icon */}
-                <div className="flex-shrink-0 text-2xl">🍪</div>
-
-                {/* Text */}
-                <div className="flex-grow">
-                    <p className="font-sans font-medium text-brand-light text-sm mb-1">We use cookies</p>
-                    <p className="font-sans text-brand-light/50 text-xs font-light leading-relaxed">
-                        We use cookies to improve your experience and for analytics. By clicking &quot;Accept All&quot;, you consent to our use of cookies.{' '}
-                        <Link href="/cookies" className="text-brand-accent underline underline-offset-2 hover:text-brand-light transition-colors">
-                            Cookie Policy
-                        </Link>{' '}·{' '}
-                        <Link href="/privacy-policy" className="text-brand-accent underline underline-offset-2 hover:text-brand-light transition-colors">
-                            Privacy Policy
-                        </Link>
-                    </p>
+        <div ref={banner} className={styles.position}>
+            <section className={styles.banner} aria-labelledby="cookie-choices-title" aria-describedby="cookie-choices-description" data-lenis-prevent>
+                <div className={styles.icon} aria-hidden="true"><Cookie size={24} strokeWidth={1.5} /></div>
+                <div className={styles.copy}>
+                    <h2 id="cookie-choices-title">Your cookie choices</h2>
+                    <p id="cookie-choices-description">We use cookies to improve your experience and understand how the site is used. Choose essential cookies only, or accept all cookies.</p>
+                    <div className={styles.links}>
+                        <Link href="/cookies">Cookie policy</Link>
+                        <span aria-hidden="true">·</span>
+                        <Link href="/privacy-policy">Privacy policy</Link>
+                    </div>
                 </div>
-
-                {/* Buttons */}
-                <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0 w-full md:w-auto">
-                    <button
-                        onClick={decline}
-                        className="font-sans text-xs tracking-widest uppercase text-brand-light/50 border border-white/10 px-5 py-3 rounded-full hover:border-white/30 hover:text-brand-light transition-all duration-300 whitespace-nowrap"
-                    >
-                        Essential Only
-                    </button>
-                    <button
-                        onClick={accept}
-                        className="font-sans text-xs tracking-widest uppercase bg-brand-accent text-brand-dark px-5 py-3 rounded-full hover:bg-brand-accent/90 transition-all duration-300 whitespace-nowrap font-medium"
-                    >
-                        Accept All
-                    </button>
+                <div className={styles.actions}>
+                    <button onClick={decline} className={styles.essential}>Essential only</button>
+                    <button onClick={accept} className={styles.accept}>Accept all</button>
                 </div>
-            </div>
+            </section>
         </div>
     );
 }

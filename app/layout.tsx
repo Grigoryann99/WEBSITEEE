@@ -1,3 +1,4 @@
+import { jsonLd } from '@/lib/json-ld';
 import type { Metadata } from "next";
 import { Playfair_Display, Inter, Montserrat, Roboto } from "next/font/google";
 import "./globals.css";
@@ -5,7 +6,11 @@ import SmoothScroll from "@/components/layout/SmoothScroll";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
 import CookieBanner from "@/components/layout/CookieBanner";
-import Script from "next/script";
+import { CurrencyProvider } from '@/components/currency/CurrencyProvider';
+import { AuthProvider } from '@/components/auth/AuthProvider';
+import ConsentScripts from '@/components/layout/ConsentScripts';
+import FloatingConcierge from '@/components/planner/FloatingConcierge';
+import { DisplayPreferencesProvider } from '@/components/preferences/DisplayPreferences';
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -84,29 +89,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-9GPGCR7W9T"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-9GPGCR7W9T');
-          `}
-        </Script>
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1654457169304666"
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
+            __html: jsonLd({
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "VeloraTravel",
@@ -127,7 +113,7 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
+            __html: jsonLd({
               "@context": "https://schema.org",
               "@type": "WebSite",
               "name": "VeloraTravel",
@@ -146,6 +132,7 @@ export default function RootLayout({
       <body
         className={`${playfair.variable} ${inter.variable} ${montserrat.variable} ${roboto.variable} antialiased bg-brand-light text-brand-dark font-sans`}
       >
+        <DisplayPreferencesProvider><CurrencyProvider><AuthProvider>
         <Navigation />
         <SmoothScroll>
           <div className="min-h-screen">
@@ -154,6 +141,9 @@ export default function RootLayout({
           <Footer />
         </SmoothScroll>
         <CookieBanner />
+        <FloatingConcierge />
+        <ConsentScripts />
+        </AuthProvider></CurrencyProvider></DisplayPreferencesProvider>
       </body>
     </html>
   );

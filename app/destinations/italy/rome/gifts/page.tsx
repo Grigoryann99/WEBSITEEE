@@ -1,0 +1,5 @@
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import GiftAssistant from '@/components/places/GiftAssistant';
+export const metadata: Metadata = { title: 'Thoughtful gifts from Rome', description: 'Build a gift shortlist by budget, find local Rome shops and keep your shopping stops together.', alternates: { canonical: '/destinations/italy/rome/gifts' } };
+export default function GiftsPage() { return <main className="concierge-surface min-h-screen pt-32"><header className="mx-auto max-w-6xl px-5 sm:px-8"><Link href="/destinations/italy/rome" className="text-sm text-sky-700">← Back to Rome</Link><p className="concierge-eyebrow mt-8">Something worth bringing home</p><h1 className="mt-4 max-w-3xl font-serif text-4xl sm:text-6xl">Small gifts.<br /><em>A little more meaning.</em></h1><p className="mt-5 max-w-xl leading-relaxed text-ink-500">Set a budget, choose a few ideas and find the shops to explore. Leave a little room in your suitcase.</p></header><GiftAssistant /></main>; }

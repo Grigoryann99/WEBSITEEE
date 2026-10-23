@@ -33,7 +33,7 @@ export const japanAttractions = [
     insiderTip: "Visit just before closing (4:30 PM). The afternoon sun hits the temple directly, making the gold leaf glow with intense brilliance, and crowds start to thin out.",
     howToGetThere: "Take Kyoto City Bus 101 or 205 from Kyoto Station to the Kinkakuji-michi stop.",
     cost: "Paid. ¥500.",
-    image: "/images/attractions/japan-kinkaku-ji.jpg"
+    image: "/images/attractions/japan-kinkaku-ji.optimized.webp"
   },
   {
     name: "Senso-ji",
@@ -177,7 +177,7 @@ export const japanAttractions = [
     insiderTip: "Walk the path behind the main shrine up the stone stairs through giant cedar trees to reach the quiet bronze tomb of the Shogun.",
     howToGetThere: "Take the Tobu Railway express train from Tokyo's Asakusa Station direct to Tobu-Nikko Station (2 hours).",
     cost: "Paid. ¥1300.",
-    image: "/images/attractions/japan-nikko-toshogu-shrine.jpg"
+    image: "/images/attractions/japan-nikko-toshogu-shrine.optimized.webp"
   },
   {
     name: "Hiroshima Peace Memorial Park",

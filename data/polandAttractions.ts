@@ -213,7 +213,7 @@ export const polandAttractions = [
     insiderTip: "The forest is small (300 metres across) so combine it with Szczecin city (15km away) which has a good old town and the quirky Pomerania Dukes' Castle.",
     howToGetThere: "Drive from Szczecin (20km, 25 minutes). No direct public transport.",
     cost: "Free.",
-    image: "/images/attractions/poland-crooked-forest.jpg"
+    image: "/images/attractions/poland-crooked-forest.optimized.webp"
   },
   {
     name: "Bieszczady Mountains",

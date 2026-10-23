@@ -9,7 +9,7 @@ export const ukAttractions = [
     insiderTip: "Book the 'Ceremony of the Keys' — the nightly locking ritual that has occurred every night for over 700 years — well in advance. Limited to 50 free tickets per night, available through the official website months ahead.",
     howToGetThere: "Take the Underground to Tower Hill station (Circle/District lines) or Tower Gateway DLR. A 2-minute walk to the entrance.",
     cost: "Paid. Adults £33.60, online only. No same-day tickets sold at the gate.",
-    image: "/images/attractions/uk-tower-of-london.jpg"
+    image: "/images/attractions/uk-tower-of-london.optimized.webp"
   },
   {
     name: "Stonehenge",
@@ -57,7 +57,7 @@ export const ukAttractions = [
     insiderTip: "The museum's Egyptian mummy collection on the upper floor is rarely crowded despite being extraordinary. Begin there, then work down through the Parthenon sculptures on the ground floor before the tour groups arrive.",
     howToGetThere: "Take the London Underground to Tottenham Court Road (Central/Northern lines) or Holborn (Piccadilly/Central lines).",
     cost: "Free permanent collection. Special exhibitions from £20.",
-    image: "/images/attractions/uk-british-museum.jpg"
+    image: "/images/attractions/uk-british-museum.optimized.webp"
   },
   {
     name: "Scottish Highlands",
@@ -81,7 +81,7 @@ export const ukAttractions = [
     insiderTip: "Bathe in the actual geothermal spring water at the Thermae Bath Spa (on the roof, in an open-air pool, looking over the city) — the only place in the UK where you can bathe in naturally hot spring water. Book months in advance.",
     howToGetThere: "Take the Great Western Railway train from London Paddington to Bath Spa station (1h25m). The Roman Baths are a 5-minute walk from the station.",
     cost: "Roman Baths adults £25. Thermae Bath Spa from £40 (2 hours).",
-    image: "/images/attractions/uk-bath-roman-baths.jpg"
+    image: "/images/attractions/uk-bath-roman-baths.optimized.webp"
   },
   {
     name: "Pembrokeshire Coast",
@@ -141,7 +141,7 @@ export const ukAttractions = [
     insiderTip: "Take the Settle–Carlisle railway from Leeds — the 72-mile journey over the Ribblehead Viaduct is one of the finest railway experiences in England, passing directly through the heart of the Dales with mountain views from the carriage.",
     howToGetThere: "Train from London King's Cross to Skipton (3 hours), then a bus to Grassington or Hawes.",
     cost: "Free park entry. White Scar Cave adults £15.",
-    image: "/images/attractions/uk-yorkshire-dales.jpg"
+    image: "/images/attractions/uk-yorkshire-dales.optimized.webp"
   },
   {
     name: "St Ives & The Penwith Peninsula",

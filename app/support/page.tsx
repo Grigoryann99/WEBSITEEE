@@ -1,31 +1,16 @@
 import { Metadata } from 'next';
-import AuroraBorealisBackground from '@/components/contact/AuroraBorealisBackground';
-import SupportHero from '@/components/contact/SupportHeroV2';
-import SupportCategories from '@/components/contact/SupportCategoriesV2';
-import FAQSection from '@/components/contact/FAQSectionV2';
-import SupportForm from '@/components/contact/SupportFormV2';
-import SupportAdditional from '@/components/contact/SupportAdditionalV2';
+import SupportWorkspace from '@/components/support/SupportWorkspace';
 
 export const metadata: Metadata = {
     alternates: { canonical: '/support' },
-    title: 'Support Center | VeloraTravel',
-    description: 'Get help using VeloraTravel, explore destinations, and contact support for travel information and website assistance.',
+    title: 'Support & Verification Center | VeloraTravel',
+    description: 'Get concierge assistance, browse travel planning FAQs, or report inaccurate venue prices and schedules.',
 };
 
-export default function ContactPage() {
+export default function SupportPage() {
     return (
-        <div className="relative min-h-screen text-[#0F172A] bg-[#F8FAF9]">
-            {/* Dynamic Light Aurora Background */}
-            <AuroraBorealisBackground />
-
-            {/* Page Content */}
-            <div className="relative z-10">
-                <SupportHero />
-                <SupportCategories />
-                <FAQSection />
-                <SupportForm />
-                <SupportAdditional />
-            </div>
-        </div>
+        <main className="min-h-screen bg-cream text-ink pt-24 pb-16 selection:bg-sky-200">
+            <SupportWorkspace />
+        </main>
     );
 }

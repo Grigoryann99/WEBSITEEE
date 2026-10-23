@@ -241,7 +241,7 @@ export default function HeroScroll() {
                     <picture>
                         <source media="(min-width: 1024px)" srcSet="/images/travel-hero-coast-desktop.webp" />
                         {/* Native picture selects the correct composition before hydration. */}
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        {}
                         <img src="/images/travel-hero-coast.webp" alt="" fetchPriority="high" className="absolute inset-0 h-full w-full object-cover" />
                     </picture>
                 )}
@@ -315,7 +315,7 @@ export default function HeroScroll() {
                     </motion.div>}
                 </div>
                 <div className="absolute bottom-12 sm:bottom-16 inset-x-0 z-30 flex justify-center px-6">
-                    <Link href="/blog" className="rounded-full bg-white px-7 py-4 text-sm font-semibold text-[#0F172A] shadow-lg transition-colors hover:bg-[#F4E7BE] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">
+                    <Link href="/guides" className="rounded-full bg-white px-7 py-4 text-sm font-semibold text-[#0F172A] shadow-lg transition-colors hover:bg-[#F4E7BE] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">
                         Explore Travel Guides <span aria-hidden="true">→</span>
                     </Link>
                 </div>

@@ -1,216 +1,56 @@
-'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
-import { Globe, Pen, Home, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, Bookmark, Compass, MessageCircle, Sparkles } from 'lucide-react';
+import styles from './about.module.css';
+
+const tools = [
+    { number: '01', icon: Compass, title: 'Find a place that speaks to you.', description: 'Explore country guides, discover highlights and find a starting point for your next journey.', href: '/destinations', label: 'Explore destinations' },
+    { number: '02', icon: MessageCircle, title: 'Talk through the possibilities.', description: 'Ask the AI companion about a destination, compare ideas and explore what suits your interests.', href: '/concierge', label: 'Meet your concierge' },
+    { number: '03', icon: Bookmark, title: 'Make the journey your own.', description: 'Save places to your account. Use the Rome trip planner to arrange your days and compare estimated costs.', href: '/plan', label: 'Explore planning tools' },
+];
 
 export default function AboutPage() {
     return (
-        <main
-            className="min-h-screen text-[#0F172A] font-sans selection:bg-[#2563EB]/20 overflow-hidden relative animate-about-gradient"
-            style={{
-                background: 'linear-gradient(-45deg, #CFFAFE, #D1FAE5, #E0F2FE, #DBEAFE)',
-            }}
-        >
-            {/* Background Soft Vivid Glow Orbs — Oceanic Sapphire & Sky Azure */}
-            <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-65 z-0">
-                <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[#2563EB]/35 rounded-full blur-[110px] animate-pulse" />
-                <div className="absolute bottom-1/3 right-1/4 w-[650px] h-[650px] bg-[#059669]/35 rounded-full blur-[120px] animate-pulse" />
-                <div className="absolute top-1/2 left-10 w-[500px] h-[500px] bg-[#0891B2]/30 rounded-full blur-[100px]" />
-                <div className="absolute top-1/4 right-10 w-[450px] h-[450px] bg-[#4F46E5]/30 rounded-full blur-[100px]" />
+        <div className={styles.surface}>
+            <div className={styles.page}>
+                <header className={styles.hero}>
+                    <p className={styles.eyebrow}>THE IDEA BEHIND VELORA</p>
+                    <h1>A more personal way<br />to <em>plan a journey.</em></h1>
+                    <div className={styles.heroBottom}>
+                        <p>A place for your curiosity, your interests and the journey you want to make.</p>
+                        <a href="#founder" className={styles.textLink}>Meet the founder <ArrowRight size={16} /></a>
+                    </div>
+                </header>
+                <section className={styles.founder} id="founder" aria-labelledby="founder-title">
+                    <figure className={styles.portrait}>
+                        <Image src="/images/about/yura-grigoryan.optimized.webp" alt="Yura Grigoryan, founder of VeloraTravel" fill sizes="(max-width: 700px) 90vw, 500px" priority className={styles.portraitImage} />
+                        <figcaption><span>THE PERSON BEHIND THE IDEA</span><strong>Yura Grigoryan</strong><p>Founder of VeloraTravel</p></figcaption>
+                    </figure>
+                    <div className={styles.story}>
+                        <p className={styles.eyebrow}>A NOTE FROM THE FOUNDER</p>
+                        <h2 id="founder-title">Every journey starts<br />with <em>an idea.</em></h2>
+                        <div className={styles.storyCopy}>
+                            <p>I created VeloraTravel to help people turn travel ideas into plans that suit their interests, time and budget.</p>
+                            <p>Velora brings destination guides, an AI travel companion and personal planning tools together. I’m building it step by step, with the aim of making travel planning clearer and more enjoyable.</p>
+                        </div>
+                        <div className={styles.signature}><span>Yura Grigoryan</span><small>Founder of VeloraTravel</small></div>
+                    </div>
+                </section>
+                <section className={styles.tools} aria-labelledby="tools-title">
+                    <div className={styles.sectionHeading}><div><p className={styles.eyebrow}>FROM AN IDEA TO YOUR OWN ADVENTURE</p><h2 id="tools-title">A little help along the way.</h2></div><p>Explore. Ask questions.<br />Bring your plans together.</p></div>
+                    <div className={styles.toolGrid}>{tools.map(({ number, icon: Icon, title, description, href, label }) => (
+                        <article className={styles.tool} key={number}>
+                            <div className={styles.toolTop}><span className={styles.icon}><Icon size={23} strokeWidth={1.5} /></span><span>{number}</span></div>
+                            <h3>{title}</h3><p>{description}</p><Link href={href} className={styles.textLink}>{label}<ArrowRight size={16} /></Link>
+                        </article>
+                    ))}</div>
+                </section>
+                <aside className={styles.honesty} aria-labelledby="honesty-title"><Sparkles size={23} strokeWidth={1.5} /><div><h3 id="honesty-title">Growing thoughtfully, one step at a time.</h3><p>Country guides and AI conversations are available across our destination collection. The full day-by-day planner currently focuses on Rome. Guides and AI suggestions are a starting point: confirm current prices, opening hours and availability before you travel.</p></div></aside>
+                <section className={styles.invitation} aria-labelledby="invitation-title">
+                    <Image src="/images/travel-hero-coast-desktop.webp" alt="A quiet coastline beside turquoise water" fill sizes="(max-width: 1100px) 100vw, 1120px" className={styles.coast} />
+                    <div className={styles.invitationContent}><p className={styles.eyebrow}>YOUR NEXT CHAPTER</p><h2 id="invitation-title">Where will curiosity<br />take you?</h2><div className={styles.actions}><Link className={styles.primary} href="/destinations">Explore destinations <ArrowRight size={17} /></Link><Link className={styles.lightLink} href="/concierge">Let’s talk about your trip <ArrowRight size={16} /></Link></div></div>
+                </section>
             </div>
-
-            <div className="relative z-10">
-
-                {/* SECTION 1 — Hero */}
-                <section className="relative pt-48 pb-32 px-6 text-center overflow-hidden">
-                    <motion.div 
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
-                        className="max-w-4xl mx-auto relative z-10"
-                    >
-                        <p className="font-sans text-[#2563EB] tracking-[0.4em] text-xs uppercase mb-8 font-bold">Established in Curation</p>
-                        <h1 className="font-serif text-6xl md:text-8xl text-[#0F172A] mb-10 leading-tight tracking-tight font-semibold drop-shadow-sm">
-                            About VeloraTravel
-                        </h1>
-                        <p className="font-sans text-[#1E293B] text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed font-normal">
-                            We believe travel is not a product to be purchased — it is an experience to be curated, a story to be lived, and a perspective to be changed.
-                        </p>
-                    </motion.div>
-                </section>
-
-                {/* SECTION 2 — Our Story */}
-                <section className="max-w-7xl mx-auto px-6 py-24 border-t border-blue-900/10">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
-                        <motion.div
-                            initial={{ opacity: 0, x: -30 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.8 }}
-                            className="bg-white/90 backdrop-blur-md p-10 md:p-12 rounded-3xl border border-blue-200/80 shadow-lg"
-                        >
-                            <h2 className="font-serif text-4xl md:text-5xl text-[#0F172A] mb-8 font-semibold">Our Story</h2>
-                            <div className="space-y-6 font-sans text-[#334155] text-lg font-normal leading-relaxed">
-                                <p>
-                                    VeloraTravel was born from a simple, personal frustration. As a lifelong traveler, I spent years navigating a web filled with shallow &quot;top 10&quot; lists and AI-generated clickbait that offered little more than surface-level advice. I realized that what the modern explorer truly needed wasn&apos;t more options, but better curation—a single, trusted place to find honest, deep travel guides that respect the reader&apos;s time and intelligence.
-                                </p>
-                                <p>
-                                    We are not a booking engine. We don&apos;t sell flights or hotel rooms. Instead, we are a curation and inspiration platform dedicated to the architecture of a great journey. We believe the internet has enough transaction platforms; it needs more destinations for thought.
-                                </p>
-                                <p>
-                                    When we started, VeloraTravel covered just 10 of our most beloved destinations—places we knew intimately and could recommend without hesitation. As our editorial team grew, so did our reach. Today, we cover over 50 global icons and hidden gems, each one researched with the same rigor and passion that defined our first day.
-                                </p>
-                                <p>
-                                    Our mission is simple: to help people travel smarter, not just more. We advocate for the idea that a single, well-curated trip to one extraordinary place—where you understand the history, the hidden corners, and the local rhythm—is worth more than ten generic vacations. By focusing on the &quot;why&quot; and the &quot;how&quot; of travel, we hope to provide the transformative perspectives that stay with you long after the suitcase is unpacked.
-                                </p>
-                            </div>
-                        </motion.div>
-
-                        <motion.div
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.8 }}
-                            className="relative aspect-[4/5] rounded-3xl overflow-hidden bg-white border border-blue-200 shadow-xl group"
-                        >
-                            <Image 
-                                src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1000&auto=format&fit=crop"
-                                alt="Our Founding Story"
-                                fill
-                                className="object-cover opacity-85 group-hover:scale-105 transition-transform duration-700"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                            <div className="absolute bottom-10 left-10 right-10">
-                                <p className="text-white font-serif italic text-2xl md:text-3xl drop-shadow-md">&quot;Quality over quantity, always.&quot;</p>
-                            </div>
-                        </motion.div>
-                    </div>
-                </section>
-
-                {/* SECTION 3 — What We Offer */}
-                <section className="py-32 border-y border-blue-900/10">
-                    <div className="max-w-7xl mx-auto px-6">
-                        <div className="text-center mb-20">
-                            <h2 className="font-serif text-4xl md:text-5xl text-[#0F172A] mb-4 font-semibold">What We Offer</h2>
-                            <div className="w-20 h-1 bg-[#2563EB] mx-auto rounded-full" />
-                        </div>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                            {[
-                                {
-                                    icon: <Globe className="w-8 h-8 text-[#2563EB]" />,
-                                    title: "Destination Guides",
-                                    text: "In-depth guides for 50+ destinations covering best seasons, visa info, local tips, and hidden gems."
-                                },
-                                {
-                                    icon: <Pen className="w-8 h-8 text-[#2563EB]" />,
-                                    title: "Travel Journal",
-                                    text: "Original articles written by our editorial team — practical guides, top lists, and destination deep dives."
-                                },
-                                {
-                                    icon: <Home className="w-8 h-8 text-[#2563EB]" />,
-                                    title: "Luxury Villa Collection",
-                                    text: "A curated selection of the world's finest private residences, from overwater bungalows to alpine retreats."
-                                }
-                            ].map((item, idx) => (
-                                <motion.div
-                                    key={idx}
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
-                                    transition={{ delay: idx * 0.2 }}
-                                    className="p-10 bg-white/90 backdrop-blur-md border border-blue-200/80 rounded-3xl hover:border-[#2563EB]/50 shadow-md hover:shadow-xl transition-all group text-center"
-                                >
-                                    <div className="mb-6 flex justify-center">{item.icon}</div>
-                                    <h3 className="font-serif text-2xl text-[#0F172A] mb-4 font-semibold">{item.title}</h3>
-                                    <p className="font-sans text-[#334155] font-normal leading-relaxed">{item.text}</p>
-                                </motion.div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-
-                {/* SECTION 4 — Our Values */}
-                <section className="py-32 max-w-7xl mx-auto px-6">
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-                        {[
-                            {
-                                title: "Authenticity",
-                                desc: "We only recommend destinations and properties we would genuinely suggest to a close friend."
-                            },
-                            {
-                                title: "Depth over breadth",
-                                desc: "Surface-level guides are everywhere. We go deeper — the history, the practical reality, the experiences that matter."
-                            },
-                            {
-                                title: "Sustainability",
-                                desc: "We highlight responsible operators and travel practices that preserve the places we love."
-                            }
-                        ].map((value, idx) => (
-                            <motion.div
-                                key={idx}
-                                initial={{ opacity: 0, scale: 0.95 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: idx * 0.1 }}
-                                className="relative p-8 bg-white/85 backdrop-blur-md rounded-3xl border-l-4 border-[#2563EB] border border-blue-200/80 shadow-md"
-                            >
-                                <span className="absolute right-6 top-6 text-6xl font-serif text-[#0F172A]/10 select-none font-bold">0{idx + 1}</span>
-                                <h3 className="font-serif text-2xl text-[#2563EB] mb-4 relative z-10 font-semibold">{value.title}</h3>
-                                <p className="font-sans text-[#334155] font-normal leading-relaxed relative z-10">{value.desc}</p>
-                            </motion.div>
-                        ))}
-                    </div>
-                </section>
-
-                {/* SECTION 5 — Honest Stats */}
-                <section className="py-24 border-y border-blue-900/10">
-                    <div className="max-w-7xl mx-auto px-6">
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-                            {[
-                                { value: "50+", label: "Destinations Covered" },
-                                { value: "6", label: "Travel Categories" },
-                                { value: "Weekly", label: "New guides added" }
-                            ].map((stat, idx) => (
-                                <div key={idx} className="space-y-2 bg-white/85 backdrop-blur-md p-8 rounded-3xl border border-blue-200/80 shadow-md">
-                                    <p className="font-serif text-6xl text-[#0F172A] tracking-tight font-bold">{stat.value}</p>
-                                    <p className="font-sans text-xs uppercase tracking-[0.3em] text-[#2563EB] font-bold">{stat.label}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-
-                {/* SECTION 6 — CTA */}
-                <section className="py-40 px-6 overflow-hidden relative">
-                    <motion.div 
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        className="max-w-3xl mx-auto text-center relative z-10 bg-white/90 backdrop-blur-md p-16 rounded-3xl border border-blue-200/80 shadow-2xl"
-                    >
-                        <h2 className="font-serif text-5xl md:text-7xl text-[#0F172A] mb-10 leading-tight font-semibold">
-                            Ready to Explore?
-                        </h2>
-                        <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                            <Link 
-                                href="/support" 
-                                className="bg-[#2563EB] text-white px-10 py-5 rounded-full text-sm font-sans tracking-widest uppercase font-bold hover:bg-[#0F172A] transition-all transform hover:scale-105 shadow-xl shadow-[#2563EB]/25"
-                            >
-                                Contact Our Team
-                            </Link>
-                            <Link 
-                                href="/destinations" 
-                                className="border-2 border-[#2563EB] text-[#2563EB] px-10 py-5 rounded-full text-sm font-sans tracking-widest uppercase font-bold hover:bg-[#2563EB] hover:text-white transition-all transform hover:scale-105"
-                            >
-                                Explore Destinations
-                            </Link>
-                        </div>
-                    </motion.div>
-                </section>
-
-            </div>
-        </main>
+        </div>
     );
 }

@@ -9,7 +9,7 @@ export const greeceAttractions = [
     insiderTip: "Arrive at the gate exactly when it opens at 8:00 AM to have the Parthenon virtually to yourself for 30 minutes before the tour groups arrive. The afternoon light from the west turns the marble golden.",
     howToGetThere: "Take the Athens Metro (Line 2, red) to Akropoli station. The entrance is a 5-minute walk from the station.",
     cost: "Paid. €30.00 combined ticket covers 7 archaeological sites including the Acropolis Museum.",
-    image: "/images/attractions/greece-acropolis-of-athens.jpg"
+    image: "/images/attractions/greece-acropolis-of-athens.optimized.webp"
   },
   {
     name: "Santorini",
@@ -129,7 +129,7 @@ export const greeceAttractions = [
     insiderTip: "Book an early-morning boat trip (before 9:00 AM) from Porto Vromi to have the beach nearly to yourself. The cliffside viewpoint above the beach is equally spectacular and accessible by road.",
     howToGetThere: "Fly to Zakynthos International Airport (ZTH) from Athens (45 minutes), rent a car or take a taxi to Porto Vromi, then take a short boat trip to the beach.",
     cost: "Free entry. Boat trip approximately €15–20 per person.",
-    image: "/images/attractions/greece-navagio-beach-shipwreck-beach.jpg"
+    image: "/images/attractions/greece-navagio-beach-shipwreck-beach.optimized.webp"
   },
   {
     name: "Samaria Gorge",
@@ -189,7 +189,7 @@ export const greeceAttractions = [
     insiderTip: "Book accommodation in the old town rather than the modern city. The evening 'volta' (promenade) along the harbour is a charming local tradition. Local ice cream shops on Farmakopoulou Street are famous across Greece.",
     howToGetThere: "Take a KTEL bus from Athens (Kifissos terminal) to Nafplio (approx. 2.5 hours) or rent a car.",
     cost: "Free to explore. Palamidi Fortress entry €8.00.",
-    image: "/images/attractions/greece-nafplio-old-town.jpg"
+    image: "/images/attractions/greece-nafplio-old-town.optimized.webp"
   },
   {
     name: "Patmos Island",
@@ -213,7 +213,7 @@ export const greeceAttractions = [
     insiderTip: "Take the first morning boat from Mykonos (8:30 AM) to have the site nearly to yourself. Bring water, sun protection, and snacks — there are no shops on the island.",
     howToGetThere: "Take the regular boat service from Mykonos' Old Port (30 minutes). Boats depart multiple times daily from April to October.",
     cost: "Paid. €12.00 site and museum combined entry.",
-    image: "/images/attractions/greece-delos-island.jpg"
+    image: "/images/attractions/greece-delos-island.optimized.webp"
   },
   {
     name: "Vikos Gorge",

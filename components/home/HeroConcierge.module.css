@@ -1,0 +1,27 @@
+.intro {
+    animation: arrive 1.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.badge { animation-delay: 150ms; }
+.title { animation-delay: 350ms; }
+.description { animation-delay: 550ms; }
+.search { animation-delay: 750ms; }
+.trending { animation-delay: 950ms; }
+.settled { animation: none; }
+
+@keyframes arrive {
+    from {
+        opacity: 0;
+        transform: translateY(22px) scale(0.985);
+        filter: blur(14px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+        filter: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .intro { animation: none; filter: none; }
+}
+:global(html[data-velora-reduce-motion='true']) .intro { animation: none; filter: none; }

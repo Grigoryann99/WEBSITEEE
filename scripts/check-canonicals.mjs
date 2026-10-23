@@ -22,10 +22,10 @@ assert.ok(urls.length > 0, 'Sitemap must contain pages');
 
 const cases = urls.map(url => [url.pathname, url.href]);
 cases.push(
-    ['/countries/south_africa', `${canonicalOrigin}/countries/south-africa`],
-    ['/countries/SOUTH-AFRICA', `${canonicalOrigin}/countries/south-africa`],
-    ['/countries/maldives?utm_source=canonical-check', `${canonicalOrigin}/countries/maldives`],
-    ['/blog?utm_source=canonical-check', `${canonicalOrigin}/blog`],
+    ['/countries/south_africa', `${canonicalOrigin}/destinations/south-africa`],
+    ['/countries/SOUTH-AFRICA', `${canonicalOrigin}/destinations/south-africa`],
+    ['/countries/maldives?utm_source=canonical-check', `${canonicalOrigin}/destinations/maldives`],
+    ['/blog?utm_source=canonical-check', `${canonicalOrigin}/guides`],
 );
 
 for (let offset = 0; offset < cases.length; offset += 6) {

@@ -21,7 +21,7 @@ export const thailandAttractions = [
     insiderTip: "Book a 30-minute traditional Thai foot massage at the temple massage school (260 THB) — it is one of the most authentic massage experiences in the country and directly funds the preservation of traditional medicine.",
     howToGetThere: "Walk 10 minutes south from the Grand Palace, or take the Chao Phraya boat to Tha Tien Pier.",
     cost: "Paid. 200 THB (approx. $5.50) entry.",
-    image: "/images/attractions/thailand-wat-pho-reclining-buddha.jpg"
+    image: "/images/attractions/thailand-wat-pho-reclining-buddha.optimized.webp"
   },
   {
     name: "Phi Phi Islands",
@@ -45,7 +45,7 @@ export const thailandAttractions = [
     insiderTip: "Rent a red songthaew (shared truck) from Chiang Mai's city centre, which takes you up the winding mountain road (30 minutes) for approximately 50 THB. Visit at 6:00 AM for the monks' dawn chanting ceremony.",
     howToGetThere: "Hire a tuk-tuk or songthaew from Chiang Mai city centre. The drive takes 30 minutes up the mountain road.",
     cost: "Paid. 50 THB for foreigners. Cable car alternative 30 THB each way.",
-    image: "/images/attractions/thailand-wat-phra-that-doi-suthep.jpg"
+    image: "/images/attractions/thailand-wat-phra-that-doi-suthep.optimized.webp"
   },
   {
     name: "Ayutthaya Historical Park",
@@ -69,7 +69,7 @@ export const thailandAttractions = [
     insiderTip: "Hike the steep jungle trail from Railay Beach to the Diamond Cave and Railay Viewpoint (45-minute round trip) for an aerial view over the entire peninsula. The trail is unmarked — ask locals for directions.",
     howToGetThere: "Take a longtail boat from Krabi Town (45 minutes) or from Ao Nang Beach (20 minutes). Boats depart regularly throughout the day.",
     cost: "Free beach access. Longtail boat from Ao Nang approx. 100 THB.",
-    image: "/images/attractions/thailand-railay-beach.jpg"
+    image: "/images/attractions/thailand-railay-beach.optimized.webp"
   },
   {
     name: "Khao Sok National Park",
@@ -81,7 +81,7 @@ export const thailandAttractions = [
     insiderTip: "Book a two-night stay in the floating raft house bungalows on Cheow Lan Lake rather than the jungle camp — the experience of sleeping above the still lake with only cliff reflections surrounding you is extraordinary.",
     howToGetThere: "Take a bus from Surat Thani (2 hours) or from Phuket (3 hours) to the Khao Sok village entrance.",
     cost: "National park entry 300 THB. Floating bungalows from 800–3,000 THB per night.",
-    image: "/images/attractions/thailand-khao-sok-national-park.jpg"
+    image: "/images/attractions/thailand-khao-sok-national-park.optimized.webp"
   },
   {
     name: "Wat Arun (Temple of Dawn)",
@@ -129,7 +129,7 @@ export const thailandAttractions = [
     insiderTip: "Tier 7 (the top) is the least visited and most beautiful. The 1.5 km hike takes 1.5 hours up a sometimes steep jungle path — bring water and wear solid shoes. Take a headlamp for the descent after sunset.",
     howToGetThere: "Take a bus from Bangkok's Southern Bus Terminal to Kanchanaburi (2.5 hours), then a local bus to Erawan National Park (1.5 hours). Or rent a car from Bangkok (3 hours).",
     cost: "Paid. 300 THB foreigners' entry.",
-    image: "/images/attractions/thailand-erawan-national-park.jpg"
+    image: "/images/attractions/thailand-erawan-national-park.optimized.webp"
   },
   {
     name: "Koh Samui Beaches",
@@ -165,7 +165,7 @@ export const thailandAttractions = [
     insiderTip: "Skip the overpriced 'tourist boat' hire at the entrance and instead take the public longtail boat (40 THB) from the main pier into the canal network for a more authentic experience at a fraction of the cost.",
     howToGetThere: "Take an air-conditioned bus from Bangkok's Southern Bus Terminal (1.5 hours). Tourist minivans from Khao San Road are available but expensive.",
     cost: "Free to visit. Longtail boat hire 400–800 THB per hour (negotiate).",
-    image: "/images/attractions/thailand-damnoen-saduak-floating-market.jpg"
+    image: "/images/attractions/thailand-damnoen-saduak-floating-market.optimized.webp"
   },
   {
     name: "Bridge on the River Kwai",
@@ -237,6 +237,6 @@ export const thailandAttractions = [
     insiderTip: "Beware the resident macaque monkeys at the top — they will aggressively steal food, sunglasses, and bags. Hold your belongings tightly. The steep descent uses a different staircase to the north side, which is slightly easier on the knees.",
     howToGetThere: "Take a tuk-tuk or hire a taxi from Krabi Town (8 km, approx. 10 minutes). The temple is signposted from the main Krabi–Trang road.",
     cost: "Free entry.",
-    image: "/images/attractions/thailand-tiger-cave-temple.jpg"
+    image: "/images/attractions/thailand-tiger-cave-temple.optimized.webp"
   }
 ];

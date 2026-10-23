@@ -1,0 +1,42 @@
+.auth { color: #22324a; font-family: var(--font-inter), sans-serif; }
+.intro { margin: -7px 0 18px; max-width: 420px; color: #62758b; font-size: 13px; line-height: 1.8; }
+.tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; padding: 4px; border: 1px solid #dce8f1; border-radius: 999px; background: #edf4f9; margin-bottom: 20px; }
+.tabs button { min-height: 39px; border: 1px solid transparent; border-radius: 999px; background: transparent; color: #62758b; font-family: inherit; font-size: 12px; cursor: pointer; }
+.tabs button[aria-pressed='true'] { color: #22324a; background: #fff; border-color: #e0eaf2; box-shadow: 0 2px 6px #1f3d5c08; font-weight: 600; }
+.google { display: grid; grid-template-columns: 20px 1fr 20px; align-items: center; gap: 12px; width: 100%; min-height: 47px; padding: 10px 18px; border: 1px solid #c8dfee; border-radius: 999px; background: #fff; color: #22324a; font-size: 12px; font-weight: 500; font-family: inherit; cursor: pointer; }
+.google:hover { background: #f2f8fd; }
+.divider { display: flex; align-items: center; gap: 13px; margin: 16px 0; font-size: 10px; color: #7b8c9e; }
+.divider::before, .divider::after { content: ''; flex: 1; height: 1px; background: #e0e9f0; }
+.form { display: flex; flex-direction: column; }
+.form label { color: #4a5a72; font-size: 11px; font-weight: 500; }
+.form input { box-sizing: border-box; width: 100%; min-width: 0; min-height: 48px; padding: 12px 16px; border: 1px solid #cddfeb; border-radius: 17px; background: #fff; color: #22324a; font-family: inherit; font-size: 13px; outline: none; }
+.form input:focus { border-color: #6fafe2; box-shadow: 0 0 0 3px #e3f0fb; }
+.form > input { margin-top: 9px; }
+.form input::placeholder { color: #8a99aa; }
+.passwordLabel { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 18px 0 9px; }
+.passwordLabel button { padding: 0; min-height: 24px; border: 0; background: transparent; color: #3477b4; font-family: inherit; font-size: 10px; cursor: pointer; }
+.passwordWrap { position: relative; }
+.passwordWrap input { padding-right: 49px; }
+.reveal { position: absolute; right: 7px; top: 6px; display: grid; place-items: center; width: 36px; height: 36px; border: 0; border-radius: 12px; background: transparent; color: #6f859a; cursor: pointer; }
+.reveal:hover { background: #edf5fb; }
+.hint { margin: 8px 2px 0; color: #718399; font-size: 10px; line-height: 1.6; }
+.primary { display: inline-flex; align-items: center; justify-content: center; gap: 12px; width: 100%; min-height: 47px; padding: 12px 20px; border: 1px solid #18324a; border-radius: 999px; background: #18324a; color: #fff; font-family: inherit; font-size: 12px; font-weight: 600; cursor: pointer; transition: background .2s; }
+.form > .primary { margin-top: 18px; }
+.primary:hover { background: #2b5f8f; }
+.auth button:disabled { opacity: .55; cursor: default; }
+.error { margin: 14px 0 0; padding: 11px 13px; background: #fff2ef; border: 1px solid #f2d9d1; border-radius: 14px; color: #9c403c; font-size: 11px; line-height: 1.7; }
+.legal { display: flex; align-items: flex-start; justify-content: center; gap: 6px; margin: 16px 0 0; color: #7b8c9e; font-size: 9px; line-height: 1.8; }
+.legal svg { margin-top: 2px; flex-shrink: 0; }
+.legal a { text-decoration: underline; text-underline-offset: 3px; }
+.back { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 38px; margin: 13px auto 0; padding: 4px 10px; border: 0; border-radius: 12px; background: transparent; color: #4a6c88; font-size: 11px; font-family: inherit; cursor: pointer; }
+.success { padding: 24px; border: 1px solid #dce9f3; border-radius: 24px; background: #f2f8fc; text-align: center; }
+.successIcon { display: grid; place-items: center; width: 58px; height: 58px; margin: 0 auto 18px; border: 1px solid #d6e8f6; background: #e3f0fb; color: #3477b4; border-radius: 20px; }
+.success h3 { margin: 0 0 12px; font-family: var(--font-playfair), serif; font-size: 25px; font-weight: 400; }
+.success p { color: #62758b; font-size: 12px; line-height: 1.8; margin: 0 0 13px; }
+.emailAddress { display: block; margin-bottom: 14px; color: #22324a; font-size: 12px; font-weight: 600; overflow-wrap: anywhere; }
+.success .small { font-size: 10px; margin-bottom: 20px; }
+.auth button:focus-visible, .auth a:focus-visible { outline: 2px solid #3477b4; outline-offset: 3px; }
+.spinner { animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (max-width: 520px) { .form input { font-size: 16px; } .intro { font-size: 12px; } .success { padding: 22px 18px; } }
+@media (prefers-reduced-motion: reduce) { .spinner { animation: none; } .auth button { transition: none; } }

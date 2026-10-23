@@ -9,7 +9,7 @@ export const finlandAttractions = [
     insiderTip: "Visit on midsummer's eve when the square fills with thousands of Finns celebrating. The crypt below the cathedral hosts concerts and exhibitions.",
     howToGetThere: "Tram 2 or 3 to Senaatintori. A 15-minute walk from Helsinki Central Station.",
     cost: "Free entry.",
-    image: "/images/attractions/finland-helsinki-cathedral.jpg"
+    image: "/images/attractions/finland-helsinki-cathedral.optimized.webp"
   },
   {
     name: "Santa Claus Village",
@@ -105,7 +105,7 @@ export const finlandAttractions = [
     insiderTip: "Book a wilderness hut (autiotupa) in advance for multi-day fell hikes — the network of free-to-use huts allows you to trek for days across open tundra. Download offline maps as mobile coverage is zero.",
     howToGetThere: "Fly to Ivalo Airport (30 minutes from Saariselkä). Regular bus from Rovaniemi (3 hours).",
     cost: "Park free. Wilderness huts free (on first-come basis). Paid heated huts from €15/night.",
-    image: "/images/attractions/finland-urho-kekkonen-national-park.jpg"
+    image: "/images/attractions/finland-urho-kekkonen-national-park.optimized.webp"
   },
   {
     name: "Kakslauttanen Arctic Resort",
@@ -153,7 +153,7 @@ export const finlandAttractions = [
     insiderTip: "The tower café sells what locals consider Finland's finest doughnuts (munkki) — fresh, warm, and served with coffee. The queue is worth it. Combine with a walk along the forested Pyynikki ridge.",
     howToGetThere: "Bus from Tampere city centre (15 minutes) or a 30-minute walk through the park.",
     cost: "Tower entry €2. Doughnuts ~€2.",
-    image: "/images/attractions/finland-pyynikki-observation-tower.jpg"
+    image: "/images/attractions/finland-pyynikki-observation-tower.optimized.webp"
   },
   {
     name: "Seurasaari Open-Air Museum",

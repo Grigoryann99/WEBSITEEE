@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
     alternates: { canonical: '/about' },
-    title: 'About Us | VeloraTravel',
-    description: 'Learn about VeloraTravel — our story, our mission, and the people who curate the world\'s finest travel experiences for discerning travelers.',
+    title: 'About',
+    description: 'Meet Yura Grigoryan, founder of VeloraTravel, and discover the idea behind our destination guides, AI travel companion and personal planning tools.',
 };
 
 export default function AboutLayout({

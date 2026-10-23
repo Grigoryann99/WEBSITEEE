@@ -45,7 +45,7 @@ export const brazilAttractions = [
     insiderTip: "Each section of the beach has a distinct social character: the section near Posto 6 attracts locals; the area near Posto 2 is the LGBTQ+ zone. Rent beach chairs from the 'barracas' — the service and cold beer are included.",
     howToGetThere: "Take the Rio Metro (Line 1) to Cardeal Arcoverde or Siqueira Campos stations, both 2 minutes walk from the beach.",
     cost: "Free beach access. Chair rental from R$15.",
-    image: "/images/attractions/brazil-copacabana-beach.jpg"
+    image: "/images/attractions/brazil-copacabana-beach.optimized.webp"
   },
   {
     name: "Pantanal",

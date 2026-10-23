@@ -201,7 +201,7 @@ export const costaRicaAttractions = [
     insiderTip: "Rent a beach cruiser bicycle to easily explore the beautiful string of beaches stretching down to Manzanillo.",
     howToGetThere: "A 4 to 5-hour drive or shuttle ride from San Jose.",
     cost: "Free beach access; food and accommodations offer a wide range of affordable to moderate options.",
-    image: '/images/attractions/costa-rica-puerto-viejo-de-talamanca.jpg'
+    image: '/images/attractions/costa-rica-puerto-viejo-de-talamanca.optimized.webp'
   },
   {
     name: "Uvita (Whale Tail)",

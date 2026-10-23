@@ -117,7 +117,7 @@ export const qatarAttractions = [
     insiderTip: "Arrive very early — races begin at sunrise and the best action is in the first hour. Qatari owners invite visitors to follow the race alongside their SUVs — if offered, accept graciously.",
     howToGetThere: "Drive from Doha (40km, 30 minutes west). No public transport.",
     cost: "Free.",
-    image: "/images/attractions/qatar-camel-race-track-al-shahaniya.jpg"
+    image: "/images/attractions/qatar-camel-race-track-al-shahaniya.optimized.webp"
   },
   {
     name: "Al Fahidi Historic District (Doha equivalent) – Msheireb Downtown Doha",

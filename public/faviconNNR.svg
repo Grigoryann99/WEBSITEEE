@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="384" height="384" viewBox="0 0 384 384">
+  <title>VELORA</title>
+  <defs>
+    <linearGradient id="crescent" gradientUnits="userSpaceOnUse" x1="167" y1="246" x2="350" y2="205">
+      <stop stop-color="#0c2845"/>
+      <stop offset=".32" stop-color="#173650"/>
+      <stop offset=".65" stop-color="#355570"/>
+      <stop offset="1" stop-color="#587e9b"/>
+    </linearGradient>
+    <linearGradient id="wave" gradientUnits="userSpaceOnUse" x1="222" y1="249" x2="395" y2="313">
+      <stop stop-color="#6b8fab"/>
+      <stop offset=".28" stop-color="#6589a5"/>
+      <stop offset=".67" stop-color="#496b87"/>
+      <stop offset="1" stop-color="#2e4d69"/>
+    </linearGradient>
+    <linearGradient id="fold" gradientUnits="userSpaceOnUse" x1="315" y1="319" x2="465" y2="147">
+      <stop stop-color="#25435f"/>
+      <stop offset=".4" stop-color="#385873"/>
+      <stop offset=".76" stop-color="#5a7e9a"/>
+      <stop offset="1" stop-color="#6b8eaa"/>
+    </linearGradient>
+    <linearGradient id="swoosh" gradientUnits="userSpaceOnUse" x1="268" y1="264" x2="398" y2="227">
+      <stop stop-color="#b4c1cb"/>
+      <stop offset=".42" stop-color="#b5c2cc"/>
+      <stop offset="1" stop-color="#dce3e9"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(-141 -37)">
+    <path fill="url(#crescent)" d="M249 353C203 340 169 308 159 266C149 222 169 175 203 149C230 128 263 125 290 132C329 141 355 170 352 209C335 186 314 174 289 172C250 167 214 184 196 219C174 259 190 309 219 336C229 345 239 350 249 353Z"/>
+    <path fill="url(#wave)" d="M283 190C251 190 224 212 214 244C203 278 211 310 235 333C259 356 291 357 318 351C356 344 385 321 407 284C429 246 447 210 460 187C465 177 471 174 478 181L507 207C516 217 497 178 488 161C483 152 485 148 490 136C495 124 501 110 501 105C501 102 497 106 492 111C484 119 480 125 475 133C468 145 458 145 442 146L410 147C404 147 403 149 408 151L439 160C453 164 454 168 449 178C427 215 403 252 378 276C353 299 328 309 302 304C269 301 246 277 244 252C241 226 255 202 283 190Z"/>
+    <path fill="url(#fold)" d="M244 246C243 277 268 301 302 304C328 309 353 299 378 276C403 252 427 215 449 178C454 168 453 164 439 160L408 151C403 149 404 147 410 147L442 146C458 145 468 145 475 133C480 125 484 119 492 111C497 106 501 102 501 105C501 110 495 124 490 136C485 148 483 152 488 161C497 178 516 217 507 207L478 181C471 174 465 177 460 187C447 210 429 246 407 284C393 302 363 318 333 322C304 327 282 319 265 302C250 288 242 267 244 246Z"/>
+    <path fill="url(#swoosh)" d="M266 229C269 253 283 269 304 271C333 274 366 251 398 223C369 261 341 283 314 286C287 289 269 277 265 257C262 247 263 238 266 229Z"/>
+  </g>
+</svg>

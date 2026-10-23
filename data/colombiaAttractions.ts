@@ -105,7 +105,7 @@ export const colombiaAttractions = [
     insiderTip: "Pack high-quality, quick-drying hiking gear and a comfortable pair of camp shoes, as the jungle humidity is intense and river crossings are frequent.",
     howToGetThere: "Book an authorized 4-to-6 day guided trek starting from Santa Marta. The tour companies handle transport to the trailhead at El Mamey.",
     cost: "Premium",
-    image: "/images/attractions/colombia-ciudad-perdida-lost-city.jpg"
+    image: "/images/attractions/colombia-ciudad-perdida-lost-city.optimized.webp"
   },
   {
     name: "Guatapé (El Peñón)",

@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -11,7 +15,7 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "incremental": true,
     "plugins": [
       {
@@ -19,9 +23,36 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
-    }
+      "@/*": [
+        "./*"
+      ]
+    },
+    "target": "ES2017"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next-production/types/**/*.ts",
+    ".next-production/dev/types/**/*.ts",
+    ".next-shopping/types/**/*.ts",
+    ".next-shopping/dev/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    ".next-media/types/**/*.ts",
+    ".next-media/dev/types/**/*.ts",
+    ".next-content-transfer/types/**/*.ts",
+    ".next-content-transfer/dev/types/**/*.ts",
+    ".next-mobile-search/types/**/*.ts",
+    ".next-mobile-search/dev/types/**/*.ts",
+    ".next-mobile-search-build/types/**/*.ts",
+    ".next-mobile-search-build/dev/types/**/*.ts",
+    ".next-stay-redesign/types/**/*.ts",
+    ".next-stay-redesign/dev/types/**/*.ts",
+    ".next-deploy-preview/types/**/*.ts",
+    ".next-deploy-preview/dev/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

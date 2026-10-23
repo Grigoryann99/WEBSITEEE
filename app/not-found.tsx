@@ -49,7 +49,7 @@ export default function NotFound() {
                             Explore Destinations
                         </Link>
                         <Link
-                            href="/blog"
+                            href="/guides"
                             className="px-8 py-4 border border-white/20 text-white rounded-full text-sm font-sans tracking-widest uppercase hover:bg-white/5 transition-all"
                         >
                             Travel Journal

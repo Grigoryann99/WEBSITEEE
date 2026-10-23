@@ -141,7 +141,7 @@ export const austriaAttractions = [
     insiderTip: "Hike up to the highest tier early in the day to beat the crowds, then reward yourself with traditional Austrian fare at the Schönangerl restaurant near the middle fall.",
     howToGetThere: "Accessible by car or local train (Pinzgauer Lokalbahn) from Zell am See.",
     cost: "Entrance fee to the waterfall path is roughly €8.",
-    image: '/images/attractions/austria-krimml-waterfalls.jpg'
+    image: '/images/attractions/austria-krimml-waterfalls.optimized.webp'
   },
   {
     name: "Eisriesenwelt (Ice Cave)",

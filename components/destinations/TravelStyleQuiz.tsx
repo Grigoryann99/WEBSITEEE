@@ -284,7 +284,7 @@ export default function TravelStyleQuiz() {
                                                     {country.budget}
                                                 </p>
                                                 <Link
-                                                    href={`/countries/${country.slug}`}
+                                                    href={`/destinations/${country.slug}`}
                                                     className="inline-flex items-center gap-2 text-xs tracking-widest uppercase font-sans font-medium text-[#1D9E75] hover:text-black transition-colors"
                                                 >
                                                     Explore <ArrowRight className="w-3 h-3" />

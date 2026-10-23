@@ -105,7 +105,7 @@ export const maldivesAttractions = [
     insiderTip: "Even if you don't scuba dive, the night snorkeling excursion at the house reef is an absolute must-do for the shark encounters. The water is shallow enough to see the action from the surface.",
     howToGetThere: "Approximately a 90-minute speedboat ride or a scenic 20-minute seaplane flight from Velana International Airport.",
     cost: "$$$",
-    image: '/images/attractions/maldives-alimatha-island.jpg'
+    image: '/images/attractions/maldives-alimatha-island.optimized.webp'
   },
   {
     name: "Biyadhoo Island",
@@ -153,7 +153,7 @@ export const maldivesAttractions = [
     insiderTip: "Because of the strong currents, this site is strictly for advanced divers. A negative entry is often required to reach the reef quickly before being swept past the best features.",
     howToGetThere: "Accessible via speedboat from Malé or nearby resorts in the North Malé Atoll.",
     cost: "$$",
-    image: '/images/attractions/maldives-hp-reef.jpg'
+    image: '/images/attractions/maldives-hp-reef.optimized.webp'
   },
   {
     name: "Artificial Beach (Malé)",

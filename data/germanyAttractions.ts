@@ -69,7 +69,7 @@ export const germanyAttractions = [
     insiderTip: "Visit the Triberg waterfalls early morning to have them almost to yourself, then sample authentic Schwarzwälder Kirschtorte (Black Forest cake) at Café Schäfer.",
     howToGetThere: "Train from Freiburg or Stuttgart to various Black Forest towns.",
     cost: "Free to explore; individual attractions vary.",
-    image: "/images/attractions/germany-black-forest.jpg"
+    image: "/images/attractions/germany-black-forest.optimized.webp"
   },
   {
     name: "Museum Island",

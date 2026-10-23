@@ -28,6 +28,14 @@ yarn-error.log*
 
 # local env files
 .env*.local
+.env
+.env.*
+!.env.example
+.next-production/
+.next-shopping/
+/scratch/security-*.json
+/scratch/security-*.log
+/scratch/package-before-security.json
 
 # vercel
 .vercel
@@ -35,3 +43,18 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.next-media/
+/scratch/content-sync-backups/
+/scratch/content-published-candidate.json
+/scratch/database-backups/
+/scratch/postgres-tools/
+.next-content-transfer/
+.next-mobile-search/
+.next-mobile-search-build/
+.next-stay-redesign/
+
+# Local research, transfer output and packaging artifacts
+/scratch/
+/component.tgz
+.next-deploy-preview/

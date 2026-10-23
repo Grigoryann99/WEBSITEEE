@@ -33,7 +33,7 @@ export const sriLankaAttractions = [
     insiderTip: "Climb Little Adam's Peak (1.5 hours round trip from Ella) in the early morning — the cloud formations rolling through the Ella Gap at sunrise, with the surrounding tea estates glowing green, are extraordinary. Far fewer people than Adam's Peak proper.",
     howToGetThere: "Train from Kandy (7 hours) or Nuwara Eliya (2 hours) — the most scenic train ride in Sri Lanka. Bus or tuk-tuk from Badulla (30 minutes).",
     cost: "Nine Arches Bridge: free. Little Adam's Peak: free. Train from Kandy: 3rd class 50 LKR, 2nd class 200 LKR.",
-    image: "/images/attractions/sri-lanka-nine-arches-bridge.jpg"
+    image: "/images/attractions/sri-lanka-nine-arches-bridge.optimized.webp"
   },
   {
     name: "Yala National Park",
@@ -153,7 +153,7 @@ export const sriLankaAttractions = [
     insiderTip: "Have breakfast at one of the Pettah old-style 'hotel' eateries (South Indian-style establishments that serve as Sri Lankan diners) — string hoppers with coconut sambol, egg hoppers, or pol roti with dhal are among Sri Lanka's finest breakfast foods, costing under 300 LKR (€1).",
     howToGetThere: "Central Colombo — multiple bus routes and the Colombo Fort railway station hub. Walking distance from many Colombo hotels.",
     cost: "Free to explore. Meals from 200–500 LKR (€0.60–1.50).",
-    image: "/images/attractions/sri-lanka-colombo.jpg"
+    image: "/images/attractions/sri-lanka-colombo.optimized.webp"
   },
   {
     name: "Arugam Bay",

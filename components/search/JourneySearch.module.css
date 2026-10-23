@@ -1,0 +1,19 @@
+.fields {
+    display: grid;
+    min-width: 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4px;
+    text-align: left;
+}
+
+.destination, .dates, .submit { grid-column: 1 / -1; }
+.fields > button { touch-action: manipulation; }
+
+@media (min-width: 640px) {
+    .destination, .dates { grid-column: auto; }
+}
+
+@media (min-width: 1024px) {
+    .fields { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.3fr) minmax(0, 1fr) minmax(0, 1fr) auto; }
+    .submit { grid-column: auto; }
+}

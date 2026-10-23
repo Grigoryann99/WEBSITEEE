@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    alternates: { canonical: '/villas' },
+    alternates: { canonical: '/stay' },
     title: 'Villas & Chalet Stays — Comparison and Booking Checklist | VeloraTravel',
     description: 'Compare Soneva Fushi, Six Senses Zil Pasyon, and The Lodge in Verbier using official sources, suitability notes, and practical questions to ask before booking.',
 };

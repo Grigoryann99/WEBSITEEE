@@ -93,7 +93,7 @@ export const czechAttractions = [
     insiderTip: "Rent a bicycle in Lednice and follow the cycling network connecting all the follies — allow a full day. The Minaret at Lednice (60 metres tall, with 302 steps) offers a superb panorama over the entire landscape garden.",
     howToGetThere: "Drive from Brno (50km, 45 minutes). Bus from Brno to Lednice (1 hour).",
     cost: "Area free. Lednice Castle 250 CZK (€10). Minaret 80 CZK (€3).",
-    image: "/images/attractions/czech-lednice-valtice-landscape.jpg"
+    image: "/images/attractions/czech-lednice-valtice-landscape.optimized.webp"
   },
   {
     name: "Telč Historic Town",
@@ -153,7 +153,7 @@ export const czechAttractions = [
     insiderTip: "The Archbishop's library is one of the most beautiful in the Czech Republic — request access on the chateau tour. The circular colonnade of the Flower Garden is used as a wedding venue — the space has exceptional elegance.",
     howToGetThere: "Train from Brno (1 hour) or Olomouc (40 minutes).",
     cost: "Chateau tour adults 220 CZK (€9). Flower Garden free.",
-    image: "/images/attractions/czech-krom-gardens.jpg"
+    image: "/images/attractions/czech-krom-gardens.optimized.webp"
   },
   {
     name: "Olomouc Holy Trinity Column",
@@ -201,7 +201,7 @@ export const czechAttractions = [
     insiderTip: "Take Tour III (the longest tour) to access the most private apartments including the Archduke's personal bedroom, bathroom, and the Chambre du Chasseur with thousands of hunting trophies. This tour requires advance booking.",
     howToGetThere: "Train from Prague to Benešov (1 hour) then 2km walk or taxi to the castle.",
     cost: "Tour III adults 320 CZK (€13).",
-    image: "/images/attractions/czech-konopi-te-castle.jpg"
+    image: "/images/attractions/czech-konopi-te-castle.optimized.webp"
   },
   {
     name: "Mariánské Lázně",

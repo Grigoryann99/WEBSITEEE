@@ -5,7 +5,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useRef, useEffect } from 'react';
-import { Loader2, CheckCircle2, Send, AlertTriangle, XCircle, Check } from 'lucide-react';
+import { Loader2, Send, AlertTriangle, Check } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import SupportToast from './SupportToastV2';
 

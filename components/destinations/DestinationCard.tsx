@@ -13,7 +13,7 @@ export default function DestinationCard({ city, country, image, description }: D
     const fallbackSources = [
         image,
         'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=800&auto=format&fit=crop',
-        '/images/placeholder.jpg'
+        '/images/placeholder.optimized.webp'
     ];
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);

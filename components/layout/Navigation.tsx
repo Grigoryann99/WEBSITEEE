@@ -2,41 +2,40 @@
 
 import { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ChevronRight, Search, User } from 'lucide-react';
+import { Menu } from 'lucide-react';
+import NavbarAccountMenu from '@/components/auth/NavbarAccountMenu';
+import { useAuth } from '@/components/auth/AuthProvider';
+import { easeOut } from '@/lib/motion';
+import ConciergeMenu from './ConciergeMenu';
 
-/* ── Menu link data ────────────────────────────────────────── */
-const menuLinks = [
+const navLinks = [
     { name: 'Destinations', href: '/destinations', id: 'destinations' },
-    { name: 'Luxury Villas', href: '/villas', id: 'villas' },
-    { name: 'Travel Journal', href: '/blog', id: 'blog' },
-    { name: 'About', href: '/about', id: 'about' },
-    { name: 'Support', href: '/support', id: 'support' },
-];
-
-const socialLinks = [
-    { name: 'Instagram', href: '#' },
-    { name: 'Pinterest', href: '#' },
-    { name: 'Twitter', href: '#' },
-];
-
-/* ── Menu images ───────────────────────────────────────────── */
-const menuImages = [
-    '/for foto menu.jpeg',
+    { name: 'Plan a trip', href: '/plan', id: 'plan' },
+    { name: 'Concierge', href: '/concierge', id: 'concierge' },
 ];
 
 export default function Navigation() {
     const pathname = usePathname();
+    const { user, signIn, signOut } = useAuth();
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isAccountOpen, setIsAccountOpen] = useState(false);
     const [scrollDirection, setScrollDirection] = useState<'up' | 'down'>('up');
     const [isAtTop, setIsAtTop] = useState(true);
-    const [hoveredLink, setHoveredLink] = useState<number | null>(null);
-    const [currentImageIdx, setCurrentImageIdx] = useState(0);
+    const [hasEntered, setHasEntered] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => setHasEntered(true), 1600);
+        return () => clearTimeout(timer);
+    }, []);
 
     const lastScrollY = useRef(0);
     const ticking = useRef(false);
+
+    useEffect(() => { if (!user) setIsAccountOpen(false); }, [user]);
 
     /* ── Scroll direction detection ────────────────────────── */
     const handleScroll = useCallback(() => {
@@ -50,9 +49,9 @@ export default function Navigation() {
             setIsAtTop(atTop);
 
             if (!atTop) {
-                if (currentY > lastScrollY.current + 5) {
+                if (currentY > lastScrollY.current + 8) {
                     setScrollDirection('down');
-                } else if (currentY < lastScrollY.current - 5) {
+                } else if (currentY < lastScrollY.current - 8) {
                     setScrollDirection('up');
                 }
             } else {
@@ -69,256 +68,140 @@ export default function Navigation() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, [handleScroll]);
 
-    /* ── Lock body scroll when menu open ───────────────────── */
+    /* ── Lock body scroll when drawer open ─────────────────── */
     useEffect(() => {
-        document.body.style.overflow = isMenuOpen ? 'hidden' : '';
-        return () => { document.body.style.overflow = ''; };
+        if (!isMenuOpen) return;
+        const overflow = document.body.style.overflow;
+        document.body.style.overflow = 'hidden';
+        const onKey = (event: KeyboardEvent) => {
+            if (event.key === 'Escape' && !document.querySelector('#concierge-menu-drawer [aria-haspopup="listbox"][aria-expanded="true"]')) setIsMenuOpen(false);
+        };
+        document.addEventListener('keydown', onKey);
+        return () => { document.body.style.overflow = overflow; document.removeEventListener('keydown', onKey); };
     }, [isMenuOpen]);
-
-    /* ── Rotate menu background image on hover ─────────────── */
-    useEffect(() => {
-        if (hoveredLink !== null) {
-            setCurrentImageIdx(hoveredLink % menuImages.length);
-        }
-    }, [hoveredLink]);
 
     const closeMenu = () => setIsMenuOpen(false);
 
-    const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-        e.preventDefault();
-        setIsMenuOpen(false);
-        if (pathname === '/') {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        } else {
-            window.location.href = '/';
-        }
-    };
-
-    /* ── Navbar visibility logic ───────────────────────────── */
-    const navVisible = isAtTop || scrollDirection === 'up' || isMenuOpen;
-    const showBg = !isAtTop && scrollDirection === 'up';
-
-    /* ── Animation Variants ────────────────────────────────── */
-    const easeOut = [0.22, 1, 0.36, 1] as const;
-
-    const overlayVariants = {
-        hidden: { opacity: 0 },
-        show: { opacity: 1, transition: { duration: 0.5, ease: easeOut } },
-        exit: { opacity: 0, transition: { duration: 0.4, ease: easeOut } },
-    };
-
-    const leftPanelVariants = {
-        hidden: { x: '-100%', opacity: 0 },
-        show: { x: 0, opacity: 1, transition: { duration: 0.6, ease: easeOut, delay: 0.1 } },
-        exit: { x: '-100%', opacity: 0, transition: { duration: 0.4, ease: easeOut } },
-    };
-
-    const rightPanelVariants = {
-        hidden: { x: '100%', opacity: 0 },
-        show: { x: 0, opacity: 1, transition: { duration: 0.6, ease: easeOut, delay: 0.05 } },
-        exit: { x: '100%', opacity: 0, transition: { duration: 0.4, ease: easeOut } },
-    };
-
-    const linkItemVariants = {
-        hidden: { opacity: 0, x: 40 },
-        show: (i: number) => ({
-            opacity: 1,
-            x: 0,
-            transition: { duration: 0.45, ease: easeOut, delay: 0.25 + i * 0.07 },
-        }),
-        exit: { opacity: 0, x: 20, transition: { duration: 0.2 } },
-    };
+    const navVisible = isAtTop || scrollDirection === 'up' || isMenuOpen || isAccountOpen;
 
     return (
         <>
-            {/* ── TOP NAVIGATION BAR ────────────────────────────────── */}
-            <motion.nav
-                initial={{ y: -80, opacity: 0 }}
+            {/* ── FLOATING GLASS CAPSULE NAVBAR (STATE 1) ─────────── */}
+            <motion.header
+                initial={{ y: -45, opacity: 0, filter: 'blur(16px)' }}
                 animate={{
                     y: navVisible ? 0 : -80,
                     opacity: navVisible ? 1 : 0,
+                    filter: navVisible ? 'blur(0px)' : 'blur(8px)',
                 }}
-                transition={{ duration: 0.45, ease: easeOut }}
-                className="fixed top-0 left-0 right-0 z-50"
-                style={{ willChange: 'transform, opacity' }}
+                transition={{
+                    duration: hasEntered ? 0.35 : 1.4,
+                    ease: [0.16, 1, 0.3, 1],
+                }}
+                className="fixed top-4 sm:top-5 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none"
             >
-                {/* Background layer — separate for smooth transitions */}
-                <div
-                    className="absolute inset-0 transition-all duration-500 ease-out"
-                    style={{
-                        backgroundColor: showBg ? 'rgba(10, 10, 10, 0.75)' : 'transparent',
-                        backdropFilter: showBg ? 'blur(20px) saturate(1.4)' : 'none',
-                        WebkitBackdropFilter: showBg ? 'blur(20px) saturate(1.4)' : 'none',
-                        borderBottom: showBg ? '1px solid rgba(255,255,255,0.08)' : '1px solid transparent',
-                    }}
-                />
-
-                {/* Nav content */}
-                <div className="relative max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-12 flex items-center justify-between h-[72px] lg:h-[80px]">
-
-                    {/* LEFT — Hamburger */}
-                    <button
-                        onClick={() => setIsMenuOpen(v => !v)}
-                        aria-label="Toggle navigation menu"
-                        aria-expanded={isMenuOpen}
-                        className="group flex items-center gap-3 px-3.5 py-2 rounded-full bg-black/40 backdrop-blur-md border border-white/20 hover:bg-black/60 hover:border-white/40 transition-all duration-300 outline-none focus-visible:ring-2 focus-visible:ring-brand-accent shadow-lg"
-                    >
-                        <div className="w-6 h-6 flex flex-col items-center justify-center gap-[6px]">
-                            <motion.span
-                                animate={isMenuOpen ? { rotate: 45, y: 8.5 } : { rotate: 0, y: 0 }}
-                                transition={{ duration: 0.3, ease: easeOut }}
-                                className="block w-6 h-[2.5px] bg-white rounded-full origin-center shadow-sm"
-                            />
-                            <motion.span
-                                animate={isMenuOpen ? { opacity: 0, scaleX: 0 } : { opacity: 1, scaleX: 1 }}
-                                transition={{ duration: 0.2 }}
-                                className="block w-6 h-[2.5px] bg-white rounded-full origin-center shadow-sm"
-                            />
-                            <motion.span
-                                animate={isMenuOpen ? { rotate: -45, y: -8.5 } : { rotate: 0, y: 0 }}
-                                transition={{ duration: 0.3, ease: easeOut }}
-                                className="block w-6 h-[2.5px] bg-white rounded-full origin-center shadow-sm"
-                            />
-                        </div>
-                        <span className="hidden lg:inline-block font-sans text-[12px] font-semibold tracking-[0.2em] uppercase text-white transition-colors duration-300">
-                            {isMenuOpen ? 'Close' : 'Menu'}
-                        </span>
-                    </button>
-
-                    {/* CENTER — Logo */}
-                    <a
+                <nav
+                    aria-label="Main Navigation"
+                    className="concierge-navbar pointer-events-auto flex w-full max-w-[1040px] items-center justify-between gap-2 rounded-pill px-3 py-2.5 sm:gap-4 sm:px-6 sm:py-3"
+                >
+                    {/* LEFT — Brand Logo */}
+                    <Link
                         href="/"
-                        onClick={handleLogoClick}
-                        aria-label="Go to homepage"
-                        className="absolute left-1/2 -translate-x-1/2 flex items-center gap-2.5 outline-none focus-visible:ring-2 focus-visible:ring-brand-accent rounded-lg"
+                        aria-label="VeloraTravel Home"
+                        className="group flex items-center gap-2.5 rounded-pill py-1 outline-none focus-visible:ring-2 focus-visible:ring-sky-500 sm:px-2"
                     >
-                        <img
+                        <Image
                             src="/logo.svg"
-                            alt="VeloraTravel logo"
-                            className="h-8 lg:h-9 transition-all duration-300"
-                            style={{ background: 'transparent' }}
+                            alt="Velora Travel"
+                            width={32}
+                            height={32}
+                            className="h-7 w-7 sm:h-8 sm:w-8 object-contain transition-transform group-hover:scale-105"
+                            priority
                         />
-                        <span className="font-montserrat tracking-[0.22em] font-semibold text-white text-sm lg:text-base select-none whitespace-nowrap">
-                            VELORA<span className="text-brand-accent">.</span>
+                        <span className="font-serif text-lg sm:text-xl font-bold tracking-[0.16em] text-[#2E3D48] uppercase">
+                            Velora<span className="text-[#617C8C] font-sans text-sm ml-0.5">.</span>
                         </span>
-                    </a>
+                    </Link>
 
+                    {/* CENTER — Navigation Links (Desktop) */}
+                    <div className="hidden items-center gap-6 lg:flex xl:gap-8">
+                        {navLinks.map((link) => {
+                            const isActive = pathname === link.href || pathname.startsWith(`${link.href}/`);
+                            return (
+                                <Link
+                                    key={link.id}
+                                    href={link.href}
+                                    aria-current={isActive ? 'page' : undefined}
+                                    className={`rounded-pill px-1 py-2 text-sm font-medium transition-colors duration-200 outline-none focus-visible:ring-2 focus-visible:ring-sky-500 ${
+                                        isActive
+                                            ? 'font-semibold text-[#25343F]'
+                                            : 'text-[#35444F] hover:text-[#172630]'
+                                    }`}
+                                >
+                                    {link.name}
+                                </Link>
+                            );
+                        })}
 
-                </div>
-            </motion.nav>
+                    </div>
 
-            {/* ── SPLIT OVERLAY MENU ───────────────────────────────── */}
+                    {/* RIGHT — Auth Pill & Menu Trigger */}
+                    <div className="flex items-center gap-2 sm:gap-2.5">
+                        {user ? (
+                            <NavbarAccountMenu user={user} open={isAccountOpen} onOpenChange={setIsAccountOpen} onSignOut={signOut} />
+                        ) : (
+                            <button
+                                type="button"
+                                onClick={signIn}
+                                aria-label="Sign In"
+                                className="hidden min-h-11 items-center justify-center rounded-pill bg-[#354653] px-5 text-sm font-medium text-[#F5F7F8] shadow-[0_4px_12px_rgba(40,58,71,0.16)] transition-colors hover:bg-[#273945] focus-visible:ring-2 focus-visible:ring-[#617C8C] sm:inline-flex"
+                            >
+                                Sign In
+                            </button>
+                        )}
+
+                        {/* Drawer Toggle Button */}
+                        <button
+                            type="button"
+                            onClick={() => { setIsAccountOpen(false); setIsMenuOpen(true); }}
+                            aria-label="Open Menu Drawer"
+                            aria-expanded={isMenuOpen}
+                            aria-controls="concierge-menu-drawer"
+                            className="flex h-11 w-11 items-center justify-center rounded-full text-[#35444F] transition-colors hover:bg-white/35 hover:text-[#172630] focus-visible:ring-2 focus-visible:ring-[#617C8C]"
+                        >
+                            <Menu className="w-4 h-4 sm:w-4.5 sm:h-4.5" />
+                        </button>
+                    </div>
+                </nav>
+            </motion.header>
+
+            {/* ── SLIDE-OVER CONCIERGE MENU DRAWER (STATE 2) ──────── */}
             <AnimatePresence>
                 {isMenuOpen && (
-                    <motion.div
-                        key="menu-overlay"
-                        variants={overlayVariants}
-                        initial="hidden"
-                        animate="show"
-                        exit="exit"
-                        className="fixed inset-0 z-40 flex"
-                    >
-                        {/* LEFT — Image Panel (hidden on mobile) */}
+                    <>
+                        {/* Backdrop */}
                         <motion.div
-                            variants={leftPanelVariants}
-                            initial="hidden"
-                            animate="show"
-                            exit="exit"
-                            className="hidden lg:block relative w-[65%] overflow-hidden"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 0.25 }}
+                            onClick={closeMenu}
+                            className="fixed inset-0 z-[60] bg-ink/30 backdrop-blur-sm"
+                        />
+
+                        {/* Slide-over panel */}
+                        <motion.aside
+                            id="concierge-menu-drawer"
+                            aria-label="More navigation" role="dialog" aria-modal="true"
+                            initial={{ x: '100%' }}
+                            animate={{ x: 0 }}
+                            exit={{ x: '100%' }}
+                            transition={{ duration: 0.35, ease: easeOut }}
+                            className="fixed inset-y-3 right-3 z-[70] flex w-[calc(100%-24px)] max-w-[420px] flex-col overflow-hidden rounded-[32px] border border-white/90 bg-[#FDFBF6] shadow-2xl"
                         >
-                            {/* Rotating background images */}
-                            {menuImages.map((src, i) => (
-                                <div
-                                    key={src}
-                                    className="absolute inset-0 transition-opacity duration-700 ease-out"
-                                    style={{ opacity: i === currentImageIdx ? 1 : 0 }}
-                                >
-                                    <img
-                                        src={src}
-                                        alt="Travel destination"
-                                        className="w-full h-full object-cover"
-                                    />
-                                </div>
-                            ))}
-
-
-
-                            {/* Bottom tagline */}
-                            <div className="absolute bottom-12 left-10 right-10">
-                                <p className="font-serif text-3xl text-white/90 leading-snug italic font-light">
-                                    Discover the world&apos;s<br />most extraordinary places
-                                </p>
-                                <div className="mt-4 w-12 h-[1px] bg-brand-accent/60" />
-                            </div>
-                        </motion.div>
-
-                        {/* RIGHT — Menu Content */}
-                        <motion.div
-                            variants={rightPanelVariants}
-                            initial="hidden"
-                            animate="show"
-                            exit="exit"
-                            className="relative w-full lg:w-[35%] bg-[#0a1f3a] flex flex-col overflow-y-auto"
-                        >
-                            {/* Navigation links */}
-                            <nav className="flex-1 flex flex-col px-8 sm:px-12 lg:px-16 pt-24 pb-8 min-h-screen lg:min-h-0">
-                                <div className="my-auto space-y-1">
-                                    {menuLinks.map((link, i) => {
-                                        const isActive = pathname === link.href ||
-                                            (link.id === 'destinations' && pathname.startsWith('/destinations')) ||
-                                            (link.id === 'blog' && pathname.startsWith('/blog')) ||
-                                            (link.id === 'villas' && pathname.startsWith('/villas'));
-
-                                        return (
-                                            <motion.div
-                                                key={link.id}
-                                                custom={i}
-                                                variants={linkItemVariants}
-                                                initial="hidden"
-                                                animate="show"
-                                                exit="exit"
-                                            >
-                                                <Link
-                                                    href={link.href}
-                                                    onClick={closeMenu}
-                                                    onMouseEnter={() => setHoveredLink(i)}
-                                                    onMouseLeave={() => setHoveredLink(null)}
-                                                    className={`group flex items-center gap-4 py-4 lg:py-5 transition-all duration-300 ${
-                                                        isActive ? 'text-brand-accent' : 'text-white/80 hover:text-white'
-                                                    }`}
-                                                >
-                                                    {/* Link name */}
-                                                    <span className="font-serif text-3xl sm:text-4xl lg:text-[42px] font-light tracking-wide group-hover:translate-x-3 transition-transform duration-500 ease-out">
-                                                        {link.name}
-                                                    </span>
-
-                                                    {/* Arrow on hover */}
-                                                    <motion.span
-                                                        initial={{ opacity: 0, x: -10 }}
-                                                        animate={{
-                                                            opacity: hoveredLink === i ? 1 : 0,
-                                                            x: hoveredLink === i ? 0 : -10,
-                                                        }}
-                                                        transition={{ duration: 0.3 }}
-                                                        className="ml-auto text-brand-accent"
-                                                    >
-                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                            <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                                        </svg>
-                                                    </motion.span>
-
-                                                    {/* Active dot */}
-                                                    {isActive && (
-                                                        <span className="ml-auto w-2 h-2 rounded-full bg-brand-accent shadow-[0_0_12px_rgba(31,180,180,0.6)]" />
-                                                    )}
-                                                </Link>
-                                            </motion.div>
-                                        );
-                                    })}
-                                </div>
-                            </nav>
-                        </motion.div>
-                    </motion.div>
+                            <ConciergeMenu onClose={closeMenu} />
+                        </motion.aside>
+                    </>
                 )}
             </AnimatePresence>
         </>

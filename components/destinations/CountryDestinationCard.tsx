@@ -1,7 +1,8 @@
 'use client';
 
 import Image from 'next/image';
-import { Clock, Lightbulb, Wallet } from 'lucide-react';
+import { Clock, Lightbulb, MapPin } from 'lucide-react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 export interface CountryDestinationCardProps {
@@ -12,7 +13,7 @@ export interface CountryDestinationCardProps {
     whyVisit: string;
     bestTime: string;
     insiderTip: string;
-    imageUrl: string;
+    imageUrl: string | null;
     featured?: boolean;
 }
 
@@ -54,6 +55,7 @@ export default function CountryDestinationCard({
 }: CountryDestinationCardProps) {
     
     const categoryStyles = getCategoryStyles(category);
+    const [imageFailed, setImageFailed] = useState(false);
     const shortTip = truncateTip(insiderTip);
 
     return (
@@ -66,13 +68,14 @@ export default function CountryDestinationCard({
         >
             {/* Left: Photo (40% width on Desktop) */}
             <div className="relative w-full md:w-[40%] h-[250px] md:h-auto shrink-0 overflow-hidden">
-                <Image
+                {imageUrl && !imageFailed ? <Image
                     src={imageUrl}
                     alt={name}
                     fill
                     sizes="(max-width: 768px) 100vw, 40vw"
                     className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
-                />
+                    onError={() => setImageFailed(true)}
+                /> : <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-sky-50 px-6 text-center text-sky-700"><MapPin size={28} strokeWidth={1.5} /><span className="font-serif text-xl">{name}</span><span className="text-xs">Photo not available yet</span></div>}
                 <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent md:bg-gradient-to-r md:from-transparent md:to-white/80" />
             </div>
 

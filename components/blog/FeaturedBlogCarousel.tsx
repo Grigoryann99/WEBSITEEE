@@ -35,7 +35,7 @@ export default function FeaturedBlogCarousel({ posts }: { posts: BlogPost[] }) {
                 >
                     {/* Image Half */}
                     <div className="relative aspect-[16/10] lg:aspect-auto lg:min-h-[400px] overflow-hidden bg-gray-100">
-                        <Link href={`/blog/${featured.slug}`}>
+                        <Link href={`/guides/${featured.slug}`}>
                             <Image
                                 src={featured.image}
                                 alt={featured.title}
@@ -55,7 +55,7 @@ export default function FeaturedBlogCarousel({ posts }: { posts: BlogPost[] }) {
                             </span>
                             <span className="font-sans text-xs text-[#475569] font-medium">{featured.readTime}</span>
                         </div>
-                        <Link href={`/blog/${featured.slug}`}>
+                        <Link href={`/guides/${featured.slug}`}>
                             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-[#0F172A] mb-6 leading-[1.15] font-semibold hover:text-[#E11D48] transition-colors duration-300">
                                 {featured.title}
                             </h2>
@@ -64,7 +64,7 @@ export default function FeaturedBlogCarousel({ posts }: { posts: BlogPost[] }) {
                             {featured.description}
                         </p>
                         <Link
-                            href={`/blog/${featured.slug}`}
+                            href={`/guides/${featured.slug}`}
                             className="inline-flex items-center gap-3 font-sans text-xs font-bold uppercase tracking-[0.15em] text-[#E11D48] hover:text-[#0F172A] transition-colors group-hover:text-[#0F172A]"
                         >
                             Read Article

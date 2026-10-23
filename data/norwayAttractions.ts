@@ -117,7 +117,7 @@ export const norwayAttractions = [
     insiderTip: "Read about Norse mythology before visiting — the carvings of Urnes-style animals intertwined on the portals carry symbolic meaning from pre-Christian Norse beliefs that blend intriguingly with Christian architecture.",
     howToGetThere: "Drive from Flåm (45 minutes) or Lærdal (30 minutes). There is no regular public transport directly to Borgund.",
     cost: "Entry NOK 120 (€10). Includes audio guide.",
-    image: "/images/attractions/norway-borgund-stave-church.jpg"
+    image: "/images/attractions/norway-borgund-stave-church.optimized.webp"
   },
   {
     name: "Hardangerfjord",

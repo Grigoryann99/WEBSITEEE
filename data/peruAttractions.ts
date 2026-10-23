@@ -57,7 +57,7 @@ export const peruAttractions = [
     insiderTip: "Extend your trip to the less-visited Taquile Island for pristine views and a deeper understanding of local textile arts.",
     howToGetThere: "Fly into Juliaca (JUL) and take an hour's drive to Puno, then a boat to the islands.",
     cost: "Moderate",
-    image: '/images/attractions/peru-lake-titicaca-uros-islands.jpg'
+    image: '/images/attractions/peru-lake-titicaca-uros-islands.optimized.webp'
   },
   {
     name: "Nazca Lines",

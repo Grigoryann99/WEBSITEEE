@@ -1,0 +1,3957 @@
+{
+  "schemaVersion": 1,
+  "destination": {
+    "id": "italy/rome",
+    "name": "Rome",
+    "country": "Italy",
+    "countrySlug": "italy",
+    "citySlug": "rome",
+    "currency": "EUR"
+  },
+  "reviewPolicy": {
+    "details": 180,
+    "price": 14,
+    "hours": 7,
+    "media": 180
+  },
+  "entries": [
+    {
+      "place": {
+        "id": "colosseum",
+        "city": "rome",
+        "section": "see",
+        "subcategory": "Ancient site",
+        "name": "Colosseum",
+        "district": "Monti / Celio",
+        "address": "Piazza del Colosseo",
+        "coords": [
+          41.8902,
+          12.4922
+        ],
+        "summary": "The 1st-century amphitheatre that once seated around 50,000 spectators — Rome’s defining monument.",
+        "whyVisit": "Standing inside the arena shows the scale of imperial Rome better than any photo. The underground (hypogeum) and upper tiers need special tickets and sell out first.",
+        "goodFor": [
+          "First-time visitors",
+          "History lovers",
+          "Families with older kids"
+        ],
+        "price": {
+          "min": 18,
+          "max": 24,
+          "currency": "EUR",
+          "unit": "ticket",
+          "status": "approximate",
+          "includes": "Standard ticket includes the Roman Forum and Palatine Hill. Underground / Arena levels cost extra."
+        },
+        "priceLevel": 2,
+        "hours": {
+          "text": "Daily from 8:30; closing time changes by season (roughly 16:30 in winter to 19:15 in summer).",
+          "source": "parcocolosseo.it",
+          "status": "unverified"
+        },
+        "howToGet": "Metro Line B to Colosseo — the exit faces the monument.",
+        "tips": [
+          "Book a timed slot on the official site; same-day tickets are rarely available in season.",
+          "Go at opening or the last slot to avoid the heat and crowds.",
+          "Bring ID — names on tickets are checked."
+        ],
+        "interests": [
+          "history",
+          "views"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "family",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Parco archeologico del Colosseo (official)",
+            "url": "https://parcocolosseo.it/en/"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 150,
+        "booking": {
+          "label": "Book on official site",
+          "url": "https://ticketing.colosseo.it/en/",
+          "partner": "Official ticketing",
+          "sponsored": false,
+          "affiliate": false
+        }
+      },
+      "media": {
+        "type": "image",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1920px-Colosseo_2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "FeaturedPics · CC BY-SA 4.0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Colosseo_2020.jpg",
+        "representative": false
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "roman-forum",
+        "city": "rome",
+        "section": "see",
+        "subcategory": "Ancient site",
+        "name": "Roman Forum & Palatine Hill",
+        "district": "Centro Storico",
+        "address": "Via della Salara Vecchia 5/6",
+        "coords": [
+          41.8925,
+          12.4853
+        ],
+        "summary": "The ruins of ancient Rome’s political and religious heart, with the imperial palaces on the hill above.",
+        "whyVisit": "Walking the Via Sacra past temples and triumphal arches gives context to everything else you see in Rome. The Palatine has shade, gardens and the best view over the Forum.",
+        "goodFor": [
+          "History lovers",
+          "Photographers",
+          "Walkers"
+        ],
+        "price": {
+          "min": 18,
+          "max": 24,
+          "currency": "EUR",
+          "unit": "ticket",
+          "status": "approximate",
+          "includes": "Same combined ticket as the Colosseum (valid 24h, one entry per site)."
+        },
+        "priceLevel": 2,
+        "hours": {
+          "text": "Daily from 9:00; closing time changes by season.",
+          "source": "parcocolosseo.it",
+          "status": "unverified"
+        },
+        "howToGet": "5 minutes’ walk from Metro Colosseo; second entrance on Via di San Gregorio.",
+        "tips": [
+          "Little shade — bring water and a hat in summer.",
+          "Visit the Palatine first, then descend into the Forum.",
+          "The Terrazza del Palatino offers one of the best free-with-ticket views."
+        ],
+        "interests": [
+          "history",
+          "views"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "family",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Parco archeologico del Colosseo (official)",
+            "url": "https://parcocolosseo.it/en/"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 120,
+        "booking": {
+          "label": "Book on official site",
+          "url": "https://ticketing.colosseo.it/en/",
+          "partner": "Official ticketing",
+          "sponsored": false,
+          "affiliate": false
+        }
+      },
+      "media": {
+        "type": "image",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Foro_Romano_Musei_Capitolini_Roma.jpg/1920px-Foro_Romano_Musei_Capitolini_Roma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "This Photo was taken by Wolfgang Moroder.  \n\nFeel free to use my photos, but ple · CC BY-SA 3.0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Foro_Romano_Musei_Capitolini_Roma.jpg",
+        "representative": false
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "pantheon",
+        "city": "rome",
+        "section": "see",
+        "subcategory": "Temple & church",
+        "name": "Pantheon",
+        "district": "Centro Storico",
+        "address": "Piazza della Rotonda",
+        "coords": [
+          41.8986,
+          12.4769
+        ],
+        "summary": "A 2,000-year-old temple with the world’s largest unreinforced concrete dome and its open oculus.",
+        "whyVisit": "The light beam from the oculus moving across the interior is unforgettable, and the visit takes only 20–30 minutes — easy to fit into any walk.",
+        "goodFor": [
+          "Everyone",
+          "Short visits",
+          "Architecture fans"
+        ],
+        "price": {
+          "min": 5,
+          "max": 5,
+          "currency": "EUR",
+          "unit": "ticket",
+          "status": "approximate",
+          "includes": "Entry to the interior. Free for under-18s and on some religious services."
+        },
+        "priceLevel": 1,
+        "hours": {
+          "text": "Daily roughly 9:00–19:00; access can change during masses.",
+          "source": "pantheonroma.com",
+          "status": "unverified"
+        },
+        "howToGet": "10 minutes’ walk from Piazza Navona; buses to Corso Rinascimento or Largo di Torre Argentina.",
+        "tips": [
+          "Book online to skip the ticket queue.",
+          "Come back to the square at night when it is lit and lively."
+        ],
+        "interests": [
+          "history",
+          "art"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "family",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Pantheon (official)",
+            "url": "https://www.pantheonroma.com/"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 40
+      },
+      "media": {
+        "type": "image",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Pantheon_%28Rome%29_-_Right_side_and_front.jpg/1920px-Pantheon_%28Rome%29_-_Right_side_and_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "NikonZ7II · CC BY-SA 4.0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Pantheon_(Rome)_-_Right_side_and_front.jpg",
+        "representative": false
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "vatican-museums",
+        "city": "rome",
+        "section": "see",
+        "subcategory": "Museum",
+        "name": "Vatican Museums & Sistine Chapel",
+        "district": "Vatican / Prati",
+        "address": "Viale Vaticano",
+        "coords": [
+          41.9065,
+          12.4536
+        ],
+        "summary": "One of the world’s great art collections, ending in Michelangelo’s Sistine Chapel ceiling.",
+        "whyVisit": "Raphael Rooms, the Gallery of Maps and the Sistine Chapel in a single route. Plan at least three hours and pace yourself.",
+        "goodFor": [
+          "Art lovers",
+          "First-time visitors"
+        ],
+        "price": {
+          "min": 20,
+          "max": 25,
+          "currency": "EUR",
+          "unit": "ticket",
+          "status": "approximate",
+          "includes": "Museum route including the Sistine Chapel. Online booking adds a reservation fee."
+        },
+        "priceLevel": 2,
+        "hours": {
+          "text": "Mon–Sat, typically 8:00–19:00 (last entry earlier). Closed most Sundays except the last Sunday of the month.",
+          "source": "museivaticani.va",
+          "status": "unverified"
+        },
+        "howToGet": "Metro Line A to Ottaviano or Cipro, then 5–10 minutes’ walk.",
+        "tips": [
+          "Shoulders and knees must be covered.",
+          "Photography is not allowed in the Sistine Chapel.",
+          "Friday evening openings (seasonal) are calmer."
+        ],
+        "interests": [
+          "art",
+          "history"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "family",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Musei Vaticani (official)",
+            "url": "https://www.museivaticani.va/"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 210,
+        "booking": {
+          "label": "Book on official site",
+          "url": "https://tickets.museivaticani.va/",
+          "partner": "Official ticketing",
+          "sponsored": false,
+          "affiliate": false
+        }
+      },
+      "media": {
+        "type": "image",
+        "src": "/images/places/rome/vatican-museums.webp",
+        "credit": "Richard Mortel from Riyadh, Saudi Arabia · CC BY 2.0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Entrance_to_the_Vatican_Museums_(48758630053).jpg",
+        "representative": false,
+        "context": "venue",
+        "alt": "The historic entrance to the Vatican Museums.",
+        "caption": "The historic Vatican Museums entrance; visitor access arrangements may differ.",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "changes": "Resized and converted to WebP. Cards may display a crop."
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": "2026-10-21",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Entrance_to_the_Vatican_Museums_(48758630053).jpg"
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "st-peters-basilica",
+        "city": "rome",
+        "section": "see",
+        "subcategory": "Church",
+        "name": "St. Peter’s Basilica & Dome",
+        "district": "Vatican",
+        "address": "Piazza San Pietro",
+        "coords": [
+          41.9022,
+          12.4539
+        ],
+        "summary": "The largest church in the world, with Michelangelo’s Pietà and a climbable dome.",
+        "whyVisit": "Entry to the basilica is free; the dome climb (551 steps, or lift + 320 steps) rewards you with the best panorama in Rome.",
+        "goodFor": [
+          "Everyone",
+          "Views",
+          "Budget travellers"
+        ],
+        "price": {
+          "min": 0,
+          "max": 17,
+          "currency": "EUR",
+          "unit": "basilica free · dome extra",
+          "status": "approximate",
+          "free": true,
+          "includes": "Basilica free. Dome climb paid (stairs or lift option)."
+        },
+        "priceLevel": 1,
+        "hours": {
+          "text": "Basilica usually from 7:00 to 18:00–19:00; dome closes earlier.",
+          "source": "vatican.va",
+          "status": "unverified"
+        },
+        "howToGet": "Metro Line A to Ottaviano, then 10 minutes’ walk down Via di Porta Angelica.",
+        "tips": [
+          "Security queue is shortest before 8:00.",
+          "Dress code is enforced (covered shoulders and knees)."
+        ],
+        "interests": [
+          "history",
+          "art",
+          "views"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "family",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Basilica di San Pietro (official)",
+            "url": "https://www.basilicasanpietro.va/en.html"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 120
+      },
+      "media": {
+        "type": "image",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg/1920px-Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Alvesgaspar · CC BY-SA 4.0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg",
+        "representative": false
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "trevi-fountain",
+        "city": "rome",
+        "section": "see",
+        "subcategory": "Landmark",
+        "name": "Trevi Fountain",
+        "district": "Trevi",
+        "address": "Piazza di Trevi",
+        "coords": [
+          41.9009,
+          12.4833
+        ],
+        "summary": "The baroque fountain where visitors toss a coin to guarantee a return to Rome.",
+        "whyVisit": "It is genuinely spectacular, but the experience depends on timing — early morning or late night is a completely different place.",
+        "goodFor": [
+          "Couples",
+          "First-time visitors",
+          "Photographers"
+        ],
+        "price": {
+          "min": 0,
+          "max": 2,
+          "currency": "EUR",
+          "unit": "basin-side access",
+          "status": "approximate",
+          "includes": "The square is free. The city has introduced managed access/fee for the area next to the basin — check before you go."
+        },
+        "priceLevel": 1,
+        "hours": {
+          "text": "Square open 24h; managed basin access has set hours.",
+          "source": "turismoroma.it",
+          "status": "unverified"
+        },
+        "howToGet": "10 minutes’ walk from Metro Barberini or Spagna.",
+        "tips": [
+          "Visit before 8:00 for photos without crowds.",
+          "Throw the coin with your right hand over your left shoulder."
+        ],
+        "interests": [
+          "views",
+          "romance"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "family",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Turismo Roma (official city tourism)",
+            "url": "https://www.turismoroma.it/en"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 20
+      },
+      "media": {
+        "type": "image",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Trevi_Fountain_-_Roma.jpg/1920px-Trevi_Fountain_-_Roma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "NikonZ7II · CC BY-SA 4.0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Trevi_Fountain_-_Roma.jpg",
+        "representative": false
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "borghese-gallery",
+        "city": "rome",
+        "section": "see",
+        "subcategory": "Museum",
+        "name": "Galleria Borghese",
+        "district": "Villa Borghese",
+        "address": "Piazzale Scipione Borghese 5",
+        "coords": [
+          41.9142,
+          12.4921
+        ],
+        "summary": "Bernini sculptures and Caravaggio paintings in an intimate villa — entry by 2-hour timed slot only.",
+        "whyVisit": "Bernini’s Apollo and Daphne seen up close is one of Rome’s great moments. Limited numbers keep it calm.",
+        "goodFor": [
+          "Art lovers",
+          "Couples"
+        ],
+        "price": {
+          "min": 15,
+          "max": 17,
+          "currency": "EUR",
+          "unit": "ticket",
+          "status": "approximate",
+          "includes": "Timed 2-hour entry; reservation mandatory, booking fee applies."
+        },
+        "priceLevel": 2,
+        "hours": {
+          "text": "Tue–Sun 9:00–19:00 in timed slots; closed Mondays.",
+          "source": "galleriaborghese.beniculturali.it",
+          "status": "unverified"
+        },
+        "howToGet": "Bus 910 or 61 to Pinciana/Museo Borghese, or a 20-minute park walk from Metro Spagna.",
+        "tips": [
+          "Book weeks ahead in high season.",
+          "Combine with a walk in Villa Borghese park and the Pincio terrace."
+        ],
+        "interests": [
+          "art",
+          "romance"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple"
+        ],
+        "sources": [
+          {
+            "label": "Galleria Borghese (official)",
+            "url": "https://galleriaborghese.beniculturali.it/en/"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 120
+      },
+      "media": {
+        "type": "image",
+        "src": "/images/places/rome/borghese-gallery.webp",
+        "credit": "José Luiz · CC BY-SA 4.0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Facade_-_Galleria_Borghese_-_Rome_-_Italy_2015.JPG",
+        "representative": false,
+        "context": "venue",
+        "alt": "The exterior facade of Galleria Borghese in Rome.",
+        "caption": "Galleria Borghese exterior, photographed in 2015.",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Resized and converted to WebP. Cards may display a crop."
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": "2026-10-21",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Facade_-_Galleria_Borghese_-_Rome_-_Italy_2015.JPG"
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "spanish-steps",
+        "city": "rome",
+        "section": "see",
+        "subcategory": "Landmark",
+        "name": "Spanish Steps & Piazza di Spagna",
+        "district": "Tridente",
+        "address": "Piazza di Spagna",
+        "coords": [
+          41.906,
+          12.4828
+        ],
+        "summary": "135 baroque steps linking Piazza di Spagna with Trinità dei Monti church.",
+        "whyVisit": "The heart of the elegant Tridente — combine with Via Condotti shopping and the view from the top.",
+        "goodFor": [
+          "Couples",
+          "Shoppers",
+          "First-time visitors"
+        ],
+        "price": {
+          "currency": "EUR",
+          "unit": "free",
+          "status": "approximate",
+          "free": true
+        },
+        "priceLevel": 1,
+        "howToGet": "Metro Line A to Spagna.",
+        "tips": [
+          "Sitting on the steps is prohibited and fined.",
+          "Walk up to Trinità dei Monti for the view down Via Condotti."
+        ],
+        "interests": [
+          "views",
+          "shopping",
+          "romance"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "family",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Turismo Roma",
+            "url": "https://www.turismoroma.it/en"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 30
+      },
+      "media": {
+        "type": "image",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Piazza_di_Spagna_%28Rome%29_0004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Arnaud 25 · CC BY-SA 3.0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Piazza_di_Spagna_(Rome)_0004.jpg",
+        "representative": false
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "castel-sant-angelo",
+        "city": "rome",
+        "section": "see",
+        "subcategory": "Museum & fortress",
+        "name": "Castel Sant’Angelo",
+        "district": "Borgo",
+        "address": "Lungotevere Castello 50",
+        "coords": [
+          41.9031,
+          12.4663
+        ],
+        "summary": "Hadrian’s mausoleum turned papal fortress, with a rooftop terrace over the Tiber.",
+        "whyVisit": "The terrace view toward St. Peter’s is superb at sunset, and the Ponte Sant’Angelo angels make the approach memorable.",
+        "goodFor": [
+          "Families",
+          "Views",
+          "History lovers"
+        ],
+        "price": {
+          "min": 15,
+          "max": 17,
+          "currency": "EUR",
+          "unit": "ticket",
+          "status": "approximate"
+        },
+        "priceLevel": 2,
+        "hours": {
+          "text": "Tue–Sun 9:00–19:30; closed Mondays.",
+          "source": "castelsantangelo.com",
+          "status": "unverified"
+        },
+        "howToGet": "Metro Line A to Lepanto, or 10 minutes’ walk from Piazza Navona across Ponte Sant’Angelo.",
+        "tips": [
+          "The café on the upper level has one of the best-value views in Rome."
+        ],
+        "interests": [
+          "history",
+          "views",
+          "family"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "family",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Museo Nazionale di Castel Sant’Angelo",
+            "url": "https://direzionemuseiroma.cultura.gov.it/castel-santangelo/"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 90
+      },
+      "media": {
+        "type": "image",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Castel_Sant%27Angelo_at_Night.jpg/1920px-Castel_Sant%27Angelo_at_Night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Livioandronico2013 · CC BY-SA 4.0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Castel_Sant%27Angelo_at_Night.jpg",
+        "representative": false
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "trastevere-walk",
+        "city": "rome",
+        "section": "see",
+        "subcategory": "Neighbourhood",
+        "name": "Trastevere evening stroll",
+        "district": "Trastevere",
+        "address": "Piazza di Santa Maria in Trastevere",
+        "coords": [
+          41.8895,
+          12.4703
+        ],
+        "summary": "Ivy-covered lanes, a 12th-century mosaic church and Rome’s liveliest evening atmosphere.",
+        "whyVisit": "Best as a slow evening: golden-hour walk, dinner in a trattoria, then a drink on Piazza Trilussa.",
+        "goodFor": [
+          "Couples",
+          "Friends",
+          "Foodies"
+        ],
+        "price": {
+          "currency": "EUR",
+          "unit": "free",
+          "status": "approximate",
+          "free": true
+        },
+        "priceLevel": 1,
+        "howToGet": "Tram 8 from Largo Argentina to Belli or Trastevere/Mastai; or walk across Ponte Sisto.",
+        "tips": [
+          "Santa Maria in Trastevere’s mosaics are free to see.",
+          "Restaurants on the main squares cost more — go one street back."
+        ],
+        "interests": [
+          "local",
+          "nightlife",
+          "romance",
+          "food"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Turismo Roma — Trastevere",
+            "url": "https://www.turismoroma.it/en"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 120
+      },
+      "media": {
+        "type": "image",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Santa_Maria_in_Trastevere_fountain.jpg/1920px-Santa_Maria_in_Trastevere_fountain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Jensens · Public domain · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Santa_Maria_in_Trastevere_fountain.jpg",
+        "representative": false
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "capitoline-museums",
+        "city": "rome",
+        "section": "see",
+        "subcategory": "Museum",
+        "name": "Capitoline Museums",
+        "district": "Campidoglio",
+        "address": "Piazza del Campidoglio 1",
+        "coords": [
+          41.893,
+          12.4828
+        ],
+        "summary": "The world’s oldest public museum, on Michelangelo’s piazza, home of the Capitoline Wolf.",
+        "whyVisit": "Far calmer than the Vatican, with the original Marcus Aurelius statue and a terrace over the Forum.",
+        "goodFor": [
+          "Art lovers",
+          "Rainy days"
+        ],
+        "price": {
+          "min": 15,
+          "max": 20,
+          "currency": "EUR",
+          "unit": "ticket",
+          "status": "approximate",
+          "includes": "Price higher during temporary exhibitions."
+        },
+        "priceLevel": 2,
+        "hours": {
+          "text": "Daily 9:30–19:30.",
+          "source": "museicapitolini.org",
+          "status": "unverified"
+        },
+        "howToGet": "5 minutes’ walk from Piazza Venezia; buses to Piazza Venezia.",
+        "tips": [
+          "The Tabularium gallery offers a free-with-ticket Forum view."
+        ],
+        "interests": [
+          "art",
+          "history",
+          "views"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "family"
+        ],
+        "sources": [
+          {
+            "label": "Musei Capitolini (official)",
+            "url": "https://www.museicapitolini.org/en"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 120
+      },
+      "media": {
+        "type": "image",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/0_Cordonata_-_Dioscuri_-_Palazzo_Senatorio.JPG/1920px-0_Cordonata_-_Dioscuri_-_Palazzo_Senatorio.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Jean-Pol GRANDMONT · CC BY-SA 3.0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:0_Cordonata_-_Dioscuri_-_Palazzo_Senatorio.JPG",
+        "representative": false
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "baths-of-caracalla",
+        "city": "rome",
+        "section": "see",
+        "subcategory": "Ancient site",
+        "name": "Baths of Caracalla",
+        "district": "Aventino",
+        "address": "Viale delle Terme di Caracalla",
+        "coords": [
+          41.879,
+          12.4925
+        ],
+        "summary": "Vast 3rd-century bath complex with towering walls and mosaic floors; summer opera venue.",
+        "whyVisit": "Massive, atmospheric and rarely crowded — a quieter alternative to the Forum.",
+        "goodFor": [
+          "History lovers",
+          "Relaxed days"
+        ],
+        "price": {
+          "min": 8,
+          "max": 18,
+          "currency": "EUR",
+          "unit": "ticket",
+          "status": "approximate"
+        },
+        "priceLevel": 1,
+        "hours": {
+          "text": "Tue–Sun from 9:00; closing time seasonal.",
+          "source": "soprintendenzaspecialeroma.it",
+          "status": "unverified"
+        },
+        "howToGet": "Metro Line B to Circo Massimo, then 7 minutes’ walk.",
+        "tips": [
+          "Check the Caracalla Festival programme for open-air opera in summer."
+        ],
+        "interests": [
+          "history",
+          "relaxed"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "family"
+        ],
+        "sources": [
+          {
+            "label": "Soprintendenza Speciale di Roma",
+            "url": "https://www.soprintendenzaspecialeroma.it/"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 75
+      },
+      "media": {
+        "type": "image",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Baths_of_Caracalla%2C_facing_Caldarium.jpg/1920px-Baths_of_Caracalla%2C_facing_Caldarium.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Ethan Doyle White · CC BY-SA 4.0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Baths_of_Caracalla,_facing_Caldarium.jpg",
+        "representative": false
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "roscioli-salumeria",
+        "city": "rome",
+        "section": "eat",
+        "subcategory": "Restaurant & deli",
+        "name": "Roscioli Salumeria con Cucina",
+        "district": "Campo de’ Fiori",
+        "address": "Via dei Giubbonari 21",
+        "coords": [
+          41.8942,
+          12.4741
+        ],
+        "summary": "Deli-restaurant famous for carbonara, cured meats and a serious wine list.",
+        "whyVisit": "One of the most reliable places for the Roman classics done with exceptional ingredients.",
+        "goodFor": [
+          "Foodies",
+          "Couples",
+          "Wine lovers"
+        ],
+        "price": {
+          "min": 45,
+          "max": 75,
+          "currency": "EUR",
+          "unit": "per person",
+          "status": "approximate",
+          "includes": "Pasta, main or cheese plate, glass of wine."
+        },
+        "priceLevel": 3,
+        "hours": {
+          "text": "Lunch and dinner daily.",
+          "source": "salumeriaroscioli.com",
+          "status": "unverified"
+        },
+        "howToGet": "3 minutes’ walk from Campo de’ Fiori.",
+        "tips": [
+          "Reserve several days ahead, especially for dinner.",
+          "Ask for the counter if you’re two."
+        ],
+        "interests": [
+          "food",
+          "local"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Roscioli (official)",
+            "url": "https://www.salumeriaroscioli.com/"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 90
+      },
+      "media": {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1598866594230-a7c12756260f?ixid=M3w5MDA5OTh8MHwxfHNlYXJjaHwxfHxjYXJib25hcmElMjBwYXN0YXxlbnwxfDB8fHwxNzkyMzI0ODY0fDA&ixlib=rb-4.1.0&w=1400&q=80&auto=format&fit=crop",
+        "credit": "Danijela Prijovic · Unsplash",
+        "creditUrl": "https://unsplash.com/photos/pasta-with-red-sauce-on-white-ceramic-round-plate-qits91IZv1o?utm_source=veloratravel&utm_medium=referral",
+        "representative": true
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "da-enzo",
+        "city": "rome",
+        "section": "eat",
+        "subcategory": "Trattoria",
+        "name": "Da Enzo al 29",
+        "district": "Trastevere",
+        "address": "Via dei Vascellari 29",
+        "coords": [
+          41.8885,
+          12.4772
+        ],
+        "summary": "Tiny family trattoria for cacio e pepe, amatriciana and Roman artichokes.",
+        "whyVisit": "Authentic, generous and good value — the kind of place locals queue for.",
+        "goodFor": [
+          "Foodies",
+          "Budget travellers",
+          "Couples"
+        ],
+        "price": {
+          "min": 25,
+          "max": 40,
+          "currency": "EUR",
+          "unit": "per person",
+          "status": "approximate"
+        },
+        "priceLevel": 2,
+        "hours": {
+          "text": "Mon–Sat lunch and dinner; usually closed Sunday.",
+          "source": "daenzoal29.com",
+          "status": "unverified"
+        },
+        "howToGet": "Tram 8 to Belli, then 5 minutes’ walk.",
+        "tips": [
+          "Arrive 15 minutes before opening or expect to queue.",
+          "Order the tiramisù early — it sells out."
+        ],
+        "interests": [
+          "food",
+          "local"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "friends",
+          "family"
+        ],
+        "sources": [
+          {
+            "label": "Da Enzo al 29 (official)",
+            "url": "https://www.daenzoal29.com/"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 75
+      },
+      "media": {
+        "type": "image",
+        "src": "/images/places/rome/da-enzo.webp",
+        "credit": "daryl_mitchell from Saskatoon, Saskatchewan, Canada · CC BY-SA 2.0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Food_Tour_Start_(15116589840).jpg",
+        "representative": false,
+        "context": "venue",
+        "alt": "An antipasto dish photographed at Da Enzo al 29 in 2014.",
+        "caption": "A dish photographed at Da Enzo al 29 in 2014. Menu and presentation may change.",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "changes": "Resized and converted to WebP. Cards may display a crop."
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": "2026-10-21",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Food_Tour_Start_(15116589840).jpg"
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "armando-al-pantheon",
+        "city": "rome",
+        "section": "eat",
+        "subcategory": "Trattoria",
+        "name": "Armando al Pantheon",
+        "district": "Centro Storico",
+        "address": "Salita de’ Crescenzi 31",
+        "coords": [
+          41.8987,
+          12.4762
+        ],
+        "summary": "Family-run since 1961, steps from the Pantheon — classic Roman cooking.",
+        "whyVisit": "Rare example of an excellent, honest restaurant right next to a major monument.",
+        "goodFor": [
+          "Couples",
+          "Families",
+          "Traditional food"
+        ],
+        "price": {
+          "min": 35,
+          "max": 60,
+          "currency": "EUR",
+          "unit": "per person",
+          "status": "approximate"
+        },
+        "priceLevel": 3,
+        "hours": {
+          "text": "Mon–Sat lunch and dinner; closed Sunday.",
+          "source": "armandoalpantheon.it",
+          "status": "unverified"
+        },
+        "howToGet": "1 minute from the Pantheon.",
+        "tips": [
+          "Book online — walk-ins are rarely possible."
+        ],
+        "interests": [
+          "food",
+          "local"
+        ],
+        "tripTypes": [
+          "couple",
+          "family",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Armando al Pantheon (official)",
+            "url": "https://www.armandoalpantheon.it/"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 90
+      },
+      "media": {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1699183385736-5c8d99251875?ixid=M3w5MDA5OTh8MHwxfHNlYXJjaHwxfHxpdGFsaWFuJTIwcmVzdGF1cmFudCUyMHRhYmxlfGVufDF8MHx8fDE3OTIzMjQ4NjZ8MA&ixlib=rb-4.1.0&w=1400&q=80&auto=format&fit=crop",
+        "credit": "Leonardo Cirimbelli · Unsplash",
+        "creditUrl": "https://unsplash.com/photos/a-restaurant-with-red-and-white-checkered-tablecloths-QZhgsjRHXPU?utm_source=veloratravel&utm_medium=referral",
+        "representative": true
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "pizzarium",
+        "city": "rome",
+        "section": "eat",
+        "subcategory": "Pizza al taglio",
+        "name": "Pizzarium Bonci",
+        "district": "Prati / Vatican",
+        "address": "Via della Meloria 43",
+        "coords": [
+          41.9067,
+          12.4466
+        ],
+        "summary": "Gabriele Bonci’s celebrated pizza by the slice with creative toppings.",
+        "whyVisit": "A perfect fast lunch after the Vatican Museums.",
+        "goodFor": [
+          "Budget travellers",
+          "Families",
+          "Quick lunch"
+        ],
+        "price": {
+          "min": 8,
+          "max": 15,
+          "currency": "EUR",
+          "unit": "per person",
+          "status": "approximate",
+          "includes": "Priced by weight."
+        },
+        "priceLevel": 1,
+        "hours": {
+          "text": "Daily, late morning to late evening.",
+          "source": "bonci.it",
+          "status": "unverified"
+        },
+        "howToGet": "Opposite Metro Cipro (Line A).",
+        "tips": [
+          "Standing only — take it to the benches outside.",
+          "Point at 3–4 different slices to share."
+        ],
+        "interests": [
+          "food",
+          "family"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "family",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Bonci (official)",
+            "url": "https://www.bonci.it/"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 30
+      },
+      "media": {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1716237385259-276d0973f8e0?ixid=M3w5MDA5OTh8MHwxfHNlYXJjaHwxfHxwaXp6YSUyMGFsJTIwdGFnbGlvfGVufDF8MHx8fDE3OTIzMjQ4Njd8MA&ixlib=rb-4.1.0&w=1400&q=80&auto=format&fit=crop",
+        "credit": "Aldward Castillo · Unsplash",
+        "creditUrl": "https://unsplash.com/photos/a-close-up-of-a-piece-of-paper-with-words-on-it-nipqGypUy9Y?utm_source=veloratravel&utm_medium=referral",
+        "representative": true
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "antico-forno-roscioli",
+        "city": "rome",
+        "section": "eat",
+        "subcategory": "Bakery",
+        "name": "Antico Forno Roscioli",
+        "district": "Campo de’ Fiori",
+        "address": "Via dei Chiavari 34",
+        "coords": [
+          41.8935,
+          12.4733
+        ],
+        "summary": "Historic bakery for pizza bianca, pizza rossa and Roman pastries.",
+        "whyVisit": "Cheap, fast and outstanding — Rome’s street-food breakfast or snack.",
+        "goodFor": [
+          "Budget travellers",
+          "Breakfast",
+          "Families"
+        ],
+        "price": {
+          "min": 3,
+          "max": 10,
+          "currency": "EUR",
+          "unit": "per person",
+          "status": "approximate"
+        },
+        "priceLevel": 1,
+        "hours": {
+          "text": "Mon–Sat from early morning; Sunday reduced.",
+          "source": "anticofornoroscioli.it",
+          "status": "unverified"
+        },
+        "howToGet": "2 minutes from Campo de’ Fiori.",
+        "tips": [
+          "Take a number at the counter."
+        ],
+        "interests": [
+          "food",
+          "local",
+          "family"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "family",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Antico Forno Roscioli (official)",
+            "url": "https://www.anticofornoroscioli.it/"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 20
+      },
+      "media": {
+        "type": "image",
+        "src": "/images/places/rome/antico-forno-roscioli.webp",
+        "credit": "Ph8l · CC BY-SA 3.0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Forno_Roscoli%27s_Sign.jpg",
+        "representative": false,
+        "context": "venue",
+        "alt": "The sign outside Antico Forno Roscioli in Rome.",
+        "caption": "The bakery sign photographed in 2012.",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "changes": "Resized and converted to WebP. Cards may display a crop."
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": "2026-10-21",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Forno_Roscoli%27s_Sign.jpg"
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "giolitti",
+        "city": "rome",
+        "section": "eat",
+        "subcategory": "Gelateria",
+        "name": "Giolitti",
+        "district": "Centro Storico",
+        "address": "Via degli Uffici del Vicario 40",
+        "coords": [
+          41.9008,
+          12.4774
+        ],
+        "summary": "Gelateria open since 1900, a short walk from the Pantheon.",
+        "whyVisit": "A classic Roman ritual — pay first at the till, then order at the counter.",
+        "goodFor": [
+          "Families",
+          "Everyone"
+        ],
+        "price": {
+          "min": 3,
+          "max": 6,
+          "currency": "EUR",
+          "unit": "per person",
+          "status": "approximate"
+        },
+        "priceLevel": 1,
+        "hours": {
+          "text": "Daily, morning until late night.",
+          "source": "giolitti.it",
+          "status": "unverified"
+        },
+        "howToGet": "4 minutes’ walk from the Pantheon.",
+        "tips": [
+          "Ask for panna (whipped cream) on top — usually free."
+        ],
+        "interests": [
+          "food",
+          "family"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "family",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Giolitti (official)",
+            "url": "https://www.giolitti.it/"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 15
+      },
+      "media": {
+        "type": "image",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/GiolittiCafeRoma.jpg/1920px-GiolittiCafeRoma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Chino at en.wikipedia · Public domain · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:GiolittiCafeRoma.jpg",
+        "representative": false
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "sant-eustachio",
+        "city": "rome",
+        "section": "eat",
+        "subcategory": "Café",
+        "name": "Sant’Eustachio Il Caffè",
+        "district": "Centro Storico",
+        "address": "Piazza di Sant’Eustachio 82",
+        "coords": [
+          41.8982,
+          12.4753
+        ],
+        "summary": "Legendary espresso bar roasting its own beans since 1938.",
+        "whyVisit": "Try the Gran Caffè, standing at the bar like a Roman. Bags of beans make a good gift.",
+        "goodFor": [
+          "Coffee lovers",
+          "Quick stop",
+          "Gift shoppers"
+        ],
+        "price": {
+          "min": 1.5,
+          "max": 6,
+          "currency": "EUR",
+          "unit": "per person",
+          "status": "approximate"
+        },
+        "priceLevel": 1,
+        "hours": {
+          "text": "Daily, early morning to late evening.",
+          "source": "santeustachioilcaffe.it",
+          "status": "unverified"
+        },
+        "howToGet": "2 minutes from the Pantheon.",
+        "tips": [
+          "Coffee at the bar is cheaper than at a table.",
+          "Say “amaro” if you want it without sugar — it comes sweetened by default."
+        ],
+        "interests": [
+          "food",
+          "local",
+          "shopping"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "family",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Sant’Eustachio (official)",
+            "url": "https://www.santeustachioilcaffe.it/"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 15,
+        "giftTags": [
+          "food"
+        ]
+      },
+      "media": {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1570784332176-fdd73da66f03?ixid=M3w5MDA5OTh8MHwxfHNlYXJjaHwxfHxlc3ByZXNzbyUyMGN1cHxlbnwxfDB8fHwxNzkyMzI0ODgzfDA&ixlib=rb-4.1.0&w=1400&q=80&auto=format&fit=crop",
+        "credit": "Samantha Ram · Unsplash",
+        "creditUrl": "https://unsplash.com/photos/white-ceramic-mug-Ha5_JcYArf0?utm_source=veloratravel&utm_medium=referral",
+        "representative": true
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "trapizzino",
+        "city": "rome",
+        "section": "eat",
+        "subcategory": "Street food",
+        "name": "Trapizzino Trastevere",
+        "district": "Trastevere",
+        "address": "Piazza Trilussa 46",
+        "coords": [
+          41.8893,
+          12.4699
+        ],
+        "summary": "Pizza-dough pockets filled with Roman stews like chicken cacciatora or oxtail.",
+        "whyVisit": "Quick, cheap and very Roman — ideal before a night out in Trastevere.",
+        "goodFor": [
+          "Budget travellers",
+          "Friends"
+        ],
+        "price": {
+          "min": 5,
+          "max": 12,
+          "currency": "EUR",
+          "unit": "per person",
+          "status": "approximate"
+        },
+        "priceLevel": 1,
+        "hours": {
+          "text": "Daily, lunch to late night.",
+          "source": "trapizzino.it",
+          "status": "unverified"
+        },
+        "howToGet": "At the Trastevere end of Ponte Sisto.",
+        "tips": [
+          "Pair with a supplì (fried rice ball)."
+        ],
+        "interests": [
+          "food",
+          "nightlife",
+          "local"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "friends",
+          "family"
+        ],
+        "sources": [
+          {
+            "label": "Trapizzino (official)",
+            "url": "https://www.trapizzino.it/"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 25
+      },
+      "media": {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1621852004158-f3bc188ace2d?ixid=M3w5MDA5OTh8MHwxfHNlYXJjaHwxfHxpdGFsaWFuJTIwc3RyZWV0JTIwZm9vZHxlbnwxfDB8fHwxNzkyMzI0ODY5fDA&ixlib=rb-4.1.0&w=1400&q=80&auto=format&fit=crop",
+        "credit": "jack shingai · Unsplash",
+        "creditUrl": "https://unsplash.com/photos/sandwich-with-vegetable-on-brown-wooden-table-hdhWH1xoYwM?utm_source=veloratravel&utm_medium=referral",
+        "representative": true
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "freni-e-frizioni",
+        "city": "rome",
+        "section": "eat",
+        "subcategory": "Bar · aperitivo",
+        "name": "Freni e Frizioni",
+        "district": "Trastevere",
+        "address": "Via del Politeama 4",
+        "coords": [
+          41.8922,
+          12.4689
+        ],
+        "summary": "Former garage turned cocktail bar with a busy aperitivo buffet.",
+        "whyVisit": "The young-Roman aperitivo scene — drinks spill out onto the piazza.",
+        "goodFor": [
+          "Friends",
+          "Nightlife",
+          "Solo travellers"
+        ],
+        "price": {
+          "min": 10,
+          "max": 15,
+          "currency": "EUR",
+          "unit": "per drink",
+          "status": "approximate",
+          "includes": "Aperitivo snacks with a drink in early evening."
+        },
+        "priceLevel": 2,
+        "hours": {
+          "text": "Evenings daily until late.",
+          "source": "freniefrizioni.com",
+          "status": "unverified"
+        },
+        "howToGet": "Across Ponte Sisto, first left.",
+        "tips": [
+          "Arrive around 19:00 for aperitivo."
+        ],
+        "interests": [
+          "nightlife",
+          "local"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Freni e Frizioni (official)",
+            "url": "https://www.freniefrizioni.com/"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 90
+      },
+      "media": {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1700615753059-0780f634a434?ixid=M3w5MDA5OTh8MHwxfHNlYXJjaHwxfHxhcGVyaXRpdm8lMjBzcHJpdHp8ZW58MXwwfHx8MTc5MjMyNDg3MXww&ixlib=rb-4.1.0&w=1400&q=80&auto=format&fit=crop",
+        "credit": "pen_ash · Unsplash",
+        "creditUrl": "https://unsplash.com/photos/a-couple-of-people-that-are-holding-some-wine-glasses-CNxZ0mw2cKc?utm_source=veloratravel&utm_medium=referral",
+        "representative": true
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "drink-kong",
+        "city": "rome",
+        "section": "eat",
+        "subcategory": "Cocktail bar",
+        "name": "Drink Kong",
+        "district": "Monti",
+        "address": "Piazza di San Martino ai Monti 8",
+        "coords": [
+          41.8952,
+          12.4977
+        ],
+        "summary": "Neon-lit, Japanese-inspired cocktail bar regularly in international best-bar lists.",
+        "whyVisit": "For a special-occasion cocktail in a design-forward setting.",
+        "goodFor": [
+          "Couples",
+          "Cocktail lovers",
+          "Friends"
+        ],
+        "price": {
+          "min": 14,
+          "max": 18,
+          "currency": "EUR",
+          "unit": "per drink",
+          "status": "approximate"
+        },
+        "priceLevel": 3,
+        "hours": {
+          "text": "Evenings until late.",
+          "source": "drinkkong.com",
+          "status": "unverified"
+        },
+        "howToGet": "8 minutes’ walk from Metro Vittorio Emanuele or Cavour.",
+        "tips": [
+          "Book a table online for weekends."
+        ],
+        "interests": [
+          "nightlife"
+        ],
+        "tripTypes": [
+          "couple",
+          "friends",
+          "solo"
+        ],
+        "sources": [
+          {
+            "label": "Drink Kong (official)",
+            "url": "https://www.drinkkong.com/"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 90
+      },
+      "media": {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1696062985929-1f87e7d7cb21?ixid=M3w5MDA5OTh8MHwxfHNlYXJjaHwxfHxjb2NrdGFpbCUyMGJhciUyMG5lb258ZW58MXwwfHx8MTc5MjMyNDg3Mnww&ixlib=rb-4.1.0&w=1400&q=80&auto=format&fit=crop",
+        "credit": "Ambitious Studio* | Rick Barrett · Unsplash",
+        "creditUrl": "https://unsplash.com/photos/a-neon-sign-in-front-of-a-green-wall-WDSvvPDDH7A?utm_source=veloratravel&utm_medium=referral",
+        "representative": true
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "bar-del-fico",
+        "city": "rome",
+        "section": "eat",
+        "subcategory": "Bar & restaurant",
+        "name": "Bar del Fico",
+        "district": "Navona",
+        "address": "Piazza del Fico 26",
+        "coords": [
+          41.8999,
+          12.4706
+        ],
+        "summary": "Lively bar under a fig tree behind Piazza Navona; locals play chess outside.",
+        "whyVisit": "Easy, central spot for an evening drink after walking the historic centre.",
+        "goodFor": [
+          "Couples",
+          "Friends"
+        ],
+        "price": {
+          "min": 10,
+          "max": 14,
+          "currency": "EUR",
+          "unit": "per drink",
+          "status": "approximate"
+        },
+        "priceLevel": 2,
+        "hours": {
+          "text": "Daily, morning until late.",
+          "source": "bardelfico.com",
+          "status": "unverified"
+        },
+        "howToGet": "3 minutes west of Piazza Navona.",
+        "tips": [
+          "Terrace tables fill around 20:00."
+        ],
+        "interests": [
+          "nightlife",
+          "local"
+        ],
+        "tripTypes": [
+          "couple",
+          "friends",
+          "solo"
+        ],
+        "sources": [
+          {
+            "label": "Bar del Fico (official)",
+            "url": "https://www.bardelfico.com/"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 75
+      },
+      "media": {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1652707227612-e3c18815ccc7?ixid=M3w5MDA5OTh8MHwxfHNlYXJjaHwxfHxwaWF6emElMjBiYXIlMjBldmVuaW5nJTIwcm9tZXxlbnwxfDB8fHwxNzkyMzI0ODc0fDA&ixlib=rb-4.1.0&w=1400&q=80&auto=format&fit=crop",
+        "credit": "PhotoHound · Unsplash",
+        "creditUrl": "https://unsplash.com/photos/a-river-with-a-bridge-and-a-building-in-the-background-OuQFAIP-pek?utm_source=veloratravel&utm_medium=referral",
+        "representative": true
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "campo-de-fiori-market",
+        "city": "rome",
+        "section": "shop",
+        "subcategory": "Market",
+        "name": "Campo de’ Fiori market",
+        "district": "Campo de’ Fiori",
+        "address": "Piazza Campo de’ Fiori",
+        "coords": [
+          41.8956,
+          12.4722
+        ],
+        "summary": "Morning open-air market with produce, spices, pasta and edible souvenirs.",
+        "whyVisit": "Lively and photogenic. Some stalls target tourists, so compare prices.",
+        "goodFor": [
+          "Gift shoppers",
+          "Foodies",
+          "Families"
+        ],
+        "price": {
+          "min": 3,
+          "max": 15,
+          "currency": "EUR",
+          "unit": "per gift item",
+          "status": "approximate",
+          "includes": "Dried pasta, spice mixes, limoncello miniatures."
+        },
+        "priceLevel": 1,
+        "hours": {
+          "text": "Mon–Sat mornings, roughly 7:00–14:00.",
+          "source": "turismoroma.it",
+          "status": "unverified"
+        },
+        "howToGet": "5 minutes south of Piazza Navona.",
+        "tips": [
+          "Compare prices between stalls — packaged “Roman spice” sets vary a lot.",
+          "Pair with Antico Forno Roscioli nearby."
+        ],
+        "interests": [
+          "shopping",
+          "local",
+          "food"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "family",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Turismo Roma",
+            "url": "https://www.turismoroma.it/en"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 40,
+        "giftTags": [
+          "food",
+          "souvenir"
+        ]
+      },
+      "media": {
+        "type": "image",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Campo_dei_Fiori.jpg/1920px-Campo_dei_Fiori.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Myrabella · CC BY-SA 3.0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Campo_dei_Fiori.jpg",
+        "representative": false
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "testaccio-market",
+        "city": "rome",
+        "section": "shop",
+        "subcategory": "Covered market",
+        "name": "Mercato di Testaccio",
+        "district": "Testaccio",
+        "address": "Via Aldo Manuzio 66b",
+        "coords": [
+          41.8774,
+          12.4747
+        ],
+        "summary": "Modern covered market where Romans shop — produce, cheese, and great street-food stalls.",
+        "whyVisit": "More local and better value than Campo de’ Fiori, plus excellent lunch counters.",
+        "goodFor": [
+          "Foodies",
+          "Gift shoppers",
+          "Budget travellers"
+        ],
+        "price": {
+          "min": 4,
+          "max": 25,
+          "currency": "EUR",
+          "unit": "per gift item",
+          "status": "approximate"
+        },
+        "priceLevel": 1,
+        "hours": {
+          "text": "Mon–Sat mornings into early afternoon.",
+          "source": "mercatoditestaccio.it",
+          "status": "unverified"
+        },
+        "howToGet": "Metro Line B to Piramide, then 10 minutes’ walk.",
+        "tips": [
+          "Ask cheese stalls to vacuum-pack for travel."
+        ],
+        "interests": [
+          "food",
+          "local",
+          "shopping"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "family",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Mercato di Testaccio (official)",
+            "url": "https://www.mercatoditestaccio.it/"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 60,
+        "giftTags": [
+          "food",
+          "wine"
+        ]
+      },
+      "media": {
+        "type": "image",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Porta_San_Paolo_-_Piramid_Cestius.JPG/1920px-Porta_San_Paolo_-_Piramid_Cestius.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "No machine-readable author provided. Joris assumed (based on copyright claims). · CC BY-SA 3.0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Porta_San_Paolo_-_Piramid_Cestius.JPG",
+        "representative": false
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "porta-portese",
+        "city": "rome",
+        "section": "shop",
+        "subcategory": "Flea market",
+        "name": "Porta Portese Sunday market",
+        "district": "Trastevere",
+        "address": "Via Portuense / Piazza di Porta Portese",
+        "coords": [
+          41.8833,
+          12.4735
+        ],
+        "summary": "Rome’s huge Sunday flea market: vintage, antiques, clothes and bric-à-brac.",
+        "whyVisit": "Bargain hunting and people-watching; arrive early for the best finds.",
+        "goodFor": [
+          "Bargain hunters",
+          "Vintage lovers"
+        ],
+        "price": {
+          "min": 2,
+          "max": 30,
+          "currency": "EUR",
+          "unit": "per item",
+          "status": "approximate"
+        },
+        "priceLevel": 1,
+        "hours": {
+          "text": "Sundays, early morning until about 14:00.",
+          "source": "turismoroma.it",
+          "status": "unverified"
+        },
+        "howToGet": "Tram 8 to Ippolito Nievo or Trastevere/Ministero Istruzione.",
+        "tips": [
+          "Cash only at most stalls; keep valuables secure.",
+          "Bargaining is expected."
+        ],
+        "interests": [
+          "shopping",
+          "local"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Turismo Roma",
+            "url": "https://www.turismoroma.it/en"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 90,
+        "giftTags": [
+          "souvenir",
+          "home",
+          "fashion"
+        ]
+      },
+      "media": {
+        "type": "image",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Porta_Portese_28_09_2019.jpg/1920px-Porta_Portese_28_09_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Gustavo La Pizza · CC BY-SA 4.0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Porta_Portese_28_09_2019.jpg",
+        "representative": false
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "via-condotti",
+        "city": "rome",
+        "section": "shop",
+        "subcategory": "Designer street",
+        "name": "Via dei Condotti & Tridente",
+        "district": "Tridente",
+        "address": "Via dei Condotti",
+        "coords": [
+          41.905,
+          12.4808
+        ],
+        "summary": "Rome’s luxury shopping street running down from the Spanish Steps.",
+        "whyVisit": "Flagships of the big Italian houses plus Antico Caffè Greco (1760).",
+        "goodFor": [
+          "Luxury shoppers",
+          "Couples"
+        ],
+        "price": {
+          "min": 100,
+          "currency": "EUR",
+          "unit": "typical purchase",
+          "status": "approximate"
+        },
+        "priceLevel": 4,
+        "hours": {
+          "text": "Most shops ~10:00–19:30 daily.",
+          "source": "individual stores",
+          "status": "unverified"
+        },
+        "howToGet": "Metro Line A to Spagna.",
+        "tips": [
+          "Non-EU residents can claim VAT refunds on purchases above the minimum — ask for the tax-free form."
+        ],
+        "interests": [
+          "shopping"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Turismo Roma",
+            "url": "https://www.turismoroma.it/en"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 90,
+        "giftTags": [
+          "fashion",
+          "cosmetics"
+        ]
+      },
+      "media": {
+        "type": "image",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Dolce_%26_Gabbana%2C_Via_dei_Condotti_%2846129645824%29.jpg/1920px-Dolce_%26_Gabbana%2C_Via_dei_Condotti_%2846129645824%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Sonse · CC BY 2.0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Dolce_%26_Gabbana,_Via_dei_Condotti_(46129645824).jpg",
+        "representative": false
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "castel-romano-outlet",
+        "city": "rome",
+        "section": "shop",
+        "subcategory": "Outlet",
+        "name": "Castel Romano Designer Outlet",
+        "district": "Outside Rome (~25 km)",
+        "address": "Via del Ponte di Piscina Cupa 64",
+        "coords": [
+          41.7086,
+          12.443
+        ],
+        "summary": "Large designer outlet south of the city with Italian and international brands.",
+        "whyVisit": "Discounts on previous-season fashion — worth it if shopping is a priority.",
+        "goodFor": [
+          "Shoppers",
+          "Groups"
+        ],
+        "price": {
+          "min": 30,
+          "currency": "EUR",
+          "unit": "typical purchase",
+          "status": "approximate",
+          "includes": "Shuttle bus from central Rome is paid separately."
+        },
+        "priceLevel": 3,
+        "hours": {
+          "text": "Daily, ~10:00–20:00.",
+          "source": "mcarthurglen.com",
+          "status": "unverified"
+        },
+        "howToGet": "Dedicated shuttle from Termini area (paid), or car/taxi.",
+        "tips": [
+          "Plan half a day including the transfer."
+        ],
+        "interests": [
+          "shopping"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "friends",
+          "family"
+        ],
+        "sources": [
+          {
+            "label": "McArthurGlen Castel Romano (official)",
+            "url": "https://www.mcarthurglen.com/en/outlets/it/designer-outlet-castel-romano/"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 240,
+        "giftTags": [
+          "fashion",
+          "cosmetics",
+          "kids"
+        ]
+      },
+      "media": {
+        "type": "image",
+        "src": "/images/places/rome/castel-romano-outlet.webp",
+        "credit": "Peter Griffin · CC0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Clothing_Rack_of_Jeans.jpg",
+        "representative": true,
+        "context": "illustrative",
+        "alt": "Clothes on hangers as shopping inspiration, not Castel Romano outlet.",
+        "caption": "Shopping inspiration: a clothing display, not Castel Romano or its current stock.",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "changes": "Resized and converted to WebP. Cards may display a crop."
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": "2026-10-21",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Clothing_Rack_of_Jeans.jpg"
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "volpetti",
+        "city": "rome",
+        "section": "shop",
+        "subcategory": "Delicatessen",
+        "name": "Volpetti",
+        "district": "Testaccio",
+        "address": "Via Marmorata 47",
+        "coords": [
+          41.879,
+          12.476
+        ],
+        "summary": "Famous gourmet deli: cheeses, cured meats, truffle products, olive oil.",
+        "whyVisit": "High-quality edible gifts, vacuum-packed for travel on request.",
+        "goodFor": [
+          "Gift shoppers",
+          "Foodies"
+        ],
+        "price": {
+          "min": 8,
+          "max": 40,
+          "currency": "EUR",
+          "unit": "per gift item",
+          "status": "approximate"
+        },
+        "priceLevel": 2,
+        "hours": {
+          "text": "Mon–Sat; check midday closing.",
+          "source": "volpetti.com",
+          "status": "unverified"
+        },
+        "howToGet": "Metro Line B to Piramide, then 5 minutes’ walk.",
+        "tips": [
+          "Ask for tastings before buying.",
+          "Check your home country’s customs rules for meat and dairy."
+        ],
+        "interests": [
+          "food",
+          "shopping",
+          "local"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "family",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Volpetti (official)",
+            "url": "https://www.volpetti.com/"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 30,
+        "giftTags": [
+          "food",
+          "wine"
+        ]
+      },
+      "media": {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1631379578550-7038263db699?ixid=M3w5MDA5OTh8MHwxfHNlYXJjaHwxfHxpdGFsaWFuJTIwZGVsaSUyMGNoZWVzZXxlbnwxfDB8fHwxNzkyMzI0ODc0fDA&ixlib=rb-4.1.0&w=1400&q=80&auto=format&fit=crop",
+        "credit": "Azzedine Rouichi · Unsplash",
+        "creditUrl": "https://unsplash.com/photos/a-bunch-of-cheese-stacked-on-top-of-each-other-YW_5rJvAdKw?utm_source=veloratravel&utm_medium=referral",
+        "representative": true
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "antica-caciara",
+        "city": "rome",
+        "section": "shop",
+        "subcategory": "Cheese shop",
+        "name": "Antica Caciara Trasteverina",
+        "district": "Trastevere",
+        "address": "Via di San Francesco a Ripa 140",
+        "coords": [
+          41.8876,
+          12.4728
+        ],
+        "summary": "Old-school cheese shop known for pecorino romano and ricotta.",
+        "whyVisit": "Pecorino is the key ingredient of carbonara and cacio e pepe — a perfect edible souvenir.",
+        "goodFor": [
+          "Gift shoppers",
+          "Foodies"
+        ],
+        "price": {
+          "min": 8,
+          "max": 30,
+          "currency": "EUR",
+          "unit": "per gift item",
+          "status": "approximate"
+        },
+        "priceLevel": 1,
+        "hours": {
+          "text": "Mon–Sat, closed Sunday.",
+          "source": "anticacaciara.it",
+          "status": "unverified"
+        },
+        "howToGet": "Tram 8 to Trastevere/Mastai, 3 minutes’ walk.",
+        "tips": [
+          "Ask for vacuum packing."
+        ],
+        "interests": [
+          "food",
+          "local",
+          "shopping"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "family",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Antica Caciara (official)",
+            "url": "https://www.anticacaciara.it/"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 20,
+        "giftTags": [
+          "food"
+        ]
+      },
+      "media": {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?ixid=M3w5MDA5OTh8MHwxfHNlYXJjaHwxfHxwZWNvcmlubyUyMGNoZWVzZSUyMHdoZWVsfGVufDF8MHx8fDE3OTIzMjQ4NzV8MA&ixlib=rb-4.1.0&w=1400&q=80&auto=format&fit=crop",
+        "credit": "Alexander Maasch · Unsplash",
+        "creditUrl": "https://unsplash.com/photos/baked-bread-KaK2jp8ie8s?utm_source=veloratravel&utm_medium=referral",
+        "representative": true
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "ai-monasteri",
+        "city": "rome",
+        "section": "shop",
+        "subcategory": "Specialty shop",
+        "name": "Ai Monasteri",
+        "district": "Navona",
+        "address": "Corso del Rinascimento 72",
+        "coords": [
+          41.9001,
+          12.4737
+        ],
+        "summary": "Historic shop selling products made in Italian monasteries: liqueurs, honey, soaps, creams.",
+        "whyVisit": "Unusual, beautifully packaged gifts you won’t find in souvenir stalls.",
+        "goodFor": [
+          "Gift shoppers",
+          "Families"
+        ],
+        "price": {
+          "min": 6,
+          "max": 35,
+          "currency": "EUR",
+          "unit": "per gift item",
+          "status": "approximate"
+        },
+        "priceLevel": 2,
+        "hours": {
+          "text": "Mon–Sat with midday break; check before visiting.",
+          "source": "aimonasteri.it",
+          "status": "unverified"
+        },
+        "howToGet": "2 minutes from Piazza Navona.",
+        "tips": [
+          "Herbal soaps and honey travel well in hand luggage."
+        ],
+        "interests": [
+          "shopping",
+          "local"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "family",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Ai Monasteri (official)",
+            "url": "https://www.aimonasteri.it/"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 25,
+        "giftTags": [
+          "cosmetics",
+          "food",
+          "home"
+        ]
+      },
+      "media": {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1778750544977-086bbbd7c282?ixid=M3w5MDA5OTh8MHwxfHNlYXJjaHwxfHxoZXJiYWwlMjBsaXF1ZXVyJTIwYm90dGxlc3xlbnwxfDB8fHwxNzkyMzI0ODc3fDA&ixlib=rb-4.1.0&w=1400&q=80&auto=format&fit=crop",
+        "credit": "Sandra Luimes · Unsplash",
+        "creditUrl": "https://unsplash.com/photos/bottles-of-various-liquids-and-infusions-displayed-in-a-row-Bz6VvcBZzK4?utm_source=veloratravel&utm_medium=referral",
+        "representative": true
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "rinascente-tritone",
+        "city": "rome",
+        "section": "shop",
+        "subcategory": "Department store",
+        "name": "Rinascente · Via del Tritone",
+        "district": "Trevi",
+        "address": "Via del Tritone 61",
+        "coords": [
+          41.902673,
+          12.48463
+        ],
+        "summary": "Fashion, beauty, design and gourmet shopping near the Trevi Fountain.",
+        "whyVisit": "Compare several kinds of gifts in one department store, then explore the aqueduct remains in the building.",
+        "goodFor": [
+          "Fashion shoppers",
+          "Beauty gifts",
+          "Design lovers"
+        ],
+        "price": {
+          "currency": "EUR",
+          "unit": "Purchases priced individually",
+          "status": "approximate"
+        },
+        "priceLevel": 4,
+        "hours": {
+          "text": "Check the official store page for current hours and holiday openings.",
+          "source": "rinascente.it",
+          "status": "unverified"
+        },
+        "howToGet": "Walk from the Trevi Fountain or approach from Barberini. Entrance pin is for orientation.",
+        "tips": [
+          "Choose a budget before browsing; stock and prices vary by brand.",
+          "Check the receipt and return terms before paying."
+        ],
+        "interests": [
+          "shopping",
+          "art"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "family",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Rinascente · official store",
+            "url": "https://www.rinascente.it/it/store-roma-via-del-tritone/"
+          },
+          {
+            "label": "Turismo Roma · building and location",
+            "url": "https://www.turismoroma.it/it/luoghi/la-rinascente-del-tritone"
+          }
+        ],
+        "lastChecked": "2026-10-20",
+        "duration": 60,
+        "giftTags": [
+          "fashion",
+          "cosmetics",
+          "home",
+          "food"
+        ]
+      },
+      "media": {
+        "type": "image",
+        "src": "/images/places/rome/rinascente-tritone.webp",
+        "credit": "Krzysztof Golik · CC BY-SA 4.0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Via_del_Tritone_69_in_Rome_(1).jpg",
+        "representative": true,
+        "context": "area",
+        "alt": "Via del Tritone streetscape in Rome, not the Rinascente store.",
+        "caption": "Via del Tritone streetscape, not a photograph of the Rinascente store.",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Resized and converted to WebP. Cards may display a crop."
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": "2026-10-21",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Via_del_Tritone_69_in_Rome_(1).jpg"
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "feltrinelli-argentina",
+        "city": "rome",
+        "section": "shop",
+        "subcategory": "Bookshop",
+        "name": "Feltrinelli · Largo Argentina",
+        "district": "Centro Storico",
+        "address": "Largo di Torre Argentina 5",
+        "coords": [
+          41.89611,
+          12.47663
+        ],
+        "summary": "A central bookshop for a literary stop and a gift to read on the journey home.",
+        "whyVisit": "Browse books near Largo Argentina. Ask staff about the language and edition you need before choosing a gift.",
+        "goodFor": [
+          "Readers",
+          "Book gifts",
+          "Families"
+        ],
+        "price": {
+          "currency": "EUR",
+          "unit": "Books priced individually",
+          "status": "approximate"
+        },
+        "priceLevel": 2,
+        "hours": {
+          "text": "Mon–Sat 09:00–20:30; Sun 10:00–20:30. Holiday exceptions apply.",
+          "source": "lafeltrinelli.it",
+          "status": "verified"
+        },
+        "howToGet": "Approach from Largo di Torre Argentina; use the numbered address to find the entrance.",
+        "tips": [
+          "Confirm the book language before buying.",
+          "Check the official page for events and holiday hours."
+        ],
+        "interests": [
+          "shopping",
+          "art",
+          "relaxed"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "family",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Feltrinelli · official store and hours",
+            "url": "https://www.lafeltrinelli.it/punto-vendita/roma/ms-roma-argentina/555"
+          },
+          {
+            "label": "Turismo Roma · location",
+            "url": "https://www.turismoroma.it/en/node/2660"
+          }
+        ],
+        "lastChecked": "2026-10-20",
+        "duration": 35,
+        "giftTags": [
+          "souvenir",
+          "kids"
+        ]
+      },
+      "media": {
+        "type": "image",
+        "src": "/images/places/rome/feltrinelli-argentina.webp",
+        "credit": "Jean-Christophe BENOIST · CC BY 3.0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Roma_-_Area_Sacra_Largo_Argentina_-_panorama.JPG",
+        "representative": true,
+        "context": "area",
+        "alt": "The archaeological area at Largo di Torre Argentina, not the Feltrinelli bookshop.",
+        "caption": "Largo di Torre Argentina neighbourhood view; the bookshop is not shown.",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "changes": "Resized and converted to WebP. Cards may display a crop."
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": "2026-10-20",
+          "sourceUrl": "https://www.lafeltrinelli.it/punto-vendita/roma/ms-roma-argentina/555"
+        },
+        "media": {
+          "checkedOn": "2026-10-21",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Roma_-_Area_Sacra_Largo_Argentina_-_panorama.JPG"
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "castroni-cola",
+        "city": "rome",
+        "section": "shop",
+        "subcategory": "Coffee & pantry gifts",
+        "name": "Castroni · Cola di Rienzo",
+        "district": "Prati",
+        "address": "Via Cola di Rienzo 196/198",
+        "coords": [
+          41.907526,
+          12.463152
+        ],
+        "summary": "Coffee, Italian pantry products, tea and sweets in the Prati shopping district.",
+        "whyVisit": "Build a small edible gift around coffee or packaged pantry products. Check the origin label if you want something specifically Italian.",
+        "goodFor": [
+          "Coffee lovers",
+          "Food gifts",
+          "Prati walks"
+        ],
+        "price": {
+          "currency": "EUR",
+          "unit": "Products priced individually",
+          "status": "approximate"
+        },
+        "priceLevel": 2,
+        "hours": {
+          "text": "Confirm current hours with the Cola di Rienzo branch before visiting.",
+          "source": "castroni.it",
+          "status": "unverified"
+        },
+        "howToGet": "Find the shop on Via Cola di Rienzo in Prati; the address identifies this branch.",
+        "tips": [
+          "Ask for a grind suitable for the recipient’s coffee maker.",
+          "Check package weight, ingredients and expiry date."
+        ],
+        "interests": [
+          "food",
+          "shopping",
+          "local"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "family",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Castroni · official branch directory",
+            "url": "https://www.castroni.it/"
+          },
+          {
+            "label": "Turismo Roma · location",
+            "url": "https://www.turismoroma.it/en/places/castroni"
+          }
+        ],
+        "lastChecked": "2026-10-20",
+        "duration": 30,
+        "giftTags": [
+          "food",
+          "wine"
+        ]
+      },
+      "media": {
+        "type": "image",
+        "src": "/images/places/rome/castroni-cola.webp",
+        "credit": "kevinmcgill from Den Bosch, Netherlands · CC BY-SA 2.0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Primavera_a_via_Cola_di_Rienzo.jpg",
+        "representative": true,
+        "context": "area",
+        "alt": "Flowering trees on Via Cola di Rienzo, not the Castroni shop.",
+        "caption": "Via Cola di Rienzo in spring; neighbourhood context, not Castroni’s storefront.",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "changes": "Resized and converted to WebP. Cards may display a crop."
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": "2026-10-21",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Primavera_a_via_Cola_di_Rienzo.jpg"
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "fabriano-babuino",
+        "city": "rome",
+        "section": "shop",
+        "subcategory": "Paper & stationery",
+        "name": "Fabriano Boutique · Babuino",
+        "district": "Tridente",
+        "address": "Via del Babuino 173",
+        "coords": [
+          41.909,
+          12.4784
+        ],
+        "summary": "A paper and stationery stop for a travel notebook or a gift for someone who loves writing.",
+        "whyVisit": "Choose a journal for your own journey or explore paper gifts away from the usual souvenir stalls.",
+        "goodFor": [
+          "Writers",
+          "Stationery lovers",
+          "Small gifts"
+        ],
+        "price": {
+          "currency": "EUR",
+          "unit": "Items priced individually",
+          "status": "approximate"
+        },
+        "priceLevel": 2,
+        "hours": {
+          "text": "Daily 10:00–20:00 in the official locator. Holiday exceptions may apply.",
+          "source": "fabrianoboutique.com",
+          "status": "verified"
+        },
+        "howToGet": "Walk along Via del Babuino between Piazza del Popolo and the Spanish Steps. Pin is approximate.",
+        "tips": [
+          "Check paper size and ruling before choosing a notebook.",
+          "Confirm the selection and current opening hours with the boutique."
+        ],
+        "interests": [
+          "shopping",
+          "art",
+          "relaxed"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "family",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Fabriano · official store locator",
+            "url": "https://www.fabrianoboutique.com/fabriano_it_eu/amlocator"
+          }
+        ],
+        "lastChecked": "2026-10-20",
+        "duration": 25,
+        "giftTags": [
+          "souvenir",
+          "home"
+        ]
+      },
+      "media": {
+        "type": "image",
+        "src": "/images/places/rome/fabriano-babuino.webp",
+        "credit": "Livioandronico2013 · CC BY-SA 4.0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Fontana_del_Babbuino_(Rome).jpg",
+        "representative": true,
+        "context": "area",
+        "alt": "The Babuino fountain on Via del Babuino, not Fabriano Boutique.",
+        "caption": "The Babuino fountain on Via del Babuino; neighbourhood context, not the shop.",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Resized and converted to WebP. Cards may display a crop."
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": "2026-10-20",
+          "sourceUrl": "https://www.fabrianoboutique.com/fabriano_it_eu/amlocator"
+        },
+        "media": {
+          "checkedOn": "2026-10-21",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fontana_del_Babbuino_(Rome).jpg"
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "momoni-babuino",
+        "city": "rome",
+        "section": "shop",
+        "subcategory": "Fashion boutique",
+        "name": "Momonì · Babuino",
+        "district": "Tridente",
+        "address": "Via del Babuino 166",
+        "coords": [
+          41.9088,
+          12.4786
+        ],
+        "summary": "A fashion boutique on Via del Babuino for a focused shopping stop.",
+        "whyVisit": "Explore one boutique rather than an entire department store; combine it with a walk through the Tridente.",
+        "goodFor": [
+          "Fashion shoppers",
+          "Couples"
+        ],
+        "price": {
+          "currency": "EUR",
+          "unit": "Garments priced individually",
+          "status": "approximate"
+        },
+        "priceLevel": 3,
+        "hours": {
+          "text": "Daily 10:30–19:30 in the official locator. Confirm holiday hours.",
+          "source": "stores.momoni.it",
+          "status": "verified"
+        },
+        "howToGet": "Walk along Via del Babuino from Piazza del Popolo or Spagna. Pin is approximate.",
+        "tips": [
+          "Try the fit and confirm the return policy.",
+          "Check availability with the shop if you need a particular size."
+        ],
+        "interests": [
+          "shopping"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Momonì · official Rome boutique",
+            "url": "https://stores.momoni.it/en/italy/lazio/roma/momoni-roma-babuino"
+          }
+        ],
+        "lastChecked": "2026-10-20",
+        "duration": 35,
+        "giftTags": [
+          "fashion"
+        ]
+      },
+      "media": {
+        "type": "image",
+        "src": "/images/places/rome/momoni-babuino.webp",
+        "credit": "Nathan Clemente · CC BY-SA 3.0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Streets_Of_Roma_(182976491).jpeg",
+        "representative": true,
+        "context": "area",
+        "alt": "Via del Babuino and All Saints Church in Rome, not the Momonì shop.",
+        "caption": "Via del Babuino near All Saints Church; neighbourhood context, not the boutique.",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "changes": "Resized and converted to WebP. Cards may display a crop."
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": "2026-10-20",
+          "sourceUrl": "https://stores.momoni.it/en/italy/lazio/roma/momoni-roma-babuino"
+        },
+        "media": {
+          "checkedOn": "2026-10-21",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Streets_Of_Roma_(182976491).jpeg"
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "hotel-artemide",
+        "city": "rome",
+        "section": "stay",
+        "subcategory": "4★ hotel",
+        "name": "Hotel Artemide",
+        "district": "Esquilino / Via Nazionale",
+        "address": "Via Nazionale 22",
+        "coords": [
+          41.9008,
+          12.4931
+        ],
+        "summary": "Art Nouveau 4-star hotel with a rooftop terrace, well-placed between Termini and the centre.",
+        "whyVisit": "Reliable comfort and transport links at a fair mid-range price.",
+        "goodFor": [
+          "Couples",
+          "Families",
+          "First-time visitors"
+        ],
+        "price": {
+          "min": 180,
+          "max": 320,
+          "currency": "EUR",
+          "unit": "per night",
+          "status": "approximate"
+        },
+        "priceLevel": 3,
+        "howToGet": "Metro Line A to Repubblica, 3 minutes’ walk.",
+        "tips": [
+          "Request a quieter room away from Via Nazionale."
+        ],
+        "interests": [
+          "relaxed"
+        ],
+        "tripTypes": [
+          "couple",
+          "family",
+          "solo"
+        ],
+        "sources": [
+          {
+            "label": "Hotel Artemide (official)",
+            "url": "https://www.hotelartemide.it/"
+          }
+        ],
+        "lastChecked": "2026-10-18"
+      },
+      "media": {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1605346576608-92f1346b67d6?ixid=M3w5MDA5OTh8MHwxfHNlYXJjaHwxfHxjbGFzc2ljJTIwaG90ZWwlMjByb29tfGVufDF8MHx8fDE3OTIzMjQ4Nzh8MA&ixlib=rb-4.1.0&w=1400&q=80&auto=format&fit=crop",
+        "credit": "Albert Vincent Wu · Unsplash",
+        "creditUrl": "https://unsplash.com/photos/white-bed-linen-with-white-table-lamp-fupf3-xAUqw?utm_source=veloratravel&utm_medium=referral",
+        "representative": true
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "hotel-de-russie",
+        "city": "rome",
+        "section": "stay",
+        "subcategory": "5★ hotel",
+        "name": "Hotel de Russie",
+        "district": "Tridente",
+        "address": "Via del Babuino 9",
+        "coords": [
+          41.9101,
+          12.4762
+        ],
+        "summary": "Rocco Forte luxury hotel with a famous terraced “secret garden” near Piazza del Popolo.",
+        "whyVisit": "Top-tier service and a calm garden in the most elegant part of town.",
+        "goodFor": [
+          "Luxury travellers",
+          "Honeymoons"
+        ],
+        "price": {
+          "min": 900,
+          "max": 1800,
+          "currency": "EUR",
+          "unit": "per night",
+          "status": "approximate"
+        },
+        "priceLevel": 4,
+        "howToGet": "Metro Line A to Flaminio, 3 minutes’ walk.",
+        "tips": [
+          "Even if not staying, the Stravinskij Bar is open to visitors."
+        ],
+        "interests": [
+          "romance",
+          "relaxed"
+        ],
+        "tripTypes": [
+          "couple",
+          "solo"
+        ],
+        "sources": [
+          {
+            "label": "Rocco Forte Hotels (official)",
+            "url": "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/"
+          }
+        ],
+        "lastChecked": "2026-10-18"
+      },
+      "media": {
+        "type": "image",
+        "src": "/images/places/rome/hotel-de-russie.webp",
+        "credit": "Croberto68 · Public domain · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Campo_Marzio_-_Hotel_de_Russie_2.JPG",
+        "representative": false,
+        "context": "venue",
+        "alt": "The exterior of Hotel de Russie on Via del Babuino in Rome.",
+        "caption": "An exterior view of Hotel de Russie; interiors and room types are not shown.",
+        "license": "Public domain",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "changes": "Resized and converted to WebP. Cards may display a crop."
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": "2026-10-21",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Campo_Marzio_-_Hotel_de_Russie_2.JPG"
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "hotel-santa-maria",
+        "city": "rome",
+        "section": "stay",
+        "subcategory": "Boutique hotel",
+        "name": "Hotel Santa Maria",
+        "district": "Trastevere",
+        "address": "Vicolo del Piede 2",
+        "coords": [
+          41.889,
+          12.4698
+        ],
+        "summary": "Former cloister with an orange-tree courtyard in the heart of Trastevere.",
+        "whyVisit": "Quiet base in Rome’s most charming evening neighbourhood.",
+        "goodFor": [
+          "Couples",
+          "Families"
+        ],
+        "price": {
+          "min": 160,
+          "max": 300,
+          "currency": "EUR",
+          "unit": "per night",
+          "status": "approximate"
+        },
+        "priceLevel": 3,
+        "howToGet": "Tram 8 to Trastevere/Mastai, 5 minutes’ walk.",
+        "tips": [
+          "Bikes are often available for guests."
+        ],
+        "interests": [
+          "romance",
+          "local",
+          "relaxed"
+        ],
+        "tripTypes": [
+          "couple",
+          "family"
+        ],
+        "sources": [
+          {
+            "label": "Hotel Santa Maria (official)",
+            "url": "https://www.hotelsantamariatrastevere.it/"
+          }
+        ],
+        "lastChecked": "2026-10-18"
+      },
+      "media": {
+        "type": "image",
+        "src": "/images/places/rome/hotel-santa-maria.webp",
+        "credit": "György Farkas from Budapest, Hungary · CC BY-SA 2.0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Trastevere_street_(117584109).jpg",
+        "representative": true,
+        "context": "area",
+        "alt": "A street in Trastevere, not Hotel Santa Maria or its courtyard.",
+        "caption": "A street in Trastevere; neighbourhood context, not the hotel, courtyard or rooms.",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "changes": "Resized and converted to WebP. Cards may display a crop."
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": "2026-10-21",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trastevere_street_(117584109).jpg"
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "hotel-raphael",
+        "city": "rome",
+        "section": "stay",
+        "subcategory": "5★ hotel",
+        "name": "Hotel Raphael",
+        "district": "Navona",
+        "address": "Largo Febo 2",
+        "coords": [
+          41.8995,
+          12.4724
+        ],
+        "summary": "Ivy-covered hotel next to Piazza Navona with a panoramic rooftop terrace.",
+        "whyVisit": "Unbeatable location for walking the historic centre.",
+        "goodFor": [
+          "Couples",
+          "Luxury travellers"
+        ],
+        "price": {
+          "min": 350,
+          "max": 700,
+          "currency": "EUR",
+          "unit": "per night",
+          "status": "approximate"
+        },
+        "priceLevel": 4,
+        "howToGet": "1 minute from Piazza Navona.",
+        "tips": [
+          "Rooftop bar is open to non-guests — book for sunset."
+        ],
+        "interests": [
+          "romance",
+          "views"
+        ],
+        "tripTypes": [
+          "couple",
+          "solo"
+        ],
+        "sources": [
+          {
+            "label": "Hotel Raphael (official)",
+            "url": "https://www.raphaelhotel.com/"
+          }
+        ],
+        "lastChecked": "2026-10-18"
+      },
+      "media": {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1790354691618-3826d2607bda?ixid=M3w5MDA5OTh8MHwxfHNlYXJjaHwxfHxpdnklMjBjb3ZlcmVkJTIwYnVpbGRpbmclMjByb21lfGVufDF8MHx8fDE3OTIzMjQ4ODB8MA&ixlib=rb-4.1.0&w=1400&q=80&auto=format&fit=crop",
+        "credit": "Rafael Tejkl · Unsplash",
+        "creditUrl": "https://unsplash.com/photos/building-facade-with-ivy-and-shutters-71WmvV2uX5o?utm_source=veloratravel&utm_medium=referral",
+        "representative": true
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "the-beehive",
+        "city": "rome",
+        "section": "stay",
+        "subcategory": "Guesthouse",
+        "name": "The Beehive",
+        "district": "Termini",
+        "address": "Via Marghera 8",
+        "coords": [
+          41.9022,
+          12.5011
+        ],
+        "summary": "Eco-minded, independently run budget hotel/hostel near Termini with a garden.",
+        "whyVisit": "Friendly, clean and good value — a safe choice for budget travellers.",
+        "goodFor": [
+          "Budget travellers",
+          "Solo travellers"
+        ],
+        "price": {
+          "min": 45,
+          "max": 130,
+          "currency": "EUR",
+          "unit": "per night",
+          "status": "approximate"
+        },
+        "priceLevel": 1,
+        "howToGet": "4 minutes from Termini station.",
+        "tips": [
+          "Private rooms sell out first."
+        ],
+        "interests": [
+          "relaxed"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "The Beehive (official)",
+            "url": "https://www.the-beehive.com/"
+          }
+        ],
+        "lastChecked": "2026-10-18"
+      },
+      "media": {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixid=M3w5MDA5OTh8MHwxfHNlYXJjaHwxfHxib3V0aXF1ZSUyMGhvc3RlbCUyMHJvb218ZW58MXwwfHx8MTc5MjMyNDg3OHww&ixlib=rb-4.1.0&w=1400&q=80&auto=format&fit=crop",
+        "credit": "Marcus Loke · Unsplash",
+        "creditUrl": "https://unsplash.com/photos/black-metal-bunk-bed-WQJvWU_HZFo?utm_source=veloratravel&utm_medium=referral",
+        "representative": true
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "generator-rome",
+        "city": "rome",
+        "section": "stay",
+        "subcategory": "Hostel",
+        "name": "Generator Rome",
+        "district": "Esquilino",
+        "address": "Via Principe Amedeo 257",
+        "coords": [
+          41.896,
+          12.5043
+        ],
+        "summary": "Design hostel with private rooms and dorms, bar and terrace.",
+        "whyVisit": "Social atmosphere and low prices, 10 minutes from Termini.",
+        "goodFor": [
+          "Friends",
+          "Solo travellers",
+          "Budget"
+        ],
+        "price": {
+          "min": 30,
+          "max": 140,
+          "currency": "EUR",
+          "unit": "per night",
+          "status": "approximate",
+          "includes": "Dorm bed to private room."
+        },
+        "priceLevel": 1,
+        "howToGet": "Metro Line A to Vittorio Emanuele, 5 minutes’ walk.",
+        "tips": [
+          "Area is lively at night — choose upper floors for quiet."
+        ],
+        "interests": [
+          "nightlife"
+        ],
+        "tripTypes": [
+          "solo",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Generator (official)",
+            "url": "https://staygenerator.com/hostels/rome"
+          }
+        ],
+        "lastChecked": "2026-10-18"
+      },
+      "media": {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixid=M3w5MDA5OTh8MHwxfHNlYXJjaHwxfHxob3N0ZWwlMjBsb3VuZ2V8ZW58MXwwfHx8MTc5MjMyNDg4Mnww&ixlib=rb-4.1.0&w=1400&q=80&auto=format&fit=crop",
+        "credit": "Marcus Loke · Unsplash",
+        "creditUrl": "https://unsplash.com/photos/black-metal-bunk-bed-WQJvWU_HZFo?utm_source=veloratravel&utm_medium=referral",
+        "representative": true
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "leonardo-express",
+        "city": "rome",
+        "section": "move",
+        "subcategory": "Airport train",
+        "name": "Leonardo Express (Fiumicino ⇄ Termini)",
+        "district": "Termini",
+        "address": "Roma Termini station",
+        "coords": [
+          41.901,
+          12.5018
+        ],
+        "summary": "Non-stop train between Fiumicino Airport (FCO) and Termini, about 32 minutes.",
+        "whyVisit": "The fastest predictable link from FCO to the centre.",
+        "goodFor": [
+          "Everyone arriving at FCO"
+        ],
+        "price": {
+          "min": 14,
+          "max": 14,
+          "currency": "EUR",
+          "unit": "per person, one way",
+          "status": "approximate"
+        },
+        "priceLevel": 1,
+        "hours": {
+          "text": "Every 15–30 minutes, roughly 6:00–23:00.",
+          "source": "trenitalia.com",
+          "status": "unverified"
+        },
+        "howToGet": "At FCO follow “Treni / Trains” signs; in Rome departs from Termini platforms 23–24.",
+        "tips": [
+          "Regional FL1 trains are cheaper and stop at Trastevere/Ostiense.",
+          "Validate paper tickets before boarding."
+        ],
+        "interests": [],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "family",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Trenitalia (official)",
+            "url": "https://www.trenitalia.com/en/services/fiumicino_airport.html"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "booking": {
+          "label": "Buy on Trenitalia",
+          "url": "https://www.trenitalia.com/en.html",
+          "partner": "Trenitalia",
+          "sponsored": false,
+          "affiliate": false
+        }
+      },
+      "media": {
+        "type": "image",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Leonardo_express_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Hide1228 · CC BY-SA 4.0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Leonardo_express_01.jpg",
+        "representative": false
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "fco-taxi",
+        "city": "rome",
+        "section": "move",
+        "subcategory": "Taxi",
+        "name": "Fixed-fare taxi from Fiumicino",
+        "district": "Fiumicino Airport",
+        "address": "FCO taxi rank, Terminal 1/3",
+        "coords": [
+          41.8003,
+          12.2389
+        ],
+        "summary": "Licensed white Rome taxis charge a fixed fare from FCO to inside the Aurelian Walls.",
+        "whyVisit": "Door-to-door, good value for 3–4 people or with luggage.",
+        "goodFor": [
+          "Families",
+          "Groups",
+          "Late arrivals"
+        ],
+        "price": {
+          "min": 55,
+          "max": 55,
+          "currency": "EUR",
+          "unit": "per car",
+          "status": "approximate",
+          "includes": "Up to 4 passengers with luggage, to destinations inside the Aurelian Walls."
+        },
+        "priceLevel": 2,
+        "howToGet": "Use only the official taxi rank outside arrivals.",
+        "tips": [
+          "Ignore drivers soliciting inside the terminal.",
+          "Confirm the fixed fare before departing."
+        ],
+        "interests": [],
+        "tripTypes": [
+          "family",
+          "friends",
+          "couple"
+        ],
+        "sources": [
+          {
+            "label": "Aeroporti di Roma (official)",
+            "url": "https://www.adr.it/web/aeroporti-di-roma-en/pax-fco-taxi"
+          }
+        ],
+        "lastChecked": "2026-10-18"
+      },
+      "media": {
+        "type": "image",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Rome_Fiumicino_Leonardo_da_Vinci_International_Airport%2C_Aeroporto_internazionale_di_Roma-Fiumicino_%22Leonardo_da_Vinci%22.jpg/1920px-Rome_Fiumicino_Leonardo_da_Vinci_International_Airport%2C_Aeroporto_internazionale_di_Roma-Fiumicino_%22Leonardo_da_Vinci%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Apaleutos25 · CC BY-SA 4.0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Rome_Fiumicino_Leonardo_da_Vinci_International_Airport,_Aeroporto_internazionale_di_Roma-Fiumicino_%22Leonardo_da_Vinci%22.jpg",
+        "representative": false
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "ciampino-transfer",
+        "city": "rome",
+        "section": "move",
+        "subcategory": "Airport bus",
+        "name": "Ciampino Airport bus",
+        "district": "Ciampino Airport",
+        "address": "Ciampino (CIA) arrivals",
+        "coords": [
+          41.7994,
+          12.5949
+        ],
+        "summary": "Shuttle buses link low-cost-airline hub Ciampino (CIA) with Termini in ~40 minutes.",
+        "whyVisit": "Cheapest way into the city from CIA.",
+        "goodFor": [
+          "Budget travellers"
+        ],
+        "price": {
+          "min": 6,
+          "max": 8,
+          "currency": "EUR",
+          "unit": "per person, one way",
+          "status": "approximate"
+        },
+        "priceLevel": 1,
+        "howToGet": "Bus stops outside arrivals; Termini stop on Via Giolitti.",
+        "tips": [
+          "Fixed taxi fare from Ciampino to the centre also applies."
+        ],
+        "interests": [],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Aeroporti di Roma (official)",
+            "url": "https://www.adr.it/"
+          }
+        ],
+        "lastChecked": "2026-10-18"
+      },
+      "media": {
+        "type": "image",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Rome_Ciampino_Airport_aerial_view.jpg/1920px-Rome_Ciampino_Airport_aerial_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Hayden Soloviev · CC BY 4.0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Rome_Ciampino_Airport_aerial_view.jpg",
+        "representative": false
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "rome-metro",
+        "city": "rome",
+        "section": "move",
+        "subcategory": "Public transport",
+        "name": "Metro, buses & trams (ATAC)",
+        "district": "Citywide",
+        "address": "ATAC network",
+        "coords": [
+          41.9022,
+          12.4964
+        ],
+        "summary": "Three metro lines plus buses and trams. One ticket (BIT) is valid 100 minutes.",
+        "whyVisit": "Contactless bank cards can be tapped at metro gates — no need to buy paper tickets.",
+        "goodFor": [
+          "Everyone"
+        ],
+        "price": {
+          "min": 1.5,
+          "max": 18,
+          "currency": "EUR",
+          "unit": "single ride to 72h pass",
+          "status": "approximate",
+          "includes": "BIT single ticket; 24/48/72-hour passes available."
+        },
+        "priceLevel": 1,
+        "hours": {
+          "text": "Metro roughly 5:30–23:30 (later on Fri/Sat).",
+          "source": "atac.roma.it",
+          "status": "unverified"
+        },
+        "howToGet": "Main interchange at Termini (Lines A & B).",
+        "tips": [
+          "Beware of pickpockets on Line A and bus 64.",
+          "Most of the centre is easiest on foot."
+        ],
+        "interests": [],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "family",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "ATAC (official)",
+            "url": "https://www.atac.roma.it/en"
+          }
+        ],
+        "lastChecked": "2026-10-18"
+      },
+      "media": {
+        "type": "image",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Inaugurazione_metro_B1.jpg/1920px-Inaugurazione_metro_B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Daniele.Brundu · CC BY 2.0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Inaugurazione_metro_B1.jpg",
+        "representative": false
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    },
+    {
+      "place": {
+        "id": "historic-centre-walk",
+        "city": "rome",
+        "section": "move",
+        "subcategory": "Walking route",
+        "name": "Walking route: Pantheon → Navona → Campo de’ Fiori",
+        "district": "Centro Storico",
+        "address": "Starts at Piazza della Rotonda",
+        "coords": [
+          41.8992,
+          12.4731
+        ],
+        "summary": "A 1.5 km, mostly flat loop through the historic centre’s most beautiful squares.",
+        "whyVisit": "Shows how close Rome’s highlights are — perfect for a light day.",
+        "goodFor": [
+          "Relaxed days",
+          "First evening",
+          "Families"
+        ],
+        "price": {
+          "currency": "EUR",
+          "unit": "free",
+          "status": "approximate",
+          "free": true
+        },
+        "priceLevel": 1,
+        "howToGet": "Start at the Pantheon; finish at Campo de’ Fiori.",
+        "tips": [
+          "Allow 1–2 hours with stops; add gelato at Giolitti."
+        ],
+        "interests": [
+          "relaxed",
+          "local",
+          "views"
+        ],
+        "tripTypes": [
+          "solo",
+          "couple",
+          "family",
+          "friends"
+        ],
+        "sources": [
+          {
+            "label": "Turismo Roma",
+            "url": "https://www.turismoroma.it/en"
+          }
+        ],
+        "lastChecked": "2026-10-18",
+        "duration": 90
+      },
+      "media": {
+        "type": "image",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Piazza_Navona_%28Rome%29_at_night.jpg/1920px-Piazza_Navona_%28Rome%29_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "NikonZ7II · CC BY-SA 4.0 · Wikimedia Commons",
+        "creditUrl": "https://commons.wikimedia.org/wiki/File:Piazza_Navona_(Rome)_at_night.jpg",
+        "representative": false
+      },
+      "checks": {
+        "details": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "price": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "hours": {
+          "checkedOn": null,
+          "sourceUrl": null
+        },
+        "media": {
+          "checkedOn": null,
+          "sourceUrl": null
+        }
+      }
+    }
+  ]
+}

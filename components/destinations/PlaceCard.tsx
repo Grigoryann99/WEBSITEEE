@@ -14,7 +14,7 @@ export default function PlaceCard({ title, image, rating, description }: PlaceCa
     const fallbackSources = [
         image,
         'https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=800&auto=format&fit=crop',
-        '/images/placeholder.jpg'
+        '/images/placeholder.optimized.webp'
     ];
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);

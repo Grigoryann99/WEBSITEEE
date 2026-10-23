@@ -1,0 +1,24 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 12px;
+    padding-bottom: max(12px, env(safe-area-inset-bottom));
+    background: rgb(15 27 45 / 40%);
+}
+
+.panel { max-height: 100%; }
+.content { -webkit-overflow-scrolling: touch; }
+
+/* A 16px input prevents Safari zooming the entire form when the keyboard opens. */
+@media (max-width: 639px) {
+    .content input, .content select, .content textarea { font-size: 16px; }
+}
+
+@media (min-width: 640px) {
+    .overlay { align-items: center; padding: 24px; backdrop-filter: blur(4px); }
+    .panel { max-height: min(90dvh, 100%); }
+}

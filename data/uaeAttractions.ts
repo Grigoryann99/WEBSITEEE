@@ -141,7 +141,7 @@ export const uaeAttractions = [
     insiderTip: "Visit the Sheikh Mohammed Centre for Cultural Understanding (SMCCU) for an 'Open Doors, Open Minds' breakfast — a 2-hour session where Emirati hosts serve traditional food and answer any questions about Islam and UAE culture with genuine openness.",
     howToGetThere: "Take the Dubai Metro (Green Line) to Al Fahidi station (2-minute walk). Cross the creek by abra for AED 1 from Deira.",
     cost: "Free to walk. Dubai Museum entry AED 3. Coffee Museum AED 15.",
-    image: "/images/attractions/uae-al-fahidi-historic-district.jpg"
+    image: "/images/attractions/uae-al-fahidi-historic-district.optimized.webp"
   },
   {
     name: "Hatta Mountain Reserve",

@@ -20,7 +20,7 @@ import requests
 from pathlib import Path
 
 # ======= CONFIGURATION =======
-UNSPLASH_KEY = "XoULcfrzlcXBAleeNHj3nyw-bSfFKwpeO3G2ajsnuEE"
+UNSPLASH_KEY = os.environ.get("UNSPLASH_ACCESS_KEY", "")
 
 BASE_DIR = Path(__file__).parent.parent
 DATA_DIR = BASE_DIR / "data"

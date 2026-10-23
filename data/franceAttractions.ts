@@ -69,7 +69,7 @@ export const franceAttractions = [
     insiderTip: "Walk up to the Castle Hill (Colline du Château) at the eastern end of the promenade for the famous postcard view of Nice and the bay.",
     howToGetThere: "Nice Côte d'Azur Airport is 15 minutes away; the promenade is easily reached on foot from any central Nice location.",
     cost: "Free.",
-    image: "/images/attractions/france-promenade-des-anglais.jpg"
+    image: "/images/attractions/france-promenade-des-anglais.optimized.webp"
   },
   {
     name: "Verdon Gorge",
@@ -93,7 +93,7 @@ export const franceAttractions = [
     insiderTip: "Take the earliest cable car of the morning (8:00 AM) to beat the cloud cover that frequently develops over Mont Blanc by afternoon.",
     howToGetThere: "Walk to the Aiguille du Midi cable car station in the center of Chamonix town.",
     cost: "Paid. €75.00 for a return ticket.",
-    image: "/images/attractions/france-aiguille-du-midi.jpg"
+    image: "/images/attractions/france-aiguille-du-midi.optimized.webp"
   },
   {
     name: "Sainte-Chapelle",
@@ -105,7 +105,7 @@ export const franceAttractions = [
     insiderTip: "Book a ticket for an evening classical music concert inside Sainte-Chapelle to enjoy the acoustics and stained glass without daytime crowds.",
     howToGetThere: "Take Metro Line 4 to Cité station, the chapel is located within the Palais de Justice complex.",
     cost: "Paid. €13.00.",
-    image: "/images/attractions/france-sainte-chapelle.jpg"
+    image: "/images/attractions/france-sainte-chapelle.optimized.webp"
   },
   {
     name: "Calanques National Park",
@@ -117,7 +117,7 @@ export const franceAttractions = [
     insiderTip: "Take a boat tour from the port of Cassis to see the calanques from the water if you want to avoid the strenuous 2-hour rocky hike.",
     howToGetThere: "Take the train to Cassis, then hike from the Port-Miou parking lot.",
     cost: "Free.",
-    image: "/images/attractions/france-calanques-national-park.jpg"
+    image: "/images/attractions/france-calanques-national-park.optimized.webp"
   },
   {
     name: "Dune of Pilat",
@@ -177,7 +177,7 @@ export const franceAttractions = [
     insiderTip: "Take a boat tour on the Ill River that goes through the historic locks and past the European Parliament building.",
     howToGetThere: "Take the high-speed TGV train from Paris Est to Strasbourg (1 hour 45 minutes).",
     cost: "Free.",
-    image: "/images/attractions/france-strasbourg-grande-ile.jpg"
+    image: "/images/attractions/france-strasbourg-grande-ile.optimized.webp"
   },
   {
     name: "Palace of the Popes",

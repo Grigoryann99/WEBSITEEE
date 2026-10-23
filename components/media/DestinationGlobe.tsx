@@ -1,127 +1,62 @@
 'use client';
 
-import { motion, useReducedMotion } from 'framer-motion';
+import { useState } from 'react';
 import Link from 'next/link';
-import DestinationIcon from './DestinationIcon';
+import Image from 'next/image';
+import { ArrowRight, ImageIcon } from 'lucide-react';
 
 const destinations = [
-    {
-        title: "Maldives: Island Escapes",
-        desc: "Explore island destinations and coastal highlights to find inspiration for your next beach getaway.",
-        href: "/countries/maldives",
-    },
-    {
-        title: "Switzerland: Alpine Adventures",
-        desc: "Discover mountain landscapes, lakes, and Swiss destinations to explore when planning an Alpine escape.",
-        href: "/countries/switzerland",
-    },
-    {
-        title: "Greece: Islands & Culture",
-        desc: "Browse Greek destinations, historic landmarks, and island highlights to shape your own itinerary.",
-        href: "/countries/greece",
-    },
-    {
-        title: "South Africa: Nature & Wildlife",
-        desc: "Explore national parks, coastal scenery, and city highlights for a trip that combines nature and culture.",
-        href: "/countries/south_africa",
-    },
-    {
-        title: "Japan: Cities & Traditions",
-        desc: "Discover Japanese destinations, temples, and cultural landmarks as a starting point for your journey.",
-        href: "/countries/japan",
-    }
+    { name: 'Maldives', theme: 'Island escapes', href: '/destinations/maldives', flag: 'mv', image: '/images/attractions/maldives-baros.jpg', alt: 'Overwater villas above a turquoise lagoon in the Maldives', position: '50% 50%' },
+    { name: 'Switzerland', theme: 'Alpine adventures', href: '/destinations/switzerland', flag: 'ch', image: '/images/attractions/switzerland-grindelwald.jpg', alt: 'Alpine peaks and wooden chalets in Grindelwald, Switzerland', position: '50% 50%' },
+    { name: 'Greece', theme: 'Islands & culture', href: '/destinations/greece', flag: 'gr', image: '/images/attractions/greece-santorini.jpg', alt: 'Blue church domes and the Aegean Sea in Santorini, Greece', position: '70% 50%' },
+    { name: 'South Africa', theme: 'Nature & wildlife', href: '/destinations/south-africa', flag: 'za', image: '/images/attractions/south-africa-addo-elephant-national-park.jpg', alt: 'An elephant family in Addo Elephant National Park, South Africa', position: '55% 50%' },
+    { name: 'Japan', theme: 'Cities & traditions', href: '/destinations/japan', flag: 'jp', image: '/images/inspiration/japan-temples.optimized.webp', alt: 'The Golden Pavilion reflected in a pond in Kyoto, Japan', position: '50% 60%' },
 ];
 
-export default function DestinationGlobe() {
-    const reducedMotion = useReducedMotion();
-
+export default function DestinationGlobe({ countryCount }: { countryCount: number }) {
+    const [failedPhotos, setFailedPhotos] = useState<string[]>([]);
     return (
-        <div
-            className="relative isolate bg-white flex flex-col items-center justify-center py-24 md:py-32 px-6 overflow-clip border-t border-gray-100"
-        >
-            {/* Keep the image viewport-sized instead of enlarging it across the tall mobile list. */}
-            <div className="absolute inset-0 z-0 pointer-events-none" aria-hidden="true">
-                <div className="sticky top-0 h-[100svh] min-h-[620px] w-full">
-                    <picture>
-                        <source media="(min-width: 1024px)" srcSet="/images/journeys-coast-desktop.webp" />
-                        {/* Art direction keeps the mobile and desktop compositions separate. */}
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img src="/images/journeys-coast.webp" alt="" loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover opacity-60" />
-                    </picture>
+        <div data-testid="destination-inspiration">
+            <div className="mb-8 flex flex-col justify-between gap-6 sm:mb-10 xl:flex-row xl:items-end">
+                <div>
+                    <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.26em] text-[#52758D]">Global collection</p>
+                    <h2 id="global-collection-title" className="max-w-3xl font-serif text-4xl leading-[1.08] tracking-tight text-ink sm:text-5xl lg:text-[3.4rem]">A world worth exploring.</h2>
+                    <p className="mt-4 text-base leading-relaxed text-ink-500">Find the places that feel like you.</p>
+                </div>
+                <div className="flex flex-wrap items-center gap-5 xl:pb-1">
+                    <Link href="/destinations" className="group inline-flex min-h-12 items-center justify-center gap-5 rounded-full border border-sky-200/80 bg-[#DCEFFB] px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-sky-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sky-600">
+                        Browse all destinations <ArrowRight aria-hidden="true" size={18} className="transition-transform group-hover:translate-x-1 motion-reduce:transform-none" />
+                    </Link>
+                    <span className="border-l border-[#CDDDE5] py-2 pl-5 text-sm text-ink-500">{countryCount} countries</span>
                 </div>
             </div>
 
-            {/* Subtle Clean Edge Softening Gradients */}
-            <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-white to-transparent z-[1] pointer-events-none" />
-            <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white to-transparent z-[1] pointer-events-none" />
-
-            {/* Content overlay */}
-            <div className="relative z-10 w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-12 xl:gap-20 items-center">
-
-                {/* Left Side: Elegant Text */}
-                <div className="w-full min-w-0 flex flex-col items-start text-left">
-                    <div>
-                        <p className="font-sans text-brand-accent tracking-[0.3em] text-xs uppercase mb-6 flex items-center gap-4 font-semibold">
-                            <span className="w-12 h-[2px] bg-brand-accent block"></span>
-                            Find Your Travel Inspiration
-                        </p>
-                    </div>
-
-                    <h2
-                        className="font-serif text-5xl md:text-7xl lg:text-[4.5rem] text-[#1A1A1A] leading-[1.1] mb-8 drop-shadow-sm font-normal"
-                    >
-                        Explore the <br /> World with <br />
-                        <span className="text-brand-accent italic font-light">VeloraTravel</span>
-                    </h2>
-
-                    <div
-                        className="backdrop-blur-md bg-white/85 border border-black/10 rounded-2xl p-8 shadow-[0_10px_30px_rgba(0,0,0,0.06)] relative overflow-hidden group"
-                    >
-                        <p className="font-sans text-[#2D3748] text-lg leading-relaxed max-w-md relative z-10 font-normal">
-                            Not sure where to go next? Start with these five destinations, explore their highlights, and follow the links to build your own travel shortlist.
-                        </p>
-                        <Link href="/destinations" className="inline-flex mt-5 font-semibold text-brand-accent underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4">Browse all destinations →</Link>
-                    </div>
-                </div>
-
-                {/* Right Side: Clean White Luxury Glass Cards */}
-                <motion.div
-                    className="w-full min-w-0 space-y-4 relative z-20"
-                >
-                    {destinations.map((dest, i) => {
-                        return (
-                            <motion.div
-                                key={i}
-                                initial={reducedMotion ? false : { opacity: 0, y: 30 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true, margin: "-10%" }}
-                                transition={{ duration: 0.8, delay: i * 0.12, ease: [0.21, 0.47, 0.32, 0.98] }}
-                                className="group cursor-pointer"
-                            >
-                                <Link href={dest.href} className="destination-card backdrop-blur-xl bg-white/95 border border-slate-200/90 hover:border-brand-accent/50 hover:bg-white rounded-2xl p-6 transition-all duration-300 ease-out transform hover:-translate-y-1 motion-reduce:transform-none shadow-xl flex items-center gap-6 relative overflow-hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-accent focus-visible:outline-offset-4">
-
-                                    {/* Hover subtle highlight */}
-                                    <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-gradient-to-r from-transparent via-brand-accent/[0.04] to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-in-out motion-reduce:hidden" />
-
-                                    <div aria-hidden="true" className="destination-icon relative z-10 flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-[18px] bg-[#dceffb] text-[#233946]">
-                                        <DestinationIcon variant={i} />
-                                    </div>
-
-                                    <div className="relative z-10">
-                                        <h3 className="font-sans text-lg md:text-2xl text-[#0F172A] font-semibold group-hover:text-brand-accent transition-colors duration-300">
-                                            {dest.title}
-                                        </h3>
-                                        <p className="font-sans font-normal text-[#334155] mt-1.5 text-sm xl:text-base leading-relaxed group-hover:text-[#0F172A] transition-colors duration-300">
-                                            {dest.desc}
-                                        </p>
-                                        <span className="inline-block mt-3 text-sm font-semibold text-brand-accent">Explore destination →</span>
-                                    </div>
-
-                                </Link>
-                            </motion.div>
-                        );
-                    })}
-                </motion.div>
+            <p className="mb-3 text-xs text-ink-500 sm:hidden">Swipe to explore the collection →</p>
+            <ul aria-label="Featured countries" data-lenis-prevent className="grid snap-x snap-mandatory auto-cols-[85%] grid-flow-col gap-4 overflow-x-auto rounded-[30px] pb-3 sm:auto-cols-auto sm:grid-flow-row sm:grid-cols-2 sm:overflow-visible sm:pb-0 md:grid-cols-3 lg:grid-cols-5">
+                {destinations.map(destination => (
+                    <li key={destination.flag} className="min-w-0 snap-start">
+                        <Link href={destination.href} className="group flex h-full min-w-0 flex-col overflow-hidden rounded-[30px] border border-[#D7E5EC] bg-[#FFFCF7] shadow-[0_6px_20px_rgba(30,53,70,0.04)] transition-shadow hover:shadow-[0_12px_28px_rgba(30,53,70,0.13)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-sky-600">
+                            <div className="relative aspect-[4/5] overflow-hidden bg-[#E6EFF1] lg:aspect-[3/5]">
+                                {failedPhotos.includes(destination.flag) ? <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-ink-500"><ImageIcon aria-hidden="true" size={28} /><span className="text-sm">Discover {destination.name}</span></div> : <Image src={destination.image} alt={destination.alt} fill sizes="(min-width: 1536px) 285px, (min-width: 1024px) 20vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 85vw" style={{ objectPosition: destination.position }} className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04] motion-reduce:transform-none" onError={() => setFailedPhotos(previous => previous.includes(destination.flag) ? previous : [...previous, destination.flag])} />}
+                            </div>
+                            <div className="relative -mt-5 grid min-h-[102px] flex-1 grid-cols-[34px_minmax(0,1fr)_28px] items-center gap-2 rounded-t-[28px] border-t border-white/90 bg-[#FFFCF7]/95 px-3 py-5 backdrop-blur-md lg:grid-cols-[34px_minmax(0,1fr)] xl:grid-cols-[36px_minmax(0,1fr)_30px]">
+                                <span aria-hidden="true" className="flex h-9 w-[34px] items-center justify-center rounded-xl bg-[#E2F0F8] xl:w-9">
+                                    <Image src={`/images/flags/${destination.flag}.svg`} alt="" width={26} height={22} unoptimized className="h-[22px] w-[26px] object-contain drop-shadow-sm" />
+                                </span>
+                                <div className="min-w-0">
+                                    <h3 className="font-serif text-[18px] leading-tight text-ink xl:text-xl">{destination.name}</h3>
+                                    <p className="mt-1.5 text-[11px] leading-relaxed text-ink-500 xl:text-xs">{destination.theme}</p>
+                                </div>
+                                <span aria-hidden="true" className="flex h-7 w-7 items-center justify-center rounded-full bg-[#DCEFFB] text-ink transition-colors group-hover:bg-sky-200 lg:hidden xl:flex xl:h-[30px] xl:w-[30px]"><ArrowRight size={16} /></span>
+                            </div>
+                        </Link>
+                    </li>
+                ))}
+            </ul>
+            <div className="mt-8 flex items-center justify-center gap-5 text-center sm:mt-10">
+                <span aria-hidden="true" className="hidden h-px max-w-48 flex-1 bg-[#CDDDE5] sm:block" />
+                <p className="font-serif text-base italic text-ink-500 sm:text-lg">Somewhere new. Something unforgettable.</p>
+                <span aria-hidden="true" className="hidden h-px max-w-48 flex-1 bg-[#CDDDE5] sm:block" />
             </div>
         </div>
     );

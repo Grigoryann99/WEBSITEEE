@@ -1,11 +1,29 @@
-@import "./core-preflight.css";
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "./core-preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities) source(none);
+@config "../tailwind.config.ts";
+@source "../app";
+@source "../components";
 
 :root {
   --background: #F9F9F9;
   --foreground: #1A1A1A;
+
+  /* Concierge design tokens */
+  --c-white: #FFFFFF;
+  --c-cream: #FBF7EF;
+  --c-sky-50: #F2F8FD;
+  --c-sky-100: #E3F0FB;
+  --c-sky-200: #C8E2F6;
+  --c-sky-500: #4A93D1;
+  --c-sky-600: #3477B4;
+  --c-ink: #0F1B2D;
+  --c-ink-500: #4A5A72;
+  --r-card: 30px;
+  --r-modal: 26px;
+  --r-chip: 14px;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 body {
@@ -13,9 +31,65 @@ body {
   background: var(--background);
 }
 
+.concierge-surface {
+  background: linear-gradient(180deg, var(--c-white) 0%, var(--c-sky-50) 45%, var(--c-cream) 100%);
+  color: var(--c-ink);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(18px) saturate(1.3);
+  -webkit-backdrop-filter: blur(18px) saturate(1.3);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--c-sky-600);
+  outline-offset: 2px;
+}
+
+.concierge-button { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; min-height: 44px; padding: .7rem 1.2rem; border-radius: 9999px; border: 1px solid #c8e2f6; background: #fff; color: #0f1b2d; font-size: .875rem; font-weight: 500; transition: background 180ms, transform 180ms; }
+.concierge-button:hover { background: #e3f0fb; }
+.concierge-button-primary { color: #fff; background: #22324a; border-color: #22324a; }
+.concierge-button-primary:hover { color: #fff; background: #2b5f8f; }
+.concierge-button:disabled { opacity: .5; cursor: not-allowed; }
+.concierge-icon-button { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 50%; background: #fff; border: 1px solid #c8e2f6; color: #22324a; }
+.concierge-input { width: 100%; min-width: 0; min-height: 44px; border-radius: 22px; border: 1px solid #c8e2f6; background: #fff; padding: .75rem 1rem; color: #22324a; font-size: .875rem; }
+.concierge-tab { min-height: 44px; padding: .65rem 1.1rem; border: 1px solid #c8e2f6; border-radius: 9999px; background: #fff; font-size: .8rem; color: #4a5a72; transition: background 200ms,color 200ms; }
+.concierge-tab-active { color: #fff; background: #22324a; border-color: #22324a; }
+.concierge-eyebrow { font-size: 10px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #3477b4; }
+.concierge-button:focus-visible,.concierge-icon-button:focus-visible,.concierge-tab:focus-visible,.concierge-input:focus-visible { outline: 2px solid #3477b4; outline-offset: 3px; }
+.city-marker-wrap { background: transparent; border: 0; }
+.concierge-surface input[type='number'] { appearance: textfield; }
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+
+/* City map markers */
+.city-map .leaflet-container { background: #e7f1f9; font-family: var(--font-inter), sans-serif; }
+.city-map-pin {
+  display: grid; place-items: center;
+  width: 30px; height: 30px; border-radius: 50%;
+  background: #fff; border: 2px solid var(--c-sky-600);
+  color: var(--c-sky-700, #2B5F8F); font-size: 13px; font-weight: 700;
+  box-shadow: 0 4px 12px rgba(15, 27, 45, 0.18);
+  transition: transform 220ms var(--ease-out), background-color 220ms ease;
+}
+.city-map-pin-selected .city-map-pin {
+  background: var(--c-sky-600); color: #fff; transform: scale(1.18);
+  box-shadow: 0 0 0 6px rgba(74, 147, 209, 0.25), 0 6px 16px rgba(15, 27, 45, 0.25);
+}
+.city-map .leaflet-bar { overflow: hidden; border: 1px solid #c8e2f6; border-radius: 14px; }
+.city-map .leaflet-bar a { color: var(--c-ink); background: #fff; }
+.city-map .leaflet-control-attribution { font-size: 10px; background: rgba(255,255,255,0.85); border-radius: 10px 0 0 0; }
+.city-map .leaflet-tooltip { border-radius: 12px; border: 1px solid #c8e2f6; color: var(--c-ink); font-weight: 600; }
+
+/* Quiet the planner basemap while keeping route markers and labels crisp. */
+.planner-map .leaflet-tile-pane { filter: saturate(0.55) contrast(0.94) brightness(1.04); }
+
 @media (prefers-reduced-motion: reduce) {
-  /* Keep the explicitly requested small icon illustrations playing. */
-  *:not(.destination-icon-part), *::before, *::after {
+  /* Keep requested icon illustrations and the hero's opacity-only dissolve. */
+  *:not(.destination-icon-part):not(.hero-scene), *::before, *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -333,6 +407,17 @@ body {
 .island-map .leaflet-bar { overflow: hidden; border: 1px solid #c9d9de; border-radius: 12px; }
 .island-map .leaflet-bar a { color: #243b49; background: #fffdf8; }
 
+.concierge-navbar {
+  border: 1.5px solid rgba(255, 255, 255, 0.92);
+  background:
+    radial-gradient(ellipse at 12% 100%, rgba(164, 188, 205, 0.38), transparent 46%),
+    radial-gradient(ellipse at 88% 0%, rgba(177, 199, 214, 0.4), transparent 48%),
+    linear-gradient(110deg, rgba(223, 231, 233, 0.84), rgba(241, 237, 226, 0.86) 52%, rgba(212, 224, 230, 0.87));
+  backdrop-filter: blur(24px) saturate(110%);
+  -webkit-backdrop-filter: blur(24px) saturate(110%);
+  box-shadow: 0 8px 22px rgba(46, 65, 78, 0.14), inset 0 1px 1px rgba(255, 255, 255, 0.75);
+}
+
 /* Luxury Global Typography Styles */
 h1, h2, h3, h4, h5, h6, .font-serif {
   font-family: var(--font-playfair), serif !important;
@@ -347,4 +432,14 @@ h1, h2, h3, h4, h5, h6 {
 :is(h1, h2, h3, h4, h5, h6) :is(span, em, strong, a) {
   font-family: inherit !important;
   font-weight: inherit !important;
+}
+
+/* User-selected interface motion preference, in addition to the device setting. */
+html[data-velora-reduce-motion='true'] *,
+html[data-velora-reduce-motion='true'] *::before,
+html[data-velora-reduce-motion='true'] *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
 }

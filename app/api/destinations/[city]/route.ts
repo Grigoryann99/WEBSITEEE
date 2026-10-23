@@ -2,10 +2,11 @@ import { NextResponse } from 'next/server';
 import { getDestinations } from '@/lib/dataLoader';
 
 interface RouteContext {
-    params: { city: string };
+    params: Promise<{ city: string }>;
 }
 
-export async function GET(request: Request, { params }: RouteContext) {
+export async function GET(request: Request, { params: pendingParams }: RouteContext) {
+    const params = await pendingParams;
     try {
         const cityParam = params.city.toLowerCase();
         const data = await getDestinations();

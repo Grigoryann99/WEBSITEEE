@@ -161,7 +161,7 @@ export const featuredBanners: FeaturedBannerItem[] = [
         headline: 'The Timeless Heart of Japan',
         description: 'Immerse yourself in a country where centuries-old temples and meticulously manicured zen gardens seamlessly coexist with modern luxury. From the breathtaking bamboo groves of Kyoto to the vibrant pulse of Tokyo, discover an unparalleled journey.',
         image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=2000&auto=format&fit=crop',
-        href: '/countries/japan'
+        href: '/destinations/japan'
     },
     {
         id: 'feat-gr',
@@ -169,7 +169,7 @@ export const featuredBanners: FeaturedBannerItem[] = [
         headline: 'Sunsets over the Caldera',
         description: 'Witness the iconic whitewashed architecture cascade down dramatic volcanic cliffs. Lose yourself in the deep blue waters of the Aegean, indulge in exquisite Mediterranean cuisine, and experience the most evocative sunsets in the world.',
         image: 'https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?q=80&w=2000&auto=format&fit=crop',
-        href: '/countries/greece'
+        href: '/destinations/greece'
     },
     {
         id: 'feat-mv',
@@ -177,7 +177,7 @@ export const featuredBanners: FeaturedBannerItem[] = [
         headline: 'Pinnacle of Overwater Luxury',
         description: 'Escape to private atolls where pristine turquoise lagoons meet powder-soft white sands. Surrender to absolute serenity in your luxury overwater villa, surrounded by thriving coral reefs and unparalleled bespoke service.',
         image: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?q=80&w=2000&auto=format&fit=crop',
-        href: '/countries/maldives'
+        href: '/destinations/maldives'
     }
 ];
 
@@ -191,15 +191,12 @@ export const featuredDestination = {
 };
 
 export const inspirationCards: InspirationItem[] = [
-    { id: 'insp1', title: 'Best Beaches in Thailand', tag: 'Beach', href: '/blog/best-beaches-thailand', image: '/images/inspiration/thailand-beaches.jpg' },
-    { id: 'insp2', title: 'Hidden Islands of Indonesia', tag: 'Island', href: '/blog/hidden-islands-indonesia', image: '/images/inspiration/indonesia-islands.jpg' },
-    { id: 'insp3', title: 'Romantic Destinations in Italy', tag: 'Romance', href: '/blog/romantic-destinations-italy', image: '/images/inspiration/italy-romance.jpg' },
-    { id: 'insp4', title: 'Adventure Travel in Iceland', tag: 'Adventure', href: '/blog/adventure-iceland', image: '/images/inspiration/iceland-adventure.jpg' },
-    { id: 'insp5', title: 'Cultural Cities of Spain', tag: 'Culture', href: '/blog/cultural-cities-spain', image: '/images/inspiration/spain-culture.jpg' },
-    { id: 'insp6', title: 'Luxury Escapes in the Maldives', tag: 'Luxury', href: '/blog/luxury-maldives', image: '/images/inspiration/maldives-luxury.jpg' },
-    { id: 'insp7', title: 'Sacred Temples of Japan', tag: 'Culture', href: '/blog/sacred-temples-japan', image: '/images/inspiration/japan-temples.jpg' },
-    { id: 'insp8', title: 'Safari Experiences in Kenya', tag: 'Adventure', href: '/blog/safari-kenya', image: '/images/inspiration/kenya-safari.jpg' },
-    { id: 'insp9', title: 'Wine Country of Tuscany', tag: 'Luxury', href: '/blog/wine-tuscany', image: '/images/inspiration/tuscany-wine.jpg' },
+    { id: 'insp1', title: 'Thailand’s Secret Beaches', tag: 'Beach', href: '/guides/best-secret-beaches-thailand', image: '/images/inspiration/thailand-beaches.jpg' },
+    { id: 'insp3', title: 'Seven Days in Italy', tag: 'Itinerary', href: '/guides/7-days-in-italy-classic-itinerary', image: '/images/inspiration/italy-romance.jpg' },
+    { id: 'insp4', title: 'Iceland’s Ring Road', tag: 'Adventure', href: '/guides/iceland-ring-road-itinerary', image: '/images/inspiration/iceland-adventure.jpg' },
+    { id: 'insp6', title: 'The Maldives on a Budget', tag: 'Islands', href: '/guides/maldives-on-a-budget', image: '/images/inspiration/maldives-luxury.jpg' },
+    { id: 'insp7', title: 'When to Visit Japan', tag: 'Seasons', href: '/guides/best-time-to-visit-japan', image: '/images/inspiration/japan-temples.optimized.webp' },
+    { id: 'insp9', title: 'Italy for First-Time Visitors', tag: 'Practical', href: '/guides/italy-travel-tips', image: '/images/inspiration/tuscany-wine.jpg' },
 ];
 
 export const travelTips: TravelTip[] = [

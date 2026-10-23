@@ -132,7 +132,7 @@ export default function DestinationsClient({ initialData }: DestinationsClientPr
                             {filteredDestinations.map((dest, i) => {
                                 const countrySlug = dest.country.toLowerCase().replace(/\s+/g, '-');
                                 return (
-                                    <Link key={i} href={`/countries/${countrySlug}`} className="block">
+                                    <Link key={i} href={`/destinations/${countrySlug}`} className="block">
                                         <DestinationCard {...dest} />
                                     </Link>
                                 );

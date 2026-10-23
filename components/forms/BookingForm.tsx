@@ -30,7 +30,7 @@ export default function BookingForm() {
         setIsSubmitting(true);
         // Simulate high-end booking process
         await new Promise((resolve) => setTimeout(resolve, 1500));
-        console.log('Form data:', data);
+        void data; // Never log submitted personal information.
         setSuccess(true);
         setIsSubmitting(false);
     };

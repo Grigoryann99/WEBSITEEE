@@ -1,0 +1,6 @@
+# Earth explorer assets
+
+- Earth day, night and packed bump/roughness/cloud maps: Solar System Scope, CC BY 4.0, https://www.solarsystemscope.com/textures/ . Downloaded from the Three.js Earth example's resized/merged 4096px maps: https://github.com/mrdoob/three.js/blob/master/examples/webgpu_tsl_earth.html . Derived files split the packed R (height), inverted G (water specularity), and B (cloud opacity) channels and resize/encode them as WebP. Color/night imagery is 4096px; detail/cloud maps are 2048px, with reduced mobile versions.
+- Country boundaries and label positions: Natural Earth, public domain, https://www.naturalearthdata.com/about/terms-of-use/ . Source: https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_110m_admin_0_countries.geojson . Geometry is rounded to three decimal places; the directory adds pins for Maldives, Seychelles and Singapore, absent at this scale. Borders are approximate and intended for destination discovery.
+- Rendering: Three.js 0.180.0, MIT. A local copy of the license accompanies the vendor files in public/vendor/three/LICENSE.
+- Clouds, illumination and rotation are illustrative; they do not represent current weather, time or satellite observations.

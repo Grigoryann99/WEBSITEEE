@@ -69,7 +69,7 @@ export const italyAttractions = [
     insiderTip: "Do not follow the mass of tourists directly to the Sistine Chapel. Divert to the Pinacoteca (Picture Gallery) located near the entrance in an isolated wing to examine Leonardo da Vinci’s unfinished 'St. Jerome in the Wilderness' entirely alone.",
     howToGetThere: "Take Metro Line A to the Ottaviano or Cipro stations in Rome, followed by a 10-minute walk to the sweeping Viale Vaticano entrance walls.",
     cost: "Paid. A standard full-price admission ticket booked directly via the Vatican website is €20.00 plus a €5.00 reservation fee.",
-    image: "/images/attractions/italy-vatican-museums-sistine-chapel.jpg"
+    image: "/images/attractions/italy-vatican-museums-sistine-chapel.optimized.webp"
   },
   {
     name: "Pompeii",
@@ -213,7 +213,7 @@ export const italyAttractions = [
     insiderTip: "Locate the subterranean Museo Faggiano near the Roman amphitheater. This private residence underwent plumbing repairs in 2001, accidentally uncovering layered archaeological strata encompassing Messapian tombs, a Roman granary, and a Templar chapel beneath the modern floor.",
     howToGetThere: "Take a direct Frecciargento high-speed train from Rome (5.5 hours) or a regional train from Bari (1.5 hours, €11.20) to Lecce station, which is a 10-minute walk from the historic center.",
     cost: "Free for urban exploration. The LeccEcclesiae ticket, granting access to the Duomo, Santa Croce, and three other major baroque churches, costs €9.00.",
-    image: "/images/attractions/italy-lecce-baroque-old-town.jpg"
+    image: "/images/attractions/italy-lecce-baroque-old-town.optimized.webp"
   },
   {
     name: "Assisi & Umbrian Countryside",
@@ -225,7 +225,7 @@ export const italyAttractions = [
     insiderTip: "Do not view the frescoes in the Upper Basilica primarily as religious icons; analyze them as a revolutionary communication strategy. Stand back and observe how Giotto utilized heavy, three-dimensional modeling of the figures specifically to make complex theological concepts accessible to an illiterate rural peasantry.",
     howToGetThere: "Take a slow regionale train from Florence or Rome to Assisi station (approx. 2-2.5 hours, €12.00). The station is 3 kilometers down in the valley; you must catch the frequent local bus 'Line C' up the hill to the historical center.",
     cost: "Free to visit the basilicas and hermitages. Audio guides present at the major churches usually cost €5.00.",
-    image: "/images/attractions/italy-assisi-umbrian-countryside.jpg"
+    image: "/images/attractions/italy-assisi-umbrian-countryside.optimized.webp"
   },
   {
     name: "Costa Smeralda",

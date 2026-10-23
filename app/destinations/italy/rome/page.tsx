@@ -1,0 +1,14 @@
+import { Suspense } from 'react';
+import Link from 'next/link';
+import type { Metadata } from 'next';
+import RomeExplorer from '@/components/places/RomeExplorer';
+export const metadata: Metadata = { title: 'Rome, at your pace', description: 'Explore Rome restaurants, landmarks, shops and stays. Compare planning costs, find places on a map and build your own days.', alternates: { canonical: '/destinations/italy/rome' }, openGraph: { title: 'Rome, at your pace', url: '/destinations/italy/rome', images: ['/images/countries/rome.jpg'] } };
+export default function RomePage() {
+    return <main className="concierge-surface min-h-screen pb-16 pt-28">
+        <header className="mx-auto max-w-[1440px] px-5 sm:px-8"><nav aria-label="Breadcrumb" className="mb-5 flex gap-2 text-xs text-ink-500"><Link href="/destinations">Destinations</Link><span>/</span><Link href="/destinations/italy">Italy</Link><span>/ Rome</span></nav>
+            <div className="relative overflow-hidden rounded-[30px] bg-ink px-6 py-14 text-white sm:px-12 sm:py-20"><div className="absolute inset-0 bg-[url('/images/countries/rome.jpg')] bg-cover bg-center opacity-35" /><div className="relative max-w-2xl"><p className="concierge-eyebrow !text-sky-200">The Rome companion · Italy</p><h1 className="mt-5 font-serif text-5xl leading-tight sm:text-7xl">Wander well.<br /><em>Find your Rome.</em></h1><p className="mt-6 max-w-lg text-base leading-relaxed text-white/90">A long lunch. A quiet courtyard. A gift worth bringing home. Find the places that make this city yours.</p><div className="mt-7 flex flex-wrap gap-3"><a href="#rome-explorer" className="concierge-button !bg-white !text-ink">Explore the city</a><Link href="/destinations/italy/rome/gifts" className="concierge-button !border-white/40 !bg-white/10 !text-white">Find a thoughtful gift</Link><Link href="/concierge?destination=italy%2Frome" className="concierge-button !border-white/40 !bg-white/10 !text-white">Ask concierge</Link></div></div></div>
+            <div className="my-7 flex flex-wrap gap-3 text-xs text-ink-500"><span className="rounded-pill bg-white px-4 py-2">Local currency · EUR</span><span className="rounded-pill bg-white px-4 py-2">Time zone · Europe/Rome</span><span className="rounded-pill bg-white px-4 py-2">Choose a place. Shape your days.</span></div>
+            <Link href="/destinations/italy/rome/shopping" className="mb-4 flex flex-wrap items-center justify-between gap-3 rounded-[24px] border border-sky-200 bg-white p-6"><span><span className="concierge-eyebrow">The shopping edit</span><span className="mt-2 block font-serif text-2xl">Local finds. Thoughtful gifts. A little Rome to take home.</span></span><span className="text-sm font-semibold text-sky-700">Explore shops →</span></Link>
+        </header><Suspense fallback={<p className="p-10 text-center">Preparing your city guide…</p>}><RomeExplorer /></Suspense>
+    </main>;
+}

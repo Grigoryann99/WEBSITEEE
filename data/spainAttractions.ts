@@ -5,7 +5,7 @@ export const spainAttractions = [
     category: "Religious",
     description: "A large unfinished Roman Catholic minor basilica architected by Antoni Gaudí.",
     unsplashQuery: "Sagrada Familia Gaudi Barcelona church facade",
-    image: "/images/attractions/spain-sagrada-familia.jpg"
+    image: "/images/attractions/spain-sagrada-familia.optimized.webp"
   },
   {
     name: "Alhambra",
@@ -89,7 +89,7 @@ export const spainAttractions = [
     howToGetThere: "Train from Málaga 2 hours.",
     cost: "Free to explore — bullring museum €8",
     unsplashQuery: "Ronda bridge Puente Nuevo gorge Spain",
-    image: "/images/attractions/spain-ronda.jpg"
+    image: "/images/attractions/spain-ronda.optimized.webp"
   },
   {
     name: "Córdoba Mezquita",
@@ -115,7 +115,7 @@ export const spainAttractions = [
     howToGetThere: "Fly to Santiago de Compostela or Pamplona.",
     cost: "Albergues €8–€15/night",
     unsplashQuery: "Camino Santiago pilgrims walking Galicia path",
-    image: "/images/attractions/spain-camino-de-santiago.jpg"
+    image: "/images/attractions/spain-camino-de-santiago.optimized.webp"
   },
   {
     name: "Ibiza Old Town Dalt Vila",
