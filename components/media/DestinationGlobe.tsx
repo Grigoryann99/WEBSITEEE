@@ -9,7 +9,7 @@ const destinations = [
     { name: 'Maldives', theme: 'Island escapes', href: '/destinations/maldives', flag: 'mv', image: '/images/attractions/maldives-baros.jpg', alt: 'Overwater villas above a turquoise lagoon in the Maldives', position: '50% 50%' },
     { name: 'Switzerland', theme: 'Alpine adventures', href: '/destinations/switzerland', flag: 'ch', image: '/images/attractions/switzerland-grindelwald.jpg', alt: 'Alpine peaks and wooden chalets in Grindelwald, Switzerland', position: '50% 50%' },
     { name: 'Greece', theme: 'Islands & culture', href: '/destinations/greece', flag: 'gr', image: '/images/attractions/greece-santorini.jpg', alt: 'Blue church domes and the Aegean Sea in Santorini, Greece', position: '70% 50%' },
-    { name: 'South Africa', theme: 'Nature & wildlife', href: '/destinations/south-africa', flag: 'za', image: '/images/attractions/south-africa-addo-elephant-national-park.jpg', alt: 'An elephant family in Addo Elephant National Park, South Africa', position: '55% 50%' },
+    { name: 'South Africa', theme: 'Nature & wildlife', href: '/destinations/south-africa', flag: 'za', image: '/images/countries/south-africa-cape-town-coast.webp', alt: 'Cape Town’s Atlantic coastline, mountain slopes and winding coastal road in South Africa', position: '50% 65%' },
     { name: 'Japan', theme: 'Cities & traditions', href: '/destinations/japan', flag: 'jp', image: '/images/inspiration/japan-temples.optimized.webp', alt: 'The Golden Pavilion reflected in a pond in Kyoto, Japan', position: '50% 60%' },
 ];
 
